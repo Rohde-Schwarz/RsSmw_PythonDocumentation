@@ -1,0 +1,20 @@
+Off
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:REGenerator:OBJect<ObjectIx>:HOLD:OFF
+
+.. code-block:: python
+
+	SOURce<HwInstance>:REGenerator:OBJect<ObjectIx>:HOLD:OFF
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Regenerator.Object.Hold.Off.Off
+	:members:
+	:undoc-members:
+	:noindex:

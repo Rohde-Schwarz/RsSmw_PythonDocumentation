@@ -1,0 +1,20 @@
+ToEnd
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:REGenerator:OBJect<ObjectIx>:TIME:TOENd
+
+.. code-block:: python
+
+	SOURce<HwInstance>:REGenerator:OBJect<ObjectIx>:TIME:TOENd
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Regenerator.Object.Time.ToEnd.ToEnd
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,50 @@
+SfConfig
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:DVB:DVBX:SFConfig:CSFLength
+	single: SOURce<HwInstance>:BB:DVB:DVBX:SFConfig:CULength
+	single: SOURce<HwInstance>:BB:DVB:DVBX:SFConfig:DSF
+	single: SOURce<HwInstance>:BB:DVB:DVBX:SFConfig:EHFSize
+	single: SOURce<HwInstance>:BB:DVB:DVBX:SFConfig:NPAY
+	single: SOURce<HwInstance>:BB:DVB:DVBX:SFConfig:NREF
+	single: SOURce<HwInstance>:BB:DVB:DVBX:SFConfig:PLENgth
+	single: SOURce<HwInstance>:BB:DVB:DVBX:SFConfig:PLI
+	single: SOURce<HwInstance>:BB:DVB:DVBX:SFConfig:PSF
+	single: SOURce<HwInstance>:BB:DVB:DVBX:SFConfig:PSTate
+	single: SOURce<HwInstance>:BB:DVB:DVBX:SFConfig:PWH
+	single: SOURce<HwInstance>:BB:DVB:DVBX:SFConfig:SFFI
+	single: SOURce<HwInstance>:BB:DVB:DVBX:SFConfig:SFLength
+	single: SOURce<HwInstance>:BB:DVB:DVBX:SFConfig:SOSF
+	single: SOURce<HwInstance>:BB:DVB:DVBX:SFConfig:STATe
+	single: SOURce<HwInstance>:BB:DVB:DVBX:SFConfig:STWH
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:DVB:DVBX:SFConfig:CSFLength
+	SOURce<HwInstance>:BB:DVB:DVBX:SFConfig:CULength
+	SOURce<HwInstance>:BB:DVB:DVBX:SFConfig:DSF
+	SOURce<HwInstance>:BB:DVB:DVBX:SFConfig:EHFSize
+	SOURce<HwInstance>:BB:DVB:DVBX:SFConfig:NPAY
+	SOURce<HwInstance>:BB:DVB:DVBX:SFConfig:NREF
+	SOURce<HwInstance>:BB:DVB:DVBX:SFConfig:PLENgth
+	SOURce<HwInstance>:BB:DVB:DVBX:SFConfig:PLI
+	SOURce<HwInstance>:BB:DVB:DVBX:SFConfig:PSF
+	SOURce<HwInstance>:BB:DVB:DVBX:SFConfig:PSTate
+	SOURce<HwInstance>:BB:DVB:DVBX:SFConfig:PWH
+	SOURce<HwInstance>:BB:DVB:DVBX:SFConfig:SFFI
+	SOURce<HwInstance>:BB:DVB:DVBX:SFConfig:SFLength
+	SOURce<HwInstance>:BB:DVB:DVBX:SFConfig:SOSF
+	SOURce<HwInstance>:BB:DVB:DVBX:SFConfig:STATe
+	SOURce<HwInstance>:BB:DVB:DVBX:SFConfig:STWH
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dvb.Dvbx.SfConfig.SfConfig
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,20 @@
+Actual
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:FSIMulator:MDELay:DEL30:GROup<FadingGroup>:PATH<Path>:FDOPpler:ACTual
+
+.. code-block:: python
+
+	SOURce<HwInstance>:FSIMulator:MDELay:DEL30:GROup<FadingGroup>:PATH<Path>:FDOPpler:ACTual
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.Mdelay.Del30.Group.Path.Fdoppler.Actual.Actual
+	:members:
+	:undoc-members:
+	:noindex:

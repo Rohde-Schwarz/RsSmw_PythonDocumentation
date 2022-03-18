@@ -1,0 +1,20 @@
+Scheme
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:V5G:UL:CELL<CellNull>:SUBF<SubframeNull>:ALLoc<AllocationNull>:XPUSch:PRECoding:SCHeme
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:V5G:UL:CELL<CellNull>:SUBF<SubframeNull>:ALLoc<AllocationNull>:XPUSch:PRECoding:SCHeme
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Uplink.Cell.Subf.Alloc.Xpusch.Precoding.Scheme.Scheme
+	:members:
+	:undoc-members:
+	:noindex:

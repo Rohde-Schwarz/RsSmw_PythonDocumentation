@@ -1,0 +1,20 @@
+Relative
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:NOISe:LEVel<NoisePoint>:RELative
+
+.. code-block:: python
+
+	SOURce<HwInstance>:NOISe:LEVel<NoisePoint>:RELative
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Noise.Level.Relative.Relative
+	:members:
+	:undoc-members:
+	:noindex:

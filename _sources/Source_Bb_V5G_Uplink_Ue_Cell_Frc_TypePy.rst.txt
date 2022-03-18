@@ -1,0 +1,20 @@
+TypePy
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:V5G:UL:UE<UserEquipment>:CELL<CellNull>:FRC:TYPE
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:V5G:UL:UE<UserEquipment>:CELL<CellNull>:FRC:TYPE
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Uplink.Ue.Cell.Frc.TypePy.TypePy
+	:members:
+	:undoc-members:
+	:noindex:

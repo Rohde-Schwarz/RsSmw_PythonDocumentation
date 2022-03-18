@@ -1,0 +1,26 @@
+Powc
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:ONEWeb:POWC:LEVReference
+	single: SOURce<HwInstance>:BB:ONEWeb:POWC:REFChannel
+	single: SOURce<HwInstance>:BB:ONEWeb:POWC:REFSubframe
+	single: SOURce<HwInstance>:BB:ONEWeb:POWC:RUE
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:ONEWeb:POWC:LEVReference
+	SOURce<HwInstance>:BB:ONEWeb:POWC:REFChannel
+	SOURce<HwInstance>:BB:ONEWeb:POWC:REFSubframe
+	SOURce<HwInstance>:BB:ONEWeb:POWC:RUE
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Powc.Powc
+	:members:
+	:undoc-members:
+	:noindex:

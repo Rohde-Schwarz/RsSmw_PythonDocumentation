@@ -1,0 +1,20 @@
+Dports
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:NR5G:SCHed:CELL<CellNull>:SUBF<SubframeNull>:USER<UserNull>:BWPart<BwPartNull>:ALLoc<AllocationNull>:SCI:DPORts
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:NR5G:SCHed:CELL<CellNull>:SUBF<SubframeNull>:USER<UserNull>:BWPart<BwPartNull>:ALLoc<AllocationNull>:SCI:DPORts
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Nr5G.Scheduling.Cell.Subf.User.BwPart.Alloc.Sci.Dports.Dports
+	:members:
+	:undoc-members:
+	:noindex:

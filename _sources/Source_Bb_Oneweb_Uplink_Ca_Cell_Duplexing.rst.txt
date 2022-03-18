@@ -1,0 +1,20 @@
+Duplexing
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:ONEWeb:UL:CA:CELL<CellNull>:DUPLexing
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:ONEWeb:UL:CA:CELL<CellNull>:DUPLexing
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Uplink.Ca.Cell.Duplexing.Duplexing
+	:members:
+	:undoc-members:
+	:noindex:

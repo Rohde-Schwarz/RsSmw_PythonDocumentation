@@ -1,0 +1,20 @@
+Imaginary
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:FSIMulator:MIMO:TAP<MimoTap>:KRONecker:CORRelation:TX:BC:IMAGinary
+
+.. code-block:: python
+
+	SOURce<HwInstance>:FSIMulator:MIMO:TAP<MimoTap>:KRONecker:CORRelation:TX:BC:IMAGinary
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.Mimo.Tap.Kronecker.Correlation.Tx.Bc.Imaginary.Imaginary
+	:members:
+	:undoc-members:
+	:noindex:

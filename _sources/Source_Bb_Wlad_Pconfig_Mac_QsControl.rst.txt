@@ -1,0 +1,22 @@
+QsControl
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:WLAD:PCONfig:MAC:QSControl:STATe
+	single: SOURce<HwInstance>:BB:WLAD:PCONfig:MAC:QSControl
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:WLAD:PCONfig:MAC:QSControl:STATe
+	SOURce<HwInstance>:BB:WLAD:PCONfig:MAC:QSControl
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Wlad.Pconfig.Mac.QsControl.QsControl
+	:members:
+	:undoc-members:
+	:noindex:

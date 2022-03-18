@@ -1,0 +1,20 @@
+Conflict
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:FSIMulator:MIMO:TAP<MimoTap>:MATRix:CONFlict
+
+.. code-block:: python
+
+	SOURce<HwInstance>:FSIMulator:MIMO:TAP<MimoTap>:MATRix:CONFlict
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.Mimo.Tap.Matrix.Conflict.Conflict
+	:members:
+	:undoc-members:
+	:noindex:

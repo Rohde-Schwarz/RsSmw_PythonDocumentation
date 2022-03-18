@@ -1,0 +1,20 @@
+MruIndex
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:WLNN:FBLock<FrameBlock>:USER<UserIx>:MRUindex
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:WLNN:FBLock<FrameBlock>:USER<UserIx>:MRUindex
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Wlnn.Fblock.User.MruIndex.MruIndex
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,20 @@
+Scrambling
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:TETRa:SCONfiguration:TMODe<TestMode>:SLOT<Slot>:LDIRection<Channel>:SCRambling
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:TETRa:SCONfiguration:TMODe<TestMode>:SLOT<Slot>:LDIRection<Channel>:SCRambling
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Tetra.Sconfiguration.Tmode.Slot.Ldirection.Scrambling.Scrambling
+	:members:
+	:undoc-members:
+	:noindex:

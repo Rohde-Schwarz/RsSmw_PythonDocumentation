@@ -1,0 +1,22 @@
+Tdw
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:ONEWeb:TDW:STATe
+	single: SOURce<HwInstance>:BB:ONEWeb:TDW:TRTime
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:ONEWeb:TDW:STATe
+	SOURce<HwInstance>:BB:ONEWeb:TDW:TRTime
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Tdw.Tdw
+	:members:
+	:undoc-members:
+	:noindex:

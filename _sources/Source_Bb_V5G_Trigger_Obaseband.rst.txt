@@ -1,0 +1,26 @@
+Obaseband
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:V5G:TRIGger:OBASeband:DELay
+	single: SOURce<HwInstance>:BB:V5G:TRIGger:OBASeband:INHibit
+	single: SOURce<HwInstance>:BB:V5G:TRIGger:OBASeband:RDELay
+	single: SOURce<HwInstance>:BB:V5G:TRIGger:OBASeband:TDELay
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:V5G:TRIGger:OBASeband:DELay
+	SOURce<HwInstance>:BB:V5G:TRIGger:OBASeband:INHibit
+	SOURce<HwInstance>:BB:V5G:TRIGger:OBASeband:RDELay
+	SOURce<HwInstance>:BB:V5G:TRIGger:OBASeband:TDELay
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Trigger.Obaseband.Obaseband
+	:members:
+	:undoc-members:
+	:noindex:

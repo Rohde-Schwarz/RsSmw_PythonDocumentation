@@ -1,0 +1,20 @@
+Date
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:ESEQuencer:PSEQuencer:SEQuencer<Sequencer>:DATE
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:ESEQuencer:PSEQuencer:SEQuencer<Sequencer>:DATE
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Esequencer.Psequencer.Sequencer.Date.Date
+	:members:
+	:undoc-members:
+	:noindex:

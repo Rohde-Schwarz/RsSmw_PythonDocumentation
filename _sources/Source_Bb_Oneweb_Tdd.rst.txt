@@ -1,0 +1,22 @@
+Tdd
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:ONEWeb:TDD:SPSConf
+	single: SOURce<HwInstance>:BB:ONEWeb:TDD:UDConf
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:ONEWeb:TDD:SPSConf
+	SOURce<HwInstance>:BB:ONEWeb:TDD:UDConf
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Tdd.Tdd
+	:members:
+	:undoc-members:
+	:noindex:

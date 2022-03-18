@@ -1,0 +1,20 @@
+IcqiOffset
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:ONEWeb:UL:UE<UserEquipment>:CELL<CellNull>:PUACh:CCODing:ICQioffset
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:ONEWeb:UL:UE<UserEquipment>:CELL<CellNull>:PUACh:CCODing:ICQioffset
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Uplink.Ue.Cell.Puach.Ccoding.IcqiOffset.IcqiOffset
+	:members:
+	:undoc-members:
+	:noindex:

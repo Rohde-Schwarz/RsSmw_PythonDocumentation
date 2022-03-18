@@ -1,0 +1,20 @@
+Select
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:CORRection:FRESponse:RF:USER:FLISt<Index>:SELect
+
+.. code-block:: python
+
+	SOURce<HwInstance>:CORRection:FRESponse:RF:USER:FLISt<Index>:SELect
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Correction.Fresponse.Rf.User.Flist.Select.Select
+	:members:
+	:undoc-members:
+	:noindex:

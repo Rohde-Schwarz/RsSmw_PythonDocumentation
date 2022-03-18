@@ -1,0 +1,20 @@
+State
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:V5G:DL:SUBF<SubframeNull>:ALLoc<AllocationNull>:APM:CSIRs:AP<AntennaPortNull>:ROW<RowNull>:STATe
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:V5G:DL:SUBF<SubframeNull>:ALLoc<AllocationNull>:APM:CSIRs:AP<AntennaPortNull>:ROW<RowNull>:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Downlink.Subf.Alloc.Apm.Csirs.Ap.Row.State.State
+	:members:
+	:undoc-members:
+	:noindex:

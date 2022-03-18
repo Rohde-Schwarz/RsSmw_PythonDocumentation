@@ -1,0 +1,20 @@
+Nscid
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:V5G:DL:SUBF<SubframeNull>:ENCC:XPDCch:EXTC:ITEM<ItemNull>:DCIConf:NSCid
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:V5G:DL:SUBF<SubframeNull>:ENCC:XPDCch:EXTC:ITEM<ItemNull>:DCIConf:NSCid
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Downlink.Subf.Encc.Xpdcch.Extc.Item.DciConf.Nscid.Nscid
+	:members:
+	:undoc-members:
+	:noindex:

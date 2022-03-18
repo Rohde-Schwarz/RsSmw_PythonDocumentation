@@ -1,0 +1,20 @@
+Phase
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:FSIMulator:MIMO:TAP<MimoTap>:KRONecker:CORRelation:RX:CG:PHASe
+
+.. code-block:: python
+
+	SOURce<HwInstance>:FSIMulator:MIMO:TAP<MimoTap>:KRONecker:CORRelation:RX:CG:PHASe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.Mimo.Tap.Kronecker.Correlation.Rx.Cg.Phase.Phase
+	:members:
+	:undoc-members:
+	:noindex:

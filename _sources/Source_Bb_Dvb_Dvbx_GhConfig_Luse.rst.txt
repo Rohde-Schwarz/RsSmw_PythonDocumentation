@@ -1,0 +1,20 @@
+Luse
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:DVB:DVBX:GHConfig:LUSE:STATe
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:DVB:DVBX:GHConfig:LUSE:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dvb.Dvbx.GhConfig.Luse.Luse
+	:members:
+	:undoc-members:
+	:noindex:

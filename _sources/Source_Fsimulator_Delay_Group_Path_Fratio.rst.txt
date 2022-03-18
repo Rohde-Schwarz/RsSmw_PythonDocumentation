@@ -1,0 +1,20 @@
+Fratio
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:FSIMulator:DELay:GROup<FadingGroup>:PATH<Path>:FRATio
+
+.. code-block:: python
+
+	SOURce<HwInstance>:FSIMulator:DELay:GROup<FadingGroup>:PATH<Path>:FRATio
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.Delay.Group.Path.Fratio.Fratio
+	:members:
+	:undoc-members:
+	:noindex:

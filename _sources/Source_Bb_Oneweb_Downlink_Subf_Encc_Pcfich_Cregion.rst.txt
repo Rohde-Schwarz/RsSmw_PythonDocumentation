@@ -1,0 +1,20 @@
+Cregion
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:ONEWeb:DL:SUBF<SubframeNull>:ENCC:PCFich:CREGion
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:ONEWeb:DL:SUBF<SubframeNull>:ENCC:PCFich:CREGion
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Downlink.Subf.Encc.Pcfich.Cregion.Cregion
+	:members:
+	:undoc-members:
+	:noindex:

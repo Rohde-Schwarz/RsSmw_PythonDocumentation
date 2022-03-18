@@ -1,0 +1,20 @@
+SybRate
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:DVB:DVBR:SFConfig<SfCfgIxNull>:FRConfig<FrCfgIxNull>:BTU:SYBRate
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:DVB:DVBR:SFConfig<SfCfgIxNull>:FRConfig<FrCfgIxNull>:BTU:SYBRate
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dvb.Dvbr.SfConfig.FrConfig.Btu.SybRate.SybRate
+	:members:
+	:undoc-members:
+	:noindex:

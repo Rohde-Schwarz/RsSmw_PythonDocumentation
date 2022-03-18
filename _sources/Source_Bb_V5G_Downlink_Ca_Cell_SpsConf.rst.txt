@@ -1,0 +1,20 @@
+SpsConf
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:V5G:DL:CA:CELL<CellNull>:SPSConf
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:V5G:DL:CA:CELL<CellNull>:SPSConf
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Downlink.Ca.Cell.SpsConf.SpsConf
+	:members:
+	:undoc-members:
+	:noindex:

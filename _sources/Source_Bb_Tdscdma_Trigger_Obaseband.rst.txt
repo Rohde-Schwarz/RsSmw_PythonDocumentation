@@ -1,0 +1,22 @@
+Obaseband
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:TDSCdma:TRIGger:OBASeband:DELay
+	single: SOURce<HwInstance>:BB:TDSCdma:TRIGger:OBASeband:INHibit
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:TDSCdma:TRIGger:OBASeband:DELay
+	SOURce<HwInstance>:BB:TDSCdma:TRIGger:OBASeband:INHibit
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Tdscdma.Trigger.Obaseband.Obaseband
+	:members:
+	:undoc-members:
+	:noindex:

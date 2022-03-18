@@ -1,0 +1,20 @@
+Hpn
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:V5G:DL:SUBF<SubframeNull>:ENCC:XPDCch:EXTC:ITEM<ItemNull>:DCIConf:HPN
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:V5G:DL:SUBF<SubframeNull>:ENCC:XPDCch:EXTC:ITEM<ItemNull>:DCIConf:HPN
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Downlink.Subf.Encc.Xpdcch.Extc.Item.DciConf.Hpn.Hpn
+	:members:
+	:undoc-members:
+	:noindex:

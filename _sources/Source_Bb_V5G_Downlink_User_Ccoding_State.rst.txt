@@ -1,0 +1,20 @@
+State
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:V5G:DL:USER<UserIx>:CCODing:STATe
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:V5G:DL:USER<UserIx>:CCODing:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Downlink.User.Ccoding.State.State
+	:members:
+	:undoc-members:
+	:noindex:

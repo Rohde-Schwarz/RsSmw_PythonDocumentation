@@ -1,0 +1,20 @@
+Periodicity
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:V5G:DL:DRS:CELL<CellNull>:PERiodicity
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:V5G:DL:DRS:CELL<CellNull>:PERiodicity
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Downlink.Drs.Cell.Periodicity.Periodicity
+	:members:
+	:undoc-members:
+	:noindex:

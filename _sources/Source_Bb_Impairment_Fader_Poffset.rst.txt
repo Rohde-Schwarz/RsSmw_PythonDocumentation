@@ -1,0 +1,20 @@
+Poffset
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce:BB:IMPairment:FADer<DigitalIq>:POFFset
+
+.. code-block:: python
+
+	SOURce:BB:IMPairment:FADer<DigitalIq>:POFFset
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Impairment.Fader.Poffset.Poffset
+	:members:
+	:undoc-members:
+	:noindex:

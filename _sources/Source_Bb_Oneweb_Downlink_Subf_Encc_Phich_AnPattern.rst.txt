@@ -1,0 +1,36 @@
+AnPattern<AntennaPattern>
+----------------------------------------
+
+.. rubric:: RepCap Settings
+
+.. code-block:: python
+
+	# Range: Nr0 .. Nr16
+	rc = driver.source.bb.oneweb.downlink.subf.encc.phich.anPattern.repcap_antennaPattern_get()
+	driver.source.bb.oneweb.downlink.subf.encc.phich.anPattern.repcap_antennaPattern_set(repcap.AntennaPattern.Nr0)
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:ONEWeb:DL:SUBF<SubframeNull>:ENCC:PHICh:ANPattern<AntennaPattern>
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:ONEWeb:DL:SUBF<SubframeNull>:ENCC:PHICh:ANPattern<AntennaPattern>
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Downlink.Subf.Encc.Phich.AnPattern.AnPattern
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.oneweb.downlink.subf.encc.phich.anPattern.clone()

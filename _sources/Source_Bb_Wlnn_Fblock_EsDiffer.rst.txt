@@ -1,0 +1,20 @@
+EsDiffer
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:WLNN:FBLock<FrameBlock>:ESDiffer
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:WLNN:FBLock<FrameBlock>:ESDiffer
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Wlnn.Fblock.EsDiffer.EsDiffer
+	:members:
+	:undoc-members:
+	:noindex:

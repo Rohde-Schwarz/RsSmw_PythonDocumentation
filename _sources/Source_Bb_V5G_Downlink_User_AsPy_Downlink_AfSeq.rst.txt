@@ -1,0 +1,20 @@
+AfSeq
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:V5G:DL:USER<UserIx>:AS:DL:AFSeq
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:V5G:DL:USER<UserIx>:AS:DL:AFSeq
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Downlink.User.AsPy.Downlink.AfSeq.AfSeq
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,20 @@
+Sitem
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:V5G:DL:SUBF<SubframeNull>:ENCC:XPDCch:EXTC:SITem
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:V5G:DL:SUBF<SubframeNull>:ENCC:XPDCch:EXTC:SITem
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Downlink.Subf.Encc.Xpdcch.Extc.Sitem.Sitem
+	:members:
+	:undoc-members:
+	:noindex:

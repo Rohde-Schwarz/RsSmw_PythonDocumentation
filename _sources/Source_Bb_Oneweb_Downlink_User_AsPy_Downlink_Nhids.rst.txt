@@ -1,0 +1,20 @@
+Nhids
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:ONEWeb:DL:USER<UserIx>:AS:DL:NHIDs
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:ONEWeb:DL:USER<UserIx>:AS:DL:NHIDs
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Downlink.User.AsPy.Downlink.Nhids.Nhids
+	:members:
+	:undoc-members:
+	:noindex:

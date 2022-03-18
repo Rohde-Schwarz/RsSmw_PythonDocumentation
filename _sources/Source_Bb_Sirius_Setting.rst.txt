@@ -1,0 +1,26 @@
+Setting
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:SIRius:SETTing:CATalog
+	single: SOURce<HwInstance>:BB:SIRius:SETTing:DELete
+	single: SOURce<HwInstance>:BB:SIRius:SETTing:LOAD
+	single: SOURce<HwInstance>:BB:SIRius:SETTing:STORe
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:SIRius:SETTing:CATalog
+	SOURce<HwInstance>:BB:SIRius:SETTing:DELete
+	SOURce<HwInstance>:BB:SIRius:SETTing:LOAD
+	SOURce<HwInstance>:BB:SIRius:SETTing:STORe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Sirius.Setting.Setting
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,20 @@
+Nibble
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:PACKet:UNFiltered:NIBBle:STATe
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:PACKet:UNFiltered:NIBBle:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Packet.Unfiltered.Nibble.Nibble
+	:members:
+	:undoc-members:
+	:noindex:

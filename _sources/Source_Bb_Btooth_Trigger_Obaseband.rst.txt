@@ -1,0 +1,22 @@
+Obaseband
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:BTOoth:TRIGger:OBASeband:DELay
+	single: SOURce<HwInstance>:BB:BTOoth:TRIGger:OBASeband:INHibit
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:BTOoth:TRIGger:OBASeband:DELay
+	SOURce<HwInstance>:BB:BTOoth:TRIGger:OBASeband:INHibit
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Btooth.Trigger.Obaseband.Obaseband
+	:members:
+	:undoc-members:
+	:noindex:

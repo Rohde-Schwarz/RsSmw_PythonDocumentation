@@ -1,0 +1,20 @@
+Ph1F
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:NR5G:UBWP:USER<UserNull>:DSCH:PH1F
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:NR5G:UBWP:USER<UserNull>:DSCH:PH1F
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Nr5G.Ubwp.User.Dsch.Ph1F.Ph1F
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,20 @@
+Sbits
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:NR5G:NODE:CELL<CellNull>:SSPBch<SsPbchNull>:SL:SBITs
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:NR5G:NODE:CELL<CellNull>:SSPBch<SsPbchNull>:SL:SBITs
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Nr5G.Node.Cell.Sspbch.Sl.Sbits.Sbits
+	:members:
+	:undoc-members:
+	:noindex:

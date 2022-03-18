@@ -1,0 +1,20 @@
+Fodt
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:DVB:DVBS:SFBHconfig:FODT
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:DVB:DVBS:SFBHconfig:FODT
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dvb.Dvbs.SfbhConfig.Fodt.Fodt
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,20 @@
+Fspread
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:FSIMulator:DELay:GROup<FadingGroup>:PATH<Path>:FSPRead
+
+.. code-block:: python
+
+	SOURce<HwInstance>:FSIMulator:DELay:GROup<FadingGroup>:PATH<Path>:FSPRead
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.Delay.Group.Path.Fspread.Fspread
+	:members:
+	:undoc-members:
+	:noindex:

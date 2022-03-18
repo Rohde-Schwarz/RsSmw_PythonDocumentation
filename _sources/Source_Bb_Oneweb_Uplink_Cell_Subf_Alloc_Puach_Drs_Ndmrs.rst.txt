@@ -1,0 +1,36 @@
+Ndmrs<LayerNull>
+----------------------------------------
+
+.. rubric:: RepCap Settings
+
+.. code-block:: python
+
+	# Range: Nr0 .. Nr7
+	rc = driver.source.bb.oneweb.uplink.cell.subf.alloc.puach.drs.ndmrs.repcap_layerNull_get()
+	driver.source.bb.oneweb.uplink.cell.subf.alloc.puach.drs.ndmrs.repcap_layerNull_set(repcap.LayerNull.Nr0)
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:ONEWeb:UL:CELL<CellNull>:SUBF<SubframeNull>:ALLoc<AllocationNull>:PUACh:DRS:NDMRs<LayerNull>
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:ONEWeb:UL:CELL<CellNull>:SUBF<SubframeNull>:ALLoc<AllocationNull>:PUACh:DRS:NDMRs<LayerNull>
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Uplink.Cell.Subf.Alloc.Puach.Drs.Ndmrs.Ndmrs
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.oneweb.uplink.cell.subf.alloc.puach.drs.ndmrs.clone()

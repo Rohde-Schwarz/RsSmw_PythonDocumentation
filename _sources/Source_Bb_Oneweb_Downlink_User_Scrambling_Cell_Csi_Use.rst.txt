@@ -1,0 +1,20 @@
+Use
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:ONEWeb:DL:USER<UserIx>:SCRambling:CELL<Cell>:CSI:USE
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:ONEWeb:DL:USER<UserIx>:SCRambling:CELL<Cell>:CSI:USE
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Downlink.User.Scrambling.Cell.Csi.Use.Use
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,24 @@
+Clock
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:TETRa:CLOCk:MODE
+	single: SOURce<HwInstance>:BB:TETRa:CLOCk:MULTiplier
+	single: SOURce<HwInstance>:BB:TETRa:CLOCk:SOURce
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:TETRa:CLOCk:MODE
+	SOURce<HwInstance>:BB:TETRa:CLOCk:MULTiplier
+	SOURce<HwInstance>:BB:TETRa:CLOCk:SOURce
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Tetra.Clock.Clock
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,20 @@
+Lconstant
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:FSIMulator:DELay:GROup<FadingGroup>:PATH<Path>:LOGNormal:LCONstant
+
+.. code-block:: python
+
+	SOURce<HwInstance>:FSIMulator:DELay:GROup<FadingGroup>:PATH<Path>:LOGNormal:LCONstant
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.Delay.Group.Path.LogNormal.Lconstant.Lconstant
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,20 @@
+Indi
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:V5G:DL:USER<UserIx>:AS:UL:INDI
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:V5G:DL:USER<UserIx>:AS:UL:INDI
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Downlink.User.AsPy.Uplink.Indi.Indi
+	:members:
+	:undoc-members:
+	:noindex:

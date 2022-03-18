@@ -1,0 +1,20 @@
+TaOffset
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:NR5G:NODE:CELL<CellNull>:TMPH:TAOFfset
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:NR5G:NODE:CELL<CellNull>:TMPH:TAOFfset
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Nr5G.Node.Cell.Tmph.TaOffset.TaOffset
+	:members:
+	:undoc-members:
+	:noindex:

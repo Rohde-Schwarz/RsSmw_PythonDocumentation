@@ -1,0 +1,20 @@
+Ocoder
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:DVB:DVBX:OCODer:STATe
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:DVB:DVBX:OCODer:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dvb.Dvbx.Ocoder.Ocoder
+	:members:
+	:undoc-members:
+	:noindex:

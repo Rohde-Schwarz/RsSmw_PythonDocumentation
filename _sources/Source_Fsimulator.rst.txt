@@ -1,0 +1,84 @@
+Fsimulator
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce:FSIMulator:CATalog
+	single: SOURce<HwInstance>:FSIMulator:CONFiguration
+	single: SOURce<HwInstance>:FSIMulator:CSPeed
+	single: SOURce:FSIMulator:DELETE
+	single: SOURce<HwInstance>:FSIMulator:KCONstant
+	single: SOURce<HwInstance>:FSIMulator:LOAD
+	single: SOURce<HwInstance>:FSIMulator:PLENgth
+	single: SOURce<HwInstance>:FSIMulator:PRESet
+	single: SOURce<HwInstance>:FSIMulator:ROUTe
+	single: SOURce<HwInstance>:FSIMulator:SDEStination
+	single: SOURce<HwInstance>:FSIMulator:STORe
+	single: SOURce<HwInstance>:FSIMulator:STATe
+
+.. code-block:: python
+
+	SOURce:FSIMulator:CATalog
+	SOURce<HwInstance>:FSIMulator:CONFiguration
+	SOURce<HwInstance>:FSIMulator:CSPeed
+	SOURce:FSIMulator:DELETE
+	SOURce<HwInstance>:FSIMulator:KCONstant
+	SOURce<HwInstance>:FSIMulator:LOAD
+	SOURce<HwInstance>:FSIMulator:PLENgth
+	SOURce<HwInstance>:FSIMulator:PRESet
+	SOURce<HwInstance>:FSIMulator:ROUTe
+	SOURce<HwInstance>:FSIMulator:SDEStination
+	SOURce<HwInstance>:FSIMulator:STORe
+	SOURce<HwInstance>:FSIMulator:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.Fsimulator
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.fsimulator.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Fsimulator_BirthDeath.rst
+	Source_Fsimulator_Bypass.rst
+	Source_Fsimulator_Cdynamic.rst
+	Source_Fsimulator_Clock.rst
+	Source_Fsimulator_Copy.rst
+	Source_Fsimulator_Couple.rst
+	Source_Fsimulator_Delay.rst
+	Source_Fsimulator_DelPy.rst
+	Source_Fsimulator_DsSimulation.rst
+	Source_Fsimulator_Frequency.rst
+	Source_Fsimulator_Globale.rst
+	Source_Fsimulator_Hopping.rst
+	Source_Fsimulator_HsTrain.rst
+	Source_Fsimulator_Ignore.rst
+	Source_Fsimulator_Iloss.rst
+	Source_Fsimulator_Mdelay.rst
+	Source_Fsimulator_Mimo.rst
+	Source_Fsimulator_Restart.rst
+	Source_Fsimulator_Scm.rst
+	Source_Fsimulator_Siso.rst
+	Source_Fsimulator_Speed.rst
+	Source_Fsimulator_Standard.rst
+	Source_Fsimulator_Sum.rst
+	Source_Fsimulator_Synchronize.rst
+	Source_Fsimulator_TcInterferer.rst
+	Source_Fsimulator_Test.rst

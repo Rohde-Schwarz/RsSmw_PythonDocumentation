@@ -1,0 +1,28 @@
+Pusch
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:ONEWeb:UL:PUSCh:FHMode
+	single: SOURce<HwInstance>:BB:ONEWeb:UL:PUSCh:FHOFfset
+	single: SOURce<HwInstance>:BB:ONEWeb:UL:PUSCh:NHOFfset
+	single: SOURce<HwInstance>:BB:ONEWeb:UL:PUSCh:NHOPping
+	single: SOURce<HwInstance>:BB:ONEWeb:UL:PUSCh:NOSM
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:ONEWeb:UL:PUSCh:FHMode
+	SOURce<HwInstance>:BB:ONEWeb:UL:PUSCh:FHOFfset
+	SOURce<HwInstance>:BB:ONEWeb:UL:PUSCh:NHOFfset
+	SOURce<HwInstance>:BB:ONEWeb:UL:PUSCh:NHOPping
+	SOURce<HwInstance>:BB:ONEWeb:UL:PUSCh:NOSM
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Uplink.Pusch.Pusch
+	:members:
+	:undoc-members:
+	:noindex:

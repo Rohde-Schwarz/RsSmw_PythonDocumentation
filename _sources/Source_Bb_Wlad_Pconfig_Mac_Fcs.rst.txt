@@ -1,0 +1,20 @@
+Fcs
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:WLAD:PCONfig:MAC:FCS:STATe
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:WLAD:PCONfig:MAC:FCS:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Wlad.Pconfig.Mac.Fcs.Fcs
+	:members:
+	:undoc-members:
+	:noindex:

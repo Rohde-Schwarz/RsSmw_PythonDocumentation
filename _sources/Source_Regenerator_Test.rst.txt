@@ -1,0 +1,20 @@
+Test
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:REGenerator:TEST:SIMFsw
+
+.. code-block:: python
+
+	SOURce<HwInstance>:REGenerator:TEST:SIMFsw
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Regenerator.Test.Test
+	:members:
+	:undoc-members:
+	:noindex:

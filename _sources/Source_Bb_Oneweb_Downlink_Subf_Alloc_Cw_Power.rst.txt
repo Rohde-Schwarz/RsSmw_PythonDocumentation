@@ -1,0 +1,20 @@
+Power
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:ONEWeb:DL:SUBF<SubframeNull>:ALLoc<AllocationNull>:CW<Codeword>:POWer
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:ONEWeb:DL:SUBF<SubframeNull>:ALLoc<AllocationNull>:CW<Codeword>:POWer
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Downlink.Subf.Alloc.Cw.Power.Power
+	:members:
+	:undoc-members:
+	:noindex:

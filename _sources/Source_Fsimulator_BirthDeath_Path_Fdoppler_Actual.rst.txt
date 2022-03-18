@@ -1,0 +1,20 @@
+Actual
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:FSIMulator:BIRThdeath:PATH<Path>:FDOPpler:ACTual
+
+.. code-block:: python
+
+	SOURce<HwInstance>:FSIMulator:BIRThdeath:PATH<Path>:FDOPpler:ACTual
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.BirthDeath.Path.Fdoppler.Actual.Actual
+	:members:
+	:undoc-members:
+	:noindex:

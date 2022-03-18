@@ -1,0 +1,20 @@
+State
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:V5G:UL:CELL<CellNull>:SUBF<SubframeNull>:ALLoc<AllocationNull>:XPUSch:PCRS:STATe
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:V5G:UL:CELL<CellNull>:SUBF<SubframeNull>:ALLoc<AllocationNull>:XPUSch:PCRS:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Uplink.Cell.Subf.Alloc.Xpusch.Pcrs.State.State
+	:members:
+	:undoc-members:
+	:noindex:

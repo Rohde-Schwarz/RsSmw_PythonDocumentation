@@ -1,0 +1,47 @@
+Impulsive
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:NOISe:IMPulsive:CI
+	single: SOURce<HwInstance>:NOISe:IMPulsive:FRAMe
+	single: SOURce<HwInstance>:NOISe:IMPulsive:MAXSpace
+	single: SOURce<HwInstance>:NOISe:IMPulsive:MINSpace
+	single: SOURce<HwInstance>:NOISe:IMPulsive:PULSe
+	single: SOURce<HwInstance>:NOISe:IMPulsive:STATe
+
+.. code-block:: python
+
+	SOURce<HwInstance>:NOISe:IMPulsive:CI
+	SOURce<HwInstance>:NOISe:IMPulsive:FRAMe
+	SOURce<HwInstance>:NOISe:IMPulsive:MAXSpace
+	SOURce<HwInstance>:NOISe:IMPulsive:MINSpace
+	SOURce<HwInstance>:NOISe:IMPulsive:PULSe
+	SOURce<HwInstance>:NOISe:IMPulsive:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Noise.Impulsive.Impulsive
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.noise.impulsive.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Noise_Impulsive_Burst.rst

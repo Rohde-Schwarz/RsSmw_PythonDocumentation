@@ -1,0 +1,20 @@
+State
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:ESEQuencer:USER:BB<Baseband>:AOTime<AttenuationList>:STATe
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:ESEQuencer:USER:BB<Baseband>:AOTime<AttenuationList>:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Esequencer.User.Bb.AoTime.State.State
+	:members:
+	:undoc-members:
+	:noindex:

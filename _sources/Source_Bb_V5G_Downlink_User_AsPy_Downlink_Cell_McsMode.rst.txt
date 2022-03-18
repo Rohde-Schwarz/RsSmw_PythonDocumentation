@@ -1,0 +1,20 @@
+McsMode
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:V5G:DL:USER<UserIx>:AS:DL:CELL<CellNull>:MCSMode
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:V5G:DL:USER<UserIx>:AS:DL:CELL<CellNull>:MCSMode
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Downlink.User.AsPy.Downlink.Cell.McsMode.McsMode
+	:members:
+	:undoc-members:
+	:noindex:

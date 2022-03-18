@@ -1,0 +1,20 @@
+Offset
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:ONEWeb:NOTCh<NotchFilter>:FREQuency:OFFSet
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:ONEWeb:NOTCh<NotchFilter>:FREQuency:OFFSet
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Notch.Frequency.Offset.Offset
+	:members:
+	:undoc-members:
+	:noindex:

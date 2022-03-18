@@ -1,0 +1,20 @@
+Delay
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce:BB:IMPairment:FADer<DigitalIq>:DELay
+
+.. code-block:: python
+
+	SOURce:BB:IMPairment:FADer<DigitalIq>:DELay
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Impairment.Fader.Delay.Delay
+	:members:
+	:undoc-members:
+	:noindex:

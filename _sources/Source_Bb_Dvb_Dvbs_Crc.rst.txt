@@ -1,0 +1,20 @@
+Crc
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:DVB:DVBS:CRC:STATe
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:DVB:DVBS:CRC:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dvb.Dvbs.Crc.Crc
+	:members:
+	:undoc-members:
+	:noindex:

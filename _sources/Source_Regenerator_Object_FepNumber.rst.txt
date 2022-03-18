@@ -1,0 +1,20 @@
+FepNumber
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:REGenerator:OBJect<ObjectIx>:FEPNumber
+
+.. code-block:: python
+
+	SOURce<HwInstance>:REGenerator:OBJect<ObjectIx>:FEPNumber
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Regenerator.Object.FepNumber.FepNumber
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,20 @@
+Power
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:V5G:UL:SUBF<SubframeNull>:ALLoc<AllocationNull>:XPUCch:POWer
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:V5G:UL:SUBF<SubframeNull>:ALLoc<AllocationNull>:XPUCch:POWer
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Uplink.Subf.Alloc.Xpucch.Power.Power
+	:members:
+	:undoc-members:
+	:noindex:

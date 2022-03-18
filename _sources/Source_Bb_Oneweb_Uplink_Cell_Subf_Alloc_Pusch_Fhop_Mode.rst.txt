@@ -1,0 +1,20 @@
+Mode
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:ONEWeb:UL:CELL<CellNull>:SUBF<SubframeNull>:ALLoc<AllocationNull>:PUSCh:FHOP:MODE
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:ONEWeb:UL:CELL<CellNull>:SUBF<SubframeNull>:ALLoc<AllocationNull>:PUSCh:FHOP:MODE
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Uplink.Cell.Subf.Alloc.Pusch.Fhop.Mode.Mode
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,20 @@
+Profile
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:FSIMulator:BIRThdeath:PATH<Path>:PROFile
+
+.. code-block:: python
+
+	SOURce<HwInstance>:FSIMulator:BIRThdeath:PATH<Path>:PROFile
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.BirthDeath.Path.Profile.Profile
+	:members:
+	:undoc-members:
+	:noindex:

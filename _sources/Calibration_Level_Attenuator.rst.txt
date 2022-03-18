@@ -1,0 +1,24 @@
+Attenuator
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: CALibration<HwInstance>:LEVel:ATTenuator:AMPLifier
+	single: CALibration<HwInstance>:LEVel:ATTenuator:MODE
+	single: CALibration<HwInstance>:LEVel:ATTenuator:STAGe
+
+.. code-block:: python
+
+	CALibration<HwInstance>:LEVel:ATTenuator:AMPLifier
+	CALibration<HwInstance>:LEVel:ATTenuator:MODE
+	CALibration<HwInstance>:LEVel:ATTenuator:STAGe
+
+
+
+.. autoclass:: RsSmw.Implementations.Calibration.Level.Attenuator.Attenuator
+	:members:
+	:undoc-members:
+	:noindex:

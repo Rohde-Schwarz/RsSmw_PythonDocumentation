@@ -1,0 +1,20 @@
+Boind
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:NR5G:SCHed:CELL<CellNull>:SUBF<SubframeNull>:USER<UserNull>:BWPart<BwPartNull>:ALLoc<AllocationNull>:SCI:BOINd
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:NR5G:SCHed:CELL<CellNull>:SUBF<SubframeNull>:USER<UserNull>:BWPart<BwPartNull>:ALLoc<AllocationNull>:SCI:BOINd
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Nr5G.Scheduling.Cell.Subf.User.BwPart.Alloc.Sci.Boind.Boind
+	:members:
+	:undoc-members:
+	:noindex:

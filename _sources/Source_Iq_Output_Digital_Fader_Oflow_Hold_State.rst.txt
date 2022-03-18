@@ -1,0 +1,20 @@
+State
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce:IQ:OUTPut:DIGital:FADer<DigitalIq>:OFLow:HOLD:STATe
+
+.. code-block:: python
+
+	SOURce:IQ:OUTPut:DIGital:FADer<DigitalIq>:OFLow:HOLD:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Iq.Output.Digital.Fader.Oflow.Hold.State.State
+	:members:
+	:undoc-members:
+	:noindex:

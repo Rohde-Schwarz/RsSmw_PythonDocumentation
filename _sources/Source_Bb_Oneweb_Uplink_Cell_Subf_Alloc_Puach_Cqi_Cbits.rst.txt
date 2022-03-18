@@ -1,0 +1,20 @@
+Cbits
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:ONEWeb:UL:CELL<CellNull>:SUBF<SubframeNull>:ALLoc<AllocationNull>:PUACh:CQI:CBITs
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:ONEWeb:UL:CELL<CellNull>:SUBF<SubframeNull>:ALLoc<AllocationNull>:PUACh:CQI:CBITs
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Uplink.Cell.Subf.Alloc.Puach.Cqi.Cbits.Cbits
+	:members:
+	:undoc-members:
+	:noindex:

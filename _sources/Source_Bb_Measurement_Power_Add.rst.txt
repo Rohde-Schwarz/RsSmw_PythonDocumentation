@@ -1,0 +1,20 @@
+Add
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce:BB:MEASurement:POWer:ADD
+
+.. code-block:: python
+
+	SOURce:BB:MEASurement:POWer:ADD
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Measurement.Power.Add.Add
+	:members:
+	:undoc-members:
+	:noindex:

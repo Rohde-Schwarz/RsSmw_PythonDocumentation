@@ -1,0 +1,20 @@
+Use
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:V5G:DL:USER<UserIx>:SCRambling:CELL<Cell>:DMRS:USE
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:V5G:DL:USER<UserIx>:SCRambling:CELL<Cell>:DMRS:USE
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Downlink.User.Scrambling.Cell.Dmrs.Use.Use
+	:members:
+	:undoc-members:
+	:noindex:

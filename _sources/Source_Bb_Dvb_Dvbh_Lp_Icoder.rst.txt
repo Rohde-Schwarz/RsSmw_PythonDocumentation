@@ -1,0 +1,22 @@
+Icoder
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:DVB:DVBH:LP:ICODer:RATE
+	single: SOURce<HwInstance>:BB:DVB:DVBH:LP:ICODer:STATe
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:DVB:DVBH:LP:ICODer:RATE
+	SOURce<HwInstance>:BB:DVB:DVBH:LP:ICODer:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dvb.Dvbh.Lp.Icoder.Icoder
+	:members:
+	:undoc-members:
+	:noindex:

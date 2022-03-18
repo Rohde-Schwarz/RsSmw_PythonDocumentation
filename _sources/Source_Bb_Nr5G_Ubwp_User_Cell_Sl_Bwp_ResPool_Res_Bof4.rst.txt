@@ -1,0 +1,20 @@
+Bof4
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:NR5G:UBWP:USER<UserNull>:CELL<CellNull>:SL:BWP<BwPartNull>:RESPool:RES:BOF4
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:NR5G:UBWP:USER<UserNull>:CELL<CellNull>:SL:BWP<BwPartNull>:RESPool:RES:BOF4
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Nr5G.Ubwp.User.Cell.Sl.Bwp.ResPool.Res.Bof4.Bof4
+	:members:
+	:undoc-members:
+	:noindex:

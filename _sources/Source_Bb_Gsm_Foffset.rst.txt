@@ -1,0 +1,22 @@
+Foffset
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:GSM:FOFFset:MEAN
+	single: SOURce<HwInstance>:BB:GSM:FOFFset:STANdard
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:GSM:FOFFset:MEAN
+	SOURce<HwInstance>:BB:GSM:FOFFset:STANdard
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Gsm.Foffset.Foffset
+	:members:
+	:undoc-members:
+	:noindex:

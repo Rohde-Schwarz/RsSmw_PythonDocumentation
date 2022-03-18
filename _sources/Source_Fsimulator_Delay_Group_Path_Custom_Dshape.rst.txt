@@ -1,0 +1,20 @@
+Dshape
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:FSIMulator:DELay:GROup<FadingGroup>:PATH<Path>:CUSTom:DSHape
+
+.. code-block:: python
+
+	SOURce<HwInstance>:FSIMulator:DELay:GROup<FadingGroup>:PATH<Path>:CUSTom:DSHape
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.Delay.Group.Path.Custom.Dshape.Dshape
+	:members:
+	:undoc-members:
+	:noindex:

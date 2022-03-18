@@ -1,0 +1,20 @@
+Predefined
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:NOISe:PHASenoise:SHAPe:PREDefined:CATalog
+
+.. code-block:: python
+
+	SOURce<HwInstance>:NOISe:PHASenoise:SHAPe:PREDefined:CATalog
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Noise.Phasenoise.Shape.Predefined.Predefined
+	:members:
+	:undoc-members:
+	:noindex:

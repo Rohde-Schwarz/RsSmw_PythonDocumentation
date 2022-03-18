@@ -1,0 +1,20 @@
+Select
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:GNSS:RTK:BASE<BaseSt>:LOCation:SELect
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:GNSS:RTK:BASE<BaseSt>:LOCation:SELect
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Gnss.Rtk.Base.Location.Select.Select
+	:members:
+	:undoc-members:
+	:noindex:

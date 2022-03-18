@@ -1,0 +1,43 @@
+Setting
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:ONEWeb:SETTing:CATalog
+	single: SOURce<HwInstance>:BB:ONEWeb:SETTing:DEL
+	single: SOURce<HwInstance>:BB:ONEWeb:SETTing:LOAD
+	single: SOURce<HwInstance>:BB:ONEWeb:SETTing:STORe
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:ONEWeb:SETTing:CATalog
+	SOURce<HwInstance>:BB:ONEWeb:SETTing:DEL
+	SOURce<HwInstance>:BB:ONEWeb:SETTing:LOAD
+	SOURce<HwInstance>:BB:ONEWeb:SETTing:STORe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Setting.Setting
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.oneweb.setting.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Oneweb_Setting_Tmod.rst

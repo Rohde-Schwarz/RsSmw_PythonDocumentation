@@ -1,0 +1,46 @@
+Reference
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:FSIMulator:TCINterferer:REFerence:FRATio
+	single: SOURce<HwInstance>:FSIMulator:TCINterferer:REFerence:LOSS
+	single: SOURce<HwInstance>:FSIMulator:TCINterferer:REFerence:MMODe
+	single: SOURce<HwInstance>:FSIMulator:TCINterferer:REFerence:PROFile
+	single: SOURce<HwInstance>:FSIMulator:TCINterferer:REFerence:STATe
+
+.. code-block:: python
+
+	SOURce<HwInstance>:FSIMulator:TCINterferer:REFerence:FRATio
+	SOURce<HwInstance>:FSIMulator:TCINterferer:REFerence:LOSS
+	SOURce<HwInstance>:FSIMulator:TCINterferer:REFerence:MMODe
+	SOURce<HwInstance>:FSIMulator:TCINterferer:REFerence:PROFile
+	SOURce<HwInstance>:FSIMulator:TCINterferer:REFerence:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.TcInterferer.Reference.Reference
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.fsimulator.tcInterferer.reference.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Fsimulator_TcInterferer_Reference_Delay.rst
+	Source_Fsimulator_TcInterferer_Reference_Fdoppler.rst

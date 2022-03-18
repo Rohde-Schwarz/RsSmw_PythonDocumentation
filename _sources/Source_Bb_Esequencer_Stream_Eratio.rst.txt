@@ -1,0 +1,20 @@
+Eratio
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:ESEQuencer:STReam<TwoStreams>:ERATio
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:ESEQuencer:STReam<TwoStreams>:ERATio
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Esequencer.Stream.Eratio.Eratio
+	:members:
+	:undoc-members:
+	:noindex:

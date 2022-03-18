@@ -1,0 +1,20 @@
+Dt
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:V5G:UL:UE<UserEquipment>:PRACh:SUBF<SubframeNull>:DT
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:V5G:UL:UE<UserEquipment>:PRACh:SUBF<SubframeNull>:DT
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Uplink.Ue.Prach.Subf.Dt.Dt
+	:members:
+	:undoc-members:
+	:noindex:

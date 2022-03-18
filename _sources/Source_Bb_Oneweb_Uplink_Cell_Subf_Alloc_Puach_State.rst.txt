@@ -1,0 +1,20 @@
+State
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:ONEWeb:UL:CELL<CellNull>:SUBF<SubframeNull>:ALLoc<AllocationNull>:PUACh:STATe
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:ONEWeb:UL:CELL<CellNull>:SUBF<SubframeNull>:ALLoc<AllocationNull>:PUACh:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Uplink.Cell.Subf.Alloc.Puach.State.State
+	:members:
+	:undoc-members:
+	:noindex:

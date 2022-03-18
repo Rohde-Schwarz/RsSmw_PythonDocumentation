@@ -1,0 +1,20 @@
+State
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:CORRection:FRESponse:IQ:USER:FLISt<Index>:PHASe:STATe
+
+.. code-block:: python
+
+	SOURce<HwInstance>:CORRection:FRESponse:IQ:USER:FLISt<Index>:PHASe:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Correction.Fresponse.Iq.User.Flist.Phase.State.State
+	:members:
+	:undoc-members:
+	:noindex:

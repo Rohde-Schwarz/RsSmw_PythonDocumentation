@@ -1,0 +1,22 @@
+File
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:IQ:DOHerty:LRF:FILE:DATA
+	single: SOURce<HwInstance>:IQ:DOHerty:LRF:FILE
+
+.. code-block:: python
+
+	SOURce<HwInstance>:IQ:DOHerty:LRF:FILE:DATA
+	SOURce<HwInstance>:IQ:DOHerty:LRF:FILE
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Iq.Doherty.Lrf.File.File
+	:members:
+	:undoc-members:
+	:noindex:

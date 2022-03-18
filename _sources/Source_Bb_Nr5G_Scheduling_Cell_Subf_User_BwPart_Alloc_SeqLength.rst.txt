@@ -1,0 +1,20 @@
+SeqLength
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:NR5G:SCHed:CELL<CellNull>:SUBF<SubframeNull>:USER<UserNull>:BWPart<BwPartNull>:ALLoc<AllocationNull>:SEQLength
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:NR5G:SCHed:CELL<CellNull>:SUBF<SubframeNull>:USER<UserNull>:BWPart<BwPartNull>:ALLoc<AllocationNull>:SEQLength
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Nr5G.Scheduling.Cell.Subf.User.BwPart.Alloc.SeqLength.SeqLength
+	:members:
+	:undoc-members:
+	:noindex:

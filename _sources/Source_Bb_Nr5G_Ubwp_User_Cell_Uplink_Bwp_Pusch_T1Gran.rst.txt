@@ -1,0 +1,20 @@
+T1Gran
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:NR5G:UBWP:USER<UserNull>:CELL<CellNull>:UL:BWP<BwPartNull>:PUSCh:T1GRan
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:NR5G:UBWP:USER<UserNull>:CELL<CellNull>:UL:BWP<BwPartNull>:PUSCh:T1GRan
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Nr5G.Ubwp.User.Cell.Uplink.Bwp.Pusch.T1Gran.T1Gran
+	:members:
+	:undoc-members:
+	:noindex:

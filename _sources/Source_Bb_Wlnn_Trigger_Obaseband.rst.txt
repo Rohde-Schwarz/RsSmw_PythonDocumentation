@@ -1,0 +1,22 @@
+Obaseband
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:WLNN:TRIGger:OBASeband:DELay
+	single: SOURce<HwInstance>:BB:WLNN:TRIGger:OBASeband:INHibit
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:WLNN:TRIGger:OBASeband:DELay
+	SOURce<HwInstance>:BB:WLNN:TRIGger:OBASeband:INHibit
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Wlnn.Trigger.Obaseband.Obaseband
+	:members:
+	:undoc-members:
+	:noindex:

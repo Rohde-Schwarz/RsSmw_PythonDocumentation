@@ -1,0 +1,20 @@
+Status
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:ESEQuencer:RTCI:SEQuencer<Sequencer>:NETWork:STATus
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:ESEQuencer:RTCI:SEQuencer<Sequencer>:NETWork:STATus
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Esequencer.Rtci.Sequencer.Network.Status.Status
+	:members:
+	:undoc-members:
+	:noindex:

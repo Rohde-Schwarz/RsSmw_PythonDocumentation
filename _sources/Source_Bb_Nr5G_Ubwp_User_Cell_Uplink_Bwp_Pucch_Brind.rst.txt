@@ -1,0 +1,20 @@
+Brind
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:NR5G:UBWP:USER<UserNull>:CELL<CellNull>:UL:BWP<BwPartNull>:PUCCh:BRINd
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:NR5G:UBWP:USER<UserNull>:CELL<CellNull>:UL:BWP<BwPartNull>:PUCCh:BRINd
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Nr5G.Ubwp.User.Cell.Uplink.Bwp.Pucch.Brind.Brind
+	:members:
+	:undoc-members:
+	:noindex:

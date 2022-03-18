@@ -1,0 +1,20 @@
+Speed
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:FSIMulator:DELay:GROup<FadingGroup>:PATH<Path>:SPEed
+
+.. code-block:: python
+
+	SOURce<HwInstance>:FSIMulator:DELay:GROup<FadingGroup>:PATH<Path>:SPEed
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.Delay.Group.Path.Speed.Speed
+	:members:
+	:undoc-members:
+	:noindex:

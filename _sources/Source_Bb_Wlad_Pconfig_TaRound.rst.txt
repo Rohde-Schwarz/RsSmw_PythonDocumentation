@@ -1,0 +1,20 @@
+TaRound
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:WLAD:PCONfig:TARound:STATe
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:WLAD:PCONfig:TARound:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Wlad.Pconfig.TaRound.TaRound
+	:members:
+	:undoc-members:
+	:noindex:

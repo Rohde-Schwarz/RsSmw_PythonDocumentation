@@ -1,0 +1,20 @@
+FormatPy
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:V5G:UL:SUBF<SubframeNull>:ALLoc<AllocationNull>:XPUCch:FORMat
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:V5G:UL:SUBF<SubframeNull>:ALLoc<AllocationNull>:XPUCch:FORMat
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Uplink.Subf.Alloc.Xpucch.FormatPy.FormatPy
+	:members:
+	:undoc-members:
+	:noindex:

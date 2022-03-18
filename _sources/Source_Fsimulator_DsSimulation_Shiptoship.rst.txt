@@ -1,0 +1,45 @@
+Shiptoship
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:FSIMulator:DSSimulation:SHIPtoship:PRESet
+	single: SOURce<HwInstance>:FSIMulator:DSSimulation:SHIPtoship:TTIMe
+	single: SOURce<HwInstance>:FSIMulator:DSSimulation:SHIPtoship:XDIStance
+	single: SOURce<HwInstance>:FSIMulator:DSSimulation:SHIPtoship:YDIStance
+
+.. code-block:: python
+
+	SOURce<HwInstance>:FSIMulator:DSSimulation:SHIPtoship:PRESet
+	SOURce<HwInstance>:FSIMulator:DSSimulation:SHIPtoship:TTIMe
+	SOURce<HwInstance>:FSIMulator:DSSimulation:SHIPtoship:XDIStance
+	SOURce<HwInstance>:FSIMulator:DSSimulation:SHIPtoship:YDIStance
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.DsSimulation.Shiptoship.Shiptoship
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.fsimulator.dsSimulation.shiptoship.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Fsimulator_DsSimulation_Shiptoship_Rx.rst
+	Source_Fsimulator_DsSimulation_Shiptoship_Tx.rst
+	Source_Fsimulator_DsSimulation_Shiptoship_Water.rst

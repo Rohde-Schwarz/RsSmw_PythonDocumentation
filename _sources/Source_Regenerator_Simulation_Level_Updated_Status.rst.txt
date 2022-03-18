@@ -1,0 +1,20 @@
+Status
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:REGenerator:SIMulation:LEVel:UPDated:STATus
+
+.. code-block:: python
+
+	SOURce<HwInstance>:REGenerator:SIMulation:LEVel:UPDated:STATus
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Regenerator.Simulation.Level.Updated.Status.Status
+	:members:
+	:undoc-members:
+	:noindex:

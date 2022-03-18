@@ -1,0 +1,20 @@
+Resulting
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:FSIMulator:DELay:GROup<FadingGroup>:PATH<Path>:FDOPpler:RESulting
+
+.. code-block:: python
+
+	SOURce<HwInstance>:FSIMulator:DELay:GROup<FadingGroup>:PATH<Path>:FDOPpler:RESulting
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.Delay.Group.Path.Fdoppler.Resulting.Resulting
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,20 @@
+Cphase
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:FSIMulator:DEL:GROup<FadingGroup>:PATH<Path>:CPHase
+
+.. code-block:: python
+
+	SOURce<HwInstance>:FSIMulator:DEL:GROup<FadingGroup>:PATH<Path>:CPHase
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.DelPy.Group.Path.Cphase.Cphase
+	:members:
+	:undoc-members:
+	:noindex:

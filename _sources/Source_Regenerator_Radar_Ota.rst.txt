@@ -1,0 +1,20 @@
+Ota
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:REGenerator:RADar:OTA:OFFSet
+
+.. code-block:: python
+
+	SOURce<HwInstance>:REGenerator:RADar:OTA:OFFSet
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Regenerator.Radar.Ota.Ota
+	:members:
+	:undoc-members:
+	:noindex:

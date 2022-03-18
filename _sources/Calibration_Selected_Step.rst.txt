@@ -1,0 +1,20 @@
+Step
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: CALibration<HwInstance>:SELected:STEP
+
+.. code-block:: python
+
+	CALibration<HwInstance>:SELected:STEP
+
+
+
+.. autoclass:: RsSmw.Implementations.Calibration.Selected.Step.Step
+	:members:
+	:undoc-members:
+	:noindex:

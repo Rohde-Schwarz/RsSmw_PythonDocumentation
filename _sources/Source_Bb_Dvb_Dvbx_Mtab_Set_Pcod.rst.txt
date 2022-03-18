@@ -1,0 +1,20 @@
+Pcod
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:DVB:DVBX:MTAB:SET<ModCodSet>:PCOD
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:DVB:DVBX:MTAB:SET<ModCodSet>:PCOD
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dvb.Dvbx.Mtab.Set.Pcod.Pcod
+	:members:
+	:undoc-members:
+	:noindex:

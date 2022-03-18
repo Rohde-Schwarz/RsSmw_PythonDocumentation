@@ -1,0 +1,20 @@
+PrFormat
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:ONEWeb:UL:UE<UserEquipment>:PRACh:PRFormat
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:ONEWeb:UL:UE<UserEquipment>:PRACh:PRFormat
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Uplink.Ue.Prach.PrFormat.PrFormat
+	:members:
+	:undoc-members:
+	:noindex:

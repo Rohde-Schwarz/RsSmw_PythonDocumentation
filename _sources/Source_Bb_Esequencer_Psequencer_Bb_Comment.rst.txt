@@ -1,0 +1,20 @@
+Comment
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:ESEQuencer:PSEQuencer:BB<Baseband>:COMMent
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:ESEQuencer:PSEQuencer:BB<Baseband>:COMMent
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Esequencer.Psequencer.Bb.Comment.Comment
+	:members:
+	:undoc-members:
+	:noindex:

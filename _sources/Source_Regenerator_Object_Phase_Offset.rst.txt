@@ -1,0 +1,20 @@
+Offset
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:REGenerator:OBJect<ObjectIx>:PHASe:OFFSet
+
+.. code-block:: python
+
+	SOURce<HwInstance>:REGenerator:OBJect<ObjectIx>:PHASe:OFFSet
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Regenerator.Object.Phase.Offset.Offset
+	:members:
+	:undoc-members:
+	:noindex:

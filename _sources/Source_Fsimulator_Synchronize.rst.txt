@@ -1,0 +1,20 @@
+Synchronize
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce:FSIMulator:SYNChronize:STATe
+
+.. code-block:: python
+
+	SOURce:FSIMulator:SYNChronize:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.Synchronize.Synchronize
+	:members:
+	:undoc-members:
+	:noindex:

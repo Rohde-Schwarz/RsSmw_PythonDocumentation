@@ -1,0 +1,48 @@
+Prss
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:ONEWeb:DL:PRSS:BW
+	single: SOURce<HwInstance>:BB:ONEWeb:DL:PRSS:CI
+	single: SOURce<HwInstance>:BB:ONEWeb:DL:PRSS:DPRS
+	single: SOURce<HwInstance>:BB:ONEWeb:DL:PRSS:NPRS
+	single: SOURce<HwInstance>:BB:ONEWeb:DL:PRSS:POW
+	single: SOURce<HwInstance>:BB:ONEWeb:DL:PRSS:STATe
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:ONEWeb:DL:PRSS:BW
+	SOURce<HwInstance>:BB:ONEWeb:DL:PRSS:CI
+	SOURce<HwInstance>:BB:ONEWeb:DL:PRSS:DPRS
+	SOURce<HwInstance>:BB:ONEWeb:DL:PRSS:NPRS
+	SOURce<HwInstance>:BB:ONEWeb:DL:PRSS:POW
+	SOURce<HwInstance>:BB:ONEWeb:DL:PRSS:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Downlink.Prss.Prss
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.oneweb.downlink.prss.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Oneweb_Downlink_Prss_MiPattern.rst
+	Source_Bb_Oneweb_Downlink_Prss_Tprs.rst

@@ -1,0 +1,20 @@
+Dregs
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:V5G:DL:SUBF<SubframeNull>:ENCC:XPDCch:DREGs
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:V5G:DL:SUBF<SubframeNull>:ENCC:XPDCch:DREGs
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Downlink.Subf.Encc.Xpdcch.Dregs.Dregs
+	:members:
+	:undoc-members:
+	:noindex:

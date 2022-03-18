@@ -1,0 +1,20 @@
+Start
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:REGenerator:OBJect<ObjectIx>:RANGe:STARt
+
+.. code-block:: python
+
+	SOURce<HwInstance>:REGenerator:OBJect<ObjectIx>:RANGe:STARt
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Regenerator.Object.Range.Start.Start
+	:members:
+	:undoc-members:
+	:noindex:

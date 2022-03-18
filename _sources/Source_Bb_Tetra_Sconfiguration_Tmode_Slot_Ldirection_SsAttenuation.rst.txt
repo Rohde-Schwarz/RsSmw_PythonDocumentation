@@ -1,0 +1,20 @@
+SsAttenuation
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:TETRa:SCONfiguration:TMODe<TestMode>:SLOT<Slot>:LDIRection<Channel>:SSATtenuation
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:TETRa:SCONfiguration:TMODe<TestMode>:SLOT<Slot>:LDIRection<Channel>:SSATtenuation
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Tetra.Sconfiguration.Tmode.Slot.Ldirection.SsAttenuation.SsAttenuation
+	:members:
+	:undoc-members:
+	:noindex:

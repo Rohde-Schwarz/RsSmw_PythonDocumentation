@@ -1,0 +1,20 @@
+Pmi
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:V5G:DL:SUBF<SubframeNull>:ENCC:XPDCch:EXTC:ITEM<ItemNull>:DCIConf:PMI
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:V5G:DL:SUBF<SubframeNull>:ENCC:XPDCch:EXTC:ITEM<ItemNull>:DCIConf:PMI
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Downlink.Subf.Encc.Xpdcch.Extc.Item.DciConf.Pmi.Pmi
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,20 @@
+FrsTime
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:DVB:DVBR:SFConfig<SfCfgIxNull>:FRConfig<FrCfgIxNull>:FRSTime
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:DVB:DVBR:SFConfig<SfCfgIxNull>:FRConfig<FrCfgIxNull>:FRSTime
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dvb.Dvbr.SfConfig.FrConfig.FrsTime.FrsTime
+	:members:
+	:undoc-members:
+	:noindex:

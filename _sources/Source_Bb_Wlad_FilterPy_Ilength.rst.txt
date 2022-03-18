@@ -1,0 +1,22 @@
+Ilength
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:WLAD:FILTer:ILENgth:AUTO
+	single: SOURce<HwInstance>:BB:WLAD:FILTer:ILENgth
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:WLAD:FILTer:ILENgth:AUTO
+	SOURce<HwInstance>:BB:WLAD:FILTer:ILENgth
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Wlad.FilterPy.Ilength.Ilength
+	:members:
+	:undoc-members:
+	:noindex:

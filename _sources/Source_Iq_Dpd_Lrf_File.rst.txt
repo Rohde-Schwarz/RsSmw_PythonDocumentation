@@ -1,0 +1,22 @@
+File
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:IQ:DPD:LRF:FILE:DATA
+	single: SOURce<HwInstance>:IQ:DPD:LRF:FILE
+
+.. code-block:: python
+
+	SOURce<HwInstance>:IQ:DPD:LRF:FILE:DATA
+	SOURce<HwInstance>:IQ:DPD:LRF:FILE
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Iq.Dpd.Lrf.File.File
+	:members:
+	:undoc-members:
+	:noindex:

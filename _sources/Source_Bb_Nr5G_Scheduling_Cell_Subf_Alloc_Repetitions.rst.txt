@@ -1,0 +1,20 @@
+Repetitions
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:NR5G:SCHed:CELL<CellNull>:SUBF<SubframeNull>:ALLoc<AllocationNull>:REPetitions
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:NR5G:SCHed:CELL<CellNull>:SUBF<SubframeNull>:ALLoc<AllocationNull>:REPetitions
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Nr5G.Scheduling.Cell.Subf.Alloc.Repetitions.Repetitions
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,24 @@
+Clipping
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:TETRa:CLIPping:LEVel
+	single: SOURce<HwInstance>:BB:TETRa:CLIPping:MODE
+	single: SOURce<HwInstance>:BB:TETRa:CLIPping:STATe
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:TETRa:CLIPping:LEVel
+	SOURce<HwInstance>:BB:TETRa:CLIPping:MODE
+	SOURce<HwInstance>:BB:TETRa:CLIPping:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Tetra.Clipping.Clipping
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,20 @@
+Uplane
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:EUTRa:UPLane:STATe
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:EUTRa:UPLane:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Eutra.Uplane.Uplane
+	:members:
+	:undoc-members:
+	:noindex:

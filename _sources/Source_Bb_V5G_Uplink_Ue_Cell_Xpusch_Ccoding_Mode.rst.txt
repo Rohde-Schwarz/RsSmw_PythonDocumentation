@@ -1,0 +1,20 @@
+Mode
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:V5G:UL:UE<UserEquipment>:CELL<CellNull>:XPUSch:CCODing:MODE
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:V5G:UL:UE<UserEquipment>:CELL<CellNull>:XPUSch:CCODing:MODE
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Uplink.Ue.Cell.Xpusch.Ccoding.Mode.Mode
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,20 @@
+Ccoding
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce:BB:W3GPp:TS25141:WSIGnal:PRACh:CCODing:TYPE
+
+.. code-block:: python
+
+	SOURce:BB:W3GPp:TS25141:WSIGnal:PRACh:CCODing:TYPE
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.W3Gpp.Ts25141.Wsignal.Prach.Ccoding.Ccoding
+	:members:
+	:undoc-members:
+	:noindex:

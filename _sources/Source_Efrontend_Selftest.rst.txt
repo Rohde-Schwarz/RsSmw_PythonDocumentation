@@ -1,0 +1,22 @@
+Selftest
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:EFRontend:SELFtest
+	single: SOURce<HwInstance>:EFRontend:SELFtest:RESult
+
+.. code-block:: python
+
+	SOURce<HwInstance>:EFRontend:SELFtest
+	SOURce<HwInstance>:EFRontend:SELFtest:RESult
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Efrontend.Selftest.Selftest
+	:members:
+	:undoc-members:
+	:noindex:

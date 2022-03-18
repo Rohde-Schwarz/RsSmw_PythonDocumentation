@@ -1,0 +1,22 @@
+Simulation
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:FREQuency:CONVerter:EXTernal:SIMulation:COUNt
+	single: SOURce<HwInstance>:FREQuency:CONVerter:EXTernal:SIMulation:STATe
+
+.. code-block:: python
+
+	SOURce<HwInstance>:FREQuency:CONVerter:EXTernal:SIMulation:COUNt
+	SOURce<HwInstance>:FREQuency:CONVerter:EXTernal:SIMulation:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Frequency.Converter.External.Simulation.Simulation
+	:members:
+	:undoc-members:
+	:noindex:

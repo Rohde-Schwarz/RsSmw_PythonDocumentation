@@ -1,0 +1,20 @@
+Cbci
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:ONEWeb:DL:USER<UserIx>:APM:CBCI
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:ONEWeb:DL:USER<UserIx>:APM:CBCI
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Downlink.User.Apm.Cbci.Cbci
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,20 @@
+Dpatterns
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:NR5G:SCHed:CELL<CellNull>:SUBF<SubframeNull>:USER<UserNull>:BWPart<BwPartNull>:ALLoc<AllocationNull>:SCI:DPATterns
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:NR5G:SCHed:CELL<CellNull>:SUBF<SubframeNull>:USER<UserNull>:BWPart<BwPartNull>:ALLoc<AllocationNull>:SCI:DPATterns
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Nr5G.Scheduling.Cell.Subf.User.BwPart.Alloc.Sci.Dpatterns.Dpatterns
+	:members:
+	:undoc-members:
+	:noindex:

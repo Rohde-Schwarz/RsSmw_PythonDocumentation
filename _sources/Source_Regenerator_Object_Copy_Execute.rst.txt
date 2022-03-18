@@ -1,0 +1,20 @@
+Execute
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:REGenerator:OBJect:COPY:EXECute
+
+.. code-block:: python
+
+	SOURce<HwInstance>:REGenerator:OBJect:COPY:EXECute
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Regenerator.Object.Copy.Execute.Execute
+	:members:
+	:undoc-members:
+	:noindex:

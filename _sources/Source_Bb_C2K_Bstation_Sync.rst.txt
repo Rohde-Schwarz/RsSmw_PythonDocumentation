@@ -1,0 +1,32 @@
+Sync
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:C2K:BSTation:SYNC:CNUMber
+	single: SOURce<HwInstance>:BB:C2K:BSTation:SYNC:LCSTate
+	single: SOURce<HwInstance>:BB:C2K:BSTation:SYNC:MPRev
+	single: SOURce<HwInstance>:BB:C2K:BSTation:SYNC:NID
+	single: SOURce<HwInstance>:BB:C2K:BSTation:SYNC:PREV
+	single: SOURce<HwInstance>:BB:C2K:BSTation:SYNC:SID
+	single: SOURce<HwInstance>:BB:C2K:BSTation:SYNC:STIMe
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:C2K:BSTation:SYNC:CNUMber
+	SOURce<HwInstance>:BB:C2K:BSTation:SYNC:LCSTate
+	SOURce<HwInstance>:BB:C2K:BSTation:SYNC:MPRev
+	SOURce<HwInstance>:BB:C2K:BSTation:SYNC:NID
+	SOURce<HwInstance>:BB:C2K:BSTation:SYNC:PREV
+	SOURce<HwInstance>:BB:C2K:BSTation:SYNC:SID
+	SOURce<HwInstance>:BB:C2K:BSTation:SYNC:STIMe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.C2K.Bstation.Sync.Sync
+	:members:
+	:undoc-members:
+	:noindex:

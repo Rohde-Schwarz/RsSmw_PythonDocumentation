@@ -1,0 +1,20 @@
+Ar9
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:NR5G:SCHed:CELL<CellNull>:SUBF<SubframeNull>:USER<UserNull>:BWPart<BwPartNull>:ALLoc<AllocationNull>:CS:DCI<IndexNull>:AR9
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:NR5G:SCHed:CELL<CellNull>:SUBF<SubframeNull>:USER<UserNull>:BWPart<BwPartNull>:ALLoc<AllocationNull>:CS:DCI<IndexNull>:AR9
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Nr5G.Scheduling.Cell.Subf.User.BwPart.Alloc.Cs.Dci.Ar9.Ar9
+	:members:
+	:undoc-members:
+	:noindex:

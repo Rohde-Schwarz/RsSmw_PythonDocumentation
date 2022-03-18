@@ -1,0 +1,20 @@
+Pattern
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:V5G:UL:UE<UserEquipment>:CELL<CellNull>:XPUSch:PATTern
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:V5G:UL:UE<UserEquipment>:CELL<CellNull>:XPUSch:PATTern
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Uplink.Ue.Cell.Xpusch.Pattern.Pattern
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,20 @@
+Binterleaver
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:DVB:DVBX:BINTerleaver:STATe
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:DVB:DVBX:BINTerleaver:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dvb.Dvbx.Binterleaver.Binterleaver
+	:members:
+	:undoc-members:
+	:noindex:

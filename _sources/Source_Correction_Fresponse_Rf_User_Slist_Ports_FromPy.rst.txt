@@ -1,0 +1,20 @@
+FromPy
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:CORRection:FRESponse:RF:USER:SLISt<Index>:PORTs:FROM
+
+.. code-block:: python
+
+	SOURce<HwInstance>:CORRection:FRESponse:RF:USER:SLISt<Index>:PORTs:FROM
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Correction.Fresponse.Rf.User.Slist.Ports.FromPy.FromPy
+	:members:
+	:undoc-members:
+	:noindex:

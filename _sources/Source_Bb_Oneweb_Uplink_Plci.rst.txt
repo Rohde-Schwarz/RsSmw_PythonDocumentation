@@ -1,0 +1,24 @@
+Plci
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:ONEWeb:UL:PLCI:CID
+	single: SOURce<HwInstance>:BB:ONEWeb:UL:PLCI:CIDGroup
+	single: SOURce<HwInstance>:BB:ONEWeb:UL:PLCI:PLID
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:ONEWeb:UL:PLCI:CID
+	SOURce<HwInstance>:BB:ONEWeb:UL:PLCI:CIDGroup
+	SOURce<HwInstance>:BB:ONEWeb:UL:PLCI:PLID
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Uplink.Plci.Plci
+	:members:
+	:undoc-members:
+	:noindex:

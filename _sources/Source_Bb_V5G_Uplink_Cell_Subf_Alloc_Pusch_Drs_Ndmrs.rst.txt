@@ -1,0 +1,36 @@
+Ndmrs<LayerNull>
+----------------------------------------
+
+.. rubric:: RepCap Settings
+
+.. code-block:: python
+
+	# Range: Nr0 .. Nr7
+	rc = driver.source.bb.v5G.uplink.cell.subf.alloc.pusch.drs.ndmrs.repcap_layerNull_get()
+	driver.source.bb.v5G.uplink.cell.subf.alloc.pusch.drs.ndmrs.repcap_layerNull_set(repcap.LayerNull.Nr0)
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:V5G:UL:CELL<CellNull>:SUBF<SubframeNull>:ALLoc<AllocationNull>:PUSCh:DRS:NDMRs<LayerNull>
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:V5G:UL:CELL<CellNull>:SUBF<SubframeNull>:ALLoc<AllocationNull>:PUSCh:DRS:NDMRs<LayerNull>
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Uplink.Cell.Subf.Alloc.Pusch.Drs.Ndmrs.Ndmrs
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.v5G.uplink.cell.subf.alloc.pusch.drs.ndmrs.clone()

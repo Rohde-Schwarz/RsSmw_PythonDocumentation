@@ -1,0 +1,20 @@
+Exec
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:ESEQuencer:DFINding:SEQuencer<Sequencer>:STReam:EXEC
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:ESEQuencer:DFINding:SEQuencer<Sequencer>:STReam:EXEC
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Esequencer.Dfinding.Sequencer.Stream.Exec.Exec
+	:members:
+	:undoc-members:
+	:noindex:

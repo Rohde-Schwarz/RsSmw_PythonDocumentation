@@ -1,0 +1,20 @@
+Nactive
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:DVB:DVBX:BHConfig:NACTive:STATe
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:DVB:DVBX:BHConfig:NACTive:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dvb.Dvbx.BhConfig.Nactive.Nactive
+	:members:
+	:undoc-members:
+	:noindex:

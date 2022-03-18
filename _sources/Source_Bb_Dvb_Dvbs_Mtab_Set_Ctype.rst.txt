@@ -1,0 +1,20 @@
+Ctype
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:DVB:DVBS:MTAB:SET<ModCodSet>:CTYPe
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:DVB:DVBS:MTAB:SET<ModCodSet>:CTYPe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dvb.Dvbs.Mtab.Set.Ctype.Ctype
+	:members:
+	:undoc-members:
+	:noindex:

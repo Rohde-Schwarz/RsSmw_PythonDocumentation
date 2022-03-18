@@ -1,0 +1,22 @@
+Obaseband
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:LORA:TRIGger:OBASeband:DELay
+	single: SOURce<HwInstance>:BB:LORA:TRIGger:OBASeband:INHibit
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:LORA:TRIGger:OBASeband:DELay
+	SOURce<HwInstance>:BB:LORA:TRIGger:OBASeband:INHibit
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Lora.Trigger.Obaseband.Obaseband
+	:members:
+	:undoc-members:
+	:noindex:

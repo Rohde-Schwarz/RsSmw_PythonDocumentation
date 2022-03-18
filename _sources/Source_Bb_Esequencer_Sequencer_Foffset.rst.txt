@@ -1,0 +1,20 @@
+Foffset
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:ESEQuencer:SEQuencer<Sequencer>:FOFFset
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:ESEQuencer:SEQuencer<Sequencer>:FOFFset
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Esequencer.Sequencer.Foffset.Foffset
+	:members:
+	:undoc-members:
+	:noindex:

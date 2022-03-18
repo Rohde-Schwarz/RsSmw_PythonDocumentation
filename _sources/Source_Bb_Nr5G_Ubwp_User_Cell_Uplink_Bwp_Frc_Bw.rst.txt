@@ -1,0 +1,20 @@
+Bw
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:NR5G:UBWP:USER<UserNull>:CELL<CellNull>:UL:BWP<BwPartNull>:FRC:BW
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:NR5G:UBWP:USER<UserNull>:CELL<CellNull>:UL:BWP<BwPartNull>:FRC:BW
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Nr5G.Ubwp.User.Cell.Uplink.Bwp.Frc.Bw.Bw
+	:members:
+	:undoc-members:
+	:noindex:

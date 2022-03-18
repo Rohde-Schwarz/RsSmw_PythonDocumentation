@@ -1,0 +1,20 @@
+PrIndex
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:ONEWeb:DL:SUBF<SubframeNull>:ENCC:PDCCh:EXTC:ITEM<ItemNull>:DCIConf:PRACh:PRINdex
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:ONEWeb:DL:SUBF<SubframeNull>:ENCC:PDCCh:EXTC:ITEM<ItemNull>:DCIConf:PRACh:PRINdex
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Downlink.Subf.Encc.Pdcch.Extc.Item.DciConf.Prach.PrIndex.PrIndex
+	:members:
+	:undoc-members:
+	:noindex:

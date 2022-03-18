@@ -1,0 +1,20 @@
+Mod
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:NR5G:UBWP:USER<UserNull>:CELL<CellNull>:DL:BWP<BwPartNull>:PDSCh:PREC:MOD
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:NR5G:UBWP:USER<UserNull>:CELL<CellNull>:DL:BWP<BwPartNull>:PDSCh:PREC:MOD
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Nr5G.Ubwp.User.Cell.Downlink.Bwp.Pdsch.Prec.Mod.Mod
+	:members:
+	:undoc-members:
+	:noindex:

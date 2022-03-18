@@ -1,0 +1,20 @@
+MinRange
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:REGenerator:SIMulation:MINRange:STATe
+
+.. code-block:: python
+
+	SOURce<HwInstance>:REGenerator:SIMulation:MINRange:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Regenerator.Simulation.MinRange.MinRange
+	:members:
+	:undoc-members:
+	:noindex:

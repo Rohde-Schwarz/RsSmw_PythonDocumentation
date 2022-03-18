@@ -1,0 +1,20 @@
+Coupling
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: CALibration<HwInstance>:LOSCillator:COUPling:LOCal
+
+.. code-block:: python
+
+	CALibration<HwInstance>:LOSCillator:COUPling:LOCal
+
+
+
+.. autoclass:: RsSmw.Implementations.Calibration.Loscillator.Coupling.Coupling
+	:members:
+	:undoc-members:
+	:noindex:

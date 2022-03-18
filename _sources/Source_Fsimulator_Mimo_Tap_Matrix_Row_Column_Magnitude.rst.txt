@@ -1,0 +1,20 @@
+Magnitude
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:FSIMulator:MIMO:TAP<MimoTap>:MATRix:ROW<Row>:COLumn<Column>:MAGNitude
+
+.. code-block:: python
+
+	SOURce<HwInstance>:FSIMulator:MIMO:TAP<MimoTap>:MATRix:ROW<Row>:COLumn<Column>:MAGNitude
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.Mimo.Tap.Matrix.Row.Column.Magnitude.Magnitude
+	:members:
+	:undoc-members:
+	:noindex:

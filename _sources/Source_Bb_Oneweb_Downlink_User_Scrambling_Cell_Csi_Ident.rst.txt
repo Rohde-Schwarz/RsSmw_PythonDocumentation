@@ -1,0 +1,20 @@
+Ident
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:ONEWeb:DL:USER<UserIx>:SCRambling:CELL<Cell>:CSI:IDENt
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:ONEWeb:DL:USER<UserIx>:SCRambling:CELL<Cell>:CSI:IDENt
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Downlink.User.Scrambling.Cell.Csi.Ident.Ident
+	:members:
+	:undoc-members:
+	:noindex:

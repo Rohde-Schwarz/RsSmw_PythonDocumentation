@@ -1,0 +1,20 @@
+State
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:DVB:DVBS:MTAB:SET<ModCodSet>:PSTate:STATe
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:DVB:DVBS:MTAB:SET<ModCodSet>:PSTate:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dvb.Dvbs.Mtab.Set.Pstate.State.State
+	:members:
+	:undoc-members:
+	:noindex:

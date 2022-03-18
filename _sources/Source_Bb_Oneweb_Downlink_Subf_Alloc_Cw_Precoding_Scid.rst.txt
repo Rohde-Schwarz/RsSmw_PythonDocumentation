@@ -1,0 +1,20 @@
+Scid
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:ONEWeb:DL:SUBF<SubframeNull>:ALLoc<AllocationNull>:CW<Codeword>:PRECoding:SCID
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:ONEWeb:DL:SUBF<SubframeNull>:ALLoc<AllocationNull>:CW<Codeword>:PRECoding:SCID
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Downlink.Subf.Alloc.Cw.Precoding.Scid.Scid
+	:members:
+	:undoc-members:
+	:noindex:

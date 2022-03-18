@@ -1,0 +1,20 @@
+Antenna
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:FSIMulator:DSSimulation:SHIPtoship:TX:ANTenna:HEIGht
+
+.. code-block:: python
+
+	SOURce<HwInstance>:FSIMulator:DSSimulation:SHIPtoship:TX:ANTenna:HEIGht
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.DsSimulation.Shiptoship.Tx.Antenna.Antenna
+	:members:
+	:undoc-members:
+	:noindex:

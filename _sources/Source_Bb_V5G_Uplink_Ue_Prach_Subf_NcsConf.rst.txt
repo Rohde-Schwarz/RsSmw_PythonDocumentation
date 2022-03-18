@@ -1,0 +1,20 @@
+NcsConf
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:V5G:UL:UE<UserEquipment>:PRACh:SUBF<SubframeNull>:NCSConf
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:V5G:UL:UE<UserEquipment>:PRACh:SUBF<SubframeNull>:NCSConf
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Uplink.Ue.Prach.Subf.NcsConf.NcsConf
+	:members:
+	:undoc-members:
+	:noindex:

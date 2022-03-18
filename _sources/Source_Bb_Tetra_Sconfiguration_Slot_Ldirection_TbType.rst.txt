@@ -1,0 +1,20 @@
+TbType
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:TETRa:SCONfiguration:SLOT<Slot>:LDIRection<Channel>:TBTYpe
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:TETRa:SCONfiguration:SLOT<Slot>:LDIRection<Channel>:TBTYpe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Tetra.Sconfiguration.Slot.Ldirection.TbType.TbType
+	:members:
+	:undoc-members:
+	:noindex:

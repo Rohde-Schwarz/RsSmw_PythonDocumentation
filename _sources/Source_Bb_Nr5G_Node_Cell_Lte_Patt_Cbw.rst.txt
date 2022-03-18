@@ -1,0 +1,20 @@
+Cbw
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:NR5G:NODE:CELL<CellNull>:LTE:PATT<PatternNull>:CBW
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:NR5G:NODE:CELL<CellNull>:LTE:PATT<PatternNull>:CBW
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Nr5G.Node.Cell.Lte.Patt.Cbw.Cbw
+	:members:
+	:undoc-members:
+	:noindex:

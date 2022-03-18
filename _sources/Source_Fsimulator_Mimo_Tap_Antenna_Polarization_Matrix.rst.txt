@@ -1,0 +1,20 @@
+Matrix
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:FSIMulator:MIMO:TAP<MimoTap>:ANTenna:POLarization:MATRix
+
+.. code-block:: python
+
+	SOURce<HwInstance>:FSIMulator:MIMO:TAP<MimoTap>:ANTenna:POLarization:MATRix
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.Mimo.Tap.Antenna.Polarization.Matrix.Matrix
+	:members:
+	:undoc-members:
+	:noindex:

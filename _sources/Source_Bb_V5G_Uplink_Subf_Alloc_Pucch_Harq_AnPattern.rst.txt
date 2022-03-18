@@ -1,0 +1,20 @@
+AnPattern
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:V5G:UL:SUBF<SubframeNull>:ALLoc<AllocationNull>:PUCCh:HARQ:ANPattern
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:V5G:UL:SUBF<SubframeNull>:ALLoc<AllocationNull>:PUCCh:HARQ:ANPattern
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Uplink.Subf.Alloc.Pucch.Harq.AnPattern.AnPattern
+	:members:
+	:undoc-members:
+	:noindex:

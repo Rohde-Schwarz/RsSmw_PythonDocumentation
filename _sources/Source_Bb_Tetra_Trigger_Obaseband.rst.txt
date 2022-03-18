@@ -1,0 +1,22 @@
+Obaseband
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:TETRa:TRIGger:OBASeband:DELay
+	single: SOURce<HwInstance>:BB:TETRa:TRIGger:OBASeband:INHibit
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:TETRa:TRIGger:OBASeband:DELay
+	SOURce<HwInstance>:BB:TETRa:TRIGger:OBASeband:INHibit
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Tetra.Trigger.Obaseband.Obaseband
+	:members:
+	:undoc-members:
+	:noindex:

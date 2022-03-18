@@ -1,0 +1,20 @@
+TypePy
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SENSe<Channel>:POWer:FILTer:TYPE
+
+.. code-block:: python
+
+	SENSe<Channel>:POWer:FILTer:TYPE
+
+
+
+.. autoclass:: RsSmw.Implementations.Sense.Power.FilterPy.TypePy.TypePy
+	:members:
+	:undoc-members:
+	:noindex:

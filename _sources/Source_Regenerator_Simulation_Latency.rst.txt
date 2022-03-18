@@ -1,0 +1,20 @@
+Latency
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:REGenerator:SIMulation:LATency:BZ
+
+.. code-block:: python
+
+	SOURce<HwInstance>:REGenerator:SIMulation:LATency:BZ
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Regenerator.Simulation.Latency.Latency
+	:members:
+	:undoc-members:
+	:noindex:

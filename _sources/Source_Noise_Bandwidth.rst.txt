@@ -1,0 +1,22 @@
+Bandwidth
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:NOISe:BWIDth:STATe
+	single: SOURce<HwInstance>:NOISe:BANDwidth
+
+.. code-block:: python
+
+	SOURce<HwInstance>:NOISe:BWIDth:STATe
+	SOURce<HwInstance>:NOISe:BANDwidth
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Noise.Bandwidth.Bandwidth
+	:members:
+	:undoc-members:
+	:noindex:

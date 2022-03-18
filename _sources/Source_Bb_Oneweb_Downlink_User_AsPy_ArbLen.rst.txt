@@ -1,0 +1,20 @@
+ArbLen
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:ONEWeb:DL:USER<UserIx>:AS:ARBLen
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:ONEWeb:DL:USER<UserIx>:AS:ARBLen
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Downlink.User.AsPy.ArbLen.ArbLen
+	:members:
+	:undoc-members:
+	:noindex:

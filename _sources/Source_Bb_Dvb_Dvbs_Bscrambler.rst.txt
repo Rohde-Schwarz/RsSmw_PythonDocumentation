@@ -1,0 +1,20 @@
+Bscrambler
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:DVB:DVBS:BSCRambler:STATe
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:DVB:DVBS:BSCRambler:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dvb.Dvbs.Bscrambler.Bscrambler
+	:members:
+	:undoc-members:
+	:noindex:

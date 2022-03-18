@@ -1,0 +1,20 @@
+Nscid
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:V5G:DL:SUBF<SubframeNull>:ALLoc<AllocationNull>:XPDSch:NSCid
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:V5G:DL:SUBF<SubframeNull>:ALLoc<AllocationNull>:XPDSch:NSCid
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Downlink.Subf.Alloc.Xpdsch.Nscid.Nscid
+	:members:
+	:undoc-members:
+	:noindex:

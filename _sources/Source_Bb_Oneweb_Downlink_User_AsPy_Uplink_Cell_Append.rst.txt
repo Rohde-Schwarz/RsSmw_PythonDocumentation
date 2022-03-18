@@ -1,0 +1,20 @@
+Append
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:ONEWeb:DL:USER<UserIx>:AS:UL:CELL<CellNull>:APPend
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:ONEWeb:DL:USER<UserIx>:AS:UL:CELL<CellNull>:APPend
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Downlink.User.AsPy.Uplink.Cell.Append.Append
+	:members:
+	:undoc-members:
+	:noindex:

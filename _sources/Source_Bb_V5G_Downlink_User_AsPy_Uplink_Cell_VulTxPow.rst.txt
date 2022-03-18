@@ -1,0 +1,20 @@
+VulTxPow
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:V5G:DL:USER<UserIx>:AS:UL:CELL<CellNull>:VULTxpow
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:V5G:DL:USER<UserIx>:AS:UL:CELL<CellNull>:VULTxpow
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Downlink.User.AsPy.Uplink.Cell.VulTxPow.VulTxPow
+	:members:
+	:undoc-members:
+	:noindex:

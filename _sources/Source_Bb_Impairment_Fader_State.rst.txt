@@ -1,0 +1,20 @@
+State
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce:BB:IMPairment:FADer<DigitalIq>:STATe
+
+.. code-block:: python
+
+	SOURce:BB:IMPairment:FADer<DigitalIq>:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Impairment.Fader.State.State
+	:members:
+	:undoc-members:
+	:noindex:

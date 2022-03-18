@@ -1,0 +1,20 @@
+DaFormat
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:V5G:DL:SUBF<SubframeNull>:ALLoc<AllocationNull>:PRECoding:DAFormat
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:V5G:DL:SUBF<SubframeNull>:ALLoc<AllocationNull>:PRECoding:DAFormat
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Downlink.Subf.Alloc.Precoding.DaFormat.DaFormat
+	:members:
+	:undoc-members:
+	:noindex:

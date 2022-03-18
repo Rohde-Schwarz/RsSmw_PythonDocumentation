@@ -1,0 +1,20 @@
+Q1
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:DVB:DVBR:SFConfig<SfCfgIxNull>:FRConfig<FrCfgIxNull>:SEC<IndexNull>:Q1
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:DVB:DVBR:SFConfig<SfCfgIxNull>:FRConfig<FrCfgIxNull>:SEC<IndexNull>:Q1
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dvb.Dvbr.SfConfig.FrConfig.Sec.Q1.Q1
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,30 @@
+Noise
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:EUTRa:NOISe:NOC1
+	single: SOURce<HwInstance>:BB:EUTRa:NOISe:NOC2
+	single: SOURce<HwInstance>:BB:EUTRa:NOISe:NOC3
+	single: SOURce<HwInstance>:BB:EUTRa:NOISe:STATe
+	single: SOURce<HwInstance>:BB:EUTRa:NOISe:TMODel
+	single: SOURce<HwInstance>:BB:EUTRa:NOISe:UMODe
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:EUTRa:NOISe:NOC1
+	SOURce<HwInstance>:BB:EUTRa:NOISe:NOC2
+	SOURce<HwInstance>:BB:EUTRa:NOISe:NOC3
+	SOURce<HwInstance>:BB:EUTRa:NOISe:STATe
+	SOURce<HwInstance>:BB:EUTRa:NOISe:TMODel
+	SOURce<HwInstance>:BB:EUTRa:NOISe:UMODe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Eutra.Noise.Noise
+	:members:
+	:undoc-members:
+	:noindex:

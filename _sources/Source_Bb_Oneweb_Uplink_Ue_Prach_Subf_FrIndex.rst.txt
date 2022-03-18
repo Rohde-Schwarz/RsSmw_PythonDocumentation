@@ -1,0 +1,20 @@
+FrIndex
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:ONEWeb:UL:UE<UserEquipment>:PRACh:SUBF<SubframeNull>:FRINdex
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:ONEWeb:UL:UE<UserEquipment>:PRACh:SUBF<SubframeNull>:FRINdex
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Uplink.Ue.Prach.Subf.FrIndex.FrIndex
+	:members:
+	:undoc-members:
+	:noindex:

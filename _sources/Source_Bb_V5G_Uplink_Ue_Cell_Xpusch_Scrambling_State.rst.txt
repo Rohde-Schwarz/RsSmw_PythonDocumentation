@@ -1,0 +1,20 @@
+State
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:V5G:UL:UE<UserEquipment>:CELL<CellNull>:XPUSch:SCRambling:STATe
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:V5G:UL:UE<UserEquipment>:CELL<CellNull>:XPUSch:SCRambling:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Uplink.Ue.Cell.Xpusch.Scrambling.State.State
+	:members:
+	:undoc-members:
+	:noindex:

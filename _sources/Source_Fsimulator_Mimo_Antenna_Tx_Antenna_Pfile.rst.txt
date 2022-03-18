@@ -1,0 +1,20 @@
+Pfile
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:FSIMulator:MIMO:ANTenna:TX:ANTenna<Index>:PFILe
+
+.. code-block:: python
+
+	SOURce<HwInstance>:FSIMulator:MIMO:ANTenna:TX:ANTenna<Index>:PFILe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.Mimo.Antenna.Tx.Antenna.Pfile.Pfile
+	:members:
+	:undoc-members:
+	:noindex:

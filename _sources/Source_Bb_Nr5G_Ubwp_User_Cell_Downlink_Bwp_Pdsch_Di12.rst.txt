@@ -1,0 +1,20 @@
+Di12
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:NR5G:UBWP:USER<UserNull>:CELL<CellNull>:DL:BWP<BwPartNull>:PDSCh:DI12
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:NR5G:UBWP:USER<UserNull>:CELL<CellNull>:DL:BWP<BwPartNull>:PDSCh:DI12
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Nr5G.Ubwp.User.Cell.Downlink.Bwp.Pdsch.Di12.Di12
+	:members:
+	:undoc-members:
+	:noindex:

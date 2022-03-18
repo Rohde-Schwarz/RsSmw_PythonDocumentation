@@ -1,0 +1,20 @@
+Ncces
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:V5G:DL:SUBF<SubframeNull>:ENCC:XPDCch:EXTC:ITEM<ItemNull>:NCCes
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:V5G:DL:SUBF<SubframeNull>:ENCC:XPDCch:EXTC:ITEM<ItemNull>:NCCes
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Downlink.Subf.Encc.Xpdcch.Extc.Item.Ncces.Ncces
+	:members:
+	:undoc-members:
+	:noindex:

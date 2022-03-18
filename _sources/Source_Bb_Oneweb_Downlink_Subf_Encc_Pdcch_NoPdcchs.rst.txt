@@ -1,0 +1,20 @@
+NoPdcchs
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:ONEWeb:DL:SUBF<SubframeNull>:ENCC:PDCCh:NOPDcchs
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:ONEWeb:DL:SUBF<SubframeNull>:ENCC:PDCCh:NOPDcchs
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Downlink.Subf.Encc.Pdcch.NoPdcchs.NoPdcchs
+	:members:
+	:undoc-members:
+	:noindex:

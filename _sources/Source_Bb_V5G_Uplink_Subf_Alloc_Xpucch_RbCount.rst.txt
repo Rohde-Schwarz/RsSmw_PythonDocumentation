@@ -1,0 +1,20 @@
+RbCount
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:V5G:UL:SUBF<SubframeNull>:ALLoc<AllocationNull>:XPUCch:RBCount
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:V5G:UL:SUBF<SubframeNull>:ALLoc<AllocationNull>:XPUCch:RBCount
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Uplink.Subf.Alloc.Xpucch.RbCount.RbCount
+	:members:
+	:undoc-members:
+	:noindex:

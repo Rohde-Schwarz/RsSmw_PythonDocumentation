@@ -1,0 +1,20 @@
+Scheme
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:ONEWeb:DL:SUBF<SubframeNull>:ENCC:PRECoding:SCHeme
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:ONEWeb:DL:SUBF<SubframeNull>:ENCC:PRECoding:SCHeme
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Downlink.Subf.Encc.Precoding.Scheme.Scheme
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,20 @@
+Tpattern
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:TETRa:SCONfiguration:TMODe<TestMode>:SLOT<Slot>:LDIRection<Channel>:TPATtern
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:TETRa:SCONfiguration:TMODe<TestMode>:SLOT<Slot>:LDIRection<Channel>:TPATtern
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Tetra.Sconfiguration.Tmode.Slot.Ldirection.Tpattern.Tpattern
+	:members:
+	:undoc-members:
+	:noindex:

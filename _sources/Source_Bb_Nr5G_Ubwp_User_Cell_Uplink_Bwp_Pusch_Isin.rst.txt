@@ -1,0 +1,20 @@
+Isin
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:NR5G:UBWP:USER<UserNull>:CELL<CellNull>:UL:BWP<BwPartNull>:PUSCh:ISIN
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:NR5G:UBWP:USER<UserNull>:CELL<CellNull>:UL:BWP<BwPartNull>:PUSCh:ISIN
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Nr5G.Ubwp.User.Cell.Uplink.Bwp.Pusch.Isin.Isin
+	:members:
+	:undoc-members:
+	:noindex:

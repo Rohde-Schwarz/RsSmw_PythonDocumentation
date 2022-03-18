@@ -1,0 +1,20 @@
+State
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:ONEWeb:UL:UE<UserEquipment>:CELL<CellNull>:PUACh:SCRambling:STATe
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:ONEWeb:UL:UE<UserEquipment>:CELL<CellNull>:PUACh:SCRambling:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Uplink.Ue.Cell.Puach.Scrambling.State.State
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,58 @@
+Esequencer
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:ESEQuencer:ERRor
+	single: SOURce<HwInstance>:BB:ESEQuencer:MODE
+	single: SOURce<HwInstance>:BB:ESEQuencer:PRESet
+	single: SOURce<HwInstance>:BB:ESEQuencer:SEQCount
+	single: SOURce<HwInstance>:BB:ESEQuencer:STATe
+	single: SOURce<HwInstance>:BB:ESEQuencer:STRCount
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:ESEQuencer:ERRor
+	SOURce<HwInstance>:BB:ESEQuencer:MODE
+	SOURce<HwInstance>:BB:ESEQuencer:PRESet
+	SOURce<HwInstance>:BB:ESEQuencer:SEQCount
+	SOURce<HwInstance>:BB:ESEQuencer:STATe
+	SOURce<HwInstance>:BB:ESEQuencer:STRCount
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Esequencer.Esequencer
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.esequencer.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Esequencer_Archive.rst
+	Source_Bb_Esequencer_Asequencing.rst
+	Source_Bb_Esequencer_Clock.rst
+	Source_Bb_Esequencer_Dfinding.rst
+	Source_Bb_Esequencer_Pramp.rst
+	Source_Bb_Esequencer_Psequencer.rst
+	Source_Bb_Esequencer_Rtci.rst
+	Source_Bb_Esequencer_Sequencer.rst
+	Source_Bb_Esequencer_Setting.rst
+	Source_Bb_Esequencer_Stream.rst
+	Source_Bb_Esequencer_Trigger.rst
+	Source_Bb_Esequencer_User.rst

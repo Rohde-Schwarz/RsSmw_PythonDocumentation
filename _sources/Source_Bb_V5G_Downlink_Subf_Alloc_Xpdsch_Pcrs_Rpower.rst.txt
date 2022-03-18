@@ -1,0 +1,20 @@
+Rpower
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:V5G:DL:SUBF<SubframeNull>:ALLoc<AllocationNull>:XPDSch:PCRS:RPOWer
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:V5G:DL:SUBF<SubframeNull>:ALLoc<AllocationNull>:XPDSch:PCRS:RPOWer
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Downlink.Subf.Alloc.Xpdsch.Pcrs.Rpower.Rpower
+	:members:
+	:undoc-members:
+	:noindex:

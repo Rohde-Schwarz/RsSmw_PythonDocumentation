@@ -1,0 +1,20 @@
+Connection
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:EFRontend:CONNection:STATe
+
+.. code-block:: python
+
+	SOURce<HwInstance>:EFRontend:CONNection:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Efrontend.Connection.Connection
+	:members:
+	:undoc-members:
+	:noindex:

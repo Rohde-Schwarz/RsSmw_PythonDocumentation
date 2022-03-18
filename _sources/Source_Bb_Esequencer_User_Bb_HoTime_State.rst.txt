@@ -1,0 +1,20 @@
+State
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:ESEQuencer:USER:BB<Baseband>:HOTime:STATe
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:ESEQuencer:USER:BB<Baseband>:HOTime:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Esequencer.User.Bb.HoTime.State.State
+	:members:
+	:undoc-members:
+	:noindex:

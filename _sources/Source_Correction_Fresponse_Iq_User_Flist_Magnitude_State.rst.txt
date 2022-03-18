@@ -1,0 +1,20 @@
+State
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:CORRection:FRESponse:IQ:USER:FLISt<Index>:MAGNitude:STATe
+
+.. code-block:: python
+
+	SOURce<HwInstance>:CORRection:FRESponse:IQ:USER:FLISt<Index>:MAGNitude:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Correction.Fresponse.Iq.User.Flist.Magnitude.State.State
+	:members:
+	:undoc-members:
+	:noindex:

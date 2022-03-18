@@ -1,0 +1,40 @@
+Sync
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:ONEWeb:DL:SYNC:PIQSequence
+	single: SOURce<HwInstance>:BB:ONEWeb:DL:SYNC:PMODulation
+	single: SOURce<HwInstance>:BB:ONEWeb:DL:SYNC:PPOWer
+	single: SOURce<HwInstance>:BB:ONEWeb:DL:SYNC:PSEQuence
+	single: SOURce<HwInstance>:BB:ONEWeb:DL:SYNC:PSTate
+	single: SOURce<HwInstance>:BB:ONEWeb:DL:SYNC:SIQSequence
+	single: SOURce<HwInstance>:BB:ONEWeb:DL:SYNC:SMODulation
+	single: SOURce<HwInstance>:BB:ONEWeb:DL:SYNC:SPOWer
+	single: SOURce<HwInstance>:BB:ONEWeb:DL:SYNC:SSEQuence
+	single: SOURce<HwInstance>:BB:ONEWeb:DL:SYNC:SSTate
+	single: SOURce<HwInstance>:BB:ONEWeb:DL:SYNC:TXANtenna
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:ONEWeb:DL:SYNC:PIQSequence
+	SOURce<HwInstance>:BB:ONEWeb:DL:SYNC:PMODulation
+	SOURce<HwInstance>:BB:ONEWeb:DL:SYNC:PPOWer
+	SOURce<HwInstance>:BB:ONEWeb:DL:SYNC:PSEQuence
+	SOURce<HwInstance>:BB:ONEWeb:DL:SYNC:PSTate
+	SOURce<HwInstance>:BB:ONEWeb:DL:SYNC:SIQSequence
+	SOURce<HwInstance>:BB:ONEWeb:DL:SYNC:SMODulation
+	SOURce<HwInstance>:BB:ONEWeb:DL:SYNC:SPOWer
+	SOURce<HwInstance>:BB:ONEWeb:DL:SYNC:SSEQuence
+	SOURce<HwInstance>:BB:ONEWeb:DL:SYNC:SSTate
+	SOURce<HwInstance>:BB:ONEWeb:DL:SYNC:TXANtenna
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Downlink.Sync.Sync
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,20 @@
+StReset
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:ESEQuencer:RTCI:SEQuencer<Sequencer>:STReam:STReset
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:ESEQuencer:RTCI:SEQuencer<Sequencer>:STReam:STReset
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Esequencer.Rtci.Sequencer.Stream.StReset.StReset
+	:members:
+	:undoc-members:
+	:noindex:

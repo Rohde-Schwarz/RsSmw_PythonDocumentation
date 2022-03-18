@@ -1,0 +1,20 @@
+Xpdcch
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:V5G:DL:XPDCch:RATBa
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:V5G:DL:XPDCch:RATBa
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Downlink.Xpdcch.Xpdcch
+	:members:
+	:undoc-members:
+	:noindex:

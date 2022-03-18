@@ -1,0 +1,20 @@
+UeId
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:ONEWeb:DL:SUBF<SubframeNull>:ENCC:PDCCh:EXTC:ITEM<ItemNull>:UEID
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:ONEWeb:DL:SUBF<SubframeNull>:ENCC:PDCCh:EXTC:ITEM<ItemNull>:UEID
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Downlink.Subf.Encc.Pdcch.Extc.Item.UeId.UeId
+	:members:
+	:undoc-members:
+	:noindex:

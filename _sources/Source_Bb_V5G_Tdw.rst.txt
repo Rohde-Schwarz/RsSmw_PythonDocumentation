@@ -1,0 +1,22 @@
+Tdw
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:V5G:TDW:STATe
+	single: SOURce<HwInstance>:BB:V5G:TDW:TRTime
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:V5G:TDW:STATe
+	SOURce<HwInstance>:BB:V5G:TDW:TRTime
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Tdw.Tdw
+	:members:
+	:undoc-members:
+	:noindex:

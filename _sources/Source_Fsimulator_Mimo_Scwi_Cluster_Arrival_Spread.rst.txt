@@ -1,0 +1,20 @@
+Spread
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:FSIMulator:MIMO:SCWI:CLUSter<Cluster>:ARRival:SPRead
+
+.. code-block:: python
+
+	SOURce<HwInstance>:FSIMulator:MIMO:SCWI:CLUSter<Cluster>:ARRival:SPRead
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.Mimo.Scwi.Cluster.Arrival.Spread.Spread
+	:members:
+	:undoc-members:
+	:noindex:

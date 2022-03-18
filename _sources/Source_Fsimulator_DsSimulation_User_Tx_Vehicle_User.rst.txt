@@ -1,0 +1,22 @@
+User
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:FSIMulator:DSSimulation:USER:TX:VEHicle:USER:CATalog
+	single: SOURce<HwInstance>:FSIMulator:DSSimulation:USER:TX:VEHicle:USER:SELect
+
+.. code-block:: python
+
+	SOURce<HwInstance>:FSIMulator:DSSimulation:USER:TX:VEHicle:USER:CATalog
+	SOURce<HwInstance>:FSIMulator:DSSimulation:USER:TX:VEHicle:USER:SELect
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.DsSimulation.User.Tx.Vehicle.User.User
+	:members:
+	:undoc-members:
+	:noindex:

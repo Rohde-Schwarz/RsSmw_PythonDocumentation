@@ -1,0 +1,20 @@
+DinSec
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:EUTRa:TRIGger:OUTPut<Output>:DINSec
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:EUTRa:TRIGger:OUTPut<Output>:DINSec
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Eutra.Trigger.Output.DinSec.DinSec
+	:members:
+	:undoc-members:
+	:noindex:

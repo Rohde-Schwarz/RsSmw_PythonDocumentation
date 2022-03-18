@@ -1,0 +1,20 @@
+State
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:GNSS:SVID<SatelliteSvid>:QZSS:SIGNal:L1Band:L1C:PILot:SCODe:STATe
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:GNSS:SVID<SatelliteSvid>:QZSS:SIGNal:L1Band:L1C:PILot:SCODe:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Gnss.Svid.Qzss.Signal.L1Band.L1C.Pilot.Scode.State.State
+	:members:
+	:undoc-members:
+	:noindex:

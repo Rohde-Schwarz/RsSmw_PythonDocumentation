@@ -1,0 +1,20 @@
+Phase
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: TEST:BB:GENerator:PHASe:Q
+
+.. code-block:: python
+
+	TEST:BB:GENerator:PHASe:Q
+
+
+
+.. autoclass:: RsSmw.Implementations.Test.Bb.Generator.Phase.Phase
+	:members:
+	:undoc-members:
+	:noindex:

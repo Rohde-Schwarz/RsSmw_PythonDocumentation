@@ -1,0 +1,20 @@
+Is02
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:NR5G:NODE:CELL<CellNull>:SYINfo:IS02
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:NR5G:NODE:CELL<CellNull>:SYINfo:IS02
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Nr5G.Node.Cell.SyInfo.Is02.Is02
+	:members:
+	:undoc-members:
+	:noindex:

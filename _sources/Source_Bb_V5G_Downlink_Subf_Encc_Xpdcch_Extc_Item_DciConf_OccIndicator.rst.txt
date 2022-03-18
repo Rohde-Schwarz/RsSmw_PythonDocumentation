@@ -1,0 +1,20 @@
+OccIndicator
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:V5G:DL:SUBF<SubframeNull>:ENCC:XPDCch:EXTC:ITEM<ItemNull>:DCIConf:OCCindicator
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:V5G:DL:SUBF<SubframeNull>:ENCC:XPDCch:EXTC:ITEM<ItemNull>:DCIConf:OCCindicator
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Downlink.Subf.Encc.Xpdcch.Extc.Item.DciConf.OccIndicator.OccIndicator
+	:members:
+	:undoc-members:
+	:noindex:

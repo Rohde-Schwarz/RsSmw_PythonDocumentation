@@ -1,0 +1,20 @@
+Brv
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:NR5G:UBWP:USER<UserNull>:CELL<CellNull>:UL:BWP<BwPartNull>:PUSCh:BRV
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:NR5G:UBWP:USER<UserNull>:CELL<CellNull>:UL:BWP<BwPartNull>:PUSCh:BRV
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Nr5G.Ubwp.User.Cell.Uplink.Bwp.Pusch.Brv.Brv
+	:members:
+	:undoc-members:
+	:noindex:

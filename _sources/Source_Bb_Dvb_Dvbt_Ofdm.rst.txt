@@ -1,0 +1,26 @@
+Ofdm
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:DVB:DVBT:OFDM:ALPHa
+	single: SOURce<HwInstance>:BB:DVB:DVBT:OFDM:BWIDth
+	single: SOURce<HwInstance>:BB:DVB:DVBT:OFDM:GINTerval
+	single: SOURce<HwInstance>:BB:DVB:DVBT:OFDM:MODulation
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:DVB:DVBT:OFDM:ALPHa
+	SOURce<HwInstance>:BB:DVB:DVBT:OFDM:BWIDth
+	SOURce<HwInstance>:BB:DVB:DVBT:OFDM:GINTerval
+	SOURce<HwInstance>:BB:DVB:DVBT:OFDM:MODulation
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dvb.Dvbt.Ofdm.Ofdm
+	:members:
+	:undoc-members:
+	:noindex:

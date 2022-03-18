@@ -1,0 +1,20 @@
+Frc
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:EUTRa:TCW:WS:INTRacell:UE<UserEquipment>:FRC
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:EUTRa:TCW:WS:INTRacell:UE<UserEquipment>:FRC
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Eutra.Tcw.Ws.Intracell.Ue.Frc.Frc
+	:members:
+	:undoc-members:
+	:noindex:

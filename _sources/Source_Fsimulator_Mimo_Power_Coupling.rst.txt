@@ -1,0 +1,20 @@
+Coupling
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:FSIMulator:MIMO:POWer:COUPling:STATe
+
+.. code-block:: python
+
+	SOURce<HwInstance>:FSIMulator:MIMO:POWer:COUPling:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.Mimo.Power.Coupling.Coupling
+	:members:
+	:undoc-members:
+	:noindex:

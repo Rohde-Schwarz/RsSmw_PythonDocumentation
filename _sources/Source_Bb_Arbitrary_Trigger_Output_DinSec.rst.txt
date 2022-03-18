@@ -1,0 +1,20 @@
+DinSec
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:ARBitrary:TRIGger:OUTPut<Output>:DINSec
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:ARBitrary:TRIGger:OUTPut<Output>:DINSec
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Arbitrary.Trigger.Output.DinSec.DinSec
+	:members:
+	:undoc-members:
+	:noindex:

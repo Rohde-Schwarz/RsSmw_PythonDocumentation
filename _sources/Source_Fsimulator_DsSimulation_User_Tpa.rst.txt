@@ -1,0 +1,22 @@
+Tpa
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:FSIMulator:DSSimulation:USER:TPA:CATalog
+	single: SOURce<HwInstance>:FSIMulator:DSSimulation:USER:TPA:SELect
+
+.. code-block:: python
+
+	SOURce<HwInstance>:FSIMulator:DSSimulation:USER:TPA:CATalog
+	SOURce<HwInstance>:FSIMulator:DSSimulation:USER:TPA:SELect
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.DsSimulation.User.Tpa.Tpa
+	:members:
+	:undoc-members:
+	:noindex:

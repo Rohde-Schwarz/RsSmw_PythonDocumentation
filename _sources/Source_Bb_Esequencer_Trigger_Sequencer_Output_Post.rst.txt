@@ -1,0 +1,20 @@
+Post
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:ESEQuencer:TRIGger:SEQuencer<Sequencer>:OUTPut<Output>:POST
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:ESEQuencer:TRIGger:SEQuencer<Sequencer>:OUTPut<Output>:POST
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Esequencer.Trigger.Sequencer.Output.Post.Post
+	:members:
+	:undoc-members:
+	:noindex:

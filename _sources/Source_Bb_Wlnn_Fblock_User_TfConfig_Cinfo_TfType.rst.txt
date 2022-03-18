@@ -1,0 +1,20 @@
+TfType
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:WLNN:FBLock<FrameBlock>:USER<UserIx>:TFConfig:CINFo:TFTYpe
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:WLNN:FBLock<FrameBlock>:USER<UserIx>:TFConfig:CINFo:TFTYpe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Wlnn.Fblock.User.TfConfig.Cinfo.TfType.TfType
+	:members:
+	:undoc-members:
+	:noindex:

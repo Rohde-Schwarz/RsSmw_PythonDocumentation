@@ -1,0 +1,20 @@
+Fmcs
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:ONEWeb:DL:USER<UserIx>:AS:DL:CELL<CellNull>:FMCS
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:ONEWeb:DL:USER<UserIx>:AS:DL:CELL<CellNull>:FMCS
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Downlink.User.AsPy.Downlink.Cell.Fmcs.Fmcs
+	:members:
+	:undoc-members:
+	:noindex:

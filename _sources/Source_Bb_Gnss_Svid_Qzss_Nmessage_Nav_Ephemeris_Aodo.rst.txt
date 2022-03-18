@@ -1,0 +1,20 @@
+Aodo
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:GNSS:SVID<SatelliteSvid>:QZSS:NMESsage:NAV:EPHemeris:AODO
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:GNSS:SVID<SatelliteSvid>:QZSS:NMESsage:NAV:EPHemeris:AODO
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Gnss.Svid.Qzss.Nmessage.Nav.Ephemeris.Aodo.Aodo
+	:members:
+	:undoc-members:
+	:noindex:

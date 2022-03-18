@@ -1,0 +1,39 @@
+Sespace
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:ONEWeb:DL:SUBF<SubframeNull>:ENCC:PDCCh:EXTC:ITEM<ItemNull>:SESPace
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:ONEWeb:DL:SUBF<SubframeNull>:ENCC:PDCCh:EXTC:ITEM<ItemNull>:SESPace
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Downlink.Subf.Encc.Pdcch.Extc.Item.Sespace.Sespace
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.oneweb.downlink.subf.encc.pdcch.extc.item.sespace.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Oneweb_Downlink_Subf_Encc_Pdcch_Extc_Item_Sespace_Chk.rst
+	Source_Bb_Oneweb_Downlink_Subf_Encc_Pdcch_Extc_Item_Sespace_Max.rst
+	Source_Bb_Oneweb_Downlink_Subf_Encc_Pdcch_Extc_Item_Sespace_Min.rst

@@ -1,0 +1,20 @@
+Cstate
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce:IQ:OUTPut:DIGital:BBMM<IqConnector>:GDELay:CSTate
+
+.. code-block:: python
+
+	SOURce:IQ:OUTPut:DIGital:BBMM<IqConnector>:GDELay:CSTate
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Iq.Output.Digital.Bbmm.Gdelay.Cstate.Cstate
+	:members:
+	:undoc-members:
+	:noindex:

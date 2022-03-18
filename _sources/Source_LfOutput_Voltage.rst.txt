@@ -1,0 +1,20 @@
+Voltage
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce:LFOutput<LfOutput>:VOLTage
+
+.. code-block:: python
+
+	SOURce:LFOutput<LfOutput>:VOLTage
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.LfOutput.Voltage.Voltage
+	:members:
+	:undoc-members:
+	:noindex:

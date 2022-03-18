@@ -1,0 +1,20 @@
+Auto
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:TETRa:FILTer:OSAMpling:AUTO:STATe
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:TETRa:FILTer:OSAMpling:AUTO:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Tetra.FilterPy.Osampling.Auto.Auto
+	:members:
+	:undoc-members:
+	:noindex:

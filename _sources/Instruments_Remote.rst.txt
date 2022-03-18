@@ -1,0 +1,22 @@
+Remote
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: INSTruments:REMote:CHANnel
+	single: INSTruments:REMote:NAME
+
+.. code-block:: python
+
+	INSTruments:REMote:CHANnel
+	INSTruments:REMote:NAME
+
+
+
+.. autoclass:: RsSmw.Implementations.Instruments.Remote.Remote
+	:members:
+	:undoc-members:
+	:noindex:

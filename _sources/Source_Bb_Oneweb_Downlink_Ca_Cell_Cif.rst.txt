@@ -1,0 +1,20 @@
+Cif
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:ONEWeb:DL:CA:CELL<CellNull>:CIF
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:ONEWeb:DL:CA:CELL<CellNull>:CIF
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Downlink.Ca.Cell.Cif.Cif
+	:members:
+	:undoc-members:
+	:noindex:

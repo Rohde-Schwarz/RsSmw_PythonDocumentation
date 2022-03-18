@@ -1,0 +1,20 @@
+PdwDropping
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:ESEQuencer:RTCI:SEQuencer<Sequencer>:STReam:PDWDropping
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:ESEQuencer:RTCI:SEQuencer<Sequencer>:STReam:PDWDropping
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Esequencer.Rtci.Sequencer.Stream.PdwDropping.PdwDropping
+	:members:
+	:undoc-members:
+	:noindex:

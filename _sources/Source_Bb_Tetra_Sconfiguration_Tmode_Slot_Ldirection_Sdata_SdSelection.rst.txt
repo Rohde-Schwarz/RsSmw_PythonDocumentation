@@ -1,0 +1,20 @@
+SdSelection
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:TETRa:SCONfiguration:TMODe<TestMode>:SLOT<Slot>:LDIRection<Channel>:SDATa:SDSelection
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:TETRa:SCONfiguration:TMODe<TestMode>:SLOT<Slot>:LDIRection<Channel>:SDATa:SDSelection
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Tetra.Sconfiguration.Tmode.Slot.Ldirection.Sdata.SdSelection.SdSelection
+	:members:
+	:undoc-members:
+	:noindex:

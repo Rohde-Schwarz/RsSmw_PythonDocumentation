@@ -1,0 +1,20 @@
+Skew
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce:BB:IMPairment:FADer<DigitalIq>:SKEW
+
+.. code-block:: python
+
+	SOURce:BB:IMPairment:FADer<DigitalIq>:SKEW
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Impairment.Fader.Skew.Skew
+	:members:
+	:undoc-members:
+	:noindex:

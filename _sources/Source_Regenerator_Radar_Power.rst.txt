@@ -1,0 +1,24 @@
+Power
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:REGenerator:RADar:POWer:LOSS
+	single: SOURce<HwInstance>:REGenerator:RADar:POWer:MODE
+	single: SOURce<HwInstance>:REGenerator:RADar:POWer:TX
+
+.. code-block:: python
+
+	SOURce<HwInstance>:REGenerator:RADar:POWer:LOSS
+	SOURce<HwInstance>:REGenerator:RADar:POWer:MODE
+	SOURce<HwInstance>:REGenerator:RADar:POWer:TX
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Regenerator.Radar.Power.Power
+	:members:
+	:undoc-members:
+	:noindex:

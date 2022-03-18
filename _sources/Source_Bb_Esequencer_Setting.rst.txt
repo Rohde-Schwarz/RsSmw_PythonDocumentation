@@ -1,0 +1,26 @@
+Setting
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:ESEQuencer:SETTing:CATalog
+	single: SOURce<HwInstance>:BB:ESEQuencer:SETTing:DELete
+	single: SOURce<HwInstance>:BB:ESEQuencer:SETTing:LOAD
+	single: SOURce<HwInstance>:BB:ESEQuencer:SETTing:STORe
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:ESEQuencer:SETTing:CATalog
+	SOURce<HwInstance>:BB:ESEQuencer:SETTing:DELete
+	SOURce<HwInstance>:BB:ESEQuencer:SETTing:LOAD
+	SOURce<HwInstance>:BB:ESEQuencer:SETTing:STORe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Esequencer.Setting.Setting
+	:members:
+	:undoc-members:
+	:noindex:

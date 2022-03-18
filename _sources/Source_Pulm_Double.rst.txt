@@ -1,0 +1,22 @@
+Double
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:PULM:DOUBle:DELay
+	single: SOURce<HwInstance>:PULM:DOUBle:WIDTh
+
+.. code-block:: python
+
+	SOURce<HwInstance>:PULM:DOUBle:DELay
+	SOURce<HwInstance>:PULM:DOUBle:WIDTh
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Pulm.Double.Double
+	:members:
+	:undoc-members:
+	:noindex:

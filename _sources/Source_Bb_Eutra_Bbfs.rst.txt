@@ -1,0 +1,26 @@
+Bbfs
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:EUTRa:BBFS:DTIMe
+	single: SOURce<HwInstance>:BB:EUTRa:BBFS:MAXShift
+	single: SOURce<HwInstance>:BB:EUTRa:BBFS:MODE
+	single: SOURce<HwInstance>:BB:EUTRa:BBFS:STEPs
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:EUTRa:BBFS:DTIMe
+	SOURce<HwInstance>:BB:EUTRa:BBFS:MAXShift
+	SOURce<HwInstance>:BB:EUTRa:BBFS:MODE
+	SOURce<HwInstance>:BB:EUTRa:BBFS:STEPs
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Eutra.Bbfs.Bbfs
+	:members:
+	:undoc-members:
+	:noindex:

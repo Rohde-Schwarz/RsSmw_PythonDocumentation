@@ -1,0 +1,20 @@
+SdPattern
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:TETRa:SCONfiguration:TMODe<TestMode>:SLOT<Slot>:LDIRection<Channel>:SDATa:SDPattern
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:TETRa:SCONfiguration:TMODe<TestMode>:SLOT<Slot>:LDIRection<Channel>:SDATa:SDPattern
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Tetra.Sconfiguration.Tmode.Slot.Ldirection.Sdata.SdPattern.SdPattern
+	:members:
+	:undoc-members:
+	:noindex:

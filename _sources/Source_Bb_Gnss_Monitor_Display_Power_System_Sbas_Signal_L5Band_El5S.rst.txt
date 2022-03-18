@@ -1,0 +1,36 @@
+El5S<Index>
+----------------------------------------
+
+.. rubric:: RepCap Settings
+
+.. code-block:: python
+
+	# Range: Nr1 .. Nr64
+	rc = driver.source.bb.gnss.monitor.display.power.system.sbas.signal.l5Band.el5S.repcap_index_get()
+	driver.source.bb.gnss.monitor.display.power.system.sbas.signal.l5Band.el5S.repcap_index_set(repcap.Index.Nr1)
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:GNSS:MONitor<MonitorPane>:DISPlay:POWer:SYSTem:SBAS:SIGNal:L5Band:EL5S<Index>
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:GNSS:MONitor<MonitorPane>:DISPlay:POWer:SYSTem:SBAS:SIGNal:L5Band:EL5S<Index>
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Gnss.Monitor.Display.Power.System.Sbas.Signal.L5Band.El5S.El5S
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.gnss.monitor.display.power.system.sbas.signal.l5Band.el5S.clone()

@@ -1,0 +1,20 @@
+Npat
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:NR5G:NODE:CELL<CellNull>:LTE:NPAT
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:NR5G:NODE:CELL<CellNull>:LTE:NPAT
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Nr5G.Node.Cell.Lte.Npat.Npat
+	:members:
+	:undoc-members:
+	:noindex:

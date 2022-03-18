@@ -1,0 +1,63 @@
+Pconfig
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:WLAD:PCONfig:EMINdication
+	single: SOURce<HwInstance>:BB:WLAD:PCONfig:LRSSi
+	single: SOURce<HwInstance>:BB:WLAD:PCONfig:MCS
+	single: SOURce<HwInstance>:BB:WLAD:PCONfig:MTYPe
+	single: SOURce<HwInstance>:BB:WLAD:PCONfig:PTYPe
+	single: SOURce<HwInstance>:BB:WLAD:PCONfig:REPetition
+	single: SOURce<HwInstance>:BB:WLAD:PCONfig:TLENgth
+	single: SOURce<HwInstance>:BB:WLAD:PCONfig:TPTYpe
+	single: SOURce<HwInstance>:BB:WLAD:PCONfig:TTIMe
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:WLAD:PCONfig:EMINdication
+	SOURce<HwInstance>:BB:WLAD:PCONfig:LRSSi
+	SOURce<HwInstance>:BB:WLAD:PCONfig:MCS
+	SOURce<HwInstance>:BB:WLAD:PCONfig:MTYPe
+	SOURce<HwInstance>:BB:WLAD:PCONfig:PTYPe
+	SOURce<HwInstance>:BB:WLAD:PCONfig:REPetition
+	SOURce<HwInstance>:BB:WLAD:PCONfig:TLENgth
+	SOURce<HwInstance>:BB:WLAD:PCONfig:TPTYpe
+	SOURce<HwInstance>:BB:WLAD:PCONfig:TTIMe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Wlad.Pconfig.Pconfig
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.wlad.pconfig.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Wlad_Pconfig_BtRequest.rst
+	Source_Bb_Wlad_Pconfig_Coding.rst
+	Source_Bb_Wlad_Pconfig_Data.rst
+	Source_Bb_Wlad_Pconfig_Dindicator.rst
+	Source_Bb_Wlad_Pconfig_Gpi.rst
+	Source_Bb_Wlad_Pconfig_Mac.rst
+	Source_Bb_Wlad_Pconfig_Mpdu.rst
+	Source_Bb_Wlad_Pconfig_Preamble.rst
+	Source_Bb_Wlad_Pconfig_Scrambler.rst
+	Source_Bb_Wlad_Pconfig_TaRound.rst
+	Source_Bb_Wlad_Pconfig_TdWindowing.rst

@@ -1,0 +1,86 @@
+Downlink
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:V5G:DL:BUR
+	single: SOURce<HwInstance>:BB:V5G:DL:BW
+	single: SOURce<HwInstance>:BB:V5G:DL:CONSubframes
+	single: SOURce<HwInstance>:BB:V5G:DL:CPC
+	single: SOURce<HwInstance>:BB:V5G:DL:FFT
+	single: SOURce<HwInstance>:BB:V5G:DL:LGS
+	single: SOURce<HwInstance>:BB:V5G:DL:NORB
+	single: SOURce<HwInstance>:BB:V5G:DL:OCCBandwidth
+	single: SOURce<HwInstance>:BB:V5G:DL:OCCSubcarriers
+	single: SOURce<HwInstance>:BB:V5G:DL:PUM
+	single: SOURce<HwInstance>:BB:V5G:DL:RBM
+	single: SOURce<HwInstance>:BB:V5G:DL:RGS
+	single: SOURce<HwInstance>:BB:V5G:DL:SFSelection
+	single: SOURce<HwInstance>:BB:V5G:DL:SRATe
+	single: SOURce<HwInstance>:BB:V5G:DL:ULCPc
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:V5G:DL:BUR
+	SOURce<HwInstance>:BB:V5G:DL:BW
+	SOURce<HwInstance>:BB:V5G:DL:CONSubframes
+	SOURce<HwInstance>:BB:V5G:DL:CPC
+	SOURce<HwInstance>:BB:V5G:DL:FFT
+	SOURce<HwInstance>:BB:V5G:DL:LGS
+	SOURce<HwInstance>:BB:V5G:DL:NORB
+	SOURce<HwInstance>:BB:V5G:DL:OCCBandwidth
+	SOURce<HwInstance>:BB:V5G:DL:OCCSubcarriers
+	SOURce<HwInstance>:BB:V5G:DL:PUM
+	SOURce<HwInstance>:BB:V5G:DL:RBM
+	SOURce<HwInstance>:BB:V5G:DL:RGS
+	SOURce<HwInstance>:BB:V5G:DL:SFSelection
+	SOURce<HwInstance>:BB:V5G:DL:SRATe
+	SOURce<HwInstance>:BB:V5G:DL:ULCPc
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Downlink.Downlink
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.v5G.downlink.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_V5G_Downlink_Apm.rst
+	Source_Bb_V5G_Downlink_Ca.rst
+	Source_Bb_V5G_Downlink_Cell.rst
+	Source_Bb_V5G_Downlink_Conf.rst
+	Source_Bb_V5G_Downlink_Csettings.rst
+	Source_Bb_V5G_Downlink_Csis.rst
+	Source_Bb_V5G_Downlink_Drs.rst
+	Source_Bb_V5G_Downlink_Dumd.rst
+	Source_Bb_V5G_Downlink_Mimo.rst
+	Source_Bb_V5G_Downlink_Pbch.rst
+	Source_Bb_V5G_Downlink_Pdsch.rst
+	Source_Bb_V5G_Downlink_Phich.rst
+	Source_Bb_V5G_Downlink_Plci.rst
+	Source_Bb_V5G_Downlink_Prss.rst
+	Source_Bb_V5G_Downlink_Refsig.rst
+	Source_Bb_V5G_Downlink_RstFrame.rst
+	Source_Bb_V5G_Downlink_Signals.rst
+	Source_Bb_V5G_Downlink_Subf.rst
+	Source_Bb_V5G_Downlink_Sync.rst
+	Source_Bb_V5G_Downlink_User.rst
+	Source_Bb_V5G_Downlink_View.rst
+	Source_Bb_V5G_Downlink_Xpdcch.rst

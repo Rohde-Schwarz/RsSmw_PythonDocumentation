@@ -1,0 +1,22 @@
+Coding
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:WLAD:PCONfig:CODing:RATE
+	single: SOURce<HwInstance>:BB:WLAD:PCONfig:CODing:TYPE
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:WLAD:PCONfig:CODing:RATE
+	SOURce<HwInstance>:BB:WLAD:PCONfig:CODing:TYPE
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Wlad.Pconfig.Coding.Coding
+	:members:
+	:undoc-members:
+	:noindex:

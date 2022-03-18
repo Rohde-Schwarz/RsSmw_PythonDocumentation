@@ -1,0 +1,41 @@
+Clock
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:ESEQuencer:CLOCk:MODE
+	single: SOURce<HwInstance>:BB:ESEQuencer:CLOCk:MULTiplier
+	single: SOURce<HwInstance>:BB:ESEQuencer:CLOCk:SOURce
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:ESEQuencer:CLOCk:MODE
+	SOURce<HwInstance>:BB:ESEQuencer:CLOCk:MULTiplier
+	SOURce<HwInstance>:BB:ESEQuencer:CLOCk:SOURce
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Esequencer.Clock.Clock
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.esequencer.clock.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Esequencer_Clock_Synchronization.rst

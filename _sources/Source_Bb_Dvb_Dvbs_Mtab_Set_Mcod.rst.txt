@@ -1,0 +1,20 @@
+Mcod
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:DVB:DVBS:MTAB:SET<ModCodSet>:MCOD
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:DVB:DVBS:MTAB:SET<ModCodSet>:MCOD
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dvb.Dvbs.Mtab.Set.Mcod.Mcod
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,39 @@
+Frequency
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: CALibration:FREQuency:SWPoints
+	single: CALibration<HwInstance>:FREQuency:MEASure
+
+.. code-block:: python
+
+	CALibration:FREQuency:SWPoints
+	CALibration<HwInstance>:FREQuency:MEASure
+
+
+
+.. autoclass:: RsSmw.Implementations.Calibration.Frequency.Frequency
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.calibration.frequency.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Calibration_Frequency_Converter.rst

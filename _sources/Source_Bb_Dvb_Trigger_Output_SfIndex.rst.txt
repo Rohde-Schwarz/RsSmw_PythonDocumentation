@@ -1,0 +1,20 @@
+SfIndex
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:DVB:TRIGger:OUTPut<Output>:SFINdex
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:DVB:TRIGger:OUTPut<Output>:SFINdex
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dvb.Trigger.Output.SfIndex.SfIndex
+	:members:
+	:undoc-members:
+	:noindex:

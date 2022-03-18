@@ -1,0 +1,20 @@
+InitPattern
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:EUTRa:UL:UE<UserEquipment>:CELL<CellNull>:PUSCh:INITpattern
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:EUTRa:UL:UE<UserEquipment>:CELL<CellNull>:PUSCh:INITpattern
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Eutra.Uplink.Ue.Cell.Pusch.InitPattern.InitPattern
+	:members:
+	:undoc-members:
+	:noindex:

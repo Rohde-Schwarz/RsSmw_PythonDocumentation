@@ -1,0 +1,20 @@
+NsubChannels
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:NR5G:UBWP:USER<UserNull>:CELL<CellNull>:SL:BWP<BwPartNull>:RESPool:RES:NSUBchannels
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:NR5G:UBWP:USER<UserNull>:CELL<CellNull>:SL:BWP<BwPartNull>:RESPool:RES:NSUBchannels
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Nr5G.Ubwp.User.Cell.Sl.Bwp.ResPool.Res.NsubChannels.NsubChannels
+	:members:
+	:undoc-members:
+	:noindex:

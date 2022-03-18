@@ -1,0 +1,20 @@
+ScSpacing
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:NR5G:SCHed:CELL<CellNull>:SUBF<SubframeNull>:ALLoc<AllocationNull>:SCSPacing
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:NR5G:SCHed:CELL<CellNull>:SUBF<SubframeNull>:ALLoc<AllocationNull>:SCSPacing
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Nr5G.Scheduling.Cell.Subf.Alloc.ScSpacing.ScSpacing
+	:members:
+	:undoc-members:
+	:noindex:

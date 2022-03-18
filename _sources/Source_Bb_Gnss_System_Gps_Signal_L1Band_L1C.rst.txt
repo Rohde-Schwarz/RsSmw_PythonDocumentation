@@ -1,0 +1,20 @@
+L1C
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:GNSS:SYSTem:GPS:SIGNal:L1Band:L1C:STATe
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:GNSS:SYSTem:GPS:SIGNal:L1Band:L1C:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Gnss.System.Gps.Signal.L1Band.L1C.L1C
+	:members:
+	:undoc-members:
+	:noindex:

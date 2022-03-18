@@ -1,0 +1,20 @@
+File
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:GNSS:SVID<SatelliteSvid>:GPS:PRERrors:FILE
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:GNSS:SVID<SatelliteSvid>:GPS:PRERrors:FILE
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Gnss.Svid.Gps.PrErrors.File.File
+	:members:
+	:undoc-members:
+	:noindex:

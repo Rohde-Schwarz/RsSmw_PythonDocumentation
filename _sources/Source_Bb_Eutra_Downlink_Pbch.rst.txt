@@ -1,0 +1,28 @@
+Pbch
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:EUTRa:DL:PBCH:MIB
+	single: SOURce<HwInstance>:BB:EUTRa:DL:PBCH:MSPare
+	single: SOURce<HwInstance>:BB:EUTRa:DL:PBCH:RATBa
+	single: SOURce<HwInstance>:BB:EUTRa:DL:PBCH:SOFFset
+	single: SOURce<HwInstance>:BB:EUTRa:DL:PBCH:SRPeriod
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:EUTRa:DL:PBCH:MIB
+	SOURce<HwInstance>:BB:EUTRa:DL:PBCH:MSPare
+	SOURce<HwInstance>:BB:EUTRa:DL:PBCH:RATBa
+	SOURce<HwInstance>:BB:EUTRa:DL:PBCH:SOFFset
+	SOURce<HwInstance>:BB:EUTRa:DL:PBCH:SRPeriod
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Eutra.Downlink.Pbch.Pbch
+	:members:
+	:undoc-members:
+	:noindex:

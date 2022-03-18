@@ -1,0 +1,34 @@
+Refsig
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:V5G:DL:REFSig:EPRE
+	single: SOURce<HwInstance>:BB:V5G:DL:REFSig:FPOWer
+	single: SOURce<HwInstance>:BB:V5G:DL:REFSig:FSTPosition
+	single: SOURce<HwInstance>:BB:V5G:DL:REFSig:POWer
+	single: SOURce<HwInstance>:BB:V5G:DL:REFSig:PRS
+	single: SOURce<HwInstance>:BB:V5G:DL:REFSig:S2ACtive
+	single: SOURce<HwInstance>:BB:V5G:DL:REFSig:SCOFfset
+	single: SOURce<HwInstance>:BB:V5G:DL:REFSig:SPOWer
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:V5G:DL:REFSig:EPRE
+	SOURce<HwInstance>:BB:V5G:DL:REFSig:FPOWer
+	SOURce<HwInstance>:BB:V5G:DL:REFSig:FSTPosition
+	SOURce<HwInstance>:BB:V5G:DL:REFSig:POWer
+	SOURce<HwInstance>:BB:V5G:DL:REFSig:PRS
+	SOURce<HwInstance>:BB:V5G:DL:REFSig:S2ACtive
+	SOURce<HwInstance>:BB:V5G:DL:REFSig:SCOFfset
+	SOURce<HwInstance>:BB:V5G:DL:REFSig:SPOWer
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Downlink.Refsig.Refsig
+	:members:
+	:undoc-members:
+	:noindex:

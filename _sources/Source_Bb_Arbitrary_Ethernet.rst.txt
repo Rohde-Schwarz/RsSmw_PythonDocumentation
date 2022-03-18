@@ -1,0 +1,40 @@
+Ethernet
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:ARBitrary:ETHernet:MODE
+	single: SOURce<HwInstance>:BB:ARBitrary:ETHernet:STATus
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:ARBitrary:ETHernet:MODE
+	SOURce<HwInstance>:BB:ARBitrary:ETHernet:STATus
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Arbitrary.Ethernet.Ethernet
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.arbitrary.ethernet.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Arbitrary_Ethernet_Statistics.rst
+	Source_Bb_Arbitrary_Ethernet_Waveform.rst

@@ -1,0 +1,20 @@
+Pep
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce:IQ:OUTPut:DIGital:BBMM<IqConnector>:POWer:PEP
+
+.. code-block:: python
+
+	SOURce:IQ:OUTPut:DIGital:BBMM<IqConnector>:POWer:PEP
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Iq.Output.Digital.Bbmm.Power.Pep.Pep
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,20 @@
+User
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce:FSIMulator:MIMO:ANTenna:PATTern:CATalog:USER
+
+.. code-block:: python
+
+	SOURce:FSIMulator:MIMO:ANTenna:PATTern:CATalog:USER
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.Mimo.Antenna.Pattern.Catalog.User.User
+	:members:
+	:undoc-members:
+	:noindex:

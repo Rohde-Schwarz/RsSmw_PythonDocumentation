@@ -1,0 +1,20 @@
+Min
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:ONEWeb:DL:SUBF<SubframeNull>:ENCC:PDCCh:EXTC:ITEM<ItemNull>:SESPace:MIN
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:ONEWeb:DL:SUBF<SubframeNull>:ENCC:PDCCh:EXTC:ITEM<ItemNull>:SESPace:MIN
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Downlink.Subf.Encc.Pdcch.Extc.Item.Sespace.Min.Min
+	:members:
+	:undoc-members:
+	:noindex:

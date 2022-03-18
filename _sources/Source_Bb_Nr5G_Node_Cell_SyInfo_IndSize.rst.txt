@@ -1,0 +1,20 @@
+IndSize
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:NR5G:NODE:CELL<CellNull>:SYINfo:INDSize
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:NR5G:NODE:CELL<CellNull>:SYINfo:INDSize
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Nr5G.Node.Cell.SyInfo.IndSize.IndSize
+	:members:
+	:undoc-members:
+	:noindex:

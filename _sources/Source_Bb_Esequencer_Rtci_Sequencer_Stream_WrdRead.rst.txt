@@ -1,0 +1,20 @@
+WrdRead
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:ESEQuencer:RTCI:SEQuencer<Sequencer>:STReam:WRDRead
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:ESEQuencer:RTCI:SEQuencer<Sequencer>:STReam:WRDRead
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Esequencer.Rtci.Sequencer.Stream.WrdRead.WrdRead
+	:members:
+	:undoc-members:
+	:noindex:

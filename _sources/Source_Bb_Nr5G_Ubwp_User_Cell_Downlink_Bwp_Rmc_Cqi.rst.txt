@@ -1,0 +1,20 @@
+Cqi
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:NR5G:UBWP:USER<UserNull>:CELL<CellNull>:DL:BWP<BwPartNull>:RMC:CQI
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:NR5G:UBWP:USER<UserNull>:CELL<CellNull>:DL:BWP<BwPartNull>:RMC:CQI
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Nr5G.Ubwp.User.Cell.Downlink.Bwp.Rmc.Cqi.Cqi
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,20 @@
+WrdWrite
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:ESEQuencer:RTCI:SEQuencer<Sequencer>:STReam:WRDWrite
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:ESEQuencer:RTCI:SEQuencer<Sequencer>:STReam:WRDWrite
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Esequencer.Rtci.Sequencer.Stream.WrdWrite.WrdWrite
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,26 @@
+Obaseband
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:EUTRa:TRIGger:OBASeband:DELay
+	single: SOURce<HwInstance>:BB:EUTRa:TRIGger:OBASeband:INHibit
+	single: SOURce<HwInstance>:BB:EUTRa:TRIGger:OBASeband:RDELay
+	single: SOURce<HwInstance>:BB:EUTRa:TRIGger:OBASeband:TDELay
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:EUTRa:TRIGger:OBASeband:DELay
+	SOURce<HwInstance>:BB:EUTRa:TRIGger:OBASeband:INHibit
+	SOURce<HwInstance>:BB:EUTRa:TRIGger:OBASeband:RDELay
+	SOURce<HwInstance>:BB:EUTRa:TRIGger:OBASeband:TDELay
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Eutra.Trigger.Obaseband.Obaseband
+	:members:
+	:undoc-members:
+	:noindex:

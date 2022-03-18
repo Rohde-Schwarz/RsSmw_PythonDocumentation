@@ -1,0 +1,22 @@
+Create
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:ARBitrary:TSIGnal:AWGN:CREate
+	single: SOURce<HwInstance>:BB:ARBitrary:TSIGnal:AWGN:CREate:NAMed
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:ARBitrary:TSIGnal:AWGN:CREate
+	SOURce<HwInstance>:BB:ARBitrary:TSIGnal:AWGN:CREate:NAMed
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Arbitrary.Tsignal.Awgn.Create.Create
+	:members:
+	:undoc-members:
+	:noindex:

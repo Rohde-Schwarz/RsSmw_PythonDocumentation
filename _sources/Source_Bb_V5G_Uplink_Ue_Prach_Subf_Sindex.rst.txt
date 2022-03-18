@@ -1,0 +1,20 @@
+Sindex
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:V5G:UL:UE<UserEquipment>:PRACh:SUBF<SubframeNull>:SINDex
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:V5G:UL:UE<UserEquipment>:PRACh:SUBF<SubframeNull>:SINDex
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Uplink.Ue.Prach.Subf.Sindex.Sindex
+	:members:
+	:undoc-members:
+	:noindex:

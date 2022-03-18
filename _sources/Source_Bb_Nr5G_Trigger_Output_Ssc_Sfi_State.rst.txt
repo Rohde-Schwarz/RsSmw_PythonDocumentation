@@ -1,0 +1,20 @@
+State
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:NR5G:TRIGger:OUTPut<Output>:SSC:SFI:STATe
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:NR5G:TRIGger:OUTPut<Output>:SSC:SFI:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Nr5G.Trigger.Output.Ssc.Sfi.State.State
+	:members:
+	:undoc-members:
+	:noindex:

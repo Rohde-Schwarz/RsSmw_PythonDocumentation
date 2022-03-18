@@ -1,0 +1,22 @@
+Pdsch
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:V5G:DL:PDSCh:PB
+	single: SOURce<HwInstance>:BB:V5G:DL:PDSCh:RATBa
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:V5G:DL:PDSCh:PB
+	SOURce<HwInstance>:BB:V5G:DL:PDSCh:RATBa
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Downlink.Pdsch.Pdsch
+	:members:
+	:undoc-members:
+	:noindex:

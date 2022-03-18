@@ -1,0 +1,20 @@
+Data
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:DVB:DVBR:SFConfig<SfCfgIxNull>:FRConfig<FrCfgIxNull>:SEC<IndexNull>:DATA
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:DVB:DVBR:SFConfig<SfCfgIxNull>:FRConfig<FrCfgIxNull>:SEC<IndexNull>:DATA
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dvb.Dvbr.SfConfig.FrConfig.Sec.Data.Data
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,20 @@
+NoLayers
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:V5G:UL:CELL<CellNull>:SUBF<SubframeNull>:ALLoc<AllocationNull>:PUSCh:PRECoding:NOLayers
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:V5G:UL:CELL<CellNull>:SUBF<SubframeNull>:ALLoc<AllocationNull>:PUSCh:PRECoding:NOLayers
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Uplink.Cell.Subf.Alloc.Pusch.Precoding.NoLayers.NoLayers
+	:members:
+	:undoc-members:
+	:noindex:

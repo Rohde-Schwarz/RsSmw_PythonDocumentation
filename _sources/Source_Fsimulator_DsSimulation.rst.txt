@@ -1,0 +1,48 @@
+DsSimulation
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:FSIMulator:DSSimulation:CATalog
+	single: SOURce<HwInstance>:FSIMulator:DSSimulation:CFORmat
+	single: SOURce<HwInstance>:FSIMulator:DSSimulation:LOAD
+	single: SOURce<HwInstance>:FSIMulator:DSSimulation:SAVE
+	single: SOURce<HwInstance>:FSIMulator:DSSimulation:SCENario
+
+.. code-block:: python
+
+	SOURce<HwInstance>:FSIMulator:DSSimulation:CATalog
+	SOURce<HwInstance>:FSIMulator:DSSimulation:CFORmat
+	SOURce<HwInstance>:FSIMulator:DSSimulation:LOAD
+	SOURce<HwInstance>:FSIMulator:DSSimulation:SAVE
+	SOURce<HwInstance>:FSIMulator:DSSimulation:SCENario
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.DsSimulation.DsSimulation
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.fsimulator.dsSimulation.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Fsimulator_DsSimulation_Create.rst
+	Source_Fsimulator_DsSimulation_Shiptoship.rst
+	Source_Fsimulator_DsSimulation_TowerToAir.rst
+	Source_Fsimulator_DsSimulation_User.rst

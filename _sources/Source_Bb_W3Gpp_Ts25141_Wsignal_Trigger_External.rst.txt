@@ -1,0 +1,20 @@
+External
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce:BB:W3GPp:TS25141:WSIGnal:TRIGger:EXTernal:DELay
+
+.. code-block:: python
+
+	SOURce:BB:W3GPp:TS25141:WSIGnal:TRIGger:EXTernal:DELay
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.W3Gpp.Ts25141.Wsignal.Trigger.External.External
+	:members:
+	:undoc-members:
+	:noindex:

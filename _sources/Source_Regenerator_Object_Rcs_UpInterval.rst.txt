@@ -1,0 +1,20 @@
+UpInterval
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:REGenerator:OBJect<ObjectIx>:RCS:UPINterval
+
+.. code-block:: python
+
+	SOURce<HwInstance>:REGenerator:OBJect<ObjectIx>:RCS:UPINterval
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Regenerator.Object.Rcs.UpInterval.UpInterval
+	:members:
+	:undoc-members:
+	:noindex:

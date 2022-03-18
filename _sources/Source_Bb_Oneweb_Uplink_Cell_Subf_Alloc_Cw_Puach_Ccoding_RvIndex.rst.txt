@@ -1,0 +1,20 @@
+RvIndex
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:ONEWeb:UL:CELL<CellNull>:SUBF<SubframeNull>:ALLoc<AllocationNull>:CW<Codeword>:PUACh:CCODing:RVINdex
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:ONEWeb:UL:CELL<CellNull>:SUBF<SubframeNull>:ALLoc<AllocationNull>:CW<Codeword>:PUACh:CCODing:RVINdex
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Uplink.Cell.Subf.Alloc.Cw.Puach.Ccoding.RvIndex.RvIndex
+	:members:
+	:undoc-members:
+	:noindex:

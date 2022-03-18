@@ -1,0 +1,39 @@
+Scan
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: INSTruments:SCAN:HNPRefix
+	single: INSTruments:SCAN
+
+.. code-block:: python
+
+	INSTruments:SCAN:HNPRefix
+	INSTruments:SCAN
+
+
+
+.. autoclass:: RsSmw.Implementations.Instruments.Scan.Scan
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.instruments.scan.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Instruments_Scan_Snet.rst

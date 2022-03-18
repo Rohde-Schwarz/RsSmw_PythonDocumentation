@@ -1,0 +1,46 @@
+Level
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: CALibration<HwInstance>:LEVel:BWIDth
+	single: CALibration<HwInstance>:LEVel:DETatt
+	single: CALibration<HwInstance>:LEVel:LOCal
+	single: CALibration<HwInstance>:LEVel:STATe
+
+.. code-block:: python
+
+	CALibration<HwInstance>:LEVel:BWIDth
+	CALibration<HwInstance>:LEVel:DETatt
+	CALibration<HwInstance>:LEVel:LOCal
+	CALibration<HwInstance>:LEVel:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Calibration.Level.Level
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.calibration.level.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Calibration_Level_Attenuator.rst
+	Calibration_Level_Haccuracy.rst
+	Calibration_Level_Measure.rst
+	Calibration_Level_Opu.rst

@@ -1,0 +1,37 @@
+Synchronization
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:NFC:CLOCk:SYNChronization:MODE
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:NFC:CLOCk:SYNChronization:MODE
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Nfc.Clock.Synchronization.Synchronization
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.nfc.clock.synchronization.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Nfc_Clock_Synchronization_Execute.rst

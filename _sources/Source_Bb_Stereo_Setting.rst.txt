@@ -1,0 +1,24 @@
+Setting
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:STEReo:SETTing:CATalog
+	single: SOURce<HwInstance>:BB:STEReo:SETTing:LOAD
+	single: SOURce<HwInstance>:BB:STEReo:SETTing:STORe
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:STEReo:SETTing:CATalog
+	SOURce<HwInstance>:BB:STEReo:SETTing:LOAD
+	SOURce<HwInstance>:BB:STEReo:SETTing:STORe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Stereo.Setting.Setting
+	:members:
+	:undoc-members:
+	:noindex:

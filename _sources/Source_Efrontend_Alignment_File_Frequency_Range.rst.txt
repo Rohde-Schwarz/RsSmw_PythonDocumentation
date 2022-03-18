@@ -1,0 +1,22 @@
+Range
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:EFRontend:ALIGnment:FILE:FREQuency:RANGe:LOWer
+	single: SOURce<HwInstance>:EFRontend:ALIGnment:FILE:FREQuency:RANGe:UPPer
+
+.. code-block:: python
+
+	SOURce<HwInstance>:EFRontend:ALIGnment:FILE:FREQuency:RANGe:LOWer
+	SOURce<HwInstance>:EFRontend:ALIGnment:FILE:FREQuency:RANGe:UPPer
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Efrontend.Alignment.File.Frequency.Range.Range
+	:members:
+	:undoc-members:
+	:noindex:

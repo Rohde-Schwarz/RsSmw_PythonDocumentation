@@ -1,0 +1,42 @@
+Sync
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:V5G:DL:SYNC:EPOWer
+	single: SOURce<HwInstance>:BB:V5G:DL:SYNC:PIQSequence
+	single: SOURce<HwInstance>:BB:V5G:DL:SYNC:PMODulation
+	single: SOURce<HwInstance>:BB:V5G:DL:SYNC:PPOWer
+	single: SOURce<HwInstance>:BB:V5G:DL:SYNC:PSEQuence
+	single: SOURce<HwInstance>:BB:V5G:DL:SYNC:PSTate
+	single: SOURce<HwInstance>:BB:V5G:DL:SYNC:SIQSequence
+	single: SOURce<HwInstance>:BB:V5G:DL:SYNC:SMODulation
+	single: SOURce<HwInstance>:BB:V5G:DL:SYNC:SPOWer
+	single: SOURce<HwInstance>:BB:V5G:DL:SYNC:SSEQuence
+	single: SOURce<HwInstance>:BB:V5G:DL:SYNC:SSTate
+	single: SOURce<HwInstance>:BB:V5G:DL:SYNC:TXANtenna
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:V5G:DL:SYNC:EPOWer
+	SOURce<HwInstance>:BB:V5G:DL:SYNC:PIQSequence
+	SOURce<HwInstance>:BB:V5G:DL:SYNC:PMODulation
+	SOURce<HwInstance>:BB:V5G:DL:SYNC:PPOWer
+	SOURce<HwInstance>:BB:V5G:DL:SYNC:PSEQuence
+	SOURce<HwInstance>:BB:V5G:DL:SYNC:PSTate
+	SOURce<HwInstance>:BB:V5G:DL:SYNC:SIQSequence
+	SOURce<HwInstance>:BB:V5G:DL:SYNC:SMODulation
+	SOURce<HwInstance>:BB:V5G:DL:SYNC:SPOWer
+	SOURce<HwInstance>:BB:V5G:DL:SYNC:SSEQuence
+	SOURce<HwInstance>:BB:V5G:DL:SYNC:SSTate
+	SOURce<HwInstance>:BB:V5G:DL:SYNC:TXANtenna
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Downlink.Sync.Sync
+	:members:
+	:undoc-members:
+	:noindex:

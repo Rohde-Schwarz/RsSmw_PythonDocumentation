@@ -1,0 +1,22 @@
+Phase
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:CORRection:CSET:DATA:SGAMma:PHASe
+	single: SOURce<HwInstance>:CORRection:CSET:DATA:SGAMma:PHASe:POINts
+
+.. code-block:: python
+
+	SOURce<HwInstance>:CORRection:CSET:DATA:SGAMma:PHASe
+	SOURce<HwInstance>:CORRection:CSET:DATA:SGAMma:PHASe:POINts
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Correction.Cset.Data.Sgamma.Phase.Phase
+	:members:
+	:undoc-members:
+	:noindex:

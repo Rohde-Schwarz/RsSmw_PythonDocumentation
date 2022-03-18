@@ -1,0 +1,20 @@
+Qcomponent
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce:BB:IMPairment:FADer<DigitalIq>:LEAKage:Q
+
+.. code-block:: python
+
+	SOURce:BB:IMPairment:FADer<DigitalIq>:LEAKage:Q
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Impairment.Fader.Leakage.Qcomponent.Qcomponent
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,20 @@
+Cdevice
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce:IQ:OUTPut:DIGital:FADer<DigitalIq>:CDEVice
+
+.. code-block:: python
+
+	SOURce:IQ:OUTPut:DIGital:FADer<DigitalIq>:CDEVice
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Iq.Output.Digital.Fader.Cdevice.Cdevice
+	:members:
+	:undoc-members:
+	:noindex:

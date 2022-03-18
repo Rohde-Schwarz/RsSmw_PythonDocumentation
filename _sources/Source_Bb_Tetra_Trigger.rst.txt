@@ -1,0 +1,49 @@
+Trigger
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:TETRa:TRIGger:RMODe
+	single: SOURce<HwInstance>:BB:TETRa:TRIGger:SEQuence
+	single: SOURce<HwInstance>:BB:TETRa:TRIGger:SLENgth
+	single: SOURce<HwInstance>:BB:TETRa:TRIGger:SLUNit
+	single: SOURce<HwInstance>:BB:TETRa:TRIGger:SOURce
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:TETRa:TRIGger:RMODe
+	SOURce<HwInstance>:BB:TETRa:TRIGger:SEQuence
+	SOURce<HwInstance>:BB:TETRa:TRIGger:SLENgth
+	SOURce<HwInstance>:BB:TETRa:TRIGger:SLUNit
+	SOURce<HwInstance>:BB:TETRa:TRIGger:SOURce
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Tetra.Trigger.Trigger
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.tetra.trigger.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Tetra_Trigger_Arm.rst
+	Source_Bb_Tetra_Trigger_Execute.rst
+	Source_Bb_Tetra_Trigger_External.rst
+	Source_Bb_Tetra_Trigger_Obaseband.rst
+	Source_Bb_Tetra_Trigger_Output.rst

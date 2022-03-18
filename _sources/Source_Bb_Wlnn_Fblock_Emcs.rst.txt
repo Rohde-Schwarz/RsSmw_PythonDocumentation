@@ -1,0 +1,20 @@
+Emcs
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:WLNN:FBLock<FrameBlock>:EMCS
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:WLNN:FBLock<FrameBlock>:EMCS
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Wlnn.Fblock.Emcs.Emcs
+	:members:
+	:undoc-members:
+	:noindex:

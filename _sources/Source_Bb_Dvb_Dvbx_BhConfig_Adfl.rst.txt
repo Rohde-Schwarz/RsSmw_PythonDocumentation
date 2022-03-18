@@ -1,0 +1,20 @@
+Adfl
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:DVB:DVBX:BHConfig:ADFL:STATe
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:DVB:DVBX:BHConfig:ADFL:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dvb.Dvbx.BhConfig.Adfl.Adfl
+	:members:
+	:undoc-members:
+	:noindex:

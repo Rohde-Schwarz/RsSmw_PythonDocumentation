@@ -1,0 +1,20 @@
+Refresh
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:EFRontend:EXTDevice:REFResh
+
+.. code-block:: python
+
+	SOURce<HwInstance>:EFRontend:EXTDevice:REFResh
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Efrontend.ExtDevice.Refresh.Refresh
+	:members:
+	:undoc-members:
+	:noindex:

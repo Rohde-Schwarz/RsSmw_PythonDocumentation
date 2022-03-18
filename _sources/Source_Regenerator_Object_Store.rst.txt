@@ -1,0 +1,20 @@
+Store
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:REGenerator:OBJect<ObjectIx>:STORe
+
+.. code-block:: python
+
+	SOURce<HwInstance>:REGenerator:OBJect<ObjectIx>:STORe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Regenerator.Object.Store.Store
+	:members:
+	:undoc-members:
+	:noindex:

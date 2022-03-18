@@ -1,0 +1,20 @@
+TrxMode
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:EFRontend:TRXMode:STATe
+
+.. code-block:: python
+
+	SOURce<HwInstance>:EFRontend:TRXMode:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Efrontend.TrxMode.TrxMode
+	:members:
+	:undoc-members:
+	:noindex:

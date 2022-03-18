@@ -1,0 +1,20 @@
+Mmode
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:NR5G:TRIGger:OUTPut<Output>:MMODe
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:NR5G:TRIGger:OUTPut<Output>:MMODe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Nr5G.Trigger.Output.Mmode.Mmode
+	:members:
+	:undoc-members:
+	:noindex:

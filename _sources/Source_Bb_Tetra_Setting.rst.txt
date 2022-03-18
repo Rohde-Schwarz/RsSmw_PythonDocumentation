@@ -1,0 +1,26 @@
+Setting
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:TETRa:SETTing:CATalog
+	single: SOURce<HwInstance>:BB:TETRa:SETTing:DELete
+	single: SOURce<HwInstance>:BB:TETRa:SETTing:LOAD
+	single: SOURce<HwInstance>:BB:TETRa:SETTing:STORe
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:TETRa:SETTing:CATalog
+	SOURce<HwInstance>:BB:TETRa:SETTing:DELete
+	SOURce<HwInstance>:BB:TETRa:SETTing:LOAD
+	SOURce<HwInstance>:BB:TETRa:SETTing:STORe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Tetra.Setting.Setting
+	:members:
+	:undoc-members:
+	:noindex:

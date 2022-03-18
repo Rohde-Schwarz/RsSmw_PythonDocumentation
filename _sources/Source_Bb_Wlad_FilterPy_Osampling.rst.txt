@@ -1,0 +1,22 @@
+Osampling
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:WLAD:FILTer:OSAMpling:AUTO
+	single: SOURce<HwInstance>:BB:WLAD:FILTer:OSAMpling
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:WLAD:FILTer:OSAMpling:AUTO
+	SOURce<HwInstance>:BB:WLAD:FILTer:OSAMpling
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Wlad.FilterPy.Osampling.Osampling
+	:members:
+	:undoc-members:
+	:noindex:

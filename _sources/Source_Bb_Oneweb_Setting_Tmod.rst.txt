@@ -1,0 +1,22 @@
+Tmod
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:ONEWeb:SETTing:TMOD:DL
+	single: SOURce<HwInstance>:BB:ONEWeb:SETTing:TMOD:TDD
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:ONEWeb:SETTing:TMOD:DL
+	SOURce<HwInstance>:BB:ONEWeb:SETTing:TMOD:TDD
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Setting.Tmod.Tmod
+	:members:
+	:undoc-members:
+	:noindex:

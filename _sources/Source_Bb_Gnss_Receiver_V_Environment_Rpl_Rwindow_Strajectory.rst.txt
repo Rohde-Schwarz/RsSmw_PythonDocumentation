@@ -1,0 +1,20 @@
+Strajectory
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:GNSS:RECeiver:V<Vehicle>:ENVironment:RPL:RWINdow:STRajectory
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:GNSS:RECeiver:V<Vehicle>:ENVironment:RPL:RWINdow:STRajectory
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Gnss.Receiver.V.Environment.Rpl.Rwindow.Strajectory.Strajectory
+	:members:
+	:undoc-members:
+	:noindex:

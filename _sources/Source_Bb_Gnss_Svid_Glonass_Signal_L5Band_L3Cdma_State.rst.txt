@@ -1,0 +1,20 @@
+State
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:GNSS:SVID<SatelliteSvid>:GLONass:SIGNal:L5Band:L3CDma<Index>:STATe
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:GNSS:SVID<SatelliteSvid>:GLONass:SIGNal:L5Band:L3CDma<Index>:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Gnss.Svid.Glonass.Signal.L5Band.L3Cdma.State.State
+	:members:
+	:undoc-members:
+	:noindex:

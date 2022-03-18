@@ -1,0 +1,20 @@
+Skew
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce:BB:IMPairment:BBMM<IqConnector>:SKEW
+
+.. code-block:: python
+
+	SOURce:BB:IMPairment:BBMM<IqConnector>:SKEW
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Impairment.Bbmm.Skew.Skew
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,20 @@
+Loss
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:FSIMulator:DEL:GROup<FadingGroup>:PATH<Path>:LOSS
+
+.. code-block:: python
+
+	SOURce<HwInstance>:FSIMulator:DEL:GROup<FadingGroup>:PATH<Path>:LOSS
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.DelPy.Group.Path.Loss.Loss
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,20 @@
+Duplicate
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SCONfiguration:DUPLicate:STReam
+
+.. code-block:: python
+
+	SCONfiguration:DUPLicate:STReam
+
+
+
+.. autoclass:: RsSmw.Implementations.Sconfiguration.Duplicate.Duplicate
+	:members:
+	:undoc-members:
+	:noindex:

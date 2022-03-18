@@ -1,0 +1,51 @@
+Regenerator
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:REGenerator:CATalog
+	single: SOURce<HwInstance>:REGenerator:LOAD
+	single: SOURce<HwInstance>:REGenerator:PRESet
+	single: SOURce<HwInstance>:REGenerator:STORe
+	single: SOURce<HwInstance>:REGenerator:STATe
+
+.. code-block:: python
+
+	SOURce<HwInstance>:REGenerator:CATalog
+	SOURce<HwInstance>:REGenerator:LOAD
+	SOURce<HwInstance>:REGenerator:PRESet
+	SOURce<HwInstance>:REGenerator:STORe
+	SOURce<HwInstance>:REGenerator:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Regenerator.Regenerator
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.regenerator.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Regenerator_Diagram.rst
+	Source_Regenerator_Object.rst
+	Source_Regenerator_Radar.rst
+	Source_Regenerator_Restart.rst
+	Source_Regenerator_Simulation.rst
+	Source_Regenerator_Test.rst
+	Source_Regenerator_Unit.rst

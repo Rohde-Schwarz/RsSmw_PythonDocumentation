@@ -1,0 +1,20 @@
+Add
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:NR5G:NODE:CC:ADD
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:NR5G:NODE:CC:ADD
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Nr5G.Node.Cc.Add.Add
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,22 @@
+Rate
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:FSIMulator:DSSimulation:TOWertoair:RATE:CLIMb
+	single: SOURce<HwInstance>:FSIMulator:DSSimulation:TOWertoair:RATE:DESCent
+
+.. code-block:: python
+
+	SOURce<HwInstance>:FSIMulator:DSSimulation:TOWertoair:RATE:CLIMb
+	SOURce<HwInstance>:FSIMulator:DSSimulation:TOWertoair:RATE:DESCent
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.DsSimulation.TowerToAir.Rate.Rate
+	:members:
+	:undoc-members:
+	:noindex:

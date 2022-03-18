@@ -1,0 +1,22 @@
+Power
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:IQ:DOHerty:SHAPing:POWer:BREakpoint
+	single: SOURce<HwInstance>:IQ:DOHerty:SHAPing:POWer:STATe
+
+.. code-block:: python
+
+	SOURce<HwInstance>:IQ:DOHerty:SHAPing:POWer:BREakpoint
+	SOURce<HwInstance>:IQ:DOHerty:SHAPing:POWer:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Iq.Doherty.Shaping.Power.Power
+	:members:
+	:undoc-members:
+	:noindex:

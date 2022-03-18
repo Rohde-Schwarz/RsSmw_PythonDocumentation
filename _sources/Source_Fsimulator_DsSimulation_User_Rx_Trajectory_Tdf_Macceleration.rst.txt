@@ -1,0 +1,22 @@
+Macceleration
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:FSIMulator:DSSimulation:USER:RX:TRAJectory:TDF:MACCeleration:STATe
+	single: SOURce<HwInstance>:FSIMulator:DSSimulation:USER:RX:TRAJectory:TDF:MACCeleration
+
+.. code-block:: python
+
+	SOURce<HwInstance>:FSIMulator:DSSimulation:USER:RX:TRAJectory:TDF:MACCeleration:STATe
+	SOURce<HwInstance>:FSIMulator:DSSimulation:USER:RX:TRAJectory:TDF:MACCeleration
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.DsSimulation.User.Rx.Trajectory.Tdf.Macceleration.Macceleration
+	:members:
+	:undoc-members:
+	:noindex:

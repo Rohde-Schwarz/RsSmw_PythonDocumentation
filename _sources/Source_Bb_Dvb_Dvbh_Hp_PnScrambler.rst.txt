@@ -1,0 +1,20 @@
+PnScrambler
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:DVB:DVBH:HP:PNSCrambler:STATe
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:DVB:DVBH:HP:PNSCrambler:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dvb.Dvbh.Hp.PnScrambler.PnScrambler
+	:members:
+	:undoc-members:
+	:noindex:

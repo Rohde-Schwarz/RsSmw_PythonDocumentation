@@ -1,0 +1,24 @@
+Clock
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:INPut:TM:CLOCk:IMPedance
+	single: SOURce<HwInstance>:INPut:TM:CLOCk:LEVel
+	single: SOURce<HwInstance>:INPut:TM:CLOCk:SLOPe
+
+.. code-block:: python
+
+	SOURce<HwInstance>:INPut:TM:CLOCk:IMPedance
+	SOURce<HwInstance>:INPut:TM:CLOCk:LEVel
+	SOURce<HwInstance>:INPut:TM:CLOCk:SLOPe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.InputPy.Tm.Clock.Clock
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,20 @@
+Nhtrans
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:ONEWeb:DL:USER<UserIx>:AS:UL:NHTRans
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:ONEWeb:DL:USER<UserIx>:AS:UL:NHTRans
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Downlink.User.AsPy.Uplink.Nhtrans.Nhtrans
+	:members:
+	:undoc-members:
+	:noindex:

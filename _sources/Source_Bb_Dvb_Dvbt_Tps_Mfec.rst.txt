@@ -1,0 +1,20 @@
+Mfec
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:DVB:DVBT:TPS:MFEC:STATe
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:DVB:DVBT:TPS:MFEC:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dvb.Dvbt.Tps.Mfec.Mfec
+	:members:
+	:undoc-members:
+	:noindex:

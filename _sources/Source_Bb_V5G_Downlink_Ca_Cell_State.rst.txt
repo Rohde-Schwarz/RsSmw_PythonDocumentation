@@ -1,0 +1,20 @@
+State
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:V5G:DL:CA:CELL<CellNull>:STATe
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:V5G:DL:CA:CELL<CellNull>:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Downlink.Ca.Cell.State.State
+	:members:
+	:undoc-members:
+	:noindex:

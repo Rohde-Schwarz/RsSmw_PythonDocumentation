@@ -1,0 +1,20 @@
+K175
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:NR5G:K175:STATe
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:NR5G:K175:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Nr5G.K175.K175
+	:members:
+	:undoc-members:
+	:noindex:

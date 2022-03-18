@@ -1,0 +1,26 @@
+Setting
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:DVB:SETTing:CATalog
+	single: SOURce<HwInstance>:BB:DVB:SETTing:DELete
+	single: SOURce<HwInstance>:BB:DVB:SETTing:LOAD
+	single: SOURce<HwInstance>:BB:DVB:SETTing:STORe
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:DVB:SETTing:CATalog
+	SOURce<HwInstance>:BB:DVB:SETTing:DELete
+	SOURce<HwInstance>:BB:DVB:SETTing:LOAD
+	SOURce<HwInstance>:BB:DVB:SETTing:STORe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dvb.Setting.Setting
+	:members:
+	:undoc-members:
+	:noindex:

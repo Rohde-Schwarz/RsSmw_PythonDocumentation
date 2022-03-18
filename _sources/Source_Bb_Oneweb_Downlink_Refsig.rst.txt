@@ -1,0 +1,38 @@
+Refsig
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:ONEWeb:DL:REFSig:EPRE
+	single: SOURce<HwInstance>:BB:ONEWeb:DL:REFSig:FPOWer
+	single: SOURce<HwInstance>:BB:ONEWeb:DL:REFSig:FSTPosition
+	single: SOURce<HwInstance>:BB:ONEWeb:DL:REFSig:ORTSequence
+	single: SOURce<HwInstance>:BB:ONEWeb:DL:REFSig:POWer
+	single: SOURce<HwInstance>:BB:ONEWeb:DL:REFSig:PRS
+	single: SOURce<HwInstance>:BB:ONEWeb:DL:REFSig:PRSI
+	single: SOURce<HwInstance>:BB:ONEWeb:DL:REFSig:S2ACtive
+	single: SOURce<HwInstance>:BB:ONEWeb:DL:REFSig:SCOFfset
+	single: SOURce<HwInstance>:BB:ONEWeb:DL:REFSig:SHIFsequence
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:ONEWeb:DL:REFSig:EPRE
+	SOURce<HwInstance>:BB:ONEWeb:DL:REFSig:FPOWer
+	SOURce<HwInstance>:BB:ONEWeb:DL:REFSig:FSTPosition
+	SOURce<HwInstance>:BB:ONEWeb:DL:REFSig:ORTSequence
+	SOURce<HwInstance>:BB:ONEWeb:DL:REFSig:POWer
+	SOURce<HwInstance>:BB:ONEWeb:DL:REFSig:PRS
+	SOURce<HwInstance>:BB:ONEWeb:DL:REFSig:PRSI
+	SOURce<HwInstance>:BB:ONEWeb:DL:REFSig:S2ACtive
+	SOURce<HwInstance>:BB:ONEWeb:DL:REFSig:SCOFfset
+	SOURce<HwInstance>:BB:ONEWeb:DL:REFSig:SHIFsequence
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Downlink.Refsig.Refsig
+	:members:
+	:undoc-members:
+	:noindex:

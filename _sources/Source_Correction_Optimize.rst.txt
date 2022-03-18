@@ -1,0 +1,20 @@
+Optimize
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:CORRection:OPTimize:EVM
+
+.. code-block:: python
+
+	SOURce<HwInstance>:CORRection:OPTimize:EVM
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Correction.Optimize.Optimize
+	:members:
+	:undoc-members:
+	:noindex:

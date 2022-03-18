@@ -1,0 +1,20 @@
+Dindicator
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:WLAD:PCONfig:DINDicator:STATe
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:WLAD:PCONfig:DINDicator:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Wlad.Pconfig.Dindicator.Dindicator
+	:members:
+	:undoc-members:
+	:noindex:

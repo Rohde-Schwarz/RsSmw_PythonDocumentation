@@ -1,0 +1,80 @@
+MacHeader
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:HUWB:MACHeader:AR
+	single: SOURce<HwInstance>:BB:HUWB:MACHeader:CTRL
+	single: SOURce<HwInstance>:BB:HUWB:MACHeader:DAD2
+	single: SOURce<HwInstance>:BB:HUWB:MACHeader:DAD3
+	single: SOURce<HwInstance>:BB:HUWB:MACHeader:DAD4
+	single: SOURce<HwInstance>:BB:HUWB:MACHeader:DADD
+	single: SOURce<HwInstance>:BB:HUWB:MACHeader:DADMode
+	single: SOURce<HwInstance>:BB:HUWB:MACHeader:DPANid
+	single: SOURce<HwInstance>:BB:HUWB:MACHeader:FPENding
+	single: SOURce<HwInstance>:BB:HUWB:MACHeader:FTYPe
+	single: SOURce<HwInstance>:BB:HUWB:MACHeader:FVERsion
+	single: SOURce<HwInstance>:BB:HUWB:MACHeader:IEPResent
+	single: SOURce<HwInstance>:BB:HUWB:MACHeader:LDADdress
+	single: SOURce<HwInstance>:BB:HUWB:MACHeader:LDEPanid
+	single: SOURce<HwInstance>:BB:HUWB:MACHeader:LFRControl
+	single: SOURce<HwInstance>:BB:HUWB:MACHeader:LSADdress
+	single: SOURce<HwInstance>:BB:HUWB:MACHeader:LSEQnumber
+	single: SOURce<HwInstance>:BB:HUWB:MACHeader:LSOPanid
+	single: SOURce<HwInstance>:BB:HUWB:MACHeader:PIDComp
+	single: SOURce<HwInstance>:BB:HUWB:MACHeader:REServed
+	single: SOURce<HwInstance>:BB:HUWB:MACHeader:SAD2
+	single: SOURce<HwInstance>:BB:HUWB:MACHeader:SAD3
+	single: SOURce<HwInstance>:BB:HUWB:MACHeader:SAD4
+	single: SOURce<HwInstance>:BB:HUWB:MACHeader:SADD
+	single: SOURce<HwInstance>:BB:HUWB:MACHeader:SADMode
+	single: SOURce<HwInstance>:BB:HUWB:MACHeader:SEENabled
+	single: SOURce<HwInstance>:BB:HUWB:MACHeader:SENSupp
+	single: SOURce<HwInstance>:BB:HUWB:MACHeader:SEQNumber
+	single: SOURce<HwInstance>:BB:HUWB:MACHeader:SPANid
+	single: SOURce<HwInstance>:BB:HUWB:MACHeader:STATe
+	single: SOURce<HwInstance>:BB:HUWB:MACHeader:STRing
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:HUWB:MACHeader:AR
+	SOURce<HwInstance>:BB:HUWB:MACHeader:CTRL
+	SOURce<HwInstance>:BB:HUWB:MACHeader:DAD2
+	SOURce<HwInstance>:BB:HUWB:MACHeader:DAD3
+	SOURce<HwInstance>:BB:HUWB:MACHeader:DAD4
+	SOURce<HwInstance>:BB:HUWB:MACHeader:DADD
+	SOURce<HwInstance>:BB:HUWB:MACHeader:DADMode
+	SOURce<HwInstance>:BB:HUWB:MACHeader:DPANid
+	SOURce<HwInstance>:BB:HUWB:MACHeader:FPENding
+	SOURce<HwInstance>:BB:HUWB:MACHeader:FTYPe
+	SOURce<HwInstance>:BB:HUWB:MACHeader:FVERsion
+	SOURce<HwInstance>:BB:HUWB:MACHeader:IEPResent
+	SOURce<HwInstance>:BB:HUWB:MACHeader:LDADdress
+	SOURce<HwInstance>:BB:HUWB:MACHeader:LDEPanid
+	SOURce<HwInstance>:BB:HUWB:MACHeader:LFRControl
+	SOURce<HwInstance>:BB:HUWB:MACHeader:LSADdress
+	SOURce<HwInstance>:BB:HUWB:MACHeader:LSEQnumber
+	SOURce<HwInstance>:BB:HUWB:MACHeader:LSOPanid
+	SOURce<HwInstance>:BB:HUWB:MACHeader:PIDComp
+	SOURce<HwInstance>:BB:HUWB:MACHeader:REServed
+	SOURce<HwInstance>:BB:HUWB:MACHeader:SAD2
+	SOURce<HwInstance>:BB:HUWB:MACHeader:SAD3
+	SOURce<HwInstance>:BB:HUWB:MACHeader:SAD4
+	SOURce<HwInstance>:BB:HUWB:MACHeader:SADD
+	SOURce<HwInstance>:BB:HUWB:MACHeader:SADMode
+	SOURce<HwInstance>:BB:HUWB:MACHeader:SEENabled
+	SOURce<HwInstance>:BB:HUWB:MACHeader:SENSupp
+	SOURce<HwInstance>:BB:HUWB:MACHeader:SEQNumber
+	SOURce<HwInstance>:BB:HUWB:MACHeader:SPANid
+	SOURce<HwInstance>:BB:HUWB:MACHeader:STATe
+	SOURce<HwInstance>:BB:HUWB:MACHeader:STRing
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Huwb.MacHeader.MacHeader
+	:members:
+	:undoc-members:
+	:noindex:

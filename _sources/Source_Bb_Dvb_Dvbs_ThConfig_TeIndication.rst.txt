@@ -1,0 +1,20 @@
+TeIndication
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:DVB:DVBS:THConfig:TEINdication:STATe
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:DVB:DVBS:THConfig:TEINdication:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dvb.Dvbs.ThConfig.TeIndication.TeIndication
+	:members:
+	:undoc-members:
+	:noindex:

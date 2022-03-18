@@ -1,0 +1,20 @@
+NzsCid
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:V5G:DL:DRS:CELL<CellNull>:CSIRs<CsiRefSignal>:NZSCid
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:V5G:DL:DRS:CELL<CellNull>:CSIRs<CsiRefSignal>:NZSCid
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Downlink.Drs.Cell.Csirs.NzsCid.NzsCid
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,20 @@
+State
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce:IQ:OUTPut:DIGital:BBMM<IqConnector>:CHANnel<ChannelNull>:STATe
+
+.. code-block:: python
+
+	SOURce:IQ:OUTPut:DIGital:BBMM<IqConnector>:CHANnel<ChannelNull>:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Iq.Output.Digital.Bbmm.Channel.State.State
+	:members:
+	:undoc-members:
+	:noindex:

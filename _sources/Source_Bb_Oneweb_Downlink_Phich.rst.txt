@@ -1,0 +1,22 @@
+Phich
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:ONEWeb:DL:PHICh:DURation
+	single: SOURce<HwInstance>:BB:ONEWeb:DL:PHICh:NGParameter
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:ONEWeb:DL:PHICh:DURation
+	SOURce<HwInstance>:BB:ONEWeb:DL:PHICh:NGParameter
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Downlink.Phich.Phich
+	:members:
+	:undoc-members:
+	:noindex:

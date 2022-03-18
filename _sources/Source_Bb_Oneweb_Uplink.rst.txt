@@ -1,0 +1,71 @@
+Uplink
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:ONEWeb:UL:BW
+	single: SOURce<HwInstance>:BB:ONEWeb:UL:CONSubframes
+	single: SOURce<HwInstance>:BB:ONEWeb:UL:CPC
+	single: SOURce<HwInstance>:BB:ONEWeb:UL:DLCPc
+	single: SOURce<HwInstance>:BB:ONEWeb:UL:FFT
+	single: SOURce<HwInstance>:BB:ONEWeb:UL:LGS
+	single: SOURce<HwInstance>:BB:ONEWeb:UL:NORB
+	single: SOURce<HwInstance>:BB:ONEWeb:UL:OCCBandwidth
+	single: SOURce<HwInstance>:BB:ONEWeb:UL:OCCSubcarriers
+	single: SOURce<HwInstance>:BB:ONEWeb:UL:RGS
+	single: SOURce<HwInstance>:BB:ONEWeb:UL:SFSelection
+	single: SOURce<HwInstance>:BB:ONEWeb:UL:SOFFset
+	single: SOURce<HwInstance>:BB:ONEWeb:UL:SRATe
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:ONEWeb:UL:BW
+	SOURce<HwInstance>:BB:ONEWeb:UL:CONSubframes
+	SOURce<HwInstance>:BB:ONEWeb:UL:CPC
+	SOURce<HwInstance>:BB:ONEWeb:UL:DLCPc
+	SOURce<HwInstance>:BB:ONEWeb:UL:FFT
+	SOURce<HwInstance>:BB:ONEWeb:UL:LGS
+	SOURce<HwInstance>:BB:ONEWeb:UL:NORB
+	SOURce<HwInstance>:BB:ONEWeb:UL:OCCBandwidth
+	SOURce<HwInstance>:BB:ONEWeb:UL:OCCSubcarriers
+	SOURce<HwInstance>:BB:ONEWeb:UL:RGS
+	SOURce<HwInstance>:BB:ONEWeb:UL:SFSelection
+	SOURce<HwInstance>:BB:ONEWeb:UL:SOFFset
+	SOURce<HwInstance>:BB:ONEWeb:UL:SRATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Uplink.Uplink
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.oneweb.uplink.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Oneweb_Uplink_Ca.rst
+	Source_Bb_Oneweb_Uplink_Cell.rst
+	Source_Bb_Oneweb_Uplink_Plci.rst
+	Source_Bb_Oneweb_Uplink_Prach.rst
+	Source_Bb_Oneweb_Uplink_Pucch.rst
+	Source_Bb_Oneweb_Uplink_Pusch.rst
+	Source_Bb_Oneweb_Uplink_Refsig.rst
+	Source_Bb_Oneweb_Uplink_RstFrame.rst
+	Source_Bb_Oneweb_Uplink_Subf.rst
+	Source_Bb_Oneweb_Uplink_Ue.rst
+	Source_Bb_Oneweb_Uplink_View.rst

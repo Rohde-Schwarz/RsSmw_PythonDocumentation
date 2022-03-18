@@ -1,0 +1,20 @@
+SeqCount
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:ESEQuencer:STReam<TwoStreams>:SEQCount
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:ESEQuencer:STReam<TwoStreams>:SEQCount
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Esequencer.Stream.SeqCount.SeqCount
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,20 @@
+Configuration
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: DIAGnostic<HwInstance>:POINt:CONFiguration
+
+.. code-block:: python
+
+	DIAGnostic<HwInstance>:POINt:CONFiguration
+
+
+
+.. autoclass:: RsSmw.Implementations.Diagnostic.Point.Configuration.Configuration
+	:members:
+	:undoc-members:
+	:noindex:

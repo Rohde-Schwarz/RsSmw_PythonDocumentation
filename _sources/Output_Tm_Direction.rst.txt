@@ -1,0 +1,20 @@
+Direction
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: OUTPut<HwInstance>:TM<TmConnector>:DIRection
+
+.. code-block:: python
+
+	OUTPut<HwInstance>:TM<TmConnector>:DIRection
+
+
+
+.. autoclass:: RsSmw.Implementations.Output.Tm.Direction.Direction
+	:members:
+	:undoc-members:
+	:noindex:

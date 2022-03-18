@@ -1,0 +1,20 @@
+Altitude
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:FSIMulator:DSSimulation:TOWertoair:ALTitude:CRUise
+
+.. code-block:: python
+
+	SOURce<HwInstance>:FSIMulator:DSSimulation:TOWertoair:ALTitude:CRUise
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.DsSimulation.TowerToAir.Altitude.Altitude
+	:members:
+	:undoc-members:
+	:noindex:

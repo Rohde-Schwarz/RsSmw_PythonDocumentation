@@ -1,0 +1,20 @@
+Concurrent
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:EFRontend:CONCurrent:STATe
+
+.. code-block:: python
+
+	SOURce<HwInstance>:EFRontend:CONCurrent:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Efrontend.Concurrent.Concurrent
+	:members:
+	:undoc-members:
+	:noindex:

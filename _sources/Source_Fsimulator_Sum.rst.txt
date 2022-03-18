@@ -1,0 +1,20 @@
+Sum
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:FSIMulator:SUM:RATio
+
+.. code-block:: python
+
+	SOURce<HwInstance>:FSIMulator:SUM:RATio
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.Sum.Sum
+	:members:
+	:undoc-members:
+	:noindex:

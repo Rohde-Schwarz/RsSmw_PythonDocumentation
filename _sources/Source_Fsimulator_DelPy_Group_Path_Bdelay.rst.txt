@@ -1,0 +1,20 @@
+Bdelay
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:FSIMulator:DEL:GROup<FadingGroup>:PATH<Path>:BDELay
+
+.. code-block:: python
+
+	SOURce<HwInstance>:FSIMulator:DEL:GROup<FadingGroup>:PATH<Path>:BDELay
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.DelPy.Group.Path.Bdelay.Bdelay
+	:members:
+	:undoc-members:
+	:noindex:

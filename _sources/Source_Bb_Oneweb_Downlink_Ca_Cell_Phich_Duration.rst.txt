@@ -1,0 +1,20 @@
+Duration
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:ONEWeb:DL:CA:CELL<CellNull>:PHICh:DURation
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:ONEWeb:DL:CA:CELL<CellNull>:PHICh:DURation
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Downlink.Ca.Cell.Phich.Duration.Duration
+	:members:
+	:undoc-members:
+	:noindex:

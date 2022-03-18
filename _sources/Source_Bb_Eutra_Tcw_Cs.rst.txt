@@ -1,0 +1,22 @@
+Cs
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:EUTRa:TCW:CS:DIP
+	single: SOURce<HwInstance>:BB:EUTRa:TCW:CS:RPOW
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:EUTRa:TCW:CS:DIP
+	SOURce<HwInstance>:BB:EUTRa:TCW:CS:RPOW
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Eutra.Tcw.Cs.Cs
+	:members:
+	:undoc-members:
+	:noindex:

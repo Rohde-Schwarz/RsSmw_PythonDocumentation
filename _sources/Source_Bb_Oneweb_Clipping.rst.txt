@@ -1,0 +1,24 @@
+Clipping
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:ONEWeb:CLIPping:LEVel
+	single: SOURce<HwInstance>:BB:ONEWeb:CLIPping:MODE
+	single: SOURce<HwInstance>:BB:ONEWeb:CLIPping:STATe
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:ONEWeb:CLIPping:LEVel
+	SOURce<HwInstance>:BB:ONEWeb:CLIPping:MODE
+	SOURce<HwInstance>:BB:ONEWeb:CLIPping:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Clipping.Clipping
+	:members:
+	:undoc-members:
+	:noindex:

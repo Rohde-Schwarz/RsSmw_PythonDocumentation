@@ -1,0 +1,20 @@
+Path
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:FSIMulator:HSTRain:PATH:STATe
+
+.. code-block:: python
+
+	SOURce<HwInstance>:FSIMulator:HSTRain:PATH:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.HsTrain.Path.Path
+	:members:
+	:undoc-members:
+	:noindex:

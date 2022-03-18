@@ -1,0 +1,20 @@
+Tdelay
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:ONEWeb:UL:CA:CELL<CellNull>:TDELay
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:ONEWeb:UL:CA:CELL<CellNull>:TDELay
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Uplink.Ca.Cell.Tdelay.Tdelay
+	:members:
+	:undoc-members:
+	:noindex:

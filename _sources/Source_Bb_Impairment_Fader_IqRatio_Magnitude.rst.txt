@@ -1,0 +1,20 @@
+Magnitude
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce:BB:IMPairment:FADer<DigitalIq>:IQRatio:MAGNitude
+
+.. code-block:: python
+
+	SOURce:BB:IMPairment:FADer<DigitalIq>:IQRatio:MAGNitude
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Impairment.Fader.IqRatio.Magnitude.Magnitude
+	:members:
+	:undoc-members:
+	:noindex:

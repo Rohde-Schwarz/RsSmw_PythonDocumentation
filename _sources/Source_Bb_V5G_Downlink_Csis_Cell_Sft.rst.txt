@@ -1,0 +1,20 @@
+Sft
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:V5G:DL:CSIS:CELL<CellNull>:SFT
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:V5G:DL:CSIS:CELL<CellNull>:SFT
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Downlink.Csis.Cell.Sft.Sft
+	:members:
+	:undoc-members:
+	:noindex:

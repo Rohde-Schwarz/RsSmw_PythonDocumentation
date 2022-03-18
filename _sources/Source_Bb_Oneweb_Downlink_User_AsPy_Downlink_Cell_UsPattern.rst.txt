@@ -1,0 +1,20 @@
+UsPattern
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:ONEWeb:DL:USER<UserIx>:AS:DL:CELL<CellNull>:USPattern
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:ONEWeb:DL:USER<UserIx>:AS:DL:CELL<CellNull>:USPattern
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Downlink.User.AsPy.Downlink.Cell.UsPattern.UsPattern
+	:members:
+	:undoc-members:
+	:noindex:

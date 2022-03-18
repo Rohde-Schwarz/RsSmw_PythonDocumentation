@@ -1,0 +1,20 @@
+Sue
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:NR5G:TCW:SUE:TSRS
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:NR5G:TCW:SUE:TSRS
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Nr5G.Tcw.Sue.Sue
+	:members:
+	:undoc-members:
+	:noindex:

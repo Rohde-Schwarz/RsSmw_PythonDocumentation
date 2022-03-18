@@ -1,0 +1,24 @@
+Reference
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:FSIMulator:MDELay:REFerence:DELay
+	single: SOURce<HwInstance>:FSIMulator:MDELay:REFerence:LOSS
+	single: SOURce<HwInstance>:FSIMulator:MDELay:REFerence:STATe
+
+.. code-block:: python
+
+	SOURce<HwInstance>:FSIMulator:MDELay:REFerence:DELay
+	SOURce<HwInstance>:FSIMulator:MDELay:REFerence:LOSS
+	SOURce<HwInstance>:FSIMulator:MDELay:REFerence:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.Mdelay.Reference.Reference
+	:members:
+	:undoc-members:
+	:noindex:

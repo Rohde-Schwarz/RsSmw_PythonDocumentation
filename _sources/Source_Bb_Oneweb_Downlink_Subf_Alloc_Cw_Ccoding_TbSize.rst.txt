@@ -1,0 +1,20 @@
+TbSize
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:ONEWeb:DL:SUBF<SubframeNull>:ALLoc<AllocationNull>:CW<Codeword>:CCODing:TBSize
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:ONEWeb:DL:SUBF<SubframeNull>:ALLoc<AllocationNull>:CW<Codeword>:CCODing:TBSize
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Downlink.Subf.Alloc.Cw.Ccoding.TbSize.TbSize
+	:members:
+	:undoc-members:
+	:noindex:

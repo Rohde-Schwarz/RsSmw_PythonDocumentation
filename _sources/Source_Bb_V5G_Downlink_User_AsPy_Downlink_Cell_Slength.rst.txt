@@ -1,0 +1,20 @@
+Slength
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:V5G:DL:USER<UserIx>:AS:DL:CELL<CellNull>:SLENgth
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:V5G:DL:USER<UserIx>:AS:DL:CELL<CellNull>:SLENgth
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Downlink.User.AsPy.Downlink.Cell.Slength.Slength
+	:members:
+	:undoc-members:
+	:noindex:

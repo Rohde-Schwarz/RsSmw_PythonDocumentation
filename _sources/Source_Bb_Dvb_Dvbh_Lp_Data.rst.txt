@@ -1,0 +1,22 @@
+Data
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:DVB:DVBH:LP:DATA:DSELection
+	single: SOURce<HwInstance>:BB:DVB:DVBH:LP:DATA
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:DVB:DVBH:LP:DATA:DSELection
+	SOURce<HwInstance>:BB:DVB:DVBH:LP:DATA
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dvb.Dvbh.Lp.Data.Data
+	:members:
+	:undoc-members:
+	:noindex:

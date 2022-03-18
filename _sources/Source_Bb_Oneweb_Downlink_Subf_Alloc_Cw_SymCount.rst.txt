@@ -1,0 +1,20 @@
+SymCount
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:ONEWeb:DL:SUBF<SubframeNull>:ALLoc<AllocationNull>:CW<Codeword>:SYMCount
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:ONEWeb:DL:SUBF<SubframeNull>:ALLoc<AllocationNull>:CW<Codeword>:SYMCount
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Downlink.Subf.Alloc.Cw.SymCount.SymCount
+	:members:
+	:undoc-members:
+	:noindex:

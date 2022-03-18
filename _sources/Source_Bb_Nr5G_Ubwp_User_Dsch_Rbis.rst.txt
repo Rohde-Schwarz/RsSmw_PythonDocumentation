@@ -1,0 +1,20 @@
+Rbis
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:NR5G:UBWP:USER<UserNull>:DSCH:RBIS
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:NR5G:UBWP:USER<UserNull>:DSCH:RBIS
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Nr5G.Ubwp.User.Dsch.Rbis.Rbis
+	:members:
+	:undoc-members:
+	:noindex:

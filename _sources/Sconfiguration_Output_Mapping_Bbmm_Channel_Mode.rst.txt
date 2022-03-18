@@ -1,0 +1,20 @@
+Mode
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SCONfiguration:OUTPut:MAPPing:BBMM<IqConnector>:CHANnel:MODE
+
+.. code-block:: python
+
+	SCONfiguration:OUTPut:MAPPing:BBMM<IqConnector>:CHANnel:MODE
+
+
+
+.. autoclass:: RsSmw.Implementations.Sconfiguration.Output.Mapping.Bbmm.Channel.Mode.Mode
+	:members:
+	:undoc-members:
+	:noindex:

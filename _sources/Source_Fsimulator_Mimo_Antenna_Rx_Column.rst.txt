@@ -1,0 +1,20 @@
+Column
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce:FSIMulator:MIMO:ANTenna:RX:COLumn:SIZE
+
+.. code-block:: python
+
+	SOURce:FSIMulator:MIMO:ANTenna:RX:COLumn:SIZE
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.Mimo.Antenna.Rx.Column.Column
+	:members:
+	:undoc-members:
+	:noindex:

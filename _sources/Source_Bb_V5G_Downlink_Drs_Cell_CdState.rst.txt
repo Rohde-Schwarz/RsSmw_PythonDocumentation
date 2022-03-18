@@ -1,0 +1,20 @@
+CdState
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:V5G:DL:DRS:CELL<CellNull>:CDSTate
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:V5G:DL:DRS:CELL<CellNull>:CDSTate
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Downlink.Drs.Cell.CdState.CdState
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,20 @@
+Cdin
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:NR5G:UBWP:USER<UserNull>:DSCH:CDIN
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:NR5G:UBWP:USER<UserNull>:DSCH:CDIN
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Nr5G.Ubwp.User.Dsch.Cdin.Cdin
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,26 @@
+Setting
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:XMRadio:SETTing:CATalog
+	single: SOURce<HwInstance>:BB:XMRadio:SETTing:DELete
+	single: SOURce<HwInstance>:BB:XMRadio:SETTing:LOAD
+	single: SOURce<HwInstance>:BB:XMRadio:SETTing:STORe
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:XMRadio:SETTing:CATalog
+	SOURce<HwInstance>:BB:XMRadio:SETTing:DELete
+	SOURce<HwInstance>:BB:XMRadio:SETTing:LOAD
+	SOURce<HwInstance>:BB:XMRadio:SETTing:STORe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.XmRadio.Setting.Setting
+	:members:
+	:undoc-members:
+	:noindex:

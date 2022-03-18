@@ -1,0 +1,39 @@
+Waveform
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:ARBitrary:ETHernet:WAVeform:COUNter
+	single: SOURce<HwInstance>:BB:ARBitrary:ETHernet:WAVeform:INFO
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:ARBitrary:ETHernet:WAVeform:COUNter
+	SOURce<HwInstance>:BB:ARBitrary:ETHernet:WAVeform:INFO
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Arbitrary.Ethernet.Waveform.Waveform
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.arbitrary.ethernet.waveform.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Arbitrary_Ethernet_Waveform_Tag.rst

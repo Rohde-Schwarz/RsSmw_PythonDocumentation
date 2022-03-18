@@ -1,0 +1,63 @@
+Tetra
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:TETRa:CTYPe
+	single: SOURce<HwInstance>:BB:TETRa:DBTYpe
+	single: SOURce<HwInstance>:BB:TETRa:LDIRection
+	single: SOURce<HwInstance>:BB:TETRa:MTYPe
+	single: SOURce<HwInstance>:BB:TETRa:PRESet
+	single: SOURce<HwInstance>:BB:TETRa:SLENgth
+	single: SOURce<HwInstance>:BB:TETRa:STATe
+	single: SOURce<HwInstance>:BB:TETRa:TMODe
+	single: SOURce<HwInstance>:BB:TETRa:VERSion
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:TETRa:CTYPe
+	SOURce<HwInstance>:BB:TETRa:DBTYpe
+	SOURce<HwInstance>:BB:TETRa:LDIRection
+	SOURce<HwInstance>:BB:TETRa:MTYPe
+	SOURce<HwInstance>:BB:TETRa:PRESet
+	SOURce<HwInstance>:BB:TETRa:SLENgth
+	SOURce<HwInstance>:BB:TETRa:STATe
+	SOURce<HwInstance>:BB:TETRa:TMODe
+	SOURce<HwInstance>:BB:TETRa:VERSion
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Tetra.Tetra
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.tetra.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Tetra_Bbncht.rst
+	Source_Bb_Tetra_Clipping.rst
+	Source_Bb_Tetra_Clock.rst
+	Source_Bb_Tetra_FilterPy.rst
+	Source_Bb_Tetra_Pramping.rst
+	Source_Bb_Tetra_Sattenuation.rst
+	Source_Bb_Tetra_Sconfiguration.rst
+	Source_Bb_Tetra_Setting.rst
+	Source_Bb_Tetra_SymbolRate.rst
+	Source_Bb_Tetra_Trigger.rst
+	Source_Bb_Tetra_Waveform.rst

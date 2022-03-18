@@ -1,0 +1,20 @@
+Tag
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:ARBitrary:ETHernet:WAVeform:TAG
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:ARBitrary:ETHernet:WAVeform:TAG
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Arbitrary.Ethernet.Waveform.Tag.Tag
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,20 @@
+Fsimulator
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce:BB:W3GPp:TS25141:FSIMulator:STATe
+
+.. code-block:: python
+
+	SOURce:BB:W3GPp:TS25141:FSIMulator:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.W3Gpp.Ts25141.Fsimulator.Fsimulator
+	:members:
+	:undoc-members:
+	:noindex:

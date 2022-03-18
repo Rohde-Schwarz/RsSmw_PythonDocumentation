@@ -1,0 +1,20 @@
+SuConfiguration
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:ONEWeb:UL:CA:CELL<CellNull>:SUConfiguration
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:ONEWeb:UL:CA:CELL<CellNull>:SUConfiguration
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Uplink.Ca.Cell.SuConfiguration.SuConfiguration
+	:members:
+	:undoc-members:
+	:noindex:

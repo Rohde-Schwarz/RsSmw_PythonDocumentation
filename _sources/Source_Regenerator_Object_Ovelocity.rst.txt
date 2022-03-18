@@ -1,0 +1,20 @@
+Ovelocity
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:REGenerator:OBJect<ObjectIx>:OVELocity
+
+.. code-block:: python
+
+	SOURce<HwInstance>:REGenerator:OBJect<ObjectIx>:OVELocity
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Regenerator.Object.Ovelocity.Ovelocity
+	:members:
+	:undoc-members:
+	:noindex:

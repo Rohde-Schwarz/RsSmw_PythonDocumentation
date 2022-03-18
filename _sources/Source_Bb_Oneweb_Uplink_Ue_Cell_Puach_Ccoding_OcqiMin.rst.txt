@@ -1,0 +1,20 @@
+OcqiMin
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:ONEWeb:UL:UE<UserEquipment>:CELL<CellNull>:PUACh:CCODing:OCQimin
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:ONEWeb:UL:UE<UserEquipment>:CELL<CellNull>:PUACh:CCODing:OCQimin
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Uplink.Ue.Cell.Puach.Ccoding.OcqiMin.OcqiMin
+	:members:
+	:undoc-members:
+	:noindex:

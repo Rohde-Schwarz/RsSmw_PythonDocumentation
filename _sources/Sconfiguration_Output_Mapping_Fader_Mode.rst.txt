@@ -1,0 +1,20 @@
+Mode
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SCONfiguration:OUTPut:MAPPing:FADer<DigitalIq>:MODE
+
+.. code-block:: python
+
+	SCONfiguration:OUTPut:MAPPing:FADer<DigitalIq>:MODE
+
+
+
+.. autoclass:: RsSmw.Implementations.Sconfiguration.Output.Mapping.Fader.Mode.Mode
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,20 @@
+Real
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:ONEWeb:DL:MIMO:APM:CS:AP<AntennaPortNull>:ROW<Row>:REAL
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:ONEWeb:DL:MIMO:APM:CS:AP<AntennaPortNull>:ROW<Row>:REAL
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Downlink.Mimo.Apm.Cs.Ap.Row.Real.Real
+	:members:
+	:undoc-members:
+	:noindex:

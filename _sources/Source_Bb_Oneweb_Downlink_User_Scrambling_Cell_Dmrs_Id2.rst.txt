@@ -1,0 +1,20 @@
+Id2
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:ONEWeb:DL:USER<UserIx>:SCRambling:CELL<Cell>:DMRS:ID2
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:ONEWeb:DL:USER<UserIx>:SCRambling:CELL<Cell>:DMRS:ID2
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Downlink.User.Scrambling.Cell.Dmrs.Id2.Id2
+	:members:
+	:undoc-members:
+	:noindex:

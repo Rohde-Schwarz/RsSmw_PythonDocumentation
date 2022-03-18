@@ -1,0 +1,20 @@
+Pi11
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:NR5G:UBWP:USER<UserNull>:CELL<CellNull>:DL:BWP<BwPartNull>:PDSCh:PI11
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:NR5G:UBWP:USER<UserNull>:CELL<CellNull>:DL:BWP<BwPartNull>:PDSCh:PI11
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Nr5G.Ubwp.User.Cell.Downlink.Bwp.Pdsch.Pi11.Pi11
+	:members:
+	:undoc-members:
+	:noindex:

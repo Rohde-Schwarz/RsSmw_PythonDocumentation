@@ -1,0 +1,20 @@
+Conflict
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:ONEWeb:UL:SUBF<SubframeNull>:ALLoc<AllocationNull>:PUCCh:CONFlict
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:ONEWeb:UL:SUBF<SubframeNull>:ALLoc<AllocationNull>:PUCCh:CONFlict
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Uplink.Subf.Alloc.Pucch.Conflict.Conflict
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,20 @@
+SymbolRate
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:DVB:SRATe:VARiation
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:DVB:SRATe:VARiation
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dvb.SymbolRate.SymbolRate
+	:members:
+	:undoc-members:
+	:noindex:

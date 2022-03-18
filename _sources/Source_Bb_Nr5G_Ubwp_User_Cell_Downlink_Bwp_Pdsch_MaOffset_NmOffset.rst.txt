@@ -1,0 +1,20 @@
+NmOffset
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:NR5G:UBWP:USER<UserNull>:CELL<CellNull>:DL:BWP<BwPartNull>:PDSCh:MAOFfset:NMOFfset
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:NR5G:UBWP:USER<UserNull>:CELL<CellNull>:DL:BWP<BwPartNull>:PDSCh:MAOFfset:NMOFfset
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Nr5G.Ubwp.User.Cell.Downlink.Bwp.Pdsch.MaOffset.NmOffset.NmOffset
+	:members:
+	:undoc-members:
+	:noindex:

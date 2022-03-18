@@ -1,0 +1,52 @@
+Parameter
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:V5G:FILTer:PARameter:APCO25
+	single: SOURce<HwInstance>:BB:V5G:FILTer:PARameter:GAUSs
+	single: SOURce<HwInstance>:BB:V5G:FILTer:PARameter:LPASSEVM
+	single: SOURce<HwInstance>:BB:V5G:FILTer:PARameter:LPASs
+	single: SOURce<HwInstance>:BB:V5G:FILTer:PARameter:PGAuss
+	single: SOURce<HwInstance>:BB:V5G:FILTer:PARameter:RCOSine
+	single: SOURce<HwInstance>:BB:V5G:FILTer:PARameter:SPHase
+	single: SOURce<HwInstance>:BB:V5G:FILTer:PARameter:USER
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:V5G:FILTer:PARameter:APCO25
+	SOURce<HwInstance>:BB:V5G:FILTer:PARameter:GAUSs
+	SOURce<HwInstance>:BB:V5G:FILTer:PARameter:LPASSEVM
+	SOURce<HwInstance>:BB:V5G:FILTer:PARameter:LPASs
+	SOURce<HwInstance>:BB:V5G:FILTer:PARameter:PGAuss
+	SOURce<HwInstance>:BB:V5G:FILTer:PARameter:RCOSine
+	SOURce<HwInstance>:BB:V5G:FILTer:PARameter:SPHase
+	SOURce<HwInstance>:BB:V5G:FILTer:PARameter:USER
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.FilterPy.Parameter.Parameter
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.v5G.filterPy.parameter.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_V5G_FilterPy_Parameter_Cosine.rst
+	Source_Bb_V5G_FilterPy_Parameter_Lte.rst

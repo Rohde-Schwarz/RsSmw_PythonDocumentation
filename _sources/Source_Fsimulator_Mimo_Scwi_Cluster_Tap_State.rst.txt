@@ -1,0 +1,20 @@
+State
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:FSIMulator:MIMO:SCWI:CLUSter<Cluster>:TAP<MimoTap>:STATe
+
+.. code-block:: python
+
+	SOURce<HwInstance>:FSIMulator:MIMO:SCWI:CLUSter<Cluster>:TAP<MimoTap>:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.Mimo.Scwi.Cluster.Tap.State.State
+	:members:
+	:undoc-members:
+	:noindex:

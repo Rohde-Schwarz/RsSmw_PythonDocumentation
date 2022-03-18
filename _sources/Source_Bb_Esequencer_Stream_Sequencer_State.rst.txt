@@ -1,0 +1,20 @@
+State
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:ESEQuencer:STReam<TwoStreams>:SEQuencer<Sequencer>:STATe
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:ESEQuencer:STReam<TwoStreams>:SEQuencer<Sequencer>:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Esequencer.Stream.Sequencer.State.State
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,43 @@
+Setting
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:V5G:SETTing:CATalog
+	single: SOURce<HwInstance>:BB:V5G:SETTing:DEL
+	single: SOURce<HwInstance>:BB:V5G:SETTing:LOAD
+	single: SOURce<HwInstance>:BB:V5G:SETTing:STORe
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:V5G:SETTing:CATalog
+	SOURce<HwInstance>:BB:V5G:SETTing:DEL
+	SOURce<HwInstance>:BB:V5G:SETTing:LOAD
+	SOURce<HwInstance>:BB:V5G:SETTing:STORe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Setting.Setting
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.v5G.setting.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_V5G_Setting_Pconfiguration.rst

@@ -1,0 +1,20 @@
+CpnSequence
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:DVB:DVBS:CPNSequence:STATe
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:DVB:DVBS:CPNSequence:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dvb.Dvbs.CpnSequence.CpnSequence
+	:members:
+	:undoc-members:
+	:noindex:

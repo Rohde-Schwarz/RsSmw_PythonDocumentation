@@ -1,0 +1,22 @@
+Trip
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:FSIMulator:DSSimulation:TOWertoair:TRIP:DURation
+	single: SOURce<HwInstance>:FSIMulator:DSSimulation:TOWertoair:TRIP:LENGth
+
+.. code-block:: python
+
+	SOURce<HwInstance>:FSIMulator:DSSimulation:TOWertoair:TRIP:DURation
+	SOURce<HwInstance>:FSIMulator:DSSimulation:TOWertoair:TRIP:LENGth
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.DsSimulation.TowerToAir.Trip.Trip
+	:members:
+	:undoc-members:
+	:noindex:

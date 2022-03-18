@@ -1,0 +1,22 @@
+Pratio
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce:FSIMulator:MIMO:ANTenna:POLarization:PRATio:HORizontal
+	single: SOURce:FSIMulator:MIMO:ANTenna:POLarization:PRATio:VERTical
+
+.. code-block:: python
+
+	SOURce:FSIMulator:MIMO:ANTenna:POLarization:PRATio:HORizontal
+	SOURce:FSIMulator:MIMO:ANTenna:POLarization:PRATio:VERTical
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.Mimo.Antenna.Polarization.Pratio.Pratio
+	:members:
+	:undoc-members:
+	:noindex:

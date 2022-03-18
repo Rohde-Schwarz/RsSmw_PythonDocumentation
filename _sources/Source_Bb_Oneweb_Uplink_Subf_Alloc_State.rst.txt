@@ -1,0 +1,20 @@
+State
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:ONEWeb:UL:SUBF<SubframeNull>:ALLoc<AllocationNull>:STATe
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:ONEWeb:UL:SUBF<SubframeNull>:ALLoc<AllocationNull>:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Uplink.Subf.Alloc.State.State
+	:members:
+	:undoc-members:
+	:noindex:

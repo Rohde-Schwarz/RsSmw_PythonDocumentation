@@ -1,0 +1,20 @@
+Pat4
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:NR5G:UBWP:USER<UserNull>:CELL<CellNull>:SL:BWP<BwPartNull>:RESPool:RES:PAT4
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:NR5G:UBWP:USER<UserNull>:CELL<CellNull>:SL:BWP<BwPartNull>:RESPool:RES:PAT4
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Nr5G.Ubwp.User.Cell.Sl.Bwp.ResPool.Res.Pat4.Pat4
+	:members:
+	:undoc-members:
+	:noindex:

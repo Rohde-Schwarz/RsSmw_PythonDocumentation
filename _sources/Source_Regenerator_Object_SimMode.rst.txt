@@ -1,0 +1,20 @@
+SimMode
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:REGenerator:OBJect<ObjectIx>:SIMMode
+
+.. code-block:: python
+
+	SOURce<HwInstance>:REGenerator:OBJect<ObjectIx>:SIMMode
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Regenerator.Object.SimMode.SimMode
+	:members:
+	:undoc-members:
+	:noindex:

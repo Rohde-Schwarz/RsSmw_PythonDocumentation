@@ -1,0 +1,20 @@
+Timc
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:ONEWeb:TIMC:NTAoffset
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:ONEWeb:TIMC:NTAoffset
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Timc.Timc
+	:members:
+	:undoc-members:
+	:noindex:

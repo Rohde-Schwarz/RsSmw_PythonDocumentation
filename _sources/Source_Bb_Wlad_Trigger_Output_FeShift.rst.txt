@@ -1,0 +1,20 @@
+FeShift
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:WLAD:TRIGger:OUTPut<Output>:FESHift
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:WLAD:TRIGger:OUTPut<Output>:FESHift
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Wlad.Trigger.Output.FeShift.FeShift
+	:members:
+	:undoc-members:
+	:noindex:

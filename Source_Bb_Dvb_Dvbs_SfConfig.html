@@ -1,0 +1,801 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>SfConfig &mdash; RsSmw 5.0.44.58 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="ThConfig" href="Source_Bb_Dvb_Dvbs_ThConfig.html" />
+    <link rel="prev" title="Fodt" href="Source_Bb_Dvb_Dvbs_SfbhConfig_Fodt.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> RsSmw
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="readme.html">Revision History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="enums.html">Enums</a></li>
+<li class="toctree-l1"><a class="reference internal" href="repcap.html">RepCaps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">Examples</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="RsSmw.html">RsSmw API Structure</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Bert.html">Bert</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Bler.html">Bler</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Calibration.html">Calibration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Clock.html">Clock</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Device.html">Device</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Diagnostic.html">Diagnostic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Display.html">Display</a></li>
+<li class="toctree-l2"><a class="reference internal" href="FormatPy.html">FormatPy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="HardCopy.html">HardCopy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Initiate.html">Initiate&lt;Channel&gt;</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Instruments.html">Instruments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Kboard.html">Kboard</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MassMemory.html">MassMemory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Memory.html">Memory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Output.html">Output</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Read.html">Read&lt;Channel&gt;</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Sconfiguration.html">Sconfiguration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Sense.html">Sense&lt;Channel&gt;</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Service.html">Service</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slist.html">Slist</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="Source.html">Source</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="Source_Am.html">Am&lt;GeneratorIx&gt;</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Source_Awgn.html">Awgn</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="Source_Bb.html">Bb</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="Source_Bb_Arbitrary.html">Arbitrary</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Source_Bb_Btooth.html">Btooth</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Source_Bb_C2K.html">C2K</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Source_Bb_Coder.html">Coder</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Source_Bb_Dab.html">Dab</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Source_Bb_Dm.html">Dm</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="Source_Bb_Dvb.html">Dvb</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Source_Bb_Esequencer.html">Esequencer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Source_Bb_Eutra.html">Eutra</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Source_Bb_Evdo.html">Evdo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Source_Bb_Gbas.html">Gbas</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Source_Bb_Gnpr.html">Gnpr</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Source_Bb_Gnss.html">Gnss</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Source_Bb_Graphics.html">Graphics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Source_Bb_Gsm.html">Gsm</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Source_Bb_Huwb.html">Huwb</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Source_Bb_Impairment.html">Impairment</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Source_Bb_Info.html">Info</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Source_Bb_Lora.html">Lora</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Source_Bb_Mccw.html">Mccw</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Source_Bb_Measurement.html">Measurement</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Source_Bb_Nfc.html">Nfc</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Source_Bb_Nr5G.html">Nr5G</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Source_Bb_Ofdm.html">Ofdm</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Source_Bb_Oneweb.html">Oneweb</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Source_Bb_Packet.html">Packet</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Source_Bb_Path.html">Path</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Source_Bb_Power.html">Power</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Source_Bb_Pramp.html">Pramp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Source_Bb_Progress.html">Progress</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Source_Bb_Sirius.html">Sirius</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Source_Bb_Stereo.html">Stereo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Source_Bb_Tdscdma.html">Tdscdma</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Source_Bb_Tetra.html">Tetra</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Source_Bb_Trigger.html">Trigger</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Source_Bb_V5G.html">V5G</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Source_Bb_W3Gpp.html">W3Gpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Source_Bb_Wlad.html">Wlad</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Source_Bb_Wlnn.html">Wlnn</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Source_Bb_XmRadio.html">XmRadio</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Source_Bbin.html">Bbin</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Source_Bextension.html">Bextension</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Source_Combined.html">Combined</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Source_Correction.html">Correction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Source_Dm.html">Dm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Source_Efrontend.html">Efrontend</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Source_Fm.html">Fm&lt;GeneratorIx&gt;</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Source_Frequency.html">Frequency</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Source_Fsimulator.html">Fsimulator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Source_InputPy.html">InputPy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Source_Iq.html">Iq</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Source_LfOutput.html">LfOutput&lt;LfOutput&gt;</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Source_ListPy.html">ListPy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Source_Modulation.html">Modulation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Source_Noise.html">Noise</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Source_Occupy.html">Occupy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Source_Path.html">Path</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Source_Pgenerator.html">Pgenerator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Source_Phase.html">Phase</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Source_Pm.html">Pm&lt;GeneratorIx&gt;</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Source_Power.html">Power</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Source_Pulm.html">Pulm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Source_Regenerator.html">Regenerator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Source_RfAlignment.html">RfAlignment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Source_Roscillator.html">Roscillator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Source_Sweep.html">Sweep</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Status.html">Status</a></li>
+<li class="toctree-l2"><a class="reference internal" href="System.html">System</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Test.html">Test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Trigger.html">Trigger&lt;InputIx&gt;</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Unit.html">Unit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Xfer.html">Xfer</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="utilities.html">RsSmw Utilities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="logger.html">RsSmw Logger</a></li>
+<li class="toctree-l1"><a class="reference internal" href="events.html">RsSmw Events</a></li>
+<li class="toctree-l1"><a class="reference internal" href="genindex.html">Index</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">RsSmw</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="RsSmw.html">RsSmw API Structure</a> &raquo;</li>
+        
+          <li><a href="Source.html">Source</a> &raquo;</li>
+        
+          <li><a href="Source_Bb.html">Bb</a> &raquo;</li>
+        
+          <li><a href="Source_Bb_Dvb.html">Dvb</a> &raquo;</li>
+        
+          <li><a href="Source_Bb_Dvb_Dvbs.html">Dvbs</a> &raquo;</li>
+        
+      <li>SfConfig</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/Source_Bb_Dvb_Dvbs_SfConfig.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="sfconfig">
+<h1>SfConfig<a class="headerlink" href="#sfconfig" title="Permalink to this headline">¶</a></h1>
+<p class="rubric">SCPI Commands</p>
+<div class="highlight-python notranslate" id="index-0"><div class="highlight"><pre><span></span><span class="n">SOURce</span><span class="o">&lt;</span><span class="n">HwInstance</span><span class="o">&gt;</span><span class="p">:</span><span class="n">BB</span><span class="p">:</span><span class="n">DVB</span><span class="p">:</span><span class="n">DVBS</span><span class="p">:</span><span class="n">SFConfig</span><span class="p">:</span><span class="n">CSFLength</span>
+<span class="n">SOURce</span><span class="o">&lt;</span><span class="n">HwInstance</span><span class="o">&gt;</span><span class="p">:</span><span class="n">BB</span><span class="p">:</span><span class="n">DVB</span><span class="p">:</span><span class="n">DVBS</span><span class="p">:</span><span class="n">SFConfig</span><span class="p">:</span><span class="n">CULength</span>
+<span class="n">SOURce</span><span class="o">&lt;</span><span class="n">HwInstance</span><span class="o">&gt;</span><span class="p">:</span><span class="n">BB</span><span class="p">:</span><span class="n">DVB</span><span class="p">:</span><span class="n">DVBS</span><span class="p">:</span><span class="n">SFConfig</span><span class="p">:</span><span class="n">DSF</span>
+<span class="n">SOURce</span><span class="o">&lt;</span><span class="n">HwInstance</span><span class="o">&gt;</span><span class="p">:</span><span class="n">BB</span><span class="p">:</span><span class="n">DVB</span><span class="p">:</span><span class="n">DVBS</span><span class="p">:</span><span class="n">SFConfig</span><span class="p">:</span><span class="n">EHFSize</span>
+<span class="n">SOURce</span><span class="o">&lt;</span><span class="n">HwInstance</span><span class="o">&gt;</span><span class="p">:</span><span class="n">BB</span><span class="p">:</span><span class="n">DVB</span><span class="p">:</span><span class="n">DVBS</span><span class="p">:</span><span class="n">SFConfig</span><span class="p">:</span><span class="n">NPAY</span>
+<span class="n">SOURce</span><span class="o">&lt;</span><span class="n">HwInstance</span><span class="o">&gt;</span><span class="p">:</span><span class="n">BB</span><span class="p">:</span><span class="n">DVB</span><span class="p">:</span><span class="n">DVBS</span><span class="p">:</span><span class="n">SFConfig</span><span class="p">:</span><span class="n">NREF</span>
+<span class="n">SOURce</span><span class="o">&lt;</span><span class="n">HwInstance</span><span class="o">&gt;</span><span class="p">:</span><span class="n">BB</span><span class="p">:</span><span class="n">DVB</span><span class="p">:</span><span class="n">DVBS</span><span class="p">:</span><span class="n">SFConfig</span><span class="p">:</span><span class="n">PLENgth</span>
+<span class="n">SOURce</span><span class="o">&lt;</span><span class="n">HwInstance</span><span class="o">&gt;</span><span class="p">:</span><span class="n">BB</span><span class="p">:</span><span class="n">DVB</span><span class="p">:</span><span class="n">DVBS</span><span class="p">:</span><span class="n">SFConfig</span><span class="p">:</span><span class="n">PLI</span>
+<span class="n">SOURce</span><span class="o">&lt;</span><span class="n">HwInstance</span><span class="o">&gt;</span><span class="p">:</span><span class="n">BB</span><span class="p">:</span><span class="n">DVB</span><span class="p">:</span><span class="n">DVBS</span><span class="p">:</span><span class="n">SFConfig</span><span class="p">:</span><span class="n">PSF</span>
+<span class="n">SOURce</span><span class="o">&lt;</span><span class="n">HwInstance</span><span class="o">&gt;</span><span class="p">:</span><span class="n">BB</span><span class="p">:</span><span class="n">DVB</span><span class="p">:</span><span class="n">DVBS</span><span class="p">:</span><span class="n">SFConfig</span><span class="p">:</span><span class="n">PSTate</span>
+<span class="n">SOURce</span><span class="o">&lt;</span><span class="n">HwInstance</span><span class="o">&gt;</span><span class="p">:</span><span class="n">BB</span><span class="p">:</span><span class="n">DVB</span><span class="p">:</span><span class="n">DVBS</span><span class="p">:</span><span class="n">SFConfig</span><span class="p">:</span><span class="n">PWH</span>
+<span class="n">SOURce</span><span class="o">&lt;</span><span class="n">HwInstance</span><span class="o">&gt;</span><span class="p">:</span><span class="n">BB</span><span class="p">:</span><span class="n">DVB</span><span class="p">:</span><span class="n">DVBS</span><span class="p">:</span><span class="n">SFConfig</span><span class="p">:</span><span class="n">SFFI</span>
+<span class="n">SOURce</span><span class="o">&lt;</span><span class="n">HwInstance</span><span class="o">&gt;</span><span class="p">:</span><span class="n">BB</span><span class="p">:</span><span class="n">DVB</span><span class="p">:</span><span class="n">DVBS</span><span class="p">:</span><span class="n">SFConfig</span><span class="p">:</span><span class="n">SFLength</span>
+<span class="n">SOURce</span><span class="o">&lt;</span><span class="n">HwInstance</span><span class="o">&gt;</span><span class="p">:</span><span class="n">BB</span><span class="p">:</span><span class="n">DVB</span><span class="p">:</span><span class="n">DVBS</span><span class="p">:</span><span class="n">SFConfig</span><span class="p">:</span><span class="n">SOSF</span>
+<span class="n">SOURce</span><span class="o">&lt;</span><span class="n">HwInstance</span><span class="o">&gt;</span><span class="p">:</span><span class="n">BB</span><span class="p">:</span><span class="n">DVB</span><span class="p">:</span><span class="n">DVBS</span><span class="p">:</span><span class="n">SFConfig</span><span class="p">:</span><span class="n">STATe</span>
+<span class="n">SOURce</span><span class="o">&lt;</span><span class="n">HwInstance</span><span class="o">&gt;</span><span class="p">:</span><span class="n">BB</span><span class="p">:</span><span class="n">DVB</span><span class="p">:</span><span class="n">DVBS</span><span class="p">:</span><span class="n">SFConfig</span><span class="p">:</span><span class="n">STWH</span>
+</pre></div>
+</div>
+<dl class="py class">
+<dt>
+<em class="property">class </em><code class="sig-name descname">SfConfig</code><a class="reference internal" href="_modules/RsSmw/Implementations/Source/Bb/Dvb/Dvbs/SfConfig.html#SfConfig"><span class="viewcode-link">[source]</span></a></dt>
+<dd><p>SfConfig commands group definition. 16 total commands, 0 Subgroups, 16 group commands</p>
+<dl class="py method">
+<dt>
+<code class="sig-name descname">get_csf_length</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; int<a class="reference internal" href="_modules/RsSmw/Implementations/Source/Bb/Dvb/Dvbs/SfConfig.html#SfConfig.get_csf_length"><span class="viewcode-link">[source]</span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBS:SFConfig:CSFLength</span>
+<span class="n">value</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">source</span><span class="o">.</span><span class="n">bb</span><span class="o">.</span><span class="n">dvb</span><span class="o">.</span><span class="n">dvbs</span><span class="o">.</span><span class="n">sfConfig</span><span class="o">.</span><span class="n">get_csf_length</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>No command help available</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">return</dt>
+<dd class="field-odd"><p>calculated_sfl: No help available</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname">get_cu_length</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; int<a class="reference internal" href="_modules/RsSmw/Implementations/Source/Bb/Dvb/Dvbs/SfConfig.html#SfConfig.get_cu_length"><span class="viewcode-link">[source]</span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBS:SFConfig:CULength</span>
+<span class="n">value</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">source</span><span class="o">.</span><span class="n">bb</span><span class="o">.</span><span class="n">dvb</span><span class="o">.</span><span class="n">dvbs</span><span class="o">.</span><span class="n">sfConfig</span><span class="o">.</span><span class="n">get_cu_length</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>No command help available</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">return</dt>
+<dd class="field-odd"><p>cu_length: No help available</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname">get_dsf</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; int<a class="reference internal" href="_modules/RsSmw/Implementations/Source/Bb/Dvb/Dvbs/SfConfig.html#SfConfig.get_dsf"><span class="viewcode-link">[source]</span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBS:SFConfig:DSF</span>
+<span class="n">value</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">source</span><span class="o">.</span><span class="n">bb</span><span class="o">.</span><span class="n">dvb</span><span class="o">.</span><span class="n">dvbs</span><span class="o">.</span><span class="n">sfConfig</span><span class="o">.</span><span class="n">get_dsf</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>No command help available</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">return</dt>
+<dd class="field-odd"><p>pilot_filed_dis: No help available</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname">get_ehf_size</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; int<a class="reference internal" href="_modules/RsSmw/Implementations/Source/Bb/Dvb/Dvbs/SfConfig.html#SfConfig.get_ehf_size"><span class="viewcode-link">[source]</span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBS:SFConfig:EHFSize</span>
+<span class="n">value</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">source</span><span class="o">.</span><span class="n">bb</span><span class="o">.</span><span class="n">dvb</span><span class="o">.</span><span class="n">dvbs</span><span class="o">.</span><span class="n">sfConfig</span><span class="o">.</span><span class="n">get_ehf_size</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>No command help available</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">return</dt>
+<dd class="field-odd"><p>ehf_size: No help available</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname">get_npay</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; int<a class="reference internal" href="_modules/RsSmw/Implementations/Source/Bb/Dvb/Dvbs/SfConfig.html#SfConfig.get_npay"><span class="viewcode-link">[source]</span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBS:SFConfig:NPAY</span>
+<span class="n">value</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">source</span><span class="o">.</span><span class="n">bb</span><span class="o">.</span><span class="n">dvb</span><span class="o">.</span><span class="n">dvbs</span><span class="o">.</span><span class="n">sfConfig</span><span class="o">.</span><span class="n">get_npay</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>No command help available</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">return</dt>
+<dd class="field-odd"><p>npay: No help available</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname">get_nref</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; int<a class="reference internal" href="_modules/RsSmw/Implementations/Source/Bb/Dvb/Dvbs/SfConfig.html#SfConfig.get_nref"><span class="viewcode-link">[source]</span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBS:SFConfig:NREF</span>
+<span class="n">value</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">source</span><span class="o">.</span><span class="n">bb</span><span class="o">.</span><span class="n">dvb</span><span class="o">.</span><span class="n">dvbs</span><span class="o">.</span><span class="n">sfConfig</span><span class="o">.</span><span class="n">get_nref</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>No command help available</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">return</dt>
+<dd class="field-odd"><p>nref: No help available</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname">get_plength</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; int<a class="reference internal" href="_modules/RsSmw/Implementations/Source/Bb/Dvb/Dvbs/SfConfig.html#SfConfig.get_plength"><span class="viewcode-link">[source]</span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBS:SFConfig:PLENgth</span>
+<span class="n">value</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">source</span><span class="o">.</span><span class="n">bb</span><span class="o">.</span><span class="n">dvb</span><span class="o">.</span><span class="n">dvbs</span><span class="o">.</span><span class="n">sfConfig</span><span class="o">.</span><span class="n">get_plength</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>No command help available</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">return</dt>
+<dd class="field-odd"><p>postamble_length: No help available</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname">get_pli</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; RsSmw.enums.DvbS2Xsfpli<a class="reference internal" href="_modules/RsSmw/Implementations/Source/Bb/Dvb/Dvbs/SfConfig.html#SfConfig.get_pli"><span class="viewcode-link">[source]</span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBS:SFConfig:PLI</span>
+<span class="n">value</span><span class="p">:</span> <span class="n">enums</span><span class="o">.</span><span class="n">DvbS2Xsfpli</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">source</span><span class="o">.</span><span class="n">bb</span><span class="o">.</span><span class="n">dvb</span><span class="o">.</span><span class="n">dvbs</span><span class="o">.</span><span class="n">sfConfig</span><span class="o">.</span><span class="n">get_pli</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>No command help available</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">return</dt>
+<dd class="field-odd"><p>pli: No help available</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname">get_psf</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; int<a class="reference internal" href="_modules/RsSmw/Implementations/Source/Bb/Dvb/Dvbs/SfConfig.html#SfConfig.get_psf"><span class="viewcode-link">[source]</span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBS:SFConfig:PSF</span>
+<span class="n">value</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">source</span><span class="o">.</span><span class="n">bb</span><span class="o">.</span><span class="n">dvb</span><span class="o">.</span><span class="n">dvbs</span><span class="o">.</span><span class="n">sfConfig</span><span class="o">.</span><span class="n">get_psf</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>No command help available</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">return</dt>
+<dd class="field-odd"><p>pilot_field_size: No help available</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname">get_pstate</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; bool<a class="reference internal" href="_modules/RsSmw/Implementations/Source/Bb/Dvb/Dvbs/SfConfig.html#SfConfig.get_pstate"><span class="viewcode-link">[source]</span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBS:SFConfig:PSTate</span>
+<span class="n">value</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">source</span><span class="o">.</span><span class="n">bb</span><span class="o">.</span><span class="n">dvb</span><span class="o">.</span><span class="n">dvbs</span><span class="o">.</span><span class="n">sfConfig</span><span class="o">.</span><span class="n">get_pstate</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>No command help available</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">return</dt>
+<dd class="field-odd"><p>sf_pilot_state: No help available</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname">get_pwh</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; int<a class="reference internal" href="_modules/RsSmw/Implementations/Source/Bb/Dvb/Dvbs/SfConfig.html#SfConfig.get_pwh"><span class="viewcode-link">[source]</span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBS:SFConfig:PWH</span>
+<span class="n">value</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">source</span><span class="o">.</span><span class="n">bb</span><span class="o">.</span><span class="n">dvb</span><span class="o">.</span><span class="n">dvbs</span><span class="o">.</span><span class="n">sfConfig</span><span class="o">.</span><span class="n">get_pwh</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>No command help available</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">return</dt>
+<dd class="field-odd"><p>sf_pilot_wh: No help available</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname">get_sf_length</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; int<a class="reference internal" href="_modules/RsSmw/Implementations/Source/Bb/Dvb/Dvbs/SfConfig.html#SfConfig.get_sf_length"><span class="viewcode-link">[source]</span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBS:SFConfig:SFLength</span>
+<span class="n">value</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">source</span><span class="o">.</span><span class="n">bb</span><span class="o">.</span><span class="n">dvb</span><span class="o">.</span><span class="n">dvbs</span><span class="o">.</span><span class="n">sfConfig</span><span class="o">.</span><span class="n">get_sf_length</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>No command help available</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">return</dt>
+<dd class="field-odd"><p>sf_length: No help available</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname">get_sffi</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; RsSmw.enums.DvbS2XsfFormat<a class="reference internal" href="_modules/RsSmw/Implementations/Source/Bb/Dvb/Dvbs/SfConfig.html#SfConfig.get_sffi"><span class="viewcode-link">[source]</span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBS:SFConfig:SFFI</span>
+<span class="n">value</span><span class="p">:</span> <span class="n">enums</span><span class="o">.</span><span class="n">DvbS2XsfFormat</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">source</span><span class="o">.</span><span class="n">bb</span><span class="o">.</span><span class="n">dvb</span><span class="o">.</span><span class="n">dvbs</span><span class="o">.</span><span class="n">sfConfig</span><span class="o">.</span><span class="n">get_sffi</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>No command help available</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">return</dt>
+<dd class="field-odd"><p>sffi: No help available</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname">get_sosf</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; int<a class="reference internal" href="_modules/RsSmw/Implementations/Source/Bb/Dvb/Dvbs/SfConfig.html#SfConfig.get_sosf"><span class="viewcode-link">[source]</span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBS:SFConfig:SOSF</span>
+<span class="n">value</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">source</span><span class="o">.</span><span class="n">bb</span><span class="o">.</span><span class="n">dvb</span><span class="o">.</span><span class="n">dvbs</span><span class="o">.</span><span class="n">sfConfig</span><span class="o">.</span><span class="n">get_sosf</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>No command help available</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">return</dt>
+<dd class="field-odd"><p>sosf: No help available</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname">get_state</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; bool<a class="reference internal" href="_modules/RsSmw/Implementations/Source/Bb/Dvb/Dvbs/SfConfig.html#SfConfig.get_state"><span class="viewcode-link">[source]</span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBS:SFConfig:STATe</span>
+<span class="n">value</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">source</span><span class="o">.</span><span class="n">bb</span><span class="o">.</span><span class="n">dvb</span><span class="o">.</span><span class="n">dvbs</span><span class="o">.</span><span class="n">sfConfig</span><span class="o">.</span><span class="n">get_state</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>No command help available</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">return</dt>
+<dd class="field-odd"><p>sf_state: No help available</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname">get_stwh</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; int<a class="reference internal" href="_modules/RsSmw/Implementations/Source/Bb/Dvb/Dvbs/SfConfig.html#SfConfig.get_stwh"><span class="viewcode-link">[source]</span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBS:SFConfig:STWH</span>
+<span class="n">value</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">source</span><span class="o">.</span><span class="n">bb</span><span class="o">.</span><span class="n">dvb</span><span class="o">.</span><span class="n">dvbs</span><span class="o">.</span><span class="n">sfConfig</span><span class="o">.</span><span class="n">get_stwh</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>No command help available</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">return</dt>
+<dd class="field-odd"><p>st: No help available</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname">set_npay</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">npay</span><span class="p">:</span> <span class="n">int</span></em><span class="sig-paren">)</span> &#x2192; None<a class="reference internal" href="_modules/RsSmw/Implementations/Source/Bb/Dvb/Dvbs/SfConfig.html#SfConfig.set_npay"><span class="viewcode-link">[source]</span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBS:SFConfig:NPAY</span>
+<span class="n">driver</span><span class="o">.</span><span class="n">source</span><span class="o">.</span><span class="n">bb</span><span class="o">.</span><span class="n">dvb</span><span class="o">.</span><span class="n">dvbs</span><span class="o">.</span><span class="n">sfConfig</span><span class="o">.</span><span class="n">set_npay</span><span class="p">(</span><span class="n">npay</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>No command help available</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">param npay</dt>
+<dd class="field-odd"><p>No help available</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname">set_nref</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">nref</span><span class="p">:</span> <span class="n">int</span></em><span class="sig-paren">)</span> &#x2192; None<a class="reference internal" href="_modules/RsSmw/Implementations/Source/Bb/Dvb/Dvbs/SfConfig.html#SfConfig.set_nref"><span class="viewcode-link">[source]</span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBS:SFConfig:NREF</span>
+<span class="n">driver</span><span class="o">.</span><span class="n">source</span><span class="o">.</span><span class="n">bb</span><span class="o">.</span><span class="n">dvb</span><span class="o">.</span><span class="n">dvbs</span><span class="o">.</span><span class="n">sfConfig</span><span class="o">.</span><span class="n">set_nref</span><span class="p">(</span><span class="n">nref</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>No command help available</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">param nref</dt>
+<dd class="field-odd"><p>No help available</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname">set_pli</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pli</span><span class="p">:</span> <span class="n">RsSmw.enums.DvbS2Xsfpli</span></em><span class="sig-paren">)</span> &#x2192; None<a class="reference internal" href="_modules/RsSmw/Implementations/Source/Bb/Dvb/Dvbs/SfConfig.html#SfConfig.set_pli"><span class="viewcode-link">[source]</span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBS:SFConfig:PLI</span>
+<span class="n">driver</span><span class="o">.</span><span class="n">source</span><span class="o">.</span><span class="n">bb</span><span class="o">.</span><span class="n">dvb</span><span class="o">.</span><span class="n">dvbs</span><span class="o">.</span><span class="n">sfConfig</span><span class="o">.</span><span class="n">set_pli</span><span class="p">(</span><span class="n">pli</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">DvbS2Xsfpli</span><span class="o">.</span><span class="n">HEFF</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>No command help available</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">param pli</dt>
+<dd class="field-odd"><p>No help available</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname">set_pstate</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">sf_pilot_state</span><span class="p">:</span> <span class="n">bool</span></em><span class="sig-paren">)</span> &#x2192; None<a class="reference internal" href="_modules/RsSmw/Implementations/Source/Bb/Dvb/Dvbs/SfConfig.html#SfConfig.set_pstate"><span class="viewcode-link">[source]</span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBS:SFConfig:PSTate</span>
+<span class="n">driver</span><span class="o">.</span><span class="n">source</span><span class="o">.</span><span class="n">bb</span><span class="o">.</span><span class="n">dvb</span><span class="o">.</span><span class="n">dvbs</span><span class="o">.</span><span class="n">sfConfig</span><span class="o">.</span><span class="n">set_pstate</span><span class="p">(</span><span class="n">sf_pilot_state</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>No command help available</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">param sf_pilot_state</dt>
+<dd class="field-odd"><p>No help available</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname">set_pwh</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">sf_pilot_wh</span><span class="p">:</span> <span class="n">int</span></em><span class="sig-paren">)</span> &#x2192; None<a class="reference internal" href="_modules/RsSmw/Implementations/Source/Bb/Dvb/Dvbs/SfConfig.html#SfConfig.set_pwh"><span class="viewcode-link">[source]</span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBS:SFConfig:PWH</span>
+<span class="n">driver</span><span class="o">.</span><span class="n">source</span><span class="o">.</span><span class="n">bb</span><span class="o">.</span><span class="n">dvb</span><span class="o">.</span><span class="n">dvbs</span><span class="o">.</span><span class="n">sfConfig</span><span class="o">.</span><span class="n">set_pwh</span><span class="p">(</span><span class="n">sf_pilot_wh</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>No command help available</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">param sf_pilot_wh</dt>
+<dd class="field-odd"><p>No help available</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname">set_sf_length</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">sf_length</span><span class="p">:</span> <span class="n">int</span></em><span class="sig-paren">)</span> &#x2192; None<a class="reference internal" href="_modules/RsSmw/Implementations/Source/Bb/Dvb/Dvbs/SfConfig.html#SfConfig.set_sf_length"><span class="viewcode-link">[source]</span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBS:SFConfig:SFLength</span>
+<span class="n">driver</span><span class="o">.</span><span class="n">source</span><span class="o">.</span><span class="n">bb</span><span class="o">.</span><span class="n">dvb</span><span class="o">.</span><span class="n">dvbs</span><span class="o">.</span><span class="n">sfConfig</span><span class="o">.</span><span class="n">set_sf_length</span><span class="p">(</span><span class="n">sf_length</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>No command help available</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">param sf_length</dt>
+<dd class="field-odd"><p>No help available</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname">set_sffi</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">sffi</span><span class="p">:</span> <span class="n">RsSmw.enums.DvbS2XsfFormat</span></em><span class="sig-paren">)</span> &#x2192; None<a class="reference internal" href="_modules/RsSmw/Implementations/Source/Bb/Dvb/Dvbs/SfConfig.html#SfConfig.set_sffi"><span class="viewcode-link">[source]</span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBS:SFConfig:SFFI</span>
+<span class="n">driver</span><span class="o">.</span><span class="n">source</span><span class="o">.</span><span class="n">bb</span><span class="o">.</span><span class="n">dvb</span><span class="o">.</span><span class="n">dvbs</span><span class="o">.</span><span class="n">sfConfig</span><span class="o">.</span><span class="n">set_sffi</span><span class="p">(</span><span class="n">sffi</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">DvbS2XsfFormat</span><span class="o">.</span><span class="n">SFFI0</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>No command help available</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">param sffi</dt>
+<dd class="field-odd"><p>No help available</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname">set_sosf</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">sosf</span><span class="p">:</span> <span class="n">int</span></em><span class="sig-paren">)</span> &#x2192; None<a class="reference internal" href="_modules/RsSmw/Implementations/Source/Bb/Dvb/Dvbs/SfConfig.html#SfConfig.set_sosf"><span class="viewcode-link">[source]</span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBS:SFConfig:SOSF</span>
+<span class="n">driver</span><span class="o">.</span><span class="n">source</span><span class="o">.</span><span class="n">bb</span><span class="o">.</span><span class="n">dvb</span><span class="o">.</span><span class="n">dvbs</span><span class="o">.</span><span class="n">sfConfig</span><span class="o">.</span><span class="n">set_sosf</span><span class="p">(</span><span class="n">sosf</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>No command help available</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">param sosf</dt>
+<dd class="field-odd"><p>No help available</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname">set_state</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">sf_state</span><span class="p">:</span> <span class="n">bool</span></em><span class="sig-paren">)</span> &#x2192; None<a class="reference internal" href="_modules/RsSmw/Implementations/Source/Bb/Dvb/Dvbs/SfConfig.html#SfConfig.set_state"><span class="viewcode-link">[source]</span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBS:SFConfig:STATe</span>
+<span class="n">driver</span><span class="o">.</span><span class="n">source</span><span class="o">.</span><span class="n">bb</span><span class="o">.</span><span class="n">dvb</span><span class="o">.</span><span class="n">dvbs</span><span class="o">.</span><span class="n">sfConfig</span><span class="o">.</span><span class="n">set_state</span><span class="p">(</span><span class="n">sf_state</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>No command help available</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">param sf_state</dt>
+<dd class="field-odd"><p>No help available</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname">set_stwh</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">st</span><span class="p">:</span> <span class="n">int</span></em><span class="sig-paren">)</span> &#x2192; None<a class="reference internal" href="_modules/RsSmw/Implementations/Source/Bb/Dvb/Dvbs/SfConfig.html#SfConfig.set_stwh"><span class="viewcode-link">[source]</span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBS:SFConfig:STWH</span>
+<span class="n">driver</span><span class="o">.</span><span class="n">source</span><span class="o">.</span><span class="n">bb</span><span class="o">.</span><span class="n">dvb</span><span class="o">.</span><span class="n">dvbs</span><span class="o">.</span><span class="n">sfConfig</span><span class="o">.</span><span class="n">set_stwh</span><span class="p">(</span><span class="n">st</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>No command help available</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">param st</dt>
+<dd class="field-odd"><p>No help available</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Source_Bb_Dvb_Dvbs_ThConfig.html" class="btn btn-neutral float-right" title="ThConfig" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="Source_Bb_Dvb_Dvbs_SfbhConfig_Fodt.html" class="btn btn-neutral float-left" title="Fodt" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright © Rohde &amp; Schwarz 2021
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

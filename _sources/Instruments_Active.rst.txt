@@ -1,0 +1,20 @@
+Active
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: INSTruments:ACTive:STATe
+
+.. code-block:: python
+
+	INSTruments:ACTive:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Instruments.Active.Active
+	:members:
+	:undoc-members:
+	:noindex:

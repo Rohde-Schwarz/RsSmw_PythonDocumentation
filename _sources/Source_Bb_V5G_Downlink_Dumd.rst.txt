@@ -1,0 +1,30 @@
+Dumd
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:BB:V5G:DL:DUMD:DATA
+	single: SOURce<HwInstance>:BB:V5G:DL:DUMD:DSELect
+	single: SOURce<HwInstance>:BB:V5G:DL:DUMD:MODulation
+	single: SOURce<HwInstance>:BB:V5G:DL:DUMD:OPSubframes
+	single: SOURce<HwInstance>:BB:V5G:DL:DUMD:PATTern
+	single: SOURce<HwInstance>:BB:V5G:DL:DUMD:POWer
+
+.. code-block:: python
+
+	SOURce<HwInstance>:BB:V5G:DL:DUMD:DATA
+	SOURce<HwInstance>:BB:V5G:DL:DUMD:DSELect
+	SOURce<HwInstance>:BB:V5G:DL:DUMD:MODulation
+	SOURce<HwInstance>:BB:V5G:DL:DUMD:OPSubframes
+	SOURce<HwInstance>:BB:V5G:DL:DUMD:PATTern
+	SOURce<HwInstance>:BB:V5G:DL:DUMD:POWer
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Downlink.Dumd.Dumd
+	:members:
+	:undoc-members:
+	:noindex:

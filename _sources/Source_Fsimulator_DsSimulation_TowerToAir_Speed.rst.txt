@@ -1,0 +1,30 @@
+Speed
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce<HwInstance>:FSIMulator:DSSimulation:TOWertoair:SPEed:CRUise
+	single: SOURce<HwInstance>:FSIMulator:DSSimulation:TOWertoair:SPEed:DEParture
+	single: SOURce<HwInstance>:FSIMulator:DSSimulation:TOWertoair:SPEed:DESCent
+	single: SOURce<HwInstance>:FSIMulator:DSSimulation:TOWertoair:SPEed:STARt
+	single: SOURce<HwInstance>:FSIMulator:DSSimulation:TOWertoair:SPEed:TAKeoff
+	single: SOURce<HwInstance>:FSIMulator:DSSimulation:TOWertoair:SPEed:TOUChdown
+
+.. code-block:: python
+
+	SOURce<HwInstance>:FSIMulator:DSSimulation:TOWertoair:SPEed:CRUise
+	SOURce<HwInstance>:FSIMulator:DSSimulation:TOWertoair:SPEed:DEParture
+	SOURce<HwInstance>:FSIMulator:DSSimulation:TOWertoair:SPEed:DESCent
+	SOURce<HwInstance>:FSIMulator:DSSimulation:TOWertoair:SPEed:STARt
+	SOURce<HwInstance>:FSIMulator:DSSimulation:TOWertoair:SPEed:TAKeoff
+	SOURce<HwInstance>:FSIMulator:DSSimulation:TOWertoair:SPEed:TOUChdown
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.DsSimulation.TowerToAir.Speed.Speed
+	:members:
+	:undoc-members:
+	:noindex:
