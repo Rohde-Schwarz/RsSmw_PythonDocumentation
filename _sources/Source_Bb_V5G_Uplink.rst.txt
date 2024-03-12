@@ -1,0 +1,72 @@
+Uplink
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:V5G:UL:BW
+	single: [SOURce<HW>]:BB:V5G:UL:CONSubframes
+	single: [SOURce<HW>]:BB:V5G:UL:CPC
+	single: [SOURce<HW>]:BB:V5G:UL:DLCPc
+	single: [SOURce<HW>]:BB:V5G:UL:FFT
+	single: [SOURce<HW>]:BB:V5G:UL:LGS
+	single: [SOURce<HW>]:BB:V5G:UL:NORB
+	single: [SOURce<HW>]:BB:V5G:UL:OCCBandwidth
+	single: [SOURce<HW>]:BB:V5G:UL:OCCSubcarriers
+	single: [SOURce<HW>]:BB:V5G:UL:RGS
+	single: [SOURce<HW>]:BB:V5G:UL:SFSelection
+	single: [SOURce<HW>]:BB:V5G:UL:SOFFset
+	single: [SOURce<HW>]:BB:V5G:UL:SRATe
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:V5G:UL:BW
+	[SOURce<HW>]:BB:V5G:UL:CONSubframes
+	[SOURce<HW>]:BB:V5G:UL:CPC
+	[SOURce<HW>]:BB:V5G:UL:DLCPc
+	[SOURce<HW>]:BB:V5G:UL:FFT
+	[SOURce<HW>]:BB:V5G:UL:LGS
+	[SOURce<HW>]:BB:V5G:UL:NORB
+	[SOURce<HW>]:BB:V5G:UL:OCCBandwidth
+	[SOURce<HW>]:BB:V5G:UL:OCCSubcarriers
+	[SOURce<HW>]:BB:V5G:UL:RGS
+	[SOURce<HW>]:BB:V5G:UL:SFSelection
+	[SOURce<HW>]:BB:V5G:UL:SOFFset
+	[SOURce<HW>]:BB:V5G:UL:SRATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Uplink.UplinkCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.v5G.uplink.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_V5G_Uplink_Ca.rst
+	Source_Bb_V5G_Uplink_Cell.rst
+	Source_Bb_V5G_Uplink_Plci.rst
+	Source_Bb_V5G_Uplink_Prach.rst
+	Source_Bb_V5G_Uplink_Pucch.rst
+	Source_Bb_V5G_Uplink_Pusch.rst
+	Source_Bb_V5G_Uplink_Refsig.rst
+	Source_Bb_V5G_Uplink_RstFrame.rst
+	Source_Bb_V5G_Uplink_Rtfb.rst
+	Source_Bb_V5G_Uplink_Subf.rst
+	Source_Bb_V5G_Uplink_Ue.rst
+	Source_Bb_V5G_Uplink_View.rst

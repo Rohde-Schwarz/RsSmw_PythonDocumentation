@@ -1,0 +1,48 @@
+Obaseband<Channel>
+----------------------------------------
+
+.. rubric:: RepCap Settings
+
+.. code-block:: python
+
+	# Range: Nr1 .. Nr64
+	rc = driver.source.bb.dm.trigger.obaseband.repcap_channel_get()
+	driver.source.bb.dm.trigger.obaseband.repcap_channel_set(repcap.Channel.Nr1)
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:DM:TRIGger:OBASeband:DELay
+	single: [SOURce<HW>]:BB:DM:TRIGger:OBASeband:INHibit
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:DM:TRIGger:OBASeband:DELay
+	[SOURce<HW>]:BB:DM:TRIGger:OBASeband:INHibit
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dm.Trigger.Obaseband.ObasebandCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.dm.trigger.obaseband.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Dm_Trigger_Obaseband_Rdelay.rst
+	Source_Bb_Dm_Trigger_Obaseband_Tdelay.rst

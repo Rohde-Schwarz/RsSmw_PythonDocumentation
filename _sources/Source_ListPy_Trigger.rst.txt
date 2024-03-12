@@ -1,0 +1,37 @@
+Trigger
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:LIST:TRIGger:SOURce
+
+.. code-block:: python
+
+	[SOURce<HW>]:LIST:TRIGger:SOURce
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.ListPy.Trigger.TriggerCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.listPy.trigger.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_ListPy_Trigger_Execute.rst

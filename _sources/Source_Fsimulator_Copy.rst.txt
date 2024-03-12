@@ -1,0 +1,39 @@
+Copy
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:FSIMulator:COPY:DESTination
+	single: [SOURce<HW>]:FSIMulator:COPY:SOURce
+
+.. code-block:: python
+
+	[SOURce<HW>]:FSIMulator:COPY:DESTination
+	[SOURce<HW>]:FSIMulator:COPY:SOURce
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.Copy.CopyCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.fsimulator.copy.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Fsimulator_Copy_Execute.rst

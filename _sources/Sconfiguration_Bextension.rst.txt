@@ -1,0 +1,43 @@
+Bextension
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: SCONfiguration:BEXTension:DIR
+	single: SCONfiguration:BEXTension:STATe
+
+.. code-block:: python
+
+	SCONfiguration:BEXTension:DIR
+	SCONfiguration:BEXTension:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Sconfiguration.Bextension.BextensionCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.sconfiguration.bextension.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Sconfiguration_Bextension_Align.rst
+	Sconfiguration_Bextension_Calibration.rst
+	Sconfiguration_Bextension_Correction.rst
+	Sconfiguration_Bextension_Info.rst
+	Sconfiguration_Bextension_Setup.rst

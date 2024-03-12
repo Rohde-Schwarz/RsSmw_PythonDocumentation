@@ -1,0 +1,36 @@
+Row<Row>
+----------------------------------------
+
+.. rubric:: RepCap Settings
+
+.. code-block:: python
+
+	# Range: Nr1 .. Nr32
+	rc = driver.source.bb.v5G.downlink.apm.cs.csiAp.row.repcap_row_get()
+	driver.source.bb.v5G.downlink.apm.cs.csiAp.row.repcap_row_set(repcap.Row.Nr1)
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:V5G:DL:APM:CS:CSIap:ROW<ST0>
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:V5G:DL:APM:CS:CSIap:ROW<ST0>
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Downlink.Apm.Cs.CsiAp.Row.RowCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.v5G.downlink.apm.cs.csiAp.row.clone()

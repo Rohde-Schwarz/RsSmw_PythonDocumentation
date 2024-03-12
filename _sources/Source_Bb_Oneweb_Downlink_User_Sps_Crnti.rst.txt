@@ -1,0 +1,20 @@
+Crnti
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:ONEWeb:DL:USER<CH>:SPS:CRNTi
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:ONEWeb:DL:USER<CH>:SPS:CRNTi
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Downlink.User.Sps.Crnti.CrntiCls
+	:members:
+	:undoc-members:
+	:noindex:

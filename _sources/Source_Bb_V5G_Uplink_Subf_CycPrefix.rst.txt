@@ -1,0 +1,20 @@
+CycPrefix
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:V5G:UL:[SUBF<ST0>]:CYCPrefix
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:V5G:UL:[SUBF<ST0>]:CYCPrefix
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Uplink.Subf.CycPrefix.CycPrefixCls
+	:members:
+	:undoc-members:
+	:noindex:

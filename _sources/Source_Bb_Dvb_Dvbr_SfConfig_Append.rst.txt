@@ -1,0 +1,20 @@
+Append
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:DVB:DVBR:SFConfig<CH0>:APPend
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:DVB:DVBR:SFConfig<CH0>:APPend
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dvb.Dvbr.SfConfig.Append.AppendCls
+	:members:
+	:undoc-members:
+	:noindex:

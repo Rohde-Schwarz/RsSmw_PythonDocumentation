@@ -1,0 +1,20 @@
+SymbolRate
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:WLAD:SRATe:VARiation
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:WLAD:SRATe:VARiation
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Wlad.SymbolRate.SymbolRateCls
+	:members:
+	:undoc-members:
+	:noindex:

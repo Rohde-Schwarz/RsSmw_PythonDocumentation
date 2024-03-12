@@ -1,0 +1,60 @@
+Oneweb
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:ONEWeb:CMOD
+	single: [SOURce<HW>]:BB:ONEWeb:DUPLexing
+	single: [SOURce<HW>]:BB:ONEWeb:LINK
+	single: [SOURce<HW>]:BB:ONEWeb:PRESet
+	single: [SOURce<HW>]:BB:ONEWeb:SLENgth
+	single: [SOURce<HW>]:BB:ONEWeb:STATe
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:ONEWeb:CMOD
+	[SOURce<HW>]:BB:ONEWeb:DUPLexing
+	[SOURce<HW>]:BB:ONEWeb:LINK
+	[SOURce<HW>]:BB:ONEWeb:PRESet
+	[SOURce<HW>]:BB:ONEWeb:SLENgth
+	[SOURce<HW>]:BB:ONEWeb:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.OnewebCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.oneweb.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Oneweb_Clipping.rst
+	Source_Bb_Oneweb_Clock.rst
+	Source_Bb_Oneweb_Downlink.rst
+	Source_Bb_Oneweb_FilterPy.rst
+	Source_Bb_Oneweb_Notch.rst
+	Source_Bb_Oneweb_Powc.rst
+	Source_Bb_Oneweb_RefSignal.rst
+	Source_Bb_Oneweb_Setting.rst
+	Source_Bb_Oneweb_SymbolRate.rst
+	Source_Bb_Oneweb_Tdw.rst
+	Source_Bb_Oneweb_Trigger.rst
+	Source_Bb_Oneweb_Udt.rst
+	Source_Bb_Oneweb_Uplink.rst
+	Source_Bb_Oneweb_Waveform.rst

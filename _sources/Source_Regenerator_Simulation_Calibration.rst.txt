@@ -1,0 +1,26 @@
+Calibration
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:REGenerator:SIMulation:CALibration:CORRection
+	single: [SOURce<HW>]:REGenerator:SIMulation:CALibration:MODE
+	single: [SOURce<HW>]:REGenerator:SIMulation:CALibration:URANge
+	single: [SOURce<HW>]:REGenerator:SIMulation:CALibration:[STATe]
+
+.. code-block:: python
+
+	[SOURce<HW>]:REGenerator:SIMulation:CALibration:CORRection
+	[SOURce<HW>]:REGenerator:SIMulation:CALibration:MODE
+	[SOURce<HW>]:REGenerator:SIMulation:CALibration:URANge
+	[SOURce<HW>]:REGenerator:SIMulation:CALibration:[STATe]
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Regenerator.Simulation.Calibration.CalibrationCls
+	:members:
+	:undoc-members:
+	:noindex:

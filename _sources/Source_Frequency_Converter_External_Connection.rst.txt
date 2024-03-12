@@ -1,0 +1,38 @@
+Connection
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:FREQuency:CONVerter:EXTernal:CONNection:STATe
+
+.. code-block:: python
+
+	[SOURce<HW>]:FREQuency:CONVerter:EXTernal:CONNection:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Frequency.Converter.External.Connection.ConnectionCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.frequency.converter.external.connection.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Frequency_Converter_External_Connection_Remote.rst
+	Source_Frequency_Converter_External_Connection_Usb.rst

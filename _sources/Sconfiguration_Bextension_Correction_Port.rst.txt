@@ -1,0 +1,39 @@
+Port<Port>
+----------------------------------------
+
+.. rubric:: RepCap Settings
+
+.. code-block:: python
+
+	# Range: Nr1 .. Nr8
+	rc = driver.sconfiguration.bextension.correction.port.repcap_port_get()
+	driver.sconfiguration.bextension.correction.port.repcap_port_set(repcap.Port.Nr1)
+
+
+
+
+
+.. autoclass:: RsSmw.Implementations.Sconfiguration.Bextension.Correction.Port.PortCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.sconfiguration.bextension.correction.port.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Sconfiguration_Bextension_Correction_Port_IqDelay.rst
+	Sconfiguration_Bextension_Correction_Port_Level.rst
+	Sconfiguration_Bextension_Correction_Port_Phase.rst
+	Sconfiguration_Bextension_Correction_Port_Source.rst

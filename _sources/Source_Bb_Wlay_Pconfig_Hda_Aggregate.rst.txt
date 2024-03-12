@@ -1,0 +1,20 @@
+Aggregate
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:WLAY:PCONfig:HDA:AGGRegate:STATe
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:WLAY:PCONfig:HDA:AGGRegate:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Wlay.Pconfig.Hda.Aggregate.AggregateCls
+	:members:
+	:undoc-members:
+	:noindex:

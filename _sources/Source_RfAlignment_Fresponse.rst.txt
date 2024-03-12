@@ -1,0 +1,20 @@
+Fresponse
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: SOURce<HW>:RFALignment:FRESponse:FILE
+
+.. code-block:: python
+
+	SOURce<HW>:RFALignment:FRESponse:FILE
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.RfAlignment.Fresponse.FresponseCls
+	:members:
+	:undoc-members:
+	:noindex:

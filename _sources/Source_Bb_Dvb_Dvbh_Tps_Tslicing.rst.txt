@@ -1,0 +1,20 @@
+Tslicing
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:DVB:DVBH:TPS:TSLicing:[STATe]
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:DVB:DVBH:TPS:TSLicing:[STATe]
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dvb.Dvbh.Tps.Tslicing.TslicingCls
+	:members:
+	:undoc-members:
+	:noindex:

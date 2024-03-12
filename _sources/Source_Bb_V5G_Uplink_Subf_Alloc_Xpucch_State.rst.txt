@@ -1,0 +1,20 @@
+State
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:V5G:UL:SUBF<ST0>:ALLoc<CH0>:XPUCch:STATe
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:V5G:UL:SUBF<ST0>:ALLoc<CH0>:XPUCch:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Uplink.Subf.Alloc.Xpucch.State.StateCls
+	:members:
+	:undoc-members:
+	:noindex:

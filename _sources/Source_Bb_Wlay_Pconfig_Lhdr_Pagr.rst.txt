@@ -1,0 +1,20 @@
+Pagr
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:WLAY:PCONfig:LHDR:PAGR:STATe
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:WLAY:PCONfig:LHDR:PAGR:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Wlay.Pconfig.Lhdr.Pagr.PagrCls
+	:members:
+	:undoc-members:
+	:noindex:

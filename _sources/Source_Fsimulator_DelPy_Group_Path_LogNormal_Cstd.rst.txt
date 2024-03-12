@@ -1,0 +1,20 @@
+Cstd
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:FSIMulator:DEL:GROup<ST>:PATH<CH>:LOGNormal:CSTD
+
+.. code-block:: python
+
+	[SOURce<HW>]:FSIMulator:DEL:GROup<ST>:PATH<CH>:LOGNormal:CSTD
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.DelPy.Group.Path.LogNormal.Cstd.CstdCls
+	:members:
+	:undoc-members:
+	:noindex:

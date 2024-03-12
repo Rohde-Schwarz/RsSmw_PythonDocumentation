@@ -1,0 +1,20 @@
+SecIdx
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:DVB:DVBR:SFConfig<CH0>:FRConfig<ST0>:SECidx
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:DVB:DVBR:SFConfig<CH0>:FRConfig<ST0>:SECidx
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dvb.Dvbr.SfConfig.FrConfig.SecIdx.SecIdxCls
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,20 @@
+Minimum
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:V5G:TRIGger:OUTPut<CH>:DELay:MINimum
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:V5G:TRIGger:OUTPut<CH>:DELay:MINimum
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Trigger.Output.Delay.Minimum.MinimumCls
+	:members:
+	:undoc-members:
+	:noindex:

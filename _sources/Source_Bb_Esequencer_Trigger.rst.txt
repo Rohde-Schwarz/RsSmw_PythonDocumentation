@@ -1,0 +1,47 @@
+Trigger
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:ESEQuencer:TRIGger:RMODe
+	single: [SOURce<HW>]:BB:ESEQuencer:TRIGger:SOURce
+	single: [SOURce<HW>]:BB:ESEQuencer:[TRIGger]:SEQuence
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:ESEQuencer:TRIGger:RMODe
+	[SOURce<HW>]:BB:ESEQuencer:TRIGger:SOURce
+	[SOURce<HW>]:BB:ESEQuencer:[TRIGger]:SEQuence
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Esequencer.Trigger.TriggerCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.esequencer.trigger.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Esequencer_Trigger_Arm.rst
+	Source_Bb_Esequencer_Trigger_Delay.rst
+	Source_Bb_Esequencer_Trigger_Execute.rst
+	Source_Bb_Esequencer_Trigger_External.rst
+	Source_Bb_Esequencer_Trigger_Obaseband.rst
+	Source_Bb_Esequencer_Trigger_Sequencer.rst
+	Source_Bb_Esequencer_Trigger_Time.rst

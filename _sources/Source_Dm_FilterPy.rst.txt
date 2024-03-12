@@ -1,0 +1,20 @@
+FilterPy
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:DM:FILTer:PARameter
+
+.. code-block:: python
+
+	[SOURce<HW>]:DM:FILTer:PARameter
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Dm.FilterPy.FilterPyCls
+	:members:
+	:undoc-members:
+	:noindex:

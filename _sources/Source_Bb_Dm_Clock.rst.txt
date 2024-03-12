@@ -1,0 +1,24 @@
+Clock
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:DM:CLOCk:MODE
+	single: [SOURce<HW>]:BB:DM:CLOCk:MULTiplier
+	single: [SOURce<HW>]:BB:DM:CLOCk:SOURce
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:DM:CLOCk:MODE
+	[SOURce<HW>]:BB:DM:CLOCk:MULTiplier
+	[SOURce<HW>]:BB:DM:CLOCk:SOURce
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dm.Clock.ClockCls
+	:members:
+	:undoc-members:
+	:noindex:

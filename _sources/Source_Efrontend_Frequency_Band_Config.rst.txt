@@ -1,0 +1,39 @@
+Config
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:EFRontend:FREQuency:BAND:CONFig:MODE
+	single: [SOURce<HW>]:EFRontend:FREQuency:BAND:CONFig:SELect
+
+.. code-block:: python
+
+	[SOURce<HW>]:EFRontend:FREQuency:BAND:CONFig:MODE
+	[SOURce<HW>]:EFRontend:FREQuency:BAND:CONFig:SELect
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Efrontend.Frequency.Band.Config.ConfigCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.efrontend.frequency.band.config.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Efrontend_Frequency_Band_Config_Catalog.rst

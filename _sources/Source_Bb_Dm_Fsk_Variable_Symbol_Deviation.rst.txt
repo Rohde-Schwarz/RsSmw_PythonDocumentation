@@ -1,0 +1,20 @@
+Deviation
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:DM:FSK:VARiable:SYMBol<CH0>:DEViation
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:DM:FSK:VARiable:SYMBol<CH0>:DEViation
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dm.Fsk.Variable.Symbol.Deviation.DeviationCls
+	:members:
+	:undoc-members:
+	:noindex:

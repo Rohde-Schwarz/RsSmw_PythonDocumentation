@@ -1,0 +1,48 @@
+Rtfb
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:V5G:UL:RTFB:AACK
+	single: [SOURce<HW>]:BB:V5G:UL:RTFB:ACKDefinition
+	single: [SOURce<HW>]:BB:V5G:UL:RTFB:ADUDelay
+	single: [SOURce<HW>]:BB:V5G:UL:RTFB:BBSelector
+	single: [SOURce<HW>]:BB:V5G:UL:RTFB:BEINsertion
+	single: [SOURce<HW>]:BB:V5G:UL:RTFB:BERate
+	single: [SOURce<HW>]:BB:V5G:UL:RTFB:CONNector
+	single: [SOURce<HW>]:BB:V5G:UL:RTFB:DMODe
+	single: [SOURce<HW>]:BB:V5G:UL:RTFB:GENReports
+	single: [SOURce<HW>]:BB:V5G:UL:RTFB:ITADvance
+	single: [SOURce<HW>]:BB:V5G:UL:RTFB:LOFFset
+	single: [SOURce<HW>]:BB:V5G:UL:RTFB:MAXTrans
+	single: [SOURce<HW>]:BB:V5G:UL:RTFB:MODE
+	single: [SOURce<HW>]:BB:V5G:UL:RTFB:RVSequence
+	single: [SOURce<HW>]:BB:V5G:UL:RTFB:SERate
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:V5G:UL:RTFB:AACK
+	[SOURce<HW>]:BB:V5G:UL:RTFB:ACKDefinition
+	[SOURce<HW>]:BB:V5G:UL:RTFB:ADUDelay
+	[SOURce<HW>]:BB:V5G:UL:RTFB:BBSelector
+	[SOURce<HW>]:BB:V5G:UL:RTFB:BEINsertion
+	[SOURce<HW>]:BB:V5G:UL:RTFB:BERate
+	[SOURce<HW>]:BB:V5G:UL:RTFB:CONNector
+	[SOURce<HW>]:BB:V5G:UL:RTFB:DMODe
+	[SOURce<HW>]:BB:V5G:UL:RTFB:GENReports
+	[SOURce<HW>]:BB:V5G:UL:RTFB:ITADvance
+	[SOURce<HW>]:BB:V5G:UL:RTFB:LOFFset
+	[SOURce<HW>]:BB:V5G:UL:RTFB:MAXTrans
+	[SOURce<HW>]:BB:V5G:UL:RTFB:MODE
+	[SOURce<HW>]:BB:V5G:UL:RTFB:RVSequence
+	[SOURce<HW>]:BB:V5G:UL:RTFB:SERate
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Uplink.Rtfb.RtfbCls
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,39 @@
+Selected
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: CALibration<HW>:SELected:CATalog
+	single: CALibration<HW>:SELected:[MEASure]
+
+.. code-block:: python
+
+	CALibration<HW>:SELected:CATalog
+	CALibration<HW>:SELected:[MEASure]
+
+
+
+.. autoclass:: RsSmw.Implementations.Calibration.Selected.SelectedCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.calibration.selected.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Calibration_Selected_Step.rst

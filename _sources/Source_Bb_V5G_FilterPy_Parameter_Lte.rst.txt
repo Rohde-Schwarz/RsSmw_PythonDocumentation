@@ -1,0 +1,26 @@
+Lte
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:V5G:FILTer:PARameter:LTE:COFFactor
+	single: [SOURce<HW>]:BB:V5G:FILTer:PARameter:LTE:COFS
+	single: [SOURce<HW>]:BB:V5G:FILTer:PARameter:LTE:OPTimization
+	single: [SOURce<HW>]:BB:V5G:FILTer:PARameter:LTE:ROFactor
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:V5G:FILTer:PARameter:LTE:COFFactor
+	[SOURce<HW>]:BB:V5G:FILTer:PARameter:LTE:COFS
+	[SOURce<HW>]:BB:V5G:FILTer:PARameter:LTE:OPTimization
+	[SOURce<HW>]:BB:V5G:FILTer:PARameter:LTE:ROFactor
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.FilterPy.Parameter.Lte.LteCls
+	:members:
+	:undoc-members:
+	:noindex:

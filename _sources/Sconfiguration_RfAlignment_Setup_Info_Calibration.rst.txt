@@ -1,0 +1,47 @@
+Calibration
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: SCONfiguration:RFALignment:SETup:INFO:CALibration:AGE
+	single: SCONfiguration:RFALignment:SETup:INFO:CALibration:DATE
+	single: SCONfiguration:RFALignment:SETup:INFO:CALibration:LOCoupling
+	single: SCONfiguration:RFALignment:SETup:INFO:CALibration:PARameters
+	single: SCONfiguration:RFALignment:SETup:INFO:CALibration:TIME
+
+.. code-block:: python
+
+	SCONfiguration:RFALignment:SETup:INFO:CALibration:AGE
+	SCONfiguration:RFALignment:SETup:INFO:CALibration:DATE
+	SCONfiguration:RFALignment:SETup:INFO:CALibration:LOCoupling
+	SCONfiguration:RFALignment:SETup:INFO:CALibration:PARameters
+	SCONfiguration:RFALignment:SETup:INFO:CALibration:TIME
+
+
+
+.. autoclass:: RsSmw.Implementations.Sconfiguration.RfAlignment.Setup.Info.Calibration.CalibrationCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.sconfiguration.rfAlignment.setup.info.calibration.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Sconfiguration_RfAlignment_Setup_Info_Calibration_Frequency.rst
+	Sconfiguration_RfAlignment_Setup_Info_Calibration_Power.rst
+	Sconfiguration_RfAlignment_Setup_Info_Calibration_Temperature.rst

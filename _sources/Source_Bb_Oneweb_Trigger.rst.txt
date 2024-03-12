@@ -1,0 +1,51 @@
+Trigger
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:ONEWeb:TRIGger:RMODe
+	single: [SOURce<HW>]:BB:ONEWeb:TRIGger:SLENgth
+	single: [SOURce<HW>]:BB:ONEWeb:TRIGger:SLUNit
+	single: [SOURce<HW>]:BB:ONEWeb:TRIGger:SOURce
+	single: [SOURce<HW>]:BB:ONEWeb:[TRIGger]:SEQuence
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:ONEWeb:TRIGger:RMODe
+	[SOURce<HW>]:BB:ONEWeb:TRIGger:SLENgth
+	[SOURce<HW>]:BB:ONEWeb:TRIGger:SLUNit
+	[SOURce<HW>]:BB:ONEWeb:TRIGger:SOURce
+	[SOURce<HW>]:BB:ONEWeb:[TRIGger]:SEQuence
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Trigger.TriggerCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.oneweb.trigger.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Oneweb_Trigger_Arm.rst
+	Source_Bb_Oneweb_Trigger_Delay.rst
+	Source_Bb_Oneweb_Trigger_Execute.rst
+	Source_Bb_Oneweb_Trigger_External.rst
+	Source_Bb_Oneweb_Trigger_Obaseband.rst
+	Source_Bb_Oneweb_Trigger_Output.rst
+	Source_Bb_Oneweb_Trigger_Time.rst

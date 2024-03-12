@@ -1,0 +1,44 @@
+Fcontrol
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:WLAD:PCONfig:MAC:FCONtrol:CFEXtension
+	single: [SOURce<HW>]:BB:WLAD:PCONfig:MAC:FCONtrol:FDS
+	single: [SOURce<HW>]:BB:WLAD:PCONfig:MAC:FCONtrol:MDATa
+	single: [SOURce<HW>]:BB:WLAD:PCONfig:MAC:FCONtrol:MFRagments
+	single: [SOURce<HW>]:BB:WLAD:PCONfig:MAC:FCONtrol:ORDer
+	single: [SOURce<HW>]:BB:WLAD:PCONfig:MAC:FCONtrol:PFRame
+	single: [SOURce<HW>]:BB:WLAD:PCONfig:MAC:FCONtrol:PMANagement
+	single: [SOURce<HW>]:BB:WLAD:PCONfig:MAC:FCONtrol:PVERsion
+	single: [SOURce<HW>]:BB:WLAD:PCONfig:MAC:FCONtrol:RETRy
+	single: [SOURce<HW>]:BB:WLAD:PCONfig:MAC:FCONtrol:SUBType
+	single: [SOURce<HW>]:BB:WLAD:PCONfig:MAC:FCONtrol:TDS
+	single: [SOURce<HW>]:BB:WLAD:PCONfig:MAC:FCONtrol:TYPE
+	single: [SOURce<HW>]:BB:WLAD:PCONfig:MAC:FCONtrol
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:WLAD:PCONfig:MAC:FCONtrol:CFEXtension
+	[SOURce<HW>]:BB:WLAD:PCONfig:MAC:FCONtrol:FDS
+	[SOURce<HW>]:BB:WLAD:PCONfig:MAC:FCONtrol:MDATa
+	[SOURce<HW>]:BB:WLAD:PCONfig:MAC:FCONtrol:MFRagments
+	[SOURce<HW>]:BB:WLAD:PCONfig:MAC:FCONtrol:ORDer
+	[SOURce<HW>]:BB:WLAD:PCONfig:MAC:FCONtrol:PFRame
+	[SOURce<HW>]:BB:WLAD:PCONfig:MAC:FCONtrol:PMANagement
+	[SOURce<HW>]:BB:WLAD:PCONfig:MAC:FCONtrol:PVERsion
+	[SOURce<HW>]:BB:WLAD:PCONfig:MAC:FCONtrol:RETRy
+	[SOURce<HW>]:BB:WLAD:PCONfig:MAC:FCONtrol:SUBType
+	[SOURce<HW>]:BB:WLAD:PCONfig:MAC:FCONtrol:TDS
+	[SOURce<HW>]:BB:WLAD:PCONfig:MAC:FCONtrol:TYPE
+	[SOURce<HW>]:BB:WLAD:PCONfig:MAC:FCONtrol
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Wlad.Pconfig.Mac.Fcontrol.FcontrolCls
+	:members:
+	:undoc-members:
+	:noindex:

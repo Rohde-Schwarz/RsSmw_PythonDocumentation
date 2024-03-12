@@ -1,0 +1,24 @@
+Prach
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:ONEWeb:UL:PRACh:CONFiguration
+	single: [SOURce<HW>]:BB:ONEWeb:UL:PRACh:FOFFset
+	single: [SOURce<HW>]:BB:ONEWeb:UL:PRACh:RSET
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:ONEWeb:UL:PRACh:CONFiguration
+	[SOURce<HW>]:BB:ONEWeb:UL:PRACh:FOFFset
+	[SOURce<HW>]:BB:ONEWeb:UL:PRACh:RSET
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Uplink.Prach.PrachCls
+	:members:
+	:undoc-members:
+	:noindex:

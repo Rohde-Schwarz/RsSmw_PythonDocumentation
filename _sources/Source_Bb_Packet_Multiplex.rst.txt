@@ -1,0 +1,20 @@
+Multiplex
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:PACKet:MULTiplex:STATe
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:PACKet:MULTiplex:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Packet.Multiplex.MultiplexCls
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,20 @@
+Spread
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:FSIMulator:SCM:TAP<ST>:DEParture:SPRead
+
+.. code-block:: python
+
+	[SOURce<HW>]:FSIMulator:SCM:TAP<ST>:DEParture:SPRead
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.Scm.Tap.Departure.Spread.SpreadCls
+	:members:
+	:undoc-members:
+	:noindex:

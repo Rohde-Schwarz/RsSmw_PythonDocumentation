@@ -1,0 +1,20 @@
+Phase
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:IQ:DOHerty:SHAPing:PHASe:STATe
+
+.. code-block:: python
+
+	[SOURce<HW>]:IQ:DOHerty:SHAPing:PHASe:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Iq.Doherty.Shaping.Phase.PhaseCls
+	:members:
+	:undoc-members:
+	:noindex:

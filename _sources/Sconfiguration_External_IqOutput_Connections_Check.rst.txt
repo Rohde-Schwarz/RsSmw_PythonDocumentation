@@ -1,0 +1,20 @@
+Check
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: SCONfiguration:EXTernal:IQOutput<CH>:CONNections:CHECk
+
+.. code-block:: python
+
+	SCONfiguration:EXTernal:IQOutput<CH>:CONNections:CHECk
+
+
+
+.. autoclass:: RsSmw.Implementations.Sconfiguration.External.IqOutput.Connections.Check.CheckCls
+	:members:
+	:undoc-members:
+	:noindex:

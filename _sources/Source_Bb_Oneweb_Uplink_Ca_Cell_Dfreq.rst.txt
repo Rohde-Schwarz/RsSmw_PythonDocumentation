@@ -1,0 +1,20 @@
+Dfreq
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:ONEWeb:UL:CA:CELL<CH0>:DFReq
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:ONEWeb:UL:CA:CELL<CH0>:DFReq
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Uplink.Ca.Cell.Dfreq.DfreqCls
+	:members:
+	:undoc-members:
+	:noindex:

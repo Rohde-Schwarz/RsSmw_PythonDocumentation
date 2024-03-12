@@ -1,0 +1,40 @@
+Frequency
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: SCONfiguration:RFALignment:SETup:INFO:CALibration:FREQuency:MODE
+	single: SCONfiguration:RFALignment:SETup:INFO:CALibration:FREQuency:STEP
+
+.. code-block:: python
+
+	SCONfiguration:RFALignment:SETup:INFO:CALibration:FREQuency:MODE
+	SCONfiguration:RFALignment:SETup:INFO:CALibration:FREQuency:STEP
+
+
+
+.. autoclass:: RsSmw.Implementations.Sconfiguration.RfAlignment.Setup.Info.Calibration.Frequency.FrequencyCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.sconfiguration.rfAlignment.setup.info.calibration.frequency.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Sconfiguration_RfAlignment_Setup_Info_Calibration_Frequency_ListPy.rst
+	Sconfiguration_RfAlignment_Setup_Info_Calibration_Frequency_Range.rst

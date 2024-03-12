@@ -1,0 +1,22 @@
+Tdd
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:V5G:TDD:SPSConf
+	single: [SOURce<HW>]:BB:V5G:TDD:UDConf
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:V5G:TDD:SPSConf
+	[SOURce<HW>]:BB:V5G:TDD:UDConf
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Tdd.TddCls
+	:members:
+	:undoc-members:
+	:noindex:

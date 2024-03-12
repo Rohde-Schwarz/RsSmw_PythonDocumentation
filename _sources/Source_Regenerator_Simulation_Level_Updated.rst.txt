@@ -1,0 +1,28 @@
+Updated
+----------------------------------------
+
+
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Regenerator.Simulation.Level.Updated.UpdatedCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.regenerator.simulation.level.updated.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Regenerator_Simulation_Level_Updated_Status.rst

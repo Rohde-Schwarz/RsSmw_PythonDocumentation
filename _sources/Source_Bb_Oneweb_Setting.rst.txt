@@ -1,0 +1,24 @@
+Setting
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:ONEWeb:SETTing:CATalog
+	single: [SOURce<HW>]:BB:ONEWeb:SETTing:LOAD
+	single: [SOURce<HW>]:BB:ONEWeb:SETTing:STORe
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:ONEWeb:SETTing:CATalog
+	[SOURce<HW>]:BB:ONEWeb:SETTing:LOAD
+	[SOURce<HW>]:BB:ONEWeb:SETTing:STORe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Setting.SettingCls
+	:members:
+	:undoc-members:
+	:noindex:

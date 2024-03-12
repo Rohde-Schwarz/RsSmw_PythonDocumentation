@@ -1,0 +1,22 @@
+LogNormal
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:FSIMulator:COUPle:LOGNormal:CSTD
+	single: [SOURce<HW>]:FSIMulator:COUPle:LOGNormal:LCONstant
+
+.. code-block:: python
+
+	[SOURce<HW>]:FSIMulator:COUPle:LOGNormal:CSTD
+	[SOURce<HW>]:FSIMulator:COUPle:LOGNormal:LCONstant
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.Couple.LogNormal.LogNormalCls
+	:members:
+	:undoc-members:
+	:noindex:

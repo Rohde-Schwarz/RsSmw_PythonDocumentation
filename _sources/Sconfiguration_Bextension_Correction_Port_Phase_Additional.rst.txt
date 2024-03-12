@@ -1,0 +1,20 @@
+Additional
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: SCONfiguration:BEXTension:CORRection:PORT<CH>:PHASe:ADDitional
+
+.. code-block:: python
+
+	SCONfiguration:BEXTension:CORRection:PORT<CH>:PHASe:ADDitional
+
+
+
+.. autoclass:: RsSmw.Implementations.Sconfiguration.Bextension.Correction.Port.Phase.Additional.AdditionalCls
+	:members:
+	:undoc-members:
+	:noindex:

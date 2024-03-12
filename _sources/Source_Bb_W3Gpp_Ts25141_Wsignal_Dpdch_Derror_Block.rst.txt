@@ -1,0 +1,20 @@
+Block
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce]:BB:W3GPp:TS25141:WSIGnal:DPDCh:DERRor:BLOCk:RATE
+
+.. code-block:: python
+
+	[SOURce]:BB:W3GPp:TS25141:WSIGnal:DPDCh:DERRor:BLOCk:RATE
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.W3Gpp.Ts25141.Wsignal.Dpdch.Derror.Block.BlockCls
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,49 @@
+GhConfig
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:DVB:DVBX:GHConfig:GLENgth
+	single: [SOURce<HW>]:BB:DVB:DVBX:GHConfig:LTYPe
+	single: [SOURce<HW>]:BB:DVB:DVBX:GHConfig:TLENgth
+	single: [SOURce<HW>]:BB:DVB:DVBX:GHConfig:[STATe]
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:DVB:DVBX:GHConfig:GLENgth
+	[SOURce<HW>]:BB:DVB:DVBX:GHConfig:LTYPe
+	[SOURce<HW>]:BB:DVB:DVBX:GHConfig:TLENgth
+	[SOURce<HW>]:BB:DVB:DVBX:GHConfig:[STATe]
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dvb.Dvbx.GhConfig.GhConfigCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.dvb.dvbx.ghConfig.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Dvb_Dvbx_GhConfig_Fid.rst
+	Source_Bb_Dvb_Dvbx_GhConfig_FiUse.rst
+	Source_Bb_Dvb_Dvbx_GhConfig_Label.rst
+	Source_Bb_Dvb_Dvbx_GhConfig_Luse.rst
+	Source_Bb_Dvb_Dvbx_GhConfig_PtUse.rst
+	Source_Bb_Dvb_Dvbx_GhConfig_Ptype.rst
+	Source_Bb_Dvb_Dvbx_GhConfig_Tluse.rst

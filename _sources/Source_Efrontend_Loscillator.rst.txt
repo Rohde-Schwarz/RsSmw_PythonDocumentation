@@ -1,0 +1,38 @@
+Loscillator
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:EFRontend:LOSCillator:MODE
+
+.. code-block:: python
+
+	[SOURce<HW>]:EFRontend:LOSCillator:MODE
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Efrontend.Loscillator.LoscillatorCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.efrontend.loscillator.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Efrontend_Loscillator_InputPy.rst
+	Source_Efrontend_Loscillator_Output.rst

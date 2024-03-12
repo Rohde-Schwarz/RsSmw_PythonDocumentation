@@ -1,0 +1,20 @@
+BtRequest
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:WLAD:PCONfig:BTRequest:STATe
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:WLAD:PCONfig:BTRequest:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Wlad.Pconfig.BtRequest.BtRequestCls
+	:members:
+	:undoc-members:
+	:noindex:

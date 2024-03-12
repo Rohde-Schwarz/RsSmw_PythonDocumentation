@@ -1,0 +1,31 @@
+Ae
+----------------------------------------
+
+
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.Mimo.Tap.Kronecker.Correlation.Rx.Ae.AeCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.fsimulator.mimo.tap.kronecker.correlation.rx.ae.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Fsimulator_Mimo_Tap_Kronecker_Correlation_Rx_Ae_Imaginary.rst
+	Source_Fsimulator_Mimo_Tap_Kronecker_Correlation_Rx_Ae_Magnitude.rst
+	Source_Fsimulator_Mimo_Tap_Kronecker_Correlation_Rx_Ae_Phase.rst
+	Source_Fsimulator_Mimo_Tap_Kronecker_Correlation_Rx_Ae_Real.rst

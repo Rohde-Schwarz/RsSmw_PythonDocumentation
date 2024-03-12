@@ -1,0 +1,51 @@
+Uplink
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:V5G:LOGGen:UL:EULogging
+	single: [SOURce<HW>]:BB:V5G:LOGGen:UL:PRACh
+	single: [SOURce<HW>]:BB:V5G:LOGGen:UL:PUCCh
+	single: [SOURce<HW>]:BB:V5G:LOGGen:UL:PUCDrs
+	single: [SOURce<HW>]:BB:V5G:LOGGen:UL:PUSCh
+	single: [SOURce<HW>]:BB:V5G:LOGGen:UL:PUSDrs
+	single: [SOURce<HW>]:BB:V5G:LOGGen:UL:SRS
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:V5G:LOGGen:UL:EULogging
+	[SOURce<HW>]:BB:V5G:LOGGen:UL:PRACh
+	[SOURce<HW>]:BB:V5G:LOGGen:UL:PUCCh
+	[SOURce<HW>]:BB:V5G:LOGGen:UL:PUCDrs
+	[SOURce<HW>]:BB:V5G:LOGGen:UL:PUSCh
+	[SOURce<HW>]:BB:V5G:LOGGen:UL:PUSDrs
+	[SOURce<HW>]:BB:V5G:LOGGen:UL:SRS
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.LogGen.Uplink.UplinkCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.v5G.logGen.uplink.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_V5G_LogGen_Uplink_Dall.rst
+	Source_Bb_V5G_LogGen_Uplink_Eall.rst
+	Source_Bb_V5G_LogGen_Uplink_LogPoint.rst

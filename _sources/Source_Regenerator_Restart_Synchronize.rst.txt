@@ -1,0 +1,20 @@
+Synchronize
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:REGenerator:RESTart:SYNChronize:[STATe]
+
+.. code-block:: python
+
+	[SOURce<HW>]:REGenerator:RESTart:SYNChronize:[STATe]
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Regenerator.Restart.Synchronize.SynchronizeCls
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,24 @@
+Trigger
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce]:BB:W3GPp:TS25141:TRIGger:OUTPut
+	single: [SOURce]:BB:W3GPp:TS25141:TRIGger:SLENgth
+	single: [SOURce]:BB:W3GPp:TS25141:TRIGger
+
+.. code-block:: python
+
+	[SOURce]:BB:W3GPp:TS25141:TRIGger:OUTPut
+	[SOURce]:BB:W3GPp:TS25141:TRIGger:SLENgth
+	[SOURce]:BB:W3GPp:TS25141:TRIGger
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.W3Gpp.Ts25141.Trigger.TriggerCls
+	:members:
+	:undoc-members:
+	:noindex:

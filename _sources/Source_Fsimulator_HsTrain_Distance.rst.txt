@@ -1,0 +1,22 @@
+Distance
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:FSIMulator:HSTRain:DISTance:MINimum
+	single: [SOURce<HW>]:FSIMulator:HSTRain:DISTance:STARt
+
+.. code-block:: python
+
+	[SOURce<HW>]:FSIMulator:HSTRain:DISTance:MINimum
+	[SOURce<HW>]:FSIMulator:HSTRain:DISTance:STARt
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.HsTrain.Distance.DistanceCls
+	:members:
+	:undoc-members:
+	:noindex:

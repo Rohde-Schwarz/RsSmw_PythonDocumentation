@@ -1,0 +1,33 @@
+Rcs
+----------------------------------------
+
+
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Regenerator.Object.Rcs.RcsCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.regenerator.object.rcs.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Regenerator_Object_Rcs_Mean.rst
+	Source_Regenerator_Object_Rcs_Model.rst
+	Source_Regenerator_Object_Rcs_Peak.rst
+	Source_Regenerator_Object_Rcs_Sper.rst
+	Source_Regenerator_Object_Rcs_Tcoverage.rst
+	Source_Regenerator_Object_Rcs_UpInterval.rst

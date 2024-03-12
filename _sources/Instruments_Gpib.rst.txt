@@ -1,0 +1,22 @@
+Gpib
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: INSTruments:GPIB:ADDRess
+	single: INSTruments:GPIB:BOARd
+
+.. code-block:: python
+
+	INSTruments:GPIB:ADDRess
+	INSTruments:GPIB:BOARd
+
+
+
+.. autoclass:: RsSmw.Implementations.Instruments.Gpib.GpibCls
+	:members:
+	:undoc-members:
+	:noindex:

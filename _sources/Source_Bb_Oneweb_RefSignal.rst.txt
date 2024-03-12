@@ -1,0 +1,22 @@
+RefSignal
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:ONEWeb:REFSignal:CATalog
+	single: [SOURce<HW>]:BB:ONEWeb:REFSignal
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:ONEWeb:REFSignal:CATalog
+	[SOURce<HW>]:BB:ONEWeb:REFSignal
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.RefSignal.RefSignalCls
+	:members:
+	:undoc-members:
+	:noindex:

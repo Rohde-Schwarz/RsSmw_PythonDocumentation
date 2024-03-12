@@ -1,0 +1,20 @@
+RvIndex
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:V5G:UL:[CELL<CCIDX>]:[SUBF<ST0>]:ALLoc<CH0>:[CW<CWID>]:PUSCh:CCODing:RVINdex
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:V5G:UL:[CELL<CCIDX>]:[SUBF<ST0>]:ALLoc<CH0>:[CW<CWID>]:PUSCh:CCODing:RVINdex
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Uplink.Cell.Subf.Alloc.Cw.Pusch.Ccoding.RvIndex.RvIndexCls
+	:members:
+	:undoc-members:
+	:noindex:

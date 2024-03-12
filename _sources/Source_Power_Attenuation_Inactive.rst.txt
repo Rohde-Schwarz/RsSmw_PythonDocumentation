@@ -1,0 +1,20 @@
+Inactive
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:POWer:ATTenuation:INACtive:INDices
+
+.. code-block:: python
+
+	[SOURce<HW>]:POWer:ATTenuation:INACtive:INDices
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Power.Attenuation.Inactive.InactiveCls
+	:members:
+	:undoc-members:
+	:noindex:

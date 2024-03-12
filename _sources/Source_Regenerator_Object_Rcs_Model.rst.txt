@@ -1,0 +1,20 @@
+Model
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:REGenerator:OBJect<CH>:RCS:MODel
+
+.. code-block:: python
+
+	[SOURce<HW>]:REGenerator:OBJect<CH>:RCS:MODel
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Regenerator.Object.Rcs.Model.ModelCls
+	:members:
+	:undoc-members:
+	:noindex:

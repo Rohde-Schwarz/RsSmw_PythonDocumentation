@@ -1,0 +1,20 @@
+Pz
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:GNSS:RTK:BASE<ST>:LOCation:COORdinates:DMS:PZ
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:GNSS:RTK:BASE<ST>:LOCation:COORdinates:DMS:PZ
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Gnss.Rtk.Base.Location.Coordinates.Dms.Pz.PzCls
+	:members:
+	:undoc-members:
+	:noindex:

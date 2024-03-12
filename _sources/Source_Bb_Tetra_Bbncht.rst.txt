@@ -1,0 +1,70 @@
+Bbncht
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:TETRa:BBNCht:APARameter
+	single: [SOURce<HW>]:BB:TETRa:BBNCht:BCCode
+	single: [SOURce<HW>]:BB:TETRa:BBNCht:CBANdwidth
+	single: [SOURce<HW>]:BB:TETRa:BBNCht:CRFRequency
+	single: [SOURce<HW>]:BB:TETRa:BBNCht:CSLevel
+	single: [SOURce<HW>]:BB:TETRa:BBNCht:DNBBroadcast
+	single: [SOURce<HW>]:BB:TETRa:BBNCht:DNBenquiry
+	single: [SOURce<HW>]:BB:TETRa:BBNCht:DSPacing
+	single: [SOURce<HW>]:BB:TETRa:BBNCht:ECORrection
+	single: [SOURce<HW>]:BB:TETRa:BBNCht:FBANd
+	single: [SOURce<HW>]:BB:TETRa:BBNCht:FEEXtension
+	single: [SOURce<HW>]:BB:TETRa:BBNCht:LBACk
+	single: [SOURce<HW>]:BB:TETRa:BBNCht:LENTry
+	single: [SOURce<HW>]:BB:TETRa:BBNCht:MCCode
+	single: [SOURce<HW>]:BB:TETRa:BBNCht:MCNumber
+	single: [SOURce<HW>]:BB:TETRa:BBNCht:MNCode
+	single: [SOURce<HW>]:BB:TETRa:BBNCht:MTMCell
+	single: [SOURce<HW>]:BB:TETRa:BBNCht:OFFSet
+	single: [SOURce<HW>]:BB:TETRa:BBNCht:ROPeration
+	single: [SOURce<HW>]:BB:TETRa:BBNCht:SCODe
+	single: [SOURce<HW>]:BB:TETRa:BBNCht:SMODe
+	single: [SOURce<HW>]:BB:TETRa:BBNCht:TBTYpe
+	single: [SOURce<HW>]:BB:TETRa:BBNCht:TRFRames
+	single: [SOURce<HW>]:BB:TETRa:BBNCht:TTBType
+	single: [SOURce<HW>]:BB:TETRa:BBNCht:TXON
+	single: [SOURce<HW>]:BB:TETRa:BBNCht:UPDTx
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:TETRa:BBNCht:APARameter
+	[SOURce<HW>]:BB:TETRa:BBNCht:BCCode
+	[SOURce<HW>]:BB:TETRa:BBNCht:CBANdwidth
+	[SOURce<HW>]:BB:TETRa:BBNCht:CRFRequency
+	[SOURce<HW>]:BB:TETRa:BBNCht:CSLevel
+	[SOURce<HW>]:BB:TETRa:BBNCht:DNBBroadcast
+	[SOURce<HW>]:BB:TETRa:BBNCht:DNBenquiry
+	[SOURce<HW>]:BB:TETRa:BBNCht:DSPacing
+	[SOURce<HW>]:BB:TETRa:BBNCht:ECORrection
+	[SOURce<HW>]:BB:TETRa:BBNCht:FBANd
+	[SOURce<HW>]:BB:TETRa:BBNCht:FEEXtension
+	[SOURce<HW>]:BB:TETRa:BBNCht:LBACk
+	[SOURce<HW>]:BB:TETRa:BBNCht:LENTry
+	[SOURce<HW>]:BB:TETRa:BBNCht:MCCode
+	[SOURce<HW>]:BB:TETRa:BBNCht:MCNumber
+	[SOURce<HW>]:BB:TETRa:BBNCht:MNCode
+	[SOURce<HW>]:BB:TETRa:BBNCht:MTMCell
+	[SOURce<HW>]:BB:TETRa:BBNCht:OFFSet
+	[SOURce<HW>]:BB:TETRa:BBNCht:ROPeration
+	[SOURce<HW>]:BB:TETRa:BBNCht:SCODe
+	[SOURce<HW>]:BB:TETRa:BBNCht:SMODe
+	[SOURce<HW>]:BB:TETRa:BBNCht:TBTYpe
+	[SOURce<HW>]:BB:TETRa:BBNCht:TRFRames
+	[SOURce<HW>]:BB:TETRa:BBNCht:TTBType
+	[SOURce<HW>]:BB:TETRa:BBNCht:TXON
+	[SOURce<HW>]:BB:TETRa:BBNCht:UPDTx
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Tetra.Bbncht.BbnchtCls
+	:members:
+	:undoc-members:
+	:noindex:

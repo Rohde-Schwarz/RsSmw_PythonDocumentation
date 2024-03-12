@@ -1,0 +1,22 @@
+Pep
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: SCONfiguration:BEXTension:INFO:ALIGn:PEP:MAXimum
+	single: SCONfiguration:BEXTension:INFO:ALIGn:PEP:MINimum
+
+.. code-block:: python
+
+	SCONfiguration:BEXTension:INFO:ALIGn:PEP:MAXimum
+	SCONfiguration:BEXTension:INFO:ALIGn:PEP:MINimum
+
+
+
+.. autoclass:: RsSmw.Implementations.Sconfiguration.Bextension.Info.Align.Pep.PepCls
+	:members:
+	:undoc-members:
+	:noindex:

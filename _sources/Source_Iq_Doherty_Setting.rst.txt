@@ -1,0 +1,28 @@
+Setting
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce]:IQ:DOHerty:SETTing:CATalog
+	single: [SOURce]:IQ:DOHerty:SETTing:DELete
+	single: [SOURce]:IQ:DOHerty:SETTing:LOAD
+	single: [SOURce]:IQ:DOHerty:SETTing:PRESet
+	single: [SOURce]:IQ:DOHerty:SETTing:STORe
+
+.. code-block:: python
+
+	[SOURce]:IQ:DOHerty:SETTing:CATalog
+	[SOURce]:IQ:DOHerty:SETTing:DELete
+	[SOURce]:IQ:DOHerty:SETTing:LOAD
+	[SOURce]:IQ:DOHerty:SETTing:PRESet
+	[SOURce]:IQ:DOHerty:SETTing:STORe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Iq.Doherty.Setting.SettingCls
+	:members:
+	:undoc-members:
+	:noindex:

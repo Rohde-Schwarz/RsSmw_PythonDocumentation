@@ -1,0 +1,26 @@
+Obaseband
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:OFDM:TRIGger:OBASeband:DELay
+	single: [SOURce<HW>]:BB:OFDM:TRIGger:OBASeband:INHibit
+	single: [SOURce<HW>]:BB:OFDM:TRIGger:OBASeband:RDELay
+	single: [SOURce<HW>]:BB:OFDM:TRIGger:OBASeband:TDELay
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:OFDM:TRIGger:OBASeband:DELay
+	[SOURce<HW>]:BB:OFDM:TRIGger:OBASeband:INHibit
+	[SOURce<HW>]:BB:OFDM:TRIGger:OBASeband:RDELay
+	[SOURce<HW>]:BB:OFDM:TRIGger:OBASeband:TDELay
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Ofdm.Trigger.Obaseband.ObasebandCls
+	:members:
+	:undoc-members:
+	:noindex:

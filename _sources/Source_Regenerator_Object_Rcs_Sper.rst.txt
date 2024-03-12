@@ -1,0 +1,20 @@
+Sper
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:REGenerator:OBJect<CH>:RCS:SPER
+
+.. code-block:: python
+
+	[SOURce<HW>]:REGenerator:OBJect<CH>:RCS:SPER
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Regenerator.Object.Rcs.Sper.SperCls
+	:members:
+	:undoc-members:
+	:noindex:

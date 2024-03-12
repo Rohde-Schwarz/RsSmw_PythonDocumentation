@@ -1,0 +1,20 @@
+Ptpc
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:V5G:DL:USER<CH>:AS:UL:CELL<ST0>:SEQelem:PTPC
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:V5G:DL:USER<CH>:AS:UL:CELL<ST0>:SEQelem:PTPC
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Downlink.User.AsPy.Uplink.Cell.SeqElem.Ptpc.PtpcCls
+	:members:
+	:undoc-members:
+	:noindex:

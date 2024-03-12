@@ -1,0 +1,39 @@
+Phasenoise
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:NOISe:PHASenoise:[STATe]
+
+.. code-block:: python
+
+	[SOURce<HW>]:NOISe:PHASenoise:[STATe]
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Noise.Phasenoise.PhasenoiseCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.noise.phasenoise.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Noise_Phasenoise_Frequency.rst
+	Source_Noise_Phasenoise_Level.rst
+	Source_Noise_Phasenoise_Shape.rst

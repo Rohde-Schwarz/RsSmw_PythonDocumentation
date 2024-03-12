@@ -1,0 +1,22 @@
+Predefined
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:FSIMulator:DSSimulation:USER:TX:VEHicle:PREDefined:CATegory
+	single: [SOURce<HW>]:FSIMulator:DSSimulation:USER:TX:VEHicle:PREDefined:TYPE
+
+.. code-block:: python
+
+	[SOURce<HW>]:FSIMulator:DSSimulation:USER:TX:VEHicle:PREDefined:CATegory
+	[SOURce<HW>]:FSIMulator:DSSimulation:USER:TX:VEHicle:PREDefined:TYPE
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.DsSimulation.User.Tx.Vehicle.Predefined.PredefinedCls
+	:members:
+	:undoc-members:
+	:noindex:

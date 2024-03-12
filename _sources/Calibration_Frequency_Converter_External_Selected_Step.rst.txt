@@ -1,0 +1,20 @@
+Step
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: CALibration<HW>:FREQuency:CONVerter:EXTernal:SELected:STEP
+
+.. code-block:: python
+
+	CALibration<HW>:FREQuency:CONVerter:EXTernal:SELected:STEP
+
+
+
+.. autoclass:: RsSmw.Implementations.Calibration.Frequency.Converter.External.Selected.Step.StepCls
+	:members:
+	:undoc-members:
+	:noindex:

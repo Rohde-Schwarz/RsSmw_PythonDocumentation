@@ -1,0 +1,20 @@
+Usb
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:FREQuency:CONVerter:EXTernal:CONNection:USB:STATe
+
+.. code-block:: python
+
+	[SOURce<HW>]:FREQuency:CONVerter:EXTernal:CONNection:USB:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Frequency.Converter.External.Connection.Usb.UsbCls
+	:members:
+	:undoc-members:
+	:noindex:

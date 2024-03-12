@@ -1,0 +1,20 @@
+Coupling
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce]:IQ:DOHerty:POWer:ATTenuation:COUPling:[STATe]
+
+.. code-block:: python
+
+	[SOURce]:IQ:DOHerty:POWer:ATTenuation:COUPling:[STATe]
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Iq.Doherty.Power.Attenuation.Coupling.CouplingCls
+	:members:
+	:undoc-members:
+	:noindex:

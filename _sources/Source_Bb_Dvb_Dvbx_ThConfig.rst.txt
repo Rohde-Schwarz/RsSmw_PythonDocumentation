@@ -1,0 +1,48 @@
+ThConfig
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:DVB:DVBX:THConfig:CCOunter
+	single: [SOURce<HW>]:BB:DVB:DVBX:THConfig:PUS
+	single: [SOURce<HW>]:BB:DVB:DVBX:THConfig:SCONtrol
+	single: [SOURce<HW>]:BB:DVB:DVBX:THConfig:TPRiority
+	single: [SOURce<HW>]:BB:DVB:DVBX:THConfig:[STATe]
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:DVB:DVBX:THConfig:CCOunter
+	[SOURce<HW>]:BB:DVB:DVBX:THConfig:PUS
+	[SOURce<HW>]:BB:DVB:DVBX:THConfig:SCONtrol
+	[SOURce<HW>]:BB:DVB:DVBX:THConfig:TPRiority
+	[SOURce<HW>]:BB:DVB:DVBX:THConfig:[STATe]
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dvb.Dvbx.ThConfig.ThConfigCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.dvb.dvbx.thConfig.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Dvb_Dvbx_ThConfig_Afield.rst
+	Source_Bb_Dvb_Dvbx_ThConfig_Payload.rst
+	Source_Bb_Dvb_Dvbx_ThConfig_Pid.rst
+	Source_Bb_Dvb_Dvbx_ThConfig_TeIndication.rst

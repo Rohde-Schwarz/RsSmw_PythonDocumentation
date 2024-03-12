@@ -1,0 +1,20 @@
+Vswr
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:FREQuency:CONVerter:EXTernal:ADJust:VSWR:STATe
+
+.. code-block:: python
+
+	[SOURce<HW>]:FREQuency:CONVerter:EXTernal:ADJust:VSWR:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Frequency.Converter.External.Adjust.Vswr.VswrCls
+	:members:
+	:undoc-members:
+	:noindex:

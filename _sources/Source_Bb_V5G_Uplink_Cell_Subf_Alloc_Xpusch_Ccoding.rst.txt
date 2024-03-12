@@ -1,0 +1,30 @@
+Ccoding
+----------------------------------------
+
+
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Uplink.Cell.Subf.Alloc.Xpusch.Ccoding.CcodingCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.v5G.uplink.cell.subf.alloc.xpusch.ccoding.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_V5G_Uplink_Cell_Subf_Alloc_Xpusch_Ccoding_Cbits.rst
+	Source_Bb_V5G_Uplink_Cell_Subf_Alloc_Xpusch_Ccoding_Crate.rst
+	Source_Bb_V5G_Uplink_Cell_Subf_Alloc_Xpusch_Ccoding_TbSize.rst

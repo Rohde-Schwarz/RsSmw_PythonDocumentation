@@ -1,0 +1,22 @@
+Phich
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:V5G:DL:PHICh:DURation
+	single: [SOURce<HW>]:BB:V5G:DL:PHICh:NGParameter
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:V5G:DL:PHICh:DURation
+	[SOURce<HW>]:BB:V5G:DL:PHICh:NGParameter
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Downlink.Phich.PhichCls
+	:members:
+	:undoc-members:
+	:noindex:

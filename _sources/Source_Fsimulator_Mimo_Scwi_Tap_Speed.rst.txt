@@ -1,0 +1,20 @@
+Speed
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:FSIMulator:MIMO:SCWI:TAP<ST>:SPEed
+
+.. code-block:: python
+
+	[SOURce<HW>]:FSIMulator:MIMO:SCWI:TAP<ST>:SPEed
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.Mimo.Scwi.Tap.Speed.SpeedCls
+	:members:
+	:undoc-members:
+	:noindex:

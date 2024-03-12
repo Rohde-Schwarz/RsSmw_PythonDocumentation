@@ -1,0 +1,47 @@
+Network
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: SYSTem:COMMunicate:BB<HW>:NETWork:BUSY
+	single: SYSTem:COMMunicate:BB<HW>:NETWork:MACaddress
+	single: SYSTem:COMMunicate:BB<HW>:NETWork:PORT
+	single: SYSTem:COMMunicate:BB<HW>:NETWork:PROTocol
+	single: SYSTem:COMMunicate:BB<HW>:NETWork:STATus
+
+.. code-block:: python
+
+	SYSTem:COMMunicate:BB<HW>:NETWork:BUSY
+	SYSTem:COMMunicate:BB<HW>:NETWork:MACaddress
+	SYSTem:COMMunicate:BB<HW>:NETWork:PORT
+	SYSTem:COMMunicate:BB<HW>:NETWork:PROTocol
+	SYSTem:COMMunicate:BB<HW>:NETWork:STATus
+
+
+
+.. autoclass:: RsSmw.Implementations.System.Communicate.Bb.Network.NetworkCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.system.communicate.bb.network.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	System_Communicate_Bb_Network_Common.rst
+	System_Communicate_Bb_Network_IpAddress.rst
+	System_Communicate_Bb_Network_Restart.rst

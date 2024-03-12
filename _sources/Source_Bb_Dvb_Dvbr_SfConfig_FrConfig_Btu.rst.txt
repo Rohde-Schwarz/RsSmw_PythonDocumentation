@@ -1,0 +1,32 @@
+Btu
+----------------------------------------
+
+
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dvb.Dvbr.SfConfig.FrConfig.Btu.BtuCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.dvb.dvbr.sfConfig.frConfig.btu.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Dvb_Dvbr_SfConfig_FrConfig_Btu_Bw.rst
+	Source_Bb_Dvb_Dvbr_SfConfig_FrConfig_Btu_ChiRate.rst
+	Source_Bb_Dvb_Dvbr_SfConfig_FrConfig_Btu_Duration.rst
+	Source_Bb_Dvb_Dvbr_SfConfig_FrConfig_Btu_SybRate.rst
+	Source_Bb_Dvb_Dvbr_SfConfig_FrConfig_Btu_TuCount.rst

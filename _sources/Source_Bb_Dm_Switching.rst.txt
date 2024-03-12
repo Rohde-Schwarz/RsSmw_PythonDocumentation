@@ -1,0 +1,22 @@
+Switching
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:DM:SWITching:SOURce
+	single: [SOURce<HW>]:BB:DM:SWITching:STATe
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:DM:SWITching:SOURce
+	[SOURce<HW>]:BB:DM:SWITching:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dm.Switching.SwitchingCls
+	:members:
+	:undoc-members:
+	:noindex:

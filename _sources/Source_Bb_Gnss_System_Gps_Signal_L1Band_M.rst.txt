@@ -1,0 +1,20 @@
+M
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:GNSS:SYSTem:GPS:SIGNal:L1Band:M:[STATe]
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:GNSS:SYSTem:GPS:SIGNal:L1Band:M:[STATe]
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Gnss.System.Gps.Signal.L1Band.M.MCls
+	:members:
+	:undoc-members:
+	:noindex:

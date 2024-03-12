@@ -1,0 +1,20 @@
+Absolute
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:NOISe:LEVel<CH>:[ABSolute]
+
+.. code-block:: python
+
+	[SOURce<HW>]:NOISe:LEVel<CH>:[ABSolute]
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Noise.Level.Absolute.AbsoluteCls
+	:members:
+	:undoc-members:
+	:noindex:

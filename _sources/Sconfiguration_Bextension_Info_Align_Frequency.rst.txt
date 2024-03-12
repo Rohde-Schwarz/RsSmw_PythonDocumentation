@@ -1,0 +1,22 @@
+Frequency
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: SCONfiguration:BEXTension:INFO:ALIGn:FREQuency:MAXimum
+	single: SCONfiguration:BEXTension:INFO:ALIGn:FREQuency:MINimum
+
+.. code-block:: python
+
+	SCONfiguration:BEXTension:INFO:ALIGn:FREQuency:MAXimum
+	SCONfiguration:BEXTension:INFO:ALIGn:FREQuency:MINimum
+
+
+
+.. autoclass:: RsSmw.Implementations.Sconfiguration.Bextension.Info.Align.Frequency.FrequencyCls
+	:members:
+	:undoc-members:
+	:noindex:

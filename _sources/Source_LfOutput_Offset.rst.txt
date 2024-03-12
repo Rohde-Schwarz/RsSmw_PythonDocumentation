@@ -1,0 +1,20 @@
+Offset
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce]:LFOutput<CH>:OFFSet
+
+.. code-block:: python
+
+	[SOURce]:LFOutput<CH>:OFFSet
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.LfOutput.Offset.OffsetCls
+	:members:
+	:undoc-members:
+	:noindex:

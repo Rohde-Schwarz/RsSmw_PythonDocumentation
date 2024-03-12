@@ -1,0 +1,28 @@
+Pbch
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:V5G:DL:PBCH:MIB
+	single: [SOURce<HW>]:BB:V5G:DL:PBCH:MSPare
+	single: [SOURce<HW>]:BB:V5G:DL:PBCH:RATBa
+	single: [SOURce<HW>]:BB:V5G:DL:PBCH:SOFFset
+	single: [SOURce<HW>]:BB:V5G:DL:PBCH:SRPeriod
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:V5G:DL:PBCH:MIB
+	[SOURce<HW>]:BB:V5G:DL:PBCH:MSPare
+	[SOURce<HW>]:BB:V5G:DL:PBCH:RATBa
+	[SOURce<HW>]:BB:V5G:DL:PBCH:SOFFset
+	[SOURce<HW>]:BB:V5G:DL:PBCH:SRPeriod
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Downlink.Pbch.PbchCls
+	:members:
+	:undoc-members:
+	:noindex:

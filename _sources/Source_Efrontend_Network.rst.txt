@@ -1,0 +1,20 @@
+Network
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:EFRontend:NETWork
+
+.. code-block:: python
+
+	[SOURce<HW>]:EFRontend:NETWork
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Efrontend.Network.NetworkCls
+	:members:
+	:undoc-members:
+	:noindex:

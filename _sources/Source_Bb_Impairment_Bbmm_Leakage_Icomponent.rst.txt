@@ -1,0 +1,20 @@
+Icomponent
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce]:BB:IMPairment:BBMM<CH>:LEAKage:I
+
+.. code-block:: python
+
+	[SOURce]:BB:IMPairment:BBMM<CH>:LEAKage:I
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Impairment.Bbmm.Leakage.Icomponent.IcomponentCls
+	:members:
+	:undoc-members:
+	:noindex:

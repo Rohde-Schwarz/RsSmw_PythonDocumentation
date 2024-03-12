@@ -1,0 +1,20 @@
+Interface
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce]:IQ:OUTPut:DIGital:FADer<CH>:INTerface
+
+.. code-block:: python
+
+	[SOURce]:IQ:OUTPut:DIGital:FADer<CH>:INTerface
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Iq.Output.Digital.Fader.Interface.InterfaceCls
+	:members:
+	:undoc-members:
+	:noindex:

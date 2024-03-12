@@ -1,0 +1,20 @@
+Next
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:FSIMulator:MIMO:COPY:NEXT
+
+.. code-block:: python
+
+	[SOURce<HW>]:FSIMulator:MIMO:COPY:NEXT
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.Mimo.Copy.Next.NextCls
+	:members:
+	:undoc-members:
+	:noindex:

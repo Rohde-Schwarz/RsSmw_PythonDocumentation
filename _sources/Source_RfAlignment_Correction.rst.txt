@@ -1,0 +1,26 @@
+Correction
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: SOURce<HW>:RFALignment:CORRection:FILE
+	single: SOURce<HW>:RFALignment:CORRection:IQDelay
+	single: SOURce<HW>:RFALignment:CORRection:LEVel
+	single: SOURce<HW>:RFALignment:CORRection:PHASe
+
+.. code-block:: python
+
+	SOURce<HW>:RFALignment:CORRection:FILE
+	SOURce<HW>:RFALignment:CORRection:IQDelay
+	SOURce<HW>:RFALignment:CORRection:LEVel
+	SOURce<HW>:RFALignment:CORRection:PHASe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.RfAlignment.Correction.CorrectionCls
+	:members:
+	:undoc-members:
+	:noindex:

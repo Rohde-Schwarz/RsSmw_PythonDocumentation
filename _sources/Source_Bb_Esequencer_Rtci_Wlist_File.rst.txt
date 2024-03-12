@@ -1,0 +1,20 @@
+File
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:ESEQuencer:RTCI:WLISt:FILE:CATalog
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:ESEQuencer:RTCI:WLISt:FILE:CATalog
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Esequencer.Rtci.Wlist.File.FileCls
+	:members:
+	:undoc-members:
+	:noindex:

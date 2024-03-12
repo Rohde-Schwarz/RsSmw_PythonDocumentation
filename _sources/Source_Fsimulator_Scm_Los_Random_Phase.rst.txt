@@ -1,0 +1,28 @@
+Phase
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:FSIMulator:SCM:LOS:RANDom:PHASe:HH
+	single: [SOURce<HW>]:FSIMulator:SCM:LOS:RANDom:PHASe:HV
+	single: [SOURce<HW>]:FSIMulator:SCM:LOS:RANDom:PHASe:STATe
+	single: [SOURce<HW>]:FSIMulator:SCM:LOS:RANDom:PHASe:VH
+	single: [SOURce<HW>]:FSIMulator:SCM:LOS:RANDom:PHASe:VV
+
+.. code-block:: python
+
+	[SOURce<HW>]:FSIMulator:SCM:LOS:RANDom:PHASe:HH
+	[SOURce<HW>]:FSIMulator:SCM:LOS:RANDom:PHASe:HV
+	[SOURce<HW>]:FSIMulator:SCM:LOS:RANDom:PHASe:STATe
+	[SOURce<HW>]:FSIMulator:SCM:LOS:RANDom:PHASe:VH
+	[SOURce<HW>]:FSIMulator:SCM:LOS:RANDom:PHASe:VV
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.Scm.Los.Random.Phase.PhaseCls
+	:members:
+	:undoc-members:
+	:noindex:

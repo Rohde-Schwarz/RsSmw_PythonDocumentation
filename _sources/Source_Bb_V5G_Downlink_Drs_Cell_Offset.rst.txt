@@ -1,0 +1,20 @@
+Offset
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:V5G:DL:DRS:CELL<CH0>:OFFSet
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:V5G:DL:DRS:CELL<CH0>:OFFSet
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Downlink.Drs.Cell.Offset.OffsetCls
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,41 @@
+Clock
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:OFDM:CLOCk:MODE
+	single: [SOURce<HW>]:BB:OFDM:CLOCk:MULTiplier
+	single: [SOURce<HW>]:BB:OFDM:CLOCk:SOURce
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:OFDM:CLOCk:MODE
+	[SOURce<HW>]:BB:OFDM:CLOCk:MULTiplier
+	[SOURce<HW>]:BB:OFDM:CLOCk:SOURce
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Ofdm.Clock.ClockCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.ofdm.clock.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Ofdm_Clock_Synchronization.rst

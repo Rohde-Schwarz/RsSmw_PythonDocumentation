@@ -1,0 +1,20 @@
+NoGroups
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:V5G:DL:[SUBF<ST0>]:ENCC:PHICh:[CELL<CCIDX>]:NOGRoups
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:V5G:DL:[SUBF<ST0>]:ENCC:PHICh:[CELL<CCIDX>]:NOGRoups
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Downlink.Subf.Encc.Phich.Cell.NoGroups.NoGroupsCls
+	:members:
+	:undoc-members:
+	:noindex:

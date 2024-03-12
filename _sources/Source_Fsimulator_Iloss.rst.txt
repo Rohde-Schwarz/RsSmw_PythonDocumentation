@@ -1,0 +1,24 @@
+Iloss
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:FSIMulator:ILOSs:CSAMples
+	single: [SOURce<HW>]:FSIMulator:ILOSs:MODE
+	single: [SOURce<HW>]:FSIMulator:ILOSs:[LOSS]
+
+.. code-block:: python
+
+	[SOURce<HW>]:FSIMulator:ILOSs:CSAMples
+	[SOURce<HW>]:FSIMulator:ILOSs:MODE
+	[SOURce<HW>]:FSIMulator:ILOSs:[LOSS]
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.Iloss.IlossCls
+	:members:
+	:undoc-members:
+	:noindex:

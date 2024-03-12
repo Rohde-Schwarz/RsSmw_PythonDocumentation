@@ -1,0 +1,39 @@
+Dvbr
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:DVB:DVBR:SFINdex
+	single: [SOURce<HW>]:BB:DVB:DVBR:SFRames
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:DVB:DVBR:SFINdex
+	[SOURce<HW>]:BB:DVB:DVBR:SFRames
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dvb.Dvbr.DvbrCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.dvb.dvbr.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Dvb_Dvbr_SfConfig.rst

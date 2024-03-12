@@ -1,0 +1,42 @@
+Fader<DigitalIq>
+----------------------------------------
+
+.. rubric:: RepCap Settings
+
+.. code-block:: python
+
+	# Range: Nr1 .. Nr4
+	rc = driver.source.iq.output.digital.fader.repcap_digitalIq_get()
+	driver.source.iq.output.digital.fader.repcap_digitalIq_set(repcap.DigitalIq.Nr1)
+
+
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Iq.Output.Digital.Fader.FaderCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.iq.output.digital.fader.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Iq_Output_Digital_Fader_Cdevice.rst
+	Source_Iq_Output_Digital_Fader_Interface.rst
+	Source_Iq_Output_Digital_Fader_Oflow.rst
+	Source_Iq_Output_Digital_Fader_Pon.rst
+	Source_Iq_Output_Digital_Fader_Power.rst
+	Source_Iq_Output_Digital_Fader_State.rst
+	Source_Iq_Output_Digital_Fader_SymbolRate.rst

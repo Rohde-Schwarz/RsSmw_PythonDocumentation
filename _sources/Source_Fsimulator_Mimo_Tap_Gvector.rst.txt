@@ -1,0 +1,110 @@
+Gvector<GainVector>
+----------------------------------------
+
+.. rubric:: RepCap Settings
+
+.. code-block:: python
+
+	# Range: Nr1 .. Nr8
+	rc = driver.source.fsimulator.mimo.tap.gvector.repcap_gainVector_get()
+	driver.source.fsimulator.mimo.tap.gvector.repcap_gainVector_set(repcap.GainVector.Nr1)
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:FSIMulator:MIMO:TAP<CH>:GVECtor:PRESet
+
+.. code-block:: python
+
+	[SOURce<HW>]:FSIMulator:MIMO:TAP<CH>:GVECtor:PRESet
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.Mimo.Tap.Gvector.GvectorCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.fsimulator.mimo.tap.gvector.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Fsimulator_Mimo_Tap_Gvector_Aa.rst
+	Source_Fsimulator_Mimo_Tap_Gvector_Ab.rst
+	Source_Fsimulator_Mimo_Tap_Gvector_Ac.rst
+	Source_Fsimulator_Mimo_Tap_Gvector_Ad.rst
+	Source_Fsimulator_Mimo_Tap_Gvector_Ae.rst
+	Source_Fsimulator_Mimo_Tap_Gvector_Af.rst
+	Source_Fsimulator_Mimo_Tap_Gvector_Ag.rst
+	Source_Fsimulator_Mimo_Tap_Gvector_Ah.rst
+	Source_Fsimulator_Mimo_Tap_Gvector_Ba.rst
+	Source_Fsimulator_Mimo_Tap_Gvector_Bb.rst
+	Source_Fsimulator_Mimo_Tap_Gvector_Bc.rst
+	Source_Fsimulator_Mimo_Tap_Gvector_Bd.rst
+	Source_Fsimulator_Mimo_Tap_Gvector_Be.rst
+	Source_Fsimulator_Mimo_Tap_Gvector_Bf.rst
+	Source_Fsimulator_Mimo_Tap_Gvector_Bg.rst
+	Source_Fsimulator_Mimo_Tap_Gvector_Bh.rst
+	Source_Fsimulator_Mimo_Tap_Gvector_Ca.rst
+	Source_Fsimulator_Mimo_Tap_Gvector_Cb.rst
+	Source_Fsimulator_Mimo_Tap_Gvector_Cc.rst
+	Source_Fsimulator_Mimo_Tap_Gvector_Cd.rst
+	Source_Fsimulator_Mimo_Tap_Gvector_Ce.rst
+	Source_Fsimulator_Mimo_Tap_Gvector_Cf.rst
+	Source_Fsimulator_Mimo_Tap_Gvector_Cg.rst
+	Source_Fsimulator_Mimo_Tap_Gvector_Ch.rst
+	Source_Fsimulator_Mimo_Tap_Gvector_Da.rst
+	Source_Fsimulator_Mimo_Tap_Gvector_Db.rst
+	Source_Fsimulator_Mimo_Tap_Gvector_Dc.rst
+	Source_Fsimulator_Mimo_Tap_Gvector_Dd.rst
+	Source_Fsimulator_Mimo_Tap_Gvector_De.rst
+	Source_Fsimulator_Mimo_Tap_Gvector_Df.rst
+	Source_Fsimulator_Mimo_Tap_Gvector_Dg.rst
+	Source_Fsimulator_Mimo_Tap_Gvector_Dh.rst
+	Source_Fsimulator_Mimo_Tap_Gvector_Ea.rst
+	Source_Fsimulator_Mimo_Tap_Gvector_Eb.rst
+	Source_Fsimulator_Mimo_Tap_Gvector_Ec.rst
+	Source_Fsimulator_Mimo_Tap_Gvector_Ed.rst
+	Source_Fsimulator_Mimo_Tap_Gvector_Ee.rst
+	Source_Fsimulator_Mimo_Tap_Gvector_Ef.rst
+	Source_Fsimulator_Mimo_Tap_Gvector_Eg.rst
+	Source_Fsimulator_Mimo_Tap_Gvector_Eh.rst
+	Source_Fsimulator_Mimo_Tap_Gvector_Fa.rst
+	Source_Fsimulator_Mimo_Tap_Gvector_Fb.rst
+	Source_Fsimulator_Mimo_Tap_Gvector_Fc.rst
+	Source_Fsimulator_Mimo_Tap_Gvector_Fd.rst
+	Source_Fsimulator_Mimo_Tap_Gvector_Fe.rst
+	Source_Fsimulator_Mimo_Tap_Gvector_Ff.rst
+	Source_Fsimulator_Mimo_Tap_Gvector_Fg.rst
+	Source_Fsimulator_Mimo_Tap_Gvector_Fh.rst
+	Source_Fsimulator_Mimo_Tap_Gvector_Ga.rst
+	Source_Fsimulator_Mimo_Tap_Gvector_Gain.rst
+	Source_Fsimulator_Mimo_Tap_Gvector_Gb.rst
+	Source_Fsimulator_Mimo_Tap_Gvector_Gc.rst
+	Source_Fsimulator_Mimo_Tap_Gvector_Gd.rst
+	Source_Fsimulator_Mimo_Tap_Gvector_Ge.rst
+	Source_Fsimulator_Mimo_Tap_Gvector_Gf.rst
+	Source_Fsimulator_Mimo_Tap_Gvector_Gg.rst
+	Source_Fsimulator_Mimo_Tap_Gvector_Gh.rst
+	Source_Fsimulator_Mimo_Tap_Gvector_Ha.rst
+	Source_Fsimulator_Mimo_Tap_Gvector_Hb.rst
+	Source_Fsimulator_Mimo_Tap_Gvector_Hc.rst
+	Source_Fsimulator_Mimo_Tap_Gvector_Hd.rst
+	Source_Fsimulator_Mimo_Tap_Gvector_He.rst
+	Source_Fsimulator_Mimo_Tap_Gvector_Hf.rst
+	Source_Fsimulator_Mimo_Tap_Gvector_Hg.rst
+	Source_Fsimulator_Mimo_Tap_Gvector_Hh.rst
+	Source_Fsimulator_Mimo_Tap_Gvector_Phase.rst

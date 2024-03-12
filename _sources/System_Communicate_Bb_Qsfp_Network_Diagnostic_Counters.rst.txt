@@ -1,0 +1,22 @@
+Counters
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: SYSTem:COMMunicate:BB<HW>:QSFP:NETWork:DIAGnostic:COUNters:RESet
+	single: SYSTem:COMMunicate:BB<HW>:QSFP:NETWork:DIAGnostic:COUNters
+
+.. code-block:: python
+
+	SYSTem:COMMunicate:BB<HW>:QSFP:NETWork:DIAGnostic:COUNters:RESet
+	SYSTem:COMMunicate:BB<HW>:QSFP:NETWork:DIAGnostic:COUNters
+
+
+
+.. autoclass:: RsSmw.Implementations.System.Communicate.Bb.Qsfp.Network.Diagnostic.Counters.CountersCls
+	:members:
+	:undoc-members:
+	:noindex:

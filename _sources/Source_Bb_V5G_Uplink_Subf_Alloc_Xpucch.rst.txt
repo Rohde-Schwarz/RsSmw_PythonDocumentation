@@ -1,0 +1,36 @@
+Xpucch
+----------------------------------------
+
+
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Uplink.Subf.Alloc.Xpucch.XpucchCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.v5G.uplink.subf.alloc.xpucch.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_V5G_Uplink_Subf_Alloc_Xpucch_Conflict.rst
+	Source_Bb_V5G_Uplink_Subf_Alloc_Xpucch_FormatPy.rst
+	Source_Bb_V5G_Uplink_Subf_Alloc_Xpucch_NapUsed.rst
+	Source_Bb_V5G_Uplink_Subf_Alloc_Xpucch_NxPucch.rst
+	Source_Bb_V5G_Uplink_Subf_Alloc_Xpucch_PhysBits.rst
+	Source_Bb_V5G_Uplink_Subf_Alloc_Xpucch_Power.rst
+	Source_Bb_V5G_Uplink_Subf_Alloc_Xpucch_RbCount.rst
+	Source_Bb_V5G_Uplink_Subf_Alloc_Xpucch_RbOffset.rst
+	Source_Bb_V5G_Uplink_Subf_Alloc_Xpucch_State.rst

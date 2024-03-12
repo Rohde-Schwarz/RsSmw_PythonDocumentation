@@ -1,0 +1,61 @@
+V5G
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:V5G:DUPLexing
+	single: [SOURce<HW>]:BB:V5G:LINK
+	single: [SOURce<HW>]:BB:V5G:PRESet
+	single: [SOURce<HW>]:BB:V5G:SLENgth
+	single: [SOURce<HW>]:BB:V5G:STATe
+	single: [SOURce]:BB:V5G:VERSion
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:V5G:DUPLexing
+	[SOURce<HW>]:BB:V5G:LINK
+	[SOURce<HW>]:BB:V5G:PRESet
+	[SOURce<HW>]:BB:V5G:SLENgth
+	[SOURce<HW>]:BB:V5G:STATe
+	[SOURce]:BB:V5G:VERSion
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.V5GCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.v5G.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_V5G_Clipping.rst
+	Source_Bb_V5G_Clock.rst
+	Source_Bb_V5G_Downlink.rst
+	Source_Bb_V5G_FilterPy.rst
+	Source_Bb_V5G_LogGen.rst
+	Source_Bb_V5G_Powc.rst
+	Source_Bb_V5G_Setting.rst
+	Source_Bb_V5G_SymbolRate.rst
+	Source_Bb_V5G_Tdd.rst
+	Source_Bb_V5G_Tdw.rst
+	Source_Bb_V5G_Timc.rst
+	Source_Bb_V5G_Trigger.rst
+	Source_Bb_V5G_Udt.rst
+	Source_Bb_V5G_Uplink.rst
+	Source_Bb_V5G_Waveform.rst

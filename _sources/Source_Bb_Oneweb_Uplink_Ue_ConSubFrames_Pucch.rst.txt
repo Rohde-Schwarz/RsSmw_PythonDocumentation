@@ -1,0 +1,20 @@
+Pucch
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:ONEWeb:UL:UE<ST>:CONSubframes:PUCCh
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:ONEWeb:UL:UE<ST>:CONSubframes:PUCCh
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Uplink.Ue.ConSubFrames.Pucch.PucchCls
+	:members:
+	:undoc-members:
+	:noindex:

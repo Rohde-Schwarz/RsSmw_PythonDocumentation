@@ -1,0 +1,20 @@
+Plevel
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:EUTRa:TCW:WS:INTRacell:UE<CH>:PLEVel
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:EUTRa:TCW:WS:INTRacell:UE<CH>:PLEVel
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Eutra.Tcw.Ws.Intracell.Ue.Plevel.PlevelCls
+	:members:
+	:undoc-members:
+	:noindex:

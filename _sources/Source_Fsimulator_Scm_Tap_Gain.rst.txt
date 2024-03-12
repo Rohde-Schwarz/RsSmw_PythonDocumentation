@@ -1,0 +1,20 @@
+Gain
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:FSIMulator:SCM:TAP<ST>:GAIN
+
+.. code-block:: python
+
+	[SOURce<HW>]:FSIMulator:SCM:TAP<ST>:GAIN
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.Scm.Tap.Gain.GainCls
+	:members:
+	:undoc-members:
+	:noindex:

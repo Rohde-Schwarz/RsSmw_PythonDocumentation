@@ -1,0 +1,20 @@
+State
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:FSIMulator:CDYNamic:PATH<CH>:STATe
+
+.. code-block:: python
+
+	[SOURce<HW>]:FSIMulator:CDYNamic:PATH<CH>:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.Cdynamic.Path.State.StateCls
+	:members:
+	:undoc-members:
+	:noindex:

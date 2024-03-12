@@ -1,0 +1,24 @@
+Detector
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:FREQuency:CONVerter:EXTernal:DETector:OFFSet
+	single: [SOURce<HW>]:FREQuency:CONVerter:EXTernal:DETector:TEMPerature
+	single: [SOURce<HW>]:FREQuency:CONVerter:EXTernal:DETector:ZERores
+
+.. code-block:: python
+
+	[SOURce<HW>]:FREQuency:CONVerter:EXTernal:DETector:OFFSet
+	[SOURce<HW>]:FREQuency:CONVerter:EXTernal:DETector:TEMPerature
+	[SOURce<HW>]:FREQuency:CONVerter:EXTernal:DETector:ZERores
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Frequency.Converter.External.Detector.DetectorCls
+	:members:
+	:undoc-members:
+	:noindex:

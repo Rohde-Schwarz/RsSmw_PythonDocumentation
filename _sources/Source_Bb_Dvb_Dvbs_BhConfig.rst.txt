@@ -1,0 +1,46 @@
+BhConfig
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:DVB:DVBS:BHConfig:CACM
+	single: [SOURce<HW>]:BB:DVB:DVBS:BHConfig:DFL
+	single: [SOURce<HW>]:BB:DVB:DVBS:BHConfig:UPL
+	single: [SOURce<HW>]:BB:DVB:DVBS:BHConfig:[STATe]
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:DVB:DVBS:BHConfig:CACM
+	[SOURce<HW>]:BB:DVB:DVBS:BHConfig:DFL
+	[SOURce<HW>]:BB:DVB:DVBS:BHConfig:UPL
+	[SOURce<HW>]:BB:DVB:DVBS:BHConfig:[STATe]
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dvb.Dvbs.BhConfig.BhConfigCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.dvb.dvbs.bhConfig.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Dvb_Dvbs_BhConfig_Adfl.rst
+	Source_Bb_Dvb_Dvbs_BhConfig_Iactive.rst
+	Source_Bb_Dvb_Dvbs_BhConfig_Nactive.rst
+	Source_Bb_Dvb_Dvbs_BhConfig_Sbyte.rst

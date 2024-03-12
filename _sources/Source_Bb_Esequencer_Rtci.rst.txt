@@ -1,0 +1,41 @@
+Rtci
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:ESEQuencer:RTCI:PDWFormat
+	single: [SOURce<HW>]:BB:ESEQuencer:RTCI:PDWRate
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:ESEQuencer:RTCI:PDWFormat
+	[SOURce<HW>]:BB:ESEQuencer:RTCI:PDWRate
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Esequencer.Rtci.RtciCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.esequencer.rtci.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Esequencer_Rtci_Sequencer.rst
+	Source_Bb_Esequencer_Rtci_Wave.rst
+	Source_Bb_Esequencer_Rtci_Wlist.rst

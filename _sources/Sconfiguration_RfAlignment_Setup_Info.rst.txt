@@ -1,0 +1,38 @@
+Info
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: SCONfiguration:RFALignment:SETup:INFO:DATA
+
+.. code-block:: python
+
+	SCONfiguration:RFALignment:SETup:INFO:DATA
+
+
+
+.. autoclass:: RsSmw.Implementations.Sconfiguration.RfAlignment.Setup.Info.InfoCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.sconfiguration.rfAlignment.setup.info.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Sconfiguration_RfAlignment_Setup_Info_Calibration.rst
+	Sconfiguration_RfAlignment_Setup_Info_Wiring.rst

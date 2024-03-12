@@ -1,0 +1,28 @@
+Test
+----------------------------------------
+
+
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Frequency.Converter.External.Test.TestCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.frequency.converter.external.test.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Frequency_Converter_External_Test_BbLimit.rst

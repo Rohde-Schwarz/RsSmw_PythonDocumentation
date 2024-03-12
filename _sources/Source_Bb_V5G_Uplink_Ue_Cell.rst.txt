@@ -1,0 +1,41 @@
+Cell<CellNull>
+----------------------------------------
+
+.. rubric:: RepCap Settings
+
+.. code-block:: python
+
+	# Range: Nr0 .. Nr63
+	rc = driver.source.bb.v5G.uplink.ue.cell.repcap_cellNull_get()
+	driver.source.bb.v5G.uplink.ue.cell.repcap_cellNull_set(repcap.CellNull.Nr0)
+
+
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Uplink.Ue.Cell.CellCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.v5G.uplink.ue.cell.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_V5G_Uplink_Ue_Cell_Eimta.rst
+	Source_Bb_V5G_Uplink_Ue_Cell_Frc.rst
+	Source_Bb_V5G_Uplink_Ue_Cell_Pusch.rst
+	Source_Bb_V5G_Uplink_Ue_Cell_Refsig.rst
+	Source_Bb_V5G_Uplink_Ue_Cell_Row.rst
+	Source_Bb_V5G_Uplink_Ue_Cell_Xpusch.rst

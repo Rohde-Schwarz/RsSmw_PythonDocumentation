@@ -1,0 +1,20 @@
+State
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:ONEWeb:DL:USER<CH>:MCSTwo:STATe
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:ONEWeb:DL:USER<CH>:MCSTwo:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Downlink.User.McsTwo.State.StateCls
+	:members:
+	:undoc-members:
+	:noindex:

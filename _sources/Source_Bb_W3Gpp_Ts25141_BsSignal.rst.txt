@@ -1,0 +1,22 @@
+BsSignal
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce]:BB:W3GPp:TS25141:BSSignal:FREQuency
+	single: [SOURce]:BB:W3GPp:TS25141:BSSignal:POWer
+
+.. code-block:: python
+
+	[SOURce]:BB:W3GPp:TS25141:BSSignal:FREQuency
+	[SOURce]:BB:W3GPp:TS25141:BSSignal:POWer
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.W3Gpp.Ts25141.BsSignal.BsSignalCls
+	:members:
+	:undoc-members:
+	:noindex:

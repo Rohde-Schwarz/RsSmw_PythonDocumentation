@@ -1,0 +1,52 @@
+DciConf
+----------------------------------------
+
+
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Downlink.Subf.Encc.Pdcch.Extc.Item.DciConf.DciConfCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.oneweb.downlink.subf.encc.pdcch.extc.item.dciConf.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Oneweb_Downlink_Subf_Encc_Pdcch_Extc_Item_DciConf_BitData.rst
+	Source_Bb_Oneweb_Downlink_Subf_Encc_Pdcch_Extc_Item_DciConf_CiField.rst
+	Source_Bb_Oneweb_Downlink_Subf_Encc_Pdcch_Extc_Item_DciConf_CsDmrs.rst
+	Source_Bb_Oneweb_Downlink_Subf_Encc_Pdcch_Extc_Item_DciConf_CsiRequest.rst
+	Source_Bb_Oneweb_Downlink_Subf_Encc_Pdcch_Extc_Item_DciConf_DlaIndex.rst
+	Source_Bb_Oneweb_Downlink_Subf_Encc_Pdcch_Extc_Item_DciConf_F1Amode.rst
+	Source_Bb_Oneweb_Downlink_Subf_Encc_Pdcch_Extc_Item_DciConf_F3Ri.rst
+	Source_Bb_Oneweb_Downlink_Subf_Encc_Pdcch_Extc_Item_DciConf_FirstTrans.rst
+	Source_Bb_Oneweb_Downlink_Subf_Encc_Pdcch_Extc_Item_DciConf_Hack.rst
+	Source_Bb_Oneweb_Downlink_Subf_Encc_Pdcch_Extc_Item_DciConf_Hpn.rst
+	Source_Bb_Oneweb_Downlink_Subf_Encc_Pdcch_Extc_Item_DciConf_Mcsr.rst
+	Source_Bb_Oneweb_Downlink_Subf_Encc_Pdcch_Extc_Item_DciConf_Ndi.rst
+	Source_Bb_Oneweb_Downlink_Subf_Encc_Pdcch_Extc_Item_DciConf_Prach.rst
+	Source_Bb_Oneweb_Downlink_Subf_Encc_Pdcch_Extc_Item_DciConf_Rahr.rst
+	Source_Bb_Oneweb_Downlink_Subf_Encc_Pdcch_Extc_Item_DciConf_Rba.rst
+	Source_Bb_Oneweb_Downlink_Subf_Encc_Pdcch_Extc_Item_DciConf_Retrans.rst
+	Source_Bb_Oneweb_Downlink_Subf_Encc_Pdcch_Extc_Item_DciConf_Rv.rst
+	Source_Bb_Oneweb_Downlink_Subf_Encc_Pdcch_Extc_Item_DciConf_SrsRequest.rst
+	Source_Bb_Oneweb_Downlink_Subf_Encc_Pdcch_Extc_Item_DciConf_Tb1.rst
+	Source_Bb_Oneweb_Downlink_Subf_Encc_Pdcch_Extc_Item_DciConf_Tb2.rst
+	Source_Bb_Oneweb_Downlink_Subf_Encc_Pdcch_Extc_Item_DciConf_Tb3.rst
+	Source_Bb_Oneweb_Downlink_Subf_Encc_Pdcch_Extc_Item_DciConf_Tpcc.rst
+	Source_Bb_Oneweb_Downlink_Subf_Encc_Pdcch_Extc_Item_DciConf_TpcInstr.rst
+	Source_Bb_Oneweb_Downlink_Subf_Encc_Pdcch_Extc_Item_DciConf_UlIndex.rst
+	Source_Bb_Oneweb_Downlink_Subf_Encc_Pdcch_Extc_Item_DciConf_Vrba.rst

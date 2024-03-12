@@ -1,0 +1,29 @@
+Step
+----------------------------------------
+
+
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Iq.Output.Digital.Fader.Power.Step.StepCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.iq.output.digital.fader.power.step.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Iq_Output_Digital_Fader_Power_Step_Increment.rst
+	Source_Iq_Output_Digital_Fader_Power_Step_Mode.rst

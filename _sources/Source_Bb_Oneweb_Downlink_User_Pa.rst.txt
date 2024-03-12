@@ -1,0 +1,20 @@
+Pa
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:ONEWeb:DL:USER<CH>:PA
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:ONEWeb:DL:USER<CH>:PA
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Downlink.User.Pa.PaCls
+	:members:
+	:undoc-members:
+	:noindex:

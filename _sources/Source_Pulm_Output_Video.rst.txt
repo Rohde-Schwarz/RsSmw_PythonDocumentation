@@ -1,0 +1,20 @@
+Video
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:PULM:OUTPut:VIDeo:POLarity
+
+.. code-block:: python
+
+	[SOURce<HW>]:PULM:OUTPut:VIDeo:POLarity
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Pulm.Output.Video.VideoCls
+	:members:
+	:undoc-members:
+	:noindex:

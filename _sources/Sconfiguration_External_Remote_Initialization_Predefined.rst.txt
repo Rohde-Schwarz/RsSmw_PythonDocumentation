@@ -1,0 +1,20 @@
+Predefined
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: SCONfiguration:EXTernal:REMote:INITialization:PREDefined:CATalog
+
+.. code-block:: python
+
+	SCONfiguration:EXTernal:REMote:INITialization:PREDefined:CATalog
+
+
+
+.. autoclass:: RsSmw.Implementations.Sconfiguration.External.Remote.Initialization.Predefined.PredefinedCls
+	:members:
+	:undoc-members:
+	:noindex:
