@@ -1,0 +1,47 @@
+FrConfig<FrCfgIxNull>
+----------------------------------------
+
+.. rubric:: RepCap Settings
+
+.. code-block:: python
+
+	# Range: Nr0 .. Nr31
+	rc = driver.source.bb.dvb.dvbr.sfConfig.frConfig.repcap_frCfgIxNull_get()
+	driver.source.bb.dvb.dvbr.sfConfig.frConfig.repcap_frCfgIxNull_set(repcap.FrCfgIxNull.Nr0)
+
+
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dvb.Dvbr.SfConfig.FrConfig.FrConfigCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.dvb.dvbr.sfConfig.frConfig.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Dvb_Dvbr_SfConfig_FrConfig_Btu.rst
+	Source_Bb_Dvb_Dvbr_SfConfig_FrConfig_Conflicts.rst
+	Source_Bb_Dvb_Dvbr_SfConfig_FrConfig_Frbw.rst
+	Source_Bb_Dvb_Dvbr_SfConfig_FrConfig_FrsTime.rst
+	Source_Bb_Dvb_Dvbr_SfConfig_FrConfig_Grid.rst
+	Source_Bb_Dvb_Dvbr_SfConfig_FrConfig_Grids.rst
+	Source_Bb_Dvb_Dvbr_SfConfig_FrConfig_Offset.rst
+	Source_Bb_Dvb_Dvbr_SfConfig_FrConfig_Resolve.rst
+	Source_Bb_Dvb_Dvbr_SfConfig_FrConfig_Sec.rst
+	Source_Bb_Dvb_Dvbr_SfConfig_FrConfig_SecIdx.rst
+	Source_Bb_Dvb_Dvbr_SfConfig_FrConfig_Sections.rst
+	Source_Bb_Dvb_Dvbr_SfConfig_FrConfig_TxFormat.rst

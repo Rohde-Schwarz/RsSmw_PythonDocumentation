@@ -1,0 +1,20 @@
+Tprs
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:V5G:DL:PRSS:TPRS
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:V5G:DL:PRSS:TPRS
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Downlink.Prss.Tprs.TprsCls
+	:members:
+	:undoc-members:
+	:noindex:

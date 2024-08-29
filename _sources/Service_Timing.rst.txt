@@ -1,0 +1,28 @@
+Timing
+----------------------------------------
+
+
+
+
+
+.. autoclass:: RsSmw.Implementations.Service.Timing.TimingCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.service.timing.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Service_Timing_Analyzer.rst

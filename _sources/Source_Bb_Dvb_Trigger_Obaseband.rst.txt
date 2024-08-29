@@ -1,0 +1,22 @@
+Obaseband
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:DVB:TRIGger:OBASeband:DELay
+	single: [SOURce<HW>]:BB:DVB:TRIGger:OBASeband:INHibit
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:DVB:TRIGger:OBASeband:DELay
+	[SOURce<HW>]:BB:DVB:TRIGger:OBASeband:INHibit
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dvb.Trigger.Obaseband.ObasebandCls
+	:members:
+	:undoc-members:
+	:noindex:

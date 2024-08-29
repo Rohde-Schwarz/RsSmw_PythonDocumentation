@@ -1,0 +1,20 @@
+Columns
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:FSIMulator:SCM:ANTenna:TX:COLumns:[SIZE]
+
+.. code-block:: python
+
+	[SOURce<HW>]:FSIMulator:SCM:ANTenna:TX:COLumns:[SIZE]
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.Scm.Antenna.Tx.Columns.ColumnsCls
+	:members:
+	:undoc-members:
+	:noindex:

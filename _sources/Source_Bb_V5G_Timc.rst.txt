@@ -1,0 +1,20 @@
+Timc
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:V5G:TIMC:NTAoffset
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:V5G:TIMC:NTAoffset
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Timc.TimcCls
+	:members:
+	:undoc-members:
+	:noindex:

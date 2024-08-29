@@ -1,0 +1,28 @@
+Blank
+----------------------------------------
+
+
+
+
+
+.. autoclass:: RsSmw.Implementations.Output.Blank.BlankCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.output.blank.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Output_Blank_ListPy.rst

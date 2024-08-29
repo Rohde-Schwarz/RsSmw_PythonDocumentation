@@ -1,0 +1,26 @@
+Sdata
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce]:BB:W3GPp:TS25141:WSIGnal:DPCCh:TPC:SDATa:DSELect
+	single: [SOURce]:BB:W3GPp:TS25141:WSIGnal:DPCCh:TPC:SDATa:PDSTeps
+	single: [SOURce]:BB:W3GPp:TS25141:WSIGnal:DPCCh:TPC:SDATa:PUSTeps
+	single: [SOURce]:BB:W3GPp:TS25141:WSIGnal:DPCCh:TPC:SDATa
+
+.. code-block:: python
+
+	[SOURce]:BB:W3GPp:TS25141:WSIGnal:DPCCh:TPC:SDATa:DSELect
+	[SOURce]:BB:W3GPp:TS25141:WSIGnal:DPCCh:TPC:SDATa:PDSTeps
+	[SOURce]:BB:W3GPp:TS25141:WSIGnal:DPCCh:TPC:SDATa:PUSTeps
+	[SOURce]:BB:W3GPp:TS25141:WSIGnal:DPCCh:TPC:SDATa
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.W3Gpp.Ts25141.Wsignal.Dpcch.Tpc.Sdata.SdataCls
+	:members:
+	:undoc-members:
+	:noindex:

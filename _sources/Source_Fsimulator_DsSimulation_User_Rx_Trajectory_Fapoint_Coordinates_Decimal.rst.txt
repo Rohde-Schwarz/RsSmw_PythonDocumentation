@@ -1,0 +1,20 @@
+Decimal
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:FSIMulator:DSSimulation:USER:RX:TRAJectory:FAPoint:COORdinates:[DECimal]
+
+.. code-block:: python
+
+	[SOURce<HW>]:FSIMulator:DSSimulation:USER:RX:TRAJectory:FAPoint:COORdinates:[DECimal]
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.DsSimulation.User.Rx.Trajectory.Fapoint.Coordinates.Decimal.DecimalCls
+	:members:
+	:undoc-members:
+	:noindex:

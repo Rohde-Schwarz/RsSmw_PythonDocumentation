@@ -1,0 +1,22 @@
+Range
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: SCONfiguration:RFALignment:SETup:INFO:CALibration:FREQuency:RANGe:LOWer
+	single: SCONfiguration:RFALignment:SETup:INFO:CALibration:FREQuency:RANGe:UPPer
+
+.. code-block:: python
+
+	SCONfiguration:RFALignment:SETup:INFO:CALibration:FREQuency:RANGe:LOWer
+	SCONfiguration:RFALignment:SETup:INFO:CALibration:FREQuency:RANGe:UPPer
+
+
+
+.. autoclass:: RsSmw.Implementations.Sconfiguration.RfAlignment.Setup.Info.Calibration.Frequency.Range.RangeCls
+	:members:
+	:undoc-members:
+	:noindex:

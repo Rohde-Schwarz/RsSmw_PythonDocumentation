@@ -1,0 +1,22 @@
+Common
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: SYSTem:COMMunicate:BB<HW>:NETWork:[COMMon]:HOSTname
+	single: SYSTem:COMMunicate:BB<HW>:NETWork:[COMMon]:WORKgroup
+
+.. code-block:: python
+
+	SYSTem:COMMunicate:BB<HW>:NETWork:[COMMon]:HOSTname
+	SYSTem:COMMunicate:BB<HW>:NETWork:[COMMon]:WORKgroup
+
+
+
+.. autoclass:: RsSmw.Implementations.System.Communicate.Bb.Network.Common.CommonCls
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,22 @@
+Test
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: SYSTem:INFormation:TEST:SEQuence
+	single: SYSTem:INFormation:TEST:STATe
+
+.. code-block:: python
+
+	SYSTem:INFormation:TEST:SEQuence
+	SYSTem:INFormation:TEST:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.System.Information.Test.TestCls
+	:members:
+	:undoc-members:
+	:noindex:

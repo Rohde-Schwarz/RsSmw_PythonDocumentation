@@ -1,0 +1,20 @@
+Clock
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: BLER:SETup:CLOCk:[POLarity]
+
+.. code-block:: python
+
+	BLER:SETup:CLOCk:[POLarity]
+
+
+
+.. autoclass:: RsSmw.Implementations.Bler.Setup.Clock.ClockCls
+	:members:
+	:undoc-members:
+	:noindex:

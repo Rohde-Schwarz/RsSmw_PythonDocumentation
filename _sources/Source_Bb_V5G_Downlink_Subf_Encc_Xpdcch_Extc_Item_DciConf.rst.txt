@@ -1,0 +1,58 @@
+DciConf
+----------------------------------------
+
+
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Downlink.Subf.Encc.Xpdcch.Extc.Item.DciConf.DciConfCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.v5G.downlink.subf.encc.xpdcch.extc.item.dciConf.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_V5G_Downlink_Subf_Encc_Xpdcch_Extc_Item_DciConf_ApnLayer.rst
+	Source_Bb_V5G_Downlink_Subf_Encc_Xpdcch_Extc_Item_DciConf_BitData.rst
+	Source_Bb_V5G_Downlink_Subf_Encc_Xpdcch_Extc_Item_DciConf_Bmi.rst
+	Source_Bb_V5G_Downlink_Subf_Encc_Xpdcch_Extc_Item_DciConf_Bsi.rst
+	Source_Bb_V5G_Downlink_Subf_Encc_Xpdcch_Extc_Item_DciConf_CbbRequest.rst
+	Source_Bb_V5G_Downlink_Subf_Encc_Xpdcch_Extc_Item_DciConf_CbProcess.rst
+	Source_Bb_V5G_Downlink_Subf_Encc_Xpdcch_Extc_Item_DciConf_CbSymbol.rst
+	Source_Bb_V5G_Downlink_Subf_Encc_Xpdcch_Extc_Item_DciConf_CtrTiming.rst
+	Source_Bb_V5G_Downlink_Subf_Encc_Xpdcch_Extc_Item_DciConf_CycShift.rst
+	Source_Bb_V5G_Downlink_Subf_Encc_Xpdcch_Extc_Item_DciConf_DlPcrs.rst
+	Source_Bb_V5G_Downlink_Subf_Encc_Xpdcch_Extc_Item_DciConf_Fbi.rst
+	Source_Bb_V5G_Downlink_Subf_Encc_Xpdcch_Extc_Item_DciConf_Hpn.rst
+	Source_Bb_V5G_Downlink_Subf_Encc_Xpdcch_Extc_Item_DciConf_Mcsr.rst
+	Source_Bb_V5G_Downlink_Subf_Encc_Xpdcch_Extc_Item_DciConf_Ndi.rst
+	Source_Bb_V5G_Downlink_Subf_Encc_Xpdcch_Extc_Item_DciConf_Nscid.rst
+	Source_Bb_V5G_Downlink_Subf_Encc_Xpdcch_Extc_Item_DciConf_OccIndicator.rst
+	Source_Bb_V5G_Downlink_Subf_Encc_Xpdcch_Extc_Item_DciConf_Pmi.rst
+	Source_Bb_V5G_Downlink_Subf_Encc_Xpdcch_Extc_Item_DciConf_Rba.rst
+	Source_Bb_V5G_Downlink_Subf_Encc_Xpdcch_Extc_Item_DciConf_Remap.rst
+	Source_Bb_V5G_Downlink_Subf_Encc_Xpdcch_Extc_Item_DciConf_Rv.rst
+	Source_Bb_V5G_Downlink_Subf_Encc_Xpdcch_Extc_Item_DciConf_SrsRequest.rst
+	Source_Bb_V5G_Downlink_Subf_Encc_Xpdcch_Extc_Item_DciConf_SrsSymbol.rst
+	Source_Bb_V5G_Downlink_Subf_Encc_Xpdcch_Extc_Item_DciConf_Tpc.rst
+	Source_Bb_V5G_Downlink_Subf_Encc_Xpdcch_Extc_Item_DciConf_Trtiming.rst
+	Source_Bb_V5G_Downlink_Subf_Encc_Xpdcch_Extc_Item_DciConf_UciInd.rst
+	Source_Bb_V5G_Downlink_Subf_Encc_Xpdcch_Extc_Item_DciConf_Ufri.rst
+	Source_Bb_V5G_Downlink_Subf_Encc_Xpdcch_Extc_Item_DciConf_UlPcrs.rst
+	Source_Bb_V5G_Downlink_Subf_Encc_Xpdcch_Extc_Item_DciConf_UtrTiming.rst
+	Source_Bb_V5G_Downlink_Subf_Encc_Xpdcch_Extc_Item_DciConf_Xpend.rst
+	Source_Bb_V5G_Downlink_Subf_Encc_Xpdcch_Extc_Item_DciConf_XpRange.rst
+	Source_Bb_V5G_Downlink_Subf_Encc_Xpdcch_Extc_Item_DciConf_XpStart.rst

@@ -1,0 +1,39 @@
+Information
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: SYSTem:INFormation:SCPI
+	single: SYSTem:INFormation:SR
+
+.. code-block:: python
+
+	SYSTem:INFormation:SCPI
+	SYSTem:INFormation:SR
+
+
+
+.. autoclass:: RsSmw.Implementations.System.Information.InformationCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.system.information.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	System_Information_Test.rst

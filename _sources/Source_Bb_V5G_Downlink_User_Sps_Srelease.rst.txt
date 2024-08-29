@@ -1,0 +1,20 @@
+Srelease
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:V5G:DL:USER<CH>:SPS:SRELease
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:V5G:DL:USER<CH>:SPS:SRELease
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Downlink.User.Sps.Srelease.SreleaseCls
+	:members:
+	:undoc-members:
+	:noindex:

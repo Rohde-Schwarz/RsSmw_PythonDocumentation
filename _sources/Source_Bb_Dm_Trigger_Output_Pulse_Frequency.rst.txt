@@ -1,0 +1,20 @@
+Frequency
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:DM:TRIGger:OUTPut<CH>:PULSe:FREQuency
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:DM:TRIGger:OUTPut<CH>:PULSe:FREQuency
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dm.Trigger.Output.Pulse.Frequency.FrequencyCls
+	:members:
+	:undoc-members:
+	:noindex:

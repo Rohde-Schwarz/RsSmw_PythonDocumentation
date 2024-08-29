@@ -1,0 +1,34 @@
+Pucch
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:ONEWeb:UL:PUCCh:DESHift
+	single: [SOURce<HW>]:BB:ONEWeb:UL:PUCCh:N1CS
+	single: [SOURce<HW>]:BB:ONEWeb:UL:PUCCh:N1EMax
+	single: [SOURce<HW>]:BB:ONEWeb:UL:PUCCh:N1NMax
+	single: [SOURce<HW>]:BB:ONEWeb:UL:PUCCh:N2Max
+	single: [SOURce<HW>]:BB:ONEWeb:UL:PUCCh:N2RB
+	single: [SOURce<HW>]:BB:ONEWeb:UL:PUCCh:N3Max
+	single: [SOURce<HW>]:BB:ONEWeb:UL:PUCCh:NORB
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:ONEWeb:UL:PUCCh:DESHift
+	[SOURce<HW>]:BB:ONEWeb:UL:PUCCh:N1CS
+	[SOURce<HW>]:BB:ONEWeb:UL:PUCCh:N1EMax
+	[SOURce<HW>]:BB:ONEWeb:UL:PUCCh:N1NMax
+	[SOURce<HW>]:BB:ONEWeb:UL:PUCCh:N2Max
+	[SOURce<HW>]:BB:ONEWeb:UL:PUCCh:N2RB
+	[SOURce<HW>]:BB:ONEWeb:UL:PUCCh:N3Max
+	[SOURce<HW>]:BB:ONEWeb:UL:PUCCh:NORB
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Uplink.Pucch.PucchCls
+	:members:
+	:undoc-members:
+	:noindex:

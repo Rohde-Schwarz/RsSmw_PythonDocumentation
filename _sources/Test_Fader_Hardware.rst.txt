@@ -1,0 +1,20 @@
+Hardware
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: TEST:FADer:HARDware:STATe
+
+.. code-block:: python
+
+	TEST:FADer:HARDware:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Test.Fader.Hardware.HardwareCls
+	:members:
+	:undoc-members:
+	:noindex:

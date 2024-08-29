@@ -1,0 +1,22 @@
+Water
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:FSIMulator:DSSimulation:SHIPtoship:WATer:SURFace
+	single: [SOURce<HW>]:FSIMulator:DSSimulation:SHIPtoship:WATer:TYPE
+
+.. code-block:: python
+
+	[SOURce<HW>]:FSIMulator:DSSimulation:SHIPtoship:WATer:SURFace
+	[SOURce<HW>]:FSIMulator:DSSimulation:SHIPtoship:WATer:TYPE
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.DsSimulation.Shiptoship.Water.WaterCls
+	:members:
+	:undoc-members:
+	:noindex:

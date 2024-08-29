@@ -1,0 +1,24 @@
+Snet
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: INSTruments:SCAN:SNET:IPADdress
+	single: INSTruments:SCAN:SNET:PLENgth
+	single: INSTruments:SCAN:SNET:[STATe]
+
+.. code-block:: python
+
+	INSTruments:SCAN:SNET:IPADdress
+	INSTruments:SCAN:SNET:PLENgth
+	INSTruments:SCAN:SNET:[STATe]
+
+
+
+.. autoclass:: RsSmw.Implementations.Instruments.Scan.Snet.SnetCls
+	:members:
+	:undoc-members:
+	:noindex:

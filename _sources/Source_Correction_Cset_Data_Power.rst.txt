@@ -1,0 +1,39 @@
+Power
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:CORRection:CSET:DATA:POWer:POINts
+	single: [SOURce<HW>]:CORRection:CSET:DATA:POWer
+
+.. code-block:: python
+
+	[SOURce<HW>]:CORRection:CSET:DATA:POWer:POINts
+	[SOURce<HW>]:CORRection:CSET:DATA:POWer
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Correction.Cset.Data.Power.PowerCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.correction.cset.data.power.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Correction_Cset_Data_Power_Sgamma.rst

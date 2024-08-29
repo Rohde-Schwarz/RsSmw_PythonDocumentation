@@ -1,0 +1,36 @@
+Precoding
+----------------------------------------
+
+
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Downlink.Subf.Alloc.Precoding.PrecodingCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.v5G.downlink.subf.alloc.precoding.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_V5G_Downlink_Subf_Alloc_Precoding_Ap.rst
+	Source_Bb_V5G_Downlink_Subf_Alloc_Precoding_Apm.rst
+	Source_Bb_V5G_Downlink_Subf_Alloc_Precoding_CbIndex.rst
+	Source_Bb_V5G_Downlink_Subf_Alloc_Precoding_Cdd.rst
+	Source_Bb_V5G_Downlink_Subf_Alloc_Precoding_DaFormat.rst
+	Source_Bb_V5G_Downlink_Subf_Alloc_Precoding_Lcount.rst
+	Source_Bb_V5G_Downlink_Subf_Alloc_Precoding_NoLayers.rst
+	Source_Bb_V5G_Downlink_Subf_Alloc_Precoding_Scheme.rst
+	Source_Bb_V5G_Downlink_Subf_Alloc_Precoding_TrScheme.rst

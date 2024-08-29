@@ -1,0 +1,20 @@
+Distribution
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:FSIMulator:MIMO:SCWI:CLUSter<CH>:DISTribution
+
+.. code-block:: python
+
+	[SOURce<HW>]:FSIMulator:MIMO:SCWI:CLUSter<CH>:DISTribution
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.Mimo.Scwi.Cluster.Distribution.DistributionCls
+	:members:
+	:undoc-members:
+	:noindex:

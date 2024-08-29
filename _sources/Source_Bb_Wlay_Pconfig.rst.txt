@@ -1,0 +1,49 @@
+Pconfig
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:WLAY:PCONfig:BSBNumber
+	single: [SOURce<HW>]:BB:WLAY:PCONfig:CSDState
+	single: [SOURce<HW>]:BB:WLAY:PCONfig:SSNumber
+	single: [SOURce<HW>]:BB:WLAY:PCONfig:TRAGgregate
+	single: [SOURce<HW>]:BB:WLAY:PCONfig:USRNumber
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:WLAY:PCONfig:BSBNumber
+	[SOURce<HW>]:BB:WLAY:PCONfig:CSDState
+	[SOURce<HW>]:BB:WLAY:PCONfig:SSNumber
+	[SOURce<HW>]:BB:WLAY:PCONfig:TRAGgregate
+	[SOURce<HW>]:BB:WLAY:PCONfig:USRNumber
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Wlay.Pconfig.PconfigCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.wlay.pconfig.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Wlay_Pconfig_Hda.rst
+	Source_Bb_Wlay_Pconfig_Hdb.rst
+	Source_Bb_Wlay_Pconfig_Lhdr.rst
+	Source_Bb_Wlay_Pconfig_Psk.rst
+	Source_Bb_Wlay_Pconfig_Uconfig.rst

@@ -1,0 +1,56 @@
+Tx
+----------------------------------------
+
+
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.Mimo.Tap.Kronecker.Correlation.Tx.TxCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.fsimulator.mimo.tap.kronecker.correlation.tx.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Fsimulator_Mimo_Tap_Kronecker_Correlation_Tx_Ab.rst
+	Source_Fsimulator_Mimo_Tap_Kronecker_Correlation_Tx_Ac.rst
+	Source_Fsimulator_Mimo_Tap_Kronecker_Correlation_Tx_Ad.rst
+	Source_Fsimulator_Mimo_Tap_Kronecker_Correlation_Tx_Ae.rst
+	Source_Fsimulator_Mimo_Tap_Kronecker_Correlation_Tx_Af.rst
+	Source_Fsimulator_Mimo_Tap_Kronecker_Correlation_Tx_Ag.rst
+	Source_Fsimulator_Mimo_Tap_Kronecker_Correlation_Tx_Ah.rst
+	Source_Fsimulator_Mimo_Tap_Kronecker_Correlation_Tx_Bc.rst
+	Source_Fsimulator_Mimo_Tap_Kronecker_Correlation_Tx_Bd.rst
+	Source_Fsimulator_Mimo_Tap_Kronecker_Correlation_Tx_Be.rst
+	Source_Fsimulator_Mimo_Tap_Kronecker_Correlation_Tx_Bf.rst
+	Source_Fsimulator_Mimo_Tap_Kronecker_Correlation_Tx_Bg.rst
+	Source_Fsimulator_Mimo_Tap_Kronecker_Correlation_Tx_Bh.rst
+	Source_Fsimulator_Mimo_Tap_Kronecker_Correlation_Tx_Cd.rst
+	Source_Fsimulator_Mimo_Tap_Kronecker_Correlation_Tx_Ce.rst
+	Source_Fsimulator_Mimo_Tap_Kronecker_Correlation_Tx_Cf.rst
+	Source_Fsimulator_Mimo_Tap_Kronecker_Correlation_Tx_Cg.rst
+	Source_Fsimulator_Mimo_Tap_Kronecker_Correlation_Tx_Ch.rst
+	Source_Fsimulator_Mimo_Tap_Kronecker_Correlation_Tx_De.rst
+	Source_Fsimulator_Mimo_Tap_Kronecker_Correlation_Tx_Df.rst
+	Source_Fsimulator_Mimo_Tap_Kronecker_Correlation_Tx_Dg.rst
+	Source_Fsimulator_Mimo_Tap_Kronecker_Correlation_Tx_Dh.rst
+	Source_Fsimulator_Mimo_Tap_Kronecker_Correlation_Tx_Ef.rst
+	Source_Fsimulator_Mimo_Tap_Kronecker_Correlation_Tx_Eg.rst
+	Source_Fsimulator_Mimo_Tap_Kronecker_Correlation_Tx_Eh.rst
+	Source_Fsimulator_Mimo_Tap_Kronecker_Correlation_Tx_Fg.rst
+	Source_Fsimulator_Mimo_Tap_Kronecker_Correlation_Tx_Fh.rst
+	Source_Fsimulator_Mimo_Tap_Kronecker_Correlation_Tx_Gh.rst
+	Source_Fsimulator_Mimo_Tap_Kronecker_Correlation_Tx_Row.rst

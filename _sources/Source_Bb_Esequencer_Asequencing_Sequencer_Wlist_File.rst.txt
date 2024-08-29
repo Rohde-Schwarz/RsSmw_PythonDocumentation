@@ -1,0 +1,20 @@
+File
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:ESEQuencer:ASEQuencing:[SEQuencer<ST>]:WLISt:FILE
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:ESEQuencer:ASEQuencing:[SEQuencer<ST>]:WLISt:FILE
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Esequencer.Asequencing.Sequencer.Wlist.File.FileCls
+	:members:
+	:undoc-members:
+	:noindex:

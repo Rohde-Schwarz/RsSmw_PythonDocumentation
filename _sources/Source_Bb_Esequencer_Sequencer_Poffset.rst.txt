@@ -1,0 +1,20 @@
+Poffset
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:ESEQuencer:SEQuencer<ST>:POFFset
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:ESEQuencer:SEQuencer<ST>:POFFset
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Esequencer.Sequencer.Poffset.PoffsetCls
+	:members:
+	:undoc-members:
+	:noindex:

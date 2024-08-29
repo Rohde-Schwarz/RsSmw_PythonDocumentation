@@ -1,0 +1,43 @@
+Awgn
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce]:BB:W3GPp:TS25141:AWGN:CNRatio
+	single: [SOURce]:BB:W3GPp:TS25141:AWGN:ENRatio
+	single: [SOURce]:BB:W3GPp:TS25141:AWGN:STATe
+
+.. code-block:: python
+
+	[SOURce]:BB:W3GPp:TS25141:AWGN:CNRatio
+	[SOURce]:BB:W3GPp:TS25141:AWGN:ENRatio
+	[SOURce]:BB:W3GPp:TS25141:AWGN:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.W3Gpp.Ts25141.Awgn.AwgnCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.w3Gpp.ts25141.awgn.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_W3Gpp_Ts25141_Awgn_Power.rst
+	Source_Bb_W3Gpp_Ts25141_Awgn_Rblock.rst
+	Source_Bb_W3Gpp_Ts25141_Awgn_RpDetection.rst

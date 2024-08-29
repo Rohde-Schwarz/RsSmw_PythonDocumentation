@@ -1,0 +1,20 @@
+Pow
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:V5G:DL:CSIS:[CELL<CH0>]:POW
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:V5G:DL:CSIS:[CELL<CH0>]:POW
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Downlink.Csis.Cell.Pow.PowCls
+	:members:
+	:undoc-members:
+	:noindex:

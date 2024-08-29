@@ -1,0 +1,20 @@
+User
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:WLAY:PCONfig:UCONfig:USER:STATe
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:WLAY:PCONfig:UCONfig:USER:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Wlay.Pconfig.Uconfig.User.UserCls
+	:members:
+	:undoc-members:
+	:noindex:

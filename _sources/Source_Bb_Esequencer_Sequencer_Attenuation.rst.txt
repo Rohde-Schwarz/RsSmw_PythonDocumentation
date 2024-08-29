@@ -1,0 +1,20 @@
+Attenuation
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:ESEQuencer:SEQuencer<ST>:ATTenuation
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:ESEQuencer:SEQuencer<ST>:ATTenuation
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Esequencer.Sequencer.Attenuation.AttenuationCls
+	:members:
+	:undoc-members:
+	:noindex:

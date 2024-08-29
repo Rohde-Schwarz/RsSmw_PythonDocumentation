@@ -1,0 +1,20 @@
+Power
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce]:BB:W3GPp:TS25141:AWGN:POWer:NOISe
+
+.. code-block:: python
+
+	[SOURce]:BB:W3GPp:TS25141:AWGN:POWer:NOISe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.W3Gpp.Ts25141.Awgn.Power.PowerCls
+	:members:
+	:undoc-members:
+	:noindex:

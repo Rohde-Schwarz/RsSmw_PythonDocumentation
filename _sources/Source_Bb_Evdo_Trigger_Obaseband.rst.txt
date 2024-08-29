@@ -1,0 +1,22 @@
+Obaseband
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:EVDO:TRIGger:OBASeband:DELay
+	single: [SOURce<HW>]:BB:EVDO:TRIGger:OBASeband:INHibit
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:EVDO:TRIGger:OBASeband:DELay
+	[SOURce<HW>]:BB:EVDO:TRIGger:OBASeband:INHibit
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Evdo.Trigger.Obaseband.ObasebandCls
+	:members:
+	:undoc-members:
+	:noindex:

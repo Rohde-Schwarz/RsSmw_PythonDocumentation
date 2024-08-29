@@ -1,0 +1,42 @@
+TcInterferer
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:FSIMulator:TCINterferer:PERiod
+	single: [SOURce<HW>]:FSIMulator:TCINterferer:SPEed
+	single: [SOURce<HW>]:FSIMulator:TCINterferer:[STATe]
+
+.. code-block:: python
+
+	[SOURce<HW>]:FSIMulator:TCINterferer:PERiod
+	[SOURce<HW>]:FSIMulator:TCINterferer:SPEed
+	[SOURce<HW>]:FSIMulator:TCINterferer:[STATe]
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.TcInterferer.TcInterfererCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.fsimulator.tcInterferer.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Fsimulator_TcInterferer_Moving.rst
+	Source_Fsimulator_TcInterferer_Reference.rst

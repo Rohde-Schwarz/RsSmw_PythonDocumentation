@@ -1,0 +1,20 @@
+Cbua
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:V5G:DL:USER<CH>:APM:CBUA
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:V5G:DL:USER<CH>:APM:CBUA
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Downlink.User.Apm.Cbua.CbuaCls
+	:members:
+	:undoc-members:
+	:noindex:

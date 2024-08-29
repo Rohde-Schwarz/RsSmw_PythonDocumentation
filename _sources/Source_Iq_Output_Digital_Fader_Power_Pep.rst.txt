@@ -1,0 +1,20 @@
+Pep
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce]:IQ:OUTPut:DIGital:FADer<CH>:POWer:PEP
+
+.. code-block:: python
+
+	[SOURce]:IQ:OUTPut:DIGital:FADer<CH>:POWer:PEP
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Iq.Output.Digital.Fader.Power.Pep.PepCls
+	:members:
+	:undoc-members:
+	:noindex:

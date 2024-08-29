@@ -1,0 +1,41 @@
+Moving
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:FSIMulator:MDELay:MOVing:LOSS
+	single: [SOURce<HW>]:FSIMulator:MDELay:MOVing:STATe
+	single: [SOURce<HW>]:FSIMulator:MDELay:MOVing:VPERiod
+
+.. code-block:: python
+
+	[SOURce<HW>]:FSIMulator:MDELay:MOVing:LOSS
+	[SOURce<HW>]:FSIMulator:MDELay:MOVing:STATe
+	[SOURce<HW>]:FSIMulator:MDELay:MOVing:VPERiod
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.Mdelay.Moving.MovingCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.fsimulator.mdelay.moving.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Fsimulator_Mdelay_Moving_Delay.rst

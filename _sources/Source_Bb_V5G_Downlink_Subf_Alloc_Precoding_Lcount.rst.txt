@@ -1,0 +1,20 @@
+Lcount
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:V5G:DL:[SUBF<ST0>]:ALLoc<CH0>:PRECoding:LCOunt
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:V5G:DL:[SUBF<ST0>]:ALLoc<CH0>:PRECoding:LCOunt
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Downlink.Subf.Alloc.Precoding.Lcount.LcountCls
+	:members:
+	:undoc-members:
+	:noindex:

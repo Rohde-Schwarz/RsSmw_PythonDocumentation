@@ -1,0 +1,20 @@
+Source
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: TRIGger<HW>:LFFSweep:SOURce
+
+.. code-block:: python
+
+	TRIGger<HW>:LFFSweep:SOURce
+
+
+
+.. autoclass:: RsSmw.Implementations.Trigger.LffSweep.Source.SourceCls
+	:members:
+	:undoc-members:
+	:noindex:

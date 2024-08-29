@@ -1,0 +1,37 @@
+Column<Column>
+----------------------------------------
+
+.. rubric:: RepCap Settings
+
+.. code-block:: python
+
+	# Range: Nr1 .. Nr32
+	rc = driver.source.fsimulator.mimo.antenna.inverse.matrix.row.column.repcap_column_get()
+	driver.source.fsimulator.mimo.antenna.inverse.matrix.row.column.repcap_column_set(repcap.Column.Nr1)
+
+
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.Mimo.Antenna.Inverse.Matrix.Row.Column.ColumnCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.fsimulator.mimo.antenna.inverse.matrix.row.column.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Fsimulator_Mimo_Antenna_Inverse_Matrix_Row_Column_Imagin.rst
+	Source_Fsimulator_Mimo_Antenna_Inverse_Matrix_Row_Column_Real.rst

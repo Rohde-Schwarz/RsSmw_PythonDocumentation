@@ -1,0 +1,20 @@
+Select
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:ESEQuencer:PLAYback:[SEQuencer<ST>]:FILE:[SELect]
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:ESEQuencer:PLAYback:[SEQuencer<ST>]:FILE:[SELect]
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Esequencer.Playback.Sequencer.File.Select.SelectCls
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,48 @@
+Dvbt
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:DVB:DVBT:DRATe
+	single: [SOURce<HW>]:BB:DVB:DVBT:DURation
+	single: [SOURce<HW>]:BB:DVB:DVBT:HMODe
+	single: [SOURce<HW>]:BB:DVB:DVBT:SFRames
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:DVB:DVBT:DRATe
+	[SOURce<HW>]:BB:DVB:DVBT:DURation
+	[SOURce<HW>]:BB:DVB:DVBT:HMODe
+	[SOURce<HW>]:BB:DVB:DVBT:SFRames
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dvb.Dvbt.DvbtCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.dvb.dvbt.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Dvb_Dvbt_Hp.rst
+	Source_Bb_Dvb_Dvbt_Iinterleaver.rst
+	Source_Bb_Dvb_Dvbt_Lp.rst
+	Source_Bb_Dvb_Dvbt_Ofdm.rst
+	Source_Bb_Dvb_Dvbt_Sample.rst
+	Source_Bb_Dvb_Dvbt_Tps.rst

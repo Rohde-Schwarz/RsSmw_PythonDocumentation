@@ -1,0 +1,37 @@
+IqOutput<IqConnector>
+----------------------------------------
+
+.. rubric:: RepCap Settings
+
+.. code-block:: python
+
+	# Range: Nr1 .. Nr4
+	rc = driver.sconfiguration.output.mapping.iqOutput.repcap_iqConnector_get()
+	driver.sconfiguration.output.mapping.iqOutput.repcap_iqConnector_set(repcap.IqConnector.Nr1)
+
+
+
+
+
+.. autoclass:: RsSmw.Implementations.Sconfiguration.Output.Mapping.IqOutput.IqOutputCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.sconfiguration.output.mapping.iqOutput.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Sconfiguration_Output_Mapping_IqOutput_Mode.rst
+	Sconfiguration_Output_Mapping_IqOutput_Stream.rst

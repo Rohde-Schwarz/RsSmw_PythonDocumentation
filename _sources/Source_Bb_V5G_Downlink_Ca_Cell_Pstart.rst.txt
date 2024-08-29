@@ -1,0 +1,20 @@
+Pstart
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:V5G:DL:CA:CELL<CH0>:PSTart
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:V5G:DL:CA:CELL<CH0>:PSTart
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Downlink.Ca.Cell.Pstart.PstartCls
+	:members:
+	:undoc-members:
+	:noindex:

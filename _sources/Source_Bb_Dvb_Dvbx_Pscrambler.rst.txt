@@ -1,0 +1,20 @@
+Pscrambler
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:DVB:DVBX:PSCRambler:[STATe]
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:DVB:DVBX:PSCRambler:[STATe]
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dvb.Dvbx.Pscrambler.PscramblerCls
+	:members:
+	:undoc-members:
+	:noindex:

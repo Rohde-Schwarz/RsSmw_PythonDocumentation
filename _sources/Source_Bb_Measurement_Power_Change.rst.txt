@@ -1,0 +1,20 @@
+Change
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce]:BB:MEASurement:POWer:CHANge
+
+.. code-block:: python
+
+	[SOURce]:BB:MEASurement:POWer:CHANge
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Measurement.Power.Change.ChangeCls
+	:members:
+	:undoc-members:
+	:noindex:

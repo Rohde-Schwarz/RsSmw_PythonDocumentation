@@ -1,0 +1,37 @@
+Fdoppler
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:FSIMulator:MDELay:DEL30:GROup<ST>:PATH<CH>:FDOPpler
+
+.. code-block:: python
+
+	[SOURce<HW>]:FSIMulator:MDELay:DEL30:GROup<ST>:PATH<CH>:FDOPpler
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.Mdelay.Del30.Group.Path.Fdoppler.FdopplerCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.fsimulator.mdelay.del30.group.path.fdoppler.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Fsimulator_Mdelay_Del30_Group_Path_Fdoppler_Actual.rst

@@ -1,0 +1,45 @@
+Bbmm<IqConnector>
+----------------------------------------
+
+.. rubric:: RepCap Settings
+
+.. code-block:: python
+
+	# Range: Nr1 .. Nr4
+	rc = driver.source.iq.output.digital.bbmm.repcap_iqConnector_get()
+	driver.source.iq.output.digital.bbmm.repcap_iqConnector_set(repcap.IqConnector.Nr1)
+
+
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Iq.Output.Digital.Bbmm.BbmmCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.iq.output.digital.bbmm.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Iq_Output_Digital_Bbmm_Cdevice.rst
+	Source_Iq_Output_Digital_Bbmm_Channel.rst
+	Source_Iq_Output_Digital_Bbmm_Gdelay.rst
+	Source_Iq_Output_Digital_Bbmm_Interface.rst
+	Source_Iq_Output_Digital_Bbmm_Oflow.rst
+	Source_Iq_Output_Digital_Bbmm_Pon.rst
+	Source_Iq_Output_Digital_Bbmm_Power.rst
+	Source_Iq_Output_Digital_Bbmm_Slow.rst
+	Source_Iq_Output_Digital_Bbmm_State.rst
+	Source_Iq_Output_Digital_Bbmm_SymbolRate.rst

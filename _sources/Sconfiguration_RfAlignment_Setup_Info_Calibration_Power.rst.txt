@@ -1,0 +1,40 @@
+Power
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: SCONfiguration:RFALignment:SETup:INFO:CALibration:POWer:MODE
+	single: SCONfiguration:RFALignment:SETup:INFO:CALibration:POWer:STEP
+
+.. code-block:: python
+
+	SCONfiguration:RFALignment:SETup:INFO:CALibration:POWer:MODE
+	SCONfiguration:RFALignment:SETup:INFO:CALibration:POWer:STEP
+
+
+
+.. autoclass:: RsSmw.Implementations.Sconfiguration.RfAlignment.Setup.Info.Calibration.Power.PowerCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.sconfiguration.rfAlignment.setup.info.calibration.power.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Sconfiguration_RfAlignment_Setup_Info_Calibration_Power_ListPy.rst
+	Sconfiguration_RfAlignment_Setup_Info_Calibration_Power_Range.rst

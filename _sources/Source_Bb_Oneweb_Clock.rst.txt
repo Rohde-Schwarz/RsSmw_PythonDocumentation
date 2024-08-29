@@ -1,0 +1,24 @@
+Clock
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:ONEWeb:CLOCk:MODE
+	single: [SOURce<HW>]:BB:ONEWeb:CLOCk:MULTiplier
+	single: [SOURce<HW>]:BB:ONEWeb:CLOCk:SOURce
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:ONEWeb:CLOCk:MODE
+	[SOURce<HW>]:BB:ONEWeb:CLOCk:MULTiplier
+	[SOURce<HW>]:BB:ONEWeb:CLOCk:SOURce
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Clock.ClockCls
+	:members:
+	:undoc-members:
+	:noindex:

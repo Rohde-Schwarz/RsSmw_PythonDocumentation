@@ -1,0 +1,39 @@
+Lrf
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:IQ:DPD:LRF:ADJust
+	single: [SOURce<HW>]:IQ:DPD:LRF:STATe
+
+.. code-block:: python
+
+	[SOURce<HW>]:IQ:DPD:LRF:ADJust
+	[SOURce<HW>]:IQ:DPD:LRF:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Iq.Dpd.Lrf.LrfCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.iq.dpd.lrf.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Iq_Dpd_Lrf_File.rst

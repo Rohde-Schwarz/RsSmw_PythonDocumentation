@@ -1,0 +1,20 @@
+Mode
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:DM:TRIGger:OUTPut<CH>:MODE
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:DM:TRIGger:OUTPut<CH>:MODE
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dm.Trigger.Output.Mode.ModeCls
+	:members:
+	:undoc-members:
+	:noindex:

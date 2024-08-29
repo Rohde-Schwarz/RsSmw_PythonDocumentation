@@ -1,0 +1,49 @@
+Dlist
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:DM:DLISt:CATalog
+	single: [SOURce<HW>]:BB:DM:DLISt:COPY
+	single: [SOURce<HW>]:BB:DM:DLISt:DELete
+	single: [SOURce<HW>]:BB:DM:DLISt:FREE
+	single: [SOURce<HW>]:BB:DM:DLISt:POINts
+	single: [SOURce<HW>]:BB:DM:DLISt:SELect
+	single: [SOURce<HW>]:BB:DM:DLISt:TAG
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:DM:DLISt:CATalog
+	[SOURce<HW>]:BB:DM:DLISt:COPY
+	[SOURce<HW>]:BB:DM:DLISt:DELete
+	[SOURce<HW>]:BB:DM:DLISt:FREE
+	[SOURce<HW>]:BB:DM:DLISt:POINts
+	[SOURce<HW>]:BB:DM:DLISt:SELect
+	[SOURce<HW>]:BB:DM:DLISt:TAG
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dm.Dlist.DlistCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.dm.dlist.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Dm_Dlist_Data.rst

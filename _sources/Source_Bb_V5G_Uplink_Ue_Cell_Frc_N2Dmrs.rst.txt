@@ -1,0 +1,20 @@
+N2Dmrs
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:V5G:UL:UE<ST>:[CELL<CCIDX>]:FRC:N2DMrs
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:V5G:UL:UE<ST>:[CELL<CCIDX>]:FRC:N2DMrs
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Uplink.Ue.Cell.Frc.N2Dmrs.N2DmrsCls
+	:members:
+	:undoc-members:
+	:noindex:

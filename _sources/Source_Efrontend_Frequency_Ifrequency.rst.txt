@@ -1,0 +1,22 @@
+Ifrequency
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:EFRontend:FREQuency:IFRequency:SIDeband
+	single: [SOURce<HW>]:EFRontend:[FREQuency]:IFRequency:[VALue]
+
+.. code-block:: python
+
+	[SOURce<HW>]:EFRontend:FREQuency:IFRequency:SIDeband
+	[SOURce<HW>]:EFRontend:[FREQuency]:IFRequency:[VALue]
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Efrontend.Frequency.Ifrequency.IfrequencyCls
+	:members:
+	:undoc-members:
+	:noindex:

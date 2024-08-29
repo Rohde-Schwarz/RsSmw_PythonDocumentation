@@ -1,0 +1,20 @@
+Icomponent
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce]:BB:IMPairment:FADer<CH>:LEAKage:I
+
+.. code-block:: python
+
+	[SOURce]:BB:IMPairment:FADer<CH>:LEAKage:I
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Impairment.Fader.Leakage.Icomponent.IcomponentCls
+	:members:
+	:undoc-members:
+	:noindex:

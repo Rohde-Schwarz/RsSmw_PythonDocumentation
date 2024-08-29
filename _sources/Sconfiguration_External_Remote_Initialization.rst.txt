@@ -1,0 +1,37 @@
+Initialization
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: SCONfiguration:EXTernal:REMote:INITialization:CATalog
+
+.. code-block:: python
+
+	SCONfiguration:EXTernal:REMote:INITialization:CATalog
+
+
+
+.. autoclass:: RsSmw.Implementations.Sconfiguration.External.Remote.Initialization.InitializationCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.sconfiguration.external.remote.initialization.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Sconfiguration_External_Remote_Initialization_Predefined.rst

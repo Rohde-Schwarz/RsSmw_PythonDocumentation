@@ -1,0 +1,22 @@
+Cosine
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:DM:FILTer:PARameter:COSine:BANDwidth
+	single: [SOURce<HW>]:BB:DM:FILTer:PARameter:COSine:[ROLLoff]
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:DM:FILTer:PARameter:COSine:BANDwidth
+	[SOURce<HW>]:BB:DM:FILTer:PARameter:COSine:[ROLLoff]
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dm.FilterPy.Parameter.Cosine.CosineCls
+	:members:
+	:undoc-members:
+	:noindex:

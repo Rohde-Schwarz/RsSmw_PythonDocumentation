@@ -1,0 +1,20 @@
+Apply
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:DVB:NOTCh:APPLy
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:DVB:NOTCh:APPLy
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dvb.Notch.Apply.ApplyCls
+	:members:
+	:undoc-members:
+	:noindex:

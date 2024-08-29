@@ -1,0 +1,20 @@
+Apply
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:REGenerator:SIMulation:LEVel:APPLy
+
+.. code-block:: python
+
+	[SOURce<HW>]:REGenerator:SIMulation:LEVel:APPLy
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Regenerator.Simulation.Level.Apply.ApplyCls
+	:members:
+	:undoc-members:
+	:noindex:

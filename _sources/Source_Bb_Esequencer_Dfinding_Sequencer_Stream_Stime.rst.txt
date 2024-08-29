@@ -1,0 +1,20 @@
+Stime
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:ESEQuencer:DFINding:[SEQuencer<ST>]:STReam:STIMe
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:ESEQuencer:DFINding:[SEQuencer<ST>]:STReam:STIMe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Esequencer.Dfinding.Sequencer.Stream.Stime.StimeCls
+	:members:
+	:undoc-members:
+	:noindex:

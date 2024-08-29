@@ -1,0 +1,28 @@
+Flist
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:DM:FLISt:CATalog
+	single: [SOURce<HW>]:BB:DM:FLISt:DELete
+	single: [SOURce<HW>]:BB:DM:FLISt:FREE
+	single: [SOURce<HW>]:BB:DM:FLISt:POINts
+	single: [SOURce<HW>]:BB:DM:FLISt:SELect
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:DM:FLISt:CATalog
+	[SOURce<HW>]:BB:DM:FLISt:DELete
+	[SOURce<HW>]:BB:DM:FLISt:FREE
+	[SOURce<HW>]:BB:DM:FLISt:POINts
+	[SOURce<HW>]:BB:DM:FLISt:SELect
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dm.Flist.FlistCls
+	:members:
+	:undoc-members:
+	:noindex:

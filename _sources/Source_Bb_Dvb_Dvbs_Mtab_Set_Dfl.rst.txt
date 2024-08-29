@@ -1,0 +1,20 @@
+Dfl
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:DVB:DVBS:MTAB:SET<ST>:DFL
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:DVB:DVBS:MTAB:SET<ST>:DFL
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dvb.Dvbs.Mtab.Set.Dfl.DflCls
+	:members:
+	:undoc-members:
+	:noindex:

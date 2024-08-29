@@ -1,0 +1,41 @@
+FilterPy
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:V5G:FILTer:AUTO
+	single: [SOURce<HW>]:BB:V5G:FILTer:MODE
+	single: [SOURce<HW>]:BB:V5G:FILTer:TYPE
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:V5G:FILTer:AUTO
+	[SOURce<HW>]:BB:V5G:FILTer:MODE
+	[SOURce<HW>]:BB:V5G:FILTer:TYPE
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.FilterPy.FilterPyCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.v5G.filterPy.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_V5G_FilterPy_Parameter.rst

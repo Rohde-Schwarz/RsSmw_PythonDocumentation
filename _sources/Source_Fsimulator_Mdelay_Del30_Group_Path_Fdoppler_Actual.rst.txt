@@ -1,0 +1,20 @@
+Actual
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:FSIMulator:MDELay:DEL30:GROup<ST>:PATH<CH>:FDOPpler:ACTual
+
+.. code-block:: python
+
+	[SOURce<HW>]:FSIMulator:MDELay:DEL30:GROup<ST>:PATH<CH>:FDOPpler:ACTual
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.Mdelay.Del30.Group.Path.Fdoppler.Actual.ActualCls
+	:members:
+	:undoc-members:
+	:noindex:

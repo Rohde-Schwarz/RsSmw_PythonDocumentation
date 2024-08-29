@@ -1,0 +1,20 @@
+Sactivation
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:V5G:DL:USER<CH>:SPS:SACTivation
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:V5G:DL:USER<CH>:SPS:SACTivation
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Downlink.User.Sps.Sactivation.SactivationCls
+	:members:
+	:undoc-members:
+	:noindex:

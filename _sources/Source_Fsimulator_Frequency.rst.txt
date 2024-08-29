@@ -1,0 +1,22 @@
+Frequency
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:FSIMulator:FREQuency:DETect
+	single: [SOURce<HW>]:FSIMulator:FREQuency
+
+.. code-block:: python
+
+	[SOURce<HW>]:FSIMulator:FREQuency:DETect
+	[SOURce<HW>]:FSIMulator:FREQuency
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.Frequency.FrequencyCls
+	:members:
+	:undoc-members:
+	:noindex:

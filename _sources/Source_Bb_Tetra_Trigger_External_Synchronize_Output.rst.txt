@@ -1,0 +1,20 @@
+Output
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:TETRa:TRIGger:[EXTernal<CH>]:SYNChronize:OUTPut
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:TETRa:TRIGger:[EXTernal<CH>]:SYNChronize:OUTPut
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Tetra.Trigger.External.Synchronize.Output.OutputCls
+	:members:
+	:undoc-members:
+	:noindex:

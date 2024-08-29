@@ -1,0 +1,22 @@
+Espacing
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:FSIMulator:SCM:ANTenna:TX:ESPacing:HORizontal
+	single: [SOURce<HW>]:FSIMulator:SCM:ANTenna:TX:ESPacing:VERTical
+
+.. code-block:: python
+
+	[SOURce<HW>]:FSIMulator:SCM:ANTenna:TX:ESPacing:HORizontal
+	[SOURce<HW>]:FSIMulator:SCM:ANTenna:TX:ESPacing:VERTical
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.Scm.Antenna.Tx.Espacing.EspacingCls
+	:members:
+	:undoc-members:
+	:noindex:

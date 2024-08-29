@@ -1,0 +1,22 @@
+Distance
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:FSIMulator:MIMO:TGN:ANTenna:DISTance:RX
+	single: [SOURce<HW>]:FSIMulator:MIMO:TGN:ANTenna:DISTance:TX
+
+.. code-block:: python
+
+	[SOURce<HW>]:FSIMulator:MIMO:TGN:ANTenna:DISTance:RX
+	[SOURce<HW>]:FSIMulator:MIMO:TGN:ANTenna:DISTance:TX
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.Mimo.Tgn.Antenna.Distance.DistanceCls
+	:members:
+	:undoc-members:
+	:noindex:

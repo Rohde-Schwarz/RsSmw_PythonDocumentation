@@ -1,0 +1,20 @@
+AnsTx
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:V5G:UL:UE<ST>:[CELL<CCIDX>]:REFSig:ANSTx
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:V5G:UL:UE<ST>:[CELL<CCIDX>]:REFSig:ANSTx
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Uplink.Ue.Cell.Refsig.AnsTx.AnsTxCls
+	:members:
+	:undoc-members:
+	:noindex:

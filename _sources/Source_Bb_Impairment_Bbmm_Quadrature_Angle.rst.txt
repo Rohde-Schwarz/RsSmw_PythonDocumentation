@@ -1,0 +1,20 @@
+Angle
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce]:BB:IMPairment:BBMM<CH>:QUADrature:[ANGLe]
+
+.. code-block:: python
+
+	[SOURce]:BB:IMPairment:BBMM<CH>:QUADrature:[ANGLe]
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Impairment.Bbmm.Quadrature.Angle.AngleCls
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,63 @@
+Efrontend
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:EFRontend:AMODe
+	single: [SOURce<HW>]:EFRontend:CMODe
+	single: [SOURce<HW>]:EFRontend:IDN
+	single: [SOURce<HW>]:EFRontend:INFO
+	single: [SOURce<HW>]:EFRontend:IPADdress
+	single: [SOURce<HW>]:EFRontend:LIST
+	single: [SOURce<HW>]:EFRontend:OPT
+	single: [SOURce<HW>]:EFRontend:RFConnector
+
+.. code-block:: python
+
+	[SOURce<HW>]:EFRontend:AMODe
+	[SOURce<HW>]:EFRontend:CMODe
+	[SOURce<HW>]:EFRontend:IDN
+	[SOURce<HW>]:EFRontend:INFO
+	[SOURce<HW>]:EFRontend:IPADdress
+	[SOURce<HW>]:EFRontend:LIST
+	[SOURce<HW>]:EFRontend:OPT
+	[SOURce<HW>]:EFRontend:RFConnector
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Efrontend.EfrontendCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.efrontend.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Efrontend_Alignment.rst
+	Source_Efrontend_Cal.rst
+	Source_Efrontend_Concurrent.rst
+	Source_Efrontend_Connection.rst
+	Source_Efrontend_ExtDevice.rst
+	Source_Efrontend_FirmwareUpdate.rst
+	Source_Efrontend_Frequency.rst
+	Source_Efrontend_Loscillator.rst
+	Source_Efrontend_Network.rst
+	Source_Efrontend_Power.rst
+	Source_Efrontend_Screw.rst
+	Source_Efrontend_Selftest.rst
+	Source_Efrontend_TrxMode.rst

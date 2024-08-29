@@ -1,0 +1,50 @@
+Ts25141
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce]:BB:W3GPp:TS25141:BSPClass
+	single: [SOURce]:BB:W3GPp:TS25141:EMODe
+	single: [SOURce]:BB:W3GPp:TS25141:ROUTe
+	single: [SOURce]:BB:W3GPp:TS25141:RXDiversity
+
+.. code-block:: python
+
+	[SOURce]:BB:W3GPp:TS25141:BSPClass
+	[SOURce]:BB:W3GPp:TS25141:EMODe
+	[SOURce]:BB:W3GPp:TS25141:ROUTe
+	[SOURce]:BB:W3GPp:TS25141:RXDiversity
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.W3Gpp.Ts25141.Ts25141Cls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.w3Gpp.ts25141.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_W3Gpp_Ts25141_Awgn.rst
+	Source_Bb_W3Gpp_Ts25141_BsSignal.rst
+	Source_Bb_W3Gpp_Ts25141_Fsimulator.rst
+	Source_Bb_W3Gpp_Ts25141_IfRignal.rst
+	Source_Bb_W3Gpp_Ts25141_Scode.rst
+	Source_Bb_W3Gpp_Ts25141_Tcase.rst
+	Source_Bb_W3Gpp_Ts25141_Trigger.rst
+	Source_Bb_W3Gpp_Ts25141_Wsignal.rst

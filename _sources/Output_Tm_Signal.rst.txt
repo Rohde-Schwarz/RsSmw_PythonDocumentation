@@ -1,0 +1,20 @@
+Signal
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: OUTPut<HW>:TM<CH>:SIGNal
+
+.. code-block:: python
+
+	OUTPut<HW>:TM<CH>:SIGNal
+
+
+
+.. autoclass:: RsSmw.Implementations.Output.Tm.Signal.SignalCls
+	:members:
+	:undoc-members:
+	:noindex:

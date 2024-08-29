@@ -1,0 +1,20 @@
+Profile
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:FSIMulator:DELay:GROup<ST>:PATH<CH>:PROFile
+
+.. code-block:: python
+
+	[SOURce<HW>]:FSIMulator:DELay:GROup<ST>:PATH<CH>:PROFile
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.Delay.Group.Path.Profile.ProfileCls
+	:members:
+	:undoc-members:
+	:noindex:

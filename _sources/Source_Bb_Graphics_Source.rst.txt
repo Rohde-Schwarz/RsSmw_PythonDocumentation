@@ -1,0 +1,22 @@
+Source
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce]:BB:GRAPhics:SOURce:MUX
+	single: [SOURce]:BB:GRAPhics:SOURce
+
+.. code-block:: python
+
+	[SOURce]:BB:GRAPhics:SOURce:MUX
+	[SOURce]:BB:GRAPhics:SOURce
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Graphics.Source.SourceCls
+	:members:
+	:undoc-members:
+	:noindex:

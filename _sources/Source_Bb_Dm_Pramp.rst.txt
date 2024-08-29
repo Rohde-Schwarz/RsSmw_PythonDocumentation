@@ -1,0 +1,49 @@
+Pramp
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:DM:PRAMp:ATTenuation
+	single: [SOURce<HW>]:BB:DM:PRAMp:FDELay
+	single: [SOURce<HW>]:BB:DM:PRAMp:RDELay
+	single: [SOURce<HW>]:BB:DM:PRAMp:SHAPe
+	single: [SOURce<HW>]:BB:DM:PRAMp:SOURce
+	single: [SOURce<HW>]:BB:DM:PRAMp:TIME
+	single: [SOURce<HW>]:BB:DM:PRAMp:[STATe]
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:DM:PRAMp:ATTenuation
+	[SOURce<HW>]:BB:DM:PRAMp:FDELay
+	[SOURce<HW>]:BB:DM:PRAMp:RDELay
+	[SOURce<HW>]:BB:DM:PRAMp:SHAPe
+	[SOURce<HW>]:BB:DM:PRAMp:SOURce
+	[SOURce<HW>]:BB:DM:PRAMp:TIME
+	[SOURce<HW>]:BB:DM:PRAMp:[STATe]
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dm.Pramp.PrampCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.dm.pramp.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Dm_Pramp_BbOnly.rst

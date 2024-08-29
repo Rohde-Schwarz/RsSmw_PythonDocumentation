@@ -1,0 +1,20 @@
+Execute
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:TRIGger:ARM:EXECute
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:TRIGger:ARM:EXECute
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Trigger.Arm.Execute.ExecuteCls
+	:members:
+	:undoc-members:
+	:noindex:

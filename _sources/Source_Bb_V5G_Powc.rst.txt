@@ -1,0 +1,26 @@
+Powc
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:V5G:POWC:LEVReference
+	single: [SOURce<HW>]:BB:V5G:POWC:REFChannel
+	single: [SOURce<HW>]:BB:V5G:POWC:REFSubframe
+	single: [SOURce<HW>]:BB:V5G:POWC:RUE
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:V5G:POWC:LEVReference
+	[SOURce<HW>]:BB:V5G:POWC:REFChannel
+	[SOURce<HW>]:BB:V5G:POWC:REFSubframe
+	[SOURce<HW>]:BB:V5G:POWC:RUE
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Powc.PowcCls
+	:members:
+	:undoc-members:
+	:noindex:

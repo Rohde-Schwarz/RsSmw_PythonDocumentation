@@ -1,0 +1,20 @@
+Pattern
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:DM:PATTern
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:DM:PATTern
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dm.Pattern.PatternCls
+	:members:
+	:undoc-members:
+	:noindex:

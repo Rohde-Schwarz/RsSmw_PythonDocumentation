@@ -1,0 +1,24 @@
+Udt
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:V5G:UDT:CYCLe
+	single: [SOURce<HW>]:BB:V5G:UDT:ONDuration
+	single: [SOURce<HW>]:BB:V5G:UDT:STATe
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:V5G:UDT:CYCLe
+	[SOURce<HW>]:BB:V5G:UDT:ONDuration
+	[SOURce<HW>]:BB:V5G:UDT:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Udt.UdtCls
+	:members:
+	:undoc-members:
+	:noindex:

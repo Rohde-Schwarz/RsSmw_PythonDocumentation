@@ -1,0 +1,24 @@
+Delay
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:FSIMulator:BIRThdeath:DELay:GRID
+	single: [SOURce<HW>]:FSIMulator:BIRThdeath:DELay:MAXimum
+	single: [SOURce<HW>]:FSIMulator:BIRThdeath:DELay:MINimum
+
+.. code-block:: python
+
+	[SOURce<HW>]:FSIMulator:BIRThdeath:DELay:GRID
+	[SOURce<HW>]:FSIMulator:BIRThdeath:DELay:MAXimum
+	[SOURce<HW>]:FSIMulator:BIRThdeath:DELay:MINimum
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.BirthDeath.Delay.DelayCls
+	:members:
+	:undoc-members:
+	:noindex:

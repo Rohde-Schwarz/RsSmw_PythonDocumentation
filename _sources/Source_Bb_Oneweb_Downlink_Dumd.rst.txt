@@ -1,0 +1,43 @@
+Dumd
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:ONEWeb:DL:DUMD:DATA
+	single: [SOURce<HW>]:BB:ONEWeb:DL:DUMD:MODulation
+	single: [SOURce<HW>]:BB:ONEWeb:DL:DUMD:OPSubframes
+	single: [SOURce<HW>]:BB:ONEWeb:DL:DUMD:POWer
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:ONEWeb:DL:DUMD:DATA
+	[SOURce<HW>]:BB:ONEWeb:DL:DUMD:MODulation
+	[SOURce<HW>]:BB:ONEWeb:DL:DUMD:OPSubframes
+	[SOURce<HW>]:BB:ONEWeb:DL:DUMD:POWer
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Downlink.Dumd.DumdCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.oneweb.downlink.dumd.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Oneweb_Downlink_Dumd_Pattern.rst

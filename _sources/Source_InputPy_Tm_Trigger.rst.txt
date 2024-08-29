@@ -1,0 +1,24 @@
+Trigger
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:INPut:TM:TRIGger:IMPedance
+	single: [SOURce<HW>]:INPut:TM:TRIGger:LEVel
+	single: [SOURce<HW>]:INPut:TM:TRIGger:SLOPe
+
+.. code-block:: python
+
+	[SOURce<HW>]:INPut:TM:TRIGger:IMPedance
+	[SOURce<HW>]:INPut:TM:TRIGger:LEVel
+	[SOURce<HW>]:INPut:TM:TRIGger:SLOPe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.InputPy.Tm.Trigger.TriggerCls
+	:members:
+	:undoc-members:
+	:noindex:

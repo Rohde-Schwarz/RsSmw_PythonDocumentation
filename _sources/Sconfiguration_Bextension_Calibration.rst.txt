@@ -1,0 +1,20 @@
+Calibration
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: SCONfiguration:BEXTension:CALibration:STATe
+
+.. code-block:: python
+
+	SCONfiguration:BEXTension:CALibration:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Sconfiguration.Bextension.Calibration.CalibrationCls
+	:members:
+	:undoc-members:
+	:noindex:

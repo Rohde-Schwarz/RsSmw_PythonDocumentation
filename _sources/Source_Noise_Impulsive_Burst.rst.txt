@@ -1,0 +1,20 @@
+Burst
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:NOISe:IMPulsive:[BURSt]:DURation
+
+.. code-block:: python
+
+	[SOURce<HW>]:NOISe:IMPulsive:[BURSt]:DURation
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Noise.Impulsive.Burst.BurstCls
+	:members:
+	:undoc-members:
+	:noindex:

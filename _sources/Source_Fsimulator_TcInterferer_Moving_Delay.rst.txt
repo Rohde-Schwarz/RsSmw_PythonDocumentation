@@ -1,0 +1,22 @@
+Delay
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:FSIMulator:TCINterferer:MOVing:DELay:MAXimum
+	single: [SOURce<HW>]:FSIMulator:TCINterferer:MOVing:DELay:MINimum
+
+.. code-block:: python
+
+	[SOURce<HW>]:FSIMulator:TCINterferer:MOVing:DELay:MAXimum
+	[SOURce<HW>]:FSIMulator:TCINterferer:MOVing:DELay:MINimum
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.TcInterferer.Moving.Delay.DelayCls
+	:members:
+	:undoc-members:
+	:noindex:

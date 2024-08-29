@@ -1,0 +1,49 @@
+Ldirection<Channel>
+----------------------------------------
+
+.. rubric:: RepCap Settings
+
+.. code-block:: python
+
+	# Range: Nr1 .. Nr64
+	rc = driver.source.bb.tetra.sconfiguration.tmode.slot.ldirection.repcap_channel_get()
+	driver.source.bb.tetra.sconfiguration.tmode.slot.ldirection.repcap_channel_set(repcap.Channel.Nr1)
+
+
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Tetra.Sconfiguration.Tmode.Slot.Ldirection.LdirectionCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.tetra.sconfiguration.tmode.slot.ldirection.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Tetra_Sconfiguration_Tmode_Slot_Ldirection_Amode.rst
+	Source_Bb_Tetra_Sconfiguration_Tmode_Slot_Ldirection_Apf1.rst
+	Source_Bb_Tetra_Sconfiguration_Tmode_Slot_Ldirection_Apf2.rst
+	Source_Bb_Tetra_Sconfiguration_Tmode_Slot_Ldirection_ApHeader.rst
+	Source_Bb_Tetra_Sconfiguration_Tmode_Slot_Ldirection_BsAttenuation.rst
+	Source_Bb_Tetra_Sconfiguration_Tmode_Slot_Ldirection_Data.rst
+	Source_Bb_Tetra_Sconfiguration_Tmode_Slot_Ldirection_LcType.rst
+	Source_Bb_Tetra_Sconfiguration_Tmode_Slot_Ldirection_Scrambling.rst
+	Source_Bb_Tetra_Sconfiguration_Tmode_Slot_Ldirection_Sdata.rst
+	Source_Bb_Tetra_Sconfiguration_Tmode_Slot_Ldirection_Slevel.rst
+	Source_Bb_Tetra_Sconfiguration_Tmode_Slot_Ldirection_SsAttenuation.rst
+	Source_Bb_Tetra_Sconfiguration_Tmode_Slot_Ldirection_SsLevel.rst
+	Source_Bb_Tetra_Sconfiguration_Tmode_Slot_Ldirection_Tpattern.rst
+	Source_Bb_Tetra_Sconfiguration_Tmode_Slot_Ldirection_Tsource.rst

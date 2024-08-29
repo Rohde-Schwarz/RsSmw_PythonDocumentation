@@ -1,0 +1,20 @@
+Date
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:V5G:TRIGger:TIME:DATE
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:V5G:TRIGger:TIME:DATE
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Trigger.Time.Date.DateCls
+	:members:
+	:undoc-members:
+	:noindex:

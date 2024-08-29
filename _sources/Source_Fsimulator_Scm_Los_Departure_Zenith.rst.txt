@@ -1,0 +1,20 @@
+Zenith
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:FSIMulator:SCM:LOS:DEParture:ZENith:ANGLe
+
+.. code-block:: python
+
+	[SOURce<HW>]:FSIMulator:SCM:LOS:DEParture:ZENith:ANGLe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.Scm.Los.Departure.Zenith.ZenithCls
+	:members:
+	:undoc-members:
+	:noindex:

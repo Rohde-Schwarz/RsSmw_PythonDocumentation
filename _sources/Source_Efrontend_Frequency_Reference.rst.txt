@@ -1,0 +1,22 @@
+Reference
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:EFRontend:FREQuency:REFerence:LIST
+	single: [SOURce<HW>]:EFRontend:FREQuency:REFerence
+
+.. code-block:: python
+
+	[SOURce<HW>]:EFRontend:FREQuency:REFerence:LIST
+	[SOURce<HW>]:EFRontend:FREQuency:REFerence
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Efrontend.Frequency.Reference.ReferenceCls
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,20 @@
+Additional
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: SCONfiguration:BEXTension:CORRection:PORT<CH>:IQDelay:ADDitional
+
+.. code-block:: python
+
+	SCONfiguration:BEXTension:CORRection:PORT<CH>:IQDelay:ADDitional
+
+
+
+.. autoclass:: RsSmw.Implementations.Sconfiguration.Bextension.Correction.Port.IqDelay.Additional.AdditionalCls
+	:members:
+	:undoc-members:
+	:noindex:

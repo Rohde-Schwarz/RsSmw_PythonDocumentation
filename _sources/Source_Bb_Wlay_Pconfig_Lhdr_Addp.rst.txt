@@ -1,0 +1,20 @@
+Addp
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:WLAY:PCONfig:LHDR:ADDP:STATe
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:WLAY:PCONfig:LHDR:ADDP:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Wlay.Pconfig.Lhdr.Addp.AddpCls
+	:members:
+	:undoc-members:
+	:noindex:

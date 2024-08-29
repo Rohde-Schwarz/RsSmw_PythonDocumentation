@@ -1,0 +1,26 @@
+Setting
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:PRAMp:SETTing:CATalog
+	single: [SOURce<HW>]:BB:PRAMp:SETTing:DELete
+	single: [SOURce<HW>]:BB:PRAMp:SETTing:LOAD
+	single: [SOURce<HW>]:BB:PRAMp:SETTing:STORe
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:PRAMp:SETTing:CATalog
+	[SOURce<HW>]:BB:PRAMp:SETTing:DELete
+	[SOURce<HW>]:BB:PRAMp:SETTing:LOAD
+	[SOURce<HW>]:BB:PRAMp:SETTing:STORe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Pramp.Setting.SettingCls
+	:members:
+	:undoc-members:
+	:noindex:

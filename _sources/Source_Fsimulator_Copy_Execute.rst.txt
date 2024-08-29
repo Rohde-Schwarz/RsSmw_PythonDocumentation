@@ -1,0 +1,20 @@
+Execute
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:FSIMulator:COPY:EXECute
+
+.. code-block:: python
+
+	[SOURce<HW>]:FSIMulator:COPY:EXECute
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.Copy.Execute.ExecuteCls
+	:members:
+	:undoc-members:
+	:noindex:

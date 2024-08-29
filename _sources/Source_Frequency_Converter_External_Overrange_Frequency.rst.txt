@@ -1,0 +1,22 @@
+Frequency
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:FREQuency:CONVerter:EXTernal:OVERrange:FREQuency:MAX
+	single: [SOURce<HW>]:FREQuency:CONVerter:EXTernal:OVERrange:FREQuency:MIN
+
+.. code-block:: python
+
+	[SOURce<HW>]:FREQuency:CONVerter:EXTernal:OVERrange:FREQuency:MAX
+	[SOURce<HW>]:FREQuency:CONVerter:EXTernal:OVERrange:FREQuency:MIN
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Frequency.Converter.External.Overrange.Frequency.FrequencyCls
+	:members:
+	:undoc-members:
+	:noindex:

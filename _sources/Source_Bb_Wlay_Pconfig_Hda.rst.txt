@@ -1,0 +1,59 @@
+Hda
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:WLAY:PCONfig:HDA:BMCS
+	single: [SOURce<HW>]:BB:WLAY:PCONfig:HDA:BW
+	single: [SOURce<HW>]:BB:WLAY:PCONfig:HDA:CCONfig
+	single: [SOURce<HW>]:BB:WLAY:PCONfig:HDA:PCHannel
+	single: [SOURce<HW>]:BB:WLAY:PCONfig:HDA:RTPT
+	single: [SOURce<HW>]:BB:WLAY:PCONfig:HDA:TRNM
+	single: [SOURce<HW>]:BB:WLAY:PCONfig:HDA:TRNN
+	single: [SOURce<HW>]:BB:WLAY:PCONfig:HDA:TRNP
+	single: [SOURce<HW>]:BB:WLAY:PCONfig:HDA:TSL
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:WLAY:PCONfig:HDA:BMCS
+	[SOURce<HW>]:BB:WLAY:PCONfig:HDA:BW
+	[SOURce<HW>]:BB:WLAY:PCONfig:HDA:CCONfig
+	[SOURce<HW>]:BB:WLAY:PCONfig:HDA:PCHannel
+	[SOURce<HW>]:BB:WLAY:PCONfig:HDA:RTPT
+	[SOURce<HW>]:BB:WLAY:PCONfig:HDA:TRNM
+	[SOURce<HW>]:BB:WLAY:PCONfig:HDA:TRNN
+	[SOURce<HW>]:BB:WLAY:PCONfig:HDA:TRNP
+	[SOURce<HW>]:BB:WLAY:PCONfig:HDA:TSL
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Wlay.Pconfig.Hda.HdaCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.wlay.pconfig.hda.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Wlay_Pconfig_Hda_Aggregate.rst
+	Source_Bb_Wlay_Pconfig_Hda_Bf.rst
+	Source_Bb_Wlay_Pconfig_Hda_Lldpc.rst
+	Source_Bb_Wlay_Pconfig_Hda_Mcs.rst
+	Source_Bb_Wlay_Pconfig_Hda_Mu.rst
+	Source_Bb_Wlay_Pconfig_Hda_Nuc.rst
+	Source_Bb_Wlay_Pconfig_Hda_Stbc.rst

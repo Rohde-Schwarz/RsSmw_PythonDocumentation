@@ -1,0 +1,20 @@
+Pattern
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:DVB:DVBS:THConfig:PID:PATTern
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:DVB:DVBS:THConfig:PID:PATTern
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dvb.Dvbs.ThConfig.Pid.Pattern.PatternCls
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,24 @@
+Sync
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:ONEWeb:DL:SYNC:PPOWer
+	single: [SOURce<HW>]:BB:ONEWeb:DL:SYNC:PSTate
+	single: [SOURce<HW>]:BB:ONEWeb:DL:SYNC:TXANtenna
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:ONEWeb:DL:SYNC:PPOWer
+	[SOURce<HW>]:BB:ONEWeb:DL:SYNC:PSTate
+	[SOURce<HW>]:BB:ONEWeb:DL:SYNC:TXANtenna
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Downlink.Sync.SyncCls
+	:members:
+	:undoc-members:
+	:noindex:

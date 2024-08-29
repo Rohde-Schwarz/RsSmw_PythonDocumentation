@@ -1,0 +1,22 @@
+Angle
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:FSIMulator:DSSimulation:TOWertoair:ANGLe:CLIMb
+	single: [SOURce<HW>]:FSIMulator:DSSimulation:TOWertoair:ANGLe:DESCent
+
+.. code-block:: python
+
+	[SOURce<HW>]:FSIMulator:DSSimulation:TOWertoair:ANGLe:CLIMb
+	[SOURce<HW>]:FSIMulator:DSSimulation:TOWertoair:ANGLe:DESCent
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.DsSimulation.TowerToAir.Angle.AngleCls
+	:members:
+	:undoc-members:
+	:noindex:

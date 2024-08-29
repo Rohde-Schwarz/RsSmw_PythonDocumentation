@@ -1,0 +1,50 @@
+Instruments
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: INSTruments:CLEar
+	single: INSTruments:COUNt
+	single: INSTruments:NAME
+	single: INSTruments:SERial
+	single: INSTruments:TYPE
+
+.. code-block:: python
+
+	INSTruments:CLEar
+	INSTruments:COUNt
+	INSTruments:NAME
+	INSTruments:SERial
+	INSTruments:TYPE
+
+
+
+.. autoclass:: RsSmw.Implementations.Instruments.InstrumentsCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.instruments.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Instruments_Active.rst
+	Instruments_Eaccess.rst
+	Instruments_Gpib.rst
+	Instruments_Mapping.rst
+	Instruments_Remote.rst
+	Instruments_Scan.rst

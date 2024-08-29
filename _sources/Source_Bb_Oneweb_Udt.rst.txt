@@ -1,0 +1,24 @@
+Udt
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:ONEWeb:UDT:CYCLe
+	single: [SOURce<HW>]:BB:ONEWeb:UDT:ONDuration
+	single: [SOURce<HW>]:BB:ONEWeb:UDT:STATe
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:ONEWeb:UDT:CYCLe
+	[SOURce<HW>]:BB:ONEWeb:UDT:ONDuration
+	[SOURce<HW>]:BB:ONEWeb:UDT:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Udt.UdtCls
+	:members:
+	:undoc-members:
+	:noindex:

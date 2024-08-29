@@ -1,0 +1,69 @@
+Uplink
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:ONEWeb:UL:BW
+	single: [SOURce<HW>]:BB:ONEWeb:UL:CONSubframes
+	single: [SOURce<HW>]:BB:ONEWeb:UL:CPC
+	single: [SOURce<HW>]:BB:ONEWeb:UL:FFT
+	single: [SOURce<HW>]:BB:ONEWeb:UL:LGS
+	single: [SOURce<HW>]:BB:ONEWeb:UL:NORB
+	single: [SOURce<HW>]:BB:ONEWeb:UL:OCCBandwidth
+	single: [SOURce<HW>]:BB:ONEWeb:UL:OCCSubcarriers
+	single: [SOURce<HW>]:BB:ONEWeb:UL:RGS
+	single: [SOURce<HW>]:BB:ONEWeb:UL:SFSelection
+	single: [SOURce<HW>]:BB:ONEWeb:UL:SOFFset
+	single: [SOURce<HW>]:BB:ONEWeb:UL:SRATe
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:ONEWeb:UL:BW
+	[SOURce<HW>]:BB:ONEWeb:UL:CONSubframes
+	[SOURce<HW>]:BB:ONEWeb:UL:CPC
+	[SOURce<HW>]:BB:ONEWeb:UL:FFT
+	[SOURce<HW>]:BB:ONEWeb:UL:LGS
+	[SOURce<HW>]:BB:ONEWeb:UL:NORB
+	[SOURce<HW>]:BB:ONEWeb:UL:OCCBandwidth
+	[SOURce<HW>]:BB:ONEWeb:UL:OCCSubcarriers
+	[SOURce<HW>]:BB:ONEWeb:UL:RGS
+	[SOURce<HW>]:BB:ONEWeb:UL:SFSelection
+	[SOURce<HW>]:BB:ONEWeb:UL:SOFFset
+	[SOURce<HW>]:BB:ONEWeb:UL:SRATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Uplink.UplinkCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.oneweb.uplink.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Oneweb_Uplink_Ca.rst
+	Source_Bb_Oneweb_Uplink_Cell.rst
+	Source_Bb_Oneweb_Uplink_Plci.rst
+	Source_Bb_Oneweb_Uplink_Prach.rst
+	Source_Bb_Oneweb_Uplink_Pucch.rst
+	Source_Bb_Oneweb_Uplink_Pusch.rst
+	Source_Bb_Oneweb_Uplink_Refsig.rst
+	Source_Bb_Oneweb_Uplink_RstFrame.rst
+	Source_Bb_Oneweb_Uplink_Subf.rst
+	Source_Bb_Oneweb_Uplink_Ue.rst
+	Source_Bb_Oneweb_Uplink_View.rst

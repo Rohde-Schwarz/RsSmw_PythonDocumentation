@@ -1,0 +1,61 @@
+Object<ObjectIx>
+----------------------------------------
+
+.. rubric:: RepCap Settings
+
+.. code-block:: python
+
+	# Range: Nr1 .. Nr12
+	rc = driver.source.regenerator.object.repcap_objectIx_get()
+	driver.source.regenerator.object.repcap_objectIx_set(repcap.ObjectIx.Nr1)
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:REGenerator:OBJect:CATalog
+	single: [SOURce<HW>]:REGenerator:OBJect<CH>:LOAD
+
+.. code-block:: python
+
+	[SOURce<HW>]:REGenerator:OBJect:CATalog
+	[SOURce<HW>]:REGenerator:OBJect<CH>:LOAD
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Regenerator.Object.ObjectCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.regenerator.object.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Regenerator_Object_Copy.rst
+	Source_Regenerator_Object_Direction.rst
+	Source_Regenerator_Object_FepNumber.rst
+	Source_Regenerator_Object_Hold.rst
+	Source_Regenerator_Object_Name.rst
+	Source_Regenerator_Object_Ovelocity.rst
+	Source_Regenerator_Object_Phase.rst
+	Source_Regenerator_Object_Power.rst
+	Source_Regenerator_Object_Range.rst
+	Source_Regenerator_Object_Rcs.rst
+	Source_Regenerator_Object_SimMode.rst
+	Source_Regenerator_Object_Store.rst
+	Source_Regenerator_Object_Time.rst
+	Source_Regenerator_Object_TypePy.rst
+	Source_Regenerator_Object_Ulist.rst

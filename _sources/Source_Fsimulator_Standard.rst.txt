@@ -1,0 +1,22 @@
+Standard
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:FSIMulator:STANdard:REFerence
+	single: [SOURce<HW>]:FSIMulator:STANdard
+
+.. code-block:: python
+
+	[SOURce<HW>]:FSIMulator:STANdard:REFerence
+	[SOURce<HW>]:FSIMulator:STANdard
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.Standard.StandardCls
+	:members:
+	:undoc-members:
+	:noindex:
