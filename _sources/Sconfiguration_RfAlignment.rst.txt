@@ -1,0 +1,40 @@
+RfAlignment
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: SCONfiguration:RFALignment:STATe
+
+.. code-block:: python
+
+	SCONfiguration:RFALignment:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Sconfiguration.RfAlignment.RfAlignmentCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.sconfiguration.rfAlignment.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Sconfiguration_RfAlignment_Align.rst
+	Sconfiguration_RfAlignment_Calibration.rst
+	Sconfiguration_RfAlignment_Qcheck.rst
+	Sconfiguration_RfAlignment_Setup.rst

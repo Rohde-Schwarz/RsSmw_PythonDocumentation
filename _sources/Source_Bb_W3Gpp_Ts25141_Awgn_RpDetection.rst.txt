@@ -1,0 +1,20 @@
+RpDetection
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce]:BB:W3GPp:TS25141:AWGN:RPDetection:RATE
+
+.. code-block:: python
+
+	[SOURce]:BB:W3GPp:TS25141:AWGN:RPDetection:RATE
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.W3Gpp.Ts25141.Awgn.RpDetection.RpDetectionCls
+	:members:
+	:undoc-members:
+	:noindex:

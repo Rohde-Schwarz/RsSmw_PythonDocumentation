@@ -1,0 +1,40 @@
+Cdynamic
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:CEMulation:CDYNamic:DELete
+	single: [SOURce<HW>]:CEMulation:CDYNamic:STATe
+
+.. code-block:: python
+
+	[SOURce<HW>]:CEMulation:CDYNamic:DELete
+	[SOURce<HW>]:CEMulation:CDYNamic:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.Cdynamic.CdynamicCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.cemulation.cdynamic.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Cemulation_Cdynamic_Catalog.rst
+	Source_Cemulation_Cdynamic_Path.rst

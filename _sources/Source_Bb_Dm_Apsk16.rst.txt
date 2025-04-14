@@ -1,0 +1,20 @@
+Apsk16
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:DM:APSK16:GAMMa
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:DM:APSK16:GAMMa
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dm.Apsk16.Apsk16Cls
+	:members:
+	:undoc-members:
+	:noindex:

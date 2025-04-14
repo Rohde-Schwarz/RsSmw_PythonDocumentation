@@ -1,0 +1,20 @@
+Mode
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:V5G:DL:USER<CH>:APM:MODE
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:V5G:DL:USER<CH>:APM:MODE
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Downlink.User.Apm.Mode.ModeCls
+	:members:
+	:undoc-members:
+	:noindex:

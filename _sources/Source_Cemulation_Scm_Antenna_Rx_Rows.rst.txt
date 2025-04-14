@@ -1,0 +1,20 @@
+Rows
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:CEMulation:SCM:ANTenna:RX:ROWS:[SIZE]
+
+.. code-block:: python
+
+	[SOURce<HW>]:CEMulation:SCM:ANTenna:RX:ROWS:[SIZE]
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.Scm.Antenna.Rx.Rows.RowsCls
+	:members:
+	:undoc-members:
+	:noindex:

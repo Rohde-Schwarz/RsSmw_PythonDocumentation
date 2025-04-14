@@ -1,0 +1,20 @@
+Dselect
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:CEMulation:CDYNamic:PATH<CH>:DATA:DSELect
+
+.. code-block:: python
+
+	[SOURce<HW>]:CEMulation:CDYNamic:PATH<CH>:DATA:DSELect
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.Cdynamic.Path.Data.Dselect.DselectCls
+	:members:
+	:undoc-members:
+	:noindex:

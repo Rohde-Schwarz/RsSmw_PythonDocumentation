@@ -1,0 +1,20 @@
+State
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:DVB:DVBX:MTAB:SET<ST>:ADFL:[STATe]
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:DVB:DVBX:MTAB:SET<ST>:ADFL:[STATe]
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dvb.Dvbx.Mtab.Set.Adfl.State.StateCls
+	:members:
+	:undoc-members:
+	:noindex:

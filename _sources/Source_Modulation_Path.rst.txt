@@ -1,0 +1,20 @@
+Path
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:MODulation:PATH:[STATe]
+
+.. code-block:: python
+
+	[SOURce<HW>]:MODulation:PATH:[STATe]
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Modulation.Path.PathCls
+	:members:
+	:undoc-members:
+	:noindex:

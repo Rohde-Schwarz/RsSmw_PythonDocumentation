@@ -1,0 +1,20 @@
+Tmodel
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce]:BB:W3GPp:TS25141:IFSignal:SETTing:TMODel:BSTation
+
+.. code-block:: python
+
+	[SOURce]:BB:W3GPp:TS25141:IFSignal:SETTing:TMODel:BSTation
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.W3Gpp.Ts25141.IfRignal.Setting.Tmodel.TmodelCls
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,20 @@
+PrFormat
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:V5G:UL:UE<ST>:PRACh:PRFormat
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:V5G:UL:UE<ST>:PRACh:PRFormat
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Uplink.Ue.Prach.PrFormat.PrFormatCls
+	:members:
+	:undoc-members:
+	:noindex:

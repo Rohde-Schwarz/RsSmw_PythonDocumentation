@@ -1,0 +1,20 @@
+Modeling
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:CEMulation:MIMO:ANTenna:MODeling:[STATe]
+
+.. code-block:: python
+
+	[SOURce<HW>]:CEMulation:MIMO:ANTenna:MODeling:[STATe]
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.Mimo.Antenna.Modeling.ModelingCls
+	:members:
+	:undoc-members:
+	:noindex:

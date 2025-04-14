@@ -1,0 +1,26 @@
+Modulated
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce]:BB:W3GPp:TS25141:IFSignal:MODulated:FOFFset
+	single: [SOURce]:BB:W3GPp:TS25141:IFSignal:MODulated:POWer
+	single: [SOURce]:BB:W3GPp:TS25141:IFSignal:MODulated:STATe
+	single: [SOURce]:BB:W3GPp:TS25141:IFSignal:MODulated:TYPE
+
+.. code-block:: python
+
+	[SOURce]:BB:W3GPp:TS25141:IFSignal:MODulated:FOFFset
+	[SOURce]:BB:W3GPp:TS25141:IFSignal:MODulated:POWer
+	[SOURce]:BB:W3GPp:TS25141:IFSignal:MODulated:STATe
+	[SOURce]:BB:W3GPp:TS25141:IFSignal:MODulated:TYPE
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.W3Gpp.Ts25141.IfRignal.Modulated.ModulatedCls
+	:members:
+	:undoc-members:
+	:noindex:

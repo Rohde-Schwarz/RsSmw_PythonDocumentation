@@ -1,0 +1,20 @@
+Throughput
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:DM:SMODulation:THRoughput:DELay
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:DM:SMODulation:THRoughput:DELay
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dm.Smodulation.Throughput.ThroughputCls
+	:members:
+	:undoc-members:
+	:noindex:

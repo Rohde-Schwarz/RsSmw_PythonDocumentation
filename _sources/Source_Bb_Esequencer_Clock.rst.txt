@@ -1,0 +1,24 @@
+Clock
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:ESEQuencer:CLOCk:MODE
+	single: [SOURce<HW>]:BB:ESEQuencer:CLOCk:MULTiplier
+	single: [SOURce<HW>]:BB:ESEQuencer:CLOCk:SOURce
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:ESEQuencer:CLOCk:MODE
+	[SOURce<HW>]:BB:ESEQuencer:CLOCk:MULTiplier
+	[SOURce<HW>]:BB:ESEQuencer:CLOCk:SOURce
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Esequencer.Clock.ClockCls
+	:members:
+	:undoc-members:
+	:noindex:

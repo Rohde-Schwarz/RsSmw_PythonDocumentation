@@ -1,0 +1,20 @@
+Direction
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:REGenerator:OBJect<CH>:DIRection
+
+.. code-block:: python
+
+	[SOURce<HW>]:REGenerator:OBJect<CH>:DIRection
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Regenerator.Object.Direction.DirectionCls
+	:members:
+	:undoc-members:
+	:noindex:

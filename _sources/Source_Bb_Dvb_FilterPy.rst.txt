@@ -1,0 +1,41 @@
+FilterPy
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:DVB:FILTer:ROFactor
+	single: [SOURce<HW>]:BB:DVB:FILTer:RORange
+	single: [SOURce<HW>]:BB:DVB:FILTer:TYPE
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:DVB:FILTer:ROFactor
+	[SOURce<HW>]:BB:DVB:FILTer:RORange
+	[SOURce<HW>]:BB:DVB:FILTer:TYPE
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dvb.FilterPy.FilterPyCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.dvb.filterPy.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Dvb_FilterPy_Parameter.rst

@@ -1,0 +1,28 @@
+Pbch
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:ONEWeb:DL:PBCH:MIB
+	single: [SOURce<HW>]:BB:ONEWeb:DL:PBCH:MSPare
+	single: [SOURce<HW>]:BB:ONEWeb:DL:PBCH:RATBa
+	single: [SOURce<HW>]:BB:ONEWeb:DL:PBCH:SOFFset
+	single: [SOURce<HW>]:BB:ONEWeb:DL:PBCH:SRPeriod
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:ONEWeb:DL:PBCH:MIB
+	[SOURce<HW>]:BB:ONEWeb:DL:PBCH:MSPare
+	[SOURce<HW>]:BB:ONEWeb:DL:PBCH:RATBa
+	[SOURce<HW>]:BB:ONEWeb:DL:PBCH:SOFFset
+	[SOURce<HW>]:BB:ONEWeb:DL:PBCH:SRPeriod
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Downlink.Pbch.PbchCls
+	:members:
+	:undoc-members:
+	:noindex:

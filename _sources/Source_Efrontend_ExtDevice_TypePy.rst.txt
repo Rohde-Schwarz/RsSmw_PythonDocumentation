@@ -1,0 +1,20 @@
+TypePy
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:EFRontend:EXTDevice<ID>:TYPE
+
+.. code-block:: python
+
+	[SOURce<HW>]:EFRontend:EXTDevice<ID>:TYPE
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Efrontend.ExtDevice.TypePy.TypePyCls
+	:members:
+	:undoc-members:
+	:noindex:

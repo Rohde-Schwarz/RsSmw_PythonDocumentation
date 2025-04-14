@@ -1,0 +1,310 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../../../../../../">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RsSmw.Implementations.Source.Bb.Nr5G.Tcw.Rtf &mdash; RsSmw 5.30.305.84 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../../../../../../_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="../../../../../../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../../../../../../_static/copybutton.css?v=76b2166b" />
+
+  
+      <script src="../../../../../../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../../../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../../../../../../_static/documentation_options.js?v=17bca7dd"></script>
+      <script src="../../../../../../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../../../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../../../../../../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../../../../../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../../../../../index.html" class="icon icon-home">
+            RsSmw
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../readme.html">Revision History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../enums.html">Enums</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../repcap.html">RepCaps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../RsSmw.html">RsSmw API Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../utilities.html">RsSmw Utilities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../logger.html">RsSmw Logger</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../events.html">RsSmw Events</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../genindex.html">Index</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../../../../index.html">RsSmw</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../../../../index.html">Module code</a></li>
+          <li class="breadcrumb-item"><a href="../../../../Source.html">RsSmw.Implementations.Source</a></li>
+          <li class="breadcrumb-item"><a href="../../../Bb.html">RsSmw.Implementations.Source.Bb</a></li>
+          <li class="breadcrumb-item"><a href="../../Nr5G.html">RsSmw.Implementations.Source.Bb.Nr5G</a></li>
+          <li class="breadcrumb-item"><a href="../Tcw.html">RsSmw.Implementations.Source.Bb.Nr5G.Tcw</a></li>
+      <li class="breadcrumb-item active">RsSmw.Implementations.Source.Bb.Nr5G.Tcw.Rtf</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Source code for RsSmw.Implementations.Source.Bb.Nr5G.Tcw.Rtf</h1><div class="highlight"><pre>
+<span></span><span class="kn">from</span><span class="w"> </span><span class="nn">.......Internal.Core</span><span class="w"> </span><span class="kn">import</span> <span class="n">Core</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">.......Internal.CommandsGroup</span><span class="w"> </span><span class="kn">import</span> <span class="n">CommandsGroup</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">.......Internal</span><span class="w"> </span><span class="kn">import</span> <span class="n">Conversions</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">.......</span><span class="w"> </span><span class="kn">import</span> <span class="n">enums</span>
+
+
+<span class="c1"># noinspection PyPep8Naming,PyAttributeOutsideInit,SpellCheckingInspection</span>
+<div class="viewcode-block" id="RtfCls">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Nr5G_Tcw_Rtf.html#RsSmw.Implementations.Source.Bb.Nr5G.Tcw.Rtf.RtfCls">[docs]</a>
+<span class="k">class</span><span class="w"> </span><span class="nc">RtfCls</span><span class="p">:</span>
+<span class="w">	</span><span class="sd">&quot;&quot;&quot;Rtf commands group definition. 8 total commands, 1 Subgroups, 6 group commands&quot;&quot;&quot;</span>
+
+	<span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">core</span><span class="p">:</span> <span class="n">Core</span><span class="p">,</span> <span class="n">parent</span><span class="p">):</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span> <span class="o">=</span> <span class="n">core</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span> <span class="o">=</span> <span class="n">CommandsGroup</span><span class="p">(</span><span class="s2">&quot;rtf&quot;</span><span class="p">,</span> <span class="n">core</span><span class="p">,</span> <span class="n">parent</span><span class="p">)</span>
+
+	<span class="nd">@property</span>
+	<span class="k">def</span><span class="w"> </span><span class="nf">sue</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;sue commands group. 0 Sub-classes, 2 commands.&quot;&quot;&quot;</span>
+		<span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;_sue&#39;</span><span class="p">):</span>
+			<span class="kn">from</span><span class="w"> </span><span class="nn">.Sue</span><span class="w"> </span><span class="kn">import</span> <span class="n">SueCls</span>
+			<span class="bp">self</span><span class="o">.</span><span class="n">_sue</span> <span class="o">=</span> <span class="n">SueCls</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span><span class="p">)</span>
+		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_sue</span>
+
+<div class="viewcode-block" id="RtfCls.get_aus_delay">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Nr5G_Tcw_Rtf.html#RsSmw.Implementations.Source.Bb.Nr5G.Tcw.Rtf.RtfCls.get_aus_delay">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_aus_delay</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:NR5G:TCW:RTF:AUSDelay \n</span>
+<span class="sd">		Snippet: value: float = driver.source.bb.nr5G.tcw.rtf.get_aus_delay() \n</span>
+<span class="sd">		Defines the delay added to the real-time feedback. \n</span>
+<span class="sd">			:return: add_user_delay: float Range: -20 to -1</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:NR5G:TCW:RTF:AUSDelay?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_float</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="RtfCls.set_aus_delay">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Nr5G_Tcw_Rtf.html#RsSmw.Implementations.Source.Bb.Nr5G.Tcw.Rtf.RtfCls.set_aus_delay">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_aus_delay</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">add_user_delay</span><span class="p">:</span> <span class="nb">float</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:NR5G:TCW:RTF:AUSDelay \n</span>
+<span class="sd">		Snippet: driver.source.bb.nr5G.tcw.rtf.set_aus_delay(add_user_delay = 1.0) \n</span>
+<span class="sd">		Defines the delay added to the real-time feedback. \n</span>
+<span class="sd">			:param add_user_delay: float Range: -20 to -1</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">decimal_value_to_str</span><span class="p">(</span><span class="n">add_user_delay</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:NR5G:TCW:RTF:AUSDelay </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="RtfCls.get_bb_selector">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Nr5G_Tcw_Rtf.html#RsSmw.Implementations.Source.Bb.Nr5G.Tcw.Rtf.RtfCls.get_bb_selector">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_bb_selector</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:NR5G:TCW:RTF:BBSelector \n</span>
+<span class="sd">		Snippet: value: int = driver.source.bb.nr5G.tcw.rtf.get_bb_selector() \n</span>
+<span class="sd">		Defines which baseband selector index is used in the serial messages to address the baseband. For some test case that</span>
+<span class="sd">		test a moving UE, the command sets the connector of the moving UE. \n</span>
+<span class="sd">			:return: bb_selector: integer Range: 0 to 3</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:NR5G:TCW:RTF:BBSelector?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_int</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="RtfCls.set_bb_selector">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Nr5G_Tcw_Rtf.html#RsSmw.Implementations.Source.Bb.Nr5G.Tcw.Rtf.RtfCls.set_bb_selector">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_bb_selector</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">bb_selector</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:NR5G:TCW:RTF:BBSelector \n</span>
+<span class="sd">		Snippet: driver.source.bb.nr5G.tcw.rtf.set_bb_selector(bb_selector = 1) \n</span>
+<span class="sd">		Defines which baseband selector index is used in the serial messages to address the baseband. For some test case that</span>
+<span class="sd">		test a moving UE, the command sets the connector of the moving UE. \n</span>
+<span class="sd">			:param bb_selector: integer Range: 0 to 3</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">decimal_value_to_str</span><span class="p">(</span><span class="n">bb_selector</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:NR5G:TCW:RTF:BBSelector </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="RtfCls.get_connector">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Nr5G_Tcw_Rtf.html#RsSmw.Implementations.Source.Bb.Nr5G.Tcw.Rtf.RtfCls.get_connector">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_connector</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">enums</span><span class="o">.</span><span class="n">FeedbackConnectorAll</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:NR5G:TCW:RTF:CONNector \n</span>
+<span class="sd">		Snippet: value: enums.FeedbackConnectorAll = driver.source.bb.nr5G.tcw.rtf.get_connector() \n</span>
+<span class="sd">		Queries the connector used for the real-time feedback. For some test case that test a moving UE, the command queries the</span>
+<span class="sd">		connector of the moving UE. Note that the result of the query is always LOCal, because feedback always uses the local</span>
+<span class="sd">		connector. \n</span>
+<span class="sd">			:return: connector: LOCal</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:NR5G:TCW:RTF:CONNector?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_scalar_enum</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">FeedbackConnectorAll</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="RtfCls.set_connector">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Nr5G_Tcw_Rtf.html#RsSmw.Implementations.Source.Bb.Nr5G.Tcw.Rtf.RtfCls.set_connector">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_connector</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">connector</span><span class="p">:</span> <span class="n">enums</span><span class="o">.</span><span class="n">FeedbackConnectorAll</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:NR5G:TCW:RTF:CONNector \n</span>
+<span class="sd">		Snippet: driver.source.bb.nr5G.tcw.rtf.set_connector(connector = enums.FeedbackConnectorAll.LOCal) \n</span>
+<span class="sd">		Queries the connector used for the real-time feedback. For some test case that test a moving UE, the command queries the</span>
+<span class="sd">		connector of the moving UE. Note that the result of the query is always LOCal, because feedback always uses the local</span>
+<span class="sd">		connector. \n</span>
+<span class="sd">			:param connector: LOCal</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">enum_scalar_to_str</span><span class="p">(</span><span class="n">connector</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">FeedbackConnectorAll</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:NR5G:TCW:RTF:CONNector </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="RtfCls.get_cs_rate">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Nr5G_Tcw_Rtf.html#RsSmw.Implementations.Source.Bb.Nr5G.Tcw.Rtf.RtfCls.get_cs_rate">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_cs_rate</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:NR5G:TCW:RTF:CSRate \n</span>
+<span class="sd">		Snippet: value: int = driver.source.bb.nr5G.tcw.rtf.get_cs_rate() \n</span>
+<span class="sd">		Defines a custom serial rate.</span>
+<span class="sd">			INTRO_CMD_HELP: Prerequisites for this command \n</span>
+<span class="sd">			- Select a custom serial rate ([:SOURce&lt;hw&gt;]:BB:NR5G:TCW:RTF:SERRate) . \n</span>
+<span class="sd">			:return: custom_ser_rate: No help available</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:NR5G:TCW:RTF:CSRate?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_int</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="RtfCls.set_cs_rate">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Nr5G_Tcw_Rtf.html#RsSmw.Implementations.Source.Bb.Nr5G.Tcw.Rtf.RtfCls.set_cs_rate">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_cs_rate</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">custom_ser_rate</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:NR5G:TCW:RTF:CSRate \n</span>
+<span class="sd">		Snippet: driver.source.bb.nr5G.tcw.rtf.set_cs_rate(custom_ser_rate = 1) \n</span>
+<span class="sd">		Defines a custom serial rate.</span>
+<span class="sd">			INTRO_CMD_HELP: Prerequisites for this command \n</span>
+<span class="sd">			- Select a custom serial rate ([:SOURce&lt;hw&gt;]:BB:NR5G:TCW:RTF:SERRate) . \n</span>
+<span class="sd">			:param custom_ser_rate: integer Range: 1E5 to 25E5</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">decimal_value_to_str</span><span class="p">(</span><span class="n">custom_ser_rate</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:NR5G:TCW:RTF:CSRate </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="RtfCls.get_mode">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Nr5G_Tcw_Rtf.html#RsSmw.Implementations.Source.Bb.Nr5G.Tcw.Rtf.RtfCls.get_mode">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_mode</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">enums</span><span class="o">.</span><span class="n">TcwfEedbackMode</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:NR5G:TCW:RTF:MODE \n</span>
+<span class="sd">		Snippet: value: enums.TcwfEedbackMode = driver.source.bb.nr5G.tcw.rtf.get_mode() \n</span>
+<span class="sd">		Selects the serial line mode used for the real-time feedback. \n</span>
+<span class="sd">			:return: rtf_mode: ETH Ethernet feedback mode. You can define the network characteristics with the commands listed in &#39;Real-time feedback&#39;. SERial Serial feedback mode. S3X8 Serial 3x8 feedback mode.</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:NR5G:TCW:RTF:MODE?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_scalar_enum</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">TcwfEedbackMode</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="RtfCls.set_mode">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Nr5G_Tcw_Rtf.html#RsSmw.Implementations.Source.Bb.Nr5G.Tcw.Rtf.RtfCls.set_mode">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_mode</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">rtf_mode</span><span class="p">:</span> <span class="n">enums</span><span class="o">.</span><span class="n">TcwfEedbackMode</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:NR5G:TCW:RTF:MODE \n</span>
+<span class="sd">		Snippet: driver.source.bb.nr5G.tcw.rtf.set_mode(rtf_mode = enums.TcwfEedbackMode.ETH) \n</span>
+<span class="sd">		Selects the serial line mode used for the real-time feedback. \n</span>
+<span class="sd">			:param rtf_mode: ETH Ethernet feedback mode. You can define the network characteristics with the commands listed in &#39;Real-time feedback&#39;. SERial Serial feedback mode. S3X8 Serial 3x8 feedback mode.</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">enum_scalar_to_str</span><span class="p">(</span><span class="n">rtf_mode</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">TcwfEedbackMode</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:NR5G:TCW:RTF:MODE </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="RtfCls.get_ser_rate">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Nr5G_Tcw_Rtf.html#RsSmw.Implementations.Source.Bb.Nr5G.Tcw.Rtf.RtfCls.get_ser_rate">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_ser_rate</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">enums</span><span class="o">.</span><span class="n">FeedbackRateAll</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:NR5G:TCW:RTF:SERRate \n</span>
+<span class="sd">		Snippet: value: enums.FeedbackRateAll = driver.source.bb.nr5G.tcw.rtf.get_ser_rate() \n</span>
+<span class="sd">		Sets the bit rate of the serial transmission. For test cases with high subcarrier spacing (SCS) and short slot duration,</span>
+<span class="sd">		a serial rate of 115.2 kbps is insufficient. We recommend that you use higher serial rate so that at least one feedback</span>
+<span class="sd">		command per slot is received. \n</span>
+<span class="sd">			:return: serial_rate: R115 | R1M6 | R1M9 115.2 kbps, 1.6 Mbps, 1.92 Mbps CUST Custom serial rate. You can define the serial rate with [:SOURcehw]:BB:NR5G:TCW:RTF:CSRate.</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:NR5G:TCW:RTF:SERRate?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_scalar_enum</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">FeedbackRateAll</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="RtfCls.set_ser_rate">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Nr5G_Tcw_Rtf.html#RsSmw.Implementations.Source.Bb.Nr5G.Tcw.Rtf.RtfCls.set_ser_rate">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_ser_rate</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">serial_rate</span><span class="p">:</span> <span class="n">enums</span><span class="o">.</span><span class="n">FeedbackRateAll</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:NR5G:TCW:RTF:SERRate \n</span>
+<span class="sd">		Snippet: driver.source.bb.nr5G.tcw.rtf.set_ser_rate(serial_rate = enums.FeedbackRateAll.CUST) \n</span>
+<span class="sd">		Sets the bit rate of the serial transmission. For test cases with high subcarrier spacing (SCS) and short slot duration,</span>
+<span class="sd">		a serial rate of 115.2 kbps is insufficient. We recommend that you use higher serial rate so that at least one feedback</span>
+<span class="sd">		command per slot is received. \n</span>
+<span class="sd">			:param serial_rate: R115 | R1M6 | R1M9 115.2 kbps, 1.6 Mbps, 1.92 Mbps CUST Custom serial rate. You can define the serial rate with [:SOURcehw]:BB:NR5G:TCW:RTF:CSRate.</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">enum_scalar_to_str</span><span class="p">(</span><span class="n">serial_rate</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">FeedbackRateAll</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:NR5G:TCW:RTF:SERRate </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+	<span class="k">def</span><span class="w"> </span><span class="nf">clone</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s1">&#39;RtfCls&#39;</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;Clones the group by creating new object from it and its whole existing subgroups</span>
+<span class="sd">		Also copies all the existing default Repeated Capabilities setting,</span>
+<span class="sd">		which you can change independently without affecting the original group&quot;&quot;&quot;</span>
+		<span class="n">new_group</span> <span class="o">=</span> <span class="n">RtfCls</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span><span class="o">.</span><span class="n">parent</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span><span class="o">.</span><span class="n">synchronize_repcaps</span><span class="p">(</span><span class="n">new_group</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">new_group</span></div>
+
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright © Rohde &amp; Schwarz 2023.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+Imaginary
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:V5G:DL:USER<CH>:APM:[LAYer<USER>]:AP<DIR0>:ROW<ST0>:IMAGinary
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:V5G:DL:USER<CH>:APM:[LAYer<USER>]:AP<DIR0>:ROW<ST0>:IMAGinary
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Downlink.User.Apm.Layer.Ap.Row.Imaginary.ImaginaryCls
+	:members:
+	:undoc-members:
+	:noindex:

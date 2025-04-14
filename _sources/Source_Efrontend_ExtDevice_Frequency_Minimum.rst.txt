@@ -1,0 +1,20 @@
+Minimum
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:EFRontend:EXTDevice<ID>:FREQuency:MINimum
+
+.. code-block:: python
+
+	[SOURce<HW>]:EFRontend:EXTDevice<ID>:FREQuency:MINimum
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Efrontend.ExtDevice.Frequency.Minimum.MinimumCls
+	:members:
+	:undoc-members:
+	:noindex:

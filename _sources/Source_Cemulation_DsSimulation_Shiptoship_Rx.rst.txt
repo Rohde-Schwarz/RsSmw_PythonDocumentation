@@ -1,0 +1,42 @@
+Rx
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:CEMulation:DSSimulation:SHIPtoship:RX:HEADing
+	single: [SOURce<HW>]:CEMulation:DSSimulation:SHIPtoship:RX:SPEed
+	single: [SOURce<HW>]:CEMulation:DSSimulation:SHIPtoship:RX:TYPE
+
+.. code-block:: python
+
+	[SOURce<HW>]:CEMulation:DSSimulation:SHIPtoship:RX:HEADing
+	[SOURce<HW>]:CEMulation:DSSimulation:SHIPtoship:RX:SPEed
+	[SOURce<HW>]:CEMulation:DSSimulation:SHIPtoship:RX:TYPE
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.DsSimulation.Shiptoship.Rx.RxCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.cemulation.dsSimulation.shiptoship.rx.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Cemulation_DsSimulation_Shiptoship_Rx_Antenna.rst
+	Source_Cemulation_DsSimulation_Shiptoship_Rx_Coordinates.rst

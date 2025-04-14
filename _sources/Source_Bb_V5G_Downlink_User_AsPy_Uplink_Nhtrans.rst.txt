@@ -1,0 +1,20 @@
+Nhtrans
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:V5G:DL:USER<CH>:AS:UL:NHTRans
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:V5G:DL:USER<CH>:AS:UL:NHTRans
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Downlink.User.AsPy.Uplink.Nhtrans.NhtransCls
+	:members:
+	:undoc-members:
+	:noindex:

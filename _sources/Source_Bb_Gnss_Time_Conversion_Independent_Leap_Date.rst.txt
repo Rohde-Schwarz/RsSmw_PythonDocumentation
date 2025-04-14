@@ -1,0 +1,20 @@
+Date
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:GNSS:TIME:CONVersion:INDependent:LEAP:DATE
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:GNSS:TIME:CONVersion:INDependent:LEAP:DATE
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Gnss.Time.Conversion.Independent.Leap.Date.DateCls
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,38 @@
+Bb<Baseband>
+----------------------------------------
+
+.. rubric:: RepCap Settings
+
+.. code-block:: python
+
+	# Range: Nr1 .. Nr4
+	rc = driver.source.bb.esequencer.user.bb.repcap_baseband_get()
+	driver.source.bb.esequencer.user.bb.repcap_baseband_set(repcap.Baseband.Nr1)
+
+
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Esequencer.User.Bb.BbCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.esequencer.user.bb.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Esequencer_User_Bb_AoTime.rst
+	Source_Bb_Esequencer_User_Bb_HoTime.rst
+	Source_Bb_Esequencer_User_Bb_Sequence.rst

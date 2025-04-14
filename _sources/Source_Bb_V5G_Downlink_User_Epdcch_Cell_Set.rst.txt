@@ -1,0 +1,41 @@
+Set<SetItem>
+----------------------------------------
+
+.. rubric:: RepCap Settings
+
+.. code-block:: python
+
+	# Range: Nr1 .. Nr2
+	rc = driver.source.bb.v5G.downlink.user.epdcch.cell.set.repcap_setItem_get()
+	driver.source.bb.v5G.downlink.user.epdcch.cell.set.repcap_setItem_set(repcap.SetItem.Nr1)
+
+
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Downlink.User.Epdcch.Cell.Set.SetCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.v5G.downlink.user.epdcch.cell.set.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_V5G_Downlink_User_Epdcch_Cell_Set_Nid.rst
+	Source_Bb_V5G_Downlink_User_Epdcch_Cell_Set_Power.rst
+	Source_Bb_V5G_Downlink_User_Epdcch_Cell_Set_Prbs.rst
+	Source_Bb_V5G_Downlink_User_Epdcch_Cell_Set_Rba.rst
+	Source_Bb_V5G_Downlink_User_Epdcch_Cell_Set_State.rst
+	Source_Bb_V5G_Downlink_User_Epdcch_Cell_Set_Ttyp.rst

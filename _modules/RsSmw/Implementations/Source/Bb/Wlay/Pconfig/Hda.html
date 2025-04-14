@@ -1,0 +1,405 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../../../../../../">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RsSmw.Implementations.Source.Bb.Wlay.Pconfig.Hda &mdash; RsSmw 5.30.305.84 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../../../../../../_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="../../../../../../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../../../../../../_static/copybutton.css?v=76b2166b" />
+
+  
+      <script src="../../../../../../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../../../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../../../../../../_static/documentation_options.js?v=17bca7dd"></script>
+      <script src="../../../../../../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../../../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../../../../../../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../../../../../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../../../../../index.html" class="icon icon-home">
+            RsSmw
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../readme.html">Revision History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../enums.html">Enums</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../repcap.html">RepCaps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../RsSmw.html">RsSmw API Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../utilities.html">RsSmw Utilities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../logger.html">RsSmw Logger</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../events.html">RsSmw Events</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../genindex.html">Index</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../../../../index.html">RsSmw</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../../../../index.html">Module code</a></li>
+          <li class="breadcrumb-item"><a href="../../../../Source.html">RsSmw.Implementations.Source</a></li>
+          <li class="breadcrumb-item"><a href="../../../Bb.html">RsSmw.Implementations.Source.Bb</a></li>
+          <li class="breadcrumb-item"><a href="../../Wlay.html">RsSmw.Implementations.Source.Bb.Wlay</a></li>
+          <li class="breadcrumb-item"><a href="../Pconfig.html">RsSmw.Implementations.Source.Bb.Wlay.Pconfig</a></li>
+      <li class="breadcrumb-item active">RsSmw.Implementations.Source.Bb.Wlay.Pconfig.Hda</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Source code for RsSmw.Implementations.Source.Bb.Wlay.Pconfig.Hda</h1><div class="highlight"><pre>
+<span></span><span class="kn">from</span><span class="w"> </span><span class="nn">.......Internal.Core</span><span class="w"> </span><span class="kn">import</span> <span class="n">Core</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">.......Internal.CommandsGroup</span><span class="w"> </span><span class="kn">import</span> <span class="n">CommandsGroup</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">.......Internal</span><span class="w"> </span><span class="kn">import</span> <span class="n">Conversions</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">.......</span><span class="w"> </span><span class="kn">import</span> <span class="n">enums</span>
+
+
+<span class="c1"># noinspection PyPep8Naming,PyAttributeOutsideInit,SpellCheckingInspection</span>
+<div class="viewcode-block" id="HdaCls">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Wlay_Pconfig_Hda.html#RsSmw.Implementations.Source.Bb.Wlay.Pconfig.Hda.HdaCls">[docs]</a>
+<span class="k">class</span><span class="w"> </span><span class="nc">HdaCls</span><span class="p">:</span>
+<span class="w">	</span><span class="sd">&quot;&quot;&quot;Hda commands group definition. 17 total commands, 7 Subgroups, 9 group commands&quot;&quot;&quot;</span>
+
+	<span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">core</span><span class="p">:</span> <span class="n">Core</span><span class="p">,</span> <span class="n">parent</span><span class="p">):</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span> <span class="o">=</span> <span class="n">core</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span> <span class="o">=</span> <span class="n">CommandsGroup</span><span class="p">(</span><span class="s2">&quot;hda&quot;</span><span class="p">,</span> <span class="n">core</span><span class="p">,</span> <span class="n">parent</span><span class="p">)</span>
+
+	<span class="nd">@property</span>
+	<span class="k">def</span><span class="w"> </span><span class="nf">aggregate</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;aggregate commands group. 0 Sub-classes, 1 commands.&quot;&quot;&quot;</span>
+		<span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;_aggregate&#39;</span><span class="p">):</span>
+			<span class="kn">from</span><span class="w"> </span><span class="nn">.Aggregate</span><span class="w"> </span><span class="kn">import</span> <span class="n">AggregateCls</span>
+			<span class="bp">self</span><span class="o">.</span><span class="n">_aggregate</span> <span class="o">=</span> <span class="n">AggregateCls</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span><span class="p">)</span>
+		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_aggregate</span>
+
+	<span class="nd">@property</span>
+	<span class="k">def</span><span class="w"> </span><span class="nf">bf</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;bf commands group. 0 Sub-classes, 1 commands.&quot;&quot;&quot;</span>
+		<span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;_bf&#39;</span><span class="p">):</span>
+			<span class="kn">from</span><span class="w"> </span><span class="nn">.Bf</span><span class="w"> </span><span class="kn">import</span> <span class="n">BfCls</span>
+			<span class="bp">self</span><span class="o">.</span><span class="n">_bf</span> <span class="o">=</span> <span class="n">BfCls</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span><span class="p">)</span>
+		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_bf</span>
+
+	<span class="nd">@property</span>
+	<span class="k">def</span><span class="w"> </span><span class="nf">lldpc</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;lldpc commands group. 0 Sub-classes, 1 commands.&quot;&quot;&quot;</span>
+		<span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;_lldpc&#39;</span><span class="p">):</span>
+			<span class="kn">from</span><span class="w"> </span><span class="nn">.Lldpc</span><span class="w"> </span><span class="kn">import</span> <span class="n">LldpcCls</span>
+			<span class="bp">self</span><span class="o">.</span><span class="n">_lldpc</span> <span class="o">=</span> <span class="n">LldpcCls</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span><span class="p">)</span>
+		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_lldpc</span>
+
+	<span class="nd">@property</span>
+	<span class="k">def</span><span class="w"> </span><span class="nf">mcs</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;mcs commands group. 2 Sub-classes, 0 commands.&quot;&quot;&quot;</span>
+		<span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;_mcs&#39;</span><span class="p">):</span>
+			<span class="kn">from</span><span class="w"> </span><span class="nn">.Mcs</span><span class="w"> </span><span class="kn">import</span> <span class="n">McsCls</span>
+			<span class="bp">self</span><span class="o">.</span><span class="n">_mcs</span> <span class="o">=</span> <span class="n">McsCls</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span><span class="p">)</span>
+		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_mcs</span>
+
+	<span class="nd">@property</span>
+	<span class="k">def</span><span class="w"> </span><span class="nf">mu</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;mu commands group. 0 Sub-classes, 1 commands.&quot;&quot;&quot;</span>
+		<span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;_mu&#39;</span><span class="p">):</span>
+			<span class="kn">from</span><span class="w"> </span><span class="nn">.Mu</span><span class="w"> </span><span class="kn">import</span> <span class="n">MuCls</span>
+			<span class="bp">self</span><span class="o">.</span><span class="n">_mu</span> <span class="o">=</span> <span class="n">MuCls</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span><span class="p">)</span>
+		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_mu</span>
+
+	<span class="nd">@property</span>
+	<span class="k">def</span><span class="w"> </span><span class="nf">nuc</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;nuc commands group. 0 Sub-classes, 1 commands.&quot;&quot;&quot;</span>
+		<span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;_nuc&#39;</span><span class="p">):</span>
+			<span class="kn">from</span><span class="w"> </span><span class="nn">.Nuc</span><span class="w"> </span><span class="kn">import</span> <span class="n">NucCls</span>
+			<span class="bp">self</span><span class="o">.</span><span class="n">_nuc</span> <span class="o">=</span> <span class="n">NucCls</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span><span class="p">)</span>
+		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_nuc</span>
+
+	<span class="nd">@property</span>
+	<span class="k">def</span><span class="w"> </span><span class="nf">stbc</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;stbc commands group. 0 Sub-classes, 1 commands.&quot;&quot;&quot;</span>
+		<span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;_stbc&#39;</span><span class="p">):</span>
+			<span class="kn">from</span><span class="w"> </span><span class="nn">.Stbc</span><span class="w"> </span><span class="kn">import</span> <span class="n">StbcCls</span>
+			<span class="bp">self</span><span class="o">.</span><span class="n">_stbc</span> <span class="o">=</span> <span class="n">StbcCls</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span><span class="p">)</span>
+		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_stbc</span>
+
+<div class="viewcode-block" id="HdaCls.get_bmcs">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Wlay_Pconfig_Hda.html#RsSmw.Implementations.Source.Bb.Wlay.Pconfig.Hda.HdaCls.get_bmcs">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_bmcs</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:WLAY:PCONfig:HDA:BMCS \n</span>
+<span class="sd">		Snippet: value: int = driver.source.bb.wlay.pconfig.hda.get_bmcs() \n</span>
+<span class="sd">		Selects the modulation and coding scheme (MCS) for all spatial streams. The current firmware supports MSC for EDMG SC</span>
+<span class="sd">		mode only, see Table &#39;MCS for IEEE 802.11ay EDMG SC mode&#39;, for example. \n</span>
+<span class="sd">			:return: base_mcs: integer Range: 1 to 21</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:WLAY:PCONfig:HDA:BMCS?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_int</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="HdaCls.set_bmcs">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Wlay_Pconfig_Hda.html#RsSmw.Implementations.Source.Bb.Wlay.Pconfig.Hda.HdaCls.set_bmcs">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_bmcs</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">base_mcs</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:WLAY:PCONfig:HDA:BMCS \n</span>
+<span class="sd">		Snippet: driver.source.bb.wlay.pconfig.hda.set_bmcs(base_mcs = 1) \n</span>
+<span class="sd">		Selects the modulation and coding scheme (MCS) for all spatial streams. The current firmware supports MSC for EDMG SC</span>
+<span class="sd">		mode only, see Table &#39;MCS for IEEE 802.11ay EDMG SC mode&#39;, for example. \n</span>
+<span class="sd">			:param base_mcs: integer Range: 1 to 21</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">decimal_value_to_str</span><span class="p">(</span><span class="n">base_mcs</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:WLAY:PCONfig:HDA:BMCS </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="HdaCls.get_bw">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Wlay_Pconfig_Hda.html#RsSmw.Implementations.Source.Bb.Wlay.Pconfig.Hda.HdaCls.get_bw">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_bw</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">enums</span><span class="o">.</span><span class="n">WlanayBw</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:WLAY:PCONfig:HDA:BW \n</span>
+<span class="sd">		Snippet: value: enums.WlanayBw = driver.source.bb.wlay.pconfig.hda.get_bw() \n</span>
+<span class="sd">		Sets the bandwidth of the EDMG single carrier signal that is a multiple of 2.16 GHz. \n</span>
+<span class="sd">			:return: bw: BW216| BW432 BW216 2.16 GHz bandwidth BW432 Requires R&amp;S SMW-K555. 4.32 GHz bandwidth</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:WLAY:PCONfig:HDA:BW?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_scalar_enum</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">WlanayBw</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="HdaCls.set_bw">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Wlay_Pconfig_Hda.html#RsSmw.Implementations.Source.Bb.Wlay.Pconfig.Hda.HdaCls.set_bw">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_bw</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">bw</span><span class="p">:</span> <span class="n">enums</span><span class="o">.</span><span class="n">WlanayBw</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:WLAY:PCONfig:HDA:BW \n</span>
+<span class="sd">		Snippet: driver.source.bb.wlay.pconfig.hda.set_bw(bw = enums.WlanayBw.BW216) \n</span>
+<span class="sd">		Sets the bandwidth of the EDMG single carrier signal that is a multiple of 2.16 GHz. \n</span>
+<span class="sd">			:param bw: BW216| BW432 BW216 2.16 GHz bandwidth BW432 Requires R&amp;S SMW-K555. 4.32 GHz bandwidth</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">enum_scalar_to_str</span><span class="p">(</span><span class="n">bw</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">WlanayBw</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:WLAY:PCONfig:HDA:BW </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="HdaCls.get_cconfig">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Wlay_Pconfig_Hda.html#RsSmw.Implementations.Source.Bb.Wlay.Pconfig.Hda.HdaCls.get_cconfig">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_cconfig</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:WLAY:PCONfig:HDA:CCONfig \n</span>
+<span class="sd">		Snippet: value: int = driver.source.bb.wlay.pconfig.hda.get_cconfig() \n</span>
+<span class="sd">		Sets the channel configuration that is the configuration 2.16 GHz and 4.32 GHz channels. \n</span>
+<span class="sd">			:return: channel_config: integer Range: 1 to 176</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:WLAY:PCONfig:HDA:CCONfig?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_int</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="HdaCls.set_cconfig">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Wlay_Pconfig_Hda.html#RsSmw.Implementations.Source.Bb.Wlay.Pconfig.Hda.HdaCls.set_cconfig">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_cconfig</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">channel_config</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:WLAY:PCONfig:HDA:CCONfig \n</span>
+<span class="sd">		Snippet: driver.source.bb.wlay.pconfig.hda.set_cconfig(channel_config = 1) \n</span>
+<span class="sd">		Sets the channel configuration that is the configuration 2.16 GHz and 4.32 GHz channels. \n</span>
+<span class="sd">			:param channel_config: integer Range: 1 to 176</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">decimal_value_to_str</span><span class="p">(</span><span class="n">channel_config</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:WLAY:PCONfig:HDA:CCONfig </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="HdaCls.get_pchannel">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Wlay_Pconfig_Hda.html#RsSmw.Implementations.Source.Bb.Wlay.Pconfig.Hda.HdaCls.get_pchannel">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_pchannel</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:WLAY:PCONfig:HDA:PCHannel \n</span>
+<span class="sd">		Snippet: value: float = driver.source.bb.wlay.pconfig.hda.get_pchannel() \n</span>
+<span class="sd">		Queries the primary channel number as set via the channel configuration, see Table &#39;Channels of an EDMG STA&#39;. \n</span>
+<span class="sd">			:return: primary_cha: float Range: 1 to 8</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:WLAY:PCONfig:HDA:PCHannel?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_float</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="HdaCls.get_rtpt">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Wlay_Pconfig_Hda.html#RsSmw.Implementations.Source.Bb.Wlay.Pconfig.Hda.HdaCls.get_rtpt">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_rtpt</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:WLAY:PCONfig:HDA:RTPT \n</span>
+<span class="sd">		Snippet: value: int = driver.source.bb.wlay.pconfig.hda.get_rtpt() \n</span>
+<span class="sd">		Sets the number of receive (RX) TRN units per transmit (TX) TRN unit. \n</span>
+<span class="sd">			:return: rx_trn_tx_trn: integer Range: 1 to 255</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:WLAY:PCONfig:HDA:RTPT?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_int</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="HdaCls.set_rtpt">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Wlay_Pconfig_Hda.html#RsSmw.Implementations.Source.Bb.Wlay.Pconfig.Hda.HdaCls.set_rtpt">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_rtpt</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">rx_trn_tx_trn</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:WLAY:PCONfig:HDA:RTPT \n</span>
+<span class="sd">		Snippet: driver.source.bb.wlay.pconfig.hda.set_rtpt(rx_trn_tx_trn = 1) \n</span>
+<span class="sd">		Sets the number of receive (RX) TRN units per transmit (TX) TRN unit. \n</span>
+<span class="sd">			:param rx_trn_tx_trn: integer Range: 1 to 255</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">decimal_value_to_str</span><span class="p">(</span><span class="n">rx_trn_tx_trn</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:WLAY:PCONfig:HDA:RTPT </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="HdaCls.get_trn_m">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Wlay_Pconfig_Hda.html#RsSmw.Implementations.Source.Bb.Wlay.Pconfig.Hda.HdaCls.get_trn_m">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_trn_m</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:WLAY:PCONfig:HDA:TRNM \n</span>
+<span class="sd">		Snippet: value: int = driver.source.bb.wlay.pconfig.hda.get_trn_m() \n</span>
+<span class="sd">		Sets the bits in the 4-bit EDMG TRN-Unit M field. \n</span>
+<span class="sd">			:return: trn_m: integer Range: 0 to 15</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:WLAY:PCONfig:HDA:TRNM?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_int</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="HdaCls.set_trn_m">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Wlay_Pconfig_Hda.html#RsSmw.Implementations.Source.Bb.Wlay.Pconfig.Hda.HdaCls.set_trn_m">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_trn_m</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">trn_m</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:WLAY:PCONfig:HDA:TRNM \n</span>
+<span class="sd">		Snippet: driver.source.bb.wlay.pconfig.hda.set_trn_m(trn_m = 1) \n</span>
+<span class="sd">		Sets the bits in the 4-bit EDMG TRN-Unit M field. \n</span>
+<span class="sd">			:param trn_m: integer Range: 0 to 15</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">decimal_value_to_str</span><span class="p">(</span><span class="n">trn_m</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:WLAY:PCONfig:HDA:TRNM </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="HdaCls.get_trn_n">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Wlay_Pconfig_Hda.html#RsSmw.Implementations.Source.Bb.Wlay.Pconfig.Hda.HdaCls.get_trn_n">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_trn_n</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:WLAY:PCONfig:HDA:TRNN \n</span>
+<span class="sd">		Snippet: value: int = driver.source.bb.wlay.pconfig.hda.get_trn_n() \n</span>
+<span class="sd">		Sets the bits in the 2-bit EDMG TRN-Unit N field. \n</span>
+<span class="sd">			:return: trn_n: integer Range: 0 to 3</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:WLAY:PCONfig:HDA:TRNN?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_int</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="HdaCls.set_trn_n">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Wlay_Pconfig_Hda.html#RsSmw.Implementations.Source.Bb.Wlay.Pconfig.Hda.HdaCls.set_trn_n">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_trn_n</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">trn_n</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:WLAY:PCONfig:HDA:TRNN \n</span>
+<span class="sd">		Snippet: driver.source.bb.wlay.pconfig.hda.set_trn_n(trn_n = 1) \n</span>
+<span class="sd">		Sets the bits in the 2-bit EDMG TRN-Unit N field. \n</span>
+<span class="sd">			:param trn_n: integer Range: 0 to 3</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">decimal_value_to_str</span><span class="p">(</span><span class="n">trn_n</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:WLAY:PCONfig:HDA:TRNN </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="HdaCls.get_trn_p">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Wlay_Pconfig_Hda.html#RsSmw.Implementations.Source.Bb.Wlay.Pconfig.Hda.HdaCls.get_trn_p">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_trn_p</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:WLAY:PCONfig:HDA:TRNP \n</span>
+<span class="sd">		Snippet: value: int = driver.source.bb.wlay.pconfig.hda.get_trn_p() \n</span>
+<span class="sd">		Sets the bits in the 2-bit EDMG TRN-Unit P field. \n</span>
+<span class="sd">			:return: trn_p: integer Range: 0 to 3</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:WLAY:PCONfig:HDA:TRNP?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_int</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="HdaCls.set_trn_p">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Wlay_Pconfig_Hda.html#RsSmw.Implementations.Source.Bb.Wlay.Pconfig.Hda.HdaCls.set_trn_p">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_trn_p</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">trn_p</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:WLAY:PCONfig:HDA:TRNP \n</span>
+<span class="sd">		Snippet: driver.source.bb.wlay.pconfig.hda.set_trn_p(trn_p = 1) \n</span>
+<span class="sd">		Sets the bits in the 2-bit EDMG TRN-Unit P field. \n</span>
+<span class="sd">			:param trn_p: integer Range: 0 to 3</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">decimal_value_to_str</span><span class="p">(</span><span class="n">trn_p</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:WLAY:PCONfig:HDA:TRNP </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="HdaCls.get_tsl">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Wlay_Pconfig_Hda.html#RsSmw.Implementations.Source.Bb.Wlay.Pconfig.Hda.HdaCls.get_tsl">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_tsl</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">enums</span><span class="o">.</span><span class="n">SequenceLength</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:WLAY:PCONfig:HDA:TSL \n</span>
+<span class="sd">		Snippet: value: enums.SequenceLength = driver.source.bb.wlay.pconfig.hda.get_tsl() \n</span>
+<span class="sd">		Sets training sequence length as set with the 2-bit subfield &#39;Sequence Length&#39; of the TRN field. \n</span>
+<span class="sd">			:return: trn_seq_len: NORMAL| LONG| SHORT NORMAL Normal sequence length of 128 x NCB with subfield value 0. LONG Long sequence length of 256 x NCB with subfield value 1. SHORT Short sequence length of 64 x NCB with subfield value 2.</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:WLAY:PCONfig:HDA:TSL?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_scalar_enum</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">SequenceLength</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="HdaCls.set_tsl">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Wlay_Pconfig_Hda.html#RsSmw.Implementations.Source.Bb.Wlay.Pconfig.Hda.HdaCls.set_tsl">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_tsl</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">trn_seq_len</span><span class="p">:</span> <span class="n">enums</span><span class="o">.</span><span class="n">SequenceLength</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:WLAY:PCONfig:HDA:TSL \n</span>
+<span class="sd">		Snippet: driver.source.bb.wlay.pconfig.hda.set_tsl(trn_seq_len = enums.SequenceLength.LONG) \n</span>
+<span class="sd">		Sets training sequence length as set with the 2-bit subfield &#39;Sequence Length&#39; of the TRN field. \n</span>
+<span class="sd">			:param trn_seq_len: NORMAL| LONG| SHORT NORMAL Normal sequence length of 128 x NCB with subfield value 0. LONG Long sequence length of 256 x NCB with subfield value 1. SHORT Short sequence length of 64 x NCB with subfield value 2.</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">enum_scalar_to_str</span><span class="p">(</span><span class="n">trn_seq_len</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">SequenceLength</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:WLAY:PCONfig:HDA:TSL </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+	<span class="k">def</span><span class="w"> </span><span class="nf">clone</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s1">&#39;HdaCls&#39;</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;Clones the group by creating new object from it and its whole existing subgroups</span>
+<span class="sd">		Also copies all the existing default Repeated Capabilities setting,</span>
+<span class="sd">		which you can change independently without affecting the original group&quot;&quot;&quot;</span>
+		<span class="n">new_group</span> <span class="o">=</span> <span class="n">HdaCls</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span><span class="o">.</span><span class="n">parent</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span><span class="o">.</span><span class="n">synchronize_repcaps</span><span class="p">(</span><span class="n">new_group</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">new_group</span></div>
+
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright © Rohde &amp; Schwarz 2023.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

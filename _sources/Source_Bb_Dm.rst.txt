@@ -1,0 +1,67 @@
+Dm
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:DM:CODing
+	single: [SOURce<HW>]:BB:DM:FORMat
+	single: [SOURce<HW>]:BB:DM:MDELay
+	single: [SOURce<HW>]:BB:DM:PRESet
+	single: [SOURce<HW>]:BB:DM:SOURce
+	single: [SOURce<HW>]:BB:DM:SRATe
+	single: [SOURce<HW>]:BB:DM:STATe
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:DM:CODing
+	[SOURce<HW>]:BB:DM:FORMat
+	[SOURce<HW>]:BB:DM:MDELay
+	[SOURce<HW>]:BB:DM:PRESet
+	[SOURce<HW>]:BB:DM:SOURce
+	[SOURce<HW>]:BB:DM:SRATe
+	[SOURce<HW>]:BB:DM:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dm.DmCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.dm.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Dm_Apsk16.rst
+	Source_Bb_Dm_Apsk32.rst
+	Source_Bb_Dm_AqPsk.rst
+	Source_Bb_Dm_Ask.rst
+	Source_Bb_Dm_Clist.rst
+	Source_Bb_Dm_Clock.rst
+	Source_Bb_Dm_Dlist.rst
+	Source_Bb_Dm_FilterPy.rst
+	Source_Bb_Dm_Flist.rst
+	Source_Bb_Dm_Fsk.rst
+	Source_Bb_Dm_Mlist.rst
+	Source_Bb_Dm_Pattern.rst
+	Source_Bb_Dm_Pramp.rst
+	Source_Bb_Dm_Prbs.rst
+	Source_Bb_Dm_Setting.rst
+	Source_Bb_Dm_Smodulation.rst
+	Source_Bb_Dm_Standard.rst
+	Source_Bb_Dm_Switching.rst
+	Source_Bb_Dm_Trigger.rst

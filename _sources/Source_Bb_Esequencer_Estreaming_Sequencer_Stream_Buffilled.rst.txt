@@ -1,0 +1,20 @@
+Buffilled
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:ESEQuencer:ESTReaming:[SEQuencer<ST>]:STReam:BUFFilled
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:ESEQuencer:ESTReaming:[SEQuencer<ST>]:STReam:BUFFilled
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Esequencer.Estreaming.Sequencer.Stream.Buffilled.BuffilledCls
+	:members:
+	:undoc-members:
+	:noindex:

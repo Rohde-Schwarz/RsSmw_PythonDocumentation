@@ -1,0 +1,20 @@
+File
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:ESEQuencer:ASEQuencing:WAVE:FILE:CATalog
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:ESEQuencer:ASEQuencing:WAVE:FILE:CATalog
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Esequencer.Asequencing.Wave.File.FileCls
+	:members:
+	:undoc-members:
+	:noindex:

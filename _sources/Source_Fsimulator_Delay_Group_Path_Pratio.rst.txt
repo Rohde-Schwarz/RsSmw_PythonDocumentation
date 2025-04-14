@@ -1,0 +1,20 @@
+Pratio
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:FSIMulator:DELay:GROup<ST>:PATH<CH>:PRATio
+
+.. code-block:: python
+
+	[SOURce<HW>]:FSIMulator:DELay:GROup<ST>:PATH<CH>:PRATio
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.Delay.Group.Path.Pratio.PratioCls
+	:members:
+	:undoc-members:
+	:noindex:

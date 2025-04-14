@@ -1,0 +1,20 @@
+Source
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:WLAD:PCONfig:MPDU<ST>:DATA:SOURce
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:WLAD:PCONfig:MPDU<ST>:DATA:SOURce
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Wlad.Pconfig.Mpdu.Data.Source.SourceCls
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,26 @@
+Lte
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:ONEWeb:FILTer:PARameter:LTE:COFFactor
+	single: [SOURce<HW>]:BB:ONEWeb:FILTer:PARameter:LTE:COFS
+	single: [SOURce<HW>]:BB:ONEWeb:FILTer:PARameter:LTE:OPTimization
+	single: [SOURce<HW>]:BB:ONEWeb:FILTer:PARameter:LTE:ROFactor
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:ONEWeb:FILTer:PARameter:LTE:COFFactor
+	[SOURce<HW>]:BB:ONEWeb:FILTer:PARameter:LTE:COFS
+	[SOURce<HW>]:BB:ONEWeb:FILTer:PARameter:LTE:OPTimization
+	[SOURce<HW>]:BB:ONEWeb:FILTer:PARameter:LTE:ROFactor
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.FilterPy.Parameter.Lte.LteCls
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,20 @@
+Level
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: SCONfiguration:BEXTension:CORRection:PORT<CH>:LEVel
+
+.. code-block:: python
+
+	SCONfiguration:BEXTension:CORRection:PORT<CH>:LEVel
+
+
+
+.. autoclass:: RsSmw.Implementations.Sconfiguration.Bextension.Correction.Port.Level.LevelCls
+	:members:
+	:undoc-members:
+	:noindex:

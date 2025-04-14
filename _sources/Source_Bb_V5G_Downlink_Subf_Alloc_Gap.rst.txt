@@ -1,0 +1,20 @@
+Gap
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:V5G:DL:[SUBF<ST0>]:ALLoc<CH0>:GAP
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:V5G:DL:[SUBF<ST0>]:ALLoc<CH0>:GAP
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Downlink.Subf.Alloc.Gap.GapCls
+	:members:
+	:undoc-members:
+	:noindex:

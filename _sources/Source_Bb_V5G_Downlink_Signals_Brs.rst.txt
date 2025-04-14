@@ -1,0 +1,22 @@
+Brs
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:V5G:DL:SIGNals:BRS:BTRPeriod
+	single: [SOURce<HW>]:BB:V5G:DL:SIGNals:BRS:NAP
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:V5G:DL:SIGNals:BRS:BTRPeriod
+	[SOURce<HW>]:BB:V5G:DL:SIGNals:BRS:NAP
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Downlink.Signals.Brs.BrsCls
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,20 @@
+Gain
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:CEMulation:MIMO:TAP<CH>:GVECtor:BE:GAIN
+
+.. code-block:: python
+
+	[SOURce<HW>]:CEMulation:MIMO:TAP<CH>:GVECtor:BE:GAIN
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.Mimo.Tap.Gvector.Be.Gain.GainCls
+	:members:
+	:undoc-members:
+	:noindex:

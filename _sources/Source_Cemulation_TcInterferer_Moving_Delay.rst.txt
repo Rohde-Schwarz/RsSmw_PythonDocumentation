@@ -1,0 +1,22 @@
+Delay
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:CEMulation:TCINterferer:MOVing:DELay:MAXimum
+	single: [SOURce<HW>]:CEMulation:TCINterferer:MOVing:DELay:MINimum
+
+.. code-block:: python
+
+	[SOURce<HW>]:CEMulation:TCINterferer:MOVing:DELay:MAXimum
+	[SOURce<HW>]:CEMulation:TCINterferer:MOVing:DELay:MINimum
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.TcInterferer.Moving.Delay.DelayCls
+	:members:
+	:undoc-members:
+	:noindex:

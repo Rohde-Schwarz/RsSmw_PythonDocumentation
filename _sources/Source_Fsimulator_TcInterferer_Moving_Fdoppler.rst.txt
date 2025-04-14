@@ -1,0 +1,22 @@
+Fdoppler
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:FSIMulator:TCINterferer:MOVing:FDOPpler:ACTual
+	single: [SOURce<HW>]:FSIMulator:TCINterferer:MOVing:FDOPpler
+
+.. code-block:: python
+
+	[SOURce<HW>]:FSIMulator:TCINterferer:MOVing:FDOPpler:ACTual
+	[SOURce<HW>]:FSIMulator:TCINterferer:MOVing:FDOPpler
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.TcInterferer.Moving.Fdoppler.FdopplerCls
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,30 @@
+Speed
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:CEMulation:DSSimulation:TOWertoair:SPEed:CRUise
+	single: [SOURce<HW>]:CEMulation:DSSimulation:TOWertoair:SPEed:DEParture
+	single: [SOURce<HW>]:CEMulation:DSSimulation:TOWertoair:SPEed:DESCent
+	single: [SOURce<HW>]:CEMulation:DSSimulation:TOWertoair:SPEed:STARt
+	single: [SOURce<HW>]:CEMulation:DSSimulation:TOWertoair:SPEed:TAKeoff
+	single: [SOURce<HW>]:CEMulation:DSSimulation:TOWertoair:SPEed:TOUChdown
+
+.. code-block:: python
+
+	[SOURce<HW>]:CEMulation:DSSimulation:TOWertoair:SPEed:CRUise
+	[SOURce<HW>]:CEMulation:DSSimulation:TOWertoair:SPEed:DEParture
+	[SOURce<HW>]:CEMulation:DSSimulation:TOWertoair:SPEed:DESCent
+	[SOURce<HW>]:CEMulation:DSSimulation:TOWertoair:SPEed:STARt
+	[SOURce<HW>]:CEMulation:DSSimulation:TOWertoair:SPEed:TAKeoff
+	[SOURce<HW>]:CEMulation:DSSimulation:TOWertoair:SPEed:TOUChdown
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.DsSimulation.TowerToAir.Speed.SpeedCls
+	:members:
+	:undoc-members:
+	:noindex:

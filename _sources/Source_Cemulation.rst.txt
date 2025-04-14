@@ -1,0 +1,90 @@
+Cemulation
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:CEMulation:CATalog
+	single: [SOURce<HW>]:CEMulation:CONFiguration
+	single: [SOURce<HW>]:CEMulation:CSPeed
+	single: [SOURce<HW>]:CEMulation:DELETE
+	single: [SOURce<HW>]:CEMulation:FILTer
+	single: [SOURce<HW>]:CEMulation:KCONstant
+	single: [SOURce<HW>]:CEMulation:LOAD
+	single: [SOURce<HW>]:CEMulation:PLENgth
+	single: [SOURce<HW>]:CEMulation:PRESet
+	single: [SOURce<HW>]:CEMulation:ROUTe
+	single: [SOURce<HW>]:CEMulation:SDEStination
+	single: [SOURce<HW>]:CEMulation:STORe
+	single: [SOURce<HW>]:CEMulation:TPREset
+	single: [SOURce<HW>]:CEMulation:[STATe]
+
+.. code-block:: python
+
+	[SOURce<HW>]:CEMulation:CATalog
+	[SOURce<HW>]:CEMulation:CONFiguration
+	[SOURce<HW>]:CEMulation:CSPeed
+	[SOURce<HW>]:CEMulation:DELETE
+	[SOURce<HW>]:CEMulation:FILTer
+	[SOURce<HW>]:CEMulation:KCONstant
+	[SOURce<HW>]:CEMulation:LOAD
+	[SOURce<HW>]:CEMulation:PLENgth
+	[SOURce<HW>]:CEMulation:PRESet
+	[SOURce<HW>]:CEMulation:ROUTe
+	[SOURce<HW>]:CEMulation:SDEStination
+	[SOURce<HW>]:CEMulation:STORe
+	[SOURce<HW>]:CEMulation:TPREset
+	[SOURce<HW>]:CEMulation:[STATe]
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.CemulationCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.cemulation.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Cemulation_BirthDeath.rst
+	Source_Cemulation_Bypass.rst
+	Source_Cemulation_Cdynamic.rst
+	Source_Cemulation_Clock.rst
+	Source_Cemulation_Copy.rst
+	Source_Cemulation_Couple.rst
+	Source_Cemulation_Delay.rst
+	Source_Cemulation_DelPy.rst
+	Source_Cemulation_Doppler.rst
+	Source_Cemulation_DsSimulation.rst
+	Source_Cemulation_Frequency.rst
+	Source_Cemulation_Globale.rst
+	Source_Cemulation_Hopping.rst
+	Source_Cemulation_HsTrain.rst
+	Source_Cemulation_Ignore.rst
+	Source_Cemulation_Iloss.rst
+	Source_Cemulation_Mdelay.rst
+	Source_Cemulation_Mimo.rst
+	Source_Cemulation_Phase.rst
+	Source_Cemulation_Restart.rst
+	Source_Cemulation_Scm.rst
+	Source_Cemulation_Siso.rst
+	Source_Cemulation_Speed.rst
+	Source_Cemulation_Standard.rst
+	Source_Cemulation_Sum.rst
+	Source_Cemulation_Synchronize.rst
+	Source_Cemulation_TcInterferer.rst
+	Source_Cemulation_Test.rst

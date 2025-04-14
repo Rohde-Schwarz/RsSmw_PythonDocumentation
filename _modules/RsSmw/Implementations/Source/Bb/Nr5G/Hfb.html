@@ -1,0 +1,406 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../../../../../">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RsSmw.Implementations.Source.Bb.Nr5G.Hfb &mdash; RsSmw 5.30.305.84 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../../../../../_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="../../../../../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../../../../../_static/copybutton.css?v=76b2166b" />
+
+  
+      <script src="../../../../../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../../../../../_static/documentation_options.js?v=17bca7dd"></script>
+      <script src="../../../../../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../../../../../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../../../../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../../../../index.html" class="icon icon-home">
+            RsSmw
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../readme.html">Revision History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../enums.html">Enums</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../repcap.html">RepCaps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../RsSmw.html">RsSmw API Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../utilities.html">RsSmw Utilities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../logger.html">RsSmw Logger</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../events.html">RsSmw Events</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../genindex.html">Index</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../../../index.html">RsSmw</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../../../index.html">Module code</a></li>
+          <li class="breadcrumb-item"><a href="../../../Source.html">RsSmw.Implementations.Source</a></li>
+          <li class="breadcrumb-item"><a href="../../Bb.html">RsSmw.Implementations.Source.Bb</a></li>
+          <li class="breadcrumb-item"><a href="../Nr5G.html">RsSmw.Implementations.Source.Bb.Nr5G</a></li>
+      <li class="breadcrumb-item active">RsSmw.Implementations.Source.Bb.Nr5G.Hfb</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Source code for RsSmw.Implementations.Source.Bb.Nr5G.Hfb</h1><div class="highlight"><pre>
+<span></span><span class="kn">from</span><span class="w"> </span><span class="nn">......Internal.Core</span><span class="w"> </span><span class="kn">import</span> <span class="n">Core</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">......Internal.CommandsGroup</span><span class="w"> </span><span class="kn">import</span> <span class="n">CommandsGroup</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">......Internal</span><span class="w"> </span><span class="kn">import</span> <span class="n">Conversions</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">......Internal.Utilities</span><span class="w"> </span><span class="kn">import</span> <span class="n">trim_str_response</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">......</span><span class="w"> </span><span class="kn">import</span> <span class="n">enums</span>
+
+
+<span class="c1"># noinspection PyPep8Naming,PyAttributeOutsideInit,SpellCheckingInspection</span>
+<div class="viewcode-block" id="HfbCls">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Nr5G_Hfb.html#RsSmw.Implementations.Source.Bb.Nr5G.Hfb.HfbCls">[docs]</a>
+<span class="k">class</span><span class="w"> </span><span class="nc">HfbCls</span><span class="p">:</span>
+<span class="w">	</span><span class="sd">&quot;&quot;&quot;Hfb commands group definition. 18 total commands, 1 Subgroups, 12 group commands&quot;&quot;&quot;</span>
+
+	<span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">core</span><span class="p">:</span> <span class="n">Core</span><span class="p">,</span> <span class="n">parent</span><span class="p">):</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span> <span class="o">=</span> <span class="n">core</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span> <span class="o">=</span> <span class="n">CommandsGroup</span><span class="p">(</span><span class="s2">&quot;hfb&quot;</span><span class="p">,</span> <span class="n">core</span><span class="p">,</span> <span class="n">parent</span><span class="p">)</span>
+
+	<span class="nd">@property</span>
+	<span class="k">def</span><span class="w"> </span><span class="nf">ethernet</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;ethernet commands group. 1 Sub-classes, 1 commands.&quot;&quot;&quot;</span>
+		<span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;_ethernet&#39;</span><span class="p">):</span>
+			<span class="kn">from</span><span class="w"> </span><span class="nn">.Ethernet</span><span class="w"> </span><span class="kn">import</span> <span class="n">EthernetCls</span>
+			<span class="bp">self</span><span class="o">.</span><span class="n">_ethernet</span> <span class="o">=</span> <span class="n">EthernetCls</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span><span class="p">)</span>
+		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_ethernet</span>
+
+<div class="viewcode-block" id="HfbCls.get_adj_cmd">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Nr5G_Hfb.html#RsSmw.Implementations.Source.Bb.Nr5G.Hfb.HfbCls.get_adj_cmd">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_adj_cmd</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:NR5G:HFB:ADJCmd \n</span>
+<span class="sd">		Snippet: value: int = driver.source.bb.nr5G.hfb.get_adj_cmd() \n</span>
+<span class="sd">		No command help available \n</span>
+<span class="sd">			:return: init_timing_adj_cm: No help available</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:NR5G:HFB:ADJCmd?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_int</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="HfbCls.get_baseband">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Nr5G_Hfb.html#RsSmw.Implementations.Source.Bb.Nr5G.Hfb.HfbCls.get_baseband">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_baseband</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:NR5G:HFB:BASeband \n</span>
+<span class="sd">		Snippet: value: int = driver.source.bb.nr5G.hfb.get_baseband() \n</span>
+<span class="sd">		In serial mode, required for multiplexing serial commands for different basebands to one feedback line. See also Example</span>
+<span class="sd">		&#39;Configuring the &#39;Baseband Selector&#39; for the 2 Tx antenna ports test cases&#39;. \n</span>
+<span class="sd">			:return: fb_baseband: integer Range: 0 to 3</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:NR5G:HFB:BASeband?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_int</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="HfbCls.get_connector">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Nr5G_Hfb.html#RsSmw.Implementations.Source.Bb.Nr5G.Hfb.HfbCls.get_connector">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_connector</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">enums</span><span class="o">.</span><span class="n">FeedbackConnectorAll</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:NR5G:HFB:CONNector \n</span>
+<span class="sd">		Snippet: value: enums.FeedbackConnectorAll = driver.source.bb.nr5G.hfb.get_connector() \n</span>
+<span class="sd">		Sets the feedback line connector. \n</span>
+<span class="sd">			:return: fb_connector: LOCal LOCal T/M 3 connector</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:NR5G:HFB:CONNector?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_scalar_enum</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">FeedbackConnectorAll</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="HfbCls.set_connector">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Nr5G_Hfb.html#RsSmw.Implementations.Source.Bb.Nr5G.Hfb.HfbCls.set_connector">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_connector</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">fb_connector</span><span class="p">:</span> <span class="n">enums</span><span class="o">.</span><span class="n">FeedbackConnectorAll</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:NR5G:HFB:CONNector \n</span>
+<span class="sd">		Snippet: driver.source.bb.nr5G.hfb.set_connector(fb_connector = enums.FeedbackConnectorAll.LOCal) \n</span>
+<span class="sd">		Sets the feedback line connector. \n</span>
+<span class="sd">			:param fb_connector: No help available</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">enum_scalar_to_str</span><span class="p">(</span><span class="n">fb_connector</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">FeedbackConnectorAll</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:NR5G:HFB:CONNector </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="HfbCls.get_cs_rate">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Nr5G_Hfb.html#RsSmw.Implementations.Source.Bb.Nr5G.Hfb.HfbCls.get_cs_rate">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_cs_rate</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:NR5G:HFB:CSRate \n</span>
+<span class="sd">		Snippet: value: int = driver.source.bb.nr5G.hfb.get_cs_rate() \n</span>
+<span class="sd">		Defines a custom serial rate.</span>
+<span class="sd">			INTRO_CMD_HELP: Prerequisites for this command \n</span>
+<span class="sd">			- Select a custom serial rate ([:SOURce&lt;hw&gt;]:BB:NR5G:HFB:SRATe) .</span>
+<span class="sd">		If you have defined one of the predefined serial rates, the command queries the selected serial rate. \n</span>
+<span class="sd">			:return: custom_ser_rate: No help available</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:NR5G:HFB:CSRate?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_int</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="HfbCls.get_delay">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Nr5G_Hfb.html#RsSmw.Implementations.Source.Bb.Nr5G.Hfb.HfbCls.get_delay">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_delay</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:NR5G:HFB:DELay \n</span>
+<span class="sd">		Snippet: value: float = driver.source.bb.nr5G.hfb.get_delay() \n</span>
+<span class="sd">		Sets the point in time when the feedback can be sent to the instrument. \n</span>
+<span class="sd">			:return: fb_user_delay: float Range: -20 to -1.0</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:NR5G:HFB:DELay?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_float</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="HfbCls.get_hpn_mode">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Nr5G_Hfb.html#RsSmw.Implementations.Source.Bb.Nr5G.Hfb.HfbCls.get_hpn_mode">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_hpn_mode</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:NR5G:HFB:HPNMode \n</span>
+<span class="sd">		Snippet: value: bool = driver.source.bb.nr5G.hfb.get_hpn_mode() \n</span>
+<span class="sd">		Enables or disables the HARQ process number (HPN) mode. When the &#39;HPN Mode&#39; is set to active, the additional user delay</span>
+<span class="sd">		is set to -1.00 Slots and made unchangeable. An additional &#39;HARQ Process Number&#39;parameter is accessible in the PUSCH</span>
+<span class="sd">		settings (&#39;PDSCH and PUSCH scheduling commands&#39;) . \n</span>
+<span class="sd">			:return: hpn_mode: 1| ON| 0| OFF</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:NR5G:HFB:HPNMode?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_bool</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="HfbCls.set_hpn_mode">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Nr5G_Hfb.html#RsSmw.Implementations.Source.Bb.Nr5G.Hfb.HfbCls.set_hpn_mode">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_hpn_mode</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">hpn_mode</span><span class="p">:</span> <span class="nb">bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:NR5G:HFB:HPNMode \n</span>
+<span class="sd">		Snippet: driver.source.bb.nr5G.hfb.set_hpn_mode(hpn_mode = False) \n</span>
+<span class="sd">		Enables or disables the HARQ process number (HPN) mode. When the &#39;HPN Mode&#39; is set to active, the additional user delay</span>
+<span class="sd">		is set to -1.00 Slots and made unchangeable. An additional &#39;HARQ Process Number&#39;parameter is accessible in the PUSCH</span>
+<span class="sd">		settings (&#39;PDSCH and PUSCH scheduling commands&#39;) . \n</span>
+<span class="sd">			:param hpn_mode: 1| ON| 0| OFF</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">bool_to_str</span><span class="p">(</span><span class="n">hpn_mode</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:NR5G:HFB:HPNMode </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="HfbCls.get_log_path">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Nr5G_Hfb.html#RsSmw.Implementations.Source.Bb.Nr5G.Hfb.HfbCls.get_log_path">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_log_path</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:NR5G:HFB:LOGPath \n</span>
+<span class="sd">		Snippet: value: str = driver.source.bb.nr5G.hfb.get_log_path() \n</span>
+<span class="sd">		Defines the output folder on the device for the log files. \n</span>
+<span class="sd">			:return: log_gen_output_path: string</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:NR5G:HFB:LOGPath?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">trim_str_response</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="HfbCls.get_log_state">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Nr5G_Hfb.html#RsSmw.Implementations.Source.Bb.Nr5G.Hfb.HfbCls.get_log_state">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_log_state</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:NR5G:HFB:LOGState \n</span>
+<span class="sd">		Snippet: value: bool = driver.source.bb.nr5G.hfb.get_log_state() \n</span>
+<span class="sd">		Enables the R&amp;S SMW200A to create and store debug reports, i.e. log files with detailed information on the real-time</span>
+<span class="sd">		feedback.</span>
+<span class="sd">			INTRO_CMD_HELP: The instrument generates two types of reports: \n</span>
+<span class="sd">			- Transmission report</span>
+<span class="sd">			Table Header:  \n</span>
+<span class="sd">			- This file contains information about what is sent (e.g. redundancy versions) during the first 100 slots after triggering.</span>
+<span class="sd">			- File is created after the 100 slots are sent.</span>
+<span class="sd">			- Reception report</span>
+<span class="sd">			Table Header:  \n</span>
+<span class="sd">			- This file contains information about the first 100 received serial commands.</span>
+<span class="sd">			- File is created after 100 commands are successfully received.</span>
+<span class="sd">		Use these debug files for troubleshooting of complex real-time feedback tests. \n</span>
+<span class="sd">			:return: log_gen_state: 1| ON| 0| OFF</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:NR5G:HFB:LOGState?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_bool</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="HfbCls.set_log_state">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Nr5G_Hfb.html#RsSmw.Implementations.Source.Bb.Nr5G.Hfb.HfbCls.set_log_state">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_log_state</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">log_gen_state</span><span class="p">:</span> <span class="nb">bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:NR5G:HFB:LOGState \n</span>
+<span class="sd">		Snippet: driver.source.bb.nr5G.hfb.set_log_state(log_gen_state = False) \n</span>
+<span class="sd">		Enables the R&amp;S SMW200A to create and store debug reports, i.e. log files with detailed information on the real-time</span>
+<span class="sd">		feedback.</span>
+<span class="sd">			INTRO_CMD_HELP: The instrument generates two types of reports: \n</span>
+<span class="sd">			- Transmission report</span>
+<span class="sd">			Table Header:  \n</span>
+<span class="sd">			- This file contains information about what is sent (e.g. redundancy versions) during the first 100 slots after triggering.</span>
+<span class="sd">			- File is created after the 100 slots are sent.</span>
+<span class="sd">			- Reception report</span>
+<span class="sd">			Table Header:  \n</span>
+<span class="sd">			- This file contains information about the first 100 received serial commands.</span>
+<span class="sd">			- File is created after 100 commands are successfully received.</span>
+<span class="sd">		Use these debug files for troubleshooting of complex real-time feedback tests. \n</span>
+<span class="sd">			:param log_gen_state: 1| ON| 0| OFF</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">bool_to_str</span><span class="p">(</span><span class="n">log_gen_state</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:NR5G:HFB:LOGState </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="HfbCls.get_mode">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Nr5G_Hfb.html#RsSmw.Implementations.Source.Bb.Nr5G.Hfb.HfbCls.get_mode">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_mode</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">enums</span><span class="o">.</span><span class="n">FeedbackModeWithEthernet</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:NR5G:HFB:MODE \n</span>
+<span class="sd">		Snippet: value: enums.FeedbackModeWithEthernet = driver.source.bb.nr5G.hfb.get_mode() \n</span>
+<span class="sd">		Enables real-time feedback and determines the mode of the feedback line. \n</span>
+<span class="sd">			:return: fb_mode: OFF| SERial| S3X8 ETH Ethernet feedback mode. OFF Feedback is off. SERial Serial feedback mode. S3X8 Serial 3x8 feedback mode.</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:NR5G:HFB:MODE?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_scalar_enum</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">FeedbackModeWithEthernet</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="HfbCls.set_mode">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Nr5G_Hfb.html#RsSmw.Implementations.Source.Bb.Nr5G.Hfb.HfbCls.set_mode">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_mode</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">fb_mode</span><span class="p">:</span> <span class="n">enums</span><span class="o">.</span><span class="n">FeedbackModeWithEthernet</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:NR5G:HFB:MODE \n</span>
+<span class="sd">		Snippet: driver.source.bb.nr5G.hfb.set_mode(fb_mode = enums.FeedbackModeWithEthernet.ETH) \n</span>
+<span class="sd">		Enables real-time feedback and determines the mode of the feedback line. \n</span>
+<span class="sd">			:param fb_mode: OFF| SERial| S3X8 ETH Ethernet feedback mode. OFF Feedback is off. SERial Serial feedback mode. S3X8 Serial 3x8 feedback mode.</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">enum_scalar_to_str</span><span class="p">(</span><span class="n">fb_mode</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">FeedbackModeWithEthernet</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:NR5G:HFB:MODE </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="HfbCls.get_pdelay">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Nr5G_Hfb.html#RsSmw.Implementations.Source.Bb.Nr5G.Hfb.HfbCls.get_pdelay">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_pdelay</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:NR5G:HFB:PDELay \n</span>
+<span class="sd">		Snippet: value: float = driver.source.bb.nr5G.hfb.get_pdelay() \n</span>
+<span class="sd">		Sets a delay to the slot to which the timing adjustment command (TA) is applied. For example, if &#39;Processing Delay&#39; is</span>
+<span class="sd">		set to -2.00 and the TA is received in slot number 6, after processing, the TA is transmitted in slot number 8. If &#39;TA</span>
+<span class="sd">		State&#39; &gt; &#39;Off&#39;, the value set for &#39;Feedback Delay&#39; is used for &#39;Processing Delay&#39;. \n</span>
+<span class="sd">			:return: processing_delay: float Range: -20 to -1</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:NR5G:HFB:PDELay?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_float</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="HfbCls.get_symbol_rate">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Nr5G_Hfb.html#RsSmw.Implementations.Source.Bb.Nr5G.Hfb.HfbCls.get_symbol_rate">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_symbol_rate</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">enums</span><span class="o">.</span><span class="n">FeedbackRateAll</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:NR5G:HFB:SRATe \n</span>
+<span class="sd">		Snippet: value: enums.FeedbackRateAll = driver.source.bb.nr5G.hfb.get_symbol_rate() \n</span>
+<span class="sd">		Sets the bit rate of the serial transmission. For test cases with high subcarrier spacing (SCS) and short slot duration,</span>
+<span class="sd">		a serial rate of 115.2 kbps is insufficient. We recommend that you use higher serial rate so that at least one feedback</span>
+<span class="sd">		command per slot is received. \n</span>
+<span class="sd">			:return: fb_serial_rate: No help available</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:NR5G:HFB:SRATe?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_scalar_enum</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">FeedbackRateAll</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="HfbCls.set_symbol_rate">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Nr5G_Hfb.html#RsSmw.Implementations.Source.Bb.Nr5G.Hfb.HfbCls.set_symbol_rate">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_symbol_rate</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">fb_serial_rate</span><span class="p">:</span> <span class="n">enums</span><span class="o">.</span><span class="n">FeedbackRateAll</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:NR5G:HFB:SRATe \n</span>
+<span class="sd">		Snippet: driver.source.bb.nr5G.hfb.set_symbol_rate(fb_serial_rate = enums.FeedbackRateAll.CUST) \n</span>
+<span class="sd">		Sets the bit rate of the serial transmission. For test cases with high subcarrier spacing (SCS) and short slot duration,</span>
+<span class="sd">		a serial rate of 115.2 kbps is insufficient. We recommend that you use higher serial rate so that at least one feedback</span>
+<span class="sd">		command per slot is received. \n</span>
+<span class="sd">			:param fb_serial_rate: R115 | R1M6 | R1M9 115.2 kbps, 1.6 Mbps, 1.92 Mbps CUST Custom serial rate. You can define the serial rate with [:SOURcehw]:BB:NR5G:HFB:CSRate.</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">enum_scalar_to_str</span><span class="p">(</span><span class="n">fb_serial_rate</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">FeedbackRateAll</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:NR5G:HFB:SRATe </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="HfbCls.get_ta_mode">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Nr5G_Hfb.html#RsSmw.Implementations.Source.Bb.Nr5G.Hfb.HfbCls.get_ta_mode">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_ta_mode</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:NR5G:HFB:TAMode \n</span>
+<span class="sd">		Snippet: value: bool = driver.source.bb.nr5G.hfb.get_ta_mode() \n</span>
+<span class="sd">		Enables timing advance (TA) adjustment for the selected feedback mode. The TA adjustment uses the &#39;Processing Delay&#39; to</span>
+<span class="sd">		define a new timing advance value for advancing or delaying the UL transmission. \n</span>
+<span class="sd">			:return: ta_mode: 1| ON| 0| OFF</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:NR5G:HFB:TAMode?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_bool</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="HfbCls.set_ta_mode">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Nr5G_Hfb.html#RsSmw.Implementations.Source.Bb.Nr5G.Hfb.HfbCls.set_ta_mode">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_ta_mode</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ta_mode</span><span class="p">:</span> <span class="nb">bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:NR5G:HFB:TAMode \n</span>
+<span class="sd">		Snippet: driver.source.bb.nr5G.hfb.set_ta_mode(ta_mode = False) \n</span>
+<span class="sd">		Enables timing advance (TA) adjustment for the selected feedback mode. The TA adjustment uses the &#39;Processing Delay&#39; to</span>
+<span class="sd">		define a new timing advance value for advancing or delaying the UL transmission. \n</span>
+<span class="sd">			:param ta_mode: 1| ON| 0| OFF</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">bool_to_str</span><span class="p">(</span><span class="n">ta_mode</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:NR5G:HFB:TAMode </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+	<span class="k">def</span><span class="w"> </span><span class="nf">clone</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s1">&#39;HfbCls&#39;</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;Clones the group by creating new object from it and its whole existing subgroups</span>
+<span class="sd">		Also copies all the existing default Repeated Capabilities setting,</span>
+<span class="sd">		which you can change independently without affecting the original group&quot;&quot;&quot;</span>
+		<span class="n">new_group</span> <span class="o">=</span> <span class="n">HfbCls</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span><span class="o">.</span><span class="n">parent</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span><span class="o">.</span><span class="n">synchronize_repcaps</span><span class="p">(</span><span class="n">new_group</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">new_group</span></div>
+
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright © Rohde &amp; Schwarz 2023.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+Mountpoint
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:GNSS:RTK:BASE<ST>:MOUNtpoint
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:GNSS:RTK:BASE<ST>:MOUNtpoint
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Gnss.Rtk.Base.Mountpoint.MountpointCls
+	:members:
+	:undoc-members:
+	:noindex:

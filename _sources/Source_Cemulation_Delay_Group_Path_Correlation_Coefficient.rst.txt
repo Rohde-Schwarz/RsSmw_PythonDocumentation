@@ -1,0 +1,20 @@
+Coefficient
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:CEMulation:DELay:GROup<ST>:PATH<CH>:CORRelation:COEFficient
+
+.. code-block:: python
+
+	[SOURce<HW>]:CEMulation:DELay:GROup<ST>:PATH<CH>:CORRelation:COEFficient
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.Delay.Group.Path.Correlation.Coefficient.CoefficientCls
+	:members:
+	:undoc-members:
+	:noindex:

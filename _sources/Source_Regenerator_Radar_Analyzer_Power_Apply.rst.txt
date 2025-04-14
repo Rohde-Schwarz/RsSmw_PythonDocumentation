@@ -1,0 +1,20 @@
+Apply
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:REGenerator:RADar:ANALyzer:POWer:APPLy
+
+.. code-block:: python
+
+	[SOURce<HW>]:REGenerator:RADar:ANALyzer:POWer:APPLy
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Regenerator.Radar.Analyzer.Power.Apply.ApplyCls
+	:members:
+	:undoc-members:
+	:noindex:

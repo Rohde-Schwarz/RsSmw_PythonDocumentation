@@ -1,0 +1,20 @@
+Tsn
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:DVB:DVBS:TTAB:TSL<CH0>:TSN
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:DVB:DVBS:TTAB:TSL<CH0>:TSN
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dvb.Dvbs.Ttab.Tsl.Tsn.TsnCls
+	:members:
+	:undoc-members:
+	:noindex:

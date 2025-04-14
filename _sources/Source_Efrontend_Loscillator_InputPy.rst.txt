@@ -1,0 +1,20 @@
+InputPy
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:EFRontend:LOSCillator:INPut:FREQuency
+
+.. code-block:: python
+
+	[SOURce<HW>]:EFRontend:LOSCillator:INPut:FREQuency
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Efrontend.Loscillator.InputPy.InputPyCls
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,20 @@
+Maximum
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:EFRontend:EXTDevice<ID>:FREQuency:MAXimum
+
+.. code-block:: python
+
+	[SOURce<HW>]:EFRontend:EXTDevice<ID>:FREQuency:MAXimum
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Efrontend.ExtDevice.Frequency.Maximum.MaximumCls
+	:members:
+	:undoc-members:
+	:noindex:

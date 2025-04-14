@@ -1,0 +1,37 @@
+Coordinates
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:CEMulation:DSSimulation:SHIPtoship:TX:COORdinates:DMS
+
+.. code-block:: python
+
+	[SOURce<HW>]:CEMulation:DSSimulation:SHIPtoship:TX:COORdinates:DMS
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.DsSimulation.Shiptoship.Tx.Coordinates.CoordinatesCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.cemulation.dsSimulation.shiptoship.tx.coordinates.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Cemulation_DsSimulation_Shiptoship_Tx_Coordinates_Decimal.rst

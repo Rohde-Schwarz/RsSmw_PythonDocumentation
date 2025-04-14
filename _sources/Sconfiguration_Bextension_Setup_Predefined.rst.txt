@@ -1,0 +1,20 @@
+Predefined
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: SCONfiguration:BEXTension:SETup:PREDefined:CATalog
+
+.. code-block:: python
+
+	SCONfiguration:BEXTension:SETup:PREDefined:CATalog
+
+
+
+.. autoclass:: RsSmw.Implementations.Sconfiguration.Bextension.Setup.Predefined.PredefinedCls
+	:members:
+	:undoc-members:
+	:noindex:

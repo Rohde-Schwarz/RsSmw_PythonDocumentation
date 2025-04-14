@@ -1,0 +1,20 @@
+Output
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:ESEQuencer:STReam<DI>:OUTPut
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:ESEQuencer:STReam<DI>:OUTPut
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Esequencer.Stream.Output.OutputCls
+	:members:
+	:undoc-members:
+	:noindex:

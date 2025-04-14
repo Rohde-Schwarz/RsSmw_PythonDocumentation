@@ -1,0 +1,20 @@
+Healthy
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:GNSS:SVID<CH>:XONA:HEALthy
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:GNSS:SVID<CH>:XONA:HEALthy
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Gnss.Svid.Xona.Healthy.HealthyCls
+	:members:
+	:undoc-members:
+	:noindex:

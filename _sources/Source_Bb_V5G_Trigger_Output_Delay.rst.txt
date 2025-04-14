@@ -1,0 +1,40 @@
+Delay
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:V5G:TRIGger:OUTPut<CH>:DELay
+	single: [SOURce<HW>]:BB:V5G:TRIGger:OUTPut:DELay:FIXed
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:V5G:TRIGger:OUTPut<CH>:DELay
+	[SOURce<HW>]:BB:V5G:TRIGger:OUTPut:DELay:FIXed
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Trigger.Output.Delay.DelayCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.v5G.trigger.output.delay.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_V5G_Trigger_Output_Delay_Maximum.rst
+	Source_Bb_V5G_Trigger_Output_Delay_Minimum.rst

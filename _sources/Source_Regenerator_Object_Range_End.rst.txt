@@ -1,0 +1,20 @@
+End
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:REGenerator:OBJect<CH>:RANGe:END
+
+.. code-block:: python
+
+	[SOURce<HW>]:REGenerator:OBJect<CH>:RANGe:END
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Regenerator.Object.Range.End.EndCls
+	:members:
+	:undoc-members:
+	:noindex:

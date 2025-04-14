@@ -1,0 +1,20 @@
+Tag
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:ESEQuencer:RTCI:[SEQuencer<ST>]:WAVE:TAG
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:ESEQuencer:RTCI:[SEQuencer<ST>]:WAVE:TAG
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Esequencer.Rtci.Sequencer.Wave.Tag.TagCls
+	:members:
+	:undoc-members:
+	:noindex:

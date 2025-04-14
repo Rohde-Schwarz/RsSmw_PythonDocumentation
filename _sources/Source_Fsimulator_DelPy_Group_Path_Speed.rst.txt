@@ -1,0 +1,20 @@
+Speed
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:FSIMulator:DEL:GROup<ST>:PATH<CH>:SPEed
+
+.. code-block:: python
+
+	[SOURce<HW>]:FSIMulator:DEL:GROup<ST>:PATH<CH>:SPEed
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.DelPy.Group.Path.Speed.SpeedCls
+	:members:
+	:undoc-members:
+	:noindex:

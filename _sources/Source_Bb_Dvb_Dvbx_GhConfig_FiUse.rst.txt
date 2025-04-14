@@ -1,0 +1,20 @@
+FiUse
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:DVB:DVBX:GHConfig:FIUSe:[STATe]
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:DVB:DVBX:GHConfig:FIUSe:[STATe]
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dvb.Dvbx.GhConfig.FiUse.FiUseCls
+	:members:
+	:undoc-members:
+	:noindex:

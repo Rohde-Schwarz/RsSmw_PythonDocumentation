@@ -1,0 +1,33 @@
+Xpusch
+----------------------------------------
+
+
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Uplink.Subf.Alloc.Xpusch.XpuschCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.v5G.uplink.subf.alloc.xpusch.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_V5G_Uplink_Subf_Alloc_Xpusch_Modulation.rst
+	Source_Bb_V5G_Uplink_Subf_Alloc_Xpusch_PhysBits.rst
+	Source_Bb_V5G_Uplink_Subf_Alloc_Xpusch_Power.rst
+	Source_Bb_V5G_Uplink_Subf_Alloc_Xpusch_RbCount.rst
+	Source_Bb_V5G_Uplink_Subf_Alloc_Xpusch_RbOffset.rst
+	Source_Bb_V5G_Uplink_Subf_Alloc_Xpusch_State.rst

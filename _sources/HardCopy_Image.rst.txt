@@ -1,0 +1,20 @@
+Image
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: HCOPy:IMAGe:FORMat
+
+.. code-block:: python
+
+	HCOPy:IMAGe:FORMat
+
+
+
+.. autoclass:: RsSmw.Implementations.HardCopy.Image.ImageCls
+	:members:
+	:undoc-members:
+	:noindex:

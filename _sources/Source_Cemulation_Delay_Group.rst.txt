@@ -1,0 +1,36 @@
+Group<FadingGroup>
+----------------------------------------
+
+.. rubric:: RepCap Settings
+
+.. code-block:: python
+
+	# Range: Nr1 .. Nr4
+	rc = driver.source.cemulation.delay.group.repcap_fadingGroup_get()
+	driver.source.cemulation.delay.group.repcap_fadingGroup_set(repcap.FadingGroup.Nr1)
+
+
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.Delay.Group.GroupCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.cemulation.delay.group.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Cemulation_Delay_Group_Path.rst

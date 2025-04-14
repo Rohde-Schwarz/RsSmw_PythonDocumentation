@@ -1,0 +1,42 @@
+Rx
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:FSIMulator:MIMO:ANTenna:RX:PATTern
+
+.. code-block:: python
+
+	[SOURce<HW>]:FSIMulator:MIMO:ANTenna:RX:PATTern
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.Mimo.Antenna.Rx.RxCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.fsimulator.mimo.antenna.rx.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Fsimulator_Mimo_Antenna_Rx_Antenna.rst
+	Source_Fsimulator_Mimo_Antenna_Rx_Calc.rst
+	Source_Fsimulator_Mimo_Antenna_Rx_Column.rst
+	Source_Fsimulator_Mimo_Antenna_Rx_Espacing.rst
+	Source_Fsimulator_Mimo_Antenna_Rx_Polarization.rst
+	Source_Fsimulator_Mimo_Antenna_Rx_Rows.rst

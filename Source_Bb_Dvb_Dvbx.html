@@ -1,0 +1,908 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dvbx &mdash; RsSmw 5.30.305.84 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=17bca7dd"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="AdLength" href="Source_Bb_Dvb_Dvbx_AdLength.html" />
+    <link rel="prev" title="Tslicing" href="Source_Bb_Dvb_Dvbt_Tps_Tslicing.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            RsSmw
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="readme.html">Revision History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="enums.html">Enums</a></li>
+<li class="toctree-l1"><a class="reference internal" href="repcap.html">RepCaps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">Examples</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="RsSmw.html">RsSmw API Structure</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Bert.html">Bert</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Bler.html">Bler</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Calibration.html">Calibration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Clock.html">Clock</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Connector.html">Connector</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Device.html">Device</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Diagnostic.html">Diagnostic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Display.html">Display</a></li>
+<li class="toctree-l2"><a class="reference internal" href="FormatPy.html">FormatPy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Fpanel.html">Fpanel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="HardCopy.html">HardCopy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Initiate.html">Initiate&lt;Channel&gt;</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Kboard.html">Kboard</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MassMemory.html">MassMemory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Memory.html">Memory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Output.html">Output</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Read.html">Read&lt;Channel&gt;</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Sconfiguration.html">Sconfiguration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Sense.html">Sense&lt;Channel&gt;</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Service.html">Service</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slist.html">Slist</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="Source.html">Source</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="Source_Am.html">Am&lt;GeneratorIx&gt;</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Source_AreGenerator.html">AreGenerator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Source_Awgn.html">Awgn</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="Source_Bb.html">Bb</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="Source_Bb_Arbitrary.html">Arbitrary</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Source_Bb_Btooth.html">Btooth</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Source_Bb_C2K.html">C2K</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Source_Bb_Coder.html">Coder</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Source_Bb_Dab.html">Dab</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Source_Bb_Dm.html">Dm</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="Source_Bb_Dvb.html">Dvb</a><ul class="current">
+<li class="toctree-l5"><a class="reference internal" href="Source_Bb_Dvb_Clipping.html">Clipping</a></li>
+<li class="toctree-l5"><a class="reference internal" href="Source_Bb_Dvb_Clock.html">Clock</a></li>
+<li class="toctree-l5"><a class="reference internal" href="Source_Bb_Dvb_Dvbh.html">Dvbh</a></li>
+<li class="toctree-l5"><a class="reference internal" href="Source_Bb_Dvb_Dvbr.html">Dvbr</a></li>
+<li class="toctree-l5"><a class="reference internal" href="Source_Bb_Dvb_Dvbs.html">Dvbs</a></li>
+<li class="toctree-l5"><a class="reference internal" href="Source_Bb_Dvb_Dvbt.html">Dvbt</a></li>
+<li class="toctree-l5 current"><a class="current reference internal" href="#">Dvbx</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="Source_Bb_Dvb_Dvbx_AdLength.html">AdLength</a></li>
+<li class="toctree-l6"><a class="reference internal" href="Source_Bb_Dvb_Dvbx_BhConfig.html">BhConfig</a></li>
+<li class="toctree-l6"><a class="reference internal" href="Source_Bb_Dvb_Dvbx_Binterleaver.html">Binterleaver</a></li>
+<li class="toctree-l6"><a class="reference internal" href="Source_Bb_Dvb_Dvbx_Bscrambler.html">Bscrambler</a></li>
+<li class="toctree-l6"><a class="reference internal" href="Source_Bb_Dvb_Dvbx_CpnSequence.html">CpnSequence</a></li>
+<li class="toctree-l6"><a class="reference internal" href="Source_Bb_Dvb_Dvbx_Crc.html">Crc</a></li>
+<li class="toctree-l6"><a class="reference internal" href="Source_Bb_Dvb_Dvbx_Data.html">Data</a></li>
+<li class="toctree-l6"><a class="reference internal" href="Source_Bb_Dvb_Dvbx_GhConfig.html">GhConfig</a></li>
+<li class="toctree-l6"><a class="reference internal" href="Source_Bb_Dvb_Dvbx_Icoder.html">Icoder</a></li>
+<li class="toctree-l6"><a class="reference internal" href="Source_Bb_Dvb_Dvbx_Mtab.html">Mtab</a></li>
+<li class="toctree-l6"><a class="reference internal" href="Source_Bb_Dvb_Dvbx_Ocoder.html">Ocoder</a></li>
+<li class="toctree-l6"><a class="reference internal" href="Source_Bb_Dvb_Dvbx_Pscrambler.html">Pscrambler</a></li>
+<li class="toctree-l6"><a class="reference internal" href="Source_Bb_Dvb_Dvbx_Pstate.html">Pstate</a></li>
+<li class="toctree-l6"><a class="reference internal" href="Source_Bb_Dvb_Dvbx_SfbhConfig.html">SfbhConfig</a></li>
+<li class="toctree-l6"><a class="reference internal" href="Source_Bb_Dvb_Dvbx_SfConfig.html">SfConfig</a></li>
+<li class="toctree-l6"><a class="reference internal" href="Source_Bb_Dvb_Dvbx_ThConfig.html">ThConfig</a></li>
+<li class="toctree-l6"><a class="reference internal" href="Source_Bb_Dvb_Dvbx_Ttab.html">Ttab</a></li>
+<li class="toctree-l6"><a class="reference internal" href="Source_Bb_Dvb_Dvbx_UcMode.html">UcMode</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="Source_Bb_Dvb_FilterPy.html">FilterPy</a></li>
+<li class="toctree-l5"><a class="reference internal" href="Source_Bb_Dvb_Notch.html">Notch&lt;NotchFilter&gt;</a></li>
+<li class="toctree-l5"><a class="reference internal" href="Source_Bb_Dvb_Setting.html">Setting</a></li>
+<li class="toctree-l5"><a class="reference internal" href="Source_Bb_Dvb_SymbolRate.html">SymbolRate</a></li>
+<li class="toctree-l5"><a class="reference internal" href="Source_Bb_Dvb_Trigger.html">Trigger</a></li>
+<li class="toctree-l5"><a class="reference internal" href="Source_Bb_Dvb_Waveform.html">Waveform</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="Source_Bb_Esequencer.html">Esequencer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Source_Bb_Eutra.html">Eutra</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Source_Bb_Evdo.html">Evdo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Source_Bb_Gbas.html">Gbas</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Source_Bb_Gnpr.html">Gnpr</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Source_Bb_Gnss.html">Gnss</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Source_Bb_Graphics.html">Graphics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Source_Bb_Gsm.html">Gsm</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Source_Bb_Huwb.html">Huwb</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Source_Bb_Impairment.html">Impairment</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Source_Bb_Info.html">Info</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Source_Bb_Lora.html">Lora</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Source_Bb_Mccw.html">Mccw</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Source_Bb_Measurement.html">Measurement</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Source_Bb_Nfc.html">Nfc</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Source_Bb_Nr5G.html">Nr5G</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Source_Bb_Ofdm.html">Ofdm</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Source_Bb_Oneweb.html">Oneweb</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Source_Bb_Packet.html">Packet</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Source_Bb_Path.html">Path</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Source_Bb_Power.html">Power</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Source_Bb_Pramp.html">Pramp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Source_Bb_Progress.html">Progress</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Source_Bb_Tdscdma.html">Tdscdma</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Source_Bb_Tetra.html">Tetra</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Source_Bb_Trigger.html">Trigger</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Source_Bb_V5G.html">V5G</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Source_Bb_W3Gpp.html">W3Gpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Source_Bb_Wlad.html">Wlad</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Source_Bb_Wlay.html">Wlay</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Source_Bb_Wlnn.html">Wlnn</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Source_Bbin.html">Bbin</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Source_Bextension.html">Bextension</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Source_Cemulation.html">Cemulation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Source_Combined.html">Combined</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Source_Correction.html">Correction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Source_Dm.html">Dm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Source_Efrontend.html">Efrontend</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Source_Fm.html">Fm&lt;GeneratorIx&gt;</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Source_Frequency.html">Frequency</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Source_Fsimulator.html">Fsimulator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Source_InputPy.html">InputPy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Source_Iq.html">Iq</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Source_LfOutput.html">LfOutput&lt;LfOutput&gt;</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Source_ListPy.html">ListPy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Source_Modulation.html">Modulation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Source_Noise.html">Noise</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Source_Occupy.html">Occupy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Source_Path.html">Path</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Source_Pgenerator.html">Pgenerator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Source_Phase.html">Phase</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Source_Pm.html">Pm&lt;GeneratorIx&gt;</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Source_Power.html">Power</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Source_Pulm.html">Pulm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Source_Regenerator.html">Regenerator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Source_RfAlignment.html">RfAlignment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Source_Roscillator.html">Roscillator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Source_Sweep.html">Sweep</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Status.html">Status</a></li>
+<li class="toctree-l2"><a class="reference internal" href="System.html">System</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Test.html">Test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Trigger.html">Trigger&lt;InputIx&gt;</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Unit.html">Unit</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="utilities.html">RsSmw Utilities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="logger.html">RsSmw Logger</a></li>
+<li class="toctree-l1"><a class="reference internal" href="events.html">RsSmw Events</a></li>
+<li class="toctree-l1"><a class="reference internal" href="genindex.html">Index</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">RsSmw</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="RsSmw.html">RsSmw API Structure</a></li>
+          <li class="breadcrumb-item"><a href="Source.html">Source</a></li>
+          <li class="breadcrumb-item"><a href="Source_Bb.html">Bb</a></li>
+          <li class="breadcrumb-item"><a href="Source_Bb_Dvb.html">Dvb</a></li>
+      <li class="breadcrumb-item active">Dvbx</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/Source_Bb_Dvb_Dvbx.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="dvbx">
+<h1>Dvbx<a class="headerlink" href="#dvbx" title="Link to this heading"></a></h1>
+<p class="rubric">SCPI Commands :</p>
+<div class="highlight-python notranslate" id="index-0"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">SOURce</span><span class="o">&lt;</span><span class="n">HW</span><span class="o">&gt;</span><span class="p">]:</span><span class="n">BB</span><span class="p">:</span><span class="n">DVB</span><span class="p">:</span><span class="n">DVBX</span><span class="p">:</span><span class="n">AM</span>
+<span class="p">[</span><span class="n">SOURce</span><span class="o">&lt;</span><span class="n">HW</span><span class="o">&gt;</span><span class="p">]:</span><span class="n">BB</span><span class="p">:</span><span class="n">DVB</span><span class="p">:</span><span class="n">DVBX</span><span class="p">:</span><span class="n">BBFRames</span>
+<span class="p">[</span><span class="n">SOURce</span><span class="o">&lt;</span><span class="n">HW</span><span class="o">&gt;</span><span class="p">]:</span><span class="n">BB</span><span class="p">:</span><span class="n">DVB</span><span class="p">:</span><span class="n">DVBX</span><span class="p">:</span><span class="n">CTYPe</span>
+<span class="p">[</span><span class="n">SOURce</span><span class="o">&lt;</span><span class="n">HW</span><span class="o">&gt;</span><span class="p">]:</span><span class="n">BB</span><span class="p">:</span><span class="n">DVB</span><span class="p">:</span><span class="n">DVBX</span><span class="p">:</span><span class="n">FRAMes</span>
+<span class="p">[</span><span class="n">SOURce</span><span class="o">&lt;</span><span class="n">HW</span><span class="o">&gt;</span><span class="p">]:</span><span class="n">BB</span><span class="p">:</span><span class="n">DVB</span><span class="p">:</span><span class="n">DVBX</span><span class="p">:</span><span class="n">GSEQuence</span>
+<span class="p">[</span><span class="n">SOURce</span><span class="o">&lt;</span><span class="n">HW</span><span class="o">&gt;</span><span class="p">]:</span><span class="n">BB</span><span class="p">:</span><span class="n">DVB</span><span class="p">:</span><span class="n">DVBX</span><span class="p">:</span><span class="n">ISTReam</span>
+<span class="p">[</span><span class="n">SOURce</span><span class="o">&lt;</span><span class="n">HW</span><span class="o">&gt;</span><span class="p">]:</span><span class="n">BB</span><span class="p">:</span><span class="n">DVB</span><span class="p">:</span><span class="n">DVBX</span><span class="p">:</span><span class="n">MCOD</span>
+<span class="p">[</span><span class="n">SOURce</span><span class="o">&lt;</span><span class="n">HW</span><span class="o">&gt;</span><span class="p">]:</span><span class="n">BB</span><span class="p">:</span><span class="n">DVB</span><span class="p">:</span><span class="n">DVBX</span><span class="p">:</span><span class="n">MCUnique</span>
+<span class="p">[</span><span class="n">SOURce</span><span class="o">&lt;</span><span class="n">HW</span><span class="o">&gt;</span><span class="p">]:</span><span class="n">BB</span><span class="p">:</span><span class="n">DVB</span><span class="p">:</span><span class="n">DVBX</span><span class="p">:</span><span class="n">MODulation</span>
+<span class="p">[</span><span class="n">SOURce</span><span class="o">&lt;</span><span class="n">HW</span><span class="o">&gt;</span><span class="p">]:</span><span class="n">BB</span><span class="p">:</span><span class="n">DVB</span><span class="p">:</span><span class="n">DVBX</span><span class="p">:</span><span class="n">NOSettings</span>
+<span class="p">[</span><span class="n">SOURce</span><span class="o">&lt;</span><span class="n">HW</span><span class="o">&gt;</span><span class="p">]:</span><span class="n">BB</span><span class="p">:</span><span class="n">DVB</span><span class="p">:</span><span class="n">DVBX</span><span class="p">:</span><span class="n">NTSL</span>
+<span class="p">[</span><span class="n">SOURce</span><span class="o">&lt;</span><span class="n">HW</span><span class="o">&gt;</span><span class="p">]:</span><span class="n">BB</span><span class="p">:</span><span class="n">DVB</span><span class="p">:</span><span class="n">DVBX</span><span class="p">:</span><span class="n">SFACtor</span>
+<span class="p">[</span><span class="n">SOURce</span><span class="o">&lt;</span><span class="n">HW</span><span class="o">&gt;</span><span class="p">]:</span><span class="n">BB</span><span class="p">:</span><span class="n">DVB</span><span class="p">:</span><span class="n">DVBX</span><span class="p">:</span><span class="n">SFRames</span>
+<span class="p">[</span><span class="n">SOURce</span><span class="o">&lt;</span><span class="n">HW</span><span class="o">&gt;</span><span class="p">]:</span><span class="n">BB</span><span class="p">:</span><span class="n">DVB</span><span class="p">:</span><span class="n">DVBX</span><span class="p">:</span><span class="n">SSEQuence</span>
+<span class="p">[</span><span class="n">SOURce</span><span class="o">&lt;</span><span class="n">HW</span><span class="o">&gt;</span><span class="p">]:</span><span class="n">BB</span><span class="p">:</span><span class="n">DVB</span><span class="p">:</span><span class="n">DVBX</span><span class="p">:</span><span class="n">STYPe</span>
+<span class="p">[</span><span class="n">SOURce</span><span class="o">&lt;</span><span class="n">HW</span><span class="o">&gt;</span><span class="p">]:</span><span class="n">BB</span><span class="p">:</span><span class="n">DVB</span><span class="p">:</span><span class="n">DVBX</span><span class="p">:</span><span class="n">VSMode</span>
+</pre></div>
+</div>
+<dl class="py class">
+<dt class="sig sig-object py">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DvbxCls</span></span><a class="reference internal" href="_modules/RsSmw/Implementations/Source/Bb/Dvb/Dvbx.html#DvbxCls"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Dvbx commands group definition. 105 total commands, 18 Subgroups, 16 group commands</p>
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">get_am</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="reference internal" href="_modules/RsSmw/Implementations/Source/Bb/Dvb/Dvbx.html#DvbxCls.get_am"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBX:AM</span>
+<span class="n">value</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">source</span><span class="o">.</span><span class="n">bb</span><span class="o">.</span><span class="n">dvb</span><span class="o">.</span><span class="n">dvbx</span><span class="o">.</span><span class="n">get_am</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Enables the settings to configure the transmission format for wideband satellite transponders using time-slicing
+according to Annex M of and .</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">return<span class="colon">:</span></dt>
+<dd class="field-odd"><p>annex_m: 1| ON| 0| OFF</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">get_bb_frames</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="reference internal" href="_modules/RsSmw/Implementations/Source/Bb/Dvb/Dvbx.html#DvbxCls.get_bb_frames"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBX:BBFRames</span>
+<span class="n">value</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">source</span><span class="o">.</span><span class="n">bb</span><span class="o">.</span><span class="n">dvb</span><span class="o">.</span><span class="n">dvbx</span><span class="o">.</span><span class="n">get_bb_frames</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Queries the number of baseband frames. The number is available for complete transmission of pseudo-random noise (PN) bits
+as data source. The number depends on the length of the PN bit sequence, see Table ‘PN sequence length and number of BB
+frames’.</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">return<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bb_frames: integer Range: 1 to depends on settings</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">get_ctype</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">DvbS2XcodeTypeTsl</span></span></span><a class="reference internal" href="_modules/RsSmw/Implementations/Source/Bb/Dvb/Dvbx.html#DvbxCls.get_ctype"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBX:CTYPe</span>
+<span class="n">value</span><span class="p">:</span> <span class="n">enums</span><span class="o">.</span><span class="n">DvbS2XcodeTypeTsl</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">source</span><span class="o">.</span><span class="n">bb</span><span class="o">.</span><span class="n">dvb</span><span class="o">.</span><span class="n">dvbx</span><span class="o">.</span><span class="n">get_ctype</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Selects the code type.</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">return<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ctype: NORMal| MEDium| SHORt</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">get_frames</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="reference internal" href="_modules/RsSmw/Implementations/Source/Bb/Dvb/Dvbx.html#DvbxCls.get_frames"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBX:FRAMes</span>
+<span class="n">value</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">source</span><span class="o">.</span><span class="n">bb</span><span class="o">.</span><span class="n">dvb</span><span class="o">.</span><span class="n">dvbx</span><span class="o">.</span><span class="n">get_frames</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Sets the number of the transmitted frames.</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">return<span class="colon">:</span></dt>
+<dd class="field-odd"><p>frames: integer Range: 1 to max</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">get_gsequence</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="reference internal" href="_modules/RsSmw/Implementations/Source/Bb/Dvb/Dvbx.html#DvbxCls.get_gsequence"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBX:GSEQuence</span>
+<span class="n">value</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">source</span><span class="o">.</span><span class="n">bb</span><span class="o">.</span><span class="n">dvb</span><span class="o">.</span><span class="n">dvbx</span><span class="o">.</span><span class="n">get_gsequence</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Sets the gold sequence as part of the scrambling sequence.</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">return<span class="colon">:</span></dt>
+<dd class="field-odd"><p>gold_seq_index: integer Range: 0 to 262141</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">get_istream</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="reference internal" href="_modules/RsSmw/Implementations/Source/Bb/Dvb/Dvbx.html#DvbxCls.get_istream"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBX:ISTReam</span>
+<span class="n">value</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">source</span><span class="o">.</span><span class="n">bb</span><span class="o">.</span><span class="n">dvb</span><span class="o">.</span><span class="n">dvbx</span><span class="o">.</span><span class="n">get_istream</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Queries the input stream type.</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">return<span class="colon">:</span></dt>
+<dd class="field-odd"><p>istream: string</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">get_mc_unique</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">DvbS2XmodCodUnique</span></span></span><a class="reference internal" href="_modules/RsSmw/Implementations/Source/Bb/Dvb/Dvbx.html#DvbxCls.get_mc_unique"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBX:MCUnique</span>
+<span class="n">value</span><span class="p">:</span> <span class="n">enums</span><span class="o">.</span><span class="n">DvbS2XmodCodUnique</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">source</span><span class="o">.</span><span class="n">bb</span><span class="o">.</span><span class="n">dvb</span><span class="o">.</span><span class="n">dvbx</span><span class="o">.</span><span class="n">get_mc_unique</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Sets predefined modulation and coding schemes.</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">return<span class="colon">:</span></dt>
+<dd class="field-odd"><p>mod_cod_unique: MCU1| MCU2| MCU3| MCU4| MCU5| MCU6| MCU7| MCU8| MCU9| MCU10| MCU11| MCU12| MCU13| MCU14| MCU15| MCU16| MCU17| MCU18| MCU19| MCU20| MCU21| MCU22| MCU23| MCU24| MCU25| MCU26| MCU27| MCU28| MCU29| MCU30| MCU31| MCU32| MCU33| MCU34| MCU35| MCU36| MCU37| MCU38| MCU39| MCU40| MCU41| MCU42| MCU43| MCU44| MCU45| MCU46| MCU47| MCU48| MCU49| MCU50| MCU51| MCU52| MCU53| MCU54| MCU55| MCU56| MCU57| MCU58| MCU59| MCU60| MCU61| MCU62| MCU63| MCU64| MCU65| MCU66| MCU67| MCU68| MCU69| MCU70| MCU71| MCU72| MCU73| MCU74| MCU75| MCU76| MCU77| MCU78| MCU79| MCU80| MCU81| MCU82| MCU83| MCU84| MCU85| MCU86| MCU87| MCU88| MCU89| MCU90| MCU91| MCU92| MCU93| MCU94| MCU95| MCU96| MCU97| MCU98| MCU99| MCU100| MCU101| MCU102| MCU103| MCU104| MCU105| MCU106| MCU107| MCU108| MCU109| MCU110| MCU111| MCU112| MCU113| MCU114| MCU115| MCU116| MCU117| MCU118| MCU119| MCU120| MCU121| MCU122| MCU123| MCU124| MCU125| MCU126| MCU127| MCU128| MCU129| MCU130</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">get_mcod</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">DvbS2XmodCod</span></span></span><a class="reference internal" href="_modules/RsSmw/Implementations/Source/Bb/Dvb/Dvbx.html#DvbxCls.get_mcod"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBX:MCOD</span>
+<span class="n">value</span><span class="p">:</span> <span class="n">enums</span><span class="o">.</span><span class="n">DvbS2XmodCod</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">source</span><span class="o">.</span><span class="n">bb</span><span class="o">.</span><span class="n">dvb</span><span class="o">.</span><span class="n">dvbx</span><span class="o">.</span><span class="n">get_mcod</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Selects the MODCOD.</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">return<span class="colon">:</span></dt>
+<dd class="field-odd"><p>mod_cod: QPSK_S_14| QPSK_S_13| QPSK_S_25| QPSK_S_12| QPSK_S_35| QPSK_S_23| QPSK_S_34| QPSK_S_45| QPSK_S_56| QPSK_S_89| QPSK_S_910| PSK8_S_35| PSK8_S_23| PSK8_S_34| PSK8_S_56| PSK8_S_89| PSK8_S_910| APSK16_S_23| APSK16_S_34| APSK16_S_45| APSK16_S_56| APSK16_S_89| APSK16_S_910| APSK32_S_34| APSK32_S_45| APSK32_S_56| APSK32_S_89| APSK32_S_910| QPSK_X_N1345| QPSK_X_N920| QPSK_X_N1120| APSK8_X_N59L| APSK8_X_N2645L| PSK8_X_N2336| PSK8_X_N2536| PSK8_X_N1318| APSK16_X_N12L| APSK16_X_N815L| APSK16_X_N59L| APSK16_X_N2645| APSK16_X_N35| APSK16_X_N35L| APSK16_X_N2845| APSK16_X_N2336| APSK16_X_N23L| APSK16_X_N2536| APSK16_X_N1318| APSK16_X_N79| APSK16_X_N7790| APSK32_X_N23L| APSK32_X_N3245| APSK32_X_N1115| APSK32_X_N79| APSK64_X_N3245L| APSK64_X_N1115| APSK64_X_N79| APSK64_X_N45| APSK64_X_N56| APSK128_X_N34| APSK128_X_N79| APSK256_X_N2945L| APSK256_X_N23L| APSK256_X_N3145L| APSK256_X_N3245| APSK256_X_N1115L| APSK256_X_N34| QPSK_X_S1145| QPSK_X_S415| QPSK_X_S1445| QPSK_X_S715| QPSK_X_S815| QPSK_X_S3245| PSK8_X_S715| PSK8_X_S815| PSK8_X_S2645| PSK8_X_S3245| APSK16_X_S715| APSK16_X_S815| APSK16_X_S2645| APSK16_X_S35| APSK16_X_S3245| APSK32_X_S23| APSK32_X_S3245| QPSK_X_VN29| BPSK_X_VM15| BPSK_X_VM1145| BPSK_X_VM13| BPSK_X_VS15S| BPSK_X_VS1145| BPSK_X_VS15| BPSK_X_VS415| BPSK_X_VS13| QPSK_X_M15</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">get_modulation</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">DvbS2Xmodulation</span></span></span><a class="reference internal" href="_modules/RsSmw/Implementations/Source/Bb/Dvb/Dvbx.html#DvbxCls.get_modulation"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBX:MODulation</span>
+<span class="n">value</span><span class="p">:</span> <span class="n">enums</span><span class="o">.</span><span class="n">DvbS2Xmodulation</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">source</span><span class="o">.</span><span class="n">bb</span><span class="o">.</span><span class="n">dvb</span><span class="o">.</span><span class="n">dvbx</span><span class="o">.</span><span class="n">get_modulation</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Selects the modulation scheme.</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">return<span class="colon">:</span></dt>
+<dd class="field-odd"><p>modulation: QPSK| APSK16| APSK32| PSK8| P2BPsk| APSK16_8_8| APSK32_4_12_16R| APSK64_8_16_20_20| APSK8_2_4_2| APSK32_4_8_4_16| APSK64_16_16_16_16| APSK64_4_12_20_28| APSK128| APSK256</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">get_no_settings</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="reference internal" href="_modules/RsSmw/Implementations/Source/Bb/Dvb/Dvbx.html#DvbxCls.get_no_settings"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBX:NOSettings</span>
+<span class="n">value</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">source</span><span class="o">.</span><span class="n">bb</span><span class="o">.</span><span class="n">dvb</span><span class="o">.</span><span class="n">dvbx</span><span class="o">.</span><span class="n">get_no_settings</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Sets the number of PLSCODEs that can be configured.</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">return<span class="colon">:</span></dt>
+<dd class="field-odd"><p>settings: integer Range: 1 to 100</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">get_ntsl</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="reference internal" href="_modules/RsSmw/Implementations/Source/Bb/Dvb/Dvbx.html#DvbxCls.get_ntsl"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBX:NTSL</span>
+<span class="n">value</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">source</span><span class="o">.</span><span class="n">bb</span><span class="o">.</span><span class="n">dvb</span><span class="o">.</span><span class="n">dvbx</span><span class="o">.</span><span class="n">get_ntsl</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Sets the number of time slices in the FEC frame.</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">return<span class="colon">:</span></dt>
+<dd class="field-odd"><p>num_of_tsl: integer Range: 1 to 8</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">get_sfactor</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="reference internal" href="_modules/RsSmw/Implementations/Source/Bb/Dvb/Dvbx.html#DvbxCls.get_sfactor"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBX:SFACtor</span>
+<span class="n">value</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">source</span><span class="o">.</span><span class="n">bb</span><span class="o">.</span><span class="n">dvb</span><span class="o">.</span><span class="n">dvbx</span><span class="o">.</span><span class="n">get_sfactor</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Sets the spreading factor.</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">return<span class="colon">:</span></dt>
+<dd class="field-odd"><p>sfactor: integer Range: 1 to 2</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">get_sframes</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="reference internal" href="_modules/RsSmw/Implementations/Source/Bb/Dvb/Dvbx.html#DvbxCls.get_sframes"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBX:SFRames</span>
+<span class="n">value</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">source</span><span class="o">.</span><span class="n">bb</span><span class="o">.</span><span class="n">dvb</span><span class="o">.</span><span class="n">dvbx</span><span class="o">.</span><span class="n">get_sframes</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>For DVB-S2X standard, sets the number of the transmitted super frames.</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">return<span class="colon">:</span></dt>
+<dd class="field-odd"><p>super_frames: integer Range: 1 to 3263</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">get_ssequence</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="reference internal" href="_modules/RsSmw/Implementations/Source/Bb/Dvb/Dvbx.html#DvbxCls.get_ssequence"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBX:SSEQuence</span>
+<span class="n">value</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">source</span><span class="o">.</span><span class="n">bb</span><span class="o">.</span><span class="n">dvb</span><span class="o">.</span><span class="n">dvbx</span><span class="o">.</span><span class="n">get_ssequence</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Sets the scrambling sequence for scrambling physical layer data.</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">return<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ssequence: integer Range: 0 to 6</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">get_stype</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">DvbS2XstmType</span></span></span><a class="reference internal" href="_modules/RsSmw/Implementations/Source/Bb/Dvb/Dvbx.html#DvbxCls.get_stype"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBX:STYPe</span>
+<span class="n">value</span><span class="p">:</span> <span class="n">enums</span><span class="o">.</span><span class="n">DvbS2XstmType</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">source</span><span class="o">.</span><span class="n">bb</span><span class="o">.</span><span class="n">dvb</span><span class="o">.</span><span class="n">dvbx</span><span class="o">.</span><span class="n">get_stype</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Selects the input stream type.</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">return<span class="colon">:</span></dt>
+<dd class="field-odd"><p>stype: TRANsport| GP| GC| GHEM</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">get_vs_mode</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="reference internal" href="_modules/RsSmw/Implementations/Source/Bb/Dvb/Dvbx.html#DvbxCls.get_vs_mode"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBX:VSMode</span>
+<span class="n">value</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">source</span><span class="o">.</span><span class="n">bb</span><span class="o">.</span><span class="n">dvb</span><span class="o">.</span><span class="n">dvbx</span><span class="o">.</span><span class="n">get_vs_mode</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Includes the VL-SNR (very low - signal to noise ratio) header in the physical layer frame.</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">return<span class="colon">:</span></dt>
+<dd class="field-odd"><p>vs_mode: 1| ON| 0| OFF</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">set_am</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">annex_m</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="_modules/RsSmw/Implementations/Source/Bb/Dvb/Dvbx.html#DvbxCls.set_am"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBX:AM</span>
+<span class="n">driver</span><span class="o">.</span><span class="n">source</span><span class="o">.</span><span class="n">bb</span><span class="o">.</span><span class="n">dvb</span><span class="o">.</span><span class="n">dvbx</span><span class="o">.</span><span class="n">set_am</span><span class="p">(</span><span class="n">annex_m</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Enables the settings to configure the transmission format for wideband satellite transponders using time-slicing
+according to Annex M of and .</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">param annex_m<span class="colon">:</span></dt>
+<dd class="field-odd"><p>1| ON| 0| OFF</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">set_ctype</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ctype</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DvbS2XcodeTypeTsl</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="_modules/RsSmw/Implementations/Source/Bb/Dvb/Dvbx.html#DvbxCls.set_ctype"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBX:CTYPe</span>
+<span class="n">driver</span><span class="o">.</span><span class="n">source</span><span class="o">.</span><span class="n">bb</span><span class="o">.</span><span class="n">dvb</span><span class="o">.</span><span class="n">dvbx</span><span class="o">.</span><span class="n">set_ctype</span><span class="p">(</span><span class="n">ctype</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">DvbS2XcodeTypeTsl</span><span class="o">.</span><span class="n">MEDium</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Selects the code type.</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">param ctype<span class="colon">:</span></dt>
+<dd class="field-odd"><p>NORMal| MEDium| SHORt</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">set_frames</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">frames</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="_modules/RsSmw/Implementations/Source/Bb/Dvb/Dvbx.html#DvbxCls.set_frames"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBX:FRAMes</span>
+<span class="n">driver</span><span class="o">.</span><span class="n">source</span><span class="o">.</span><span class="n">bb</span><span class="o">.</span><span class="n">dvb</span><span class="o">.</span><span class="n">dvbx</span><span class="o">.</span><span class="n">set_frames</span><span class="p">(</span><span class="n">frames</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Sets the number of the transmitted frames.</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">param frames<span class="colon">:</span></dt>
+<dd class="field-odd"><p>integer Range: 1 to max</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">set_gsequence</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">gold_seq_index</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="_modules/RsSmw/Implementations/Source/Bb/Dvb/Dvbx.html#DvbxCls.set_gsequence"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBX:GSEQuence</span>
+<span class="n">driver</span><span class="o">.</span><span class="n">source</span><span class="o">.</span><span class="n">bb</span><span class="o">.</span><span class="n">dvb</span><span class="o">.</span><span class="n">dvbx</span><span class="o">.</span><span class="n">set_gsequence</span><span class="p">(</span><span class="n">gold_seq_index</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Sets the gold sequence as part of the scrambling sequence.</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">param gold_seq_index<span class="colon">:</span></dt>
+<dd class="field-odd"><p>integer Range: 0 to 262141</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">set_mc_unique</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mod_cod_unique</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DvbS2XmodCodUnique</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="_modules/RsSmw/Implementations/Source/Bb/Dvb/Dvbx.html#DvbxCls.set_mc_unique"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBX:MCUnique</span>
+<span class="n">driver</span><span class="o">.</span><span class="n">source</span><span class="o">.</span><span class="n">bb</span><span class="o">.</span><span class="n">dvb</span><span class="o">.</span><span class="n">dvbx</span><span class="o">.</span><span class="n">set_mc_unique</span><span class="p">(</span><span class="n">mod_cod_unique</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">DvbS2XmodCodUnique</span><span class="o">.</span><span class="n">MCU1</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Sets predefined modulation and coding schemes.</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">param mod_cod_unique<span class="colon">:</span></dt>
+<dd class="field-odd"><p>MCU1| MCU2| MCU3| MCU4| MCU5| MCU6| MCU7| MCU8| MCU9| MCU10| MCU11| MCU12| MCU13| MCU14| MCU15| MCU16| MCU17| MCU18| MCU19| MCU20| MCU21| MCU22| MCU23| MCU24| MCU25| MCU26| MCU27| MCU28| MCU29| MCU30| MCU31| MCU32| MCU33| MCU34| MCU35| MCU36| MCU37| MCU38| MCU39| MCU40| MCU41| MCU42| MCU43| MCU44| MCU45| MCU46| MCU47| MCU48| MCU49| MCU50| MCU51| MCU52| MCU53| MCU54| MCU55| MCU56| MCU57| MCU58| MCU59| MCU60| MCU61| MCU62| MCU63| MCU64| MCU65| MCU66| MCU67| MCU68| MCU69| MCU70| MCU71| MCU72| MCU73| MCU74| MCU75| MCU76| MCU77| MCU78| MCU79| MCU80| MCU81| MCU82| MCU83| MCU84| MCU85| MCU86| MCU87| MCU88| MCU89| MCU90| MCU91| MCU92| MCU93| MCU94| MCU95| MCU96| MCU97| MCU98| MCU99| MCU100| MCU101| MCU102| MCU103| MCU104| MCU105| MCU106| MCU107| MCU108| MCU109| MCU110| MCU111| MCU112| MCU113| MCU114| MCU115| MCU116| MCU117| MCU118| MCU119| MCU120| MCU121| MCU122| MCU123| MCU124| MCU125| MCU126| MCU127| MCU128| MCU129| MCU130</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">set_mcod</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mod_cod</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DvbS2XmodCod</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="_modules/RsSmw/Implementations/Source/Bb/Dvb/Dvbx.html#DvbxCls.set_mcod"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBX:MCOD</span>
+<span class="n">driver</span><span class="o">.</span><span class="n">source</span><span class="o">.</span><span class="n">bb</span><span class="o">.</span><span class="n">dvb</span><span class="o">.</span><span class="n">dvbx</span><span class="o">.</span><span class="n">set_mcod</span><span class="p">(</span><span class="n">mod_cod</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">DvbS2XmodCod</span><span class="o">.</span><span class="n">APSK128_X_N34</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Selects the MODCOD.</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">param mod_cod<span class="colon">:</span></dt>
+<dd class="field-odd"><p>QPSK_S_14| QPSK_S_13| QPSK_S_25| QPSK_S_12| QPSK_S_35| QPSK_S_23| QPSK_S_34| QPSK_S_45| QPSK_S_56| QPSK_S_89| QPSK_S_910| PSK8_S_35| PSK8_S_23| PSK8_S_34| PSK8_S_56| PSK8_S_89| PSK8_S_910| APSK16_S_23| APSK16_S_34| APSK16_S_45| APSK16_S_56| APSK16_S_89| APSK16_S_910| APSK32_S_34| APSK32_S_45| APSK32_S_56| APSK32_S_89| APSK32_S_910| QPSK_X_N1345| QPSK_X_N920| QPSK_X_N1120| APSK8_X_N59L| APSK8_X_N2645L| PSK8_X_N2336| PSK8_X_N2536| PSK8_X_N1318| APSK16_X_N12L| APSK16_X_N815L| APSK16_X_N59L| APSK16_X_N2645| APSK16_X_N35| APSK16_X_N35L| APSK16_X_N2845| APSK16_X_N2336| APSK16_X_N23L| APSK16_X_N2536| APSK16_X_N1318| APSK16_X_N79| APSK16_X_N7790| APSK32_X_N23L| APSK32_X_N3245| APSK32_X_N1115| APSK32_X_N79| APSK64_X_N3245L| APSK64_X_N1115| APSK64_X_N79| APSK64_X_N45| APSK64_X_N56| APSK128_X_N34| APSK128_X_N79| APSK256_X_N2945L| APSK256_X_N23L| APSK256_X_N3145L| APSK256_X_N3245| APSK256_X_N1115L| APSK256_X_N34| QPSK_X_S1145| QPSK_X_S415| QPSK_X_S1445| QPSK_X_S715| QPSK_X_S815| QPSK_X_S3245| PSK8_X_S715| PSK8_X_S815| PSK8_X_S2645| PSK8_X_S3245| APSK16_X_S715| APSK16_X_S815| APSK16_X_S2645| APSK16_X_S35| APSK16_X_S3245| APSK32_X_S23| APSK32_X_S3245| QPSK_X_VN29| BPSK_X_VM15| BPSK_X_VM1145| BPSK_X_VM13| BPSK_X_VS15S| BPSK_X_VS1145| BPSK_X_VS15| BPSK_X_VS415| BPSK_X_VS13| QPSK_X_M15</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">set_modulation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">modulation</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DvbS2Xmodulation</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="_modules/RsSmw/Implementations/Source/Bb/Dvb/Dvbx.html#DvbxCls.set_modulation"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBX:MODulation</span>
+<span class="n">driver</span><span class="o">.</span><span class="n">source</span><span class="o">.</span><span class="n">bb</span><span class="o">.</span><span class="n">dvb</span><span class="o">.</span><span class="n">dvbx</span><span class="o">.</span><span class="n">set_modulation</span><span class="p">(</span><span class="n">modulation</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">DvbS2Xmodulation</span><span class="o">.</span><span class="n">APSK128</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Selects the modulation scheme.</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">param modulation<span class="colon">:</span></dt>
+<dd class="field-odd"><p>QPSK| APSK16| APSK32| PSK8| P2BPsk| APSK16_8_8| APSK32_4_12_16R| APSK64_8_16_20_20| APSK8_2_4_2| APSK32_4_8_4_16| APSK64_16_16_16_16| APSK64_4_12_20_28| APSK128| APSK256</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">set_no_settings</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">settings</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="_modules/RsSmw/Implementations/Source/Bb/Dvb/Dvbx.html#DvbxCls.set_no_settings"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBX:NOSettings</span>
+<span class="n">driver</span><span class="o">.</span><span class="n">source</span><span class="o">.</span><span class="n">bb</span><span class="o">.</span><span class="n">dvb</span><span class="o">.</span><span class="n">dvbx</span><span class="o">.</span><span class="n">set_no_settings</span><span class="p">(</span><span class="n">settings</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Sets the number of PLSCODEs that can be configured.</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">param settings<span class="colon">:</span></dt>
+<dd class="field-odd"><p>integer Range: 1 to 100</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">set_ntsl</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_of_tsl</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="_modules/RsSmw/Implementations/Source/Bb/Dvb/Dvbx.html#DvbxCls.set_ntsl"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBX:NTSL</span>
+<span class="n">driver</span><span class="o">.</span><span class="n">source</span><span class="o">.</span><span class="n">bb</span><span class="o">.</span><span class="n">dvb</span><span class="o">.</span><span class="n">dvbx</span><span class="o">.</span><span class="n">set_ntsl</span><span class="p">(</span><span class="n">num_of_tsl</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Sets the number of time slices in the FEC frame.</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">param num_of_tsl<span class="colon">:</span></dt>
+<dd class="field-odd"><p>integer Range: 1 to 8</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">set_sfactor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sfactor</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="_modules/RsSmw/Implementations/Source/Bb/Dvb/Dvbx.html#DvbxCls.set_sfactor"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBX:SFACtor</span>
+<span class="n">driver</span><span class="o">.</span><span class="n">source</span><span class="o">.</span><span class="n">bb</span><span class="o">.</span><span class="n">dvb</span><span class="o">.</span><span class="n">dvbx</span><span class="o">.</span><span class="n">set_sfactor</span><span class="p">(</span><span class="n">sfactor</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Sets the spreading factor.</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">param sfactor<span class="colon">:</span></dt>
+<dd class="field-odd"><p>integer Range: 1 to 2</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">set_sframes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">super_frames</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="_modules/RsSmw/Implementations/Source/Bb/Dvb/Dvbx.html#DvbxCls.set_sframes"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBX:SFRames</span>
+<span class="n">driver</span><span class="o">.</span><span class="n">source</span><span class="o">.</span><span class="n">bb</span><span class="o">.</span><span class="n">dvb</span><span class="o">.</span><span class="n">dvbx</span><span class="o">.</span><span class="n">set_sframes</span><span class="p">(</span><span class="n">super_frames</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>For DVB-S2X standard, sets the number of the transmitted super frames.</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">param super_frames<span class="colon">:</span></dt>
+<dd class="field-odd"><p>integer Range: 1 to 3263</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">set_ssequence</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ssequence</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="_modules/RsSmw/Implementations/Source/Bb/Dvb/Dvbx.html#DvbxCls.set_ssequence"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBX:SSEQuence</span>
+<span class="n">driver</span><span class="o">.</span><span class="n">source</span><span class="o">.</span><span class="n">bb</span><span class="o">.</span><span class="n">dvb</span><span class="o">.</span><span class="n">dvbx</span><span class="o">.</span><span class="n">set_ssequence</span><span class="p">(</span><span class="n">ssequence</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Sets the scrambling sequence for scrambling physical layer data.</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">param ssequence<span class="colon">:</span></dt>
+<dd class="field-odd"><p>integer Range: 0 to 6</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">set_stype</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">stype</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DvbS2XstmType</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="_modules/RsSmw/Implementations/Source/Bb/Dvb/Dvbx.html#DvbxCls.set_stype"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBX:STYPe</span>
+<span class="n">driver</span><span class="o">.</span><span class="n">source</span><span class="o">.</span><span class="n">bb</span><span class="o">.</span><span class="n">dvb</span><span class="o">.</span><span class="n">dvbx</span><span class="o">.</span><span class="n">set_stype</span><span class="p">(</span><span class="n">stype</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">DvbS2XstmType</span><span class="o">.</span><span class="n">GC</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Selects the input stream type.</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">param stype<span class="colon">:</span></dt>
+<dd class="field-odd"><p>TRANsport| GP| GC| GHEM</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">set_vs_mode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">vs_mode</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="_modules/RsSmw/Implementations/Source/Bb/Dvb/Dvbx.html#DvbxCls.set_vs_mode"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBX:VSMode</span>
+<span class="n">driver</span><span class="o">.</span><span class="n">source</span><span class="o">.</span><span class="n">bb</span><span class="o">.</span><span class="n">dvb</span><span class="o">.</span><span class="n">dvbx</span><span class="o">.</span><span class="n">set_vs_mode</span><span class="p">(</span><span class="n">vs_mode</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Includes the VL-SNR (very low - signal to noise ratio) header in the physical layer frame.</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">param vs_mode<span class="colon">:</span></dt>
+<dd class="field-odd"><p>1| ON| 0| OFF</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+</dd></dl>
+
+<p class="rubric">Cloning the Group</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create a clone of the original group, that exists independently</span>
+<span class="n">group2</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">source</span><span class="o">.</span><span class="n">bb</span><span class="o">.</span><span class="n">dvb</span><span class="o">.</span><span class="n">dvbx</span><span class="o">.</span><span class="n">clone</span><span class="p">()</span>
+</pre></div>
+</div>
+<p class="rubric">Subgroups</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Source_Bb_Dvb_Dvbx_AdLength.html">AdLength</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Source_Bb_Dvb_Dvbx_BhConfig.html">BhConfig</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Source_Bb_Dvb_Dvbx_BhConfig_Adfl.html">Adfl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Source_Bb_Dvb_Dvbx_BhConfig_GlActive.html">GlActive</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Source_Bb_Dvb_Dvbx_BhConfig_Iactive.html">Iactive</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Source_Bb_Dvb_Dvbx_BhConfig_Nactive.html">Nactive</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Source_Bb_Dvb_Dvbx_BhConfig_Sbyte.html">Sbyte</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Source_Bb_Dvb_Dvbx_BhConfig_Sbyte_Pattern.html">Pattern</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Source_Bb_Dvb_Dvbx_Binterleaver.html">Binterleaver</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Source_Bb_Dvb_Dvbx_Bscrambler.html">Bscrambler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Source_Bb_Dvb_Dvbx_CpnSequence.html">CpnSequence</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Source_Bb_Dvb_Dvbx_Crc.html">Crc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Source_Bb_Dvb_Dvbx_Data.html">Data</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Source_Bb_Dvb_Dvbx_Data_Pattern.html">Pattern</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Source_Bb_Dvb_Dvbx_GhConfig.html">GhConfig</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Source_Bb_Dvb_Dvbx_GhConfig_Fid.html">Fid</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Source_Bb_Dvb_Dvbx_GhConfig_Fid_Pattern.html">Pattern</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Source_Bb_Dvb_Dvbx_GhConfig_FiUse.html">FiUse</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Source_Bb_Dvb_Dvbx_GhConfig_Label.html">Label</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Source_Bb_Dvb_Dvbx_GhConfig_Label_Pattern.html">Pattern</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Source_Bb_Dvb_Dvbx_GhConfig_Luse.html">Luse</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Source_Bb_Dvb_Dvbx_GhConfig_PtUse.html">PtUse</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Source_Bb_Dvb_Dvbx_GhConfig_Ptype.html">Ptype</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Source_Bb_Dvb_Dvbx_GhConfig_Ptype_Pattern.html">Pattern</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Source_Bb_Dvb_Dvbx_GhConfig_Tluse.html">Tluse</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Source_Bb_Dvb_Dvbx_Icoder.html">Icoder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Source_Bb_Dvb_Dvbx_Mtab.html">Mtab</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Source_Bb_Dvb_Dvbx_Mtab_Set.html">Set&lt;ModCodSet&gt;</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Source_Bb_Dvb_Dvbx_Mtab_Set_Adfl.html">Adfl</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Source_Bb_Dvb_Dvbx_Mtab_Set_Adfl_State.html">State</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Source_Bb_Dvb_Dvbx_Mtab_Set_Ctype.html">Ctype</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Source_Bb_Dvb_Dvbx_Mtab_Set_Dfl.html">Dfl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Source_Bb_Dvb_Dvbx_Mtab_Set_Frames.html">Frames</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Source_Bb_Dvb_Dvbx_Mtab_Set_Mcod.html">Mcod</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Source_Bb_Dvb_Dvbx_Mtab_Set_Pcod.html">Pcod</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Source_Bb_Dvb_Dvbx_Mtab_Set_Pstate.html">Pstate</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Source_Bb_Dvb_Dvbx_Mtab_Set_Pstate_State.html">State</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Source_Bb_Dvb_Dvbx_Mtab_Set_Sfactor.html">Sfactor</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Source_Bb_Dvb_Dvbx_Ocoder.html">Ocoder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Source_Bb_Dvb_Dvbx_Pscrambler.html">Pscrambler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Source_Bb_Dvb_Dvbx_Pstate.html">Pstate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Source_Bb_Dvb_Dvbx_SfbhConfig.html">SfbhConfig</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Source_Bb_Dvb_Dvbx_SfbhConfig_Dt.html">Dt&lt;ChannelNull&gt;</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Source_Bb_Dvb_Dvbx_SfbhConfig_Dt_Dlength.html">Dlength</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Source_Bb_Dvb_Dvbx_SfbhConfig_Fodt.html">Fodt</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Source_Bb_Dvb_Dvbx_SfConfig.html">SfConfig</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Source_Bb_Dvb_Dvbx_ThConfig.html">ThConfig</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Source_Bb_Dvb_Dvbx_ThConfig_Afield.html">Afield</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Source_Bb_Dvb_Dvbx_ThConfig_Payload.html">Payload</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Source_Bb_Dvb_Dvbx_ThConfig_Pid.html">Pid</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Source_Bb_Dvb_Dvbx_ThConfig_Pid_Pattern.html">Pattern</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Source_Bb_Dvb_Dvbx_ThConfig_TeIndication.html">TeIndication</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Source_Bb_Dvb_Dvbx_Ttab.html">Ttab</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Source_Bb_Dvb_Dvbx_Ttab_Tsl.html">Tsl&lt;ChannelNull&gt;</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Source_Bb_Dvb_Dvbx_Ttab_Tsl_Ctype.html">Ctype</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Source_Bb_Dvb_Dvbx_Ttab_Tsl_Data.html">Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Source_Bb_Dvb_Dvbx_Ttab_Tsl_Dlist.html">Dlist</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Source_Bb_Dvb_Dvbx_Ttab_Tsl_Mcod.html">Mcod</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Source_Bb_Dvb_Dvbx_Ttab_Tsl_Nsym.html">Nsym</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Source_Bb_Dvb_Dvbx_Ttab_Tsl_Pattern.html">Pattern</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Source_Bb_Dvb_Dvbx_Ttab_Tsl_Pilots.html">Pilots</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Source_Bb_Dvb_Dvbx_Ttab_Tsl_Tsn.html">Tsn</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Source_Bb_Dvb_Dvbx_UcMode.html">UcMode</a></li>
+</ul>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="Source_Bb_Dvb_Dvbt_Tps_Tslicing.html" class="btn btn-neutral float-left" title="Tslicing" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Source_Bb_Dvb_Dvbx_AdLength.html" class="btn btn-neutral float-right" title="AdLength" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright © Rohde &amp; Schwarz 2023.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

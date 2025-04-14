@@ -1,0 +1,45 @@
+Mpdu<MacPdu>
+----------------------------------------
+
+.. rubric:: RepCap Settings
+
+.. code-block:: python
+
+	# Range: Nr1 .. Nr64
+	rc = driver.source.bb.wlad.pconfig.mpdu.repcap_macPdu_get()
+	driver.source.bb.wlad.pconfig.mpdu.repcap_macPdu_set(repcap.MacPdu.Nr1)
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:WLAD:PCONfig:MPDU:COUNt
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:WLAD:PCONfig:MPDU:COUNt
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Wlad.Pconfig.Mpdu.MpduCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.wlad.pconfig.mpdu.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Wlad_Pconfig_Mpdu_Data.rst

@@ -1,0 +1,20 @@
+Comment
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:ESEQuencer:DFINding:[BB<ST>]:COMMent
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:ESEQuencer:DFINding:[BB<ST>]:COMMent
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Esequencer.Dfinding.Bb.Comment.CommentCls
+	:members:
+	:undoc-members:
+	:noindex:

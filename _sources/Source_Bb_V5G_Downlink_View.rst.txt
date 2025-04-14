@@ -1,0 +1,28 @@
+View
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:V5G:DL:VIEW:BIS
+	single: [SOURce<HW>]:BB:V5G:DL:VIEW:CINDex
+	single: [SOURce<HW>]:BB:V5G:DL:VIEW:FSTS
+	single: [SOURce<HW>]:BB:V5G:DL:VIEW:MODE
+	single: [SOURce<HW>]:BB:V5G:DL:VIEW:VISS
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:V5G:DL:VIEW:BIS
+	[SOURce<HW>]:BB:V5G:DL:VIEW:CINDex
+	[SOURce<HW>]:BB:V5G:DL:VIEW:FSTS
+	[SOURce<HW>]:BB:V5G:DL:VIEW:MODE
+	[SOURce<HW>]:BB:V5G:DL:VIEW:VISS
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Downlink.View.ViewCls
+	:members:
+	:undoc-members:
+	:noindex:

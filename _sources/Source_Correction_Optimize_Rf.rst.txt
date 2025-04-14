@@ -1,0 +1,40 @@
+Rf
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:CORRection:OPTimize:RF:CHARacteristics
+	single: [SOURce<HW>]:CORRection:OPTimize:RF:HEADroom
+
+.. code-block:: python
+
+	[SOURce<HW>]:CORRection:OPTimize:RF:CHARacteristics
+	[SOURce<HW>]:CORRection:OPTimize:RF:HEADroom
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Correction.Optimize.Rf.RfCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.correction.optimize.rf.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Correction_Optimize_Rf_IqModulator.rst
+	Source_Correction_Optimize_Rf_Linearize.rst

@@ -1,0 +1,22 @@
+Ddelay
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:DM:SMODulation:DDELay:AADJust
+	single: [SOURce<HW>]:BB:DM:SMODulation:DDELay
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:DM:SMODulation:DDELay:AADJust
+	[SOURce<HW>]:BB:DM:SMODulation:DDELay
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dm.Smodulation.Ddelay.DdelayCls
+	:members:
+	:undoc-members:
+	:noindex:

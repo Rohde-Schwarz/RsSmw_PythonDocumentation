@@ -1,0 +1,31 @@
+DcRegs
+----------------------------------------
+
+
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Downlink.Subf.Encc.Pdcch.DcRegs.DcRegsCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.oneweb.downlink.subf.encc.pdcch.dcRegs.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Oneweb_Downlink_Subf_Encc_Pdcch_DcRegs_Data.rst
+	Source_Bb_Oneweb_Downlink_Subf_Encc_Pdcch_DcRegs_Dselect.rst
+	Source_Bb_Oneweb_Downlink_Subf_Encc_Pdcch_DcRegs_Pattern.rst
+	Source_Bb_Oneweb_Downlink_Subf_Encc_Pdcch_DcRegs_TrSource.rst

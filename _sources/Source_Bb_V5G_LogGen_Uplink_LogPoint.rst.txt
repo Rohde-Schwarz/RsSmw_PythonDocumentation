@@ -1,0 +1,36 @@
+LogPoint<IndexNull>
+----------------------------------------
+
+.. rubric:: RepCap Settings
+
+.. code-block:: python
+
+	# Range: Nr0 .. Nr63
+	rc = driver.source.bb.v5G.logGen.uplink.logPoint.repcap_indexNull_get()
+	driver.source.bb.v5G.logGen.uplink.logPoint.repcap_indexNull_set(repcap.IndexNull.Nr0)
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:V5G:LOGGen:UL:LOGPoint<CH0>
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:V5G:LOGGen:UL:LOGPoint<CH0>
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.LogGen.Uplink.LogPoint.LogPointCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.v5G.logGen.uplink.logPoint.clone()

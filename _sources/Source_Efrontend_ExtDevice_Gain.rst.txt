@@ -1,0 +1,20 @@
+Gain
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:EFRontend:EXTDevice<ID>:GAIN
+
+.. code-block:: python
+
+	[SOURce<HW>]:EFRontend:EXTDevice<ID>:GAIN
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Efrontend.ExtDevice.Gain.GainCls
+	:members:
+	:undoc-members:
+	:noindex:

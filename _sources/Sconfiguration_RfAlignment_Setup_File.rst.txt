@@ -1,0 +1,22 @@
+File
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: SCONfiguration:RFALignment:SETup:FILE:PREDefined
+	single: SCONfiguration:RFALignment:SETup:FILE
+
+.. code-block:: python
+
+	SCONfiguration:RFALignment:SETup:FILE:PREDefined
+	SCONfiguration:RFALignment:SETup:FILE
+
+
+
+.. autoclass:: RsSmw.Implementations.Sconfiguration.RfAlignment.Setup.File.FileCls
+	:members:
+	:undoc-members:
+	:noindex:

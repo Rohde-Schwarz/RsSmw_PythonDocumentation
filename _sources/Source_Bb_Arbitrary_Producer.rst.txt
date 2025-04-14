@@ -1,0 +1,22 @@
+Producer
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:ARBitrary:PRODucer:IPADdress
+	single: [SOURce<HW>]:BB:ARBitrary:PRODucer:PORT
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:ARBitrary:PRODucer:IPADdress
+	[SOURce<HW>]:BB:ARBitrary:PRODucer:PORT
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Arbitrary.Producer.ProducerCls
+	:members:
+	:undoc-members:
+	:noindex:

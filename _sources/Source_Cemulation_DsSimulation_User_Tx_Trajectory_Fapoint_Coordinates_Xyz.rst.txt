@@ -1,0 +1,20 @@
+Xyz
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:CEMulation:DSSimulation:USER:TX:TRAJectory:FAPoint:COORdinates:XYZ
+
+.. code-block:: python
+
+	[SOURce<HW>]:CEMulation:DSSimulation:USER:TX:TRAJectory:FAPoint:COORdinates:XYZ
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.DsSimulation.User.Tx.Trajectory.Fapoint.Coordinates.Xyz.XyzCls
+	:members:
+	:undoc-members:
+	:noindex:

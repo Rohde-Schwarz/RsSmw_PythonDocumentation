@@ -1,0 +1,20 @@
+Next
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:CEMulation:MIMO:COPY:NEXT
+
+.. code-block:: python
+
+	[SOURce<HW>]:CEMulation:MIMO:COPY:NEXT
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.Mimo.Copy.Next.NextCls
+	:members:
+	:undoc-members:
+	:noindex:

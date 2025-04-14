@@ -1,0 +1,64 @@
+Sec<IndexNull>
+----------------------------------------
+
+.. rubric:: RepCap Settings
+
+.. code-block:: python
+
+	# Range: Nr0 .. Nr63
+	rc = driver.source.bb.dvb.dvbr.sfConfig.frConfig.sec.repcap_indexNull_get()
+	driver.source.bb.dvb.dvbr.sfConfig.frConfig.sec.repcap_indexNull_set(repcap.IndexNull.Nr0)
+
+
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dvb.Dvbr.SfConfig.FrConfig.Sec.SecCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.dvb.dvbr.sfConfig.frConfig.sec.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Dvb_Dvbr_SfConfig_FrConfig_Sec_BlChips.rst
+	Source_Bb_Dvb_Dvbr_SfConfig_FrConfig_Sec_BsOffset.rst
+	Source_Bb_Dvb_Dvbr_SfConfig_FrConfig_Sec_BstLen.rst
+	Source_Bb_Dvb_Dvbr_SfConfig_FrConfig_Sec_DapAtt.rst
+	Source_Bb_Dvb_Dvbr_SfConfig_FrConfig_Sec_Data.rst
+	Source_Bb_Dvb_Dvbr_SfConfig_FrConfig_Sec_ListSel.rst
+	Source_Bb_Dvb_Dvbr_SfConfig_FrConfig_Sec_Mod.rst
+	Source_Bb_Dvb_Dvbr_SfConfig_FrConfig_Sec_Modu.rst
+	Source_Bb_Dvb_Dvbr_SfConfig_FrConfig_Sec_NpBlocks.rst
+	Source_Bb_Dvb_Dvbr_SfConfig_FrConfig_Sec_P.rst
+	Source_Bb_Dvb_Dvbr_SfConfig_FrConfig_Sec_PalType.rst
+	Source_Bb_Dvb_Dvbr_SfConfig_FrConfig_Sec_PbLen.rst
+	Source_Bb_Dvb_Dvbr_SfConfig_FrConfig_Sec_Plen.rst
+	Source_Bb_Dvb_Dvbr_SfConfig_FrConfig_Sec_PosLen.rst
+	Source_Bb_Dvb_Dvbr_SfConfig_FrConfig_Sec_Pperiod.rst
+	Source_Bb_Dvb_Dvbr_SfConfig_FrConfig_Sec_PreLen.rst
+	Source_Bb_Dvb_Dvbr_SfConfig_FrConfig_Sec_Q0.rst
+	Source_Bb_Dvb_Dvbr_SfConfig_FrConfig_Sec_Q1.rst
+	Source_Bb_Dvb_Dvbr_SfConfig_FrConfig_Sec_Q2.rst
+	Source_Bb_Dvb_Dvbr_SfConfig_FrConfig_Sec_Q3.rst
+	Source_Bb_Dvb_Dvbr_SfConfig_FrConfig_Sec_Repcount.rst
+	Source_Bb_Dvb_Dvbr_SfConfig_FrConfig_Sec_Sfactor.rst
+	Source_Bb_Dvb_Dvbr_SfConfig_FrConfig_Sec_StbTu.rst
+	Source_Bb_Dvb_Dvbr_SfConfig_FrConfig_Sec_TsSize.rst
+	Source_Bb_Dvb_Dvbr_SfConfig_FrConfig_Sec_Uw.rst
+	Source_Bb_Dvb_Dvbr_SfConfig_FrConfig_Sec_UwLen.rst
+	Source_Bb_Dvb_Dvbr_SfConfig_FrConfig_Sec_Wpat.rst
+	Source_Bb_Dvb_Dvbr_SfConfig_FrConfig_Sec_WvId.rst
+	Source_Bb_Dvb_Dvbr_SfConfig_FrConfig_Sec_Ypat.rst

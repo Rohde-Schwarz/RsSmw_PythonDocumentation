@@ -1,0 +1,38 @@
+Ue<UserEquipment>
+----------------------------------------
+
+.. rubric:: RepCap Settings
+
+.. code-block:: python
+
+	# Range: Nr1 .. Nr16
+	rc = driver.source.bb.eutra.tcw.ws.intracell.ue.repcap_userEquipment_get()
+	driver.source.bb.eutra.tcw.ws.intracell.ue.repcap_userEquipment_set(repcap.UserEquipment.Nr1)
+
+
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Eutra.Tcw.Ws.Intracell.Ue.UeCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.eutra.tcw.ws.intracell.ue.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Eutra_Tcw_Ws_Intracell_Ue_Frc.rst
+	Source_Bb_Eutra_Tcw_Ws_Intracell_Ue_Plevel.rst
+	Source_Bb_Eutra_Tcw_Ws_Intracell_Ue_UeId.rst

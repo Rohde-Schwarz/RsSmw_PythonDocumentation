@@ -1,0 +1,20 @@
+Cphase
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:GNSS:SVID<CH>:XONA:SDYNamics:CPHase
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:GNSS:SVID<CH>:XONA:SDYNamics:CPHase
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Gnss.Svid.Xona.Sdynamics.Cphase.CphaseCls
+	:members:
+	:undoc-members:
+	:noindex:

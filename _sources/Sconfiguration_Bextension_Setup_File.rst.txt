@@ -1,0 +1,22 @@
+File
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: SCONfiguration:BEXTension:SETup:FILE:PREDefined
+	single: SCONfiguration:BEXTension:SETup:FILE
+
+.. code-block:: python
+
+	SCONfiguration:BEXTension:SETup:FILE:PREDefined
+	SCONfiguration:BEXTension:SETup:FILE
+
+
+
+.. autoclass:: RsSmw.Implementations.Sconfiguration.Bextension.Setup.File.FileCls
+	:members:
+	:undoc-members:
+	:noindex:

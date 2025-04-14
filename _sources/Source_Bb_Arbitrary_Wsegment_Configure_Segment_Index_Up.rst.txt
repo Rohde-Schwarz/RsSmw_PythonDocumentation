@@ -1,0 +1,20 @@
+Up
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:ARBitrary:WSEGment:CONFigure:SEGMent:INDex<CH0>:UP
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:ARBitrary:WSEGment:CONFigure:SEGMent:INDex<CH0>:UP
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Arbitrary.Wsegment.Configure.Segment.Index.Up.UpCls
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,52 @@
+Mimo
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:FSIMulator:MIMO:CAPability
+	single: [SOURce<HW>]:FSIMulator:MIMO:COPY:ALL
+	single: [SOURce<HW>]:FSIMulator:MIMO:MDLoad
+	single: [SOURce<HW>]:FSIMulator:MIMO:MDSTore
+	single: [SOURce<HW>]:FSIMulator:MIMO:MPOWer
+	single: [SOURce<HW>]:FSIMulator:MIMO:SUBSet
+
+.. code-block:: python
+
+	[SOURce<HW>]:FSIMulator:MIMO:CAPability
+	[SOURce<HW>]:FSIMulator:MIMO:COPY:ALL
+	[SOURce<HW>]:FSIMulator:MIMO:MDLoad
+	[SOURce<HW>]:FSIMulator:MIMO:MDSTore
+	[SOURce<HW>]:FSIMulator:MIMO:MPOWer
+	[SOURce<HW>]:FSIMulator:MIMO:SUBSet
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.Mimo.MimoCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.fsimulator.mimo.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Fsimulator_Mimo_Antenna.rst
+	Source_Fsimulator_Mimo_Copy.rst
+	Source_Fsimulator_Mimo_Power.rst
+	Source_Fsimulator_Mimo_Scwi.rst
+	Source_Fsimulator_Mimo_Tap.rst
+	Source_Fsimulator_Mimo_Tgn.rst

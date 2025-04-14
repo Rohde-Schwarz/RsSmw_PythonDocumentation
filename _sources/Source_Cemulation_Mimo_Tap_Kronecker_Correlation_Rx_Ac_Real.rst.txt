@@ -1,0 +1,20 @@
+Real
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:CEMulation:MIMO:TAP<CH>:KRONecker:CORRelation:RX:AC:REAL
+
+.. code-block:: python
+
+	[SOURce<HW>]:CEMulation:MIMO:TAP<CH>:KRONecker:CORRelation:RX:AC:REAL
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.Mimo.Tap.Kronecker.Correlation.Rx.Ac.Real.RealCls
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,22 @@
+Apco25Lsm
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:DM:FILTer:PARameter:APCO25Lsm:GAUSs
+	single: [SOURce<HW>]:BB:DM:FILTer:PARameter:APCO25Lsm:LOWPass
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:DM:FILTer:PARameter:APCO25Lsm:GAUSs
+	[SOURce<HW>]:BB:DM:FILTer:PARameter:APCO25Lsm:LOWPass
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dm.FilterPy.Parameter.Apco25Lsm.Apco25LsmCls
+	:members:
+	:undoc-members:
+	:noindex:

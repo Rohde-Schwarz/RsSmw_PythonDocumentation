@@ -1,0 +1,22 @@
+Frequency
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:CEMulation:HSTRain:DOWNlink:FREQuency:STATe
+	single: [SOURce<HW>]:CEMulation:HSTRain:DOWNlink:FREQuency
+
+.. code-block:: python
+
+	[SOURce<HW>]:CEMulation:HSTRain:DOWNlink:FREQuency:STATe
+	[SOURce<HW>]:CEMulation:HSTRain:DOWNlink:FREQuency
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.HsTrain.Downlink.Frequency.FrequencyCls
+	:members:
+	:undoc-members:
+	:noindex:

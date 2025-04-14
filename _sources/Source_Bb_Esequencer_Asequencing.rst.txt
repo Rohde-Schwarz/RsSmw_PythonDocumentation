@@ -1,0 +1,40 @@
+Asequencing
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:ESEQuencer:ASEQuencing:OMODe
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:ESEQuencer:ASEQuencing:OMODe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Esequencer.Asequencing.AsequencingCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.esequencer.asequencing.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Esequencer_Asequencing_Qsfp.rst
+	Source_Bb_Esequencer_Asequencing_Sequencer.rst
+	Source_Bb_Esequencer_Asequencing_Wave.rst
+	Source_Bb_Esequencer_Asequencing_Wlist.rst

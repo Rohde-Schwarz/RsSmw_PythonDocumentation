@@ -1,0 +1,20 @@
+E6Prs
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:GNSS:SYSTem:GALileo:SIGNal:L2Band:E6PRs:[STATe]
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:GNSS:SYSTem:GALileo:SIGNal:L2Band:E6PRs:[STATe]
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Gnss.System.Galileo.Signal.L2Band.E6Prs.E6PrsCls
+	:members:
+	:undoc-members:
+	:noindex:

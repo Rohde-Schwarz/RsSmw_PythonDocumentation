@@ -1,0 +1,20 @@
+Bits
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:ONEWeb:UL:[CELL<CCIDX>]:[SUBF<ST0>]:ALLoc<CH0>:[CW<CWID>]:PUSCh:ULSCh:BITS
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:ONEWeb:UL:[CELL<CCIDX>]:[SUBF<ST0>]:ALLoc<CH0>:[CW<CWID>]:PUSCh:ULSCh:BITS
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Uplink.Cell.Subf.Alloc.Cw.Pusch.Ulsch.Bits.BitsCls
+	:members:
+	:undoc-members:
+	:noindex:

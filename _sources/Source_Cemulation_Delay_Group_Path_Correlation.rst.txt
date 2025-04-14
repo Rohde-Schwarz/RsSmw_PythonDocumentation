@@ -1,0 +1,30 @@
+Correlation
+----------------------------------------
+
+
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.Delay.Group.Path.Correlation.CorrelationCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.cemulation.delay.group.path.correlation.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Cemulation_Delay_Group_Path_Correlation_Coefficient.rst
+	Source_Cemulation_Delay_Group_Path_Correlation_Phase.rst
+	Source_Cemulation_Delay_Group_Path_Correlation_State.rst

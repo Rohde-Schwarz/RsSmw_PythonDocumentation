@@ -1,0 +1,20 @@
+Name
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:NR5G:NODE:CELL<CC(CH0)>:PRS:RSET<ST0>:RES<DIR0>:APMap:COL<APC(GR0)>:NAME
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:NR5G:NODE:CELL<CC(CH0)>:PRS:RSET<ST0>:RES<DIR0>:APMap:COL<APC(GR0)>:NAME
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Nr5G.Node.Cell.Prs.Rset.Res.ApMap.Col.Name.NameCls
+	:members:
+	:undoc-members:
+	:noindex:

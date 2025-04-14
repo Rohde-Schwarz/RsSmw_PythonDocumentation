@@ -1,0 +1,20 @@
+Delay
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:ONEWeb:TRIGger:DELay:UNIT
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:ONEWeb:TRIGger:DELay:UNIT
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Trigger.Delay.DelayCls
+	:members:
+	:undoc-members:
+	:noindex:

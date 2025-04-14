@@ -1,0 +1,20 @@
+Pa
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:V5G:DL:USER<CH>:PA
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:V5G:DL:USER<CH>:PA
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Downlink.User.Pa.PaCls
+	:members:
+	:undoc-members:
+	:noindex:

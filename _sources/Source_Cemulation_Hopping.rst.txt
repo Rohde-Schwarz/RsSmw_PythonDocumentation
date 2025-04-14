@@ -1,0 +1,20 @@
+Hopping
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:CEMulation:HOPPing:MODE
+
+.. code-block:: python
+
+	[SOURce<HW>]:CEMulation:HOPPing:MODE
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.Hopping.HoppingCls
+	:members:
+	:undoc-members:
+	:noindex:

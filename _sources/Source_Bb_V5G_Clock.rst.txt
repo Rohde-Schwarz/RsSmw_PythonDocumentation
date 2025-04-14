@@ -1,0 +1,26 @@
+Clock
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:V5G:CLOCk:CUSTom
+	single: [SOURce<HW>]:BB:V5G:CLOCk:MODE
+	single: [SOURce<HW>]:BB:V5G:CLOCk:MULTiplier
+	single: [SOURce<HW>]:BB:V5G:CLOCk:SOURce
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:V5G:CLOCk:CUSTom
+	[SOURce<HW>]:BB:V5G:CLOCk:MODE
+	[SOURce<HW>]:BB:V5G:CLOCk:MULTiplier
+	[SOURce<HW>]:BB:V5G:CLOCk:SOURce
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Clock.ClockCls
+	:members:
+	:undoc-members:
+	:noindex:

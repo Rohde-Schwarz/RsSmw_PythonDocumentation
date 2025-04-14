@@ -1,0 +1,45 @@
+Path<Path>
+----------------------------------------
+
+.. rubric:: RepCap Settings
+
+.. code-block:: python
+
+	# Range: Nr1 .. Nr8
+	rc = driver.source.fsimulator.mdelay.del30.group.path.repcap_path_get()
+	driver.source.fsimulator.mdelay.del30.group.path.repcap_path_set(repcap.Path.Nr1)
+
+
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.Mdelay.Del30.Group.Path.PathCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.fsimulator.mdelay.del30.group.path.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Fsimulator_Mdelay_Del30_Group_Path_Adelay.rst
+	Source_Fsimulator_Mdelay_Del30_Group_Path_Bdelay.rst
+	Source_Fsimulator_Mdelay_Del30_Group_Path_Cphase.rst
+	Source_Fsimulator_Mdelay_Del30_Group_Path_Fdoppler.rst
+	Source_Fsimulator_Mdelay_Del30_Group_Path_Fratio.rst
+	Source_Fsimulator_Mdelay_Del30_Group_Path_Loss.rst
+	Source_Fsimulator_Mdelay_Del30_Group_Path_Profile.rst
+	Source_Fsimulator_Mdelay_Del30_Group_Path_Rdelay.rst
+	Source_Fsimulator_Mdelay_Del30_Group_Path_Speed.rst
+	Source_Fsimulator_Mdelay_Del30_Group_Path_State.rst

@@ -1,0 +1,22 @@
+Output
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:EFRontend:LOSCillator:OUTPut:FREQuency
+	single: [SOURce<HW>]:EFRontend:LOSCillator:OUTPut:STATe
+
+.. code-block:: python
+
+	[SOURce<HW>]:EFRontend:LOSCillator:OUTPut:FREQuency
+	[SOURce<HW>]:EFRontend:LOSCillator:OUTPut:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Efrontend.Loscillator.Output.OutputCls
+	:members:
+	:undoc-members:
+	:noindex:

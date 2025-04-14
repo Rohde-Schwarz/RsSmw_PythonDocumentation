@@ -1,0 +1,20 @@
+Dump
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: DIAGnostic<HW>:TEST:COVerage:DUMP
+
+.. code-block:: python
+
+	DIAGnostic<HW>:TEST:COVerage:DUMP
+
+
+
+.. autoclass:: RsSmw.Implementations.Diagnostic.Test.Coverage.Dump.DumpCls
+	:members:
+	:undoc-members:
+	:noindex:

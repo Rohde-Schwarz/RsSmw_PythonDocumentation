@@ -1,0 +1,20 @@
+Phase
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:CEMulation:MIMO:TAP<CH>:KRONecker:CORRelation:TX:CF:PHASe
+
+.. code-block:: python
+
+	[SOURce<HW>]:CEMulation:MIMO:TAP<CH>:KRONecker:CORRelation:TX:CF:PHASe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.Mimo.Tap.Kronecker.Correlation.Tx.Cf.Phase.PhaseCls
+	:members:
+	:undoc-members:
+	:noindex:

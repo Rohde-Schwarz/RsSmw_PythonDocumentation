@@ -1,0 +1,24 @@
+Plci
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:V5G:DL:[PLCI]:CID
+	single: [SOURce<HW>]:BB:V5G:DL:[PLCI]:CIDGroup
+	single: [SOURce<HW>]:BB:V5G:DL:[PLCI]:PLID
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:V5G:DL:[PLCI]:CID
+	[SOURce<HW>]:BB:V5G:DL:[PLCI]:CIDGroup
+	[SOURce<HW>]:BB:V5G:DL:[PLCI]:PLID
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Downlink.Plci.PlciCls
+	:members:
+	:undoc-members:
+	:noindex:

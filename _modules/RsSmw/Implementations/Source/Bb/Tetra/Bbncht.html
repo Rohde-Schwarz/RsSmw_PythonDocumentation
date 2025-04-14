@@ -1,0 +1,810 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../../../../../">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RsSmw.Implementations.Source.Bb.Tetra.Bbncht &mdash; RsSmw 5.30.305.84 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../../../../../_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="../../../../../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../../../../../_static/copybutton.css?v=76b2166b" />
+
+  
+      <script src="../../../../../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../../../../../_static/documentation_options.js?v=17bca7dd"></script>
+      <script src="../../../../../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../../../../../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../../../../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../../../../index.html" class="icon icon-home">
+            RsSmw
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../readme.html">Revision History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../enums.html">Enums</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../repcap.html">RepCaps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../RsSmw.html">RsSmw API Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../utilities.html">RsSmw Utilities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../logger.html">RsSmw Logger</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../events.html">RsSmw Events</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../genindex.html">Index</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../../../index.html">RsSmw</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../../../index.html">Module code</a></li>
+          <li class="breadcrumb-item"><a href="../../../Source.html">RsSmw.Implementations.Source</a></li>
+          <li class="breadcrumb-item"><a href="../../Bb.html">RsSmw.Implementations.Source.Bb</a></li>
+          <li class="breadcrumb-item"><a href="../Tetra.html">RsSmw.Implementations.Source.Bb.Tetra</a></li>
+      <li class="breadcrumb-item active">RsSmw.Implementations.Source.Bb.Tetra.Bbncht</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Source code for RsSmw.Implementations.Source.Bb.Tetra.Bbncht</h1><div class="highlight"><pre>
+<span></span><span class="kn">from</span><span class="w"> </span><span class="nn">.....Internal.Core</span><span class="w"> </span><span class="kn">import</span> <span class="n">Core</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">.....Internal.CommandsGroup</span><span class="w"> </span><span class="kn">import</span> <span class="n">CommandsGroup</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">.....Internal</span><span class="w"> </span><span class="kn">import</span> <span class="n">Conversions</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">.....</span><span class="w"> </span><span class="kn">import</span> <span class="n">enums</span>
+
+
+<span class="c1"># noinspection PyPep8Naming,PyAttributeOutsideInit,SpellCheckingInspection</span>
+<div class="viewcode-block" id="BbnchtCls">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Tetra_Bbncht.html#RsSmw.Implementations.Source.Bb.Tetra.Bbncht.BbnchtCls">[docs]</a>
+<span class="k">class</span><span class="w"> </span><span class="nc">BbnchtCls</span><span class="p">:</span>
+<span class="w">	</span><span class="sd">&quot;&quot;&quot;Bbncht commands group definition. 26 total commands, 0 Subgroups, 26 group commands&quot;&quot;&quot;</span>
+
+	<span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">core</span><span class="p">:</span> <span class="n">Core</span><span class="p">,</span> <span class="n">parent</span><span class="p">):</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span> <span class="o">=</span> <span class="n">core</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span> <span class="o">=</span> <span class="n">CommandsGroup</span><span class="p">(</span><span class="s2">&quot;bbncht&quot;</span><span class="p">,</span> <span class="n">core</span><span class="p">,</span> <span class="n">parent</span><span class="p">)</span>
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="BbnchtCls.get_aparameter">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Tetra_Bbncht.html#RsSmw.Implementations.Source.Bb.Tetra.Bbncht.BbnchtCls.get_aparameter">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_aparameter</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">enums</span><span class="o">.</span><span class="n">TetraAcssParm</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:TETRa:BBNCht:APARameter \n</span>
+<span class="sd">		Snippet: value: enums.TetraAcssParm = driver.source.bb.tetra.bbncht.get_aparameter() \n</span>
+<span class="sd">		Sets the value of the ACCESS_PARAMETER information field. This parameter is used for subsequent power adjustments for the</span>
+<span class="sd">		mobile station. This protocol information field can takes values from -53 dBm to -23 dBm in 2 dB steps. \n</span>
+<span class="sd">			:return: aparameter: AP53| AP51| AP49| AP47| AP45| AP43| AP41| AP39| AP37| AP35| AP33| AP31| AP29| AP27| AP25| AP23</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:TETRa:BBNCht:APARameter?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_scalar_enum</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">TetraAcssParm</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="BbnchtCls.set_aparameter">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Tetra_Bbncht.html#RsSmw.Implementations.Source.Bb.Tetra.Bbncht.BbnchtCls.set_aparameter">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_aparameter</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">aparameter</span><span class="p">:</span> <span class="n">enums</span><span class="o">.</span><span class="n">TetraAcssParm</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:TETRa:BBNCht:APARameter \n</span>
+<span class="sd">		Snippet: driver.source.bb.tetra.bbncht.set_aparameter(aparameter = enums.TetraAcssParm.AP23) \n</span>
+<span class="sd">		Sets the value of the ACCESS_PARAMETER information field. This parameter is used for subsequent power adjustments for the</span>
+<span class="sd">		mobile station. This protocol information field can takes values from -53 dBm to -23 dBm in 2 dB steps. \n</span>
+<span class="sd">			:param aparameter: AP53| AP51| AP49| AP47| AP45| AP43| AP41| AP39| AP37| AP35| AP33| AP31| AP29| AP27| AP25| AP23</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">enum_scalar_to_str</span><span class="p">(</span><span class="n">aparameter</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">TetraAcssParm</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:TETRa:BBNCht:APARameter </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="BbnchtCls.get_bc_code">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Tetra_Bbncht.html#RsSmw.Implementations.Source.Bb.Tetra.Bbncht.BbnchtCls.get_bc_code">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_bc_code</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:TETRa:BBNCht:BCCode \n</span>
+<span class="sd">		Snippet: value: int = driver.source.bb.tetra.bbncht.get_bc_code() \n</span>
+<span class="sd">		Sets the colour code. The base color code is the number of subscriber group in a network. See Table &#39;Building of</span>
+<span class="sd">		scrambling code&#39; for information on how the scrambling code is calculated. \n</span>
+<span class="sd">			:return: bc_code: integer Range: 1 to 63</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:TETRa:BBNCht:BCCode?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_int</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="BbnchtCls.set_bc_code">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Tetra_Bbncht.html#RsSmw.Implementations.Source.Bb.Tetra.Bbncht.BbnchtCls.set_bc_code">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_bc_code</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">bc_code</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:TETRa:BBNCht:BCCode \n</span>
+<span class="sd">		Snippet: driver.source.bb.tetra.bbncht.set_bc_code(bc_code = 1) \n</span>
+<span class="sd">		Sets the colour code. The base color code is the number of subscriber group in a network. See Table &#39;Building of</span>
+<span class="sd">		scrambling code&#39; for information on how the scrambling code is calculated. \n</span>
+<span class="sd">			:param bc_code: integer Range: 1 to 63</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">decimal_value_to_str</span><span class="p">(</span><span class="n">bc_code</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:TETRa:BBNCht:BCCode </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="BbnchtCls.get_cbandwidth">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Tetra_Bbncht.html#RsSmw.Implementations.Source.Bb.Tetra.Bbncht.BbnchtCls.get_cbandwidth">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_cbandwidth</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">enums</span><span class="o">.</span><span class="n">TetraCrrBndwdth</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:TETRa:BBNCht:CBANdwidth \n</span>
+<span class="sd">		Snippet: value: enums.TetraCrrBndwdth = driver.source.bb.tetra.bbncht.get_cbandwidth() \n</span>
+<span class="sd">		Selects the carrier bandwidth, i.e. determines the carrier spacing. The default value for all standard test modes is</span>
+<span class="sd">		25kHz; carrier spacing of 50, 100 and 150 kHz is enabled for &#39;Test Mode&#39; set to User Defined or T4. \n</span>
+<span class="sd">			:return: cbandwidth: C25| C50| C100| C150</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:TETRa:BBNCht:CBANdwidth?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_scalar_enum</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">TetraCrrBndwdth</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="BbnchtCls.set_cbandwidth">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Tetra_Bbncht.html#RsSmw.Implementations.Source.Bb.Tetra.Bbncht.BbnchtCls.set_cbandwidth">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_cbandwidth</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">cbandwidth</span><span class="p">:</span> <span class="n">enums</span><span class="o">.</span><span class="n">TetraCrrBndwdth</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:TETRa:BBNCht:CBANdwidth \n</span>
+<span class="sd">		Snippet: driver.source.bb.tetra.bbncht.set_cbandwidth(cbandwidth = enums.TetraCrrBndwdth.C100) \n</span>
+<span class="sd">		Selects the carrier bandwidth, i.e. determines the carrier spacing. The default value for all standard test modes is</span>
+<span class="sd">		25kHz; carrier spacing of 50, 100 and 150 kHz is enabled for &#39;Test Mode&#39; set to User Defined or T4. \n</span>
+<span class="sd">			:param cbandwidth: C25| C50| C100| C150</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">enum_scalar_to_str</span><span class="p">(</span><span class="n">cbandwidth</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">TetraCrrBndwdth</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:TETRa:BBNCht:CBANdwidth </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="BbnchtCls.get_cr_frequency">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Tetra_Bbncht.html#RsSmw.Implementations.Source.Bb.Tetra.Bbncht.BbnchtCls.get_cr_frequency">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_cr_frequency</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:TETRa:BBNCht:CRFRequency \n</span>
+<span class="sd">		Snippet: value: float = driver.source.bb.tetra.bbncht.get_cr_frequency() \n</span>
+<span class="sd">		Displays the resulting RF frequency, calculated from the previous settings. The frequency is calculated from the</span>
+<span class="sd">		&#39;Frequency Band&#39;, &#39;Main Carrier Number&#39;, &#39;Offset&#39;, &#39;Duplex Spacing&#39; and &#39;Reverse Operation&#39; and transmitted in message</span>
+<span class="sd">		channel BNCH/T when Downlink MS V+D Testing is selected. The &#39;Coded RF Frequency&#39; is calculated as described in Table</span>
+<span class="sd">		&#39;Calculation of coded RF frequency&#39;. \n</span>
+<span class="sd">			:return: cr_frequency: float Range: 0 to 1000</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:TETRa:BBNCht:CRFRequency?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_float</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="BbnchtCls.get_cs_level">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Tetra_Bbncht.html#RsSmw.Implementations.Source.Bb.Tetra.Bbncht.BbnchtCls.get_cs_level">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_cs_level</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">enums</span><span class="o">.</span><span class="n">TetraCelSvLevel</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:TETRa:BBNCht:CSLevel \n</span>
+<span class="sd">		Snippet: value: enums.TetraCelSvLevel = driver.source.bb.tetra.bbncht.get_cs_level() \n</span>
+<span class="sd">		Sets the cell service level information element, i.e. define the level of service a MS may receive in a cell.</span>
+<span class="sd">		It may relate to the traffic loading in a cell. \n</span>
+<span class="sd">			:return: cs_level: CLUNknown| LCLoad| MCLoad| HCLoad CLUNknown Cell load unknown LCLoad Low cell load MCLoad Medium cell load HCLoad High cell load</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:TETRa:BBNCht:CSLevel?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_scalar_enum</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">TetraCelSvLevel</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="BbnchtCls.set_cs_level">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Tetra_Bbncht.html#RsSmw.Implementations.Source.Bb.Tetra.Bbncht.BbnchtCls.set_cs_level">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_cs_level</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">cs_level</span><span class="p">:</span> <span class="n">enums</span><span class="o">.</span><span class="n">TetraCelSvLevel</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:TETRa:BBNCht:CSLevel \n</span>
+<span class="sd">		Snippet: driver.source.bb.tetra.bbncht.set_cs_level(cs_level = enums.TetraCelSvLevel.CLUNknown) \n</span>
+<span class="sd">		Sets the cell service level information element, i.e. define the level of service a MS may receive in a cell.</span>
+<span class="sd">		It may relate to the traffic loading in a cell. \n</span>
+<span class="sd">			:param cs_level: CLUNknown| LCLoad| MCLoad| HCLoad CLUNknown Cell load unknown LCLoad Low cell load MCLoad Medium cell load HCLoad High cell load</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">enum_scalar_to_str</span><span class="p">(</span><span class="n">cs_level</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">TetraCelSvLevel</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:TETRa:BBNCht:CSLevel </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="BbnchtCls.get_dnb_broadcast">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Tetra_Bbncht.html#RsSmw.Implementations.Source.Bb.Tetra.Bbncht.BbnchtCls.get_dnb_broadcast">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_dnb_broadcast</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:TETRa:BBNCht:DNBBroadcast \n</span>
+<span class="sd">		Snippet: value: bool = driver.source.bb.tetra.bbncht.get_dnb_broadcast() \n</span>
+<span class="sd">		Enables/disables support of the D-NWRK-BROADCAST PDU. \n</span>
+<span class="sd">			:return: dnb_broadcast: 1| ON| 0| OFF</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:TETRa:BBNCht:DNBBroadcast?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_bool</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="BbnchtCls.set_dnb_broadcast">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Tetra_Bbncht.html#RsSmw.Implementations.Source.Bb.Tetra.Bbncht.BbnchtCls.set_dnb_broadcast">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_dnb_broadcast</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dnb_broadcast</span><span class="p">:</span> <span class="nb">bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:TETRa:BBNCht:DNBBroadcast \n</span>
+<span class="sd">		Snippet: driver.source.bb.tetra.bbncht.set_dnb_broadcast(dnb_broadcast = False) \n</span>
+<span class="sd">		Enables/disables support of the D-NWRK-BROADCAST PDU. \n</span>
+<span class="sd">			:param dnb_broadcast: 1| ON| 0| OFF</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">bool_to_str</span><span class="p">(</span><span class="n">dnb_broadcast</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:TETRa:BBNCht:DNBBroadcast </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="BbnchtCls.get_dnb_enquiry">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Tetra_Bbncht.html#RsSmw.Implementations.Source.Bb.Tetra.Bbncht.BbnchtCls.get_dnb_enquiry">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_dnb_enquiry</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:TETRa:BBNCht:DNBenquiry \n</span>
+<span class="sd">		Snippet: value: bool = driver.source.bb.tetra.bbncht.get_dnb_enquiry() \n</span>
+<span class="sd">		Enables/disables support of the D-NWRK-BROADCAST enquiry. \n</span>
+<span class="sd">			:return: dnb_enquiry: 1| ON| 0| OFF</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:TETRa:BBNCht:DNBenquiry?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_bool</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="BbnchtCls.set_dnb_enquiry">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Tetra_Bbncht.html#RsSmw.Implementations.Source.Bb.Tetra.Bbncht.BbnchtCls.set_dnb_enquiry">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_dnb_enquiry</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dnb_enquiry</span><span class="p">:</span> <span class="nb">bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:TETRa:BBNCht:DNBenquiry \n</span>
+<span class="sd">		Snippet: driver.source.bb.tetra.bbncht.set_dnb_enquiry(dnb_enquiry = False) \n</span>
+<span class="sd">		Enables/disables support of the D-NWRK-BROADCAST enquiry. \n</span>
+<span class="sd">			:param dnb_enquiry: 1| ON| 0| OFF</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">bool_to_str</span><span class="p">(</span><span class="n">dnb_enquiry</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:TETRa:BBNCht:DNBenquiry </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="BbnchtCls.get_dspacing">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Tetra_Bbncht.html#RsSmw.Implementations.Source.Bb.Tetra.Bbncht.BbnchtCls.get_dspacing">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_dspacing</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">enums</span><span class="o">.</span><span class="n">TetraDplxSpcing</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:TETRa:BBNCht:DSPacing \n</span>
+<span class="sd">		Snippet: value: enums.TetraDplxSpcing = driver.source.bb.tetra.bbncht.get_dspacing() \n</span>
+<span class="sd">		(for Uplink direction only) The &#39;Duplex Spacing&#39; and &#39;Reverse Operation&#39; parameters in the BNCH/T indicate the required</span>
+<span class="sd">		uplink frequency with respect to the indicated downlink frequency. These parameters are defined in ETSI 300 392-2. \n</span>
+<span class="sd">			:return: dspacing: DS0| DS1| DS2| DS3| DS4| DS5| DS6| DS7</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:TETRa:BBNCht:DSPacing?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_scalar_enum</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">TetraDplxSpcing</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="BbnchtCls.set_dspacing">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Tetra_Bbncht.html#RsSmw.Implementations.Source.Bb.Tetra.Bbncht.BbnchtCls.set_dspacing">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_dspacing</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dspacing</span><span class="p">:</span> <span class="n">enums</span><span class="o">.</span><span class="n">TetraDplxSpcing</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:TETRa:BBNCht:DSPacing \n</span>
+<span class="sd">		Snippet: driver.source.bb.tetra.bbncht.set_dspacing(dspacing = enums.TetraDplxSpcing.DS0) \n</span>
+<span class="sd">		(for Uplink direction only) The &#39;Duplex Spacing&#39; and &#39;Reverse Operation&#39; parameters in the BNCH/T indicate the required</span>
+<span class="sd">		uplink frequency with respect to the indicated downlink frequency. These parameters are defined in ETSI 300 392-2. \n</span>
+<span class="sd">			:param dspacing: DS0| DS1| DS2| DS3| DS4| DS5| DS6| DS7</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">enum_scalar_to_str</span><span class="p">(</span><span class="n">dspacing</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">TetraDplxSpcing</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:TETRa:BBNCht:DSPacing </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="BbnchtCls.get_ecorrection">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Tetra_Bbncht.html#RsSmw.Implementations.Source.Bb.Tetra.Bbncht.BbnchtCls.get_ecorrection">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_ecorrection</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:TETRa:BBNCht:ECORrection \n</span>
+<span class="sd">		Snippet: value: bool = driver.source.bb.tetra.bbncht.get_ecorrection() \n</span>
+<span class="sd">		Enables/disables error correction. \n</span>
+<span class="sd">			:return: ecorrection: 1| ON| 0| OFF</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:TETRa:BBNCht:ECORrection?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_bool</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="BbnchtCls.set_ecorrection">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Tetra_Bbncht.html#RsSmw.Implementations.Source.Bb.Tetra.Bbncht.BbnchtCls.set_ecorrection">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_ecorrection</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ecorrection</span><span class="p">:</span> <span class="nb">bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:TETRa:BBNCht:ECORrection \n</span>
+<span class="sd">		Snippet: driver.source.bb.tetra.bbncht.set_ecorrection(ecorrection = False) \n</span>
+<span class="sd">		Enables/disables error correction. \n</span>
+<span class="sd">			:param ecorrection: 1| ON| 0| OFF</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">bool_to_str</span><span class="p">(</span><span class="n">ecorrection</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:TETRa:BBNCht:ECORrection </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="BbnchtCls.get_fband">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Tetra_Bbncht.html#RsSmw.Implementations.Source.Bb.Tetra.Bbncht.BbnchtCls.get_fband">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_fband</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">enums</span><span class="o">.</span><span class="n">TetraFreqBand</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:TETRa:BBNCht:FBANd \n</span>
+<span class="sd">		Snippet: value: enums.TetraFreqBand = driver.source.bb.tetra.bbncht.get_fband() \n</span>
+<span class="sd">		Sets the Frequency Band. This setting has an effect on the calculation of the transmission frequency. The Frequency Band</span>
+<span class="sd">		Information is inserted only in the TETRA BSCH protocol channel. \n</span>
+<span class="sd">			:return: fband: F100| F200| F300| F400| F500| F600| F700| F800| F900</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:TETRa:BBNCht:FBANd?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_scalar_enum</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">TetraFreqBand</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="BbnchtCls.set_fband">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Tetra_Bbncht.html#RsSmw.Implementations.Source.Bb.Tetra.Bbncht.BbnchtCls.set_fband">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_fband</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">fband</span><span class="p">:</span> <span class="n">enums</span><span class="o">.</span><span class="n">TetraFreqBand</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:TETRa:BBNCht:FBANd \n</span>
+<span class="sd">		Snippet: driver.source.bb.tetra.bbncht.set_fband(fband = enums.TetraFreqBand.F100) \n</span>
+<span class="sd">		Sets the Frequency Band. This setting has an effect on the calculation of the transmission frequency. The Frequency Band</span>
+<span class="sd">		Information is inserted only in the TETRA BSCH protocol channel. \n</span>
+<span class="sd">			:param fband: F100| F200| F300| F400| F500| F600| F700| F800| F900</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">enum_scalar_to_str</span><span class="p">(</span><span class="n">fband</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">TetraFreqBand</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:TETRa:BBNCht:FBANd </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="BbnchtCls.get_fe_extension">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Tetra_Bbncht.html#RsSmw.Implementations.Source.Bb.Tetra.Bbncht.BbnchtCls.get_fe_extension">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_fe_extension</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:TETRa:BBNCht:FEEXtension \n</span>
+<span class="sd">		Snippet: value: bool = driver.source.bb.tetra.bbncht.get_fe_extension() \n</span>
+<span class="sd">		Enables/disables the frame 18 extension element, i.e. indicates whether an MS is allowed to receive downlink information</span>
+<span class="sd">		on all slots of the frame 18. If extension is allowed, only MSs which are capable of receiving consecutive slots are able</span>
+<span class="sd">		to perform this function. \n</span>
+<span class="sd">			:return: fe_extension: 1| ON| 0| OFF</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:TETRa:BBNCht:FEEXtension?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_bool</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="BbnchtCls.set_fe_extension">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Tetra_Bbncht.html#RsSmw.Implementations.Source.Bb.Tetra.Bbncht.BbnchtCls.set_fe_extension">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_fe_extension</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">fe_extension</span><span class="p">:</span> <span class="nb">bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:TETRa:BBNCht:FEEXtension \n</span>
+<span class="sd">		Snippet: driver.source.bb.tetra.bbncht.set_fe_extension(fe_extension = False) \n</span>
+<span class="sd">		Enables/disables the frame 18 extension element, i.e. indicates whether an MS is allowed to receive downlink information</span>
+<span class="sd">		on all slots of the frame 18. If extension is allowed, only MSs which are capable of receiving consecutive slots are able</span>
+<span class="sd">		to perform this function. \n</span>
+<span class="sd">			:param fe_extension: 1| ON| 0| OFF</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">bool_to_str</span><span class="p">(</span><span class="n">fe_extension</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:TETRa:BBNCht:FEEXtension </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="BbnchtCls.get_lback">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Tetra_Bbncht.html#RsSmw.Implementations.Source.Bb.Tetra.Bbncht.BbnchtCls.get_lback">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_lback</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:TETRa:BBNCht:LBACk \n</span>
+<span class="sd">		Snippet: value: bool = driver.source.bb.tetra.bbncht.get_lback() \n</span>
+<span class="sd">		Enables/disables loop back for test purposes. If enabled, the mobile station should set up a loop and return the data</span>
+<span class="sd">		when requested by the Tx_burst_type. \n</span>
+<span class="sd">			:return: lback: 1| ON| 0| OFF</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:TETRa:BBNCht:LBACk?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_bool</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="BbnchtCls.set_lback">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Tetra_Bbncht.html#RsSmw.Implementations.Source.Bb.Tetra.Bbncht.BbnchtCls.set_lback">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_lback</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">lback</span><span class="p">:</span> <span class="nb">bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:TETRa:BBNCht:LBACk \n</span>
+<span class="sd">		Snippet: driver.source.bb.tetra.bbncht.set_lback(lback = False) \n</span>
+<span class="sd">		Enables/disables loop back for test purposes. If enabled, the mobile station should set up a loop and return the data</span>
+<span class="sd">		when requested by the Tx_burst_type. \n</span>
+<span class="sd">			:param lback: 1| ON| 0| OFF</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">bool_to_str</span><span class="p">(</span><span class="n">lback</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:TETRa:BBNCht:LBACk </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="BbnchtCls.get_lentry">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Tetra_Bbncht.html#RsSmw.Implementations.Source.Bb.Tetra.Bbncht.BbnchtCls.get_lentry">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_lentry</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:TETRa:BBNCht:LENTry \n</span>
+<span class="sd">		Snippet: value: bool = driver.source.bb.tetra.bbncht.get_lentry() \n</span>
+<span class="sd">		Sets the value of the late entry supported information element, used to indicate to the MS whether or not late entry can</span>
+<span class="sd">		be supported by the cell. \n</span>
+<span class="sd">			:return: lentry: 1| ON| 0| OFF</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:TETRa:BBNCht:LENTry?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_bool</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="BbnchtCls.set_lentry">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Tetra_Bbncht.html#RsSmw.Implementations.Source.Bb.Tetra.Bbncht.BbnchtCls.set_lentry">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_lentry</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">lentry</span><span class="p">:</span> <span class="nb">bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:TETRa:BBNCht:LENTry \n</span>
+<span class="sd">		Snippet: driver.source.bb.tetra.bbncht.set_lentry(lentry = False) \n</span>
+<span class="sd">		Sets the value of the late entry supported information element, used to indicate to the MS whether or not late entry can</span>
+<span class="sd">		be supported by the cell. \n</span>
+<span class="sd">			:param lentry: 1| ON| 0| OFF</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">bool_to_str</span><span class="p">(</span><span class="n">lentry</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:TETRa:BBNCht:LENTry </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="BbnchtCls.get_mccode">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Tetra_Bbncht.html#RsSmw.Implementations.Source.Bb.Tetra.Bbncht.BbnchtCls.get_mccode">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_mccode</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:TETRa:BBNCht:MCCode \n</span>
+<span class="sd">		Snippet: value: int = driver.source.bb.tetra.bbncht.get_mccode() \n</span>
+<span class="sd">		Sets the Mobile Country Code. The MCC is the number of the country in which the unit is operated. See Table &#39;Building of</span>
+<span class="sd">		scrambling code&#39; for information on how the scrambling code is calculated. \n</span>
+<span class="sd">			:return: mccode: integer Range: 0 to 1023</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:TETRa:BBNCht:MCCode?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_int</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="BbnchtCls.set_mccode">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Tetra_Bbncht.html#RsSmw.Implementations.Source.Bb.Tetra.Bbncht.BbnchtCls.set_mccode">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_mccode</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">mccode</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:TETRa:BBNCht:MCCode \n</span>
+<span class="sd">		Snippet: driver.source.bb.tetra.bbncht.set_mccode(mccode = 1) \n</span>
+<span class="sd">		Sets the Mobile Country Code. The MCC is the number of the country in which the unit is operated. See Table &#39;Building of</span>
+<span class="sd">		scrambling code&#39; for information on how the scrambling code is calculated. \n</span>
+<span class="sd">			:param mccode: integer Range: 0 to 1023</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">decimal_value_to_str</span><span class="p">(</span><span class="n">mccode</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:TETRa:BBNCht:MCCode </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="BbnchtCls.get_mc_number">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Tetra_Bbncht.html#RsSmw.Implementations.Source.Bb.Tetra.Bbncht.BbnchtCls.get_mc_number">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_mc_number</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:TETRa:BBNCht:MCNumber \n</span>
+<span class="sd">		Snippet: value: int = driver.source.bb.tetra.bbncht.get_mc_number() \n</span>
+<span class="sd">		The &#39;Main Carrier Number&#39; divides the TETRA band into carriers with a spacing as set with the parameter &#39;Carrier</span>
+<span class="sd">		Bandwidth&#39;. The range is 0 to 4095 (12 bits) . The Main Carrier Frequency is calculated as follow: Main Carrier Frequency,</span>
+<span class="sd">		kHz = &#39;Main Carrier Number&#39; * &#39;Carrier Bandwidth&#39; \n</span>
+<span class="sd">			:return: mc_number: integer Range: 0 to 4095</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:TETRa:BBNCht:MCNumber?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_int</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="BbnchtCls.set_mc_number">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Tetra_Bbncht.html#RsSmw.Implementations.Source.Bb.Tetra.Bbncht.BbnchtCls.set_mc_number">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_mc_number</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">mc_number</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:TETRa:BBNCht:MCNumber \n</span>
+<span class="sd">		Snippet: driver.source.bb.tetra.bbncht.set_mc_number(mc_number = 1) \n</span>
+<span class="sd">		The &#39;Main Carrier Number&#39; divides the TETRA band into carriers with a spacing as set with the parameter &#39;Carrier</span>
+<span class="sd">		Bandwidth&#39;. The range is 0 to 4095 (12 bits) . The Main Carrier Frequency is calculated as follow: Main Carrier Frequency,</span>
+<span class="sd">		kHz = &#39;Main Carrier Number&#39; * &#39;Carrier Bandwidth&#39; \n</span>
+<span class="sd">			:param mc_number: integer Range: 0 to 4095</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">decimal_value_to_str</span><span class="p">(</span><span class="n">mc_number</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:TETRa:BBNCht:MCNumber </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="BbnchtCls.get_mncode">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Tetra_Bbncht.html#RsSmw.Implementations.Source.Bb.Tetra.Bbncht.BbnchtCls.get_mncode">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_mncode</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:TETRa:BBNCht:MNCode \n</span>
+<span class="sd">		Snippet: value: int = driver.source.bb.tetra.bbncht.get_mncode() \n</span>
+<span class="sd">		Sets the Mobile Network Code (MNC) . The MNC is the number of the TETRA network operator. See Table &#39;Building of</span>
+<span class="sd">		scrambling code&#39; for information on how the scrambling code is calculated. \n</span>
+<span class="sd">			:return: mncode: integer Range: 0 to 16383</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:TETRa:BBNCht:MNCode?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_int</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="BbnchtCls.set_mncode">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Tetra_Bbncht.html#RsSmw.Implementations.Source.Bb.Tetra.Bbncht.BbnchtCls.set_mncode">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_mncode</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">mncode</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:TETRa:BBNCht:MNCode \n</span>
+<span class="sd">		Snippet: driver.source.bb.tetra.bbncht.set_mncode(mncode = 1) \n</span>
+<span class="sd">		Sets the Mobile Network Code (MNC) . The MNC is the number of the TETRA network operator. See Table &#39;Building of</span>
+<span class="sd">		scrambling code&#39; for information on how the scrambling code is calculated. \n</span>
+<span class="sd">			:param mncode: integer Range: 0 to 16383</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">decimal_value_to_str</span><span class="p">(</span><span class="n">mncode</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:TETRa:BBNCht:MNCode </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="BbnchtCls.get_mtm_cell">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Tetra_Bbncht.html#RsSmw.Implementations.Source.Bb.Tetra.Bbncht.BbnchtCls.get_mtm_cell">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_mtm_cell</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">enums</span><span class="o">.</span><span class="n">TetraTxPwr</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:TETRa:BBNCht:MTMCell \n</span>
+<span class="sd">		Snippet: value: enums.TetraTxPwr = driver.source.bb.tetra.bbncht.get_mtm_cell() \n</span>
+<span class="sd">		Sets the protocol information on the maximum transmission power for the mobile station. Allowed are values from 15 dBm to</span>
+<span class="sd">		45 dBm in 5 dB steps. The MS_TXPWR_MAX_CELL paramer is used for cell selection and reselection, and for power adjustments. \n</span>
+<span class="sd">			:return: mtm_cell: M15| M20| M25| M30| M35| M40| M45</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:TETRa:BBNCht:MTMCell?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_scalar_enum</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">TetraTxPwr</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="BbnchtCls.set_mtm_cell">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Tetra_Bbncht.html#RsSmw.Implementations.Source.Bb.Tetra.Bbncht.BbnchtCls.set_mtm_cell">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_mtm_cell</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">mtm_cell</span><span class="p">:</span> <span class="n">enums</span><span class="o">.</span><span class="n">TetraTxPwr</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:TETRa:BBNCht:MTMCell \n</span>
+<span class="sd">		Snippet: driver.source.bb.tetra.bbncht.set_mtm_cell(mtm_cell = enums.TetraTxPwr.M15) \n</span>
+<span class="sd">		Sets the protocol information on the maximum transmission power for the mobile station. Allowed are values from 15 dBm to</span>
+<span class="sd">		45 dBm in 5 dB steps. The MS_TXPWR_MAX_CELL paramer is used for cell selection and reselection, and for power adjustments. \n</span>
+<span class="sd">			:param mtm_cell: M15| M20| M25| M30| M35| M40| M45</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">enum_scalar_to_str</span><span class="p">(</span><span class="n">mtm_cell</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">TetraTxPwr</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:TETRa:BBNCht:MTMCell </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="BbnchtCls.get_offset">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Tetra_Bbncht.html#RsSmw.Implementations.Source.Bb.Tetra.Bbncht.BbnchtCls.get_offset">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_offset</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">enums</span><span class="o">.</span><span class="n">TetraOffset</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:TETRa:BBNCht:OFFSet \n</span>
+<span class="sd">		Snippet: value: enums.TetraOffset = driver.source.bb.tetra.bbncht.get_offset() \n</span>
+<span class="sd">		Set the &#39;Offset&#39; to shifft the center frequency in the channel spacing. The allowed offsets are +6.25, 0,-6.25 and +12.50</span>
+<span class="sd">		kHz. \n</span>
+<span class="sd">			:return: offset: ZERO| P625| M625| P125</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:TETRa:BBNCht:OFFSet?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_scalar_enum</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">TetraOffset</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="BbnchtCls.set_offset">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Tetra_Bbncht.html#RsSmw.Implementations.Source.Bb.Tetra.Bbncht.BbnchtCls.set_offset">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_offset</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">offset</span><span class="p">:</span> <span class="n">enums</span><span class="o">.</span><span class="n">TetraOffset</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:TETRa:BBNCht:OFFSet \n</span>
+<span class="sd">		Snippet: driver.source.bb.tetra.bbncht.set_offset(offset = enums.TetraOffset.M625) \n</span>
+<span class="sd">		Set the &#39;Offset&#39; to shifft the center frequency in the channel spacing. The allowed offsets are +6.25, 0,-6.25 and +12.50</span>
+<span class="sd">		kHz. \n</span>
+<span class="sd">			:param offset: ZERO| P625| M625| P125</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">enum_scalar_to_str</span><span class="p">(</span><span class="n">offset</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">TetraOffset</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:TETRa:BBNCht:OFFSet </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="BbnchtCls.get_roperation">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Tetra_Bbncht.html#RsSmw.Implementations.Source.Bb.Tetra.Bbncht.BbnchtCls.get_roperation">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_roperation</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:TETRa:BBNCht:ROPeration \n</span>
+<span class="sd">		Snippet: value: bool = driver.source.bb.tetra.bbncht.get_roperation() \n</span>
+<span class="sd">		(for Uplink direction only) Enables/disables reverse operation. Reverse operation is used to fix the uplink frequency</span>
+<span class="sd">		relative to the downlink frequency. In normal operation, the uplink frequency is lower than the downlink frequency and in</span>
+<span class="sd">		reverse operation, the uplink frequency is higher than the downlink frequency. \n</span>
+<span class="sd">			:return: roperation: 1| ON| 0| OFF</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:TETRa:BBNCht:ROPeration?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_bool</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="BbnchtCls.set_roperation">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Tetra_Bbncht.html#RsSmw.Implementations.Source.Bb.Tetra.Bbncht.BbnchtCls.set_roperation">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_roperation</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">roperation</span><span class="p">:</span> <span class="nb">bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:TETRa:BBNCht:ROPeration \n</span>
+<span class="sd">		Snippet: driver.source.bb.tetra.bbncht.set_roperation(roperation = False) \n</span>
+<span class="sd">		(for Uplink direction only) Enables/disables reverse operation. Reverse operation is used to fix the uplink frequency</span>
+<span class="sd">		relative to the downlink frequency. In normal operation, the uplink frequency is lower than the downlink frequency and in</span>
+<span class="sd">		reverse operation, the uplink frequency is higher than the downlink frequency. \n</span>
+<span class="sd">			:param roperation: 1| ON| 0| OFF</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">bool_to_str</span><span class="p">(</span><span class="n">roperation</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:TETRa:BBNCht:ROPeration </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="BbnchtCls.get_scode">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Tetra_Bbncht.html#RsSmw.Implementations.Source.Bb.Tetra.Bbncht.BbnchtCls.get_scode">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_scode</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">enums</span><span class="o">.</span><span class="n">TetraSysCode</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:TETRa:BBNCht:SCODe \n</span>
+<span class="sd">		Snippet: value: enums.TetraSysCode = driver.source.bb.tetra.bbncht.get_scode() \n</span>
+<span class="sd">		Indicate whether the system is a TETRA V+D system or whether this is a Direct Mode transmission. \n</span>
+<span class="sd">			:return: scode: S0| S1| S2| S3| S4| S5| S6| S7</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:TETRa:BBNCht:SCODe?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_scalar_enum</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">TetraSysCode</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="BbnchtCls.set_scode">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Tetra_Bbncht.html#RsSmw.Implementations.Source.Bb.Tetra.Bbncht.BbnchtCls.set_scode">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_scode</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">scode</span><span class="p">:</span> <span class="n">enums</span><span class="o">.</span><span class="n">TetraSysCode</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:TETRa:BBNCht:SCODe \n</span>
+<span class="sd">		Snippet: driver.source.bb.tetra.bbncht.set_scode(scode = enums.TetraSysCode.S0) \n</span>
+<span class="sd">		Indicate whether the system is a TETRA V+D system or whether this is a Direct Mode transmission. \n</span>
+<span class="sd">			:param scode: S0| S1| S2| S3| S4| S5| S6| S7</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">enum_scalar_to_str</span><span class="p">(</span><span class="n">scode</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">TetraSysCode</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:TETRa:BBNCht:SCODe </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="BbnchtCls.get_smode">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Tetra_Bbncht.html#RsSmw.Implementations.Source.Bb.Tetra.Bbncht.BbnchtCls.get_smode">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_smode</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">enums</span><span class="o">.</span><span class="n">TetraShrngMode</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:TETRa:BBNCht:SMODe \n</span>
+<span class="sd">		Snippet: value: enums.TetraShrngMode = driver.source.bb.tetra.bbncht.get_smode() \n</span>
+<span class="sd">		The sharing mode field indicates whether the BS is using continuous transmission, carrier sharing, MCCH sharing or</span>
+<span class="sd">		traffic carrier sharing. \n</span>
+<span class="sd">			:return: smode: CTRansmission| CSHaring| MSHaring| TCSHaring</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:TETRa:BBNCht:SMODe?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_scalar_enum</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">TetraShrngMode</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="BbnchtCls.set_smode">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Tetra_Bbncht.html#RsSmw.Implementations.Source.Bb.Tetra.Bbncht.BbnchtCls.set_smode">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_smode</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">smode</span><span class="p">:</span> <span class="n">enums</span><span class="o">.</span><span class="n">TetraShrngMode</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:TETRa:BBNCht:SMODe \n</span>
+<span class="sd">		Snippet: driver.source.bb.tetra.bbncht.set_smode(smode = enums.TetraShrngMode.CSHaring) \n</span>
+<span class="sd">		The sharing mode field indicates whether the BS is using continuous transmission, carrier sharing, MCCH sharing or</span>
+<span class="sd">		traffic carrier sharing. \n</span>
+<span class="sd">			:param smode: CTRansmission| CSHaring| MSHaring| TCSHaring</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">enum_scalar_to_str</span><span class="p">(</span><span class="n">smode</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">TetraShrngMode</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:TETRa:BBNCht:SMODe </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="BbnchtCls.get_tb_type">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Tetra_Bbncht.html#RsSmw.Implementations.Source.Bb.Tetra.Bbncht.BbnchtCls.get_tb_type">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_tb_type</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">enums</span><span class="o">.</span><span class="n">TetraTxBurstType</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:TETRa:BBNCht:TBTYpe \n</span>
+<span class="sd">		Snippet: value: enums.TetraTxBurstType = driver.source.bb.tetra.bbncht.get_tb_type() \n</span>
+<span class="sd">		Sets the parameter Tx_burst_type and determines whether the MS under test transmit either a normal uplink burst or</span>
+<span class="sd">		control uplink burst. \n</span>
+<span class="sd">			:return: tb_type: NUB| CUB NUB The mobile station should transmit using normal uplink burst. CUB The mobile station should transmit using control uplink burst.</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:TETRa:BBNCht:TBTYpe?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_scalar_enum</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">TetraTxBurstType</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="BbnchtCls.set_tb_type">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Tetra_Bbncht.html#RsSmw.Implementations.Source.Bb.Tetra.Bbncht.BbnchtCls.set_tb_type">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_tb_type</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tb_type</span><span class="p">:</span> <span class="n">enums</span><span class="o">.</span><span class="n">TetraTxBurstType</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:TETRa:BBNCht:TBTYpe \n</span>
+<span class="sd">		Snippet: driver.source.bb.tetra.bbncht.set_tb_type(tb_type = enums.TetraTxBurstType.CUB) \n</span>
+<span class="sd">		Sets the parameter Tx_burst_type and determines whether the MS under test transmit either a normal uplink burst or</span>
+<span class="sd">		control uplink burst. \n</span>
+<span class="sd">			:param tb_type: NUB| CUB NUB The mobile station should transmit using normal uplink burst. CUB The mobile station should transmit using control uplink burst.</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">enum_scalar_to_str</span><span class="p">(</span><span class="n">tb_type</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">TetraTxBurstType</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:TETRa:BBNCht:TBTYpe </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="BbnchtCls.get_tr_frames">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Tetra_Bbncht.html#RsSmw.Implementations.Source.Bb.Tetra.Bbncht.BbnchtCls.get_tr_frames">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_tr_frames</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">enums</span><span class="o">.</span><span class="n">TetraTsRsrvdFrm</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:TETRa:BBNCht:TRFRames \n</span>
+<span class="sd">		Snippet: value: enums.TetraTsRsrvdFrm = driver.source.bb.tetra.bbncht.get_tr_frames() \n</span>
+<span class="sd">		Determines the number of frames reserved over two multiframes period. The way this field is processed, depends on the</span>
+<span class="sd">		selected [:SOURce&lt;hw&gt;]:BB:TETRa:BBNCht:SMODe. If MCCH sharing is indicated, the TS reserved frames field shall indicate</span>
+<span class="sd">		which frames are reserved in this mode of operation. For the other values of sharing mode, the contents of the TS</span>
+<span class="sd">		reserved frames field shall be ignored. \n</span>
+<span class="sd">			:return: tr_frames: F1| F2| F3| F4| F6| F9| F12| F18</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:TETRa:BBNCht:TRFRames?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_scalar_enum</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">TetraTsRsrvdFrm</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="BbnchtCls.set_tr_frames">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Tetra_Bbncht.html#RsSmw.Implementations.Source.Bb.Tetra.Bbncht.BbnchtCls.set_tr_frames">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_tr_frames</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tr_frames</span><span class="p">:</span> <span class="n">enums</span><span class="o">.</span><span class="n">TetraTsRsrvdFrm</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:TETRa:BBNCht:TRFRames \n</span>
+<span class="sd">		Snippet: driver.source.bb.tetra.bbncht.set_tr_frames(tr_frames = enums.TetraTsRsrvdFrm.F1) \n</span>
+<span class="sd">		Determines the number of frames reserved over two multiframes period. The way this field is processed, depends on the</span>
+<span class="sd">		selected [:SOURce&lt;hw&gt;]:BB:TETRa:BBNCht:SMODe. If MCCH sharing is indicated, the TS reserved frames field shall indicate</span>
+<span class="sd">		which frames are reserved in this mode of operation. For the other values of sharing mode, the contents of the TS</span>
+<span class="sd">		reserved frames field shall be ignored. \n</span>
+<span class="sd">			:param tr_frames: F1| F2| F3| F4| F6| F9| F12| F18</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">enum_scalar_to_str</span><span class="p">(</span><span class="n">tr_frames</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">TetraTsRsrvdFrm</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:TETRa:BBNCht:TRFRames </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="BbnchtCls.get_ttb_type">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Tetra_Bbncht.html#RsSmw.Implementations.Source.Bb.Tetra.Bbncht.BbnchtCls.get_ttb_type">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_ttb_type</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">enums</span><span class="o">.</span><span class="n">TetraBurstType</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:TETRa:BBNCht:TTBType \n</span>
+<span class="sd">		Snippet: value: enums.TetraBurstType = driver.source.bb.tetra.bbncht.get_ttb_type() \n</span>
+<span class="sd">		Sets the value of the special parameter T1_T4_Burst_Type, i.e. determines the logical channel the BS is expecting to</span>
+<span class="sd">		receive. \n</span>
+<span class="sd">			:return: ttb_type: T72F| T72S| SFD| BSHD| T24D| RSV1| RSV2| T72U| SFU| SSTCh| T24U| SSCH| RSV3| RSBurst| RSSBurst| TPTD| TPTU| T48D| T48U| TSCD| TSCU| T108| SPHD| SPHU| SPF| SQHU| SQU| SQD| SQRA</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:TETRa:BBNCht:TTBType?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_scalar_enum</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">TetraBurstType</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="BbnchtCls.set_ttb_type">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Tetra_Bbncht.html#RsSmw.Implementations.Source.Bb.Tetra.Bbncht.BbnchtCls.set_ttb_type">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_ttb_type</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ttb_type</span><span class="p">:</span> <span class="n">enums</span><span class="o">.</span><span class="n">TetraBurstType</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:TETRa:BBNCht:TTBType \n</span>
+<span class="sd">		Snippet: driver.source.bb.tetra.bbncht.set_ttb_type(ttb_type = enums.TetraBurstType.BSHD) \n</span>
+<span class="sd">		Sets the value of the special parameter T1_T4_Burst_Type, i.e. determines the logical channel the BS is expecting to</span>
+<span class="sd">		receive. \n</span>
+<span class="sd">			:param ttb_type: T72F| T72S| SFD| BSHD| T24D| RSV1| RSV2| T72U| SFU| SSTCh| T24U| SSCH| RSV3| RSBurst| RSSBurst| TPTD| TPTU| T48D| T48U| TSCD| TSCU| T108| SPHD| SPHU| SPF| SQHU| SQU| SQD| SQRA</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">enum_scalar_to_str</span><span class="p">(</span><span class="n">ttb_type</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">TetraBurstType</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:TETRa:BBNCht:TTBType </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="BbnchtCls.get_txon">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Tetra_Bbncht.html#RsSmw.Implementations.Source.Bb.Tetra.Bbncht.BbnchtCls.get_txon">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_txon</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">enums</span><span class="o">.</span><span class="n">TetraTxOn</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:TETRa:BBNCht:TXON \n</span>
+<span class="sd">		Snippet: value: enums.TetraTxOn = driver.source.bb.tetra.bbncht.get_txon() \n</span>
+<span class="sd">		Determines the value of the Tx_on parameter, i.e. selects the test mode the MS operates in, &#39;Reception ON&#39; or</span>
+<span class="sd">		&#39;Transmission ON&#39;. This parameter is neccessary for the generation of test signal T1 or T4 transmitted by the test system. \n</span>
+<span class="sd">			:return: txon: RON| TON RON The mobile station is requested to recept. TON The mobile station is requested to transmit.</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:TETRa:BBNCht:TXON?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_scalar_enum</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">TetraTxOn</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="BbnchtCls.set_txon">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Tetra_Bbncht.html#RsSmw.Implementations.Source.Bb.Tetra.Bbncht.BbnchtCls.set_txon">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_txon</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">txon</span><span class="p">:</span> <span class="n">enums</span><span class="o">.</span><span class="n">TetraTxOn</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:TETRa:BBNCht:TXON \n</span>
+<span class="sd">		Snippet: driver.source.bb.tetra.bbncht.set_txon(txon = enums.TetraTxOn.RON) \n</span>
+<span class="sd">		Determines the value of the Tx_on parameter, i.e. selects the test mode the MS operates in, &#39;Reception ON&#39; or</span>
+<span class="sd">		&#39;Transmission ON&#39;. This parameter is neccessary for the generation of test signal T1 or T4 transmitted by the test system. \n</span>
+<span class="sd">			:param txon: RON| TON RON The mobile station is requested to recept. TON The mobile station is requested to transmit.</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">enum_scalar_to_str</span><span class="p">(</span><span class="n">txon</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">TetraTxOn</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:TETRa:BBNCht:TXON </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="BbnchtCls.get_updtx">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Tetra_Bbncht.html#RsSmw.Implementations.Source.Bb.Tetra.Bbncht.BbnchtCls.get_updtx">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_updtx</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:TETRa:BBNCht:UPDTx \n</span>
+<span class="sd">		Snippet: value: bool = driver.source.bb.tetra.bbncht.get_updtx() \n</span>
+<span class="sd">		The &#39;U-plane DTX&#39; element indicates whether or not the BS supports discontinuous traffic transmission by the MS. \n</span>
+<span class="sd">			:return: updtx: 1| ON| 0| OFF</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:TETRa:BBNCht:UPDTx?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_bool</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="BbnchtCls.set_updtx">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Tetra_Bbncht.html#RsSmw.Implementations.Source.Bb.Tetra.Bbncht.BbnchtCls.set_updtx">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_updtx</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">updtx</span><span class="p">:</span> <span class="nb">bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:TETRa:BBNCht:UPDTx \n</span>
+<span class="sd">		Snippet: driver.source.bb.tetra.bbncht.set_updtx(updtx = False) \n</span>
+<span class="sd">		The &#39;U-plane DTX&#39; element indicates whether or not the BS supports discontinuous traffic transmission by the MS. \n</span>
+<span class="sd">			:param updtx: 1| ON| 0| OFF</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">bool_to_str</span><span class="p">(</span><span class="n">updtx</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:TETRa:BBNCht:UPDTx </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+</div>
+
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright © Rohde &amp; Schwarz 2023.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

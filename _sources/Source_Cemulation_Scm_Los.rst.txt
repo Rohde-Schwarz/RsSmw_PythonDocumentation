@@ -1,0 +1,43 @@
+Los
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:CEMulation:SCM:LOS:DISTance
+	single: [SOURce<HW>]:CEMulation:SCM:LOS:KFACtor
+	single: [SOURce<HW>]:CEMulation:SCM:LOS:STATe
+
+.. code-block:: python
+
+	[SOURce<HW>]:CEMulation:SCM:LOS:DISTance
+	[SOURce<HW>]:CEMulation:SCM:LOS:KFACtor
+	[SOURce<HW>]:CEMulation:SCM:LOS:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.Scm.Los.LosCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.cemulation.scm.los.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Cemulation_Scm_Los_Arrival.rst
+	Source_Cemulation_Scm_Los_Departure.rst
+	Source_Cemulation_Scm_Los_Random.rst

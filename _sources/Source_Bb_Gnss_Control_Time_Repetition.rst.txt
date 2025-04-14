@@ -1,0 +1,24 @@
+Repetition
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:GNSS:CONTrol:TIME:REPetition:ACTual
+	single: [SOURce<HW>]:BB:GNSS:CONTrol:TIME:REPetition:COUNt
+	single: [SOURce<HW>]:BB:GNSS:CONTrol:TIME:REPetition:INFinite
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:GNSS:CONTrol:TIME:REPetition:ACTual
+	[SOURce<HW>]:BB:GNSS:CONTrol:TIME:REPetition:COUNt
+	[SOURce<HW>]:BB:GNSS:CONTrol:TIME:REPetition:INFinite
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Gnss.Control.Time.Repetition.RepetitionCls
+	:members:
+	:undoc-members:
+	:noindex:

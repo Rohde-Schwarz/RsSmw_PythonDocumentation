@@ -1,0 +1,20 @@
+Apply
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:ONEWeb:NOTCh:APPLy
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:ONEWeb:NOTCh:APPLy
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Notch.Apply.ApplyCls
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,28 @@
+Intracell
+----------------------------------------
+
+
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Eutra.Tcw.Ws.Intracell.IntracellCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.eutra.tcw.ws.intracell.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Eutra_Tcw_Ws_Intracell_Ue.rst

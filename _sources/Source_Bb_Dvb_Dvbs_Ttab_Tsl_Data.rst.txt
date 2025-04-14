@@ -1,0 +1,20 @@
+Data
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:DVB:DVBS:TTAB:TSL<CH0>:DATA
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:DVB:DVBS:TTAB:TSL<CH0>:DATA
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dvb.Dvbs.Ttab.Tsl.Data.DataCls
+	:members:
+	:undoc-members:
+	:noindex:

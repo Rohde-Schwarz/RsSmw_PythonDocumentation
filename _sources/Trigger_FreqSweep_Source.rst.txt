@@ -1,0 +1,20 @@
+Source
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: TRIGger<HW>:FSWeep:SOURce
+
+.. code-block:: python
+
+	TRIGger<HW>:FSWeep:SOURce
+
+
+
+.. autoclass:: RsSmw.Implementations.Trigger.FreqSweep.Source.SourceCls
+	:members:
+	:undoc-members:
+	:noindex:

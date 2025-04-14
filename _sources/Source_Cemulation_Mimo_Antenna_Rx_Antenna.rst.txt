@@ -1,0 +1,36 @@
+Antenna<Index>
+----------------------------------------
+
+.. rubric:: RepCap Settings
+
+.. code-block:: python
+
+	# Range: Nr1 .. Nr64
+	rc = driver.source.cemulation.mimo.antenna.rx.antenna.repcap_index_get()
+	driver.source.cemulation.mimo.antenna.rx.antenna.repcap_index_set(repcap.Index.Nr1)
+
+
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.Mimo.Antenna.Rx.Antenna.AntennaCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.cemulation.mimo.antenna.rx.antenna.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Cemulation_Mimo_Antenna_Rx_Antenna_Pfile.rst

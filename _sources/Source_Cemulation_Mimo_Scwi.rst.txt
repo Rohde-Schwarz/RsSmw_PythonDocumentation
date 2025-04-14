@@ -1,0 +1,29 @@
+Scwi
+----------------------------------------
+
+
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.Mimo.Scwi.ScwiCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.cemulation.mimo.scwi.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Cemulation_Mimo_Scwi_Cluster.rst
+	Source_Cemulation_Mimo_Scwi_Tap.rst

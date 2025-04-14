@@ -1,0 +1,840 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sconfiguration &mdash; RsSmw 5.30.305.84 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=17bca7dd"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Apply" href="Sconfiguration_Apply.html" />
+    <link rel="prev" title="Power" href="Read_Power.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            RsSmw
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="readme.html">Revision History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="enums.html">Enums</a></li>
+<li class="toctree-l1"><a class="reference internal" href="repcap.html">RepCaps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">Examples</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="RsSmw.html">RsSmw API Structure</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Bert.html">Bert</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Bler.html">Bler</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Calibration.html">Calibration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Clock.html">Clock</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Connector.html">Connector</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Device.html">Device</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Diagnostic.html">Diagnostic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Display.html">Display</a></li>
+<li class="toctree-l2"><a class="reference internal" href="FormatPy.html">FormatPy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Fpanel.html">Fpanel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="HardCopy.html">HardCopy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Initiate.html">Initiate&lt;Channel&gt;</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Kboard.html">Kboard</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MassMemory.html">MassMemory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Memory.html">Memory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Output.html">Output</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Read.html">Read&lt;Channel&gt;</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Sconfiguration</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Sconfiguration_Apply.html">Apply</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Sconfiguration_Baseband.html">Baseband</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Sconfiguration_Bextension.html">Bextension</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Sconfiguration_Diq.html">Diq</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Sconfiguration_Duplicate.html">Duplicate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Sconfiguration_External.html">External</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Sconfiguration_Gnss.html">Gnss</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Sconfiguration_MultiInstrument.html">MultiInstrument</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Sconfiguration_Output.html">Output</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Sconfiguration_RfAlignment.html">RfAlignment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Sconfiguration_Siso.html">Siso</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Sense.html">Sense&lt;Channel&gt;</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Service.html">Service</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slist.html">Slist</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Source.html">Source</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Status.html">Status</a></li>
+<li class="toctree-l2"><a class="reference internal" href="System.html">System</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Test.html">Test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Trigger.html">Trigger&lt;InputIx&gt;</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Unit.html">Unit</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="utilities.html">RsSmw Utilities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="logger.html">RsSmw Logger</a></li>
+<li class="toctree-l1"><a class="reference internal" href="events.html">RsSmw Events</a></li>
+<li class="toctree-l1"><a class="reference internal" href="genindex.html">Index</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">RsSmw</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="RsSmw.html">RsSmw API Structure</a></li>
+      <li class="breadcrumb-item active">Sconfiguration</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/Sconfiguration.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="sconfiguration">
+<h1>Sconfiguration<a class="headerlink" href="#sconfiguration" title="Link to this heading"></a></h1>
+<p class="rubric">SCPI Commands :</p>
+<div class="highlight-python notranslate" id="index-0"><div class="highlight"><pre><span></span><span class="n">SCONfiguration</span><span class="p">:</span><span class="n">BBBW</span>
+<span class="n">SCONfiguration</span><span class="p">:</span><span class="n">CABW</span>
+<span class="n">SCONfiguration</span><span class="p">:</span><span class="n">FADing</span>
+<span class="n">SCONfiguration</span><span class="p">:</span><span class="n">MODE</span>
+<span class="n">SCONfiguration</span><span class="p">:</span><span class="n">PRESet</span>
+</pre></div>
+</div>
+<dl class="py class">
+<dt class="sig sig-object py">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SconfigurationCls</span></span><a class="reference internal" href="_modules/RsSmw/Implementations/Sconfiguration.html#SconfigurationCls"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Sconfiguration commands group definition. 235 total commands, 11 Subgroups, 5 group commands</p>
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">get_bb_bw</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">SystConfBbBandwidth</span></span></span><a class="reference internal" href="_modules/RsSmw/Implementations/Sconfiguration.html#SconfigurationCls.get_bb_bw"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: SCONfiguration:BBBW</span>
+<span class="n">value</span><span class="p">:</span> <span class="n">enums</span><span class="o">.</span><span class="n">SystConfBbBandwidth</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">sconfiguration</span><span class="o">.</span><span class="n">get_bb_bw</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Sets the bandwidth of the baseband signal at the inputs of the fading simulator. The available values depend on the
+selected MIMO configuration.</p>
+<blockquote>
+<div><p>INTRO_CMD_HELP: For example:</p>
+<ul class="simple">
+<li><p>In MIMO configurations with fewer than 8 channels, the max. baseband bandwidth is 400 MHz.</p></li>
+<li><p>In MIMO configurations with fewer than 4 channels, the max. baseband bandwidth is 800 MHz.</p></li>
+</ul>
+<dl class="field-list simple">
+<dt class="field-odd">return<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bandwidth: BB040| BB050| BB080| BB100| BB160| BB200| BB800| BB400| BB500| BB1G| BB2G| BB120| BBOUTDEF| BB240 BB040|BB050 … Bandwidth in MHz, e.g. 40 MHz. BB1G|BB2G 1 GHz, 2 GHz bandwidth. Available in SISO configurations. BBOUTDEF Bandwidth determined by the signal at the HS DIG I/Q.</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">get_cabw</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">SystConfBbBandwidth</span></span></span><a class="reference internal" href="_modules/RsSmw/Implementations/Sconfiguration.html#SconfigurationCls.get_cabw"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: SCONfiguration:CABW</span>
+<span class="n">value</span><span class="p">:</span> <span class="n">enums</span><span class="o">.</span><span class="n">SystConfBbBandwidth</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">sconfiguration</span><span class="o">.</span><span class="n">get_cabw</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Queries the resulting channel aggregation bandwidth, i.e. the signal bandwidth at the outputs of the stream mapper. The
+value is calculated automatically and depends on the selected configuration, the installed options and the selected
+baseband bandwidth (method RsSmw.Sconfiguration.bbBw) .</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">return<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bandwidth: BB800| BB200</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">get_fading</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">SystConfFadConf</span></span></span><a class="reference internal" href="_modules/RsSmw/Implementations/Sconfiguration.html#SconfigurationCls.get_fading"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: SCONfiguration:FADing</span>
+<span class="n">value</span><span class="p">:</span> <span class="n">enums</span><span class="o">.</span><span class="n">SystConfFadConf</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">sconfiguration</span><span class="o">.</span><span class="n">get_fading</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Defines the signal routing for standard and advanced system configuration modes. The availability of specific
+configurations of these modes depends on installed options. For more information, refer to the specifications document.</p>
+<blockquote>
+<div><p>Table Header: method RsSmw.Sconfiguration.mode / &lt;FadConfig&gt;</p>
+<ul class="simple">
+<li><p>STANdard / FAAFBNone | FANFBB | FAAFBB | FAAFBA | FABFBB | FAABFBN | FANFBAB | FAABFBAB</p></li>
+<li><p>ADVanced / MIMO1X2 | MIMO2X2 | MIMO2X3 | MIMO2X4 | MIMO3X2 | MIMO3X3 | MIMO3X4 | MIMO4X2 | MIMO4X3 | MIMO4X4 | MIMO1X8 | MIMO8X1 | MIMO2X8 | MIMO8X2 | MIMO2X1 | MIMO2X1X2 | MIMO2X2X1 | MIMO2X1X3 | MIMO2X1X4 | MIMO2X2X2 | MIMO1X3 | MIMO3X1 | MIMO1X4 | MIMO4X1 | MIMO3X1X2 | MIMO3X2X1 | MIMO4X1X2 | MIMO3X2X2 | MIMO4X2X2 | MIMO4X2X1 | SISO2X1X1 | SISO3X1X1 | SISO4X1X1 | SISO5X1X1 | SISO6X1X1 | SISO7X1X1 | SISO8X1X1 | MIMO2X2X4 | MIMO2X4X2 | MIMO2X2X3 | MIMO2X3X1 | MIMO2X3X2 | MIMO2X4X1 MIMO4X8 | MIMO8X4 | MIMO2X4X4 | MIMO2X3X3| MIMO2X3X4 | MIMO2X4X3 MIMO8X8</p></li>
+</ul>
+<dl class="field-list simple">
+<dt class="field-odd">return<span class="colon">:</span></dt>
+<dd class="field-odd"><p>fad_config: FAAFBNone| FANFBB| FAAFBB| SISO2X1X1| FAAFBA| FABFBB| FAABFBN| FANFBAB| FAABFBAB| MIMO1X2| MIMO2X2| MIMO2X3| MIMO2X4| MIMO3X2| MIMO3X3| MIMO3X4| MIMO4X2| MIMO4X3| MIMO4X4| MIMO1X8| MIMO8X1| MIMO2X8| MIMO8X2| MIMO2X1| MIMO2X1X2| MIMO2X2X1| MIMO2X2X2| MIMO1X3| MIMO3X1| MIMO1X4| MIMO4X1| MIMO3X1X2| MIMO3X2X1| MIMO4X1X2| MIMO3X2X2| MIMO4X2X2| MIMO4X2X1| SISO3X1X1| SISO4X1X1| SISO5X1X1| SISO6X1X1| SISO7X1X1| SISO8X1X1| MIMO2X2X4| MIMO2X4X2| MIMO4X8| MIMO8X4| MIMO2X1X3| MIMO2X1X4| MIMO2X2X3| MIMO2X3X1| MIMO2X3X2| MIMO2X4X1| MIMO2X4X4| MIMO2X3X3| MIMO2X3X4| MIMO2X4X3| MIMO8X8</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">get_mode</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">SystConfMode</span></span></span><a class="reference internal" href="_modules/RsSmw/Implementations/Sconfiguration.html#SconfigurationCls.get_mode"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: SCONfiguration:MODE</span>
+<span class="n">value</span><span class="p">:</span> <span class="n">enums</span><span class="o">.</span><span class="n">SystConfMode</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">sconfiguration</span><span class="o">.</span><span class="n">get_mode</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Switches between the operating modes.</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">return<span class="colon">:</span></dt>
+<dd class="field-odd"><p>mode: ADVanced| STANdard| REGenerator | GNSS | ESEQuencer | BWEXtension ADVanced|STANdard Switches between the and . REGenerator Enables the R&amp;S SMW200A to work as a radar echo generator. The fading simulator is disabled. See ‘Welcome to the Option’. GNSS Enables the R&amp;S SMW200A to work in GNSS advanced mode. The fading simulator is disabled. See ‘Welcome to the GNSS Satellite Navigation Options’. ESEQuencer Enables the R&amp;S SMW200A to work in an advanced extended sequencer mode. The fading simulator, the AWGN, the BB input and all baseband digital standards are disabled. See ‘Welcome to the Extended Sequencer’. BEXTension Enables the R&amp;S SMW200A to generate RF signals with extended bandwidth. These signals typically have bandwidths above 2.4 GHz. See ‘Welcome to the option’.</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">preset</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="_modules/RsSmw/Implementations/Sconfiguration.html#SconfigurationCls.preset"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: SCONfiguration:PRESet</span>
+<span class="n">driver</span><span class="o">.</span><span class="n">sconfiguration</span><span class="o">.</span><span class="n">preset</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Presets the signal routing in the baseband section and the fading configuration to the default state.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">preset_with_opc</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">opc_timeout_ms</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">-1</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="_modules/RsSmw/Implementations/Sconfiguration.html#SconfigurationCls.preset_with_opc"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: SCONfiguration:PRESet</span>
+<span class="n">driver</span><span class="o">.</span><span class="n">sconfiguration</span><span class="o">.</span><span class="n">preset_with_opc</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Presets the signal routing in the baseband section and the fading configuration to the default state.</p>
+<p>Same as preset, but waits for the operation to complete before continuing further. Use the RsSmw.utilities.opc_timeout_set() to set the timeout value.</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">param opc_timeout_ms<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Maximum time to wait in milliseconds, valid only for this call.</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">set_bb_bw</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bandwidth</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SystConfBbBandwidth</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="_modules/RsSmw/Implementations/Sconfiguration.html#SconfigurationCls.set_bb_bw"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: SCONfiguration:BBBW</span>
+<span class="n">driver</span><span class="o">.</span><span class="n">sconfiguration</span><span class="o">.</span><span class="n">set_bb_bw</span><span class="p">(</span><span class="n">bandwidth</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">SystConfBbBandwidth</span><span class="o">.</span><span class="n">BB040</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Sets the bandwidth of the baseband signal at the inputs of the fading simulator. The available values depend on the
+selected MIMO configuration.</p>
+<blockquote>
+<div><p>INTRO_CMD_HELP: For example:</p>
+<ul class="simple">
+<li><p>In MIMO configurations with fewer than 8 channels, the max. baseband bandwidth is 400 MHz.</p></li>
+<li><p>In MIMO configurations with fewer than 4 channels, the max. baseband bandwidth is 800 MHz.</p></li>
+</ul>
+<dl class="field-list simple">
+<dt class="field-odd">param bandwidth<span class="colon">:</span></dt>
+<dd class="field-odd"><p>BB040| BB050| BB080| BB100| BB160| BB200| BB800| BB400| BB500| BB1G| BB2G| BB120| BBOUTDEF| BB240 BB040|BB050 … Bandwidth in MHz, e.g. 40 MHz. BB1G|BB2G 1 GHz, 2 GHz bandwidth. Available in SISO configurations. BBOUTDEF Bandwidth determined by the signal at the HS DIG I/Q.</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">set_fading</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fad_config</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SystConfFadConf</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="_modules/RsSmw/Implementations/Sconfiguration.html#SconfigurationCls.set_fading"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: SCONfiguration:FADing</span>
+<span class="n">driver</span><span class="o">.</span><span class="n">sconfiguration</span><span class="o">.</span><span class="n">set_fading</span><span class="p">(</span><span class="n">fad_config</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">SystConfFadConf</span><span class="o">.</span><span class="n">FAABFBAB</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Defines the signal routing for standard and advanced system configuration modes. The availability of specific
+configurations of these modes depends on installed options. For more information, refer to the specifications document.</p>
+<blockquote>
+<div><p>Table Header: method RsSmw.Sconfiguration.mode / &lt;FadConfig&gt;</p>
+<ul class="simple">
+<li><p>STANdard / FAAFBNone | FANFBB | FAAFBB | FAAFBA | FABFBB | FAABFBN | FANFBAB | FAABFBAB</p></li>
+<li><p>ADVanced / MIMO1X2 | MIMO2X2 | MIMO2X3 | MIMO2X4 | MIMO3X2 | MIMO3X3 | MIMO3X4 | MIMO4X2 | MIMO4X3 | MIMO4X4 | MIMO1X8 | MIMO8X1 | MIMO2X8 | MIMO8X2 | MIMO2X1 | MIMO2X1X2 | MIMO2X2X1 | MIMO2X1X3 | MIMO2X1X4 | MIMO2X2X2 | MIMO1X3 | MIMO3X1 | MIMO1X4 | MIMO4X1 | MIMO3X1X2 | MIMO3X2X1 | MIMO4X1X2 | MIMO3X2X2 | MIMO4X2X2 | MIMO4X2X1 | SISO2X1X1 | SISO3X1X1 | SISO4X1X1 | SISO5X1X1 | SISO6X1X1 | SISO7X1X1 | SISO8X1X1 | MIMO2X2X4 | MIMO2X4X2 | MIMO2X2X3 | MIMO2X3X1 | MIMO2X3X2 | MIMO2X4X1 MIMO4X8 | MIMO8X4 | MIMO2X4X4 | MIMO2X3X3| MIMO2X3X4 | MIMO2X4X3 MIMO8X8</p></li>
+</ul>
+<dl class="field-list simple">
+<dt class="field-odd">param fad_config<span class="colon">:</span></dt>
+<dd class="field-odd"><p>FAAFBNone| FANFBB| FAAFBB| SISO2X1X1| FAAFBA| FABFBB| FAABFBN| FANFBAB| FAABFBAB| MIMO1X2| MIMO2X2| MIMO2X3| MIMO2X4| MIMO3X2| MIMO3X3| MIMO3X4| MIMO4X2| MIMO4X3| MIMO4X4| MIMO1X8| MIMO8X1| MIMO2X8| MIMO8X2| MIMO2X1| MIMO2X1X2| MIMO2X2X1| MIMO2X2X2| MIMO1X3| MIMO3X1| MIMO1X4| MIMO4X1| MIMO3X1X2| MIMO3X2X1| MIMO4X1X2| MIMO3X2X2| MIMO4X2X2| MIMO4X2X1| SISO3X1X1| SISO4X1X1| SISO5X1X1| SISO6X1X1| SISO7X1X1| SISO8X1X1| MIMO2X2X4| MIMO2X4X2| MIMO4X8| MIMO8X4| MIMO2X1X3| MIMO2X1X4| MIMO2X2X3| MIMO2X3X1| MIMO2X3X2| MIMO2X4X1| MIMO2X4X4| MIMO2X3X3| MIMO2X3X4| MIMO2X4X3| MIMO8X8</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">set_mode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mode</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SystConfMode</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="_modules/RsSmw/Implementations/Sconfiguration.html#SconfigurationCls.set_mode"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: SCONfiguration:MODE</span>
+<span class="n">driver</span><span class="o">.</span><span class="n">sconfiguration</span><span class="o">.</span><span class="n">set_mode</span><span class="p">(</span><span class="n">mode</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">SystConfMode</span><span class="o">.</span><span class="n">ADVanced</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Switches between the operating modes.</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">param mode<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ADVanced| STANdard| REGenerator | GNSS | ESEQuencer | BWEXtension ADVanced|STANdard Switches between the and . REGenerator Enables the R&amp;S SMW200A to work as a radar echo generator. The fading simulator is disabled. See ‘Welcome to the Option’. GNSS Enables the R&amp;S SMW200A to work in GNSS advanced mode. The fading simulator is disabled. See ‘Welcome to the GNSS Satellite Navigation Options’. ESEQuencer Enables the R&amp;S SMW200A to work in an advanced extended sequencer mode. The fading simulator, the AWGN, the BB input and all baseband digital standards are disabled. See ‘Welcome to the Extended Sequencer’. BEXTension Enables the R&amp;S SMW200A to generate RF signals with extended bandwidth. These signals typically have bandwidths above 2.4 GHz. See ‘Welcome to the option’.</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+</dd></dl>
+
+<p class="rubric">Cloning the Group</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create a clone of the original group, that exists independently</span>
+<span class="n">group2</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">sconfiguration</span><span class="o">.</span><span class="n">clone</span><span class="p">()</span>
+</pre></div>
+</div>
+<p class="rubric">Subgroups</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Sconfiguration_Apply.html">Apply</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Sconfiguration_Baseband.html">Baseband</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Sconfiguration_Bextension.html">Bextension</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Sconfiguration_Bextension_Align.html">Align</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Sconfiguration_Bextension_Align_Rfports.html">Rfports</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Sconfiguration_Bextension_Calibration.html">Calibration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Sconfiguration_Bextension_Correction.html">Correction</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Sconfiguration_Bextension_Correction_Port.html">Port&lt;Port&gt;</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_Bextension_Correction_Port_IqDelay.html">IqDelay</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="Sconfiguration_Bextension_Correction_Port_IqDelay_Additional.html">Additional</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_Bextension_Correction_Port_Level.html">Level</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_Bextension_Correction_Port_Phase.html">Phase</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="Sconfiguration_Bextension_Correction_Port_Phase_Additional.html">Additional</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_Bextension_Correction_Port_Source.html">Source</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Sconfiguration_Bextension_Info.html">Info</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Sconfiguration_Bextension_Info_Align.html">Align</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_Bextension_Info_Align_Frequency.html">Frequency</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_Bextension_Info_Align_Pep.html">Pep</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Sconfiguration_Bextension_Setup.html">Setup</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Sconfiguration_Bextension_Setup_File.html">File</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Sconfiguration_Bextension_Setup_Predefined.html">Predefined</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Sconfiguration_Diq.html">Diq</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Sconfiguration_Diq_BbMm1.html">BbMm1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Sconfiguration_Diq_BbMm2.html">BbMm2</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Sconfiguration_Duplicate.html">Duplicate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Sconfiguration_External.html">External</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Sconfiguration_External_Bbmm.html">Bbmm&lt;IqConnector&gt;</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Sconfiguration_External_Bbmm_Direction.html">Direction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Sconfiguration_External_Bbmm_Iname.html">Iname</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Sconfiguration_External_Bbmm_IqConnection.html">IqConnection</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_Bbmm_IqConnection_State.html">State</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Sconfiguration_External_Bbmm_Rconnection.html">Rconnection</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_Bbmm_Rconnection_State.html">State</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Sconfiguration_External_Bbmm_Remote.html">Remote</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_Bbmm_Remote_Connect.html">Connect</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_Bbmm_Remote_Detect.html">Detect</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_Bbmm_Remote_Disconnect.html">Disconnect</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_Bbmm_Remote_Iconnect.html">Iconnect</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_Bbmm_Remote_Info.html">Info</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_Bbmm_Remote_Initialization.html">Initialization</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="Sconfiguration_External_Bbmm_Remote_Initialization_File.html">File</a></li>
+<li class="toctree-l5"><a class="reference internal" href="Sconfiguration_External_Bbmm_Remote_Initialization_Predefined.html">Predefined</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="Sconfiguration_External_Bbmm_Remote_Initialization_Predefined_File.html">File</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="Sconfiguration_External_Bbmm_Remote_Initialization_User.html">User</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="Sconfiguration_External_Bbmm_Remote_Initialization_User_File.html">File</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_Bbmm_Remote_Iselect.html">Iselect</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Sconfiguration_External_Bbmm_Rf.html">Rf</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_Bbmm_Rf_Coupling.html">Coupling</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_Bbmm_Rf_Frequency.html">Frequency</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="Sconfiguration_External_Bbmm_Rf_Frequency_Offset.html">Offset</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_Bbmm_Rf_Power.html">Power</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="Sconfiguration_External_Bbmm_Rf_Power_Offset.html">Offset</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_Bbmm_Rf_State.html">State</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Sconfiguration_External_Coder.html">Coder&lt;Index&gt;</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Sconfiguration_External_Coder_Direction.html">Direction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Sconfiguration_External_Coder_Iname.html">Iname</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Sconfiguration_External_Coder_IqConnection.html">IqConnection</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_Coder_IqConnection_State.html">State</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Sconfiguration_External_Coder_Rconnection.html">Rconnection</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_Coder_Rconnection_State.html">State</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Sconfiguration_External_Coder_Remote.html">Remote</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_Coder_Remote_Connect.html">Connect</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_Coder_Remote_Detect.html">Detect</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_Coder_Remote_Disconnect.html">Disconnect</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_Coder_Remote_Iconnect.html">Iconnect</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_Coder_Remote_Info.html">Info</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_Coder_Remote_Initialization.html">Initialization</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="Sconfiguration_External_Coder_Remote_Initialization_File.html">File</a></li>
+<li class="toctree-l5"><a class="reference internal" href="Sconfiguration_External_Coder_Remote_Initialization_Predefined.html">Predefined</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="Sconfiguration_External_Coder_Remote_Initialization_Predefined_File.html">File</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="Sconfiguration_External_Coder_Remote_Initialization_User.html">User</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="Sconfiguration_External_Coder_Remote_Initialization_User_File.html">File</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_Coder_Remote_Iselect.html">Iselect</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Sconfiguration_External_Digital.html">Digital&lt;Index&gt;</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Sconfiguration_External_Digital_Direction.html">Direction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Sconfiguration_External_Digital_Iname.html">Iname</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Sconfiguration_External_Digital_IqConnection.html">IqConnection</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_Digital_IqConnection_State.html">State</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Sconfiguration_External_Digital_Rconnection.html">Rconnection</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_Digital_Rconnection_State.html">State</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Sconfiguration_External_Digital_Remote.html">Remote</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_Digital_Remote_Connect.html">Connect</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_Digital_Remote_Disconnect.html">Disconnect</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_Digital_Remote_Iconnect.html">Iconnect</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_Digital_Remote_Info.html">Info</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_Digital_Remote_Initialization.html">Initialization</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="Sconfiguration_External_Digital_Remote_Initialization_File.html">File</a></li>
+<li class="toctree-l5"><a class="reference internal" href="Sconfiguration_External_Digital_Remote_Initialization_Predefined.html">Predefined</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="Sconfiguration_External_Digital_Remote_Initialization_Predefined_File.html">File</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="Sconfiguration_External_Digital_Remote_Initialization_User.html">User</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="Sconfiguration_External_Digital_Remote_Initialization_User_File.html">File</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_Digital_Remote_Iselect.html">Iselect</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Sconfiguration_External_Digital_Rf.html">Rf</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_Digital_Rf_Coupling.html">Coupling</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_Digital_Rf_Frequency.html">Frequency</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="Sconfiguration_External_Digital_Rf_Frequency_Offset.html">Offset</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_Digital_Rf_Power.html">Power</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="Sconfiguration_External_Digital_Rf_Power_Offset.html">Offset</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_Digital_Rf_State.html">State</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Sconfiguration_External_Fader.html">Fader&lt;DigitalIq&gt;</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Sconfiguration_External_Fader_Direction.html">Direction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Sconfiguration_External_Fader_Iname.html">Iname</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Sconfiguration_External_Fader_IqConnection.html">IqConnection</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_Fader_IqConnection_State.html">State</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Sconfiguration_External_Fader_Rconnection.html">Rconnection</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_Fader_Rconnection_State.html">State</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Sconfiguration_External_Fader_Remote.html">Remote</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_Fader_Remote_Connect.html">Connect</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_Fader_Remote_Detect.html">Detect</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_Fader_Remote_Disconnect.html">Disconnect</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_Fader_Remote_Iconnect.html">Iconnect</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_Fader_Remote_Info.html">Info</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_Fader_Remote_Initialization.html">Initialization</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="Sconfiguration_External_Fader_Remote_Initialization_File.html">File</a></li>
+<li class="toctree-l5"><a class="reference internal" href="Sconfiguration_External_Fader_Remote_Initialization_Predefined.html">Predefined</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="Sconfiguration_External_Fader_Remote_Initialization_Predefined_File.html">File</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="Sconfiguration_External_Fader_Remote_Initialization_User.html">User</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="Sconfiguration_External_Fader_Remote_Initialization_User_File.html">File</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_Fader_Remote_Iselect.html">Iselect</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Sconfiguration_External_Fader_Rf.html">Rf</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_Fader_Rf_Coupling.html">Coupling</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_Fader_Rf_Frequency.html">Frequency</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="Sconfiguration_External_Fader_Rf_Frequency_Offset.html">Offset</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_Fader_Rf_Power.html">Power</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="Sconfiguration_External_Fader_Rf_Power_Offset.html">Offset</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_Fader_Rf_State.html">State</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Sconfiguration_External_HsDigital.html">HsDigital&lt;Index&gt;</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Sconfiguration_External_HsDigital_Direction.html">Direction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Sconfiguration_External_HsDigital_Iname.html">Iname</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Sconfiguration_External_HsDigital_IqConnection.html">IqConnection</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_HsDigital_IqConnection_State.html">State</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Sconfiguration_External_HsDigital_Rconnection.html">Rconnection</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_HsDigital_Rconnection_State.html">State</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Sconfiguration_External_HsDigital_Remote.html">Remote</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_HsDigital_Remote_Connect.html">Connect</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_HsDigital_Remote_Disconnect.html">Disconnect</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_HsDigital_Remote_Iconnect.html">Iconnect</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_HsDigital_Remote_Info.html">Info</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_HsDigital_Remote_Initialization.html">Initialization</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="Sconfiguration_External_HsDigital_Remote_Initialization_File.html">File</a></li>
+<li class="toctree-l5"><a class="reference internal" href="Sconfiguration_External_HsDigital_Remote_Initialization_Predefined.html">Predefined</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="Sconfiguration_External_HsDigital_Remote_Initialization_Predefined_File.html">File</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="Sconfiguration_External_HsDigital_Remote_Initialization_User.html">User</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="Sconfiguration_External_HsDigital_Remote_Initialization_User_File.html">File</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_HsDigital_Remote_Iselect.html">Iselect</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Sconfiguration_External_HsDigital_Rf.html">Rf</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_HsDigital_Rf_Coupling.html">Coupling</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_HsDigital_Rf_Frequency.html">Frequency</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="Sconfiguration_External_HsDigital_Rf_Frequency_Offset.html">Offset</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_HsDigital_Rf_Power.html">Power</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="Sconfiguration_External_HsDigital_Rf_Power_Offset.html">Offset</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_HsDigital_Rf_State.html">State</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Sconfiguration_External_IqOutput.html">IqOutput&lt;IqConnector&gt;</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Sconfiguration_External_IqOutput_Connections.html">Connections</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_IqOutput_Connections_Check.html">Check</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Sconfiguration_External_IqOutput_Direction.html">Direction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Sconfiguration_External_IqOutput_Iname.html">Iname</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Sconfiguration_External_IqOutput_Rconnection.html">Rconnection</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_IqOutput_Rconnection_State.html">State</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Sconfiguration_External_IqOutput_Remote.html">Remote</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_IqOutput_Remote_Connect.html">Connect</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_IqOutput_Remote_Disconnect.html">Disconnect</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_IqOutput_Remote_Iconnect.html">Iconnect</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_IqOutput_Remote_Info.html">Info</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_IqOutput_Remote_Initialization.html">Initialization</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="Sconfiguration_External_IqOutput_Remote_Initialization_File.html">File</a></li>
+<li class="toctree-l5"><a class="reference internal" href="Sconfiguration_External_IqOutput_Remote_Initialization_Predefined.html">Predefined</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="Sconfiguration_External_IqOutput_Remote_Initialization_Predefined_File.html">File</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="Sconfiguration_External_IqOutput_Remote_Initialization_User.html">User</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="Sconfiguration_External_IqOutput_Remote_Initialization_User_File.html">File</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_IqOutput_Remote_Iselect.html">Iselect</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Sconfiguration_External_IqOutput_Rf.html">Rf</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_IqOutput_Rf_Coupling.html">Coupling</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_IqOutput_Rf_Frequency.html">Frequency</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="Sconfiguration_External_IqOutput_Rf_Frequency_Offset.html">Offset</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_IqOutput_Rf_Power.html">Power</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="Sconfiguration_External_IqOutput_Rf_Power_Offset.html">Offset</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_IqOutput_Rf_State.html">State</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Sconfiguration_External_Remote.html">Remote</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Sconfiguration_External_Remote_Add.html">Add</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Sconfiguration_External_Remote_Clean.html">Clean</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Sconfiguration_External_Remote_Connect.html">Connect</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_Remote_Connect_All.html">All</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Sconfiguration_External_Remote_Disconnect.html">Disconnect</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_Remote_Disconnect_All.html">All</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Sconfiguration_External_Remote_Edit.html">Edit</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_Remote_Edit_Apply.html">Apply</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_Remote_Edit_Device.html">Device</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_Remote_Edit_Remove.html">Remove</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Sconfiguration_External_Remote_Initialization.html">Initialization</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_Remote_Initialization_Predefined.html">Predefined</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Sconfiguration_External_Remote_Purge.html">Purge</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Sconfiguration_External_Remote_Scan.html">Scan</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Sconfiguration_External_Rf.html">Rf&lt;Path&gt;</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Sconfiguration_External_Rf_Direction.html">Direction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Sconfiguration_External_Rf_Iname.html">Iname</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Sconfiguration_External_Rf_Rconnection.html">Rconnection</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_Rf_Rconnection_State.html">State</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Sconfiguration_External_Rf_Remote.html">Remote</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_Rf_Remote_Connect.html">Connect</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_Rf_Remote_Disconnect.html">Disconnect</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_Rf_Remote_Iconnect.html">Iconnect</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_Rf_Remote_Info.html">Info</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_Rf_Remote_Initialization.html">Initialization</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="Sconfiguration_External_Rf_Remote_Initialization_File.html">File</a></li>
+<li class="toctree-l5"><a class="reference internal" href="Sconfiguration_External_Rf_Remote_Initialization_Predefined.html">Predefined</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="Sconfiguration_External_Rf_Remote_Initialization_Predefined_File.html">File</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="Sconfiguration_External_Rf_Remote_Initialization_User.html">User</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="Sconfiguration_External_Rf_Remote_Initialization_User_File.html">File</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_Rf_Remote_Iselect.html">Iselect</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Sconfiguration_External_Rf_Rf.html">Rf</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_Rf_Rf_Coupling.html">Coupling</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_Rf_Rf_Frequency.html">Frequency</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="Sconfiguration_External_Rf_Rf_Frequency_Offset.html">Offset</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_Rf_Rf_Power.html">Power</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="Sconfiguration_External_Rf_Rf_Power_Offset.html">Offset</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_External_Rf_Rf_State.html">State</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Sconfiguration_Gnss.html">Gnss</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Sconfiguration_Gnss_External.html">External</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Sconfiguration_MultiInstrument.html">MultiInstrument</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Sconfiguration_MultiInstrument_Connector.html">Connector</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Sconfiguration_MultiInstrument_Connector_Bsin.html">Bsin&lt;Channel&gt;</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Sconfiguration_MultiInstrument_Connector_Bsout.html">Bsout&lt;ChannelNull&gt;</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Sconfiguration_MultiInstrument_Trigger.html">Trigger</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Sconfiguration_Output.html">Output</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Sconfiguration_Output_Mapping.html">Mapping</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Sconfiguration_Output_Mapping_Bbmm.html">Bbmm&lt;IqConnector&gt;</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_Output_Mapping_Bbmm_Channel.html">Channel</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="Sconfiguration_Output_Mapping_Bbmm_Channel_Mode.html">Mode</a></li>
+<li class="toctree-l5"><a class="reference internal" href="Sconfiguration_Output_Mapping_Bbmm_Channel_Stream.html">Stream&lt;Stream&gt;</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="Sconfiguration_Output_Mapping_Bbmm_Channel_Stream_State.html">State</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_Output_Mapping_Bbmm_Mode.html">Mode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_Output_Mapping_Bbmm_Stream.html">Stream&lt;Stream&gt;</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="Sconfiguration_Output_Mapping_Bbmm_Stream_State.html">State</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Sconfiguration_Output_Mapping_Fader.html">Fader&lt;DigitalIq&gt;</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_Output_Mapping_Fader_Mode.html">Mode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_Output_Mapping_Fader_Stream.html">Stream&lt;Stream&gt;</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="Sconfiguration_Output_Mapping_Fader_Stream_State.html">State</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Sconfiguration_Output_Mapping_IqOutput.html">IqOutput&lt;IqConnector&gt;</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_Output_Mapping_IqOutput_Mode.html">Mode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_Output_Mapping_IqOutput_Stream.html">Stream&lt;Stream&gt;</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="Sconfiguration_Output_Mapping_IqOutput_Stream_State.html">State</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Sconfiguration_Output_Mapping_Rf.html">Rf&lt;Path&gt;</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_Output_Mapping_Rf_Mode.html">Mode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_Output_Mapping_Rf_Stream.html">Stream&lt;Stream&gt;</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="Sconfiguration_Output_Mapping_Rf_Stream_State.html">State</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Sconfiguration_Output_Mapping_Stream.html">Stream&lt;Stream&gt;</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_Output_Mapping_Stream_Foffset.html">Foffset</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_Output_Mapping_Stream_Poffset.html">Poffset</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Sconfiguration_RfAlignment.html">RfAlignment</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Sconfiguration_RfAlignment_Align.html">Align</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Sconfiguration_RfAlignment_Calibration.html">Calibration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Sconfiguration_RfAlignment_Qcheck.html">Qcheck</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Sconfiguration_RfAlignment_Setup.html">Setup</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Sconfiguration_RfAlignment_Setup_File.html">File</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Sconfiguration_RfAlignment_Setup_Info.html">Info</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_RfAlignment_Setup_Info_Calibration.html">Calibration</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="Sconfiguration_RfAlignment_Setup_Info_Calibration_Frequency.html">Frequency</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="Sconfiguration_RfAlignment_Setup_Info_Calibration_Frequency_ListPy.html">ListPy</a></li>
+<li class="toctree-l6"><a class="reference internal" href="Sconfiguration_RfAlignment_Setup_Info_Calibration_Frequency_Range.html">Range</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="Sconfiguration_RfAlignment_Setup_Info_Calibration_Power.html">Power</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="Sconfiguration_RfAlignment_Setup_Info_Calibration_Power_ListPy.html">ListPy</a></li>
+<li class="toctree-l6"><a class="reference internal" href="Sconfiguration_RfAlignment_Setup_Info_Calibration_Power_Range.html">Range</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="Sconfiguration_RfAlignment_Setup_Info_Calibration_Temperature.html">Temperature</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="Sconfiguration_RfAlignment_Setup_Info_Wiring.html">Wiring</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="Sconfiguration_RfAlignment_Setup_Info_Wiring_Lo.html">Lo</a></li>
+<li class="toctree-l5"><a class="reference internal" href="Sconfiguration_RfAlignment_Setup_Info_Wiring_Ref.html">Ref</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Sconfiguration_RfAlignment_Setup_Predefined.html">Predefined</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Sconfiguration_Siso.html">Siso</a></li>
+</ul>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="Read_Power.html" class="btn btn-neutral float-left" title="Power" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Sconfiguration_Apply.html" class="btn btn-neutral float-right" title="Apply" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright © Rohde &amp; Schwarz 2023.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

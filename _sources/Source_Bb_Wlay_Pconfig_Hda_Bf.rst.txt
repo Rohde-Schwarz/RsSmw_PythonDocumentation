@@ -1,0 +1,20 @@
+Bf
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:WLAY:PCONfig:HDA:BF:STATe
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:WLAY:PCONfig:HDA:BF:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Wlay.Pconfig.Hda.Bf.BfCls
+	:members:
+	:undoc-members:
+	:noindex:

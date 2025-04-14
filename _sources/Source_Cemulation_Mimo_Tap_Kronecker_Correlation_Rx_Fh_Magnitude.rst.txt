@@ -1,0 +1,20 @@
+Magnitude
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:CEMulation:MIMO:TAP<CH>:KRONecker:CORRelation:RX:FH:MAGNitude
+
+.. code-block:: python
+
+	[SOURce<HW>]:CEMulation:MIMO:TAP<CH>:KRONecker:CORRelation:RX:FH:MAGNitude
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.Mimo.Tap.Kronecker.Correlation.Rx.Fh.Magnitude.MagnitudeCls
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,24 @@
+Iloss
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:CEMulation:ILOSs:CSAMples
+	single: [SOURce<HW>]:CEMulation:ILOSs:MODE
+	single: [SOURce<HW>]:CEMulation:ILOSs:[LOSS]
+
+.. code-block:: python
+
+	[SOURce<HW>]:CEMulation:ILOSs:CSAMples
+	[SOURce<HW>]:CEMulation:ILOSs:MODE
+	[SOURce<HW>]:CEMulation:ILOSs:[LOSS]
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.Iloss.IlossCls
+	:members:
+	:undoc-members:
+	:noindex:

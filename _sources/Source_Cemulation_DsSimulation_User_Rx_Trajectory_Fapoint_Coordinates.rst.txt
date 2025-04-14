@@ -1,0 +1,38 @@
+Coordinates
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:CEMulation:DSSimulation:USER:RX:TRAJectory:FAPoint:COORdinates:DMS
+
+.. code-block:: python
+
+	[SOURce<HW>]:CEMulation:DSSimulation:USER:RX:TRAJectory:FAPoint:COORdinates:DMS
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.DsSimulation.User.Rx.Trajectory.Fapoint.Coordinates.CoordinatesCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.cemulation.dsSimulation.user.rx.trajectory.fapoint.coordinates.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Cemulation_DsSimulation_User_Rx_Trajectory_Fapoint_Coordinates_Decimal.rst
+	Source_Cemulation_DsSimulation_User_Rx_Trajectory_Fapoint_Coordinates_Xyz.rst

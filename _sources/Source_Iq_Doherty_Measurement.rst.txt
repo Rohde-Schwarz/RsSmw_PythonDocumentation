@@ -1,0 +1,20 @@
+Measurement
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce]:IQ:DOHerty:MEASurement:[STATe]
+
+.. code-block:: python
+
+	[SOURce]:IQ:DOHerty:MEASurement:[STATe]
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Iq.Doherty.Measurement.MeasurementCls
+	:members:
+	:undoc-members:
+	:noindex:

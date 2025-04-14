@@ -1,0 +1,20 @@
+Relative
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:DVB:NOTCh<CH>:BWIDth:RELative
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:DVB:NOTCh<CH>:BWIDth:RELative
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dvb.Notch.Bandwidth.Relative.RelativeCls
+	:members:
+	:undoc-members:
+	:noindex:

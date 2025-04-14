@@ -1,0 +1,20 @@
+Qsfp
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:ESEQuencer:ASEQuencing:QSFP:STATe
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:ESEQuencer:ASEQuencing:QSFP:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Esequencer.Asequencing.Qsfp.QsfpCls
+	:members:
+	:undoc-members:
+	:noindex:

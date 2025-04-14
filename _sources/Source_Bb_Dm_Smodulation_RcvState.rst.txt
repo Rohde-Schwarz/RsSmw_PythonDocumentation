@@ -1,0 +1,20 @@
+RcvState
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:DM:SMODulation:RCVState
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:DM:SMODulation:RCVState
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dm.Smodulation.RcvState.RcvStateCls
+	:members:
+	:undoc-members:
+	:noindex:

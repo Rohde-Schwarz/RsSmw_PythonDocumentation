@@ -1,0 +1,20 @@
+AvRegs
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:ONEWeb:DL:[SUBF<ST0>]:ENCC:PDCCh:AVRegs
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:ONEWeb:DL:[SUBF<ST0>]:ENCC:PDCCh:AVRegs
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Downlink.Subf.Encc.Pdcch.AvRegs.AvRegsCls
+	:members:
+	:undoc-members:
+	:noindex:

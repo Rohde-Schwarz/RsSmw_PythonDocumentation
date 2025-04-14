@@ -1,0 +1,20 @@
+PaSize
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:V5G:UL:UE<ST>:[CELL<CCIDX>]:FRC:PASize
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:V5G:UL:UE<ST>:[CELL<CCIDX>]:FRC:PASize
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Uplink.Ue.Cell.Frc.PaSize.PaSizeCls
+	:members:
+	:undoc-members:
+	:noindex:

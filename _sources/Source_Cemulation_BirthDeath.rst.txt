@@ -1,0 +1,47 @@
+BirthDeath
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:CEMulation:BIRThdeath:FRATio
+	single: [SOURce<HW>]:CEMulation:BIRThdeath:POSitions
+	single: [SOURce<HW>]:CEMulation:BIRThdeath:SOFFset
+	single: [SOURce<HW>]:CEMulation:BIRThdeath:SPEed
+	single: [SOURce<HW>]:CEMulation:BIRThdeath:STATe
+
+.. code-block:: python
+
+	[SOURce<HW>]:CEMulation:BIRThdeath:FRATio
+	[SOURce<HW>]:CEMulation:BIRThdeath:POSitions
+	[SOURce<HW>]:CEMulation:BIRThdeath:SOFFset
+	[SOURce<HW>]:CEMulation:BIRThdeath:SPEed
+	[SOURce<HW>]:CEMulation:BIRThdeath:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.BirthDeath.BirthDeathCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.cemulation.birthDeath.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Cemulation_BirthDeath_Delay.rst
+	Source_Cemulation_BirthDeath_Hopping.rst
+	Source_Cemulation_BirthDeath_Path.rst

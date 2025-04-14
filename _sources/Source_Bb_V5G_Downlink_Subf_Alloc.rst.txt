@@ -1,0 +1,57 @@
+Alloc<AllocationNull>
+----------------------------------------
+
+.. rubric:: RepCap Settings
+
+.. code-block:: python
+
+	# Range: Nr0 .. Nr63
+	rc = driver.source.bb.v5G.downlink.subf.alloc.repcap_allocationNull_get()
+	driver.source.bb.v5G.downlink.subf.alloc.repcap_allocationNull_set(repcap.AllocationNull.Nr0)
+
+
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Downlink.Subf.Alloc.AllocCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.v5G.downlink.subf.alloc.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_V5G_Downlink_Subf_Alloc_Aoc.rst
+	Source_Bb_V5G_Downlink_Subf_Alloc_Apm.rst
+	Source_Bb_V5G_Downlink_Subf_Alloc_Caw.rst
+	Source_Bb_V5G_Downlink_Subf_Alloc_Ccoding.rst
+	Source_Bb_V5G_Downlink_Subf_Alloc_Codewords.rst
+	Source_Bb_V5G_Downlink_Subf_Alloc_Conflict.rst
+	Source_Bb_V5G_Downlink_Subf_Alloc_ConType.rst
+	Source_Bb_V5G_Downlink_Subf_Alloc_Data.rst
+	Source_Bb_V5G_Downlink_Subf_Alloc_Dselect.rst
+	Source_Bb_V5G_Downlink_Subf_Alloc_Gap.rst
+	Source_Bb_V5G_Downlink_Subf_Alloc_Modulation.rst
+	Source_Bb_V5G_Downlink_Subf_Alloc_Pattern.rst
+	Source_Bb_V5G_Downlink_Subf_Alloc_PhysBits.rst
+	Source_Bb_V5G_Downlink_Subf_Alloc_Power.rst
+	Source_Bb_V5G_Downlink_Subf_Alloc_Precoding.rst
+	Source_Bb_V5G_Downlink_Subf_Alloc_RbCount.rst
+	Source_Bb_V5G_Downlink_Subf_Alloc_RbOffset.rst
+	Source_Bb_V5G_Downlink_Subf_Alloc_Scrambling.rst
+	Source_Bb_V5G_Downlink_Subf_Alloc_State.rst
+	Source_Bb_V5G_Downlink_Subf_Alloc_SymCount.rst
+	Source_Bb_V5G_Downlink_Subf_Alloc_SymOffset.rst
+	Source_Bb_V5G_Downlink_Subf_Alloc_Xpdsch.rst

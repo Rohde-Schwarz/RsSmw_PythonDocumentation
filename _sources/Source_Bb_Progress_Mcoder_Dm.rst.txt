@@ -1,0 +1,22 @@
+Dm
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:PROGress:MCODer:DM:FILTer
+	single: [SOURce<HW>]:BB:PROGress:MCODer:DM:SUB
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:PROGress:MCODer:DM:FILTer
+	[SOURce<HW>]:BB:PROGress:MCODer:DM:SUB
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Progress.Mcoder.Dm.DmCls
+	:members:
+	:undoc-members:
+	:noindex:

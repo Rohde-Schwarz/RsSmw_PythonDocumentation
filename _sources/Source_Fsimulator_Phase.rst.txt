@@ -1,0 +1,20 @@
+Phase
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:FSIMulator:PHASe:UNIT
+
+.. code-block:: python
+
+	[SOURce<HW>]:FSIMulator:PHASe:UNIT
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.Phase.PhaseCls
+	:members:
+	:undoc-members:
+	:noindex:

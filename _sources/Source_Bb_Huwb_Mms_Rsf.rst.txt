@@ -1,0 +1,24 @@
+Rsf
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:HUWB:MMS:RSF:MCINdex
+	single: [SOURce<HW>]:BB:HUWB:MMS:RSF:MCSZeros
+	single: [SOURce<HW>]:BB:HUWB:MMS:RSF:MSRepetition
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:HUWB:MMS:RSF:MCINdex
+	[SOURce<HW>]:BB:HUWB:MMS:RSF:MCSZeros
+	[SOURce<HW>]:BB:HUWB:MMS:RSF:MSRepetition
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Huwb.Mms.Rsf.RsfCls
+	:members:
+	:undoc-members:
+	:noindex:

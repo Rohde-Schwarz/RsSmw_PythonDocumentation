@@ -1,0 +1,20 @@
+Adelay
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:CEMulation:DEL:GROup<ST>:PATH<CH>:ADELay
+
+.. code-block:: python
+
+	[SOURce<HW>]:CEMulation:DEL:GROup<ST>:PATH<CH>:ADELay
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.DelPy.Group.Path.Adelay.AdelayCls
+	:members:
+	:undoc-members:
+	:noindex:

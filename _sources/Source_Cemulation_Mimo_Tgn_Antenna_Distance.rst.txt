@@ -1,0 +1,22 @@
+Distance
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:CEMulation:MIMO:TGN:ANTenna:DISTance:RX
+	single: [SOURce<HW>]:CEMulation:MIMO:TGN:ANTenna:DISTance:TX
+
+.. code-block:: python
+
+	[SOURce<HW>]:CEMulation:MIMO:TGN:ANTenna:DISTance:RX
+	[SOURce<HW>]:CEMulation:MIMO:TGN:ANTenna:DISTance:TX
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.Mimo.Tgn.Antenna.Distance.DistanceCls
+	:members:
+	:undoc-members:
+	:noindex:

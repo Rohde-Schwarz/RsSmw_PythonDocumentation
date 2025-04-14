@@ -1,0 +1,49 @@
+Parameter
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:TETRa:FILTer:PARameter:APCO25
+	single: [SOURce<HW>]:BB:TETRa:FILTer:PARameter:GAUSs
+	single: [SOURce<HW>]:BB:TETRa:FILTer:PARameter:LPASSEVM
+	single: [SOURce<HW>]:BB:TETRa:FILTer:PARameter:LPASs
+	single: [SOURce<HW>]:BB:TETRa:FILTer:PARameter:PGAuss
+	single: [SOURce<HW>]:BB:TETRa:FILTer:PARameter:RCOSine
+	single: [SOURce<HW>]:BB:TETRa:FILTer:PARameter:SPHase
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:TETRa:FILTer:PARameter:APCO25
+	[SOURce<HW>]:BB:TETRa:FILTer:PARameter:GAUSs
+	[SOURce<HW>]:BB:TETRa:FILTer:PARameter:LPASSEVM
+	[SOURce<HW>]:BB:TETRa:FILTer:PARameter:LPASs
+	[SOURce<HW>]:BB:TETRa:FILTer:PARameter:PGAuss
+	[SOURce<HW>]:BB:TETRa:FILTer:PARameter:RCOSine
+	[SOURce<HW>]:BB:TETRa:FILTer:PARameter:SPHase
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Tetra.FilterPy.Parameter.ParameterCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.tetra.filterPy.parameter.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Tetra_FilterPy_Parameter_Cosine.rst

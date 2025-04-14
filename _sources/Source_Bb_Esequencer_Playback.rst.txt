@@ -1,0 +1,30 @@
+Playback
+----------------------------------------
+
+
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Esequencer.Playback.PlaybackCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.esequencer.playback.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Esequencer_Playback_Bb.rst
+	Source_Bb_Esequencer_Playback_File.rst
+	Source_Bb_Esequencer_Playback_Sequencer.rst

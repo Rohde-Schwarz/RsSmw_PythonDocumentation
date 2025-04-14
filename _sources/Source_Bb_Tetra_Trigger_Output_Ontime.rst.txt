@@ -1,0 +1,20 @@
+Ontime
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:TETRa:TRIGger:OUTPut<CH>:ONTime
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:TETRa:TRIGger:OUTPut<CH>:ONTime
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Tetra.Trigger.Output.Ontime.OntimeCls
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,26 @@
+Obaseband
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:ARBitrary:TRIGger:OBASeband:DELay
+	single: [SOURce<HW>]:BB:ARBitrary:TRIGger:OBASeband:INHibit
+	single: [SOURce<HW>]:BB:ARBitrary:TRIGger:OBASeband:RDELay
+	single: [SOURce<HW>]:BB:ARBitrary:TRIGger:OBASeband:TDELay
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:ARBitrary:TRIGger:OBASeband:DELay
+	[SOURce<HW>]:BB:ARBitrary:TRIGger:OBASeband:INHibit
+	[SOURce<HW>]:BB:ARBitrary:TRIGger:OBASeband:RDELay
+	[SOURce<HW>]:BB:ARBitrary:TRIGger:OBASeband:TDELay
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Arbitrary.Trigger.Obaseband.ObasebandCls
+	:members:
+	:undoc-members:
+	:noindex:

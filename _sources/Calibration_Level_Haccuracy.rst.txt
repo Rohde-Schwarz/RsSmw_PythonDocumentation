@@ -1,0 +1,20 @@
+Haccuracy
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: CALibration<HW>:LEVel:HACCuracy:[STATe]
+
+.. code-block:: python
+
+	CALibration<HW>:LEVel:HACCuracy:[STATe]
+
+
+
+.. autoclass:: RsSmw.Implementations.Calibration.Level.Haccuracy.HaccuracyCls
+	:members:
+	:undoc-members:
+	:noindex:

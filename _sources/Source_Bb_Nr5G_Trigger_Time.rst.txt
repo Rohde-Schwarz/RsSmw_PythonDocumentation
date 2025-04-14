@@ -1,0 +1,24 @@
+Time
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:NR5G:TRIGger:TIME:DATE
+	single: [SOURce<HW>]:BB:NR5G:TRIGger:TIME:TIME
+	single: [SOURce<HW>]:BB:NR5G:TRIGger:TIME:[STATe]
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:NR5G:TRIGger:TIME:DATE
+	[SOURce<HW>]:BB:NR5G:TRIGger:TIME:TIME
+	[SOURce<HW>]:BB:NR5G:TRIGger:TIME:[STATe]
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Nr5G.Trigger.Time.TimeCls
+	:members:
+	:undoc-members:
+	:noindex:

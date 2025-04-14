@@ -1,0 +1,22 @@
+Rfports
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: SCONfiguration:BEXTension:ALIGn:RFPorts
+	single: SCONfiguration:BEXTension:ALIGn:RFPorts:STATe
+
+.. code-block:: python
+
+	SCONfiguration:BEXTension:ALIGn:RFPorts
+	SCONfiguration:BEXTension:ALIGn:RFPorts:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Sconfiguration.Bextension.Align.Rfports.RfportsCls
+	:members:
+	:undoc-members:
+	:noindex:

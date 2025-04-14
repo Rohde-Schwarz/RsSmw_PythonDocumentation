@@ -1,0 +1,26 @@
+Restart
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:CEMulation:RESTart
+	single: [SOURce<HW>]:CEMulation:RESTart:MODE
+	single: [SOURce<HW>]:CEMulation:RESTart:RMODE
+	single: [SOURce<HW>]:CEMulation:RESTart:SOURce
+
+.. code-block:: python
+
+	[SOURce<HW>]:CEMulation:RESTart
+	[SOURce<HW>]:CEMulation:RESTart:MODE
+	[SOURce<HW>]:CEMulation:RESTart:RMODE
+	[SOURce<HW>]:CEMulation:RESTart:SOURce
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.Restart.RestartCls
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,28 @@
+Generator
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: TEST<HW>:GENerator:FREQuency
+	single: TEST<HW>:GENerator:GAIN
+	single: TEST<HW>:GENerator:SELect
+	single: TEST<HW>:GENerator:SOURce
+	single: TEST<HW>:GENerator:STATe
+
+.. code-block:: python
+
+	TEST<HW>:GENerator:FREQuency
+	TEST<HW>:GENerator:GAIN
+	TEST<HW>:GENerator:SELect
+	TEST<HW>:GENerator:SOURce
+	TEST<HW>:GENerator:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Test.Generator.GeneratorCls
+	:members:
+	:undoc-members:
+	:noindex:

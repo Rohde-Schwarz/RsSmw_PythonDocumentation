@@ -1,0 +1,32 @@
+Prach
+----------------------------------------
+
+
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Uplink.Ue.Prach.PrachCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.oneweb.uplink.ue.prach.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Oneweb_Uplink_Ue_Prach_Cframes.rst
+	Source_Bb_Oneweb_Uplink_Ue_Prach_PrFormat.rst
+	Source_Bb_Oneweb_Uplink_Ue_Prach_PrState.rst
+	Source_Bb_Oneweb_Uplink_Ue_Prach_Prtt.rst
+	Source_Bb_Oneweb_Uplink_Ue_Prach_Subf.rst

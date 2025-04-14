@@ -1,0 +1,39 @@
+Stream<TwoStreams>
+----------------------------------------
+
+.. rubric:: RepCap Settings
+
+.. code-block:: python
+
+	# Range: Nr1 .. Nr2
+	rc = driver.source.bb.esequencer.stream.repcap_twoStreams_get()
+	driver.source.bb.esequencer.stream.repcap_twoStreams_set(repcap.TwoStreams.Nr1)
+
+
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Esequencer.Stream.StreamCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.esequencer.stream.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Esequencer_Stream_Eratio.rst
+	Source_Bb_Esequencer_Stream_Output.rst
+	Source_Bb_Esequencer_Stream_SeqCount.rst
+	Source_Bb_Esequencer_Stream_Sequencer.rst

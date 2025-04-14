@@ -1,0 +1,22 @@
+Catalog
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:FSIMulator:CDYNamic:CATalog:USER
+	single: [SOURce<HW>]:FSIMulator:CDYNamic:CATalog
+
+.. code-block:: python
+
+	[SOURce<HW>]:FSIMulator:CDYNamic:CATalog:USER
+	[SOURce<HW>]:FSIMulator:CDYNamic:CATalog
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.Cdynamic.Catalog.CatalogCls
+	:members:
+	:undoc-members:
+	:noindex:

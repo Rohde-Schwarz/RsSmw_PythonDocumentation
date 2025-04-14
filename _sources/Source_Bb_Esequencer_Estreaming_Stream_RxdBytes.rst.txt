@@ -1,0 +1,36 @@
+RxdBytes<Index>
+----------------------------------------
+
+.. rubric:: RepCap Settings
+
+.. code-block:: python
+
+	# Range: Nr1 .. Nr64
+	rc = driver.source.bb.esequencer.estreaming.stream.rxdBytes.repcap_index_get()
+	driver.source.bb.esequencer.estreaming.stream.rxdBytes.repcap_index_set(repcap.Index.Nr1)
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:ESEQuencer:ESTReaming:STReam:RXDBytes<CH2>
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:ESEQuencer:ESTReaming:STReam:RXDBytes<CH2>
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Esequencer.Estreaming.Stream.RxdBytes.RxdBytesCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.esequencer.estreaming.stream.rxdBytes.clone()

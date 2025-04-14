@@ -1,0 +1,41 @@
+Estreaming
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:ESEQuencer:ESTReaming:OMODe
+	single: [SOURce<HW>]:BB:ESEQuencer:ESTReaming:STATus
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:ESEQuencer:ESTReaming:OMODe
+	[SOURce<HW>]:BB:ESEQuencer:ESTReaming:STATus
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Esequencer.Estreaming.EstreamingCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.esequencer.estreaming.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Esequencer_Estreaming_Sequencer.rst
+	Source_Bb_Esequencer_Estreaming_Stream.rst
+	Source_Bb_Esequencer_Estreaming_Waveform.rst

@@ -1,0 +1,20 @@
+Remove
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: SCONfiguration:EXTernal:REMote:EDIT:REMove
+
+.. code-block:: python
+
+	SCONfiguration:EXTernal:REMote:EDIT:REMove
+
+
+
+.. autoclass:: RsSmw.Implementations.Sconfiguration.External.Remote.Edit.Remove.RemoveCls
+	:members:
+	:undoc-members:
+	:noindex:

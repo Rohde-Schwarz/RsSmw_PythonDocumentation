@@ -1,0 +1,20 @@
+Velocity
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:GNSS:SVID<CH>:XONA:SDYNamics:VELocity
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:GNSS:SVID<CH>:XONA:SDYNamics:VELocity
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Gnss.Svid.Xona.Sdynamics.Velocity.VelocityCls
+	:members:
+	:undoc-members:
+	:noindex:

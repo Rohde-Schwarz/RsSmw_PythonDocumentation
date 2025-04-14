@@ -1,0 +1,28 @@
+Downlink
+----------------------------------------
+
+
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.HsTrain.Downlink.DownlinkCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.cemulation.hsTrain.downlink.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Cemulation_HsTrain_Downlink_Frequency.rst

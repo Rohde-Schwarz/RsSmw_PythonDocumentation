@@ -1,0 +1,43 @@
+External
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:FREQuency:CONVerter:EXTernal:SNUMber
+
+.. code-block:: python
+
+	[SOURce<HW>]:FREQuency:CONVerter:EXTernal:SNUMber
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Frequency.Converter.External.ExternalCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.frequency.converter.external.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Frequency_Converter_External_Adjust.rst
+	Source_Frequency_Converter_External_Connection.rst
+	Source_Frequency_Converter_External_Detector.rst
+	Source_Frequency_Converter_External_Frequency.rst
+	Source_Frequency_Converter_External_Overrange.rst
+	Source_Frequency_Converter_External_Simulation.rst
+	Source_Frequency_Converter_External_Test.rst

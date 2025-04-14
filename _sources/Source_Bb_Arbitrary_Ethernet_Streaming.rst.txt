@@ -1,0 +1,20 @@
+Streaming
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:ARBitrary:ETHernet:[STReaming]:STATus
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:ARBitrary:ETHernet:[STReaming]:STATus
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Arbitrary.Ethernet.Streaming.StreamingCls
+	:members:
+	:undoc-members:
+	:noindex:

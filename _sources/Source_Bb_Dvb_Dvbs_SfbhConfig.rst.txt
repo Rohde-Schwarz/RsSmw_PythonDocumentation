@@ -1,0 +1,52 @@
+SfbhConfig
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:DVB:DVBS:SFBHconfig:AODWell
+	single: [SOURce<HW>]:BB:DVB:DVBS:SFBHconfig:BHCycle
+	single: [SOURce<HW>]:BB:DVB:DVBS:SFBHconfig:BSTime
+	single: [SOURce<HW>]:BB:DVB:DVBS:SFBHconfig:LSFLength
+	single: [SOURce<HW>]:BB:DVB:DVBS:SFBHconfig:NODWells
+	single: [SOURce<HW>]:BB:DVB:DVBS:SFBHconfig:NOSF
+	single: [SOURce<HW>]:BB:DVB:DVBS:SFBHconfig:STATe
+	single: [SOURce<HW>]:BB:DVB:DVBS:SFBHconfig:ZBSSignal
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:DVB:DVBS:SFBHconfig:AODWell
+	[SOURce<HW>]:BB:DVB:DVBS:SFBHconfig:BHCycle
+	[SOURce<HW>]:BB:DVB:DVBS:SFBHconfig:BSTime
+	[SOURce<HW>]:BB:DVB:DVBS:SFBHconfig:LSFLength
+	[SOURce<HW>]:BB:DVB:DVBS:SFBHconfig:NODWells
+	[SOURce<HW>]:BB:DVB:DVBS:SFBHconfig:NOSF
+	[SOURce<HW>]:BB:DVB:DVBS:SFBHconfig:STATe
+	[SOURce<HW>]:BB:DVB:DVBS:SFBHconfig:ZBSSignal
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dvb.Dvbs.SfbhConfig.SfbhConfigCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.dvb.dvbs.sfbhConfig.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Dvb_Dvbs_SfbhConfig_Dt.rst
+	Source_Bb_Dvb_Dvbs_SfbhConfig_Fodt.rst

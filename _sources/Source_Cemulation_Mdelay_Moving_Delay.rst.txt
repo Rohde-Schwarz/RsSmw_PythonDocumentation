@@ -1,0 +1,22 @@
+Delay
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:CEMulation:MDELay:MOVing:DELay:MEAN
+	single: [SOURce<HW>]:CEMulation:MDELay:MOVing:DELay:VARiation
+
+.. code-block:: python
+
+	[SOURce<HW>]:CEMulation:MDELay:MOVing:DELay:MEAN
+	[SOURce<HW>]:CEMulation:MDELay:MOVing:DELay:VARiation
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.Mdelay.Moving.Delay.DelayCls
+	:members:
+	:undoc-members:
+	:noindex:

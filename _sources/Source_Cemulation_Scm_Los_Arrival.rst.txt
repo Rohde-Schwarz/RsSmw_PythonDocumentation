@@ -1,0 +1,37 @@
+Arrival
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:CEMulation:SCM:LOS:ARRival:[ANGLe]
+
+.. code-block:: python
+
+	[SOURce<HW>]:CEMulation:SCM:LOS:ARRival:[ANGLe]
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.Scm.Los.Arrival.ArrivalCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.cemulation.scm.los.arrival.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Cemulation_Scm_Los_Arrival_Zenith.rst

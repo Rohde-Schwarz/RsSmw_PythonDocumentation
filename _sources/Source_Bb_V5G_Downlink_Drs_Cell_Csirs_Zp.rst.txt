@@ -1,0 +1,20 @@
+Zp
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:V5G:DL:DRS:CELL<CH0>:CSIRs<ST>:ZP
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:V5G:DL:DRS:CELL<CH0>:CSIRs<ST>:ZP
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Downlink.Drs.Cell.Csirs.Zp.ZpCls
+	:members:
+	:undoc-members:
+	:noindex:

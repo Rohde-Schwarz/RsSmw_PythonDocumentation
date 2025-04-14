@@ -1,0 +1,49 @@
+HsTrain
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:FSIMulator:HSTRain:FDOPpler
+	single: [SOURce<HW>]:FSIMulator:HSTRain:KFACtor
+	single: [SOURce<HW>]:FSIMulator:HSTRain:PROFile
+	single: [SOURce<HW>]:FSIMulator:HSTRain:SOFFset
+	single: [SOURce<HW>]:FSIMulator:HSTRain:SPEed
+	single: [SOURce<HW>]:FSIMulator:HSTRain:STATe
+
+.. code-block:: python
+
+	[SOURce<HW>]:FSIMulator:HSTRain:FDOPpler
+	[SOURce<HW>]:FSIMulator:HSTRain:KFACtor
+	[SOURce<HW>]:FSIMulator:HSTRain:PROFile
+	[SOURce<HW>]:FSIMulator:HSTRain:SOFFset
+	[SOURce<HW>]:FSIMulator:HSTRain:SPEed
+	[SOURce<HW>]:FSIMulator:HSTRain:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.HsTrain.HsTrainCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.fsimulator.hsTrain.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Fsimulator_HsTrain_Distance.rst
+	Source_Fsimulator_HsTrain_Downlink.rst
+	Source_Fsimulator_HsTrain_Path.rst

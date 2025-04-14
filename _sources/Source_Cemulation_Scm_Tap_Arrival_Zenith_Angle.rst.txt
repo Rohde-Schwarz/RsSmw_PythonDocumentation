@@ -1,0 +1,20 @@
+Angle
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:CEMulation:SCM:TAP<ST>:ARRival:ZENith:ANGLe
+
+.. code-block:: python
+
+	[SOURce<HW>]:CEMulation:SCM:TAP<ST>:ARRival:ZENith:ANGLe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.Scm.Tap.Arrival.Zenith.Angle.AngleCls
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,24 @@
+Reference
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:CEMulation:MDELay:REFerence:DELay
+	single: [SOURce<HW>]:CEMulation:MDELay:REFerence:LOSS
+	single: [SOURce<HW>]:CEMulation:MDELay:REFerence:STATe
+
+.. code-block:: python
+
+	[SOURce<HW>]:CEMulation:MDELay:REFerence:DELay
+	[SOURce<HW>]:CEMulation:MDELay:REFerence:LOSS
+	[SOURce<HW>]:CEMulation:MDELay:REFerence:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.Mdelay.Reference.ReferenceCls
+	:members:
+	:undoc-members:
+	:noindex:

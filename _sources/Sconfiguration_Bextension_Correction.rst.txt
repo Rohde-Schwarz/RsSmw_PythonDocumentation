@@ -1,0 +1,37 @@
+Correction
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: SCONfiguration:BEXTension:CORRection:RESet
+
+.. code-block:: python
+
+	SCONfiguration:BEXTension:CORRection:RESet
+
+
+
+.. autoclass:: RsSmw.Implementations.Sconfiguration.Bextension.Correction.CorrectionCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.sconfiguration.bextension.correction.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Sconfiguration_Bextension_Correction_Port.rst

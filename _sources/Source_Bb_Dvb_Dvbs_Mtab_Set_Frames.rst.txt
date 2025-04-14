@@ -1,0 +1,20 @@
+Frames
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:DVB:DVBS:MTAB:SET<ST>:FRAMes
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:DVB:DVBS:MTAB:SET<ST>:FRAMes
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dvb.Dvbs.Mtab.Set.Frames.FramesCls
+	:members:
+	:undoc-members:
+	:noindex:

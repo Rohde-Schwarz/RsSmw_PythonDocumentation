@@ -1,0 +1,26 @@
+Pramping
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:TETRa:PRAMping:FOFFset
+	single: [SOURce<HW>]:BB:TETRa:PRAMping:RFUNction
+	single: [SOURce<HW>]:BB:TETRa:PRAMping:ROFFset
+	single: [SOURce<HW>]:BB:TETRa:PRAMping:RTIMe
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:TETRa:PRAMping:FOFFset
+	[SOURce<HW>]:BB:TETRa:PRAMping:RFUNction
+	[SOURce<HW>]:BB:TETRa:PRAMping:ROFFset
+	[SOURce<HW>]:BB:TETRa:PRAMping:RTIMe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Tetra.Pramping.PrampingCls
+	:members:
+	:undoc-members:
+	:noindex:

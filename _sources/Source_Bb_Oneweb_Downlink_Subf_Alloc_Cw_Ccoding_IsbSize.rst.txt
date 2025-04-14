@@ -1,0 +1,20 @@
+IsbSize
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:ONEWeb:DL:[SUBF<ST0>]:ALLoc<CH0>:[CW<USER>]:CCODing:ISBSize
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:ONEWeb:DL:[SUBF<ST0>]:ALLoc<CH0>:[CW<USER>]:CCODing:ISBSize
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Downlink.Subf.Alloc.Cw.Ccoding.IsbSize.IsbSizeCls
+	:members:
+	:undoc-members:
+	:noindex:

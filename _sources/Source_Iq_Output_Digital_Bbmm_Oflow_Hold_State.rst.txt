@@ -1,0 +1,20 @@
+State
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce]:IQ:OUTPut:DIGital:BBMM<CH>:OFLow:HOLD:STATe
+
+.. code-block:: python
+
+	[SOURce]:IQ:OUTPut:DIGital:BBMM<CH>:OFLow:HOLD:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Iq.Output.Digital.Bbmm.Oflow.Hold.State.StateCls
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,324 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../../../../../../">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RsSmw.Implementations.Source.Bb.Dvb.Dvbx.SfbhConfig &mdash; RsSmw 5.30.305.84 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../../../../../../_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="../../../../../../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../../../../../../_static/copybutton.css?v=76b2166b" />
+
+  
+      <script src="../../../../../../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../../../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../../../../../../_static/documentation_options.js?v=17bca7dd"></script>
+      <script src="../../../../../../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../../../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../../../../../../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../../../../../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../../../../../index.html" class="icon icon-home">
+            RsSmw
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../readme.html">Revision History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../enums.html">Enums</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../repcap.html">RepCaps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../RsSmw.html">RsSmw API Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../utilities.html">RsSmw Utilities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../logger.html">RsSmw Logger</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../events.html">RsSmw Events</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../genindex.html">Index</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../../../../index.html">RsSmw</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../../../../index.html">Module code</a></li>
+          <li class="breadcrumb-item"><a href="../../../../Source.html">RsSmw.Implementations.Source</a></li>
+          <li class="breadcrumb-item"><a href="../../../Bb.html">RsSmw.Implementations.Source.Bb</a></li>
+          <li class="breadcrumb-item"><a href="../../Dvb.html">RsSmw.Implementations.Source.Bb.Dvb</a></li>
+          <li class="breadcrumb-item"><a href="../Dvbx.html">RsSmw.Implementations.Source.Bb.Dvb.Dvbx</a></li>
+      <li class="breadcrumb-item active">RsSmw.Implementations.Source.Bb.Dvb.Dvbx.SfbhConfig</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Source code for RsSmw.Implementations.Source.Bb.Dvb.Dvbx.SfbhConfig</h1><div class="highlight"><pre>
+<span></span><span class="kn">from</span><span class="w"> </span><span class="nn">.......Internal.Core</span><span class="w"> </span><span class="kn">import</span> <span class="n">Core</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">.......Internal.CommandsGroup</span><span class="w"> </span><span class="kn">import</span> <span class="n">CommandsGroup</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">.......Internal</span><span class="w"> </span><span class="kn">import</span> <span class="n">Conversions</span>
+
+
+<span class="c1"># noinspection PyPep8Naming,PyAttributeOutsideInit,SpellCheckingInspection</span>
+<div class="viewcode-block" id="SfbhConfigCls">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Dvb_Dvbx_SfbhConfig.html#RsSmw.Implementations.Source.Bb.Dvb.Dvbx.SfbhConfig.SfbhConfigCls">[docs]</a>
+<span class="k">class</span><span class="w"> </span><span class="nc">SfbhConfigCls</span><span class="p">:</span>
+<span class="w">	</span><span class="sd">&quot;&quot;&quot;SfbhConfig commands group definition. 10 total commands, 2 Subgroups, 8 group commands&quot;&quot;&quot;</span>
+
+	<span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">core</span><span class="p">:</span> <span class="n">Core</span><span class="p">,</span> <span class="n">parent</span><span class="p">):</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span> <span class="o">=</span> <span class="n">core</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span> <span class="o">=</span> <span class="n">CommandsGroup</span><span class="p">(</span><span class="s2">&quot;sfbhConfig&quot;</span><span class="p">,</span> <span class="n">core</span><span class="p">,</span> <span class="n">parent</span><span class="p">)</span>
+
+	<span class="nd">@property</span>
+	<span class="k">def</span><span class="w"> </span><span class="nf">dt</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;dt commands group. 1 Sub-classes, 0 commands.&quot;&quot;&quot;</span>
+		<span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;_dt&#39;</span><span class="p">):</span>
+			<span class="kn">from</span><span class="w"> </span><span class="nn">.Dt</span><span class="w"> </span><span class="kn">import</span> <span class="n">DtCls</span>
+			<span class="bp">self</span><span class="o">.</span><span class="n">_dt</span> <span class="o">=</span> <span class="n">DtCls</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span><span class="p">)</span>
+		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_dt</span>
+
+	<span class="nd">@property</span>
+	<span class="k">def</span><span class="w"> </span><span class="nf">fodt</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;fodt commands group. 0 Sub-classes, 1 commands.&quot;&quot;&quot;</span>
+		<span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;_fodt&#39;</span><span class="p">):</span>
+			<span class="kn">from</span><span class="w"> </span><span class="nn">.Fodt</span><span class="w"> </span><span class="kn">import</span> <span class="n">FodtCls</span>
+			<span class="bp">self</span><span class="o">.</span><span class="n">_fodt</span> <span class="o">=</span> <span class="n">FodtCls</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span><span class="p">)</span>
+		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fodt</span>
+
+<div class="viewcode-block" id="SfbhConfigCls.get_ao_dwell">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Dvb_Dvbx_SfbhConfig.html#RsSmw.Implementations.Source.Bb.Dvb.Dvbx.SfbhConfig.SfbhConfigCls.get_ao_dwell">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_ao_dwell</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBX:SFBHconfig:AODWell \n</span>
+<span class="sd">		Snippet: value: bool = driver.source.bb.dvb.dvbx.sfbhConfig.get_ao_dwell() \n</span>
+<span class="sd">		Activates the attenuation of dwells DT1 to DT9. \n</span>
+<span class="sd">			:return: attenuate_oth_dw: 1| ON| 0| OFF</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:DVB:DVBX:SFBHconfig:AODWell?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_bool</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="SfbhConfigCls.set_ao_dwell">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Dvb_Dvbx_SfbhConfig.html#RsSmw.Implementations.Source.Bb.Dvb.Dvbx.SfbhConfig.SfbhConfigCls.set_ao_dwell">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_ao_dwell</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">attenuate_oth_dw</span><span class="p">:</span> <span class="nb">bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBX:SFBHconfig:AODWell \n</span>
+<span class="sd">		Snippet: driver.source.bb.dvb.dvbx.sfbhConfig.set_ao_dwell(attenuate_oth_dw = False) \n</span>
+<span class="sd">		Activates the attenuation of dwells DT1 to DT9. \n</span>
+<span class="sd">			:param attenuate_oth_dw: 1| ON| 0| OFF</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">bool_to_str</span><span class="p">(</span><span class="n">attenuate_oth_dw</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:DVB:DVBX:SFBHconfig:AODWell </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="SfbhConfigCls.get_bh_cycle">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Dvb_Dvbx_SfbhConfig.html#RsSmw.Implementations.Source.Bb.Dvb.Dvbx.SfbhConfig.SfbhConfigCls.get_bh_cycle">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_bh_cycle</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBX:SFBHconfig:BHCycle \n</span>
+<span class="sd">		Snippet: value: int = driver.source.bb.dvb.dvbx.sfbhConfig.get_bh_cycle() \n</span>
+<span class="sd">		Displays the beam hopping cycle that is the cumulative result of all dwells length. \n</span>
+<span class="sd">			:return: bh_cycle: integer Range: 0 to 2047974660</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:DVB:DVBX:SFBHconfig:BHCycle?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_int</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="SfbhConfigCls.get_bs_time">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Dvb_Dvbx_SfbhConfig.html#RsSmw.Implementations.Source.Bb.Dvb.Dvbx.SfbhConfig.SfbhConfigCls.get_bs_time">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_bs_time</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBX:SFBHconfig:BSTime \n</span>
+<span class="sd">		Snippet: value: int = driver.source.bb.dvb.dvbx.sfbhConfig.get_bs_time() \n</span>
+<span class="sd">		Sets the beam switching time. \n</span>
+<span class="sd">			:return: beam_switch_time: integer Range: 1 to 1000</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:DVB:DVBX:SFBHconfig:BSTime?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_int</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="SfbhConfigCls.set_bs_time">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Dvb_Dvbx_SfbhConfig.html#RsSmw.Implementations.Source.Bb.Dvb.Dvbx.SfbhConfig.SfbhConfigCls.set_bs_time">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_bs_time</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">beam_switch_time</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBX:SFBHconfig:BSTime \n</span>
+<span class="sd">		Snippet: driver.source.bb.dvb.dvbx.sfbhConfig.set_bs_time(beam_switch_time = 1) \n</span>
+<span class="sd">		Sets the beam switching time. \n</span>
+<span class="sd">			:param beam_switch_time: integer Range: 1 to 1000</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">decimal_value_to_str</span><span class="p">(</span><span class="n">beam_switch_time</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:DVB:DVBX:SFBHconfig:BSTime </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="SfbhConfigCls.get_lsf_length">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Dvb_Dvbx_SfbhConfig.html#RsSmw.Implementations.Source.Bb.Dvb.Dvbx.SfbhConfig.SfbhConfigCls.get_lsf_length">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_lsf_length</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBX:SFBHconfig:LSFLength \n</span>
+<span class="sd">		Snippet: value: int = driver.source.bb.dvb.dvbx.sfbhConfig.get_lsf_length() \n</span>
+<span class="sd">		Queries the length of the last super frame. \n</span>
+<span class="sd">			:return: last_sf_length: integer Range: 8856 to 612540</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:DVB:DVBX:SFBHconfig:LSFLength?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_int</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="SfbhConfigCls.get_no_dwells">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Dvb_Dvbx_SfbhConfig.html#RsSmw.Implementations.Source.Bb.Dvb.Dvbx.SfbhConfig.SfbhConfigCls.get_no_dwells">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_no_dwells</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBX:SFBHconfig:NODWells \n</span>
+<span class="sd">		Snippet: value: int = driver.source.bb.dvb.dvbx.sfbhConfig.get_no_dwells() \n</span>
+<span class="sd">		Sets the number of dwells. \n</span>
+<span class="sd">			:return: number_of_dwells: integer Range: 1 to 10</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:DVB:DVBX:SFBHconfig:NODWells?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_int</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="SfbhConfigCls.set_no_dwells">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Dvb_Dvbx_SfbhConfig.html#RsSmw.Implementations.Source.Bb.Dvb.Dvbx.SfbhConfig.SfbhConfigCls.set_no_dwells">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_no_dwells</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">number_of_dwells</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBX:SFBHconfig:NODWells \n</span>
+<span class="sd">		Snippet: driver.source.bb.dvb.dvbx.sfbhConfig.set_no_dwells(number_of_dwells = 1) \n</span>
+<span class="sd">		Sets the number of dwells. \n</span>
+<span class="sd">			:param number_of_dwells: integer Range: 1 to 10</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">decimal_value_to_str</span><span class="p">(</span><span class="n">number_of_dwells</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:DVB:DVBX:SFBHconfig:NODWells </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="SfbhConfigCls.get_nosf">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Dvb_Dvbx_SfbhConfig.html#RsSmw.Implementations.Source.Bb.Dvb.Dvbx.SfbhConfig.SfbhConfigCls.get_nosf">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_nosf</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBX:SFBHconfig:NOSF \n</span>
+<span class="sd">		Snippet: value: int = driver.source.bb.dvb.dvbx.sfbhConfig.get_nosf() \n</span>
+<span class="sd">		Sets the number of super frames. \n</span>
+<span class="sd">			:return: number_of_sf: integer Range: 1 to 25</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:DVB:DVBX:SFBHconfig:NOSF?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_int</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="SfbhConfigCls.set_nosf">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Dvb_Dvbx_SfbhConfig.html#RsSmw.Implementations.Source.Bb.Dvb.Dvbx.SfbhConfig.SfbhConfigCls.set_nosf">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_nosf</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">number_of_sf</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBX:SFBHconfig:NOSF \n</span>
+<span class="sd">		Snippet: driver.source.bb.dvb.dvbx.sfbhConfig.set_nosf(number_of_sf = 1) \n</span>
+<span class="sd">		Sets the number of super frames. \n</span>
+<span class="sd">			:param number_of_sf: integer Range: 1 to 25</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">decimal_value_to_str</span><span class="p">(</span><span class="n">number_of_sf</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:DVB:DVBX:SFBHconfig:NOSF </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="SfbhConfigCls.get_state">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Dvb_Dvbx_SfbhConfig.html#RsSmw.Implementations.Source.Bb.Dvb.Dvbx.SfbhConfig.SfbhConfigCls.get_state">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_state</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBX:SFBHconfig:STATe \n</span>
+<span class="sd">		Snippet: value: bool = driver.source.bb.dvb.dvbx.sfbhConfig.get_state() \n</span>
+<span class="sd">		Activates the beam hopping. \n</span>
+<span class="sd">			:return: beam_hopping_stat: 1| ON| 0| OFF</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:DVB:DVBX:SFBHconfig:STATe?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_bool</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="SfbhConfigCls.set_state">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Dvb_Dvbx_SfbhConfig.html#RsSmw.Implementations.Source.Bb.Dvb.Dvbx.SfbhConfig.SfbhConfigCls.set_state">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_state</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">beam_hopping_stat</span><span class="p">:</span> <span class="nb">bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBX:SFBHconfig:STATe \n</span>
+<span class="sd">		Snippet: driver.source.bb.dvb.dvbx.sfbhConfig.set_state(beam_hopping_stat = False) \n</span>
+<span class="sd">		Activates the beam hopping. \n</span>
+<span class="sd">			:param beam_hopping_stat: 1| ON| 0| OFF</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">bool_to_str</span><span class="p">(</span><span class="n">beam_hopping_stat</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:DVB:DVBX:SFBHconfig:STATe </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="SfbhConfigCls.get_zbs_signal">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Dvb_Dvbx_SfbhConfig.html#RsSmw.Implementations.Source.Bb.Dvb.Dvbx.SfbhConfig.SfbhConfigCls.get_zbs_signal">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_zbs_signal</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBX:SFBHconfig:ZBSSignal \n</span>
+<span class="sd">		Snippet: value: bool = driver.source.bb.dvb.dvbx.sfbhConfig.get_zbs_signal() \n</span>
+<span class="sd">		Activates the switching signal for zero beam state. \n</span>
+<span class="sd">			:return: zero_beam_switch: 1| ON| 0| OFF</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:DVB:DVBX:SFBHconfig:ZBSSignal?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_bool</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="SfbhConfigCls.set_zbs_signal">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Dvb_Dvbx_SfbhConfig.html#RsSmw.Implementations.Source.Bb.Dvb.Dvbx.SfbhConfig.SfbhConfigCls.set_zbs_signal">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_zbs_signal</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">zero_beam_switch</span><span class="p">:</span> <span class="nb">bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBX:SFBHconfig:ZBSSignal \n</span>
+<span class="sd">		Snippet: driver.source.bb.dvb.dvbx.sfbhConfig.set_zbs_signal(zero_beam_switch = False) \n</span>
+<span class="sd">		Activates the switching signal for zero beam state. \n</span>
+<span class="sd">			:param zero_beam_switch: 1| ON| 0| OFF</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">bool_to_str</span><span class="p">(</span><span class="n">zero_beam_switch</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:DVB:DVBX:SFBHconfig:ZBSSignal </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+	<span class="k">def</span><span class="w"> </span><span class="nf">clone</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s1">&#39;SfbhConfigCls&#39;</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;Clones the group by creating new object from it and its whole existing subgroups</span>
+<span class="sd">		Also copies all the existing default Repeated Capabilities setting,</span>
+<span class="sd">		which you can change independently without affecting the original group&quot;&quot;&quot;</span>
+		<span class="n">new_group</span> <span class="o">=</span> <span class="n">SfbhConfigCls</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span><span class="o">.</span><span class="n">parent</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span><span class="o">.</span><span class="n">synchronize_repcaps</span><span class="p">(</span><span class="n">new_group</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">new_group</span></div>
+
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright © Rohde &amp; Schwarz 2023.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,479 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../../../../../../">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RsSmw.Implementations.Source.Bb.Dvb.Dvbx.SfConfig &mdash; RsSmw 5.30.305.84 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../../../../../../_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="../../../../../../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../../../../../../_static/copybutton.css?v=76b2166b" />
+
+  
+      <script src="../../../../../../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../../../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../../../../../../_static/documentation_options.js?v=17bca7dd"></script>
+      <script src="../../../../../../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../../../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../../../../../../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../../../../../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../../../../../index.html" class="icon icon-home">
+            RsSmw
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../readme.html">Revision History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../enums.html">Enums</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../repcap.html">RepCaps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../RsSmw.html">RsSmw API Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../utilities.html">RsSmw Utilities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../logger.html">RsSmw Logger</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../events.html">RsSmw Events</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../genindex.html">Index</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../../../../index.html">RsSmw</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../../../../index.html">Module code</a></li>
+          <li class="breadcrumb-item"><a href="../../../../Source.html">RsSmw.Implementations.Source</a></li>
+          <li class="breadcrumb-item"><a href="../../../Bb.html">RsSmw.Implementations.Source.Bb</a></li>
+          <li class="breadcrumb-item"><a href="../../Dvb.html">RsSmw.Implementations.Source.Bb.Dvb</a></li>
+          <li class="breadcrumb-item"><a href="../Dvbx.html">RsSmw.Implementations.Source.Bb.Dvb.Dvbx</a></li>
+      <li class="breadcrumb-item active">RsSmw.Implementations.Source.Bb.Dvb.Dvbx.SfConfig</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Source code for RsSmw.Implementations.Source.Bb.Dvb.Dvbx.SfConfig</h1><div class="highlight"><pre>
+<span></span><span class="kn">from</span><span class="w"> </span><span class="nn">......Internal.Core</span><span class="w"> </span><span class="kn">import</span> <span class="n">Core</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">......Internal.CommandsGroup</span><span class="w"> </span><span class="kn">import</span> <span class="n">CommandsGroup</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">......Internal</span><span class="w"> </span><span class="kn">import</span> <span class="n">Conversions</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">......</span><span class="w"> </span><span class="kn">import</span> <span class="n">enums</span>
+
+
+<span class="c1"># noinspection PyPep8Naming,PyAttributeOutsideInit,SpellCheckingInspection</span>
+<div class="viewcode-block" id="SfConfigCls">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Dvb_Dvbx_SfConfig.html#RsSmw.Implementations.Source.Bb.Dvb.Dvbx.SfConfig.SfConfigCls">[docs]</a>
+<span class="k">class</span><span class="w"> </span><span class="nc">SfConfigCls</span><span class="p">:</span>
+<span class="w">	</span><span class="sd">&quot;&quot;&quot;SfConfig commands group definition. 17 total commands, 0 Subgroups, 17 group commands&quot;&quot;&quot;</span>
+
+	<span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">core</span><span class="p">:</span> <span class="n">Core</span><span class="p">,</span> <span class="n">parent</span><span class="p">):</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span> <span class="o">=</span> <span class="n">core</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span> <span class="o">=</span> <span class="n">CommandsGroup</span><span class="p">(</span><span class="s2">&quot;sfConfig&quot;</span><span class="p">,</span> <span class="n">core</span><span class="p">,</span> <span class="n">parent</span><span class="p">)</span>
+
+<div class="viewcode-block" id="SfConfigCls.get_csf_length">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Dvb_Dvbx_SfConfig.html#RsSmw.Implementations.Source.Bb.Dvb.Dvbx.SfConfig.SfConfigCls.get_csf_length">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_csf_length</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBX:SFConfig:CSFLength \n</span>
+<span class="sd">		Snippet: value: int = driver.source.bb.dvb.dvbx.sfConfig.get_csf_length() \n</span>
+<span class="sd">		Requires more than one super frame as set via the command SOURce1:sBB:DVB:DVBS|DVBX:SFBHconfig:NOSF.</span>
+<span class="sd">		Queries the calculated super frame length in symbols. \n</span>
+<span class="sd">			:return: calculated_sfl: integer Range: 8856 to 612540</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:DVB:DVBX:SFConfig:CSFLength?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_int</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="SfConfigCls.get_cu_length">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Dvb_Dvbx_SfConfig.html#RsSmw.Implementations.Source.Bb.Dvb.Dvbx.SfConfig.SfConfigCls.get_cu_length">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_cu_length</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBX:SFConfig:CULength \n</span>
+<span class="sd">		Snippet: value: int = driver.source.bb.dvb.dvbx.sfConfig.get_cu_length() \n</span>
+<span class="sd">		Queries the capacity unit length. \n</span>
+<span class="sd">			:return: cu_length: integer Range: 90 to 90</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:DVB:DVBX:SFConfig:CULength?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_int</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="SfConfigCls.get_dsf">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Dvb_Dvbx_SfConfig.html#RsSmw.Implementations.Source.Bb.Dvb.Dvbx.SfConfig.SfConfigCls.get_dsf">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_dsf</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBX:SFConfig:DSF \n</span>
+<span class="sd">		Snippet: value: int = driver.source.bb.dvb.dvbx.sfConfig.get_dsf() \n</span>
+<span class="sd">		Queries the distance between super frame start and start of pilot field in the super frame. \n</span>
+<span class="sd">			:return: pilot_filed_dis: integer Range: 1440 to 1440</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:DVB:DVBX:SFConfig:DSF?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_int</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="SfConfigCls.get_ehf_size">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Dvb_Dvbx_SfConfig.html#RsSmw.Implementations.Source.Bb.Dvb.Dvbx.SfConfig.SfConfigCls.get_ehf_size">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_ehf_size</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBX:SFConfig:EHFSize \n</span>
+<span class="sd">		Snippet: value: int = driver.source.bb.dvb.dvbx.sfConfig.get_ehf_size() \n</span>
+<span class="sd">		Requires [:SOURce&lt;hw&gt;]:BB:DVB:DVBS|DVBX:SFBHconfig:STATe 1 and [:SOURce&lt;hw&gt;]:BB:DVB:DVBS|DVBX:SFConfig:SFFI SFFI6.</span>
+<span class="sd">		Queries the extended header filed (EHF) size. \n</span>
+<span class="sd">			:return: ehf_size: integer Range: 504 to 504</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:DVB:DVBX:SFConfig:EHFSize?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_int</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="SfConfigCls.get_npay">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Dvb_Dvbx_SfConfig.html#RsSmw.Implementations.Source.Bb.Dvb.Dvbx.SfConfig.SfConfigCls.get_npay">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_npay</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBX:SFConfig:NPAY \n</span>
+<span class="sd">		Snippet: value: int = driver.source.bb.dvb.dvbx.sfConfig.get_npay() \n</span>
+<span class="sd">		Sets the scrambling code number for the payload data scrambler. \n</span>
+<span class="sd">			:return: npay: integer Range: 0 to 1048574</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:DVB:DVBX:SFConfig:NPAY?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_int</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="SfConfigCls.set_npay">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Dvb_Dvbx_SfConfig.html#RsSmw.Implementations.Source.Bb.Dvb.Dvbx.SfConfig.SfConfigCls.set_npay">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_npay</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">npay</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBX:SFConfig:NPAY \n</span>
+<span class="sd">		Snippet: driver.source.bb.dvb.dvbx.sfConfig.set_npay(npay = 1) \n</span>
+<span class="sd">		Sets the scrambling code number for the payload data scrambler. \n</span>
+<span class="sd">			:param npay: integer Range: 0 to 1048574</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">decimal_value_to_str</span><span class="p">(</span><span class="n">npay</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:DVB:DVBX:SFConfig:NPAY </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="SfConfigCls.get_nref">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Dvb_Dvbx_SfConfig.html#RsSmw.Implementations.Source.Bb.Dvb.Dvbx.SfConfig.SfConfigCls.get_nref">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_nref</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBX:SFConfig:NREF \n</span>
+<span class="sd">		Snippet: value: int = driver.source.bb.dvb.dvbx.sfConfig.get_nref() \n</span>
+<span class="sd">		Sets the scrambling code number for the reference data scrambler. \n</span>
+<span class="sd">			:return: nref: integer Range: 0 to 1048574</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:DVB:DVBX:SFConfig:NREF?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_int</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="SfConfigCls.set_nref">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Dvb_Dvbx_SfConfig.html#RsSmw.Implementations.Source.Bb.Dvb.Dvbx.SfConfig.SfConfigCls.set_nref">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_nref</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nref</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBX:SFConfig:NREF \n</span>
+<span class="sd">		Snippet: driver.source.bb.dvb.dvbx.sfConfig.set_nref(nref = 1) \n</span>
+<span class="sd">		Sets the scrambling code number for the reference data scrambler. \n</span>
+<span class="sd">			:param nref: integer Range: 0 to 1048574</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">decimal_value_to_str</span><span class="p">(</span><span class="n">nref</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:DVB:DVBX:SFConfig:NREF </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="SfConfigCls.get_plength">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Dvb_Dvbx_SfConfig.html#RsSmw.Implementations.Source.Bb.Dvb.Dvbx.SfConfig.SfConfigCls.get_plength">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_plength</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBX:SFConfig:PLENgth \n</span>
+<span class="sd">		Snippet: value: int = driver.source.bb.dvb.dvbx.sfConfig.get_plength() \n</span>
+<span class="sd">		Queries the postamble length. \n</span>
+<span class="sd">			:return: postamble_length: integer Range: 90 to 900</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:DVB:DVBX:SFConfig:PLENgth?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_int</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="SfConfigCls.get_pli">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Dvb_Dvbx_SfConfig.html#RsSmw.Implementations.Source.Bb.Dvb.Dvbx.SfConfig.SfConfigCls.get_pli">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_pli</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">enums</span><span class="o">.</span><span class="n">DvbS2Xsfpli</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBX:SFConfig:PLI \n</span>
+<span class="sd">		Snippet: value: enums.DvbS2Xsfpli = driver.source.bb.dvb.dvbx.sfConfig.get_pli() \n</span>
+<span class="sd">		Selects the protection level indicator of the physical layer header. \n</span>
+<span class="sd">			:return: pli: STD| ROB| VROB| HEFF STD Standard protection of physical layer header using BPSK with spreding factor 1. ROB Robust protection of physical layer header using BPSK with spreding factor 2. VROB Very robust protection of physical layer header using BPSK with spreding factor 5. HEFF High efficiency protection of physical layer header using QPSK with punctering. The selection applies only for 8PSK and higher MODCOD schemes refer to payload transfer.</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:DVB:DVBX:SFConfig:PLI?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_scalar_enum</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">DvbS2Xsfpli</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="SfConfigCls.set_pli">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Dvb_Dvbx_SfConfig.html#RsSmw.Implementations.Source.Bb.Dvb.Dvbx.SfConfig.SfConfigCls.set_pli">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_pli</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pli</span><span class="p">:</span> <span class="n">enums</span><span class="o">.</span><span class="n">DvbS2Xsfpli</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBX:SFConfig:PLI \n</span>
+<span class="sd">		Snippet: driver.source.bb.dvb.dvbx.sfConfig.set_pli(pli = enums.DvbS2Xsfpli.HEFF) \n</span>
+<span class="sd">		Selects the protection level indicator of the physical layer header. \n</span>
+<span class="sd">			:param pli: STD| ROB| VROB| HEFF STD Standard protection of physical layer header using BPSK with spreding factor 1. ROB Robust protection of physical layer header using BPSK with spreding factor 2. VROB Very robust protection of physical layer header using BPSK with spreding factor 5. HEFF High efficiency protection of physical layer header using QPSK with punctering. The selection applies only for 8PSK and higher MODCOD schemes refer to payload transfer.</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">enum_scalar_to_str</span><span class="p">(</span><span class="n">pli</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">DvbS2Xsfpli</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:DVB:DVBX:SFConfig:PLI </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="SfConfigCls.get_psf">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Dvb_Dvbx_SfConfig.html#RsSmw.Implementations.Source.Bb.Dvb.Dvbx.SfConfig.SfConfigCls.get_psf">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_psf</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBX:SFConfig:PSF \n</span>
+<span class="sd">		Snippet: value: int = driver.source.bb.dvb.dvbx.sfConfig.get_psf() \n</span>
+<span class="sd">		Queries the pilot field size. \n</span>
+<span class="sd">			:return: pilot_field_size: integer Range: 36 to 36</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:DVB:DVBX:SFConfig:PSF?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_int</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="SfConfigCls.get_pstate">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Dvb_Dvbx_SfConfig.html#RsSmw.Implementations.Source.Bb.Dvb.Dvbx.SfConfig.SfConfigCls.get_pstate">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_pstate</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBX:SFConfig:PSTate \n</span>
+<span class="sd">		Snippet: value: bool = driver.source.bb.dvb.dvbx.sfConfig.get_pstate() \n</span>
+<span class="sd">		Sets the super frame pilot active. \n</span>
+<span class="sd">			:return: sf_pilot_state: 1| ON| 0| OFF</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:DVB:DVBX:SFConfig:PSTate?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_bool</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="SfConfigCls.set_pstate">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Dvb_Dvbx_SfConfig.html#RsSmw.Implementations.Source.Bb.Dvb.Dvbx.SfConfig.SfConfigCls.set_pstate">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_pstate</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sf_pilot_state</span><span class="p">:</span> <span class="nb">bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBX:SFConfig:PSTate \n</span>
+<span class="sd">		Snippet: driver.source.bb.dvb.dvbx.sfConfig.set_pstate(sf_pilot_state = False) \n</span>
+<span class="sd">		Sets the super frame pilot active. \n</span>
+<span class="sd">			:param sf_pilot_state: 1| ON| 0| OFF</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">bool_to_str</span><span class="p">(</span><span class="n">sf_pilot_state</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:DVB:DVBX:SFConfig:PSTate </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="SfConfigCls.get_pwh">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Dvb_Dvbx_SfConfig.html#RsSmw.Implementations.Source.Bb.Dvb.Dvbx.SfConfig.SfConfigCls.get_pwh">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_pwh</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBX:SFConfig:PWH \n</span>
+<span class="sd">		Snippet: value: int = driver.source.bb.dvb.dvbx.sfConfig.get_pwh() \n</span>
+<span class="sd">		Sets the super frame pilot Walsh-Hadamard (WH) sequence set. \n</span>
+<span class="sd">			:return: sf_pilot_wh: integer Range: 0 to 31</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:DVB:DVBX:SFConfig:PWH?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_int</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="SfConfigCls.set_pwh">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Dvb_Dvbx_SfConfig.html#RsSmw.Implementations.Source.Bb.Dvb.Dvbx.SfConfig.SfConfigCls.set_pwh">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_pwh</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sf_pilot_wh</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBX:SFConfig:PWH \n</span>
+<span class="sd">		Snippet: driver.source.bb.dvb.dvbx.sfConfig.set_pwh(sf_pilot_wh = 1) \n</span>
+<span class="sd">		Sets the super frame pilot Walsh-Hadamard (WH) sequence set. \n</span>
+<span class="sd">			:param sf_pilot_wh: integer Range: 0 to 31</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">decimal_value_to_str</span><span class="p">(</span><span class="n">sf_pilot_wh</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:DVB:DVBX:SFConfig:PWH </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="SfConfigCls.get_sffi">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Dvb_Dvbx_SfConfig.html#RsSmw.Implementations.Source.Bb.Dvb.Dvbx.SfConfig.SfConfigCls.get_sffi">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_sffi</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">enums</span><span class="o">.</span><span class="n">DvbS2XsfFormat</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBX:SFConfig:SFFI \n</span>
+<span class="sd">		Snippet: value: enums.DvbS2XsfFormat = driver.source.bb.dvb.dvbx.sfConfig.get_sffi() \n</span>
+<span class="sd">		Sets the super frame format indicator to a value coinside with format 0 to format 7. \n</span>
+<span class="sd">			:return: sffi: SFFI4| SFFI5| SFFI6| SFFI7 SFFI4 Requires deactivated beam hopping. Sets a fixed super frame length. SFFI5 Define a custom super frame length. SFFI6 to SFFI7 Requires activated beam hopping. Define a customized super frame length with activated beam hopping.</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:DVB:DVBX:SFConfig:SFFI?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_scalar_enum</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">DvbS2XsfFormat</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="SfConfigCls.set_sffi">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Dvb_Dvbx_SfConfig.html#RsSmw.Implementations.Source.Bb.Dvb.Dvbx.SfConfig.SfConfigCls.set_sffi">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_sffi</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sffi</span><span class="p">:</span> <span class="n">enums</span><span class="o">.</span><span class="n">DvbS2XsfFormat</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBX:SFConfig:SFFI \n</span>
+<span class="sd">		Snippet: driver.source.bb.dvb.dvbx.sfConfig.set_sffi(sffi = enums.DvbS2XsfFormat.SFFI0) \n</span>
+<span class="sd">		Sets the super frame format indicator to a value coinside with format 0 to format 7. \n</span>
+<span class="sd">			:param sffi: SFFI4| SFFI5| SFFI6| SFFI7 SFFI4 Requires deactivated beam hopping. Sets a fixed super frame length. SFFI5 Define a custom super frame length. SFFI6 to SFFI7 Requires activated beam hopping. Define a customized super frame length with activated beam hopping.</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">enum_scalar_to_str</span><span class="p">(</span><span class="n">sffi</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">DvbS2XsfFormat</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:DVB:DVBX:SFConfig:SFFI </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="SfConfigCls.get_sf_length">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Dvb_Dvbx_SfConfig.html#RsSmw.Implementations.Source.Bb.Dvb.Dvbx.SfConfig.SfConfigCls.get_sf_length">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_sf_length</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBX:SFConfig:SFLength \n</span>
+<span class="sd">		Snippet: value: int = driver.source.bb.dvb.dvbx.sfConfig.get_sf_length() \n</span>
+<span class="sd">		Sets the super frame length. SFFI 0 to 3 are not supported. For SFFI = 5 to 7, the command sets the superframe length.</span>
+<span class="sd">		For SFFI = 4, this command is for query only. \n</span>
+<span class="sd">			:return: sf_length: integer Range: 8856 to 612540</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:DVB:DVBX:SFConfig:SFLength?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_int</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="SfConfigCls.set_sf_length">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Dvb_Dvbx_SfConfig.html#RsSmw.Implementations.Source.Bb.Dvb.Dvbx.SfConfig.SfConfigCls.set_sf_length">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_sf_length</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sf_length</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBX:SFConfig:SFLength \n</span>
+<span class="sd">		Snippet: driver.source.bb.dvb.dvbx.sfConfig.set_sf_length(sf_length = 1) \n</span>
+<span class="sd">		Sets the super frame length. SFFI 0 to 3 are not supported. For SFFI = 5 to 7, the command sets the superframe length.</span>
+<span class="sd">		For SFFI = 4, this command is for query only. \n</span>
+<span class="sd">			:param sf_length: integer Range: 8856 to 612540</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">decimal_value_to_str</span><span class="p">(</span><span class="n">sf_length</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:DVB:DVBX:SFConfig:SFLength </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="SfConfigCls.get_sosf">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Dvb_Dvbx_SfConfig.html#RsSmw.Implementations.Source.Bb.Dvb.Dvbx.SfConfig.SfConfigCls.get_sosf">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_sosf</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBX:SFConfig:SOSF \n</span>
+<span class="sd">		Snippet: value: int = driver.source.bb.dvb.dvbx.sfConfig.get_sosf() \n</span>
+<span class="sd">		Sets the start of super frame Walsh-Hadamard (WH) sequence. \n</span>
+<span class="sd">			:return: sosf: integer Range: 0 to 255</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:DVB:DVBX:SFConfig:SOSF?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_int</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="SfConfigCls.set_sosf">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Dvb_Dvbx_SfConfig.html#RsSmw.Implementations.Source.Bb.Dvb.Dvbx.SfConfig.SfConfigCls.set_sosf">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_sosf</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sosf</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBX:SFConfig:SOSF \n</span>
+<span class="sd">		Snippet: driver.source.bb.dvb.dvbx.sfConfig.set_sosf(sosf = 1) \n</span>
+<span class="sd">		Sets the start of super frame Walsh-Hadamard (WH) sequence. \n</span>
+<span class="sd">			:param sosf: integer Range: 0 to 255</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">decimal_value_to_str</span><span class="p">(</span><span class="n">sosf</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:DVB:DVBX:SFConfig:SOSF </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="SfConfigCls.get_state">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Dvb_Dvbx_SfConfig.html#RsSmw.Implementations.Source.Bb.Dvb.Dvbx.SfConfig.SfConfigCls.get_state">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_state</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBX:SFConfig:STATe \n</span>
+<span class="sd">		Snippet: value: bool = driver.source.bb.dvb.dvbx.sfConfig.get_state() \n</span>
+<span class="sd">		Activates the super frame. \n</span>
+<span class="sd">			:return: sf_state: 1| ON| 0| OFF</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:DVB:DVBX:SFConfig:STATe?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_bool</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="SfConfigCls.set_state">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Dvb_Dvbx_SfConfig.html#RsSmw.Implementations.Source.Bb.Dvb.Dvbx.SfConfig.SfConfigCls.set_state">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_state</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sf_state</span><span class="p">:</span> <span class="nb">bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBX:SFConfig:STATe \n</span>
+<span class="sd">		Snippet: driver.source.bb.dvb.dvbx.sfConfig.set_state(sf_state = False) \n</span>
+<span class="sd">		Activates the super frame. \n</span>
+<span class="sd">			:param sf_state: 1| ON| 0| OFF</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">bool_to_str</span><span class="p">(</span><span class="n">sf_state</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:DVB:DVBX:SFConfig:STATe </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="SfConfigCls.get_stwh">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Dvb_Dvbx_SfConfig.html#RsSmw.Implementations.Source.Bb.Dvb.Dvbx.SfConfig.SfConfigCls.get_stwh">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_stwh</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBX:SFConfig:STWH \n</span>
+<span class="sd">		Snippet: value: int = driver.source.bb.dvb.dvbx.sfConfig.get_stwh() \n</span>
+<span class="sd">		The super frame trailer (ST) extends the frame field in respect of the super frame header (SFH) with a Walsh-Hadamard</span>
+<span class="sd">		(WH) sequence. \n</span>
+<span class="sd">			:return: st: integer Range: 0 to 63</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:DVB:DVBX:SFConfig:STWH?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_int</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="SfConfigCls.set_stwh">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Dvb_Dvbx_SfConfig.html#RsSmw.Implementations.Source.Bb.Dvb.Dvbx.SfConfig.SfConfigCls.set_stwh">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_stwh</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">st</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBX:SFConfig:STWH \n</span>
+<span class="sd">		Snippet: driver.source.bb.dvb.dvbx.sfConfig.set_stwh(st = 1) \n</span>
+<span class="sd">		The super frame trailer (ST) extends the frame field in respect of the super frame header (SFH) with a Walsh-Hadamard</span>
+<span class="sd">		(WH) sequence. \n</span>
+<span class="sd">			:param st: integer Range: 0 to 63</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">decimal_value_to_str</span><span class="p">(</span><span class="n">st</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:DVB:DVBX:SFConfig:STWH </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="SfConfigCls.get_tsn">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Dvb_Dvbx_SfConfig.html#RsSmw.Implementations.Source.Bb.Dvb.Dvbx.SfConfig.SfConfigCls.get_tsn">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_tsn</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBX:SFConfig:TSN \n</span>
+<span class="sd">		Snippet: value: int = driver.source.bb.dvb.dvbx.sfConfig.get_tsn() \n</span>
+<span class="sd">		Sets the time slice number (TSN) . The TSN is identified in the wideband header. The TSN information determines which</span>
+<span class="sd">		physical layer frames the receiver decodes and which frames the receiver discards. \n</span>
+<span class="sd">			:return: tsn: integer Range: 0 to 255</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:DVB:DVBX:SFConfig:TSN?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_int</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="SfConfigCls.set_tsn">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Dvb_Dvbx_SfConfig.html#RsSmw.Implementations.Source.Bb.Dvb.Dvbx.SfConfig.SfConfigCls.set_tsn">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_tsn</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tsn</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:DVB:DVBX:SFConfig:TSN \n</span>
+<span class="sd">		Snippet: driver.source.bb.dvb.dvbx.sfConfig.set_tsn(tsn = 1) \n</span>
+<span class="sd">		Sets the time slice number (TSN) . The TSN is identified in the wideband header. The TSN information determines which</span>
+<span class="sd">		physical layer frames the receiver decodes and which frames the receiver discards. \n</span>
+<span class="sd">			:param tsn: integer Range: 0 to 255</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">decimal_value_to_str</span><span class="p">(</span><span class="n">tsn</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:DVB:DVBX:SFConfig:TSN </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+</div>
+
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright © Rohde &amp; Schwarz 2023.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

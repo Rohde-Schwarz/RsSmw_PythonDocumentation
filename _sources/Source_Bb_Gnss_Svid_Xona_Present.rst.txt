@@ -1,0 +1,20 @@
+Present
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:GNSS:SVID<CH>:XONA:PRESent
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:GNSS:SVID<CH>:XONA:PRESent
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Gnss.Svid.Xona.Present.PresentCls
+	:members:
+	:undoc-members:
+	:noindex:

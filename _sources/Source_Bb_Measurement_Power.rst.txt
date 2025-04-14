@@ -1,0 +1,63 @@
+Power
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce]:BB:MEASurement:POWer:ABORt
+	single: [SOURce]:BB:MEASurement:POWer:ACQuisition
+	single: [SOURce]:BB:MEASurement:POWer:DELete
+	single: [SOURce]:BB:MEASurement:POWer:DURation
+	single: [SOURce]:BB:MEASurement:POWer:GSOurce
+	single: [SOURce]:BB:MEASurement:POWer:INDex
+	single: [SOURce]:BB:MEASurement:POWer:OUTPut
+	single: [SOURce]:BB:MEASurement:POWer:PEAK
+	single: [SOURce]:BB:MEASurement:POWer:PROGress
+	single: [SOURce]:BB:MEASurement:POWer:RMODe
+	single: [SOURce]:BB:MEASurement:POWer:RMS
+	single: [SOURce]:BB:MEASurement:POWer:RSTate
+	single: [SOURce]:BB:MEASurement:POWer:SOURce
+
+.. code-block:: python
+
+	[SOURce]:BB:MEASurement:POWer:ABORt
+	[SOURce]:BB:MEASurement:POWer:ACQuisition
+	[SOURce]:BB:MEASurement:POWer:DELete
+	[SOURce]:BB:MEASurement:POWer:DURation
+	[SOURce]:BB:MEASurement:POWer:GSOurce
+	[SOURce]:BB:MEASurement:POWer:INDex
+	[SOURce]:BB:MEASurement:POWer:OUTPut
+	[SOURce]:BB:MEASurement:POWer:PEAK
+	[SOURce]:BB:MEASurement:POWer:PROGress
+	[SOURce]:BB:MEASurement:POWer:RMODe
+	[SOURce]:BB:MEASurement:POWer:RMS
+	[SOURce]:BB:MEASurement:POWer:RSTate
+	[SOURce]:BB:MEASurement:POWer:SOURce
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Measurement.Power.PowerCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.measurement.power.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Measurement_Power_Add.rst
+	Source_Bb_Measurement_Power_Change.rst
+	Source_Bb_Measurement_Power_Execute.rst

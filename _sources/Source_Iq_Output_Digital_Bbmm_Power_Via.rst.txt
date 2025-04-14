@@ -1,0 +1,20 @@
+Via
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce]:IQ:OUTPut:DIGital:BBMM<CH>:POWer:VIA
+
+.. code-block:: python
+
+	[SOURce]:IQ:OUTPut:DIGital:BBMM<CH>:POWer:VIA
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Iq.Output.Digital.Bbmm.Power.Via.ViaCls
+	:members:
+	:undoc-members:
+	:noindex:

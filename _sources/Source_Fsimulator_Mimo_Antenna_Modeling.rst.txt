@@ -1,0 +1,20 @@
+Modeling
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:FSIMulator:MIMO:ANTenna:MODeling:[STATe]
+
+.. code-block:: python
+
+	[SOURce<HW>]:FSIMulator:MIMO:ANTenna:MODeling:[STATe]
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.Mimo.Antenna.Modeling.ModelingCls
+	:members:
+	:undoc-members:
+	:noindex:

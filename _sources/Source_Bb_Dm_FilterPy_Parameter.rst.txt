@@ -1,0 +1,50 @@
+Parameter
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:DM:FILTer:PARameter:APCO25
+	single: [SOURce<HW>]:BB:DM:FILTer:PARameter:GAUSs
+	single: [SOURce<HW>]:BB:DM:FILTer:PARameter:LPASSEVM
+	single: [SOURce<HW>]:BB:DM:FILTer:PARameter:LPASs
+	single: [SOURce<HW>]:BB:DM:FILTer:PARameter:PGAuss
+	single: [SOURce<HW>]:BB:DM:FILTer:PARameter:RCOSine
+	single: [SOURce<HW>]:BB:DM:FILTer:PARameter:SPHase
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:DM:FILTer:PARameter:APCO25
+	[SOURce<HW>]:BB:DM:FILTer:PARameter:GAUSs
+	[SOURce<HW>]:BB:DM:FILTer:PARameter:LPASSEVM
+	[SOURce<HW>]:BB:DM:FILTer:PARameter:LPASs
+	[SOURce<HW>]:BB:DM:FILTer:PARameter:PGAuss
+	[SOURce<HW>]:BB:DM:FILTer:PARameter:RCOSine
+	[SOURce<HW>]:BB:DM:FILTer:PARameter:SPHase
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dm.FilterPy.Parameter.ParameterCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.dm.filterPy.parameter.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Dm_FilterPy_Parameter_Apco25Lsm.rst
+	Source_Bb_Dm_FilterPy_Parameter_Cosine.rst

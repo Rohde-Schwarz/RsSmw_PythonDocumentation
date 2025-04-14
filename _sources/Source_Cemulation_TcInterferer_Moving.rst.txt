@@ -1,0 +1,46 @@
+Moving
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:CEMulation:TCINterferer:MOVing:FRATio
+	single: [SOURce<HW>]:CEMulation:TCINterferer:MOVing:LOSS
+	single: [SOURce<HW>]:CEMulation:TCINterferer:MOVing:MMODe
+	single: [SOURce<HW>]:CEMulation:TCINterferer:MOVing:PROFile
+	single: [SOURce<HW>]:CEMulation:TCINterferer:MOVing:STATe
+
+.. code-block:: python
+
+	[SOURce<HW>]:CEMulation:TCINterferer:MOVing:FRATio
+	[SOURce<HW>]:CEMulation:TCINterferer:MOVing:LOSS
+	[SOURce<HW>]:CEMulation:TCINterferer:MOVing:MMODe
+	[SOURce<HW>]:CEMulation:TCINterferer:MOVing:PROFile
+	[SOURce<HW>]:CEMulation:TCINterferer:MOVing:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.TcInterferer.Moving.MovingCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.cemulation.tcInterferer.moving.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Cemulation_TcInterferer_Moving_Delay.rst
+	Source_Cemulation_TcInterferer_Moving_Fdoppler.rst

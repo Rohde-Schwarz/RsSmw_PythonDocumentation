@@ -1,0 +1,52 @@
+Mimo
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:CEMulation:MIMO:CAPability
+	single: [SOURce<HW>]:CEMulation:MIMO:COPY:ALL
+	single: [SOURce<HW>]:CEMulation:MIMO:MDLoad
+	single: [SOURce<HW>]:CEMulation:MIMO:MDSTore
+	single: [SOURce<HW>]:CEMulation:MIMO:MPOWer
+	single: [SOURce<HW>]:CEMulation:MIMO:SUBSet
+
+.. code-block:: python
+
+	[SOURce<HW>]:CEMulation:MIMO:CAPability
+	[SOURce<HW>]:CEMulation:MIMO:COPY:ALL
+	[SOURce<HW>]:CEMulation:MIMO:MDLoad
+	[SOURce<HW>]:CEMulation:MIMO:MDSTore
+	[SOURce<HW>]:CEMulation:MIMO:MPOWer
+	[SOURce<HW>]:CEMulation:MIMO:SUBSet
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.Mimo.MimoCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.cemulation.mimo.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Cemulation_Mimo_Antenna.rst
+	Source_Cemulation_Mimo_Copy.rst
+	Source_Cemulation_Mimo_Power.rst
+	Source_Cemulation_Mimo_Scwi.rst
+	Source_Cemulation_Mimo_Tap.rst
+	Source_Cemulation_Mimo_Tgn.rst

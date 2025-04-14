@@ -1,0 +1,37 @@
+Couple
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:FSIMulator:COUPle:SPEed
+
+.. code-block:: python
+
+	[SOURce<HW>]:FSIMulator:COUPle:SPEed
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.Couple.CoupleCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.fsimulator.couple.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Fsimulator_Couple_LogNormal.rst

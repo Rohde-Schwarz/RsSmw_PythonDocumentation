@@ -1,0 +1,20 @@
+Duration
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:GNSS:RTK:BASE<ST>:LOCation:WAYPoints:DURation
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:GNSS:RTK:BASE<ST>:LOCation:WAYPoints:DURation
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Gnss.Rtk.Base.Location.Waypoints.Duration.DurationCls
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,24 @@
+Test
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: SYSTem:COMMunicate:BB<HW>:QSFP:NETWork:DIAGnostic:TEST:BYTes
+	single: SYSTem:COMMunicate:BB<HW>:QSFP:NETWork:DIAGnostic:TEST:ERRors
+	single: SYSTem:COMMunicate:BB<HW>:QSFP:NETWork:DIAGnostic:TEST
+
+.. code-block:: python
+
+	SYSTem:COMMunicate:BB<HW>:QSFP:NETWork:DIAGnostic:TEST:BYTes
+	SYSTem:COMMunicate:BB<HW>:QSFP:NETWork:DIAGnostic:TEST:ERRors
+	SYSTem:COMMunicate:BB<HW>:QSFP:NETWork:DIAGnostic:TEST
+
+
+
+.. autoclass:: RsSmw.Implementations.System.Communicate.Bb.Qsfp.Network.Diagnostic.Test.TestCls
+	:members:
+	:undoc-members:
+	:noindex:

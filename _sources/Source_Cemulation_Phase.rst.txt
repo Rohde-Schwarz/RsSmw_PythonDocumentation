@@ -1,0 +1,20 @@
+Phase
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:CEMulation:PHASe:UNIT
+
+.. code-block:: python
+
+	[SOURce<HW>]:CEMulation:PHASe:UNIT
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.Phase.PhaseCls
+	:members:
+	:undoc-members:
+	:noindex:

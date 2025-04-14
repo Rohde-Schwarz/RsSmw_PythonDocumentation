@@ -1,0 +1,41 @@
+IpAddress
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: SYSTem:COMMunicate:BB<HW>:NETWork:IPADdress:MODE
+	single: SYSTem:COMMunicate:BB<HW>:NETWork:[IPADdress]:GATeway
+	single: SYSTem:COMMunicate:BB<HW>:NETWork:IPADdress
+
+.. code-block:: python
+
+	SYSTem:COMMunicate:BB<HW>:NETWork:IPADdress:MODE
+	SYSTem:COMMunicate:BB<HW>:NETWork:[IPADdress]:GATeway
+	SYSTem:COMMunicate:BB<HW>:NETWork:IPADdress
+
+
+
+.. autoclass:: RsSmw.Implementations.System.Communicate.Bb.Network.IpAddress.IpAddressCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.system.communicate.bb.network.ipAddress.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	System_Communicate_Bb_Network_IpAddress_Subnet.rst

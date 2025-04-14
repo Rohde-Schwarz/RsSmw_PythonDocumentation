@@ -1,0 +1,39 @@
+Selected
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: CALibration<HW>:FREQuency:CONVerter:EXTernal:SELected:CATalog
+	single: CALibration<HW>:FREQuency:CONVerter:EXTernal:SELected
+
+.. code-block:: python
+
+	CALibration<HW>:FREQuency:CONVerter:EXTernal:SELected:CATalog
+	CALibration<HW>:FREQuency:CONVerter:EXTernal:SELected
+
+
+
+.. autoclass:: RsSmw.Implementations.Calibration.Frequency.Converter.External.Selected.SelectedCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.calibration.frequency.converter.external.selected.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Calibration_Frequency_Converter_External_Selected_Step.rst

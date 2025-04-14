@@ -1,0 +1,20 @@
+Dshape
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:FSIMulator:DEL:GROup<ST>:PATH<CH>:CUSTom:DSHape
+
+.. code-block:: python
+
+	[SOURce<HW>]:FSIMulator:DEL:GROup<ST>:PATH<CH>:CUSTom:DSHape
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.DelPy.Group.Path.Custom.Dshape.DshapeCls
+	:members:
+	:undoc-members:
+	:noindex:

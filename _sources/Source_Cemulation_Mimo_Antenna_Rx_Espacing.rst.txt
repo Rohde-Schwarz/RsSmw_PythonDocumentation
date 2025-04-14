@@ -1,0 +1,24 @@
+Espacing
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:CEMulation:MIMO:ANTenna:RX:ESPacing:CROSs
+	single: [SOURce<HW>]:CEMulation:MIMO:ANTenna:RX:ESPacing:HORizontal
+	single: [SOURce<HW>]:CEMulation:MIMO:ANTenna:RX:ESPacing:VERTical
+
+.. code-block:: python
+
+	[SOURce<HW>]:CEMulation:MIMO:ANTenna:RX:ESPacing:CROSs
+	[SOURce<HW>]:CEMulation:MIMO:ANTenna:RX:ESPacing:HORizontal
+	[SOURce<HW>]:CEMulation:MIMO:ANTenna:RX:ESPacing:VERTical
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.Mimo.Antenna.Rx.Espacing.EspacingCls
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,20 @@
+TrSource
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:ONEWeb:DL:[SUBF<ST0>]:ENCC:PDCCh:DCRegs:TRSource
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:ONEWeb:DL:[SUBF<ST0>]:ENCC:PDCCh:DCRegs:TRSource
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Downlink.Subf.Encc.Pdcch.DcRegs.TrSource.TrSourceCls
+	:members:
+	:undoc-members:
+	:noindex:

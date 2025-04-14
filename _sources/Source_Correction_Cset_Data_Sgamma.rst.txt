@@ -1,0 +1,38 @@
+Sgamma
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:CORRection:CSET:DATA:SGAMma:DELete
+
+.. code-block:: python
+
+	[SOURce<HW>]:CORRection:CSET:DATA:SGAMma:DELete
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Correction.Cset.Data.Sgamma.SgammaCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.correction.cset.data.sgamma.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Correction_Cset_Data_Sgamma_Magnitude.rst
+	Source_Correction_Cset_Data_Sgamma_Phase.rst

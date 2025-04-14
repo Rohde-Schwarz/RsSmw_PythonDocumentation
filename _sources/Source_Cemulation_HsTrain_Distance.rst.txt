@@ -1,0 +1,22 @@
+Distance
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:CEMulation:HSTRain:DISTance:MINimum
+	single: [SOURce<HW>]:CEMulation:HSTRain:DISTance:STARt
+
+.. code-block:: python
+
+	[SOURce<HW>]:CEMulation:HSTRain:DISTance:MINimum
+	[SOURce<HW>]:CEMulation:HSTRain:DISTance:STARt
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.HsTrain.Distance.DistanceCls
+	:members:
+	:undoc-members:
+	:noindex:

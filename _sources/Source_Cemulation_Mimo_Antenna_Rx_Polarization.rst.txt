@@ -1,0 +1,20 @@
+Polarization
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:CEMulation:MIMO:ANTenna:RX:POLarization:ANGLe
+
+.. code-block:: python
+
+	[SOURce<HW>]:CEMulation:MIMO:ANTenna:RX:POLarization:ANGLe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.Mimo.Antenna.Rx.Polarization.PolarizationCls
+	:members:
+	:undoc-members:
+	:noindex:

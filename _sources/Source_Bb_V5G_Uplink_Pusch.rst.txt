@@ -1,0 +1,28 @@
+Pusch
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:V5G:UL:PUSCh:FHMode
+	single: [SOURce<HW>]:BB:V5G:UL:PUSCh:FHOFfset
+	single: [SOURce<HW>]:BB:V5G:UL:PUSCh:NHOFfset
+	single: [SOURce<HW>]:BB:V5G:UL:PUSCh:NHOPping
+	single: [SOURce<HW>]:BB:V5G:UL:PUSCh:NOSM
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:V5G:UL:PUSCh:FHMode
+	[SOURce<HW>]:BB:V5G:UL:PUSCh:FHOFfset
+	[SOURce<HW>]:BB:V5G:UL:PUSCh:NHOFfset
+	[SOURce<HW>]:BB:V5G:UL:PUSCh:NHOPping
+	[SOURce<HW>]:BB:V5G:UL:PUSCh:NOSM
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Uplink.Pusch.PuschCls
+	:members:
+	:undoc-members:
+	:noindex:

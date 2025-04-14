@@ -1,0 +1,37 @@
+Analyzer
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:REGenerator:RADar:ANALyzer:STATus
+
+.. code-block:: python
+
+	[SOURce<HW>]:REGenerator:RADar:ANALyzer:STATus
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Regenerator.Radar.Analyzer.AnalyzerCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.regenerator.radar.analyzer.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Regenerator_Radar_Analyzer_Power.rst

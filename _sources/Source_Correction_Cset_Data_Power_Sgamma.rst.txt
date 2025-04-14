@@ -1,0 +1,20 @@
+Sgamma
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:CORRection:CSET:DATA:POWer:SGAMma:STATe
+
+.. code-block:: python
+
+	[SOURce<HW>]:CORRection:CSET:DATA:POWer:SGAMma:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Correction.Cset.Data.Power.Sgamma.SgammaCls
+	:members:
+	:undoc-members:
+	:noindex:

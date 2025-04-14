@@ -1,0 +1,20 @@
+PtUse
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:DVB:DVBX:GHConfig:PTUSe:[STATe]
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:DVB:DVBX:GHConfig:PTUSe:[STATe]
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dvb.Dvbx.GhConfig.PtUse.PtUseCls
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,20 @@
+Cindex
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:ACTable:SET<CH>:CINDex
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:ACTable:SET<CH>:CINDex
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Btooth.Econfiguration.Actable.Set.Cindex.CindexCls
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,42 @@
+Fader<DigitalIq>
+----------------------------------------
+
+.. rubric:: RepCap Settings
+
+.. code-block:: python
+
+	# Range: Nr1 .. Nr4
+	rc = driver.source.bb.impairment.fader.repcap_digitalIq_get()
+	driver.source.bb.impairment.fader.repcap_digitalIq_set(repcap.DigitalIq.Nr1)
+
+
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Impairment.Fader.FaderCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.impairment.fader.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Impairment_Fader_Delay.rst
+	Source_Bb_Impairment_Fader_IqRatio.rst
+	Source_Bb_Impairment_Fader_Leakage.rst
+	Source_Bb_Impairment_Fader_Poffset.rst
+	Source_Bb_Impairment_Fader_Quadrature.rst
+	Source_Bb_Impairment_Fader_Skew.rst
+	Source_Bb_Impairment_Fader_State.rst

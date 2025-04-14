@@ -1,0 +1,24 @@
+Profile
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:CEMulation:DSSimulation:USER:PROFile:CATalog
+	single: [SOURce<HW>]:CEMulation:DSSimulation:USER:PROFile:SELect
+	single: [SOURce<HW>]:CEMulation:DSSimulation:USER:PROFile:SOURce
+
+.. code-block:: python
+
+	[SOURce<HW>]:CEMulation:DSSimulation:USER:PROFile:CATalog
+	[SOURce<HW>]:CEMulation:DSSimulation:USER:PROFile:SELect
+	[SOURce<HW>]:CEMulation:DSSimulation:USER:PROFile:SOURce
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.DsSimulation.User.Profile.ProfileCls
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,22 @@
+Pratio
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:CEMulation:SCM:POLarization:PRATio:HORizontal
+	single: [SOURce<HW>]:CEMulation:SCM:POLarization:PRATio:VERTical
+
+.. code-block:: python
+
+	[SOURce<HW>]:CEMulation:SCM:POLarization:PRATio:HORizontal
+	[SOURce<HW>]:CEMulation:SCM:POLarization:PRATio:VERTical
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.Scm.Polarization.Pratio.PratioCls
+	:members:
+	:undoc-members:
+	:noindex:

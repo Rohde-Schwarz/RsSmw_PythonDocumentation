@@ -1,0 +1,20 @@
+Poffset
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:V5G:UL:UE<ST>:CELL<DIR0>:ROW<CH0>:POFFset
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:V5G:UL:UE<ST>:CELL<DIR0>:ROW<CH0>:POFFset
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Uplink.Ue.Cell.Row.Poffset.PoffsetCls
+	:members:
+	:undoc-members:
+	:noindex:

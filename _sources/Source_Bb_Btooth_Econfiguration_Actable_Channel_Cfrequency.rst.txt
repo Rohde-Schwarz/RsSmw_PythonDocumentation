@@ -1,0 +1,20 @@
+Cfrequency
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:ACTable:CHANnel<CH0>:CFRequency
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:ACTable:CHANnel<CH0>:CFRequency
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Btooth.Econfiguration.Actable.Channel.Cfrequency.CfrequencyCls
+	:members:
+	:undoc-members:
+	:noindex:

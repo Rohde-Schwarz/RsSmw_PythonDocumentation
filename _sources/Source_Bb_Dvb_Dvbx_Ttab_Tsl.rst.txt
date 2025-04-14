@@ -1,0 +1,43 @@
+Tsl<ChannelNull>
+----------------------------------------
+
+.. rubric:: RepCap Settings
+
+.. code-block:: python
+
+	# Range: Nr0 .. Nr63
+	rc = driver.source.bb.dvb.dvbx.ttab.tsl.repcap_channelNull_get()
+	driver.source.bb.dvb.dvbx.ttab.tsl.repcap_channelNull_set(repcap.ChannelNull.Nr0)
+
+
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dvb.Dvbx.Ttab.Tsl.TslCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.dvb.dvbx.ttab.tsl.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Dvb_Dvbx_Ttab_Tsl_Ctype.rst
+	Source_Bb_Dvb_Dvbx_Ttab_Tsl_Data.rst
+	Source_Bb_Dvb_Dvbx_Ttab_Tsl_Dlist.rst
+	Source_Bb_Dvb_Dvbx_Ttab_Tsl_Mcod.rst
+	Source_Bb_Dvb_Dvbx_Ttab_Tsl_Nsym.rst
+	Source_Bb_Dvb_Dvbx_Ttab_Tsl_Pattern.rst
+	Source_Bb_Dvb_Dvbx_Ttab_Tsl_Pilots.rst
+	Source_Bb_Dvb_Dvbx_Ttab_Tsl_Tsn.rst

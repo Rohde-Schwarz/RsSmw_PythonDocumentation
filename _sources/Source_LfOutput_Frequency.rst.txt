@@ -1,0 +1,28 @@
+Frequency
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:LFOutput<CH>:FREQuency
+	single: [SOURce<HW>]:LFOutput:FREQuency:MANual
+	single: [SOURce<HW>]:LFOutput:FREQuency:MODE
+	single: [SOURce<HW>]:LFOutput:FREQuency:STARt
+	single: [SOURce<HW>]:LFOutput:FREQuency:STOP
+
+.. code-block:: python
+
+	[SOURce<HW>]:LFOutput<CH>:FREQuency
+	[SOURce<HW>]:LFOutput:FREQuency:MANual
+	[SOURce<HW>]:LFOutput:FREQuency:MODE
+	[SOURce<HW>]:LFOutput:FREQuency:STARt
+	[SOURce<HW>]:LFOutput:FREQuency:STOP
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.LfOutput.Frequency.FrequencyCls
+	:members:
+	:undoc-members:
+	:noindex:

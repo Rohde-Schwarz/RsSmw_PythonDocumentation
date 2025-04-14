@@ -1,0 +1,22 @@
+Cosine
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:WLAD:FILTer:PARameter:COSine:COFS
+	single: [SOURce<HW>]:BB:WLAD:FILTer:PARameter:COSine
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:WLAD:FILTer:PARameter:COSine:COFS
+	[SOURce<HW>]:BB:WLAD:FILTer:PARameter:COSine
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Wlad.FilterPy.Parameter.Cosine.CosineCls
+	:members:
+	:undoc-members:
+	:noindex:

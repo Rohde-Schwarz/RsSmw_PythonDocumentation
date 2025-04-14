@@ -1,0 +1,39 @@
+Level
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:REGenerator:SIMulation:LEVel
+
+.. code-block:: python
+
+	[SOURce<HW>]:REGenerator:SIMulation:LEVel
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Regenerator.Simulation.Level.LevelCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.regenerator.simulation.level.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Regenerator_Simulation_Level_Apply.rst
+	Source_Regenerator_Simulation_Level_Updated.rst
+	Source_Regenerator_Simulation_Level_Valid.rst

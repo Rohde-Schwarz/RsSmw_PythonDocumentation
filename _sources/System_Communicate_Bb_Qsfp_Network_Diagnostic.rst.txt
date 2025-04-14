@@ -1,0 +1,29 @@
+Diagnostic
+----------------------------------------
+
+
+
+
+
+.. autoclass:: RsSmw.Implementations.System.Communicate.Bb.Qsfp.Network.Diagnostic.DiagnosticCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.system.communicate.bb.qsfp.network.diagnostic.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	System_Communicate_Bb_Qsfp_Network_Diagnostic_Counters.rst
+	System_Communicate_Bb_Qsfp_Network_Diagnostic_Test.rst

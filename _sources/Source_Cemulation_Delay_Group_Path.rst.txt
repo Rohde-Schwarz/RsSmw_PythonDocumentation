@@ -1,0 +1,51 @@
+Path<Path>
+----------------------------------------
+
+.. rubric:: RepCap Settings
+
+.. code-block:: python
+
+	# Range: Nr1 .. Nr8
+	rc = driver.source.cemulation.delay.group.path.repcap_path_get()
+	driver.source.cemulation.delay.group.path.repcap_path_set(repcap.Path.Nr1)
+
+
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.Delay.Group.Path.PathCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.cemulation.delay.group.path.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Cemulation_Delay_Group_Path_Adelay.rst
+	Source_Cemulation_Delay_Group_Path_Bdelay.rst
+	Source_Cemulation_Delay_Group_Path_Correlation.rst
+	Source_Cemulation_Delay_Group_Path_Cphase.rst
+	Source_Cemulation_Delay_Group_Path_Custom.rst
+	Source_Cemulation_Delay_Group_Path_Fdoppler.rst
+	Source_Cemulation_Delay_Group_Path_Fratio.rst
+	Source_Cemulation_Delay_Group_Path_Fshift.rst
+	Source_Cemulation_Delay_Group_Path_Fspread.rst
+	Source_Cemulation_Delay_Group_Path_LogNormal.rst
+	Source_Cemulation_Delay_Group_Path_Loss.rst
+	Source_Cemulation_Delay_Group_Path_Pratio.rst
+	Source_Cemulation_Delay_Group_Path_Profile.rst
+	Source_Cemulation_Delay_Group_Path_Rdelay.rst
+	Source_Cemulation_Delay_Group_Path_Speed.rst
+	Source_Cemulation_Delay_Group_Path_State.rst

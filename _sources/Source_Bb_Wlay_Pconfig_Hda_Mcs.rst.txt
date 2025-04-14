@@ -1,0 +1,29 @@
+Mcs
+----------------------------------------
+
+
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Wlay.Pconfig.Hda.Mcs.McsCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.wlay.pconfig.hda.mcs.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Wlay_Pconfig_Hda_Mcs_Dpt.rst
+	Source_Bb_Wlay_Pconfig_Hda_Mcs_Fpt.rst

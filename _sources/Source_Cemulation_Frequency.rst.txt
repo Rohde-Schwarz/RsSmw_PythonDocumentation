@@ -1,0 +1,22 @@
+Frequency
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:CEMulation:FREQuency:DETect
+	single: [SOURce<HW>]:CEMulation:FREQuency
+
+.. code-block:: python
+
+	[SOURce<HW>]:CEMulation:FREQuency:DETect
+	[SOURce<HW>]:CEMulation:FREQuency
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.Frequency.FrequencyCls
+	:members:
+	:undoc-members:
+	:noindex:

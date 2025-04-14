@@ -1,0 +1,20 @@
+Mode
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce]:IQ:OUTPut:DIGital:FADer<CH>:POWer:STEP:MODE
+
+.. code-block:: python
+
+	[SOURce]:IQ:OUTPut:DIGital:FADer<CH>:POWer:STEP:MODE
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Iq.Output.Digital.Fader.Power.Step.Mode.ModeCls
+	:members:
+	:undoc-members:
+	:noindex:

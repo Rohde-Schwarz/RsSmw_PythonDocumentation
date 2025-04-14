@@ -1,0 +1,20 @@
+Unit
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:FSIMulator:DEL:TYPE<CH>:UNIT
+
+.. code-block:: python
+
+	[SOURce<HW>]:FSIMulator:DEL:TYPE<CH>:UNIT
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.DelPy.TypePy.Unit.UnitCls
+	:members:
+	:undoc-members:
+	:noindex:

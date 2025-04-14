@@ -1,0 +1,20 @@
+File
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:GNSS:SVID<CH>:XONA:PRERrors:FILE
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:GNSS:SVID<CH>:XONA:PRERrors:FILE
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Gnss.Svid.Xona.PrErrors.File.FileCls
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,45 @@
+Data
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:WLAD:PCONfig:DATA:DSELection
+	single: [SOURce<HW>]:BB:WLAD:PCONfig:DATA:LENGth
+	single: [SOURce<HW>]:BB:WLAD:PCONfig:DATA:RATE
+	single: [SOURce<HW>]:BB:WLAD:PCONfig:DATA:SYMBols
+	single: [SOURce<HW>]:BB:WLAD:PCONfig:DATA
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:WLAD:PCONfig:DATA:DSELection
+	[SOURce<HW>]:BB:WLAD:PCONfig:DATA:LENGth
+	[SOURce<HW>]:BB:WLAD:PCONfig:DATA:RATE
+	[SOURce<HW>]:BB:WLAD:PCONfig:DATA:SYMBols
+	[SOURce<HW>]:BB:WLAD:PCONfig:DATA
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Wlad.Pconfig.Data.DataCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.wlad.pconfig.data.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Wlad_Pconfig_Data_Pattern.rst

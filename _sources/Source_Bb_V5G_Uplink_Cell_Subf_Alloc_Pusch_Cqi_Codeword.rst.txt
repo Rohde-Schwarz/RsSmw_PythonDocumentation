@@ -1,0 +1,20 @@
+Codeword
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:V5G:UL:[CELL<CCIDX>]:[SUBF<ST0>]:ALLoc<CH0>:PUSCh:CQI:CODWord
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:V5G:UL:[CELL<CCIDX>]:[SUBF<ST0>]:ALLoc<CH0>:PUSCh:CQI:CODWord
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Uplink.Cell.Subf.Alloc.Pusch.Cqi.Codeword.CodewordCls
+	:members:
+	:undoc-members:
+	:noindex:

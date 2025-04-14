@@ -1,0 +1,20 @@
+Real
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:V5G:DL:USER<CH>:APM:[LAYer<USER>]:AP<DIR0>:ROW<ST0>:REAL
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:V5G:DL:USER<CH>:APM:[LAYer<USER>]:AP<DIR0>:ROW<ST0>:REAL
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Downlink.User.Apm.Layer.Ap.Row.Real.RealCls
+	:members:
+	:undoc-members:
+	:noindex:

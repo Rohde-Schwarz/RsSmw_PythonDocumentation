@@ -1,0 +1,31 @@
+Matrix
+----------------------------------------
+
+
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.Mimo.Tap.Matrix.MatrixCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.fsimulator.mimo.tap.matrix.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Fsimulator_Mimo_Tap_Matrix_Accept.rst
+	Source_Fsimulator_Mimo_Tap_Matrix_Conflict.rst
+	Source_Fsimulator_Mimo_Tap_Matrix_Mode.rst
+	Source_Fsimulator_Mimo_Tap_Matrix_Row.rst

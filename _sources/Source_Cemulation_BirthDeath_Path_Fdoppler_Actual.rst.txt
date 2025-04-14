@@ -1,0 +1,20 @@
+Actual
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:CEMulation:BIRThdeath:PATH<CH>:FDOPpler:ACTual
+
+.. code-block:: python
+
+	[SOURce<HW>]:CEMulation:BIRThdeath:PATH<CH>:FDOPpler:ACTual
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.BirthDeath.Path.Fdoppler.Actual.ActualCls
+	:members:
+	:undoc-members:
+	:noindex:

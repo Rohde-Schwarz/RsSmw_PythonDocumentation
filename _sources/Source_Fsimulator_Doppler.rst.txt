@@ -1,0 +1,20 @@
+Doppler
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:FSIMulator:DOPPler:UNIT
+
+.. code-block:: python
+
+	[SOURce<HW>]:FSIMulator:DOPPler:UNIT
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.Doppler.DopplerCls
+	:members:
+	:undoc-members:
+	:noindex:

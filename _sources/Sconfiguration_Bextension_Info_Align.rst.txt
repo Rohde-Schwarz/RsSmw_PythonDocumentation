@@ -1,0 +1,42 @@
+Align
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: SCONfiguration:BEXTension:INFO:ALIGn:COMMent
+	single: SCONfiguration:BEXTension:INFO:ALIGn:DATE
+	single: SCONfiguration:BEXTension:INFO:ALIGn:TIME
+
+.. code-block:: python
+
+	SCONfiguration:BEXTension:INFO:ALIGn:COMMent
+	SCONfiguration:BEXTension:INFO:ALIGn:DATE
+	SCONfiguration:BEXTension:INFO:ALIGn:TIME
+
+
+
+.. autoclass:: RsSmw.Implementations.Sconfiguration.Bextension.Info.Align.AlignCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.sconfiguration.bextension.info.align.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Sconfiguration_Bextension_Info_Align_Frequency.rst
+	Sconfiguration_Bextension_Info_Align_Pep.rst

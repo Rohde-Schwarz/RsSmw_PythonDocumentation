@@ -1,0 +1,20 @@
+Apply
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: SCONfiguration:EXTernal:REMote:EDIT:APPLy
+
+.. code-block:: python
+
+	SCONfiguration:EXTernal:REMote:EDIT:APPLy
+
+
+
+.. autoclass:: RsSmw.Implementations.Sconfiguration.External.Remote.Edit.Apply.ApplyCls
+	:members:
+	:undoc-members:
+	:noindex:

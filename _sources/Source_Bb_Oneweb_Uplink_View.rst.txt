@@ -1,0 +1,24 @@
+View
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:ONEWeb:UL:VIEW:CINDex
+	single: [SOURce<HW>]:BB:ONEWeb:UL:VIEW:FSTS
+	single: [SOURce<HW>]:BB:ONEWeb:UL:VIEW:VISS
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:ONEWeb:UL:VIEW:CINDex
+	[SOURce<HW>]:BB:ONEWeb:UL:VIEW:FSTS
+	[SOURce<HW>]:BB:ONEWeb:UL:VIEW:VISS
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Uplink.View.ViewCls
+	:members:
+	:undoc-members:
+	:noindex:

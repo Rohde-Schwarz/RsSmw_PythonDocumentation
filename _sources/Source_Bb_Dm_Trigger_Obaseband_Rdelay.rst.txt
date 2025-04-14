@@ -1,0 +1,20 @@
+Rdelay
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:DM:TRIGger:OBASeband<CH>:RDELay
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:DM:TRIGger:OBASeband<CH>:RDELay
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dm.Trigger.Obaseband.Rdelay.RdelayCls
+	:members:
+	:undoc-members:
+	:noindex:

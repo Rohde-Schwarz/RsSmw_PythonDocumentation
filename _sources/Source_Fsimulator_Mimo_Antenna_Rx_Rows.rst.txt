@@ -1,0 +1,20 @@
+Rows
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:FSIMulator:MIMO:ANTenna:RX:ROWS:SIZE
+
+.. code-block:: python
+
+	[SOURce<HW>]:FSIMulator:MIMO:ANTenna:RX:ROWS:SIZE
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.Mimo.Antenna.Rx.Rows.RowsCls
+	:members:
+	:undoc-members:
+	:noindex:

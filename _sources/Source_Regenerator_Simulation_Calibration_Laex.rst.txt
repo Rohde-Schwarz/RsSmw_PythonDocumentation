@@ -1,0 +1,20 @@
+Laex
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:REGenerator:SIMulation:CALibration:LAEX
+
+.. code-block:: python
+
+	[SOURce<HW>]:REGenerator:SIMulation:CALibration:LAEX
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Regenerator.Simulation.Calibration.Laex.LaexCls
+	:members:
+	:undoc-members:
+	:noindex:

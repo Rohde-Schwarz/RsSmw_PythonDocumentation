@@ -1,0 +1,20 @@
+Waveform
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:WLAD:WAVeform:CREate
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:WLAD:WAVeform:CREate
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Wlad.Waveform.WaveformCls
+	:members:
+	:undoc-members:
+	:noindex:

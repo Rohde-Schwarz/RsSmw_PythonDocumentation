@@ -1,0 +1,20 @@
+Profile
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:CEMulation:BIRThdeath:PATH<CH>:PROFile
+
+.. code-block:: python
+
+	[SOURce<HW>]:CEMulation:BIRThdeath:PATH<CH>:PROFile
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.BirthDeath.Path.Profile.ProfileCls
+	:members:
+	:undoc-members:
+	:noindex:

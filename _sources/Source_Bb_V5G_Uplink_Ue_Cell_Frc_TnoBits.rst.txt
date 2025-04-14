@@ -1,0 +1,20 @@
+TnoBits
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:V5G:UL:UE<ST>:[CELL<CCIDX>]:FRC:TNOBits
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:V5G:UL:UE<ST>:[CELL<CCIDX>]:FRC:TNOBits
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Uplink.Ue.Cell.Frc.TnoBits.TnoBitsCls
+	:members:
+	:undoc-members:
+	:noindex:

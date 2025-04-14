@@ -1,0 +1,20 @@
+Bconfig
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:EFRontend:FREQuency:BCONfig:AUTO
+
+.. code-block:: python
+
+	[SOURce<HW>]:EFRontend:FREQuency:BCONfig:AUTO
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Efrontend.Frequency.Bconfig.BconfigCls
+	:members:
+	:undoc-members:
+	:noindex:

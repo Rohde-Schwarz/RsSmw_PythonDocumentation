@@ -1,0 +1,20 @@
+Duration
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:GNSS:CONTrol:TIME:DURation
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:GNSS:CONTrol:TIME:DURation
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Gnss.Control.Time.Duration.DurationCls
+	:members:
+	:undoc-members:
+	:noindex:

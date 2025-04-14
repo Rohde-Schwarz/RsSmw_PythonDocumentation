@@ -1,0 +1,24 @@
+Espacing
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:FSIMulator:MIMO:ANTenna:TX:ESPacing:CROSs
+	single: [SOURce<HW>]:FSIMulator:MIMO:ANTenna:TX:ESPacing:HORizontal
+	single: [SOURce<HW>]:FSIMulator:MIMO:ANTenna:TX:ESPacing:VERTical
+
+.. code-block:: python
+
+	[SOURce<HW>]:FSIMulator:MIMO:ANTenna:TX:ESPacing:CROSs
+	[SOURce<HW>]:FSIMulator:MIMO:ANTenna:TX:ESPacing:HORizontal
+	[SOURce<HW>]:FSIMulator:MIMO:ANTenna:TX:ESPacing:VERTical
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.Mimo.Antenna.Tx.Espacing.EspacingCls
+	:members:
+	:undoc-members:
+	:noindex:

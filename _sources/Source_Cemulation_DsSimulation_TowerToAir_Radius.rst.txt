@@ -1,0 +1,22 @@
+Radius
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:CEMulation:DSSimulation:TOWertoair:RADius:LTURn
+	single: [SOURce<HW>]:CEMulation:DSSimulation:TOWertoair:RADius:RTURn
+
+.. code-block:: python
+
+	[SOURce<HW>]:CEMulation:DSSimulation:TOWertoair:RADius:LTURn
+	[SOURce<HW>]:CEMulation:DSSimulation:TOWertoair:RADius:RTURn
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.DsSimulation.TowerToAir.Radius.RadiusCls
+	:members:
+	:undoc-members:
+	:noindex:

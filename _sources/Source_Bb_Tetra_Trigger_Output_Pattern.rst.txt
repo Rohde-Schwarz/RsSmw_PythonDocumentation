@@ -1,0 +1,20 @@
+Pattern
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:TETRa:TRIGger:OUTPut<CH>:PATTern
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:TETRa:TRIGger:OUTPut<CH>:PATTern
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Tetra.Trigger.Output.Pattern.PatternCls
+	:members:
+	:undoc-members:
+	:noindex:

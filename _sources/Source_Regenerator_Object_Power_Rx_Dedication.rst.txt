@@ -1,0 +1,20 @@
+Dedication
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:REGenerator:OBJect<CH>:POWer:RX:DEDication
+
+.. code-block:: python
+
+	[SOURce<HW>]:REGenerator:OBJect<CH>:POWer:RX:DEDication
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Regenerator.Object.Power.Rx.Dedication.DedicationCls
+	:members:
+	:undoc-members:
+	:noindex:

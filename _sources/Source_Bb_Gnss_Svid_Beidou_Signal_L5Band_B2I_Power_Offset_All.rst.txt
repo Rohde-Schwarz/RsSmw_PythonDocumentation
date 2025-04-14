@@ -1,0 +1,20 @@
+All
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:GNSS:SVID<CH>:BEIDou:SIGNal:L5Band:B2I:POWer:OFFset:ALL
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:GNSS:SVID<CH>:BEIDou:SIGNal:L5Band:B2I:POWer:OFFset:ALL
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Gnss.Svid.Beidou.Signal.L5Band.B2I.Power.Offset.All.AllCls
+	:members:
+	:undoc-members:
+	:noindex:

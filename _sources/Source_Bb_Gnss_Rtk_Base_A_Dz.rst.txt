@@ -1,0 +1,20 @@
+Dz
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:GNSS:RTK:BASE<ST>:A<CH>:DZ
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:GNSS:RTK:BASE<ST>:A<CH>:DZ
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Gnss.Rtk.Base.A.Dz.DzCls
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,22 @@
+Ephemeris
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:CEMulation:DSSimulation:USER:RX:TRAJectory:EPHemeris:CATalog
+	single: [SOURce<HW>]:CEMulation:DSSimulation:USER:RX:TRAJectory:EPHemeris:SELect
+
+.. code-block:: python
+
+	[SOURce<HW>]:CEMulation:DSSimulation:USER:RX:TRAJectory:EPHemeris:CATalog
+	[SOURce<HW>]:CEMulation:DSSimulation:USER:RX:TRAJectory:EPHemeris:SELect
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.DsSimulation.User.Rx.Trajectory.Ephemeris.EphemerisCls
+	:members:
+	:undoc-members:
+	:noindex:

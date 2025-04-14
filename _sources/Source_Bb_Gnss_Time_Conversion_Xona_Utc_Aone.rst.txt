@@ -1,0 +1,22 @@
+Aone
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:GNSS:TIME:CONVersion:XONA:UTC:AONE:UNSCaled
+	single: [SOURce<HW>]:BB:GNSS:TIME:CONVersion:XONA:UTC:AONE
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:GNSS:TIME:CONVersion:XONA:UTC:AONE:UNSCaled
+	[SOURce<HW>]:BB:GNSS:TIME:CONVersion:XONA:UTC:AONE
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Gnss.Time.Conversion.Xona.Utc.Aone.AoneCls
+	:members:
+	:undoc-members:
+	:noindex:

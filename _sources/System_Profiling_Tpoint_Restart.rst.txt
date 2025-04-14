@@ -1,0 +1,20 @@
+Restart
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: SYSTem:PROFiling:TPOint:RESTart
+
+.. code-block:: python
+
+	SYSTem:PROFiling:TPOint:RESTart
+
+
+
+.. autoclass:: RsSmw.Implementations.System.Profiling.Tpoint.Restart.RestartCls
+	:members:
+	:undoc-members:
+	:noindex:

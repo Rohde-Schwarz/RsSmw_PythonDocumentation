@@ -1,0 +1,46 @@
+RfAlignment
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: SOURce<HW>:RFALignment:DATTenuation
+	single: SOURce<HW>:RFALignment:DIRectory
+	single: SOURce<HW>:RFALignment:FOFFset
+	single: SOURce<HW>:RFALignment:STATe
+
+.. code-block:: python
+
+	SOURce<HW>:RFALignment:DATTenuation
+	SOURce<HW>:RFALignment:DIRectory
+	SOURce<HW>:RFALignment:FOFFset
+	SOURce<HW>:RFALignment:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.RfAlignment.RfAlignmentCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.rfAlignment.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_RfAlignment_Calibrated.rst
+	Source_RfAlignment_Correction.rst
+	Source_RfAlignment_Fresponse.rst
+	Source_RfAlignment_RfInfo.rst

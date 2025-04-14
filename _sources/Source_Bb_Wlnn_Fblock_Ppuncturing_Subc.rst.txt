@@ -1,0 +1,36 @@
+Subc<SubChannel>
+----------------------------------------
+
+.. rubric:: RepCap Settings
+
+.. code-block:: python
+
+	# Range: Nr1 .. Nr16
+	rc = driver.source.bb.wlnn.fblock.ppuncturing.subc.repcap_subChannel_get()
+	driver.source.bb.wlnn.fblock.ppuncturing.subc.repcap_subChannel_set(repcap.SubChannel.Nr1)
+
+
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Wlnn.Fblock.Ppuncturing.Subc.SubcCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.wlnn.fblock.ppuncturing.subc.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Wlnn_Fblock_Ppuncturing_Subc_State.rst

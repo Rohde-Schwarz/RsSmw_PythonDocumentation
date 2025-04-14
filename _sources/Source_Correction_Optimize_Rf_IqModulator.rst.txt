@@ -1,0 +1,22 @@
+IqModulator
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:CORRection:OPTimize:RF:IQModulator:ADJust
+	single: [SOURce<HW>]:CORRection:OPTimize:RF:IQModulator
+
+.. code-block:: python
+
+	[SOURce<HW>]:CORRection:OPTimize:RF:IQModulator:ADJust
+	[SOURce<HW>]:CORRection:OPTimize:RF:IQModulator
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Correction.Optimize.Rf.IqModulator.IqModulatorCls
+	:members:
+	:undoc-members:
+	:noindex:

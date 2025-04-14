@@ -1,0 +1,20 @@
+Phro
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:HUWB:FCONfig:PHRO:CWORd
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:HUWB:FCONfig:PHRO:CWORd
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Huwb.Fconfig.Phro.PhroCls
+	:members:
+	:undoc-members:
+	:noindex:

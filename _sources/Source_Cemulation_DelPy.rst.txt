@@ -1,0 +1,38 @@
+DelPy
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:CEMulation:DEL:STATe
+
+.. code-block:: python
+
+	[SOURce<HW>]:CEMulation:DEL:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.DelPy.DelPyCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.cemulation.delPy.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Cemulation_DelPy_Group.rst
+	Source_Cemulation_DelPy_TypePy.rst

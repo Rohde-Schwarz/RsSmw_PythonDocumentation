@@ -1,0 +1,37 @@
+Couple
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:CEMulation:COUPle:SPEed
+
+.. code-block:: python
+
+	[SOURce<HW>]:CEMulation:COUPle:SPEed
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.Couple.CoupleCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.cemulation.couple.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Cemulation_Couple_LogNormal.rst

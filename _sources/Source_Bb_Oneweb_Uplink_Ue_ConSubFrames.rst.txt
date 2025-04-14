@@ -1,0 +1,30 @@
+ConSubFrames
+----------------------------------------
+
+
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Uplink.Ue.ConSubFrames.ConSubFramesCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.oneweb.uplink.ue.conSubFrames.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Oneweb_Uplink_Ue_ConSubFrames_Puach.rst
+	Source_Bb_Oneweb_Uplink_Ue_ConSubFrames_Pucch.rst
+	Source_Bb_Oneweb_Uplink_Ue_ConSubFrames_Pusch.rst

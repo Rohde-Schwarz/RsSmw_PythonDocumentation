@@ -1,0 +1,20 @@
+Gain
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:CEMulation:SCM:TAP<ST>:GAIN
+
+.. code-block:: python
+
+	[SOURce<HW>]:CEMulation:SCM:TAP<ST>:GAIN
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.Scm.Tap.Gain.GainCls
+	:members:
+	:undoc-members:
+	:noindex:

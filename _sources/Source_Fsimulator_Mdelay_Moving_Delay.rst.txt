@@ -1,0 +1,22 @@
+Delay
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:FSIMulator:MDELay:MOVing:DELay:MEAN
+	single: [SOURce<HW>]:FSIMulator:MDELay:MOVing:DELay:VARiation
+
+.. code-block:: python
+
+	[SOURce<HW>]:FSIMulator:MDELay:MOVing:DELay:MEAN
+	[SOURce<HW>]:FSIMulator:MDELay:MOVing:DELay:VARiation
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.Mdelay.Moving.Delay.DelayCls
+	:members:
+	:undoc-members:
+	:noindex:

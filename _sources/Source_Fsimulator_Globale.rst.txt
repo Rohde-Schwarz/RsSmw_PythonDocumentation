@@ -1,0 +1,20 @@
+Globale
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:FSIMulator:GLOBal:SEED
+
+.. code-block:: python
+
+	[SOURce<HW>]:FSIMulator:GLOBal:SEED
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.Globale.GlobaleCls
+	:members:
+	:undoc-members:
+	:noindex:

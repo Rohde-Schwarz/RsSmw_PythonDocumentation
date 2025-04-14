@@ -1,0 +1,20 @@
+BbLimit
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:FREQuency:CONVerter:EXTernal:TEST:BBLimit:STATe
+
+.. code-block:: python
+
+	[SOURce<HW>]:FREQuency:CONVerter:EXTernal:TEST:BBLimit:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Frequency.Converter.External.Test.BbLimit.BbLimitCls
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,20 @@
+Columns
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:CEMulation:SCM:ANTenna:RX:COLumns:[SIZE]
+
+.. code-block:: python
+
+	[SOURce<HW>]:CEMulation:SCM:ANTenna:RX:COLumns:[SIZE]
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.Scm.Antenna.Rx.Columns.ColumnsCls
+	:members:
+	:undoc-members:
+	:noindex:

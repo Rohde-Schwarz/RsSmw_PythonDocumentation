@@ -1,0 +1,303 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../../../../../">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RsSmw.Implementations.Source.Bb.Dm.Dlist &mdash; RsSmw 5.30.305.84 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../../../../../_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="../../../../../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../../../../../_static/copybutton.css?v=76b2166b" />
+
+  
+      <script src="../../../../../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../../../../../_static/documentation_options.js?v=17bca7dd"></script>
+      <script src="../../../../../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../../../../../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../../../../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../../../../index.html" class="icon icon-home">
+            RsSmw
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../readme.html">Revision History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../enums.html">Enums</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../repcap.html">RepCaps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../RsSmw.html">RsSmw API Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../utilities.html">RsSmw Utilities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../logger.html">RsSmw Logger</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../events.html">RsSmw Events</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../genindex.html">Index</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../../../index.html">RsSmw</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../../../index.html">Module code</a></li>
+          <li class="breadcrumb-item"><a href="../../../Source.html">RsSmw.Implementations.Source</a></li>
+          <li class="breadcrumb-item"><a href="../../Bb.html">RsSmw.Implementations.Source.Bb</a></li>
+          <li class="breadcrumb-item"><a href="../Dm.html">RsSmw.Implementations.Source.Bb.Dm</a></li>
+      <li class="breadcrumb-item active">RsSmw.Implementations.Source.Bb.Dm.Dlist</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Source code for RsSmw.Implementations.Source.Bb.Dm.Dlist</h1><div class="highlight"><pre>
+<span></span><span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">List</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">......Internal.Core</span><span class="w"> </span><span class="kn">import</span> <span class="n">Core</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">......Internal.CommandsGroup</span><span class="w"> </span><span class="kn">import</span> <span class="n">CommandsGroup</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">......Internal</span><span class="w"> </span><span class="kn">import</span> <span class="n">Conversions</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">......Internal.Utilities</span><span class="w"> </span><span class="kn">import</span> <span class="n">trim_str_response</span>
+
+
+<span class="c1"># noinspection PyPep8Naming,PyAttributeOutsideInit,SpellCheckingInspection</span>
+<div class="viewcode-block" id="DlistCls">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Dm_Dlist.html#RsSmw.Implementations.Source.Bb.Dm.Dlist.DlistCls">[docs]</a>
+<span class="k">class</span><span class="w"> </span><span class="nc">DlistCls</span><span class="p">:</span>
+<span class="w">	</span><span class="sd">&quot;&quot;&quot;Dlist commands group definition. 9 total commands, 1 Subgroups, 7 group commands&quot;&quot;&quot;</span>
+
+	<span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">core</span><span class="p">:</span> <span class="n">Core</span><span class="p">,</span> <span class="n">parent</span><span class="p">):</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span> <span class="o">=</span> <span class="n">core</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span> <span class="o">=</span> <span class="n">CommandsGroup</span><span class="p">(</span><span class="s2">&quot;dlist&quot;</span><span class="p">,</span> <span class="n">core</span><span class="p">,</span> <span class="n">parent</span><span class="p">)</span>
+
+	<span class="nd">@property</span>
+	<span class="k">def</span><span class="w"> </span><span class="nf">data</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;data commands group. 0 Sub-classes, 2 commands.&quot;&quot;&quot;</span>
+		<span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;_data&#39;</span><span class="p">):</span>
+			<span class="kn">from</span><span class="w"> </span><span class="nn">.Data</span><span class="w"> </span><span class="kn">import</span> <span class="n">DataCls</span>
+			<span class="bp">self</span><span class="o">.</span><span class="n">_data</span> <span class="o">=</span> <span class="n">DataCls</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span><span class="p">)</span>
+		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_data</span>
+
+<div class="viewcode-block" id="DlistCls.get_catalog">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Dm_Dlist.html#RsSmw.Implementations.Source.Bb.Dm.Dlist.DlistCls.get_catalog">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_catalog</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:DM:DLISt:CATalog \n</span>
+<span class="sd">		Snippet: value: List[str] = driver.source.bb.dm.dlist.get_catalog() \n</span>
+<span class="sd">		Reads out the list files present in the default directory (see method RsSmw.MassMemory.currentDirectory) .</span>
+<span class="sd">			Table Header: List type / Command / File extension \n</span>
+<span class="sd">			- Data list / ...:DLISt... / *.dm_iqd</span>
+<span class="sd">			- Control list / ...:CLISt... / *.dm_iqc</span>
+<span class="sd">			- User filter files / ...:FLISt... / *.vaf</span>
+<span class="sd">			- User mapping lists / ...:MLISt... / *.vam</span>
+<span class="sd">		Refer to &#39;Handling files in the default or in a specified directory&#39; for general information on file handling in the</span>
+<span class="sd">		default and a specific directory. \n</span>
+<span class="sd">			:return: catalog: &#39;filename1,filename2,...&#39; Returns a string of file names separated by commas.</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:DM:DLISt:CATalog?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_str_list</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="DlistCls.copy">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Dm_Dlist.html#RsSmw.Implementations.Source.Bb.Dm.Dlist.DlistCls.copy">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">copy</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filename</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:DM:DLISt:COPY \n</span>
+<span class="sd">		Snippet: driver.source.bb.dm.dlist.copy(filename = &#39;abc&#39;) \n</span>
+<span class="sd">		Copies the selected data list (*.dm_iqd) / control list (*.dm_iqc) as a new list with name specified by &lt;Filename&gt;. If a</span>
+<span class="sd">		list with the specified name exists, it is overwritten. If it does not yet exist, it is created. The source file has to</span>
+<span class="sd">		be available in the default directory (see method RsSmw.MassMemory.currentDirectory) . Refer to &#39;Handling files in the</span>
+<span class="sd">		default or in a specified directory&#39; for general information on file handling in the default and a specific directory. \n</span>
+<span class="sd">			:param filename: string</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">value_to_quoted_str</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:DM:DLISt:COPY </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="DlistCls.delete">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Dm_Dlist.html#RsSmw.Implementations.Source.Bb.Dm.Dlist.DlistCls.delete">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">delete</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filename</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:DM:DLISt:DELete \n</span>
+<span class="sd">		Snippet: driver.source.bb.dm.dlist.delete(filename = &#39;abc&#39;) \n</span>
+<span class="sd">		Deletes the specified list from the default directory (see method RsSmw.MassMemory.currentDirectory) or from the</span>
+<span class="sd">		directory specified with the complete file path. Refer to &#39;Handling files in the default or in a specified directory&#39; for</span>
+<span class="sd">		general information on file handling in the default and a specific directory.</span>
+<span class="sd">			Table Header: List type / Command / File extension \n</span>
+<span class="sd">			- Data list / ...:DLISt... / *.dm_iqd</span>
+<span class="sd">			- Control list / ...:CLISt... / *.dm_iqc</span>
+<span class="sd">			- User standard / ...:ULISt... / *.dm_stu</span>
+<span class="sd">			- User filter files / ...:FLISt... / *.vaf</span>
+<span class="sd">			- User mapping lists / ...:MLISt... / *.vam \n</span>
+<span class="sd">			:param filename: string</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">value_to_quoted_str</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:DM:DLISt:DELete </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="DlistCls.get_free">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Dm_Dlist.html#RsSmw.Implementations.Source.Bb.Dm.Dlist.DlistCls.get_free">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_free</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:DM:DLISt:FREE \n</span>
+<span class="sd">		Snippet: value: int = driver.source.bb.dm.dlist.get_free() \n</span>
+<span class="sd">		Queries the list free memory.</span>
+<span class="sd">			Table Header: List type / Command / File extension \n</span>
+<span class="sd">			- Data list / ...:DLISt... / *.dm_iqd</span>
+<span class="sd">			- Control list / ...:CLISt... / *.dm_iqc</span>
+<span class="sd">			- User filter files / ...:FLISt... / *.vaf</span>
+<span class="sd">			- User mapping lists / ...:MLISt... / *.vam \n</span>
+<span class="sd">			:return: free: integer Range: 0 to INT_MAX</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:DM:DLISt:FREE?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_int</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="DlistCls.get_points">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Dm_Dlist.html#RsSmw.Implementations.Source.Bb.Dm.Dlist.DlistCls.get_points">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_points</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:DM:DLISt:POINts \n</span>
+<span class="sd">		Snippet: value: int = driver.source.bb.dm.dlist.get_points() \n</span>
+<span class="sd">		Defines the number of bits in the selected data list to be utilized. When a list is being filled with block data, this</span>
+<span class="sd">		data is only ever sent in multiples of 8 bits. However the exact number of bits to be exploited can be set to a different</span>
+<span class="sd">		figure. The superfluous bits in the list are then ignored. \n</span>
+<span class="sd">			:return: points: integer Range: 0 to INT_MAX</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:DM:DLISt:POINts?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_int</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="DlistCls.set_points">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Dm_Dlist.html#RsSmw.Implementations.Source.Bb.Dm.Dlist.DlistCls.set_points">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_points</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">points</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:DM:DLISt:POINts \n</span>
+<span class="sd">		Snippet: driver.source.bb.dm.dlist.set_points(points = 1) \n</span>
+<span class="sd">		Defines the number of bits in the selected data list to be utilized. When a list is being filled with block data, this</span>
+<span class="sd">		data is only ever sent in multiples of 8 bits. However the exact number of bits to be exploited can be set to a different</span>
+<span class="sd">		figure. The superfluous bits in the list are then ignored. \n</span>
+<span class="sd">			:param points: integer Range: 0 to INT_MAX</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">decimal_value_to_str</span><span class="p">(</span><span class="n">points</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:DM:DLISt:POINts </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="DlistCls.get_select">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Dm_Dlist.html#RsSmw.Implementations.Source.Bb.Dm.Dlist.DlistCls.get_select">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_select</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:DM:DLISt:SELect \n</span>
+<span class="sd">		Snippet: value: str = driver.source.bb.dm.dlist.get_select() \n</span>
+<span class="sd">		Selects the specified list file from the default directory (see method RsSmw.MassMemory.currentDirectory) or in the</span>
+<span class="sd">		directory specified with the complete file path. If a list with the specified name does not yet exist, it is created. The</span>
+<span class="sd">		file extension can be omitted. Refer to &#39;Handling files in the default or in a specified directory&#39; for general</span>
+<span class="sd">		information on file handling in the default and a specific directory.</span>
+<span class="sd">			Table Header: List type / Command / File extension \n</span>
+<span class="sd">			- Data list / ...:DLISt... / *.dm_iqd</span>
+<span class="sd">			- Control list / ...:CLISt... / *.dm_iqc</span>
+<span class="sd">			- User standard / ...:ULISt... / *.dm_stu</span>
+<span class="sd">			- User filter files / ...:FLISt... / *.vaf</span>
+<span class="sd">			- User mapping lists / ...:MLISt... / *.vam \n</span>
+<span class="sd">			:return: select: list name</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:DM:DLISt:SELect?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">trim_str_response</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="DlistCls.set_select">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Dm_Dlist.html#RsSmw.Implementations.Source.Bb.Dm.Dlist.DlistCls.set_select">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_select</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">select</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:DM:DLISt:SELect \n</span>
+<span class="sd">		Snippet: driver.source.bb.dm.dlist.set_select(select = &#39;abc&#39;) \n</span>
+<span class="sd">		Selects the specified list file from the default directory (see method RsSmw.MassMemory.currentDirectory) or in the</span>
+<span class="sd">		directory specified with the complete file path. If a list with the specified name does not yet exist, it is created. The</span>
+<span class="sd">		file extension can be omitted. Refer to &#39;Handling files in the default or in a specified directory&#39; for general</span>
+<span class="sd">		information on file handling in the default and a specific directory.</span>
+<span class="sd">			Table Header: List type / Command / File extension \n</span>
+<span class="sd">			- Data list / ...:DLISt... / *.dm_iqd</span>
+<span class="sd">			- Control list / ...:CLISt... / *.dm_iqc</span>
+<span class="sd">			- User standard / ...:ULISt... / *.dm_stu</span>
+<span class="sd">			- User filter files / ...:FLISt... / *.vaf</span>
+<span class="sd">			- User mapping lists / ...:MLISt... / *.vam \n</span>
+<span class="sd">			:param select: list name</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">value_to_quoted_str</span><span class="p">(</span><span class="n">select</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:DM:DLISt:SELect </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="DlistCls.get_tag">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Dm_Dlist.html#RsSmw.Implementations.Source.Bb.Dm.Dlist.DlistCls.get_tag">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_tag</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:DM:DLISt:TAG \n</span>
+<span class="sd">		Snippet: value: str = driver.source.bb.dm.dlist.get_tag() \n</span>
+<span class="sd">		Queries the content of the specified tag in the selected file. \n</span>
+<span class="sd">			:return: tag: control list,tag name Refer to &#39;Tags for waveforms, data and control lists&#39; for description of the available tag formats.</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:DM:DLISt:TAG?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">trim_str_response</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+	<span class="k">def</span><span class="w"> </span><span class="nf">clone</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s1">&#39;DlistCls&#39;</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;Clones the group by creating new object from it and its whole existing subgroups</span>
+<span class="sd">		Also copies all the existing default Repeated Capabilities setting,</span>
+<span class="sd">		which you can change independently without affecting the original group&quot;&quot;&quot;</span>
+		<span class="n">new_group</span> <span class="o">=</span> <span class="n">DlistCls</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span><span class="o">.</span><span class="n">parent</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span><span class="o">.</span><span class="n">synchronize_repcaps</span><span class="p">(</span><span class="n">new_group</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">new_group</span></div>
+
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright © Rohde &amp; Schwarz 2023.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

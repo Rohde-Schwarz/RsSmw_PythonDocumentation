@@ -1,0 +1,45 @@
+Data
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:DVB:DVBX:DATA:DSELection
+	single: [SOURce<HW>]:BB:DVB:DVBX:DATA:GSELection
+	single: [SOURce<HW>]:BB:DVB:DVBX:DATA:LENGth
+	single: [SOURce<HW>]:BB:DVB:DVBX:DATA:TSELection
+	single: [SOURce<HW>]:BB:DVB:DVBX:DATA
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:DVB:DVBX:DATA:DSELection
+	[SOURce<HW>]:BB:DVB:DVBX:DATA:GSELection
+	[SOURce<HW>]:BB:DVB:DVBX:DATA:LENGth
+	[SOURce<HW>]:BB:DVB:DVBX:DATA:TSELection
+	[SOURce<HW>]:BB:DVB:DVBX:DATA
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dvb.Dvbx.Data.DataCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.dvb.dvbx.data.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Dvb_Dvbx_Data_Pattern.rst

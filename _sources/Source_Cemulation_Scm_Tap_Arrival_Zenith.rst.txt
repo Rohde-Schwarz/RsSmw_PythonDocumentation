@@ -1,0 +1,29 @@
+Zenith
+----------------------------------------
+
+
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.Scm.Tap.Arrival.Zenith.ZenithCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.cemulation.scm.tap.arrival.zenith.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Cemulation_Scm_Tap_Arrival_Zenith_Angle.rst
+	Source_Cemulation_Scm_Tap_Arrival_Zenith_Spread.rst

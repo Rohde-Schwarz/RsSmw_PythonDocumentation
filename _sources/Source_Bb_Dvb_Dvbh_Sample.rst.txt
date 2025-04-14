@@ -1,0 +1,22 @@
+Sample
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:DVB:DVBH:SAMPle:LENGth
+	single: [SOURce<HW>]:BB:DVB:DVBH:SAMPle:RATE
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:DVB:DVBH:SAMPle:LENGth
+	[SOURce<HW>]:BB:DVB:DVBH:SAMPle:RATE
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dvb.Dvbh.Sample.SampleCls
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,22 @@
+Obaseband
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:NFC:TRIGger:OBASeband:DELay
+	single: [SOURce<HW>]:BB:NFC:TRIGger:OBASeband:INHibit
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:NFC:TRIGger:OBASeband:DELay
+	[SOURce<HW>]:BB:NFC:TRIGger:OBASeband:INHibit
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Nfc.Trigger.Obaseband.ObasebandCls
+	:members:
+	:undoc-members:
+	:noindex:

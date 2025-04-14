@@ -1,0 +1,20 @@
+Adelay
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:FSIMulator:DEL:GROup<ST>:PATH<CH>:ADELay
+
+.. code-block:: python
+
+	[SOURce<HW>]:FSIMulator:DEL:GROup<ST>:PATH<CH>:ADELay
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.DelPy.Group.Path.Adelay.AdelayCls
+	:members:
+	:undoc-members:
+	:noindex:

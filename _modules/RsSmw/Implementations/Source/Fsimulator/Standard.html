@@ -1,0 +1,311 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../../../../">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RsSmw.Implementations.Source.Fsimulator.Standard &mdash; RsSmw 5.30.305.84 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="../../../../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../../../../_static/copybutton.css?v=76b2166b" />
+
+  
+      <script src="../../../../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../../../../_static/documentation_options.js?v=17bca7dd"></script>
+      <script src="../../../../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../../../../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../../../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../../../index.html" class="icon icon-home">
+            RsSmw
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../readme.html">Revision History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../enums.html">Enums</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../repcap.html">RepCaps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../RsSmw.html">RsSmw API Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../utilities.html">RsSmw Utilities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../logger.html">RsSmw Logger</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../events.html">RsSmw Events</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../genindex.html">Index</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../../index.html">RsSmw</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../../index.html">Module code</a></li>
+          <li class="breadcrumb-item"><a href="../../Source.html">RsSmw.Implementations.Source</a></li>
+          <li class="breadcrumb-item"><a href="../Fsimulator.html">RsSmw.Implementations.Source.Fsimulator</a></li>
+      <li class="breadcrumb-item active">RsSmw.Implementations.Source.Fsimulator.Standard</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Source code for RsSmw.Implementations.Source.Fsimulator.Standard</h1><div class="highlight"><pre>
+<span></span><span class="kn">from</span><span class="w"> </span><span class="nn">....Internal.Core</span><span class="w"> </span><span class="kn">import</span> <span class="n">Core</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">....Internal.CommandsGroup</span><span class="w"> </span><span class="kn">import</span> <span class="n">CommandsGroup</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">....Internal</span><span class="w"> </span><span class="kn">import</span> <span class="n">Conversions</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">....Internal.Utilities</span><span class="w"> </span><span class="kn">import</span> <span class="n">trim_str_response</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">....</span><span class="w"> </span><span class="kn">import</span> <span class="n">enums</span>
+
+
+<span class="c1"># noinspection PyPep8Naming,PyAttributeOutsideInit,SpellCheckingInspection</span>
+<div class="viewcode-block" id="StandardCls">
+<a class="viewcode-back" href="../../../../../Source_Fsimulator_Standard.html#RsSmw.Implementations.Source.Fsimulator.Standard.StandardCls">[docs]</a>
+<span class="k">class</span><span class="w"> </span><span class="nc">StandardCls</span><span class="p">:</span>
+<span class="w">	</span><span class="sd">&quot;&quot;&quot;Standard commands group definition. 2 total commands, 0 Subgroups, 2 group commands&quot;&quot;&quot;</span>
+
+	<span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">core</span><span class="p">:</span> <span class="n">Core</span><span class="p">,</span> <span class="n">parent</span><span class="p">):</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span> <span class="o">=</span> <span class="n">core</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span> <span class="o">=</span> <span class="n">CommandsGroup</span><span class="p">(</span><span class="s2">&quot;standard&quot;</span><span class="p">,</span> <span class="n">core</span><span class="p">,</span> <span class="n">parent</span><span class="p">)</span>
+
+<div class="viewcode-block" id="StandardCls.get_reference">
+<a class="viewcode-back" href="../../../../../Source_Fsimulator_Standard.html#RsSmw.Implementations.Source.Fsimulator.Standard.StandardCls.get_reference">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_reference</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:FSIMulator:STANdard:REFerence \n</span>
+<span class="sd">		Snippet: value: str = driver.source.fsimulator.standard.get_reference() \n</span>
+<span class="sd">		Queries the reference in the standard for the selected test case. \n</span>
+<span class="sd">			:return: reference: string</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:FSIMulator:STANdard:REFerence?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">trim_str_response</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="StandardCls.set_reference">
+<a class="viewcode-back" href="../../../../../Source_Fsimulator_Standard.html#RsSmw.Implementations.Source.Fsimulator.Standard.StandardCls.set_reference">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_reference</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">reference</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:FSIMulator:STANdard:REFerence \n</span>
+<span class="sd">		Snippet: driver.source.fsimulator.standard.set_reference(reference = &#39;abc&#39;) \n</span>
+<span class="sd">		Queries the reference in the standard for the selected test case. \n</span>
+<span class="sd">			:param reference: string</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">value_to_quoted_str</span><span class="p">(</span><span class="n">reference</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:FSIMulator:STANdard:REFerence </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="StandardCls.get_value">
+<a class="viewcode-back" href="../../../../../Source_Fsimulator_Standard.html#RsSmw.Implementations.Source.Fsimulator.Standard.StandardCls.get_value">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_value</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">enums</span><span class="o">.</span><span class="n">FadStan</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:FSIMulator:STANdard \n</span>
+<span class="sd">		Snippet: value: enums.FadStan = driver.source.fsimulator.standard.get_value() \n</span>
+<span class="sd">		Selects a predefined fading simulator setting which complies with the test specifications found in the common mobile</span>
+<span class="sd">		radio standards. For a detailed summary of all the default settings, see &#39;Predefined fading settings&#39;.</span>
+<span class="sd">			Table Header: Standard/test case / &lt;Predefined_Standard&gt; / Description \n</span>
+<span class="sd">			- USER / USER parameter cannot be set. A query returns this value if a user-defined Fading setting was loaded or if one of the associated settings was changed after the selection of a standard</span>
+<span class="sd">			- CDMA See &#39;CDMA standards&#39; / CDMA0 | CDMA3 | CDMA8 | CDMA30 | C1DMA30 | CDMA100 / CDMA 5 (0 km/h) , CDMA6 (3km/h) , CDMA1 (8 km/h) , CDMA2 (30 km/h) , CDMA3 (30 km/h, 1 path) , CDMA4 (100km/h)</span>
+<span class="sd">			- GSM See &#39;GSM standards&#39; / GTU1P5 | G6TU1P5 | GTU3P6 | G6TU3P6 | GTU3 | G6TU3 | GTU6 | G6TU6 | GTU50 | G6TU50 | G6TU100 | G6TU60 / GSM Typical Urban 1.5/3/3.6/6/50/60/100 km/h, 6 and 12 path</span>
+<span class="sd">			- GHT100 | G6HT100 | GHT120 | G6HT120 | GHT200 | G6HT200 / GSM Hilly Terrain 100/120 km/h, 6 and 12 path</span>
+<span class="sd">			- GRA130 | GRA250 | GRA300 | GRA500 / GSM Rural Area 130/250/300/500 km/h, 6 path</span>
+<span class="sd">			- GET50 | GET60 | GET100 / GSM Equal Test 50/60/100 km/h, 6 path</span>
+<span class="sd">			- GTI5 / GSM typical case for small cells, 5km/h, 2 path</span>
+<span class="sd">			- NADC See &#39;NADC standards&#39; / NADC8 | NADC50 | NADC100 / NADC 8/50/100 km/h, 2 path</span>
+<span class="sd">			- DCS1800/PCS1900 See &#39;PCN standards&#39; / P6TU1 | PTU1 | P6TU50 | PTU50 / Typical Urban 1.5/50 km/h, 6 and 12 path</span>
+<span class="sd">			- P6HT100 | PHT100 / Hilly Terrain 100 km/h, 6 and 12 path</span>
+<span class="sd">			- PRA130 / Rural Area 130 km/h, 6 path</span>
+<span class="sd">			- PET50 | PET100 / Equal Test 50/100 km/h, 6 path</span>
+<span class="sd">			- TETRA See &#39;TETRA standards&#39; / TTU | T6TU / TETRA Typical Urban 50km/h, 2 path and 6 path</span>
+<span class="sd">			- TBU / TETRA 2 path</span>
+<span class="sd">			- THT | T6HT / TETRA Hilly Terrain 200 km/h, 2 path and 6 path</span>
+<span class="sd">			- T4ET / TETRA Equal Test 200 km/h, 4 path</span>
+<span class="sd">			- TDR / TETRA Direct Mode Rural Propagation Model 1 path</span>
+<span class="sd">			- TDU / TETRA Mode Urban Propagation Model 1 path</span>
+<span class="sd">			- 3GPP FDD See &#39;3GPP standards&#39; / G3C1 | G3C2 | G3C3 | G3C4 / 3GPP FDD Test Case x (BS)</span>
+<span class="sd">			- G3UEC1 | G3UEC2 | G3UEC3 | G3UEC4 | G3UEC5 | G3UEC6 / 3GPP FDD UE Test Case x (UE)</span>
+<span class="sd">			- G3UEC7SE / 3GPP FDD UE Sector (UE)</span>
+<span class="sd">			- G3UEC7BE / 3GPP FDD Beam (UE)</span>
+<span class="sd">			- G3UEC8CQ / 3GPP FDD CQI (UE)</span>
+<span class="sd">			- G3UEPA3 | G3UEPB3 / 3GPP FDD Pedestrian A 4 path / B 6 path (UE)</span>
+<span class="sd">			- G3UEVA3 | G3UEVA30 | G3UEVA120 / 3GPP FDD Vehicular A 6 path (UE)</span>
+<span class="sd">			- G3MBSFN3 / 3GPP MBSFN</span>
+<span class="sd">			- G3TU3 | G3TU50 | G3TU120 / 3GPP FDD Typical Urban 20 path</span>
+<span class="sd">			- G3HT120 / 3GPP FDD Hilly Terrain 20 path</span>
+<span class="sd">			- G3RA120 | G3RA250 / 3GPP FDD Rural Area 10 path</span>
+<span class="sd">			- BD1 / 3GPP Birth Death 2 path</span>
+<span class="sd">			- Moving Propagation / MD1 / 3GPP Moving Propagation &#39;Ref. + Moving Channel&#39;, 2 path</span>
+<span class="sd">			- See &#39;3GPP/LTE moving propagation&#39; / MPLTEETU200 / 3GPP Moving Propagation scenario 1 &#39;ETU200Hz&#39;, according to the test case 3GPP TS36.141, annex B4.</span>
+<span class="sd">			- MPLTEPDOPP / 3GPP Moving Propagation scenario 2 &#39;AWGN&#39;, according to the test case 3GPP TS36.141, annex B4.</span>
+<span class="sd">			- 3GPP High-Speed Train scenarios / G3HST1OS | G3HST1OSDU / 3GPP HST1 &#39;Open space&#39;, according to the test case 3GPP TS25.141, annex D.4A and 3GPP TS36.141, annex B.3</span>
+<span class="sd">			- See &#39;3GPP/LTE high speed train&#39; / G3HST2TLC | G3HST2TLCDU / 3GPP HST2 &#39;Tunnel with leaky cable&#39;, according to the test case 3GPP TS25.141, annex D.4A</span>
+<span class="sd">			- G3HST3TMA | G3HST3TMADU / 3GPP HST3 &#39;Tunnel for multi-antennas&#39;, according to the test case 3GPP TS25.141, annex D.4A and 3GPP TS36.141, annex B.3</span>
+<span class="sd">			- SCME/Geo SCME UMi 3kmh/30kmh SCME/Geo SCME UMa 3kmh/30kmh See &#39;SCM and SCME channel models for MIMO OTA&#39; / G3SCMEUMA3 | G3SCMEUMA30 | G3SCMEUMI3 | G3SCMEUMI30 GEOSCMEUMA3|GEOSCMEUMA30|GEOSCMEUMI3|GEOSCMEUMI30 / SCME/Geo SCME Urban Micro/Macro-Cell Channel, 3 km/h and 30 km/h</span>
+<span class="sd">			- WLAN See &#39;WLAN standards&#39; / HL2A | HL2B | HL2C | HL2D | HL2E / WLAN HyperLan 18 path</span>
+<span class="sd">			- DAB See &#39;DAB standards&#39; / DABRA04 | DABRA06 / DAB Rural Area 4 and 6 path</span>
+<span class="sd">			- DABTU12 | DABTU06 / DAB Typical Urban 12 and 6 path</span>
+<span class="sd">			- DABSFN / DAB single-frequency network (in the VHF range) 7 path</span>
+<span class="sd">			- WiMAX See &#39;WIMAX standards&#39; / WMITUOIPA | WMITUOIPB | WMITUVA60 | WMITUVA120 / Wimax ITU OIP-A, ITU OIP-B, ITU V-A-60, ITU V-A-120</span>
+<span class="sd">			- WMSUI1A360P90 | WMSUI1A360P75 | WMSUI1A030P90 | WMSUI1A030P75 / SUI 1 (omi ant. 90/75%) , SUI 1 (30 ant. 90/75%)</span>
+<span class="sd">			- WMSUI2A360P90 | WMSUI2A360P75 | WMSUI2A030P90 | WMSUI2A030P75 / SUI 2 (omi ant. 90/75%) , SUI 2 (30 ant. 90/75%)</span>
+<span class="sd">			- WMSUI3A360P90 | WMSUI3A360P75 | WMSUI3A030P90 | WMSUI3A030P75 / SUI 3 (omi ant. 90/75%) , SUI 3 (30 ant. 90/75%)</span>
+<span class="sd">			- WMSUI4A360P90 | WMSUI4A360P75 | WMSUI4A030P90 | WMSUI4A030P75 / SUI 4 (omi ant. 90/75%) , SUI 4 (30 ant. 90/75%)</span>
+<span class="sd">			- WMSUI5A360P90 | WMSUI5A360P75 | WMSUI5A360P50 | WMSUI5A030P90 | WMSUI5A030P75 | WMSUI5A030P50 / SUI 5 (omi ant. 90/75/50%) , SUI 5 (30 ant. 90/75/50%)</span>
+<span class="sd">			- WMSUI6A360P90 | WMSUI6A360P75 | WMSUI6A360P50 | WMSUI6A030P90 | WMSUI6A030P75 | WMSUI6A030P50 | / SUI 6 (omi ant. 90/75/50%) , SUI 6 (30 ant. 90/75/50%)</span>
+<span class="sd">			- WiMAX-MIMO See &#39;WIMAX-MIMO standards&#39; / WMITUPB3L | WMITUPB3M | WMITUPB3H | WMITUVA60L | WMITUVA60M | WMITUVA60H / ITU PB Low/Medium/High, ITU VA Low/Medium/High</span>
+<span class="sd">			- LTE See &#39;LTE standards&#39; / LTEEPA1 | LTEEPA5 LTEEVA5 | LTEEVA70|LTEEVA180|LTEEVA1500|LTEEVA2700 LTEETU1 | LTEETU5 | LTEETU30 | LTEETU70 | LTEETU200 | LTEETU300 | LTEETU600 LTEMBSFN5 / LTE EPA 1/5Hz, LTE EVA 5/70/180/1500/2700Hz, LTE ETU 1/5/30/70/200/300/600Hz LTE MBSFN 5Hz</span>
+<span class="sd">			- LTE HST See &#39;HST 1 500 A/B, HST 3 500 A/B&#39; / HST1LTE500A | HST3LTE500A | HST1LTE500B | HST3LTE500B / LTE HST 1 500 A/B LTE HST 3 500 A/B</span>
+<span class="sd">			- LTE-MIMO See &#39;LTE-MIMO standards&#39; / LMEPA1L | LMEPA1M | LMEPA1H | LMEPA5L | LMEPA5M | LMEPA5H LMEVA5L | LMEVA5M | LMEVA5H | LMEVA70L | LMEVA70M | LMEVA70H|LMEVA180L|LMEVA180M|LMEVA180H|LMEVA1500L|LMEVA1500M|LMEVA1500H|LMEVA2700L|LMEVA2700M|LMEVA2700H LMETU1L | LMETU1M | LMETU1H | LMETU5L | LMETU5M | LMETU5H | LMETU30L | LMETU30M | LMETU30H | LMETU70L | LMETU70M | LMETU70H | LMETU200L | LMETU200M | LMETU200H | LMETU300L | LMETU300M | LMETU300H | LMETU600L | LMETU600M | LMETU600H / LTE EPA 1/5Hz Low/Medium/High, LTE EVA 5/70/180/1500/2700Hz Low/Medium/High, LTE ETU 1/30/70/300/600Hz Low/Medium/High</span>
+<span class="sd">			- 1xEV-DO See &#39;1xevdo standards&#39; / EVDO1CH1 | EVDO1CH1BC5 | EVDO1CH2 | EVDO1CH2BC5 | EVDO1CH3 | EVDO1CH3BC5 | EVDO1CH4 | EVDO1CH4BC5 | EVDO1CH5 | EVDO1CH5BC5 / 1xEV-DO Chan. 1/2/3/4/5</span>
+<span class="sd">			- WATTERSON See &#39;Watterson standards&#39; / WATTI1 | WATTI3 | WATTI2 / Watterson I1, I2, I3</span>
+<span class="sd">			- 802.11n-SISO See &#39;802.11n-SISO standards&#39; / WLANNSMODA | WLANNSMODB | WLANNSMODC | WLANNSMODD | WLANNSMODE | WLANNSMODF / 802.11n SISO Model A/B/C/D/E/F</span>
+<span class="sd">			- 802.11n-MIMO See &#39;802.11n-MIMO standards&#39; / WLANNMODA | WLANNMODB | WLANNMODC | WLANNMODD | WLANNMODE | WLANNMODF / 802.11n MIMO Model A/B/C/D/E/F</span>
+<span class="sd">			- 802.11ac-SISO See &#39;802.11ac-SISO standards&#39; / WLANACSMODA|WLANACSMODB|WLANACSMODC|WLANACSMODD|WLANACSMODE|WLANACSMODF / 802.11ac SISO Model A/B/C/D/E/F</span>
+<span class="sd">			- 802.11ac-MIMO See &#39;802.11ac-MIMO standards&#39; / WLANACMODA | WLANACMODB | WLANACMODC | WLANACMODD | WLANACMODE | WLANACMODF / 802.11ac MIMO Model A/B/C/D/E/F</span>
+<span class="sd">			- 802.11p See &#39;802.11p channel models&#39; / WLANPRURALLOS | WLANPURBANAPPLOS | WLANPURBANCRONLOS | WLANPHIGHWAYNLOS | WLANPHIGHWAYLOS / 802.11p Channel models: Rural LOS, Urban Approaching LOS, Urban Crossing NLOS, Highway LOS, Highway NLOS</span>
+<span class="sd">			- 5G NR See &#39;5G NR standards&#39;. / TDLA30D5L | TDLA30D5M | TDLA30D5MA | TDLA30D5H | TDLA30D10L | TDLA30D10M | TDLA30D10MA | TDLA30D10H | TDLB100D400L | TDLB100D400M | TDLB100D400MA | TDLB100D400H | TDLC300D100L | TDLC300D100M | TDLC300D100MA | TDLC300D100H | TDLA30D75L | TDLA30D75M | TDLA30D75MA | TDLA30D75H | TDLA30D300L | TDLA30D300M | TDLA30D300MA | TDLA30D300H |TDLA30D35L | TDLA30D35M | TDLA30D35MA | TDLA30D35H | TDLC60D300L | TDLC60D300M | TDLC60D300MA | TDLC60D300H TDLA30D10S | TDLA30D35S | TDLA30D75S | TDLA30D300S | TDLB100D400S | TDLC60D300S | TDLC300D100 | STDLC300D400S | TDLC300D600S | TDLC300D600L |TDLC300D600M | TDLC300D600H | TDLC300D1200S | TDLC300D1200L | TDLC300D1200M | TDLC300D1200H FR1CDLAUMA | FR1CDLCUMA | FR1CDLCUMA4 | FR1CDLAUMI | FR1CDLCUMI | FR1CDLCUMI2 | FR2CDLAINO | FR2CDLCUMI | FR1CDLBUMA | FR1CDLBUMI NTNTDLA100D200L|NTNTDLA100D200M|NTNTDLA100D200H|NTNTDLC5D200L|NTNTDLC5D200M|NTNTDLC5D200H / 5G NR models TDLA30-5/10 Hz, TDLB100-400 Hz, TDLC300-100 Hz, TDLA30-75/300 Hz, TDLA30-35/10 Hz, TDLC60-300/10 Hz Low/Medium/Medium A/High TDLA30-5/10/35/75/300 Hz, TDLB100-400 Hz, TDLC60-300 Hz, TDLC300-100 Hz SISO, TDLC300-400 Hz SISO, TDLC300-600 Hz SISO, TDLC300-600 Hz Low/Medium/High, TDLC300-1200 Hz SISO, TDLC300-1200 Hz Low/Medium/High FR1 and FR2 CDL models FR1 NTN TDL models:</span>
+<span class="sd">			- 5G NR High-Speed Train scenarios See &#39;5G NR high speed train&#39;. / HST1NR35015|HST1NR35030|HST3NR35015|HST3NR35030 HST1NR50015|HST1NR50030| HST3NR50015|HST3NR50030 / HST1/HST3 350 km/h 15/30 kHz HST1/HST3 500 km/h 15/30 kHz</span>
+<span class="sd">			- 5G NR Moving propagation See &#39;5G NR moving propagation&#39;. / MPX15|MPX30 MPY15|MPY30|MPY120 MPZ15|MPZ30 |MPNTNX15|MPNTNX30| / MP X 15/30kHz SCS MP Y 15/30/120kHz SCS MP Z 15/30kHz SCS</span>
+<span class="sd">			- 5G NR MIMO OTA See &#39;5G NR MIMO OTA channel models&#39; / FR1CDLAUMA|FR1CDLBUMA|FR1CDLCUMA FR1CDLCUMA4 FR1CDLAUMI|FR1CDLBUMIFR1CDLCUMI FR1CDLCUMI2 FR2CDLAINO|FR2CDLCUMI / FR1 CDL-A/-B/-C UMa 2x2 FR1 CDL-C UMa 4x4 FR1 CDL-A/-B/-C UMi 4x4 FR1 CDL-C UMi 2x2 FR2 CDL-A InO, FR2 CDL-C UMi \n</span>
+<span class="sd">			:return: standard: USER| CDMA8| CDMA30| C1DMA30| CDMA100| CDMA0| CDMA3| G6TU3| GTU3| G6TU50| GTU50| G6HT100| GHT100| GRA250| GET50| GET100| HL2A| HL2B| HL2C| HL2D| HL2E| NADC8| NADC50| NADC100| P6TU1| PTU1| P6TU50| PTU50| P6HT100| PHT100| PRA130| PET50| PET100| TTU| TBU| THT| T4ET| G3C1| G3C2| G3C3| G3C4| G3UEC4| G3UEC5| G3UEC6| G3UEC7SE| G3UEC7BE| G3UEC8CQ| G3UEPA3| G3UEPB3| G3UEVA30| G3UEVA120| G3TU3| G3TU50| G3TU120| G3HT120| G3RA120| G3RA250| BD1| MP1| DABRA04| DABRA06| DABTU12| DABTU06| DABSFN| WMSUI1A360P90| WMSUI1A360P75| WMSUI1A030P90| WMSUI1A030P75| WMSUI2A360P90| WMSUI2A360P75| WMSUI2A030P90| WMSUI2A030P75| WMSUI3A360P90| WMSUI3A360P75| WMSUI3A030P90| WMSUI3A030P75| WMSUI4A360P90| WMSUI4A360P75| WMSUI4A030P90| WMSUI4A030P75| WMSUI5A360P90| WMSUI5A360P75| WMSUI5A360P50| WMSUI5A030P90| WMSUI5A030P75| WMSUI5A030P50| WMSUI6A360P90| WMSUI6A360P75| WMSUI6A360P50| WMSUI6A030P90| WMSUI6A030P75| WMSUI6A030P50| WMITUOIPA| WMITUOIPB| WMITUVA60| TDU| TDR| WMITUVA120| GET60| G6HT120| G6HT200| GRA130| GRA300| GRA500| G6TU1P5| G6TU3P6| G6TU6| G6TU60| G6TU100| GHT120| GHT200| GTU1P5| GTU3P6| GTU6| GTU60| GTU100| LMEPA5L| LMEPA5M| LMEPA5H| LMEVA5L| LMEVA5M| LMEVA5H| LMEVA70L| LMEVA70M| LMEVA70H| LMETU70L| LMETU70M| LMETU70H| LMETU300L| LMETU300M| LMETU300H| WMITUPB3L| WMITUPB3M| WMITUPB3H| WMITUVA60L| WMITUVA60M| WMITUVA60H| EVDO1CH1| EVDO1CH1BC5| EVDO1CH2| EVDO1CH2BC5| EVDO1CH3| EVDO1CH3BC5| EVDO1CH4| EVDO1CH4BC5| EVDO1CH5| EVDO1CH5BC5| G3HST1OS| G3HST2TLC| G3HST3TMA| MPLTEETU200| MPLTEPDOPP| T6TU| T6HT| LTEEPA5| LTEEVA5| LTEEVA70| LTEETU70| LTEETU300| G3UEC1| G3UEC2| G3UEC3| G3UEVA3| G3MBSFN3| WATTI1| WATTI3| WATTI2| GTI5| G3HST1OSDU| G3HST2TLCDU| G3HST3TMADU| LTEMBSFN5| LTECQI5| LTEETU30| LMETU30L| LMETU30M| LMETU30H| WLANNMODA| WLANNMODB| WLANNMODC| WLANNMODD| WLANNMODE| WLANNMODF| WLANACMODA| WLANACMODB| WLANACMODC| WLANACMODD| WLANACMODE| WLANACMODF| WLANNSMODA| WLANNSMODB| WLANNSMODC| WLANNSMODD| WLANNSMODE| WLANNSMODF| WLANACSMODA| WLANACSMODB| WLANACSMODC| WLANACSMODD| WLANACSMODE| WLANACSMODF| G3SCMEUMA3| G3SCMEUMA30| G3SCMEUMI3| G3SCMEUMI30| WLANPRURALLOS| WLANPURBANAPPLOS| WLANPURBANCRONLOS| WLANPHIGHWAYNLOS| WLANPHIGHWAYLOS| LTEEPA1| LTEETU1| LTEETU600| LMEPA1L| LMEPA1M| LMEPA1H| LMETU1L| LMETU1M| LMETU1H| LMETU600L| LMETU600M| LMETU600H| GEOSCMEUMA3| GEOSCMEUMA30| GEOSCMEUMI3| GEOSCMEUMI30| TDLA30D5L| TDLA30D5M| TDLA30D5H| TDLA30D10L| TDLA30D10M| TDLA30D10H| TDLB100D400L| TDLB100D400M| TDLB100D400H| TDLC300D100L| TDLC300D100M| TDLC300D100H| TDLA30D75L| TDLA30D75M| TDLA30D75H| TDLA30D300L| TDLA30D300M| TDLA30D300H| TDLA30D5MA| TDLA30D10MA| TDLB100D400MA| TDLC300D100MA| TDLA30D75MA| TDLA30D300MA| TDLA30D5S| TDLA30D10S| TDLB100D400S| TDLC300D100S| TDLA30D75S| TDLA30D300S| TDLA30D35S| TDLC60D300S| TDLA30D35L| TDLA30D35M| TDLA30D35MA| TDLA30D35H| TDLC60D300L| TDLC60D300M| TDLC60D300MA| TDLC60D300H| HST1NR35015| HST1NR35030| HST3NR35015| HST3NR35030| MPY15| MPY30| FR1CDLAUMA| FR1CDLCUMA| FR1CDLAUMI| FR1CDLCUMI| FR2CDLAINO| FR2CDLCUMI| FR1CDLBUMA| FR1CDLBUMI| HST1NR50015| HST1NR50030| HST3NR50015| HST3NR50030| HST1LTE500A| HST3LTE500A| HST1LTE500B| HST3LTE500B| LTEETU5| LTEETU200| LMETU5L| LMETU5M| LMETU5H| LMETU200L| LMETU200M| LMETU200H| TDLC300D600L| TDLC300D600M| TDLC300D600H| TDLC300D1200L| TDLC300D1200M| TDLC300D1200H| TDLC300D400S| TDLC300D600S| TDLC300D1200S| MPX15| MPX30| MPZ15| MPZ30| FR1CDLCUMI2| FR1CDLCUMA4| MPY120| MPNTNX15| MPNTNX30| NTNTDLA100D200L| NTNTDLA100D200M| NTNTDLA100D200H| NTNTDLC5D200L| NTNTDLC5D200M| NTNTDLC5D200H| LMEVA180L| LMEVA180M| LMEVA180H| LMEVA1500L| LMEVA1500M| LMEVA1500H| LMEVA2700L| LMEVA2700M| LMEVA2700H| LTEEVA180| LTEEVA1500| LTEEVA2700</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:FSIMulator:STANdard?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_scalar_enum</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">FadStan</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="StandardCls.set_value">
+<a class="viewcode-back" href="../../../../../Source_Fsimulator_Standard.html#RsSmw.Implementations.Source.Fsimulator.Standard.StandardCls.set_value">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_value</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">standard</span><span class="p">:</span> <span class="n">enums</span><span class="o">.</span><span class="n">FadStan</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:FSIMulator:STANdard \n</span>
+<span class="sd">		Snippet: driver.source.fsimulator.standard.set_value(standard = enums.FadStan.BD1) \n</span>
+<span class="sd">		Selects a predefined fading simulator setting which complies with the test specifications found in the common mobile</span>
+<span class="sd">		radio standards. For a detailed summary of all the default settings, see &#39;Predefined fading settings&#39;.</span>
+<span class="sd">			Table Header: Standard/test case / &lt;Predefined_Standard&gt; / Description \n</span>
+<span class="sd">			- USER / USER parameter cannot be set. A query returns this value if a user-defined Fading setting was loaded or if one of the associated settings was changed after the selection of a standard</span>
+<span class="sd">			- CDMA See &#39;CDMA standards&#39; / CDMA0 | CDMA3 | CDMA8 | CDMA30 | C1DMA30 | CDMA100 / CDMA 5 (0 km/h) , CDMA6 (3km/h) , CDMA1 (8 km/h) , CDMA2 (30 km/h) , CDMA3 (30 km/h, 1 path) , CDMA4 (100km/h)</span>
+<span class="sd">			- GSM See &#39;GSM standards&#39; / GTU1P5 | G6TU1P5 | GTU3P6 | G6TU3P6 | GTU3 | G6TU3 | GTU6 | G6TU6 | GTU50 | G6TU50 | G6TU100 | G6TU60 / GSM Typical Urban 1.5/3/3.6/6/50/60/100 km/h, 6 and 12 path</span>
+<span class="sd">			- GHT100 | G6HT100 | GHT120 | G6HT120 | GHT200 | G6HT200 / GSM Hilly Terrain 100/120 km/h, 6 and 12 path</span>
+<span class="sd">			- GRA130 | GRA250 | GRA300 | GRA500 / GSM Rural Area 130/250/300/500 km/h, 6 path</span>
+<span class="sd">			- GET50 | GET60 | GET100 / GSM Equal Test 50/60/100 km/h, 6 path</span>
+<span class="sd">			- GTI5 / GSM typical case for small cells, 5km/h, 2 path</span>
+<span class="sd">			- NADC See &#39;NADC standards&#39; / NADC8 | NADC50 | NADC100 / NADC 8/50/100 km/h, 2 path</span>
+<span class="sd">			- DCS1800/PCS1900 See &#39;PCN standards&#39; / P6TU1 | PTU1 | P6TU50 | PTU50 / Typical Urban 1.5/50 km/h, 6 and 12 path</span>
+<span class="sd">			- P6HT100 | PHT100 / Hilly Terrain 100 km/h, 6 and 12 path</span>
+<span class="sd">			- PRA130 / Rural Area 130 km/h, 6 path</span>
+<span class="sd">			- PET50 | PET100 / Equal Test 50/100 km/h, 6 path</span>
+<span class="sd">			- TETRA See &#39;TETRA standards&#39; / TTU | T6TU / TETRA Typical Urban 50km/h, 2 path and 6 path</span>
+<span class="sd">			- TBU / TETRA 2 path</span>
+<span class="sd">			- THT | T6HT / TETRA Hilly Terrain 200 km/h, 2 path and 6 path</span>
+<span class="sd">			- T4ET / TETRA Equal Test 200 km/h, 4 path</span>
+<span class="sd">			- TDR / TETRA Direct Mode Rural Propagation Model 1 path</span>
+<span class="sd">			- TDU / TETRA Mode Urban Propagation Model 1 path</span>
+<span class="sd">			- 3GPP FDD See &#39;3GPP standards&#39; / G3C1 | G3C2 | G3C3 | G3C4 / 3GPP FDD Test Case x (BS)</span>
+<span class="sd">			- G3UEC1 | G3UEC2 | G3UEC3 | G3UEC4 | G3UEC5 | G3UEC6 / 3GPP FDD UE Test Case x (UE)</span>
+<span class="sd">			- G3UEC7SE / 3GPP FDD UE Sector (UE)</span>
+<span class="sd">			- G3UEC7BE / 3GPP FDD Beam (UE)</span>
+<span class="sd">			- G3UEC8CQ / 3GPP FDD CQI (UE)</span>
+<span class="sd">			- G3UEPA3 | G3UEPB3 / 3GPP FDD Pedestrian A 4 path / B 6 path (UE)</span>
+<span class="sd">			- G3UEVA3 | G3UEVA30 | G3UEVA120 / 3GPP FDD Vehicular A 6 path (UE)</span>
+<span class="sd">			- G3MBSFN3 / 3GPP MBSFN</span>
+<span class="sd">			- G3TU3 | G3TU50 | G3TU120 / 3GPP FDD Typical Urban 20 path</span>
+<span class="sd">			- G3HT120 / 3GPP FDD Hilly Terrain 20 path</span>
+<span class="sd">			- G3RA120 | G3RA250 / 3GPP FDD Rural Area 10 path</span>
+<span class="sd">			- BD1 / 3GPP Birth Death 2 path</span>
+<span class="sd">			- Moving Propagation / MD1 / 3GPP Moving Propagation &#39;Ref. + Moving Channel&#39;, 2 path</span>
+<span class="sd">			- See &#39;3GPP/LTE moving propagation&#39; / MPLTEETU200 / 3GPP Moving Propagation scenario 1 &#39;ETU200Hz&#39;, according to the test case 3GPP TS36.141, annex B4.</span>
+<span class="sd">			- MPLTEPDOPP / 3GPP Moving Propagation scenario 2 &#39;AWGN&#39;, according to the test case 3GPP TS36.141, annex B4.</span>
+<span class="sd">			- 3GPP High-Speed Train scenarios / G3HST1OS | G3HST1OSDU / 3GPP HST1 &#39;Open space&#39;, according to the test case 3GPP TS25.141, annex D.4A and 3GPP TS36.141, annex B.3</span>
+<span class="sd">			- See &#39;3GPP/LTE high speed train&#39; / G3HST2TLC | G3HST2TLCDU / 3GPP HST2 &#39;Tunnel with leaky cable&#39;, according to the test case 3GPP TS25.141, annex D.4A</span>
+<span class="sd">			- G3HST3TMA | G3HST3TMADU / 3GPP HST3 &#39;Tunnel for multi-antennas&#39;, according to the test case 3GPP TS25.141, annex D.4A and 3GPP TS36.141, annex B.3</span>
+<span class="sd">			- SCME/Geo SCME UMi 3kmh/30kmh SCME/Geo SCME UMa 3kmh/30kmh See &#39;SCM and SCME channel models for MIMO OTA&#39; / G3SCMEUMA3 | G3SCMEUMA30 | G3SCMEUMI3 | G3SCMEUMI30 GEOSCMEUMA3|GEOSCMEUMA30|GEOSCMEUMI3|GEOSCMEUMI30 / SCME/Geo SCME Urban Micro/Macro-Cell Channel, 3 km/h and 30 km/h</span>
+<span class="sd">			- WLAN See &#39;WLAN standards&#39; / HL2A | HL2B | HL2C | HL2D | HL2E / WLAN HyperLan 18 path</span>
+<span class="sd">			- DAB See &#39;DAB standards&#39; / DABRA04 | DABRA06 / DAB Rural Area 4 and 6 path</span>
+<span class="sd">			- DABTU12 | DABTU06 / DAB Typical Urban 12 and 6 path</span>
+<span class="sd">			- DABSFN / DAB single-frequency network (in the VHF range) 7 path</span>
+<span class="sd">			- WiMAX See &#39;WIMAX standards&#39; / WMITUOIPA | WMITUOIPB | WMITUVA60 | WMITUVA120 / Wimax ITU OIP-A, ITU OIP-B, ITU V-A-60, ITU V-A-120</span>
+<span class="sd">			- WMSUI1A360P90 | WMSUI1A360P75 | WMSUI1A030P90 | WMSUI1A030P75 / SUI 1 (omi ant. 90/75%) , SUI 1 (30 ant. 90/75%)</span>
+<span class="sd">			- WMSUI2A360P90 | WMSUI2A360P75 | WMSUI2A030P90 | WMSUI2A030P75 / SUI 2 (omi ant. 90/75%) , SUI 2 (30 ant. 90/75%)</span>
+<span class="sd">			- WMSUI3A360P90 | WMSUI3A360P75 | WMSUI3A030P90 | WMSUI3A030P75 / SUI 3 (omi ant. 90/75%) , SUI 3 (30 ant. 90/75%)</span>
+<span class="sd">			- WMSUI4A360P90 | WMSUI4A360P75 | WMSUI4A030P90 | WMSUI4A030P75 / SUI 4 (omi ant. 90/75%) , SUI 4 (30 ant. 90/75%)</span>
+<span class="sd">			- WMSUI5A360P90 | WMSUI5A360P75 | WMSUI5A360P50 | WMSUI5A030P90 | WMSUI5A030P75 | WMSUI5A030P50 / SUI 5 (omi ant. 90/75/50%) , SUI 5 (30 ant. 90/75/50%)</span>
+<span class="sd">			- WMSUI6A360P90 | WMSUI6A360P75 | WMSUI6A360P50 | WMSUI6A030P90 | WMSUI6A030P75 | WMSUI6A030P50 | / SUI 6 (omi ant. 90/75/50%) , SUI 6 (30 ant. 90/75/50%)</span>
+<span class="sd">			- WiMAX-MIMO See &#39;WIMAX-MIMO standards&#39; / WMITUPB3L | WMITUPB3M | WMITUPB3H | WMITUVA60L | WMITUVA60M | WMITUVA60H / ITU PB Low/Medium/High, ITU VA Low/Medium/High</span>
+<span class="sd">			- LTE See &#39;LTE standards&#39; / LTEEPA1 | LTEEPA5 LTEEVA5 | LTEEVA70|LTEEVA180|LTEEVA1500|LTEEVA2700 LTEETU1 | LTEETU5 | LTEETU30 | LTEETU70 | LTEETU200 | LTEETU300 | LTEETU600 LTEMBSFN5 / LTE EPA 1/5Hz, LTE EVA 5/70/180/1500/2700Hz, LTE ETU 1/5/30/70/200/300/600Hz LTE MBSFN 5Hz</span>
+<span class="sd">			- LTE HST See &#39;HST 1 500 A/B, HST 3 500 A/B&#39; / HST1LTE500A | HST3LTE500A | HST1LTE500B | HST3LTE500B / LTE HST 1 500 A/B LTE HST 3 500 A/B</span>
+<span class="sd">			- LTE-MIMO See &#39;LTE-MIMO standards&#39; / LMEPA1L | LMEPA1M | LMEPA1H | LMEPA5L | LMEPA5M | LMEPA5H LMEVA5L | LMEVA5M | LMEVA5H | LMEVA70L | LMEVA70M | LMEVA70H|LMEVA180L|LMEVA180M|LMEVA180H|LMEVA1500L|LMEVA1500M|LMEVA1500H|LMEVA2700L|LMEVA2700M|LMEVA2700H LMETU1L | LMETU1M | LMETU1H | LMETU5L | LMETU5M | LMETU5H | LMETU30L | LMETU30M | LMETU30H | LMETU70L | LMETU70M | LMETU70H | LMETU200L | LMETU200M | LMETU200H | LMETU300L | LMETU300M | LMETU300H | LMETU600L | LMETU600M | LMETU600H / LTE EPA 1/5Hz Low/Medium/High, LTE EVA 5/70/180/1500/2700Hz Low/Medium/High, LTE ETU 1/30/70/300/600Hz Low/Medium/High</span>
+<span class="sd">			- 1xEV-DO See &#39;1xevdo standards&#39; / EVDO1CH1 | EVDO1CH1BC5 | EVDO1CH2 | EVDO1CH2BC5 | EVDO1CH3 | EVDO1CH3BC5 | EVDO1CH4 | EVDO1CH4BC5 | EVDO1CH5 | EVDO1CH5BC5 / 1xEV-DO Chan. 1/2/3/4/5</span>
+<span class="sd">			- WATTERSON See &#39;Watterson standards&#39; / WATTI1 | WATTI3 | WATTI2 / Watterson I1, I2, I3</span>
+<span class="sd">			- 802.11n-SISO See &#39;802.11n-SISO standards&#39; / WLANNSMODA | WLANNSMODB | WLANNSMODC | WLANNSMODD | WLANNSMODE | WLANNSMODF / 802.11n SISO Model A/B/C/D/E/F</span>
+<span class="sd">			- 802.11n-MIMO See &#39;802.11n-MIMO standards&#39; / WLANNMODA | WLANNMODB | WLANNMODC | WLANNMODD | WLANNMODE | WLANNMODF / 802.11n MIMO Model A/B/C/D/E/F</span>
+<span class="sd">			- 802.11ac-SISO See &#39;802.11ac-SISO standards&#39; / WLANACSMODA|WLANACSMODB|WLANACSMODC|WLANACSMODD|WLANACSMODE|WLANACSMODF / 802.11ac SISO Model A/B/C/D/E/F</span>
+<span class="sd">			- 802.11ac-MIMO See &#39;802.11ac-MIMO standards&#39; / WLANACMODA | WLANACMODB | WLANACMODC | WLANACMODD | WLANACMODE | WLANACMODF / 802.11ac MIMO Model A/B/C/D/E/F</span>
+<span class="sd">			- 802.11p See &#39;802.11p channel models&#39; / WLANPRURALLOS | WLANPURBANAPPLOS | WLANPURBANCRONLOS | WLANPHIGHWAYNLOS | WLANPHIGHWAYLOS / 802.11p Channel models: Rural LOS, Urban Approaching LOS, Urban Crossing NLOS, Highway LOS, Highway NLOS</span>
+<span class="sd">			- 5G NR See &#39;5G NR standards&#39;. / TDLA30D5L | TDLA30D5M | TDLA30D5MA | TDLA30D5H | TDLA30D10L | TDLA30D10M | TDLA30D10MA | TDLA30D10H | TDLB100D400L | TDLB100D400M | TDLB100D400MA | TDLB100D400H | TDLC300D100L | TDLC300D100M | TDLC300D100MA | TDLC300D100H | TDLA30D75L | TDLA30D75M | TDLA30D75MA | TDLA30D75H | TDLA30D300L | TDLA30D300M | TDLA30D300MA | TDLA30D300H |TDLA30D35L | TDLA30D35M | TDLA30D35MA | TDLA30D35H | TDLC60D300L | TDLC60D300M | TDLC60D300MA | TDLC60D300H TDLA30D10S | TDLA30D35S | TDLA30D75S | TDLA30D300S | TDLB100D400S | TDLC60D300S | TDLC300D100 | STDLC300D400S | TDLC300D600S | TDLC300D600L |TDLC300D600M | TDLC300D600H | TDLC300D1200S | TDLC300D1200L | TDLC300D1200M | TDLC300D1200H FR1CDLAUMA | FR1CDLCUMA | FR1CDLCUMA4 | FR1CDLAUMI | FR1CDLCUMI | FR1CDLCUMI2 | FR2CDLAINO | FR2CDLCUMI | FR1CDLBUMA | FR1CDLBUMI NTNTDLA100D200L|NTNTDLA100D200M|NTNTDLA100D200H|NTNTDLC5D200L|NTNTDLC5D200M|NTNTDLC5D200H / 5G NR models TDLA30-5/10 Hz, TDLB100-400 Hz, TDLC300-100 Hz, TDLA30-75/300 Hz, TDLA30-35/10 Hz, TDLC60-300/10 Hz Low/Medium/Medium A/High TDLA30-5/10/35/75/300 Hz, TDLB100-400 Hz, TDLC60-300 Hz, TDLC300-100 Hz SISO, TDLC300-400 Hz SISO, TDLC300-600 Hz SISO, TDLC300-600 Hz Low/Medium/High, TDLC300-1200 Hz SISO, TDLC300-1200 Hz Low/Medium/High FR1 and FR2 CDL models FR1 NTN TDL models:</span>
+<span class="sd">			- 5G NR High-Speed Train scenarios See &#39;5G NR high speed train&#39;. / HST1NR35015|HST1NR35030|HST3NR35015|HST3NR35030 HST1NR50015|HST1NR50030| HST3NR50015|HST3NR50030 / HST1/HST3 350 km/h 15/30 kHz HST1/HST3 500 km/h 15/30 kHz</span>
+<span class="sd">			- 5G NR Moving propagation See &#39;5G NR moving propagation&#39;. / MPX15|MPX30 MPY15|MPY30|MPY120 MPZ15|MPZ30 |MPNTNX15|MPNTNX30| / MP X 15/30kHz SCS MP Y 15/30/120kHz SCS MP Z 15/30kHz SCS</span>
+<span class="sd">			- 5G NR MIMO OTA See &#39;5G NR MIMO OTA channel models&#39; / FR1CDLAUMA|FR1CDLBUMA|FR1CDLCUMA FR1CDLCUMA4 FR1CDLAUMI|FR1CDLBUMIFR1CDLCUMI FR1CDLCUMI2 FR2CDLAINO|FR2CDLCUMI / FR1 CDL-A/-B/-C UMa 2x2 FR1 CDL-C UMa 4x4 FR1 CDL-A/-B/-C UMi 4x4 FR1 CDL-C UMi 2x2 FR2 CDL-A InO, FR2 CDL-C UMi \n</span>
+<span class="sd">			:param standard: USER| CDMA8| CDMA30| C1DMA30| CDMA100| CDMA0| CDMA3| G6TU3| GTU3| G6TU50| GTU50| G6HT100| GHT100| GRA250| GET50| GET100| HL2A| HL2B| HL2C| HL2D| HL2E| NADC8| NADC50| NADC100| P6TU1| PTU1| P6TU50| PTU50| P6HT100| PHT100| PRA130| PET50| PET100| TTU| TBU| THT| T4ET| G3C1| G3C2| G3C3| G3C4| G3UEC4| G3UEC5| G3UEC6| G3UEC7SE| G3UEC7BE| G3UEC8CQ| G3UEPA3| G3UEPB3| G3UEVA30| G3UEVA120| G3TU3| G3TU50| G3TU120| G3HT120| G3RA120| G3RA250| BD1| MP1| DABRA04| DABRA06| DABTU12| DABTU06| DABSFN| WMSUI1A360P90| WMSUI1A360P75| WMSUI1A030P90| WMSUI1A030P75| WMSUI2A360P90| WMSUI2A360P75| WMSUI2A030P90| WMSUI2A030P75| WMSUI3A360P90| WMSUI3A360P75| WMSUI3A030P90| WMSUI3A030P75| WMSUI4A360P90| WMSUI4A360P75| WMSUI4A030P90| WMSUI4A030P75| WMSUI5A360P90| WMSUI5A360P75| WMSUI5A360P50| WMSUI5A030P90| WMSUI5A030P75| WMSUI5A030P50| WMSUI6A360P90| WMSUI6A360P75| WMSUI6A360P50| WMSUI6A030P90| WMSUI6A030P75| WMSUI6A030P50| WMITUOIPA| WMITUOIPB| WMITUVA60| TDU| TDR| WMITUVA120| GET60| G6HT120| G6HT200| GRA130| GRA300| GRA500| G6TU1P5| G6TU3P6| G6TU6| G6TU60| G6TU100| GHT120| GHT200| GTU1P5| GTU3P6| GTU6| GTU60| GTU100| LMEPA5L| LMEPA5M| LMEPA5H| LMEVA5L| LMEVA5M| LMEVA5H| LMEVA70L| LMEVA70M| LMEVA70H| LMETU70L| LMETU70M| LMETU70H| LMETU300L| LMETU300M| LMETU300H| WMITUPB3L| WMITUPB3M| WMITUPB3H| WMITUVA60L| WMITUVA60M| WMITUVA60H| EVDO1CH1| EVDO1CH1BC5| EVDO1CH2| EVDO1CH2BC5| EVDO1CH3| EVDO1CH3BC5| EVDO1CH4| EVDO1CH4BC5| EVDO1CH5| EVDO1CH5BC5| G3HST1OS| G3HST2TLC| G3HST3TMA| MPLTEETU200| MPLTEPDOPP| T6TU| T6HT| LTEEPA5| LTEEVA5| LTEEVA70| LTEETU70| LTEETU300| G3UEC1| G3UEC2| G3UEC3| G3UEVA3| G3MBSFN3| WATTI1| WATTI3| WATTI2| GTI5| G3HST1OSDU| G3HST2TLCDU| G3HST3TMADU| LTEMBSFN5| LTECQI5| LTEETU30| LMETU30L| LMETU30M| LMETU30H| WLANNMODA| WLANNMODB| WLANNMODC| WLANNMODD| WLANNMODE| WLANNMODF| WLANACMODA| WLANACMODB| WLANACMODC| WLANACMODD| WLANACMODE| WLANACMODF| WLANNSMODA| WLANNSMODB| WLANNSMODC| WLANNSMODD| WLANNSMODE| WLANNSMODF| WLANACSMODA| WLANACSMODB| WLANACSMODC| WLANACSMODD| WLANACSMODE| WLANACSMODF| G3SCMEUMA3| G3SCMEUMA30| G3SCMEUMI3| G3SCMEUMI30| WLANPRURALLOS| WLANPURBANAPPLOS| WLANPURBANCRONLOS| WLANPHIGHWAYNLOS| WLANPHIGHWAYLOS| LTEEPA1| LTEETU1| LTEETU600| LMEPA1L| LMEPA1M| LMEPA1H| LMETU1L| LMETU1M| LMETU1H| LMETU600L| LMETU600M| LMETU600H| GEOSCMEUMA3| GEOSCMEUMA30| GEOSCMEUMI3| GEOSCMEUMI30| TDLA30D5L| TDLA30D5M| TDLA30D5H| TDLA30D10L| TDLA30D10M| TDLA30D10H| TDLB100D400L| TDLB100D400M| TDLB100D400H| TDLC300D100L| TDLC300D100M| TDLC300D100H| TDLA30D75L| TDLA30D75M| TDLA30D75H| TDLA30D300L| TDLA30D300M| TDLA30D300H| TDLA30D5MA| TDLA30D10MA| TDLB100D400MA| TDLC300D100MA| TDLA30D75MA| TDLA30D300MA| TDLA30D5S| TDLA30D10S| TDLB100D400S| TDLC300D100S| TDLA30D75S| TDLA30D300S| TDLA30D35S| TDLC60D300S| TDLA30D35L| TDLA30D35M| TDLA30D35MA| TDLA30D35H| TDLC60D300L| TDLC60D300M| TDLC60D300MA| TDLC60D300H| HST1NR35015| HST1NR35030| HST3NR35015| HST3NR35030| MPY15| MPY30| FR1CDLAUMA| FR1CDLCUMA| FR1CDLAUMI| FR1CDLCUMI| FR2CDLAINO| FR2CDLCUMI| FR1CDLBUMA| FR1CDLBUMI| HST1NR50015| HST1NR50030| HST3NR50015| HST3NR50030| HST1LTE500A| HST3LTE500A| HST1LTE500B| HST3LTE500B| LTEETU5| LTEETU200| LMETU5L| LMETU5M| LMETU5H| LMETU200L| LMETU200M| LMETU200H| TDLC300D600L| TDLC300D600M| TDLC300D600H| TDLC300D1200L| TDLC300D1200M| TDLC300D1200H| TDLC300D400S| TDLC300D600S| TDLC300D1200S| MPX15| MPX30| MPZ15| MPZ30| FR1CDLCUMI2| FR1CDLCUMA4| MPY120| MPNTNX15| MPNTNX30| NTNTDLA100D200L| NTNTDLA100D200M| NTNTDLA100D200H| NTNTDLC5D200L| NTNTDLC5D200M| NTNTDLC5D200H| LMEVA180L| LMEVA180M| LMEVA180H| LMEVA1500L| LMEVA1500M| LMEVA1500H| LMEVA2700L| LMEVA2700M| LMEVA2700H| LTEEVA180| LTEEVA1500| LTEEVA2700</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">enum_scalar_to_str</span><span class="p">(</span><span class="n">standard</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">FadStan</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:FSIMulator:STANdard </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+</div>
+
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright © Rohde &amp; Schwarz 2023.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

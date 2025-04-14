@@ -1,0 +1,49 @@
+IfRignal
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce]:BB:W3GPp:TS25141:IFSignal:BWIDth
+	single: [SOURce]:BB:W3GPp:TS25141:IFSignal:CNRatio
+	single: [SOURce]:BB:W3GPp:TS25141:IFSignal:FOFFset
+	single: [SOURce]:BB:W3GPp:TS25141:IFSignal:POWer
+	single: [SOURce]:BB:W3GPp:TS25141:IFSignal:STATe
+	single: [SOURce]:BB:W3GPp:TS25141:IFSignal:TYPE
+
+.. code-block:: python
+
+	[SOURce]:BB:W3GPp:TS25141:IFSignal:BWIDth
+	[SOURce]:BB:W3GPp:TS25141:IFSignal:CNRatio
+	[SOURce]:BB:W3GPp:TS25141:IFSignal:FOFFset
+	[SOURce]:BB:W3GPp:TS25141:IFSignal:POWer
+	[SOURce]:BB:W3GPp:TS25141:IFSignal:STATe
+	[SOURce]:BB:W3GPp:TS25141:IFSignal:TYPE
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.W3Gpp.Ts25141.IfRignal.IfRignalCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.w3Gpp.ts25141.ifRignal.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_W3Gpp_Ts25141_IfRignal_Cw.rst
+	Source_Bb_W3Gpp_Ts25141_IfRignal_Modulated.rst
+	Source_Bb_W3Gpp_Ts25141_IfRignal_Setting.rst

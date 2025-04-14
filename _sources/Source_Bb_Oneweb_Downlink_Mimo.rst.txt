@@ -1,0 +1,39 @@
+Mimo
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:ONEWeb:DL:MIMO:ANTenna
+	single: [SOURce<HW>]:BB:ONEWeb:DL:MIMO:CONFiguration
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:ONEWeb:DL:MIMO:ANTenna
+	[SOURce<HW>]:BB:ONEWeb:DL:MIMO:CONFiguration
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Downlink.Mimo.MimoCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.oneweb.downlink.mimo.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Oneweb_Downlink_Mimo_Apm.rst

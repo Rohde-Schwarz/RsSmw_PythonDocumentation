@@ -1,0 +1,20 @@
+Impedance
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: CONNector:USER<CH>:CLOCk:IMPedance
+
+.. code-block:: python
+
+	CONNector:USER<CH>:CLOCk:IMPedance
+
+
+
+.. autoclass:: RsSmw.Implementations.Connector.User.Clock.Impedance.ImpedanceCls
+	:members:
+	:undoc-members:
+	:noindex:

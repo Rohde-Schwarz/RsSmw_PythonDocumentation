@@ -1,0 +1,20 @@
+Connectors
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: SOURce<HW>:PGENerator:SET:GLB:CONNectors
+
+.. code-block:: python
+
+	SOURce<HW>:PGENerator:SET:GLB:CONNectors
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Pgenerator.Set.Glb.Connectors.ConnectorsCls
+	:members:
+	:undoc-members:
+	:noindex:

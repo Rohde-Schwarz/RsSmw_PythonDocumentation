@@ -1,0 +1,20 @@
+Pdre
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:V5G:DL:USER<CH>:AS:DL:CELL<ST0>:SEQelem:PDRE
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:V5G:DL:USER<CH>:AS:DL:CELL<ST0>:SEQelem:PDRE
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Downlink.User.AsPy.Downlink.Cell.SeqElem.Pdre.PdreCls
+	:members:
+	:undoc-members:
+	:noindex:

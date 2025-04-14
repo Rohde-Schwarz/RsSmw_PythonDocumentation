@@ -1,0 +1,22 @@
+Frequency
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:FSIMulator:HSTRain:DOWNlink:FREQuency:STATe
+	single: [SOURce<HW>]:FSIMulator:HSTRain:DOWNlink:FREQuency
+
+.. code-block:: python
+
+	[SOURce<HW>]:FSIMulator:HSTRain:DOWNlink:FREQuency:STATe
+	[SOURce<HW>]:FSIMulator:HSTRain:DOWNlink:FREQuency
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.HsTrain.Downlink.Frequency.FrequencyCls
+	:members:
+	:undoc-members:
+	:noindex:

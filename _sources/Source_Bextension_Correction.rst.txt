@@ -1,0 +1,22 @@
+Correction
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: SOURce<HW>:BEXTension:CORRection:FILE
+	single: SOURce<HW>:BEXTension:CORRection:STATe
+
+.. code-block:: python
+
+	SOURce<HW>:BEXTension:CORRection:FILE
+	SOURce<HW>:BEXTension:CORRection:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bextension.Correction.CorrectionCls
+	:members:
+	:undoc-members:
+	:noindex:

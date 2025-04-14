@@ -1,0 +1,46 @@
+Reference
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:CEMulation:TCINterferer:REFerence:FRATio
+	single: [SOURce<HW>]:CEMulation:TCINterferer:REFerence:LOSS
+	single: [SOURce<HW>]:CEMulation:TCINterferer:REFerence:MMODe
+	single: [SOURce<HW>]:CEMulation:TCINterferer:REFerence:PROFile
+	single: [SOURce<HW>]:CEMulation:TCINterferer:REFerence:STATe
+
+.. code-block:: python
+
+	[SOURce<HW>]:CEMulation:TCINterferer:REFerence:FRATio
+	[SOURce<HW>]:CEMulation:TCINterferer:REFerence:LOSS
+	[SOURce<HW>]:CEMulation:TCINterferer:REFerence:MMODe
+	[SOURce<HW>]:CEMulation:TCINterferer:REFerence:PROFile
+	[SOURce<HW>]:CEMulation:TCINterferer:REFerence:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.TcInterferer.Reference.ReferenceCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.cemulation.tcInterferer.reference.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Cemulation_TcInterferer_Reference_Delay.rst
+	Source_Cemulation_TcInterferer_Reference_Fdoppler.rst

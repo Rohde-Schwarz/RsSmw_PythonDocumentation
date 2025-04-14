@@ -1,0 +1,20 @@
+Interface
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce]:IQ:OUTPut:DIGital:BBMM<CH>:INTerface
+
+.. code-block:: python
+
+	[SOURce]:IQ:OUTPut:DIGital:BBMM<CH>:INTerface
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Iq.Output.Digital.Bbmm.Interface.InterfaceCls
+	:members:
+	:undoc-members:
+	:noindex:

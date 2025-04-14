@@ -1,0 +1,26 @@
+Setting
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:WLAD:SETTing:CATalog
+	single: [SOURce<HW>]:BB:WLAD:SETTing:DELete
+	single: [SOURce<HW>]:BB:WLAD:SETTing:LOAD
+	single: [SOURce<HW>]:BB:WLAD:SETTing:STORe
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:WLAD:SETTing:CATalog
+	[SOURce<HW>]:BB:WLAD:SETTing:DELete
+	[SOURce<HW>]:BB:WLAD:SETTing:LOAD
+	[SOURce<HW>]:BB:WLAD:SETTing:STORe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Wlad.Setting.SettingCls
+	:members:
+	:undoc-members:
+	:noindex:

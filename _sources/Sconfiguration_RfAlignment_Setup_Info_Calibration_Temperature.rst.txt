@@ -1,0 +1,20 @@
+Temperature
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: SCONfiguration:RFALignment:SETup:INFO:CALibration:TEMPerature:OFFSet
+
+.. code-block:: python
+
+	SCONfiguration:RFALignment:SETup:INFO:CALibration:TEMPerature:OFFSet
+
+
+
+.. autoclass:: RsSmw.Implementations.Sconfiguration.RfAlignment.Setup.Info.Calibration.Temperature.TemperatureCls
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,20 @@
+Power
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:V5G:UL:UE<ST>:POWer
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:V5G:UL:UE<ST>:POWer
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Uplink.Ue.Power.PowerCls
+	:members:
+	:undoc-members:
+	:noindex:

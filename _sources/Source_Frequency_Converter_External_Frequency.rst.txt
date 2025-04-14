@@ -1,0 +1,20 @@
+Frequency
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:FREQuency:CONVerter:EXTernal:FREQuency:MULTiplier
+
+.. code-block:: python
+
+	[SOURce<HW>]:FREQuency:CONVerter:EXTernal:FREQuency:MULTiplier
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Frequency.Converter.External.Frequency.FrequencyCls
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,41 @@
+FilterPy
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:ONEWeb:FILTer:AUTO
+	single: [SOURce<HW>]:BB:ONEWeb:FILTer:MODE
+	single: [SOURce<HW>]:BB:ONEWeb:FILTer:TYPE
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:ONEWeb:FILTer:AUTO
+	[SOURce<HW>]:BB:ONEWeb:FILTer:MODE
+	[SOURce<HW>]:BB:ONEWeb:FILTer:TYPE
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.FilterPy.FilterPyCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.oneweb.filterPy.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Oneweb_FilterPy_Parameter.rst

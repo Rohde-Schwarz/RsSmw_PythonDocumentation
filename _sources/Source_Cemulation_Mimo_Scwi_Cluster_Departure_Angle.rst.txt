@@ -1,0 +1,20 @@
+Angle
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:CEMulation:MIMO:SCWI:CLUSter<CH>:DEParture:ANGLe
+
+.. code-block:: python
+
+	[SOURce<HW>]:CEMulation:MIMO:SCWI:CLUSter<CH>:DEParture:ANGLe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.Mimo.Scwi.Cluster.Departure.Angle.AngleCls
+	:members:
+	:undoc-members:
+	:noindex:

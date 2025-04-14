@@ -1,0 +1,47 @@
+BirthDeath
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:FSIMulator:BIRThdeath:FRATio
+	single: [SOURce<HW>]:FSIMulator:BIRThdeath:POSitions
+	single: [SOURce<HW>]:FSIMulator:BIRThdeath:SOFFset
+	single: [SOURce<HW>]:FSIMulator:BIRThdeath:SPEed
+	single: [SOURce<HW>]:FSIMulator:BIRThdeath:STATe
+
+.. code-block:: python
+
+	[SOURce<HW>]:FSIMulator:BIRThdeath:FRATio
+	[SOURce<HW>]:FSIMulator:BIRThdeath:POSitions
+	[SOURce<HW>]:FSIMulator:BIRThdeath:SOFFset
+	[SOURce<HW>]:FSIMulator:BIRThdeath:SPEed
+	[SOURce<HW>]:FSIMulator:BIRThdeath:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.BirthDeath.BirthDeathCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.fsimulator.birthDeath.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Fsimulator_BirthDeath_Delay.rst
+	Source_Fsimulator_BirthDeath_Hopping.rst
+	Source_Fsimulator_BirthDeath_Path.rst

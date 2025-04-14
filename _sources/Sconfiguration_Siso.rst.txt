@@ -1,0 +1,20 @@
+Siso
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: SCONfiguration:SISO:ROUTe
+
+.. code-block:: python
+
+	SCONfiguration:SISO:ROUTe
+
+
+
+.. autoclass:: RsSmw.Implementations.Sconfiguration.Siso.SisoCls
+	:members:
+	:undoc-members:
+	:noindex:

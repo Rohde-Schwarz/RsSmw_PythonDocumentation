@@ -1,0 +1,20 @@
+CaPeriod
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:GNSS:SVID<CH>:XONA:SDYNamics:CAPeriod
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:GNSS:SVID<CH>:XONA:SDYNamics:CAPeriod
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Gnss.Svid.Xona.Sdynamics.CaPeriod.CaPeriodCls
+	:members:
+	:undoc-members:
+	:noindex:

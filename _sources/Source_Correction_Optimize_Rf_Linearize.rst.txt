@@ -1,0 +1,20 @@
+Linearize
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:CORRection:OPTimize:RF:LINearize:ADJust
+
+.. code-block:: python
+
+	[SOURce<HW>]:CORRection:OPTimize:RF:LINearize:ADJust
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Correction.Optimize.Rf.Linearize.LinearizeCls
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,49 @@
+Scm
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:CEMulation:SCM:DOT
+	single: [SOURce<HW>]:CEMulation:SCM:PHI
+	single: [SOURce<HW>]:CEMulation:SCM:SIGMa
+	single: [SOURce<HW>]:CEMulation:SCM:SPEed
+	single: [SOURce<HW>]:CEMulation:SCM:THETa
+
+.. code-block:: python
+
+	[SOURce<HW>]:CEMulation:SCM:DOT
+	[SOURce<HW>]:CEMulation:SCM:PHI
+	[SOURce<HW>]:CEMulation:SCM:SIGMa
+	[SOURce<HW>]:CEMulation:SCM:SPEed
+	[SOURce<HW>]:CEMulation:SCM:THETa
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.Scm.ScmCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.cemulation.scm.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Cemulation_Scm_Antenna.rst
+	Source_Cemulation_Scm_D3Mode.rst
+	Source_Cemulation_Scm_Los.rst
+	Source_Cemulation_Scm_Polarization.rst
+	Source_Cemulation_Scm_Tap.rst

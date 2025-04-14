@@ -1,0 +1,20 @@
+Tag
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:ESEQuencer:ESTReaming:WAVeform:TAG
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:ESEQuencer:ESTReaming:WAVeform:TAG
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Esequencer.Estreaming.Waveform.Tag.TagCls
+	:members:
+	:undoc-members:
+	:noindex:

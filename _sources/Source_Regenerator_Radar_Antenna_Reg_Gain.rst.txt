@@ -1,0 +1,22 @@
+Gain
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:REGenerator:RADar:ANTenna:REG:GAIN:RX
+	single: [SOURce<HW>]:REGenerator:RADar:ANTenna:REG:GAIN:TX
+
+.. code-block:: python
+
+	[SOURce<HW>]:REGenerator:RADar:ANTenna:REG:GAIN:RX
+	[SOURce<HW>]:REGenerator:RADar:ANTenna:REG:GAIN:TX
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Regenerator.Radar.Antenna.Reg.Gain.GainCls
+	:members:
+	:undoc-members:
+	:noindex:

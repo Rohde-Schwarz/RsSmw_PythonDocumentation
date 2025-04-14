@@ -1,0 +1,20 @@
+Create
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:FSIMulator:DSSimulation:CREate
+
+.. code-block:: python
+
+	[SOURce<HW>]:FSIMulator:DSSimulation:CREate
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.DsSimulation.Create.CreateCls
+	:members:
+	:undoc-members:
+	:noindex:

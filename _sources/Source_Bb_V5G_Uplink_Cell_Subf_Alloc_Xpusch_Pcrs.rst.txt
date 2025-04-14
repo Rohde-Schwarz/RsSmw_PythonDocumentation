@@ -1,0 +1,31 @@
+Pcrs
+----------------------------------------
+
+
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Uplink.Cell.Subf.Alloc.Xpusch.Pcrs.PcrsCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.v5G.uplink.cell.subf.alloc.xpusch.pcrs.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_V5G_Uplink_Cell_Subf_Alloc_Xpusch_Pcrs_Nid.rst
+	Source_Bb_V5G_Uplink_Cell_Subf_Alloc_Xpusch_Pcrs_Nidpcrs.rst
+	Source_Bb_V5G_Uplink_Cell_Subf_Alloc_Xpusch_Pcrs_Rpower.rst
+	Source_Bb_V5G_Uplink_Cell_Subf_Alloc_Xpusch_Pcrs_State.rst

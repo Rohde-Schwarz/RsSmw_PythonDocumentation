@@ -1,0 +1,20 @@
+Via
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce]:IQ:OUTPut:DIGital:FADer<CH>:POWer:VIA
+
+.. code-block:: python
+
+	[SOURce]:IQ:OUTPut:DIGital:FADer<CH>:POWer:VIA
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Iq.Output.Digital.Fader.Power.Via.ViaCls
+	:members:
+	:undoc-members:
+	:noindex:

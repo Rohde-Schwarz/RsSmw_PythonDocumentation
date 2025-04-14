@@ -1,0 +1,29 @@
+Modext
+----------------------------------------
+
+
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.InputPy.Modext.ModextCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.inputPy.modext.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_InputPy_Modext_Coupling.rst
+	Source_InputPy_Modext_Impedance.rst

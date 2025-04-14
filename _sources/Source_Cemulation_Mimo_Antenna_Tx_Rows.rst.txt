@@ -1,0 +1,20 @@
+Rows
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:CEMulation:MIMO:ANTenna:TX:ROWS:SIZE
+
+.. code-block:: python
+
+	[SOURce<HW>]:CEMulation:MIMO:ANTenna:TX:ROWS:SIZE
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.Mimo.Antenna.Tx.Rows.RowsCls
+	:members:
+	:undoc-members:
+	:noindex:

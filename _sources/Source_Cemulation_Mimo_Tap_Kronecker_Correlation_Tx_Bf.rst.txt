@@ -1,0 +1,31 @@
+Bf
+----------------------------------------
+
+
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.Mimo.Tap.Kronecker.Correlation.Tx.Bf.BfCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.cemulation.mimo.tap.kronecker.correlation.tx.bf.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Cemulation_Mimo_Tap_Kronecker_Correlation_Tx_Bf_Imaginary.rst
+	Source_Cemulation_Mimo_Tap_Kronecker_Correlation_Tx_Bf_Magnitude.rst
+	Source_Cemulation_Mimo_Tap_Kronecker_Correlation_Tx_Bf_Phase.rst
+	Source_Cemulation_Mimo_Tap_Kronecker_Correlation_Tx_Bf_Real.rst

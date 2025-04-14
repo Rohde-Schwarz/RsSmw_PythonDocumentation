@@ -1,0 +1,450 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../../../../../../../">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RsSmw.Implementations.Source.Bb.Wlad.Pconfig.Mac.Fcontrol &mdash; RsSmw 5.30.305.84 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../../../../../../../_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="../../../../../../../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../../../../../../../_static/copybutton.css?v=76b2166b" />
+
+  
+      <script src="../../../../../../../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../../../../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../../../../../../../_static/documentation_options.js?v=17bca7dd"></script>
+      <script src="../../../../../../../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../../../../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../../../../../../../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../../../../../../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../../../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../../../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../../../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../../../../../../index.html" class="icon icon-home">
+            RsSmw
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../../readme.html">Revision History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../../enums.html">Enums</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../../repcap.html">RepCaps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../../examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../../RsSmw.html">RsSmw API Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../../utilities.html">RsSmw Utilities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../../logger.html">RsSmw Logger</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../../events.html">RsSmw Events</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../../genindex.html">Index</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../../../../../index.html">RsSmw</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../../../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../../../../../index.html">Module code</a></li>
+          <li class="breadcrumb-item"><a href="../../../../../Source.html">RsSmw.Implementations.Source</a></li>
+          <li class="breadcrumb-item"><a href="../../../../Bb.html">RsSmw.Implementations.Source.Bb</a></li>
+          <li class="breadcrumb-item"><a href="../../../Wlad.html">RsSmw.Implementations.Source.Bb.Wlad</a></li>
+          <li class="breadcrumb-item"><a href="../../Pconfig.html">RsSmw.Implementations.Source.Bb.Wlad.Pconfig</a></li>
+          <li class="breadcrumb-item"><a href="../Mac.html">RsSmw.Implementations.Source.Bb.Wlad.Pconfig.Mac</a></li>
+      <li class="breadcrumb-item active">RsSmw.Implementations.Source.Bb.Wlad.Pconfig.Mac.Fcontrol</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Source code for RsSmw.Implementations.Source.Bb.Wlad.Pconfig.Mac.Fcontrol</h1><div class="highlight"><pre>
+<span></span><span class="kn">from</span><span class="w"> </span><span class="nn">.......Internal.Core</span><span class="w"> </span><span class="kn">import</span> <span class="n">Core</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">.......Internal.CommandsGroup</span><span class="w"> </span><span class="kn">import</span> <span class="n">CommandsGroup</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">.......Internal</span><span class="w"> </span><span class="kn">import</span> <span class="n">Conversions</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">.......Internal.Utilities</span><span class="w"> </span><span class="kn">import</span> <span class="n">trim_str_response</span>
+
+
+<span class="c1"># noinspection PyPep8Naming,PyAttributeOutsideInit,SpellCheckingInspection</span>
+<div class="viewcode-block" id="FcontrolCls">
+<a class="viewcode-back" href="../../../../../../../../Source_Bb_Wlad_Pconfig_Mac_Fcontrol.html#RsSmw.Implementations.Source.Bb.Wlad.Pconfig.Mac.Fcontrol.FcontrolCls">[docs]</a>
+<span class="k">class</span><span class="w"> </span><span class="nc">FcontrolCls</span><span class="p">:</span>
+<span class="w">	</span><span class="sd">&quot;&quot;&quot;Fcontrol commands group definition. 13 total commands, 0 Subgroups, 13 group commands&quot;&quot;&quot;</span>
+
+	<span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">core</span><span class="p">:</span> <span class="n">Core</span><span class="p">,</span> <span class="n">parent</span><span class="p">):</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span> <span class="o">=</span> <span class="n">core</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span> <span class="o">=</span> <span class="n">CommandsGroup</span><span class="p">(</span><span class="s2">&quot;fcontrol&quot;</span><span class="p">,</span> <span class="n">core</span><span class="p">,</span> <span class="n">parent</span><span class="p">)</span>
+
+<div class="viewcode-block" id="FcontrolCls.get_cf_extension">
+<a class="viewcode-back" href="../../../../../../../../Source_Bb_Wlad_Pconfig_Mac_Fcontrol.html#RsSmw.Implementations.Source.Bb.Wlad.Pconfig.Mac.Fcontrol.FcontrolCls.get_cf_extension">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_cf_extension</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:WLAD:PCONfig:MAC:FCONtrol:CFEXtension \n</span>
+<span class="sd">		Snippet: value: str = driver.source.bb.wlad.pconfig.mac.fcontrol.get_cf_extension() \n</span>
+<span class="sd">		Set the value of the individual bits of the frame control field. \n</span>
+<span class="sd">			:return: extension: No help available</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:WLAD:PCONfig:MAC:FCONtrol:CFEXtension?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">trim_str_response</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="FcontrolCls.set_cf_extension">
+<a class="viewcode-back" href="../../../../../../../../Source_Bb_Wlad_Pconfig_Mac_Fcontrol.html#RsSmw.Implementations.Source.Bb.Wlad.Pconfig.Mac.Fcontrol.FcontrolCls.set_cf_extension">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_cf_extension</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">extension</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:WLAD:PCONfig:MAC:FCONtrol:CFEXtension \n</span>
+<span class="sd">		Snippet: driver.source.bb.wlad.pconfig.mac.fcontrol.set_cf_extension(extension = rawAbc) \n</span>
+<span class="sd">		Set the value of the individual bits of the frame control field. \n</span>
+<span class="sd">			:param extension: 2 bits</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">value_to_str</span><span class="p">(</span><span class="n">extension</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:WLAD:PCONfig:MAC:FCONtrol:CFEXtension </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="FcontrolCls.get_fds">
+<a class="viewcode-back" href="../../../../../../../../Source_Bb_Wlad_Pconfig_Mac_Fcontrol.html#RsSmw.Implementations.Source.Bb.Wlad.Pconfig.Mac.Fcontrol.FcontrolCls.get_fds">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_fds</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:WLAD:PCONfig:MAC:FCONtrol:FDS \n</span>
+<span class="sd">		Snippet: value: str = driver.source.bb.wlad.pconfig.mac.fcontrol.get_fds() \n</span>
+<span class="sd">		Set the value of the individual bits of the frame control field. \n</span>
+<span class="sd">			:return: fds: No help available</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:WLAD:PCONfig:MAC:FCONtrol:FDS?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">trim_str_response</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="FcontrolCls.set_fds">
+<a class="viewcode-back" href="../../../../../../../../Source_Bb_Wlad_Pconfig_Mac_Fcontrol.html#RsSmw.Implementations.Source.Bb.Wlad.Pconfig.Mac.Fcontrol.FcontrolCls.set_fds">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_fds</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">fds</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:WLAD:PCONfig:MAC:FCONtrol:FDS \n</span>
+<span class="sd">		Snippet: driver.source.bb.wlad.pconfig.mac.fcontrol.set_fds(fds = rawAbc) \n</span>
+<span class="sd">		Set the value of the individual bits of the frame control field. \n</span>
+<span class="sd">			:param fds: 2 bits</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">value_to_str</span><span class="p">(</span><span class="n">fds</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:WLAD:PCONfig:MAC:FCONtrol:FDS </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="FcontrolCls.get_mdata">
+<a class="viewcode-back" href="../../../../../../../../Source_Bb_Wlad_Pconfig_Mac_Fcontrol.html#RsSmw.Implementations.Source.Bb.Wlad.Pconfig.Mac.Fcontrol.FcontrolCls.get_mdata">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_mdata</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:WLAD:PCONfig:MAC:FCONtrol:MDATa \n</span>
+<span class="sd">		Snippet: value: str = driver.source.bb.wlad.pconfig.mac.fcontrol.get_mdata() \n</span>
+<span class="sd">		Set the value of the individual bits of the frame control field. \n</span>
+<span class="sd">			:return: mdata: No help available</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:WLAD:PCONfig:MAC:FCONtrol:MDATa?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">trim_str_response</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="FcontrolCls.set_mdata">
+<a class="viewcode-back" href="../../../../../../../../Source_Bb_Wlad_Pconfig_Mac_Fcontrol.html#RsSmw.Implementations.Source.Bb.Wlad.Pconfig.Mac.Fcontrol.FcontrolCls.set_mdata">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_mdata</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">mdata</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:WLAD:PCONfig:MAC:FCONtrol:MDATa \n</span>
+<span class="sd">		Snippet: driver.source.bb.wlad.pconfig.mac.fcontrol.set_mdata(mdata = rawAbc) \n</span>
+<span class="sd">		Set the value of the individual bits of the frame control field. \n</span>
+<span class="sd">			:param mdata: 2 bits</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">value_to_str</span><span class="p">(</span><span class="n">mdata</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:WLAD:PCONfig:MAC:FCONtrol:MDATa </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="FcontrolCls.get_mfragments">
+<a class="viewcode-back" href="../../../../../../../../Source_Bb_Wlad_Pconfig_Mac_Fcontrol.html#RsSmw.Implementations.Source.Bb.Wlad.Pconfig.Mac.Fcontrol.FcontrolCls.get_mfragments">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_mfragments</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:WLAD:PCONfig:MAC:FCONtrol:MFRagments \n</span>
+<span class="sd">		Snippet: value: str = driver.source.bb.wlad.pconfig.mac.fcontrol.get_mfragments() \n</span>
+<span class="sd">		Set the value of the individual bits of the frame control field. \n</span>
+<span class="sd">			:return: mfragments: No help available</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:WLAD:PCONfig:MAC:FCONtrol:MFRagments?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">trim_str_response</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="FcontrolCls.set_mfragments">
+<a class="viewcode-back" href="../../../../../../../../Source_Bb_Wlad_Pconfig_Mac_Fcontrol.html#RsSmw.Implementations.Source.Bb.Wlad.Pconfig.Mac.Fcontrol.FcontrolCls.set_mfragments">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_mfragments</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">mfragments</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:WLAD:PCONfig:MAC:FCONtrol:MFRagments \n</span>
+<span class="sd">		Snippet: driver.source.bb.wlad.pconfig.mac.fcontrol.set_mfragments(mfragments = rawAbc) \n</span>
+<span class="sd">		Set the value of the individual bits of the frame control field. \n</span>
+<span class="sd">			:param mfragments: 2 bits</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">value_to_str</span><span class="p">(</span><span class="n">mfragments</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:WLAD:PCONfig:MAC:FCONtrol:MFRagments </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="FcontrolCls.get_order">
+<a class="viewcode-back" href="../../../../../../../../Source_Bb_Wlad_Pconfig_Mac_Fcontrol.html#RsSmw.Implementations.Source.Bb.Wlad.Pconfig.Mac.Fcontrol.FcontrolCls.get_order">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_order</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:WLAD:PCONfig:MAC:FCONtrol:ORDer \n</span>
+<span class="sd">		Snippet: value: str = driver.source.bb.wlad.pconfig.mac.fcontrol.get_order() \n</span>
+<span class="sd">		Set the value of the individual bits of the frame control field. \n</span>
+<span class="sd">			:return: order: No help available</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:WLAD:PCONfig:MAC:FCONtrol:ORDer?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">trim_str_response</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="FcontrolCls.set_order">
+<a class="viewcode-back" href="../../../../../../../../Source_Bb_Wlad_Pconfig_Mac_Fcontrol.html#RsSmw.Implementations.Source.Bb.Wlad.Pconfig.Mac.Fcontrol.FcontrolCls.set_order">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_order</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">order</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:WLAD:PCONfig:MAC:FCONtrol:ORDer \n</span>
+<span class="sd">		Snippet: driver.source.bb.wlad.pconfig.mac.fcontrol.set_order(order = rawAbc) \n</span>
+<span class="sd">		Set the value of the individual bits of the frame control field. \n</span>
+<span class="sd">			:param order: 2 bits</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">value_to_str</span><span class="p">(</span><span class="n">order</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:WLAD:PCONfig:MAC:FCONtrol:ORDer </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="FcontrolCls.get_pframe">
+<a class="viewcode-back" href="../../../../../../../../Source_Bb_Wlad_Pconfig_Mac_Fcontrol.html#RsSmw.Implementations.Source.Bb.Wlad.Pconfig.Mac.Fcontrol.FcontrolCls.get_pframe">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_pframe</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:WLAD:PCONfig:MAC:FCONtrol:PFRame \n</span>
+<span class="sd">		Snippet: value: str = driver.source.bb.wlad.pconfig.mac.fcontrol.get_pframe() \n</span>
+<span class="sd">		Set the value of the individual bits of the frame control field. \n</span>
+<span class="sd">			:return: protd_frm: No help available</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:WLAD:PCONfig:MAC:FCONtrol:PFRame?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">trim_str_response</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="FcontrolCls.set_pframe">
+<a class="viewcode-back" href="../../../../../../../../Source_Bb_Wlad_Pconfig_Mac_Fcontrol.html#RsSmw.Implementations.Source.Bb.Wlad.Pconfig.Mac.Fcontrol.FcontrolCls.set_pframe">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_pframe</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">protd_frm</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:WLAD:PCONfig:MAC:FCONtrol:PFRame \n</span>
+<span class="sd">		Snippet: driver.source.bb.wlad.pconfig.mac.fcontrol.set_pframe(protd_frm = rawAbc) \n</span>
+<span class="sd">		Set the value of the individual bits of the frame control field. \n</span>
+<span class="sd">			:param protd_frm: 2 bits</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">value_to_str</span><span class="p">(</span><span class="n">protd_frm</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:WLAD:PCONfig:MAC:FCONtrol:PFRame </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="FcontrolCls.get_pmanagement">
+<a class="viewcode-back" href="../../../../../../../../Source_Bb_Wlad_Pconfig_Mac_Fcontrol.html#RsSmw.Implementations.Source.Bb.Wlad.Pconfig.Mac.Fcontrol.FcontrolCls.get_pmanagement">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_pmanagement</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:WLAD:PCONfig:MAC:FCONtrol:PMANagement \n</span>
+<span class="sd">		Snippet: value: str = driver.source.bb.wlad.pconfig.mac.fcontrol.get_pmanagement() \n</span>
+<span class="sd">		Set the value of the individual bits of the frame control field. \n</span>
+<span class="sd">			:return: pmanagement: No help available</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:WLAD:PCONfig:MAC:FCONtrol:PMANagement?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">trim_str_response</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="FcontrolCls.set_pmanagement">
+<a class="viewcode-back" href="../../../../../../../../Source_Bb_Wlad_Pconfig_Mac_Fcontrol.html#RsSmw.Implementations.Source.Bb.Wlad.Pconfig.Mac.Fcontrol.FcontrolCls.set_pmanagement">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_pmanagement</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pmanagement</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:WLAD:PCONfig:MAC:FCONtrol:PMANagement \n</span>
+<span class="sd">		Snippet: driver.source.bb.wlad.pconfig.mac.fcontrol.set_pmanagement(pmanagement = rawAbc) \n</span>
+<span class="sd">		Set the value of the individual bits of the frame control field. \n</span>
+<span class="sd">			:param pmanagement: 2 bits</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">value_to_str</span><span class="p">(</span><span class="n">pmanagement</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:WLAD:PCONfig:MAC:FCONtrol:PMANagement </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="FcontrolCls.get_pversion">
+<a class="viewcode-back" href="../../../../../../../../Source_Bb_Wlad_Pconfig_Mac_Fcontrol.html#RsSmw.Implementations.Source.Bb.Wlad.Pconfig.Mac.Fcontrol.FcontrolCls.get_pversion">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_pversion</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:WLAD:PCONfig:MAC:FCONtrol:PVERsion \n</span>
+<span class="sd">		Snippet: value: str = driver.source.bb.wlad.pconfig.mac.fcontrol.get_pversion() \n</span>
+<span class="sd">		Set the value of the individual bits of the frame control field. \n</span>
+<span class="sd">			:return: pversion: No help available</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:WLAD:PCONfig:MAC:FCONtrol:PVERsion?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">trim_str_response</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="FcontrolCls.set_pversion">
+<a class="viewcode-back" href="../../../../../../../../Source_Bb_Wlad_Pconfig_Mac_Fcontrol.html#RsSmw.Implementations.Source.Bb.Wlad.Pconfig.Mac.Fcontrol.FcontrolCls.set_pversion">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_pversion</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pversion</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:WLAD:PCONfig:MAC:FCONtrol:PVERsion \n</span>
+<span class="sd">		Snippet: driver.source.bb.wlad.pconfig.mac.fcontrol.set_pversion(pversion = rawAbc) \n</span>
+<span class="sd">		Set the value of the individual bits of the frame control field. \n</span>
+<span class="sd">			:param pversion: 2 bits</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">value_to_str</span><span class="p">(</span><span class="n">pversion</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:WLAD:PCONfig:MAC:FCONtrol:PVERsion </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="FcontrolCls.get_retry">
+<a class="viewcode-back" href="../../../../../../../../Source_Bb_Wlad_Pconfig_Mac_Fcontrol.html#RsSmw.Implementations.Source.Bb.Wlad.Pconfig.Mac.Fcontrol.FcontrolCls.get_retry">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_retry</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:WLAD:PCONfig:MAC:FCONtrol:RETRy \n</span>
+<span class="sd">		Snippet: value: str = driver.source.bb.wlad.pconfig.mac.fcontrol.get_retry() \n</span>
+<span class="sd">		Set the value of the individual bits of the frame control field. \n</span>
+<span class="sd">			:return: retry: No help available</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:WLAD:PCONfig:MAC:FCONtrol:RETRy?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">trim_str_response</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="FcontrolCls.set_retry">
+<a class="viewcode-back" href="../../../../../../../../Source_Bb_Wlad_Pconfig_Mac_Fcontrol.html#RsSmw.Implementations.Source.Bb.Wlad.Pconfig.Mac.Fcontrol.FcontrolCls.set_retry">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_retry</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">retry</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:WLAD:PCONfig:MAC:FCONtrol:RETRy \n</span>
+<span class="sd">		Snippet: driver.source.bb.wlad.pconfig.mac.fcontrol.set_retry(retry = rawAbc) \n</span>
+<span class="sd">		Set the value of the individual bits of the frame control field. \n</span>
+<span class="sd">			:param retry: 2 bits</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">value_to_str</span><span class="p">(</span><span class="n">retry</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:WLAD:PCONfig:MAC:FCONtrol:RETRy </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="FcontrolCls.get_sub_type">
+<a class="viewcode-back" href="../../../../../../../../Source_Bb_Wlad_Pconfig_Mac_Fcontrol.html#RsSmw.Implementations.Source.Bb.Wlad.Pconfig.Mac.Fcontrol.FcontrolCls.get_sub_type">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_sub_type</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:WLAD:PCONfig:MAC:FCONtrol:SUBType \n</span>
+<span class="sd">		Snippet: value: str = driver.source.bb.wlad.pconfig.mac.fcontrol.get_sub_type() \n</span>
+<span class="sd">		Set the value of the individual bits of the frame control field. \n</span>
+<span class="sd">			:return: sub_type: No help available</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:WLAD:PCONfig:MAC:FCONtrol:SUBType?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">trim_str_response</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="FcontrolCls.set_sub_type">
+<a class="viewcode-back" href="../../../../../../../../Source_Bb_Wlad_Pconfig_Mac_Fcontrol.html#RsSmw.Implementations.Source.Bb.Wlad.Pconfig.Mac.Fcontrol.FcontrolCls.set_sub_type">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_sub_type</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sub_type</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:WLAD:PCONfig:MAC:FCONtrol:SUBType \n</span>
+<span class="sd">		Snippet: driver.source.bb.wlad.pconfig.mac.fcontrol.set_sub_type(sub_type = rawAbc) \n</span>
+<span class="sd">		Set the value of the individual bits of the frame control field. \n</span>
+<span class="sd">			:param sub_type: 2 bits</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">value_to_str</span><span class="p">(</span><span class="n">sub_type</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:WLAD:PCONfig:MAC:FCONtrol:SUBType </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="FcontrolCls.get_tds">
+<a class="viewcode-back" href="../../../../../../../../Source_Bb_Wlad_Pconfig_Mac_Fcontrol.html#RsSmw.Implementations.Source.Bb.Wlad.Pconfig.Mac.Fcontrol.FcontrolCls.get_tds">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_tds</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:WLAD:PCONfig:MAC:FCONtrol:TDS \n</span>
+<span class="sd">		Snippet: value: str = driver.source.bb.wlad.pconfig.mac.fcontrol.get_tds() \n</span>
+<span class="sd">		Set the value of the individual bits of the frame control field. \n</span>
+<span class="sd">			:return: tds: No help available</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:WLAD:PCONfig:MAC:FCONtrol:TDS?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">trim_str_response</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="FcontrolCls.set_tds">
+<a class="viewcode-back" href="../../../../../../../../Source_Bb_Wlad_Pconfig_Mac_Fcontrol.html#RsSmw.Implementations.Source.Bb.Wlad.Pconfig.Mac.Fcontrol.FcontrolCls.set_tds">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_tds</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tds</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:WLAD:PCONfig:MAC:FCONtrol:TDS \n</span>
+<span class="sd">		Snippet: driver.source.bb.wlad.pconfig.mac.fcontrol.set_tds(tds = rawAbc) \n</span>
+<span class="sd">		Set the value of the individual bits of the frame control field. \n</span>
+<span class="sd">			:param tds: 2 bits</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">value_to_str</span><span class="p">(</span><span class="n">tds</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:WLAD:PCONfig:MAC:FCONtrol:TDS </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="FcontrolCls.get_type_py">
+<a class="viewcode-back" href="../../../../../../../../Source_Bb_Wlad_Pconfig_Mac_Fcontrol.html#RsSmw.Implementations.Source.Bb.Wlad.Pconfig.Mac.Fcontrol.FcontrolCls.get_type_py">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_type_py</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:WLAD:PCONfig:MAC:FCONtrol:TYPE \n</span>
+<span class="sd">		Snippet: value: str = driver.source.bb.wlad.pconfig.mac.fcontrol.get_type_py() \n</span>
+<span class="sd">		Set the value of the individual bits of the frame control field. \n</span>
+<span class="sd">			:return: type_py: 2 bits</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:WLAD:PCONfig:MAC:FCONtrol:TYPE?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">trim_str_response</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="FcontrolCls.set_type_py">
+<a class="viewcode-back" href="../../../../../../../../Source_Bb_Wlad_Pconfig_Mac_Fcontrol.html#RsSmw.Implementations.Source.Bb.Wlad.Pconfig.Mac.Fcontrol.FcontrolCls.set_type_py">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_type_py</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">type_py</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:WLAD:PCONfig:MAC:FCONtrol:TYPE \n</span>
+<span class="sd">		Snippet: driver.source.bb.wlad.pconfig.mac.fcontrol.set_type_py(type_py = rawAbc) \n</span>
+<span class="sd">		Set the value of the individual bits of the frame control field. \n</span>
+<span class="sd">			:param type_py: 2 bits</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">value_to_str</span><span class="p">(</span><span class="n">type_py</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:WLAD:PCONfig:MAC:FCONtrol:TYPE </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="FcontrolCls.get_value">
+<a class="viewcode-back" href="../../../../../../../../Source_Bb_Wlad_Pconfig_Mac_Fcontrol.html#RsSmw.Implementations.Source.Bb.Wlad.Pconfig.Mac.Fcontrol.FcontrolCls.get_value">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_value</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:WLAD:PCONfig:MAC:FCONtrol \n</span>
+<span class="sd">		Snippet: value: str = driver.source.bb.wlad.pconfig.mac.fcontrol.get_value() \n</span>
+<span class="sd">		Sets the value of the frame control field. The frame control field has a length of 2 bytes (16 bits) and is used to</span>
+<span class="sd">		define, for example, the protocol version, the frame type, and its function. As an alternative, the individual bits can</span>
+<span class="sd">		be set. \n</span>
+<span class="sd">			:return: fcontrol: 16 bits</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:WLAD:PCONfig:MAC:FCONtrol?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">trim_str_response</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="FcontrolCls.set_value">
+<a class="viewcode-back" href="../../../../../../../../Source_Bb_Wlad_Pconfig_Mac_Fcontrol.html#RsSmw.Implementations.Source.Bb.Wlad.Pconfig.Mac.Fcontrol.FcontrolCls.set_value">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_value</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">fcontrol</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:WLAD:PCONfig:MAC:FCONtrol \n</span>
+<span class="sd">		Snippet: driver.source.bb.wlad.pconfig.mac.fcontrol.set_value(fcontrol = rawAbc) \n</span>
+<span class="sd">		Sets the value of the frame control field. The frame control field has a length of 2 bytes (16 bits) and is used to</span>
+<span class="sd">		define, for example, the protocol version, the frame type, and its function. As an alternative, the individual bits can</span>
+<span class="sd">		be set. \n</span>
+<span class="sd">			:param fcontrol: 16 bits</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">value_to_str</span><span class="p">(</span><span class="n">fcontrol</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:WLAD:PCONfig:MAC:FCONtrol </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+</div>
+
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright © Rohde &amp; Schwarz 2023.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

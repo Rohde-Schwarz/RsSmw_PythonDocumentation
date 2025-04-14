@@ -1,0 +1,37 @@
+SubCluster<SubCluster>
+----------------------------------------
+
+.. rubric:: RepCap Settings
+
+.. code-block:: python
+
+	# Range: Nr1 .. Nr3
+	rc = driver.source.fsimulator.mimo.scwi.cluster.tap.subCluster.repcap_subCluster_get()
+	driver.source.fsimulator.mimo.scwi.cluster.tap.subCluster.repcap_subCluster_set(repcap.SubCluster.Nr1)
+
+
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.Mimo.Scwi.Cluster.Tap.SubCluster.SubClusterCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.fsimulator.mimo.scwi.cluster.tap.subCluster.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Fsimulator_Mimo_Scwi_Cluster_Tap_SubCluster_Gain.rst
+	Source_Fsimulator_Mimo_Scwi_Cluster_Tap_SubCluster_State.rst

@@ -1,0 +1,20 @@
+Fpt
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:WLAY:PCONfig:HDA:MCS:FPT:STATe
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:WLAY:PCONfig:HDA:MCS:FPT:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Wlay.Pconfig.Hda.Mcs.Fpt.FptCls
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,45 @@
+Restart
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:REGenerator:RESTart:MODE
+	single: [SOURce<HW>]:REGenerator:RESTart:RMODe
+	single: [SOURce<HW>]:REGenerator:RESTart:SOURce
+	single: [SOURce<HW>]:REGenerator:RESTart:STATtenuation
+
+.. code-block:: python
+
+	[SOURce<HW>]:REGenerator:RESTart:MODE
+	[SOURce<HW>]:REGenerator:RESTart:RMODe
+	[SOURce<HW>]:REGenerator:RESTart:SOURce
+	[SOURce<HW>]:REGenerator:RESTart:STATtenuation
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Regenerator.Restart.RestartCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.regenerator.restart.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Regenerator_Restart_Arm.rst
+	Source_Regenerator_Restart_Execute.rst
+	Source_Regenerator_Restart_Synchronize.rst

@@ -1,0 +1,20 @@
+Cfrequency
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:DCTable:SET<CH>:CFRequency
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:DCTable:SET<CH>:CFRequency
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Btooth.Econfiguration.DcTable.Set.Cfrequency.CfrequencyCls
+	:members:
+	:undoc-members:
+	:noindex:

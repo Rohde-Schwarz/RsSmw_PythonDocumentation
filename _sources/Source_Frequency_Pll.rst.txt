@@ -1,0 +1,20 @@
+Pll
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:FREQuency:PLL:MODE
+
+.. code-block:: python
+
+	[SOURce<HW>]:FREQuency:PLL:MODE
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Frequency.Pll.PllCls
+	:members:
+	:undoc-members:
+	:noindex:

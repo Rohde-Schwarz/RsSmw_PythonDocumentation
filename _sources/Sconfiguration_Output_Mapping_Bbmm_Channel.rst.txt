@@ -1,0 +1,29 @@
+Channel
+----------------------------------------
+
+
+
+
+
+.. autoclass:: RsSmw.Implementations.Sconfiguration.Output.Mapping.Bbmm.Channel.ChannelCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.sconfiguration.output.mapping.bbmm.channel.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Sconfiguration_Output_Mapping_Bbmm_Channel_Mode.rst
+	Sconfiguration_Output_Mapping_Bbmm_Channel_Stream.rst

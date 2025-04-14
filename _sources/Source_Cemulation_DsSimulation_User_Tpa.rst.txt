@@ -1,0 +1,22 @@
+Tpa
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:CEMulation:DSSimulation:USER:TPA:CATalog
+	single: [SOURce<HW>]:CEMulation:DSSimulation:USER:TPA:SELect
+
+.. code-block:: python
+
+	[SOURce<HW>]:CEMulation:DSSimulation:USER:TPA:CATalog
+	[SOURce<HW>]:CEMulation:DSSimulation:USER:TPA:SELect
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.DsSimulation.User.Tpa.TpaCls
+	:members:
+	:undoc-members:
+	:noindex:

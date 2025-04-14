@@ -1,0 +1,20 @@
+Select
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:ESEQuencer:USER:[BB<ST>]:AOTime<CH>:FILE:[SELect]
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:ESEQuencer:USER:[BB<ST>]:AOTime<CH>:FILE:[SELect]
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Esequencer.User.Bb.AoTime.File.Select.SelectCls
+	:members:
+	:undoc-members:
+	:noindex:

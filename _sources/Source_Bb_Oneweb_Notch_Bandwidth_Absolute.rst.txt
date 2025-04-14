@@ -1,0 +1,20 @@
+Absolute
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:ONEWeb:NOTCh<CH>:BWIDth:[ABSolute]
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:ONEWeb:NOTCh<CH>:BWIDth:[ABSolute]
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Notch.Bandwidth.Absolute.AbsoluteCls
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,39 @@
+Mimo
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:V5G:DL:MIMO:ANTenna
+	single: [SOURce<HW>]:BB:V5G:DL:MIMO:CONFiguration
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:V5G:DL:MIMO:ANTenna
+	[SOURce<HW>]:BB:V5G:DL:MIMO:CONFiguration
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Downlink.Mimo.MimoCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.v5G.downlink.mimo.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_V5G_Downlink_Mimo_Apm.rst

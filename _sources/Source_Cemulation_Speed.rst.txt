@@ -1,0 +1,20 @@
+Speed
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:CEMulation:SPEed:UNIT
+
+.. code-block:: python
+
+	[SOURce<HW>]:CEMulation:SPEed:UNIT
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.Speed.SpeedCls
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,37 @@
+Phase
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: SCONfiguration:BEXTension:CORRection:PORT<CH>:PHASe
+
+.. code-block:: python
+
+	SCONfiguration:BEXTension:CORRection:PORT<CH>:PHASe
+
+
+
+.. autoclass:: RsSmw.Implementations.Sconfiguration.Bextension.Correction.Port.Phase.PhaseCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.sconfiguration.bextension.correction.port.phase.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Sconfiguration_Bextension_Correction_Port_Phase_Additional.rst

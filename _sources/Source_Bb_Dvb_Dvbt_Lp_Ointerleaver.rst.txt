@@ -1,0 +1,20 @@
+Ointerleaver
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:DVB:DVBT:[LP]:OINTerleaver:[STATe]
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:DVB:DVBT:[LP]:OINTerleaver:[STATe]
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dvb.Dvbt.Lp.Ointerleaver.OinterleaverCls
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,22 @@
+Pconfiguration
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:V5G:SETTing:PCONfiguration:CATalog
+	single: [SOURce<HW>]:BB:V5G:SETTing:PCONfiguration
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:V5G:SETTing:PCONfiguration:CATalog
+	[SOURce<HW>]:BB:V5G:SETTing:PCONfiguration
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Setting.Pconfiguration.PconfigurationCls
+	:members:
+	:undoc-members:
+	:noindex:

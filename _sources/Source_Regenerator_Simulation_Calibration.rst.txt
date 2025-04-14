@@ -1,0 +1,43 @@
+Calibration
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:REGenerator:SIMulation:CALibration:CORRection
+	single: [SOURce<HW>]:REGenerator:SIMulation:CALibration:MODE
+	single: [SOURce<HW>]:REGenerator:SIMulation:CALibration:URANge
+	single: [SOURce<HW>]:REGenerator:SIMulation:CALibration:[STATe]
+
+.. code-block:: python
+
+	[SOURce<HW>]:REGenerator:SIMulation:CALibration:CORRection
+	[SOURce<HW>]:REGenerator:SIMulation:CALibration:MODE
+	[SOURce<HW>]:REGenerator:SIMulation:CALibration:URANge
+	[SOURce<HW>]:REGenerator:SIMulation:CALibration:[STATe]
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Regenerator.Simulation.Calibration.CalibrationCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.regenerator.simulation.calibration.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Regenerator_Simulation_Calibration_Laex.rst

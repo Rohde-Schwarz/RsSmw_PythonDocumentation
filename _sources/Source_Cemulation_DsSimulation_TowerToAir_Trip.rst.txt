@@ -1,0 +1,22 @@
+Trip
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:CEMulation:DSSimulation:TOWertoair:TRIP:DURation
+	single: [SOURce<HW>]:CEMulation:DSSimulation:TOWertoair:TRIP:LENGth
+
+.. code-block:: python
+
+	[SOURce<HW>]:CEMulation:DSSimulation:TOWertoair:TRIP:DURation
+	[SOURce<HW>]:CEMulation:DSSimulation:TOWertoair:TRIP:LENGth
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.DsSimulation.TowerToAir.Trip.TripCls
+	:members:
+	:undoc-members:
+	:noindex:

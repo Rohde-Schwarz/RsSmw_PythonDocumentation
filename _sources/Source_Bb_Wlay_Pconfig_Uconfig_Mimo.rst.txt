@@ -1,0 +1,20 @@
+Mimo
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:WLAY:PCONfig:UCONfig:MIMO:STATe
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:WLAY:PCONfig:UCONfig:MIMO:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Wlay.Pconfig.Uconfig.Mimo.MimoCls
+	:members:
+	:undoc-members:
+	:noindex:

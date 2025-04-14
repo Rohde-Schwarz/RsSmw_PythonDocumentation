@@ -1,0 +1,20 @@
+Wgs
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:GNSS:RTK:BASE<ST>:LOCation:COORdinates:DECimal:[WGS]
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:GNSS:RTK:BASE<ST>:LOCation:COORdinates:DECimal:[WGS]
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Gnss.Rtk.Base.Location.Coordinates.Decimal.Wgs.WgsCls
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,20 @@
+Fratio
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:FSIMulator:DEL:GROup<ST>:PATH<CH>:FRATio
+
+.. code-block:: python
+
+	[SOURce<HW>]:FSIMulator:DEL:GROup<ST>:PATH<CH>:FRATio
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.DelPy.Group.Path.Fratio.FratioCls
+	:members:
+	:undoc-members:
+	:noindex:

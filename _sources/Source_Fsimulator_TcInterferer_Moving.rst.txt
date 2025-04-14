@@ -1,0 +1,46 @@
+Moving
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:FSIMulator:TCINterferer:MOVing:FRATio
+	single: [SOURce<HW>]:FSIMulator:TCINterferer:MOVing:LOSS
+	single: [SOURce<HW>]:FSIMulator:TCINterferer:MOVing:MMODe
+	single: [SOURce<HW>]:FSIMulator:TCINterferer:MOVing:PROFile
+	single: [SOURce<HW>]:FSIMulator:TCINterferer:MOVing:STATe
+
+.. code-block:: python
+
+	[SOURce<HW>]:FSIMulator:TCINterferer:MOVing:FRATio
+	[SOURce<HW>]:FSIMulator:TCINterferer:MOVing:LOSS
+	[SOURce<HW>]:FSIMulator:TCINterferer:MOVing:MMODe
+	[SOURce<HW>]:FSIMulator:TCINterferer:MOVing:PROFile
+	[SOURce<HW>]:FSIMulator:TCINterferer:MOVing:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.TcInterferer.Moving.MovingCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.fsimulator.tcInterferer.moving.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Fsimulator_TcInterferer_Moving_Delay.rst
+	Source_Fsimulator_TcInterferer_Moving_Fdoppler.rst

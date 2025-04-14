@@ -1,0 +1,47 @@
+Edit
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: SCONfiguration:EXTernal:REMote:EDIT:ALIas
+	single: SCONfiguration:EXTernal:REMote:EDIT:HOSTname
+	single: SCONfiguration:EXTernal:REMote:EDIT:ISELect
+	single: SCONfiguration:EXTernal:REMote:EDIT:RCHannel
+	single: SCONfiguration:EXTernal:REMote:EDIT:SERial
+
+.. code-block:: python
+
+	SCONfiguration:EXTernal:REMote:EDIT:ALIas
+	SCONfiguration:EXTernal:REMote:EDIT:HOSTname
+	SCONfiguration:EXTernal:REMote:EDIT:ISELect
+	SCONfiguration:EXTernal:REMote:EDIT:RCHannel
+	SCONfiguration:EXTernal:REMote:EDIT:SERial
+
+
+
+.. autoclass:: RsSmw.Implementations.Sconfiguration.External.Remote.Edit.EditCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.sconfiguration.external.remote.edit.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Sconfiguration_External_Remote_Edit_Apply.rst
+	Sconfiguration_External_Remote_Edit_Device.rst
+	Sconfiguration_External_Remote_Edit_Remove.rst

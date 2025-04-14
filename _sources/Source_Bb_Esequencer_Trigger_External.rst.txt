@@ -1,0 +1,45 @@
+External
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:ESEQuencer:TRIGger:[EXTernal]:DELay
+	single: [SOURce<HW>]:BB:ESEQuencer:TRIGger:[EXTernal]:DISable
+	single: [SOURce<HW>]:BB:ESEQuencer:TRIGger:[EXTernal]:INHibit
+	single: [SOURce<HW>]:BB:ESEQuencer:TRIGger:[EXTernal]:RDELay
+	single: [SOURce<HW>]:BB:ESEQuencer:TRIGger:[EXTernal]:TDELay
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:ESEQuencer:TRIGger:[EXTernal]:DELay
+	[SOURce<HW>]:BB:ESEQuencer:TRIGger:[EXTernal]:DISable
+	[SOURce<HW>]:BB:ESEQuencer:TRIGger:[EXTernal]:INHibit
+	[SOURce<HW>]:BB:ESEQuencer:TRIGger:[EXTernal]:RDELay
+	[SOURce<HW>]:BB:ESEQuencer:TRIGger:[EXTernal]:TDELay
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Esequencer.Trigger.External.ExternalCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.esequencer.trigger.external.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Esequencer_Trigger_External_Synchronize.rst

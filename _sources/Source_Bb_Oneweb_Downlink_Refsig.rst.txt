@@ -1,0 +1,22 @@
+Refsig
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:ONEWeb:DL:REFSig:FPOWer
+	single: [SOURce<HW>]:BB:ONEWeb:DL:REFSig:POWer
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:ONEWeb:DL:REFSig:FPOWer
+	[SOURce<HW>]:BB:ONEWeb:DL:REFSig:POWer
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Downlink.Refsig.RefsigCls
+	:members:
+	:undoc-members:
+	:noindex:

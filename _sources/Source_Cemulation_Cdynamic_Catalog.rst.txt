@@ -1,0 +1,22 @@
+Catalog
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:CEMulation:CDYNamic:CATalog:USER
+	single: [SOURce<HW>]:CEMulation:CDYNamic:CATalog
+
+.. code-block:: python
+
+	[SOURce<HW>]:CEMulation:CDYNamic:CATalog:USER
+	[SOURce<HW>]:CEMulation:CDYNamic:CATalog
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.Cdynamic.Catalog.CatalogCls
+	:members:
+	:undoc-members:
+	:noindex:

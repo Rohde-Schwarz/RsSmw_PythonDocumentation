@@ -1,0 +1,20 @@
+Bit
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:DVB:DVBH:IINTerleaver:BIT:[STATe]
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:DVB:DVBH:IINTerleaver:BIT:[STATe]
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dvb.Dvbh.Iinterleaver.Bit.BitCls
+	:members:
+	:undoc-members:
+	:noindex:

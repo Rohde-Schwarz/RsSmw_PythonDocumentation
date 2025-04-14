@@ -1,0 +1,43 @@
+Refsig
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:ONEWeb:UL:REFSig:DMRS
+	single: [SOURce<HW>]:BB:ONEWeb:UL:REFSig:DSSHift
+	single: [SOURce<HW>]:BB:ONEWeb:UL:REFSig:GRPHopping
+	single: [SOURce<HW>]:BB:ONEWeb:UL:REFSig:SEQHopping
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:ONEWeb:UL:REFSig:DMRS
+	[SOURce<HW>]:BB:ONEWeb:UL:REFSig:DSSHift
+	[SOURce<HW>]:BB:ONEWeb:UL:REFSig:GRPHopping
+	[SOURce<HW>]:BB:ONEWeb:UL:REFSig:SEQHopping
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Uplink.Refsig.RefsigCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.oneweb.uplink.refsig.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Oneweb_Uplink_Refsig_Srs.rst

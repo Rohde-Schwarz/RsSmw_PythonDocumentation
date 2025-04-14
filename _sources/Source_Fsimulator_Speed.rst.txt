@@ -1,0 +1,20 @@
+Speed
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:FSIMulator:SPEed:UNIT
+
+.. code-block:: python
+
+	[SOURce<HW>]:FSIMulator:SPEed:UNIT
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.Speed.SpeedCls
+	:members:
+	:undoc-members:
+	:noindex:

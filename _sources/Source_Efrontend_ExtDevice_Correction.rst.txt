@@ -1,0 +1,22 @@
+Correction
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:EFRontend:EXTDevice:CORRection:FILE
+	single: [SOURce<HW>]:EFRontend:EXTDevice:CORRection:STATe
+
+.. code-block:: python
+
+	[SOURce<HW>]:EFRontend:EXTDevice:CORRection:FILE
+	[SOURce<HW>]:EFRontend:EXTDevice:CORRection:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Efrontend.ExtDevice.Correction.CorrectionCls
+	:members:
+	:undoc-members:
+	:noindex:

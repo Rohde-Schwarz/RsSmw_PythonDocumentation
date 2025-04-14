@@ -1,0 +1,20 @@
+Upper
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:EFRontend:FREQuency:BAND<CH>:UPPer
+
+.. code-block:: python
+
+	[SOURce<HW>]:EFRontend:FREQuency:BAND<CH>:UPPer
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Efrontend.Frequency.Band.Upper.UpperCls
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,12 @@
+RsSmw Events
+==========================
+
+.. _Events:
+
+Check the usage in the Getting Started chapter :ref:`here <GetingStarted_Events>`.
+
+.. autoclass:: RsSmw.CustomFiles.events.Events()
+   :members:
+   :undoc-members:
+   :special-members: enable_properties
+   :noindex:

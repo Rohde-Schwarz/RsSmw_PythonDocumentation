@@ -1,0 +1,43 @@
+Los
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:FSIMulator:SCM:LOS:DISTance
+	single: [SOURce<HW>]:FSIMulator:SCM:LOS:KFACtor
+	single: [SOURce<HW>]:FSIMulator:SCM:LOS:STATe
+
+.. code-block:: python
+
+	[SOURce<HW>]:FSIMulator:SCM:LOS:DISTance
+	[SOURce<HW>]:FSIMulator:SCM:LOS:KFACtor
+	[SOURce<HW>]:FSIMulator:SCM:LOS:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.Scm.Los.LosCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.fsimulator.scm.los.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Fsimulator_Scm_Los_Arrival.rst
+	Source_Fsimulator_Scm_Los_Departure.rst
+	Source_Fsimulator_Scm_Los_Random.rst

@@ -1,0 +1,20 @@
+Distribution
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:FSIMulator:MIMO:TAP<CH>:TGN:DISTribution
+
+.. code-block:: python
+
+	[SOURce<HW>]:FSIMulator:MIMO:TAP<CH>:TGN:DISTribution
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.Mimo.Tap.Tgn.Distribution.DistributionCls
+	:members:
+	:undoc-members:
+	:noindex:

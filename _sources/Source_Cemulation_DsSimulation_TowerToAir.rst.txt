@@ -1,0 +1,49 @@
+TowerToAir
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:CEMulation:DSSimulation:TOWertoair:CACCeleration
+	single: [SOURce<HW>]:CEMulation:DSSimulation:TOWertoair:PRESet
+	single: [SOURce<HW>]:CEMulation:DSSimulation:TOWertoair:TERRain
+	single: [SOURce<HW>]:CEMulation:DSSimulation:TOWertoair:TYPE
+
+.. code-block:: python
+
+	[SOURce<HW>]:CEMulation:DSSimulation:TOWertoair:CACCeleration
+	[SOURce<HW>]:CEMulation:DSSimulation:TOWertoair:PRESet
+	[SOURce<HW>]:CEMulation:DSSimulation:TOWertoair:TERRain
+	[SOURce<HW>]:CEMulation:DSSimulation:TOWertoair:TYPE
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.DsSimulation.TowerToAir.TowerToAirCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.cemulation.dsSimulation.towerToAir.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Cemulation_DsSimulation_TowerToAir_Altitude.rst
+	Source_Cemulation_DsSimulation_TowerToAir_Angle.rst
+	Source_Cemulation_DsSimulation_TowerToAir_Flength.rst
+	Source_Cemulation_DsSimulation_TowerToAir_Radius.rst
+	Source_Cemulation_DsSimulation_TowerToAir_Rate.rst
+	Source_Cemulation_DsSimulation_TowerToAir_Speed.rst
+	Source_Cemulation_DsSimulation_TowerToAir_Trip.rst

@@ -1,0 +1,43 @@
+Tx
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:CEMulation:SCM:ANTenna:TX:PATTern
+	single: [SOURce<HW>]:CEMulation:SCM:ANTenna:TX:STRucture
+
+.. code-block:: python
+
+	[SOURce<HW>]:CEMulation:SCM:ANTenna:TX:PATTern
+	[SOURce<HW>]:CEMulation:SCM:ANTenna:TX:STRucture
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.Scm.Antenna.Tx.TxCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.cemulation.scm.antenna.tx.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Cemulation_Scm_Antenna_Tx_Antenna.rst
+	Source_Cemulation_Scm_Antenna_Tx_Calc.rst
+	Source_Cemulation_Scm_Antenna_Tx_Columns.rst
+	Source_Cemulation_Scm_Antenna_Tx_Espacing.rst
+	Source_Cemulation_Scm_Antenna_Tx_Rows.rst

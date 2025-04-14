@@ -1,0 +1,20 @@
+Common
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: SYSTem:COMMunicate:BB<HW>:QSFP:NETWork:[COMMon]:HOSTname
+
+.. code-block:: python
+
+	SYSTem:COMMunicate:BB<HW>:QSFP:NETWork:[COMMon]:HOSTname
+
+
+
+.. autoclass:: RsSmw.Implementations.System.Communicate.Bb.Qsfp.Network.Common.CommonCls
+	:members:
+	:undoc-members:
+	:noindex:

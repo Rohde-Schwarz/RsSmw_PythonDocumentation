@@ -1,0 +1,37 @@
+Slot<Slot>
+----------------------------------------
+
+.. rubric:: RepCap Settings
+
+.. code-block:: python
+
+	# Range: Nr1 .. Nr16
+	rc = driver.source.bb.tetra.sconfiguration.slot.repcap_slot_get()
+	driver.source.bb.tetra.sconfiguration.slot.repcap_slot_set(repcap.Slot.Nr1)
+
+
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Tetra.Sconfiguration.Slot.SlotCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.tetra.sconfiguration.slot.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Tetra_Sconfiguration_Slot_Ldirection.rst
+	Source_Bb_Tetra_Sconfiguration_Slot_Ubbnch.rst

@@ -1,0 +1,22 @@
+Rate
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:CEMulation:DSSimulation:TOWertoair:RATE:CLIMb
+	single: [SOURce<HW>]:CEMulation:DSSimulation:TOWertoair:RATE:DESCent
+
+.. code-block:: python
+
+	[SOURce<HW>]:CEMulation:DSSimulation:TOWertoair:RATE:CLIMb
+	[SOURce<HW>]:CEMulation:DSSimulation:TOWertoair:RATE:DESCent
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.DsSimulation.TowerToAir.Rate.RateCls
+	:members:
+	:undoc-members:
+	:noindex:

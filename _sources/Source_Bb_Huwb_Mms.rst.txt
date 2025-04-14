@@ -1,0 +1,57 @@
+Mms
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:HUWB:MMS:MPFormat
+	single: [SOURce<HW>]:BB:HUWB:MMS:NRIF
+	single: [SOURce<HW>]:BB:HUWB:MMS:NRSF
+	single: [SOURce<HW>]:BB:HUWB:MMS:RIOFfset
+	single: [SOURce<HW>]:BB:HUWB:MMS:ROLE
+	single: [SOURce<HW>]:BB:HUWB:MMS:RPDuration
+	single: [SOURce<HW>]:BB:HUWB:MMS:RSDuration
+	single: [SOURce<HW>]:BB:HUWB:MMS:RSOFfset
+	single: [SOURce<HW>]:BB:HUWB:MMS:RSTU
+	single: [SOURce<HW>]:BB:HUWB:MMS:SSCI
+	single: [SOURce<HW>]:BB:HUWB:MMS:TFSYnc
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:HUWB:MMS:MPFormat
+	[SOURce<HW>]:BB:HUWB:MMS:NRIF
+	[SOURce<HW>]:BB:HUWB:MMS:NRSF
+	[SOURce<HW>]:BB:HUWB:MMS:RIOFfset
+	[SOURce<HW>]:BB:HUWB:MMS:ROLE
+	[SOURce<HW>]:BB:HUWB:MMS:RPDuration
+	[SOURce<HW>]:BB:HUWB:MMS:RSDuration
+	[SOURce<HW>]:BB:HUWB:MMS:RSOFfset
+	[SOURce<HW>]:BB:HUWB:MMS:RSTU
+	[SOURce<HW>]:BB:HUWB:MMS:SSCI
+	[SOURce<HW>]:BB:HUWB:MMS:TFSYnc
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Huwb.Mms.MmsCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.huwb.mms.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Huwb_Mms_Rsf.rst

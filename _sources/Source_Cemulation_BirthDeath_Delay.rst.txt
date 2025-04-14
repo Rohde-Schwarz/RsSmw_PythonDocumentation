@@ -1,0 +1,24 @@
+Delay
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:CEMulation:BIRThdeath:DELay:GRID
+	single: [SOURce<HW>]:CEMulation:BIRThdeath:DELay:MAXimum
+	single: [SOURce<HW>]:CEMulation:BIRThdeath:DELay:MINimum
+
+.. code-block:: python
+
+	[SOURce<HW>]:CEMulation:BIRThdeath:DELay:GRID
+	[SOURce<HW>]:CEMulation:BIRThdeath:DELay:MAXimum
+	[SOURce<HW>]:CEMulation:BIRThdeath:DELay:MINimum
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.BirthDeath.Delay.DelayCls
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,20 @@
+GlActive
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:DVB:DVBX:BHConfig:GLACtive:[STATe]
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:DVB:DVBX:BHConfig:GLACtive:[STATe]
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dvb.Dvbx.BhConfig.GlActive.GlActiveCls
+	:members:
+	:undoc-members:
+	:noindex:

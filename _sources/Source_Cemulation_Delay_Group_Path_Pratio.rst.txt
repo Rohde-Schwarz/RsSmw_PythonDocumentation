@@ -1,0 +1,20 @@
+Pratio
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:CEMulation:DELay:GROup<ST>:PATH<CH>:PRATio
+
+.. code-block:: python
+
+	[SOURce<HW>]:CEMulation:DELay:GROup<ST>:PATH<CH>:PRATio
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.Delay.Group.Path.Pratio.PratioCls
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,20 @@
+Gain
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:CEMulation:MIMO:SCWI:CLUSter<CH>:GAIN
+
+.. code-block:: python
+
+	[SOURce<HW>]:CEMulation:MIMO:SCWI:CLUSter<CH>:GAIN
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.Mimo.Scwi.Cluster.Gain.GainCls
+	:members:
+	:undoc-members:
+	:noindex:

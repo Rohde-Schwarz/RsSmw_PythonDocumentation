@@ -1,0 +1,20 @@
+Mode
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:ONEWeb:UL:UE<ST>:MODE
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:ONEWeb:UL:UE<ST>:MODE
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Uplink.Ue.Mode.ModeCls
+	:members:
+	:undoc-members:
+	:noindex:

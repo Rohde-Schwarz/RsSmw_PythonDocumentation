@@ -1,0 +1,20 @@
+Pfile
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:CEMulation:SCM:ANTenna:RX:ANTenna<DI>:PFILe
+
+.. code-block:: python
+
+	[SOURce<HW>]:CEMulation:SCM:ANTenna:RX:ANTenna<DI>:PFILe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.Scm.Antenna.Rx.Antenna.Pfile.PfileCls
+	:members:
+	:undoc-members:
+	:noindex:

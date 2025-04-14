@@ -1,0 +1,20 @@
+Qcomponent
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce]:BB:IMPairment:BBMM<CH>:LEAKage:Q
+
+.. code-block:: python
+
+	[SOURce]:BB:IMPairment:BBMM<CH>:LEAKage:Q
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Impairment.Bbmm.Leakage.Qcomponent.QcomponentCls
+	:members:
+	:undoc-members:
+	:noindex:

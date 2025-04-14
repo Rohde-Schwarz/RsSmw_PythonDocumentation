@@ -1,0 +1,20 @@
+ListPy
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: SCONfiguration:RFALignment:SETup:INFO:CALibration:FREQuency:LIST:VALues
+
+.. code-block:: python
+
+	SCONfiguration:RFALignment:SETup:INFO:CALibration:FREQuency:LIST:VALues
+
+
+
+.. autoclass:: RsSmw.Implementations.Sconfiguration.RfAlignment.Setup.Info.Calibration.Frequency.ListPy.ListPyCls
+	:members:
+	:undoc-members:
+	:noindex:

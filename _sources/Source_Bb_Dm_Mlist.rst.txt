@@ -1,0 +1,28 @@
+Mlist
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:DM:MLISt:CATalog
+	single: [SOURce<HW>]:BB:DM:MLISt:DELete
+	single: [SOURce<HW>]:BB:DM:MLISt:FREE
+	single: [SOURce<HW>]:BB:DM:MLISt:POINts
+	single: [SOURce<HW>]:BB:DM:MLISt:SELect
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:DM:MLISt:CATalog
+	[SOURce<HW>]:BB:DM:MLISt:DELete
+	[SOURce<HW>]:BB:DM:MLISt:FREE
+	[SOURce<HW>]:BB:DM:MLISt:POINts
+	[SOURce<HW>]:BB:DM:MLISt:SELect
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dm.Mlist.MlistCls
+	:members:
+	:undoc-members:
+	:noindex:

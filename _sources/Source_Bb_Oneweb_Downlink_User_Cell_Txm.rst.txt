@@ -1,0 +1,20 @@
+Txm
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:ONEWeb:DL:USER<CH>:CELL<ST0>:TXM
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:ONEWeb:DL:USER<CH>:CELL<ST0>:TXM
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Downlink.User.Cell.Txm.TxmCls
+	:members:
+	:undoc-members:
+	:noindex:

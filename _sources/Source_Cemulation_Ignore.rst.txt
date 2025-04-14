@@ -1,0 +1,20 @@
+Ignore
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:CEMulation:IGNore:RFCHanges
+
+.. code-block:: python
+
+	[SOURce<HW>]:CEMulation:IGNore:RFCHanges
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.Ignore.IgnoreCls
+	:members:
+	:undoc-members:
+	:noindex:

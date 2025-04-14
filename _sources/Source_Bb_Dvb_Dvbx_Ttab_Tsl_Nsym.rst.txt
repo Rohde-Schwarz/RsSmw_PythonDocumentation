@@ -1,0 +1,20 @@
+Nsym
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:DVB:DVBX:TTAB:TSL<CH0>:NSYM
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:DVB:DVBX:TTAB:TSL<CH0>:NSYM
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dvb.Dvbx.Ttab.Tsl.Nsym.NsymCls
+	:members:
+	:undoc-members:
+	:noindex:

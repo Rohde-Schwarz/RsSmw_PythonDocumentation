@@ -1,0 +1,20 @@
+Ignore
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:FSIMulator:IGNore:RFCHanges
+
+.. code-block:: python
+
+	[SOURce<HW>]:FSIMulator:IGNore:RFCHanges
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.Ignore.IgnoreCls
+	:members:
+	:undoc-members:
+	:noindex:

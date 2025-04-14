@@ -1,0 +1,24 @@
+Unit
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:REGenerator:UNIT:ANGLe
+	single: [SOURce<HW>]:REGenerator:UNIT:LENGth
+	single: [SOURce<HW>]:REGenerator:UNIT:VELocity
+
+.. code-block:: python
+
+	[SOURce<HW>]:REGenerator:UNIT:ANGLe
+	[SOURce<HW>]:REGenerator:UNIT:LENGth
+	[SOURce<HW>]:REGenerator:UNIT:VELocity
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Regenerator.Unit.UnitCls
+	:members:
+	:undoc-members:
+	:noindex:

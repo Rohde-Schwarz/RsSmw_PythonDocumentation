@@ -1,0 +1,20 @@
+Siso
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:FSIMulator:SISO:COPY
+
+.. code-block:: python
+
+	[SOURce<HW>]:FSIMulator:SISO:COPY
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.Siso.SisoCls
+	:members:
+	:undoc-members:
+	:noindex:

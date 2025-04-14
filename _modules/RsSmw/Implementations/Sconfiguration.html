@@ -1,0 +1,352 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../../">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RsSmw.Implementations.Sconfiguration &mdash; RsSmw 5.30.305.84 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
+
+  
+      <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../../_static/documentation_options.js?v=17bca7dd"></script>
+      <script src="../../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            RsSmw
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../readme.html">Revision History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../enums.html">Enums</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../repcap.html">RepCaps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../RsSmw.html">RsSmw API Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../utilities.html">RsSmw Utilities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../logger.html">RsSmw Logger</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../events.html">RsSmw Events</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../genindex.html">Index</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">RsSmw</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../index.html">Module code</a></li>
+      <li class="breadcrumb-item active">RsSmw.Implementations.Sconfiguration</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Source code for RsSmw.Implementations.Sconfiguration</h1><div class="highlight"><pre>
+<span></span><span class="kn">from</span><span class="w"> </span><span class="nn">...Internal.Core</span><span class="w"> </span><span class="kn">import</span> <span class="n">Core</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">...Internal.CommandsGroup</span><span class="w"> </span><span class="kn">import</span> <span class="n">CommandsGroup</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">...Internal</span><span class="w"> </span><span class="kn">import</span> <span class="n">Conversions</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">...</span><span class="w"> </span><span class="kn">import</span> <span class="n">enums</span>
+
+
+<span class="c1"># noinspection PyPep8Naming,PyAttributeOutsideInit,SpellCheckingInspection</span>
+<div class="viewcode-block" id="SconfigurationCls">
+<a class="viewcode-back" href="../../../Sconfiguration.html#RsSmw.Implementations.Sconfiguration.SconfigurationCls">[docs]</a>
+<span class="k">class</span><span class="w"> </span><span class="nc">SconfigurationCls</span><span class="p">:</span>
+<span class="w">	</span><span class="sd">&quot;&quot;&quot;Sconfiguration commands group definition. 235 total commands, 11 Subgroups, 5 group commands&quot;&quot;&quot;</span>
+
+	<span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">core</span><span class="p">:</span> <span class="n">Core</span><span class="p">,</span> <span class="n">parent</span><span class="p">):</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span> <span class="o">=</span> <span class="n">core</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span> <span class="o">=</span> <span class="n">CommandsGroup</span><span class="p">(</span><span class="s2">&quot;sconfiguration&quot;</span><span class="p">,</span> <span class="n">core</span><span class="p">,</span> <span class="n">parent</span><span class="p">)</span>
+
+	<span class="nd">@property</span>
+	<span class="k">def</span><span class="w"> </span><span class="nf">apply</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;apply commands group. 0 Sub-classes, 1 commands.&quot;&quot;&quot;</span>
+		<span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;_apply&#39;</span><span class="p">):</span>
+			<span class="kn">from</span><span class="w"> </span><span class="nn">.Apply</span><span class="w"> </span><span class="kn">import</span> <span class="n">ApplyCls</span>
+			<span class="bp">self</span><span class="o">.</span><span class="n">_apply</span> <span class="o">=</span> <span class="n">ApplyCls</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span><span class="p">)</span>
+		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_apply</span>
+
+	<span class="nd">@property</span>
+	<span class="k">def</span><span class="w"> </span><span class="nf">baseband</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;baseband commands group. 0 Sub-classes, 1 commands.&quot;&quot;&quot;</span>
+		<span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;_baseband&#39;</span><span class="p">):</span>
+			<span class="kn">from</span><span class="w"> </span><span class="nn">.Baseband</span><span class="w"> </span><span class="kn">import</span> <span class="n">BasebandCls</span>
+			<span class="bp">self</span><span class="o">.</span><span class="n">_baseband</span> <span class="o">=</span> <span class="n">BasebandCls</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span><span class="p">)</span>
+		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_baseband</span>
+
+	<span class="nd">@property</span>
+	<span class="k">def</span><span class="w"> </span><span class="nf">bextension</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;bextension commands group. 5 Sub-classes, 2 commands.&quot;&quot;&quot;</span>
+		<span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;_bextension&#39;</span><span class="p">):</span>
+			<span class="kn">from</span><span class="w"> </span><span class="nn">.Bextension</span><span class="w"> </span><span class="kn">import</span> <span class="n">BextensionCls</span>
+			<span class="bp">self</span><span class="o">.</span><span class="n">_bextension</span> <span class="o">=</span> <span class="n">BextensionCls</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span><span class="p">)</span>
+		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_bextension</span>
+
+	<span class="nd">@property</span>
+	<span class="k">def</span><span class="w"> </span><span class="nf">diq</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;diq commands group. 2 Sub-classes, 0 commands.&quot;&quot;&quot;</span>
+		<span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;_diq&#39;</span><span class="p">):</span>
+			<span class="kn">from</span><span class="w"> </span><span class="nn">.Diq</span><span class="w"> </span><span class="kn">import</span> <span class="n">DiqCls</span>
+			<span class="bp">self</span><span class="o">.</span><span class="n">_diq</span> <span class="o">=</span> <span class="n">DiqCls</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span><span class="p">)</span>
+		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_diq</span>
+
+	<span class="nd">@property</span>
+	<span class="k">def</span><span class="w"> </span><span class="nf">duplicate</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;duplicate commands group. 0 Sub-classes, 1 commands.&quot;&quot;&quot;</span>
+		<span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;_duplicate&#39;</span><span class="p">):</span>
+			<span class="kn">from</span><span class="w"> </span><span class="nn">.Duplicate</span><span class="w"> </span><span class="kn">import</span> <span class="n">DuplicateCls</span>
+			<span class="bp">self</span><span class="o">.</span><span class="n">_duplicate</span> <span class="o">=</span> <span class="n">DuplicateCls</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span><span class="p">)</span>
+		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_duplicate</span>
+
+	<span class="nd">@property</span>
+	<span class="k">def</span><span class="w"> </span><span class="nf">external</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;external commands group. 8 Sub-classes, 3 commands.&quot;&quot;&quot;</span>
+		<span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;_external&#39;</span><span class="p">):</span>
+			<span class="kn">from</span><span class="w"> </span><span class="nn">.External</span><span class="w"> </span><span class="kn">import</span> <span class="n">ExternalCls</span>
+			<span class="bp">self</span><span class="o">.</span><span class="n">_external</span> <span class="o">=</span> <span class="n">ExternalCls</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span><span class="p">)</span>
+		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_external</span>
+
+	<span class="nd">@property</span>
+	<span class="k">def</span><span class="w"> </span><span class="nf">gnss</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;gnss commands group. 1 Sub-classes, 0 commands.&quot;&quot;&quot;</span>
+		<span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;_gnss&#39;</span><span class="p">):</span>
+			<span class="kn">from</span><span class="w"> </span><span class="nn">.Gnss</span><span class="w"> </span><span class="kn">import</span> <span class="n">GnssCls</span>
+			<span class="bp">self</span><span class="o">.</span><span class="n">_gnss</span> <span class="o">=</span> <span class="n">GnssCls</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span><span class="p">)</span>
+		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_gnss</span>
+
+	<span class="nd">@property</span>
+	<span class="k">def</span><span class="w"> </span><span class="nf">multiInstrument</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;multiInstrument commands group. 2 Sub-classes, 2 commands.&quot;&quot;&quot;</span>
+		<span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;_multiInstrument&#39;</span><span class="p">):</span>
+			<span class="kn">from</span><span class="w"> </span><span class="nn">.MultiInstrument</span><span class="w"> </span><span class="kn">import</span> <span class="n">MultiInstrumentCls</span>
+			<span class="bp">self</span><span class="o">.</span><span class="n">_multiInstrument</span> <span class="o">=</span> <span class="n">MultiInstrumentCls</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span><span class="p">)</span>
+		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_multiInstrument</span>
+
+	<span class="nd">@property</span>
+	<span class="k">def</span><span class="w"> </span><span class="nf">output</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;output commands group. 1 Sub-classes, 1 commands.&quot;&quot;&quot;</span>
+		<span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;_output&#39;</span><span class="p">):</span>
+			<span class="kn">from</span><span class="w"> </span><span class="nn">.Output</span><span class="w"> </span><span class="kn">import</span> <span class="n">OutputCls</span>
+			<span class="bp">self</span><span class="o">.</span><span class="n">_output</span> <span class="o">=</span> <span class="n">OutputCls</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span><span class="p">)</span>
+		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_output</span>
+
+	<span class="nd">@property</span>
+	<span class="k">def</span><span class="w"> </span><span class="nf">rfAlignment</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;rfAlignment commands group. 4 Sub-classes, 1 commands.&quot;&quot;&quot;</span>
+		<span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;_rfAlignment&#39;</span><span class="p">):</span>
+			<span class="kn">from</span><span class="w"> </span><span class="nn">.RfAlignment</span><span class="w"> </span><span class="kn">import</span> <span class="n">RfAlignmentCls</span>
+			<span class="bp">self</span><span class="o">.</span><span class="n">_rfAlignment</span> <span class="o">=</span> <span class="n">RfAlignmentCls</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span><span class="p">)</span>
+		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_rfAlignment</span>
+
+	<span class="nd">@property</span>
+	<span class="k">def</span><span class="w"> </span><span class="nf">siso</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;siso commands group. 0 Sub-classes, 1 commands.&quot;&quot;&quot;</span>
+		<span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;_siso&#39;</span><span class="p">):</span>
+			<span class="kn">from</span><span class="w"> </span><span class="nn">.Siso</span><span class="w"> </span><span class="kn">import</span> <span class="n">SisoCls</span>
+			<span class="bp">self</span><span class="o">.</span><span class="n">_siso</span> <span class="o">=</span> <span class="n">SisoCls</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span><span class="p">)</span>
+		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_siso</span>
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="SconfigurationCls.get_bb_bw">
+<a class="viewcode-back" href="../../../Sconfiguration.html#RsSmw.Implementations.Sconfiguration.SconfigurationCls.get_bb_bw">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_bb_bw</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">enums</span><span class="o">.</span><span class="n">SystConfBbBandwidth</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: SCONfiguration:BBBW \n</span>
+<span class="sd">		Snippet: value: enums.SystConfBbBandwidth = driver.sconfiguration.get_bb_bw() \n</span>
+<span class="sd">		Sets the bandwidth of the baseband signal at the inputs of the fading simulator. The available values depend on the</span>
+<span class="sd">		selected MIMO configuration.</span>
+<span class="sd">			INTRO_CMD_HELP: For example: \n</span>
+<span class="sd">			- In MIMO configurations with fewer than 8 channels, the max. baseband bandwidth is 400 MHz.</span>
+<span class="sd">			- In MIMO configurations with fewer than 4 channels, the max. baseband bandwidth is 800 MHz. \n</span>
+<span class="sd">			:return: bandwidth: BB040| BB050| BB080| BB100| BB160| BB200| BB800| BB400| BB500| BB1G| BB2G| BB120| BBOUTDEF| BB240 BB040|BB050 ... Bandwidth in MHz, e.g. 40 MHz. BB1G|BB2G 1 GHz, 2 GHz bandwidth. Available in SISO configurations. BBOUTDEF Bandwidth determined by the signal at the HS DIG I/Q.</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SCONfiguration:BBBW?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_scalar_enum</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">SystConfBbBandwidth</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="SconfigurationCls.set_bb_bw">
+<a class="viewcode-back" href="../../../Sconfiguration.html#RsSmw.Implementations.Sconfiguration.SconfigurationCls.set_bb_bw">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_bb_bw</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">bandwidth</span><span class="p">:</span> <span class="n">enums</span><span class="o">.</span><span class="n">SystConfBbBandwidth</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: SCONfiguration:BBBW \n</span>
+<span class="sd">		Snippet: driver.sconfiguration.set_bb_bw(bandwidth = enums.SystConfBbBandwidth.BB040) \n</span>
+<span class="sd">		Sets the bandwidth of the baseband signal at the inputs of the fading simulator. The available values depend on the</span>
+<span class="sd">		selected MIMO configuration.</span>
+<span class="sd">			INTRO_CMD_HELP: For example: \n</span>
+<span class="sd">			- In MIMO configurations with fewer than 8 channels, the max. baseband bandwidth is 400 MHz.</span>
+<span class="sd">			- In MIMO configurations with fewer than 4 channels, the max. baseband bandwidth is 800 MHz. \n</span>
+<span class="sd">			:param bandwidth: BB040| BB050| BB080| BB100| BB160| BB200| BB800| BB400| BB500| BB1G| BB2G| BB120| BBOUTDEF| BB240 BB040|BB050 ... Bandwidth in MHz, e.g. 40 MHz. BB1G|BB2G 1 GHz, 2 GHz bandwidth. Available in SISO configurations. BBOUTDEF Bandwidth determined by the signal at the HS DIG I/Q.</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">enum_scalar_to_str</span><span class="p">(</span><span class="n">bandwidth</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">SystConfBbBandwidth</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SCONfiguration:BBBW </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="SconfigurationCls.get_cabw">
+<a class="viewcode-back" href="../../../Sconfiguration.html#RsSmw.Implementations.Sconfiguration.SconfigurationCls.get_cabw">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_cabw</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">enums</span><span class="o">.</span><span class="n">SystConfBbBandwidth</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: SCONfiguration:CABW \n</span>
+<span class="sd">		Snippet: value: enums.SystConfBbBandwidth = driver.sconfiguration.get_cabw() \n</span>
+<span class="sd">		Queries the resulting channel aggregation bandwidth, i.e. the signal bandwidth at the outputs of the stream mapper. The</span>
+<span class="sd">		value is calculated automatically and depends on the selected configuration, the installed options and the selected</span>
+<span class="sd">		baseband bandwidth (method RsSmw.Sconfiguration.bbBw) . \n</span>
+<span class="sd">			:return: bandwidth: BB800| BB200</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SCONfiguration:CABW?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_scalar_enum</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">SystConfBbBandwidth</span><span class="p">)</span></div>
+
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="SconfigurationCls.get_fading">
+<a class="viewcode-back" href="../../../Sconfiguration.html#RsSmw.Implementations.Sconfiguration.SconfigurationCls.get_fading">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_fading</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">enums</span><span class="o">.</span><span class="n">SystConfFadConf</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: SCONfiguration:FADing \n</span>
+<span class="sd">		Snippet: value: enums.SystConfFadConf = driver.sconfiguration.get_fading() \n</span>
+<span class="sd">		Defines the signal routing for standard and advanced system configuration modes. The availability of specific</span>
+<span class="sd">		configurations of these modes depends on installed options. For more information, refer to the specifications document.</span>
+<span class="sd">			Table Header: method RsSmw.Sconfiguration.mode / &lt;FadConfig&gt; \n</span>
+<span class="sd">			- STANdard / FAAFBNone | FANFBB | FAAFBB | FAAFBA | FABFBB | FAABFBN | FANFBAB | FAABFBAB</span>
+<span class="sd">			- ADVanced / MIMO1X2 | MIMO2X2 | MIMO2X3 | MIMO2X4 | MIMO3X2 | MIMO3X3 | MIMO3X4 | MIMO4X2 | MIMO4X3 | MIMO4X4 | MIMO1X8 | MIMO8X1 | MIMO2X8 | MIMO8X2 | MIMO2X1 | MIMO2X1X2 | MIMO2X2X1 | MIMO2X1X3 | MIMO2X1X4 | MIMO2X2X2 | MIMO1X3 | MIMO3X1 | MIMO1X4 | MIMO4X1 | MIMO3X1X2 | MIMO3X2X1 | MIMO4X1X2 | MIMO3X2X2 | MIMO4X2X2 | MIMO4X2X1 | SISO2X1X1 | SISO3X1X1 | SISO4X1X1 | SISO5X1X1 | SISO6X1X1 | SISO7X1X1 | SISO8X1X1 | MIMO2X2X4 | MIMO2X4X2 | MIMO2X2X3 | MIMO2X3X1 | MIMO2X3X2 | MIMO2X4X1 MIMO4X8 | MIMO8X4 | MIMO2X4X4 | MIMO2X3X3| MIMO2X3X4 | MIMO2X4X3 MIMO8X8 \n</span>
+<span class="sd">			:return: fad_config: FAAFBNone| FANFBB| FAAFBB| SISO2X1X1| FAAFBA| FABFBB| FAABFBN| FANFBAB| FAABFBAB| MIMO1X2| MIMO2X2| MIMO2X3| MIMO2X4| MIMO3X2| MIMO3X3| MIMO3X4| MIMO4X2| MIMO4X3| MIMO4X4| MIMO1X8| MIMO8X1| MIMO2X8| MIMO8X2| MIMO2X1| MIMO2X1X2| MIMO2X2X1| MIMO2X2X2| MIMO1X3| MIMO3X1| MIMO1X4| MIMO4X1| MIMO3X1X2| MIMO3X2X1| MIMO4X1X2| MIMO3X2X2| MIMO4X2X2| MIMO4X2X1| SISO3X1X1| SISO4X1X1| SISO5X1X1| SISO6X1X1| SISO7X1X1| SISO8X1X1| MIMO2X2X4| MIMO2X4X2| MIMO4X8| MIMO8X4| MIMO2X1X3| MIMO2X1X4| MIMO2X2X3| MIMO2X3X1| MIMO2X3X2| MIMO2X4X1| MIMO2X4X4| MIMO2X3X3| MIMO2X3X4| MIMO2X4X3| MIMO8X8</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SCONfiguration:FADing?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_scalar_enum</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">SystConfFadConf</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="SconfigurationCls.set_fading">
+<a class="viewcode-back" href="../../../Sconfiguration.html#RsSmw.Implementations.Sconfiguration.SconfigurationCls.set_fading">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_fading</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">fad_config</span><span class="p">:</span> <span class="n">enums</span><span class="o">.</span><span class="n">SystConfFadConf</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: SCONfiguration:FADing \n</span>
+<span class="sd">		Snippet: driver.sconfiguration.set_fading(fad_config = enums.SystConfFadConf.FAABFBAB) \n</span>
+<span class="sd">		Defines the signal routing for standard and advanced system configuration modes. The availability of specific</span>
+<span class="sd">		configurations of these modes depends on installed options. For more information, refer to the specifications document.</span>
+<span class="sd">			Table Header: method RsSmw.Sconfiguration.mode / &lt;FadConfig&gt; \n</span>
+<span class="sd">			- STANdard / FAAFBNone | FANFBB | FAAFBB | FAAFBA | FABFBB | FAABFBN | FANFBAB | FAABFBAB</span>
+<span class="sd">			- ADVanced / MIMO1X2 | MIMO2X2 | MIMO2X3 | MIMO2X4 | MIMO3X2 | MIMO3X3 | MIMO3X4 | MIMO4X2 | MIMO4X3 | MIMO4X4 | MIMO1X8 | MIMO8X1 | MIMO2X8 | MIMO8X2 | MIMO2X1 | MIMO2X1X2 | MIMO2X2X1 | MIMO2X1X3 | MIMO2X1X4 | MIMO2X2X2 | MIMO1X3 | MIMO3X1 | MIMO1X4 | MIMO4X1 | MIMO3X1X2 | MIMO3X2X1 | MIMO4X1X2 | MIMO3X2X2 | MIMO4X2X2 | MIMO4X2X1 | SISO2X1X1 | SISO3X1X1 | SISO4X1X1 | SISO5X1X1 | SISO6X1X1 | SISO7X1X1 | SISO8X1X1 | MIMO2X2X4 | MIMO2X4X2 | MIMO2X2X3 | MIMO2X3X1 | MIMO2X3X2 | MIMO2X4X1 MIMO4X8 | MIMO8X4 | MIMO2X4X4 | MIMO2X3X3| MIMO2X3X4 | MIMO2X4X3 MIMO8X8 \n</span>
+<span class="sd">			:param fad_config: FAAFBNone| FANFBB| FAAFBB| SISO2X1X1| FAAFBA| FABFBB| FAABFBN| FANFBAB| FAABFBAB| MIMO1X2| MIMO2X2| MIMO2X3| MIMO2X4| MIMO3X2| MIMO3X3| MIMO3X4| MIMO4X2| MIMO4X3| MIMO4X4| MIMO1X8| MIMO8X1| MIMO2X8| MIMO8X2| MIMO2X1| MIMO2X1X2| MIMO2X2X1| MIMO2X2X2| MIMO1X3| MIMO3X1| MIMO1X4| MIMO4X1| MIMO3X1X2| MIMO3X2X1| MIMO4X1X2| MIMO3X2X2| MIMO4X2X2| MIMO4X2X1| SISO3X1X1| SISO4X1X1| SISO5X1X1| SISO6X1X1| SISO7X1X1| SISO8X1X1| MIMO2X2X4| MIMO2X4X2| MIMO4X8| MIMO8X4| MIMO2X1X3| MIMO2X1X4| MIMO2X2X3| MIMO2X3X1| MIMO2X3X2| MIMO2X4X1| MIMO2X4X4| MIMO2X3X3| MIMO2X3X4| MIMO2X4X3| MIMO8X8</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">enum_scalar_to_str</span><span class="p">(</span><span class="n">fad_config</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">SystConfFadConf</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SCONfiguration:FADing </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="SconfigurationCls.get_mode">
+<a class="viewcode-back" href="../../../Sconfiguration.html#RsSmw.Implementations.Sconfiguration.SconfigurationCls.get_mode">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_mode</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">enums</span><span class="o">.</span><span class="n">SystConfMode</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: SCONfiguration:MODE \n</span>
+<span class="sd">		Snippet: value: enums.SystConfMode = driver.sconfiguration.get_mode() \n</span>
+<span class="sd">		Switches between the operating modes. \n</span>
+<span class="sd">			:return: mode: ADVanced| STANdard| REGenerator | GNSS | ESEQuencer | BWEXtension ADVanced|STANdard Switches between the and . REGenerator Enables the R&amp;S SMW200A to work as a radar echo generator. The fading simulator is disabled. See &#39;Welcome to the Option&#39;. GNSS Enables the R&amp;S SMW200A to work in GNSS advanced mode. The fading simulator is disabled. See &#39;Welcome to the GNSS Satellite Navigation Options&#39;. ESEQuencer Enables the R&amp;S SMW200A to work in an advanced extended sequencer mode. The fading simulator, the AWGN, the BB input and all baseband digital standards are disabled. See &#39;Welcome to the Extended Sequencer&#39;. BEXTension Enables the R&amp;S SMW200A to generate RF signals with extended bandwidth. These signals typically have bandwidths above 2.4 GHz. See &#39;Welcome to the option&#39;.</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SCONfiguration:MODE?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_scalar_enum</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">SystConfMode</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="SconfigurationCls.set_mode">
+<a class="viewcode-back" href="../../../Sconfiguration.html#RsSmw.Implementations.Sconfiguration.SconfigurationCls.set_mode">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_mode</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">mode</span><span class="p">:</span> <span class="n">enums</span><span class="o">.</span><span class="n">SystConfMode</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: SCONfiguration:MODE \n</span>
+<span class="sd">		Snippet: driver.sconfiguration.set_mode(mode = enums.SystConfMode.ADVanced) \n</span>
+<span class="sd">		Switches between the operating modes. \n</span>
+<span class="sd">			:param mode: ADVanced| STANdard| REGenerator | GNSS | ESEQuencer | BWEXtension ADVanced|STANdard Switches between the and . REGenerator Enables the R&amp;S SMW200A to work as a radar echo generator. The fading simulator is disabled. See &#39;Welcome to the Option&#39;. GNSS Enables the R&amp;S SMW200A to work in GNSS advanced mode. The fading simulator is disabled. See &#39;Welcome to the GNSS Satellite Navigation Options&#39;. ESEQuencer Enables the R&amp;S SMW200A to work in an advanced extended sequencer mode. The fading simulator, the AWGN, the BB input and all baseband digital standards are disabled. See &#39;Welcome to the Extended Sequencer&#39;. BEXTension Enables the R&amp;S SMW200A to generate RF signals with extended bandwidth. These signals typically have bandwidths above 2.4 GHz. See &#39;Welcome to the option&#39;.</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">enum_scalar_to_str</span><span class="p">(</span><span class="n">mode</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">SystConfMode</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SCONfiguration:MODE </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="SconfigurationCls.preset">
+<a class="viewcode-back" href="../../../Sconfiguration.html#RsSmw.Implementations.Sconfiguration.SconfigurationCls.preset">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">preset</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: SCONfiguration:PRESet \n</span>
+<span class="sd">		Snippet: driver.sconfiguration.preset() \n</span>
+<span class="sd">		Presets the signal routing in the baseband section and the fading configuration to the default state. \n</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SCONfiguration:PRESet&#39;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="SconfigurationCls.preset_with_opc">
+<a class="viewcode-back" href="../../../Sconfiguration.html#RsSmw.Implementations.Sconfiguration.SconfigurationCls.preset_with_opc">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">preset_with_opc</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">opc_timeout_ms</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: SCONfiguration:PRESet \n</span>
+<span class="sd">		Snippet: driver.sconfiguration.preset_with_opc() \n</span>
+<span class="sd">		Presets the signal routing in the baseband section and the fading configuration to the default state. \n</span>
+<span class="sd">		Same as preset, but waits for the operation to complete before continuing further. Use the RsSmw.utilities.opc_timeout_set() to set the timeout value. \n</span>
+<span class="sd">			:param opc_timeout_ms: Maximum time to wait in milliseconds, valid only for this call.&quot;&quot;&quot;</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write_with_opc</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SCONfiguration:PRESet&#39;</span><span class="p">,</span> <span class="n">opc_timeout_ms</span><span class="p">)</span></div>
+
+
+	<span class="k">def</span><span class="w"> </span><span class="nf">clone</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s1">&#39;SconfigurationCls&#39;</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;Clones the group by creating new object from it and its whole existing subgroups</span>
+<span class="sd">		Also copies all the existing default Repeated Capabilities setting,</span>
+<span class="sd">		which you can change independently without affecting the original group&quot;&quot;&quot;</span>
+		<span class="n">new_group</span> <span class="o">=</span> <span class="n">SconfigurationCls</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span><span class="o">.</span><span class="n">parent</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span><span class="o">.</span><span class="n">synchronize_repcaps</span><span class="p">(</span><span class="n">new_group</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">new_group</span></div>
+
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright © Rohde &amp; Schwarz 2023.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

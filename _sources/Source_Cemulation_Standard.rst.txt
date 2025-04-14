@@ -1,0 +1,22 @@
+Standard
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:CEMulation:STANdard:REFerence
+	single: [SOURce<HW>]:CEMulation:STANdard
+
+.. code-block:: python
+
+	[SOURce<HW>]:CEMulation:STANdard:REFerence
+	[SOURce<HW>]:CEMulation:STANdard
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.Standard.StandardCls
+	:members:
+	:undoc-members:
+	:noindex:

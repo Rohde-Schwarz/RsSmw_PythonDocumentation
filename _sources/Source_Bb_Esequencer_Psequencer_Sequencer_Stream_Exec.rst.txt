@@ -1,0 +1,20 @@
+Exec
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:ESEQuencer:PSEQuencer:[SEQuencer<ST>]:STReam:EXEC
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:ESEQuencer:PSEQuencer:[SEQuencer<ST>]:STReam:EXEC
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Esequencer.Psequencer.Sequencer.Stream.Exec.ExecCls
+	:members:
+	:undoc-members:
+	:noindex:

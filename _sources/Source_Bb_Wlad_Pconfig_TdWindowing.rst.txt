@@ -1,0 +1,20 @@
+TdWindowing
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:WLAD:PCONfig:TDWindowing:STATe
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:WLAD:PCONfig:TDWindowing:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Wlad.Pconfig.TdWindowing.TdWindowingCls
+	:members:
+	:undoc-members:
+	:noindex:

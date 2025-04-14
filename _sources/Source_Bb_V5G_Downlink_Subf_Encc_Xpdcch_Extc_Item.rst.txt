@@ -1,0 +1,46 @@
+Item<ItemNull>
+----------------------------------------
+
+.. rubric:: RepCap Settings
+
+.. code-block:: python
+
+	# Range: Nr0 .. Nr63
+	rc = driver.source.bb.v5G.downlink.subf.encc.xpdcch.extc.item.repcap_itemNull_get()
+	driver.source.bb.v5G.downlink.subf.encc.xpdcch.extc.item.repcap_itemNull_set(repcap.ItemNull.Nr0)
+
+
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Downlink.Subf.Encc.Xpdcch.Extc.Item.ItemCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.v5G.downlink.subf.encc.xpdcch.extc.item.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_V5G_Downlink_Subf_Encc_Xpdcch_Extc_Item_Cell.rst
+	Source_Bb_V5G_Downlink_Subf_Encc_Xpdcch_Extc_Item_Cindex.rst
+	Source_Bb_V5G_Downlink_Subf_Encc_Xpdcch_Extc_Item_Conflict.rst
+	Source_Bb_V5G_Downlink_Subf_Encc_Xpdcch_Extc_Item_DciConf.rst
+	Source_Bb_V5G_Downlink_Subf_Encc_Xpdcch_Extc_Item_DciFmt.rst
+	Source_Bb_V5G_Downlink_Subf_Encc_Xpdcch_Extc_Item_Ncces.rst
+	Source_Bb_V5G_Downlink_Subf_Encc_Xpdcch_Extc_Item_Ndcces.rst
+	Source_Bb_V5G_Downlink_Subf_Encc_Xpdcch_Extc_Item_Pfmt.rst
+	Source_Bb_V5G_Downlink_Subf_Encc_Xpdcch_Extc_Item_Symbol.rst
+	Source_Bb_V5G_Downlink_Subf_Encc_Xpdcch_Extc_Item_UeId.rst
+	Source_Bb_V5G_Downlink_Subf_Encc_Xpdcch_Extc_Item_User.rst

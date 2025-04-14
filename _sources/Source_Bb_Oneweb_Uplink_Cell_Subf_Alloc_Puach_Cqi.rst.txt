@@ -1,0 +1,30 @@
+Cqi
+----------------------------------------
+
+
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Uplink.Cell.Subf.Alloc.Puach.Cqi.CqiCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.oneweb.uplink.cell.subf.alloc.puach.cqi.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Oneweb_Uplink_Cell_Subf_Alloc_Puach_Cqi_Bits.rst
+	Source_Bb_Oneweb_Uplink_Cell_Subf_Alloc_Puach_Cqi_Cbits.rst
+	Source_Bb_Oneweb_Uplink_Cell_Subf_Alloc_Puach_Cqi_Pattern.rst

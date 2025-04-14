@@ -1,0 +1,20 @@
+Ask
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:DM:ASK:DEPTh
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:DM:ASK:DEPTh
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dm.Ask.AskCls
+	:members:
+	:undoc-members:
+	:noindex:

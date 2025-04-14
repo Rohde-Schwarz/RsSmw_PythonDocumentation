@@ -1,0 +1,20 @@
+Nidpcrs
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:V5G:DL:[SUBF<ST0>]:ALLoc<CH0>:XPDSch:PCRS:NIDPcrs
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:V5G:DL:[SUBF<ST0>]:ALLoc<CH0>:XPDSch:PCRS:NIDPcrs
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Downlink.Subf.Alloc.Xpdsch.Pcrs.Nidpcrs.NidpcrsCls
+	:members:
+	:undoc-members:
+	:noindex:

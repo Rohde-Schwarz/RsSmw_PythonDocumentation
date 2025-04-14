@@ -1,0 +1,20 @@
+Source
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: SCONfiguration:BEXTension:CORRection:PORT<CH>:SOURce
+
+.. code-block:: python
+
+	SCONfiguration:BEXTension:CORRection:PORT<CH>:SOURce
+
+
+
+.. autoclass:: RsSmw.Implementations.Sconfiguration.Bextension.Correction.Port.Source.SourceCls
+	:members:
+	:undoc-members:
+	:noindex:

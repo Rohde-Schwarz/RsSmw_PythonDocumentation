@@ -1,0 +1,20 @@
+Payload
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:DVB:DVBX:THConfig:PAYLoad:[STATe]
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:DVB:DVBX:THConfig:PAYLoad:[STATe]
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dvb.Dvbx.ThConfig.Payload.PayloadCls
+	:members:
+	:undoc-members:
+	:noindex:

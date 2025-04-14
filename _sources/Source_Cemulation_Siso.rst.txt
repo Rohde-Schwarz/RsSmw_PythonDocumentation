@@ -1,0 +1,20 @@
+Siso
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:CEMulation:SISO:COPY
+
+.. code-block:: python
+
+	[SOURce<HW>]:CEMulation:SISO:COPY
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.Siso.SisoCls
+	:members:
+	:undoc-members:
+	:noindex:

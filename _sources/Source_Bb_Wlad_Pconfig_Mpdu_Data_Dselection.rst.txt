@@ -1,0 +1,20 @@
+Dselection
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:WLAD:PCONfig:MPDU<ST>:DATA:DSELection
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:WLAD:PCONfig:MPDU<ST>:DATA:DSELection
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Wlad.Pconfig.Mpdu.Data.Dselection.DselectionCls
+	:members:
+	:undoc-members:
+	:noindex:

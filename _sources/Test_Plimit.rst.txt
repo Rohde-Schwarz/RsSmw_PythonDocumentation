@@ -1,0 +1,20 @@
+Plimit
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: TEST:PLIMit:FREQuency
+
+.. code-block:: python
+
+	TEST:PLIMit:FREQuency
+
+
+
+.. autoclass:: RsSmw.Implementations.Test.Plimit.PlimitCls
+	:members:
+	:undoc-members:
+	:noindex:

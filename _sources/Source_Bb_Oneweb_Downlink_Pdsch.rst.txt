@@ -1,0 +1,22 @@
+Pdsch
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:ONEWeb:DL:PDSCh:PB
+	single: [SOURce<HW>]:BB:ONEWeb:DL:PDSCh:RATBa
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:ONEWeb:DL:PDSCh:PB
+	[SOURce<HW>]:BB:ONEWeb:DL:PDSCh:RATBa
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Downlink.Pdsch.PdschCls
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,28 @@
+Lrf
+----------------------------------------
+
+
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Iq.Doherty.Lrf.LrfCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.iq.doherty.lrf.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Iq_Doherty_Lrf_File.rst

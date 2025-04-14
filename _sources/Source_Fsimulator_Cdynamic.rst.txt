@@ -1,0 +1,40 @@
+Cdynamic
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:FSIMulator:CDYNamic:DELete
+	single: [SOURce<HW>]:FSIMulator:CDYNamic:STATe
+
+.. code-block:: python
+
+	[SOURce<HW>]:FSIMulator:CDYNamic:DELete
+	[SOURce<HW>]:FSIMulator:CDYNamic:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.Cdynamic.CdynamicCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.fsimulator.cdynamic.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Fsimulator_Cdynamic_Catalog.rst
+	Source_Fsimulator_Cdynamic_Path.rst

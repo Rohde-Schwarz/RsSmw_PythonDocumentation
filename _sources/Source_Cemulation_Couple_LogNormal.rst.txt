@@ -1,0 +1,22 @@
+LogNormal
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:CEMulation:COUPle:LOGNormal:CSTD
+	single: [SOURce<HW>]:CEMulation:COUPle:LOGNormal:LCONstant
+
+.. code-block:: python
+
+	[SOURce<HW>]:CEMulation:COUPle:LOGNormal:CSTD
+	[SOURce<HW>]:CEMulation:COUPle:LOGNormal:LCONstant
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.Couple.LogNormal.LogNormalCls
+	:members:
+	:undoc-members:
+	:noindex:

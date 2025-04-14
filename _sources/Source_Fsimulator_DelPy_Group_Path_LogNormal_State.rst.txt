@@ -1,0 +1,20 @@
+State
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:FSIMulator:DEL:GROup<ST>:PATH<CH>:LOGNormal:STATe
+
+.. code-block:: python
+
+	[SOURce<HW>]:FSIMulator:DEL:GROup<ST>:PATH<CH>:LOGNormal:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.DelPy.Group.Path.LogNormal.State.StateCls
+	:members:
+	:undoc-members:
+	:noindex:

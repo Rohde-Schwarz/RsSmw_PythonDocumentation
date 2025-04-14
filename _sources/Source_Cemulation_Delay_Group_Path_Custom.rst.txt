@@ -1,0 +1,29 @@
+Custom
+----------------------------------------
+
+
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.Delay.Group.Path.Custom.CustomCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.cemulation.delay.group.path.custom.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Cemulation_Delay_Group_Path_Custom_Data.rst
+	Source_Cemulation_Delay_Group_Path_Custom_Dshape.rst

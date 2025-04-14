@@ -1,0 +1,30 @@
+Srs
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:ONEWeb:UL:REFSig:SRS:ANSTx
+	single: [SOURce<HW>]:BB:ONEWeb:UL:REFSig:SRS:CSRS
+	single: [SOURce<HW>]:BB:ONEWeb:UL:REFSig:SRS:DSFC
+	single: [SOURce<HW>]:BB:ONEWeb:UL:REFSig:SRS:MUPTs
+	single: [SOURce<HW>]:BB:ONEWeb:UL:REFSig:SRS:SUConfiguration
+	single: [SOURce<HW>]:BB:ONEWeb:UL:REFSig:SRS:TSFC
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:ONEWeb:UL:REFSig:SRS:ANSTx
+	[SOURce<HW>]:BB:ONEWeb:UL:REFSig:SRS:CSRS
+	[SOURce<HW>]:BB:ONEWeb:UL:REFSig:SRS:DSFC
+	[SOURce<HW>]:BB:ONEWeb:UL:REFSig:SRS:MUPTs
+	[SOURce<HW>]:BB:ONEWeb:UL:REFSig:SRS:SUConfiguration
+	[SOURce<HW>]:BB:ONEWeb:UL:REFSig:SRS:TSFC
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Uplink.Refsig.Srs.SrsCls
+	:members:
+	:undoc-members:
+	:noindex:

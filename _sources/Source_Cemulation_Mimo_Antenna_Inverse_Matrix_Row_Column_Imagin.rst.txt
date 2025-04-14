@@ -1,0 +1,20 @@
+Imagin
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:CEMulation:MIMO:ANTenna:INVerse:MATRix:ROW<ST>:COLumn<CH>:IMAGin
+
+.. code-block:: python
+
+	[SOURce<HW>]:CEMulation:MIMO:ANTenna:INVerse:MATRix:ROW<ST>:COLumn<CH>:IMAGin
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.Mimo.Antenna.Inverse.Matrix.Row.Column.Imagin.ImaginCls
+	:members:
+	:undoc-members:
+	:noindex:

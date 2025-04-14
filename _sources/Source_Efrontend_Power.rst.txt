@@ -1,0 +1,22 @@
+Power
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:EFRontend:POWer:ATTenuation
+	single: [SOURce<HW>]:EFRontend:POWer:OFFSet
+
+.. code-block:: python
+
+	[SOURce<HW>]:EFRontend:POWer:ATTenuation
+	[SOURce<HW>]:EFRontend:POWer:OFFSet
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Efrontend.Power.PowerCls
+	:members:
+	:undoc-members:
+	:noindex:

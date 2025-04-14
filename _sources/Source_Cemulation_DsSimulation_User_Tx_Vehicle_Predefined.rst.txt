@@ -1,0 +1,22 @@
+Predefined
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:CEMulation:DSSimulation:USER:TX:VEHicle:PREDefined:CATegory
+	single: [SOURce<HW>]:CEMulation:DSSimulation:USER:TX:VEHicle:PREDefined:TYPE
+
+.. code-block:: python
+
+	[SOURce<HW>]:CEMulation:DSSimulation:USER:TX:VEHicle:PREDefined:CATegory
+	[SOURce<HW>]:CEMulation:DSSimulation:USER:TX:VEHicle:PREDefined:TYPE
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.DsSimulation.User.Tx.Vehicle.Predefined.PredefinedCls
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,37 @@
+SubPath<SubPath>
+----------------------------------------
+
+.. rubric:: RepCap Settings
+
+.. code-block:: python
+
+	# Range: Nr1 .. Nr20
+	rc = driver.source.cemulation.scm.tap.subPath.repcap_subPath_get()
+	driver.source.cemulation.scm.tap.subPath.repcap_subPath_set(repcap.SubPath.Nr1)
+
+
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.Scm.Tap.SubPath.SubPathCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.cemulation.scm.tap.subPath.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Cemulation_Scm_Tap_SubPath_Phase.rst
+	Source_Cemulation_Scm_Tap_SubPath_State.rst

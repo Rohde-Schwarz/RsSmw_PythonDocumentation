@@ -1,0 +1,20 @@
+Duration
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:DVB:DVBR:SFConfig<CH0>:FRConfig<ST0>:BTU:DURation
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:DVB:DVBR:SFConfig<CH0>:FRConfig<ST0>:BTU:DURation
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dvb.Dvbr.SfConfig.FrConfig.Btu.Duration.DurationCls
+	:members:
+	:undoc-members:
+	:noindex:

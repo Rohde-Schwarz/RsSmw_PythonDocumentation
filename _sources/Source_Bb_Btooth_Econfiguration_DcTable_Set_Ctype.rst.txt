@@ -1,0 +1,20 @@
+Ctype
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:DCTable:SET<CH>:CTYPe
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:DCTable:SET<CH>:CTYPe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Btooth.Econfiguration.DcTable.Set.Ctype.CtypeCls
+	:members:
+	:undoc-members:
+	:noindex:

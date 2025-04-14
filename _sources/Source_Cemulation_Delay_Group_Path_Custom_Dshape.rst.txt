@@ -1,0 +1,20 @@
+Dshape
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:CEMulation:DELay:GROup<ST>:PATH<CH>:CUSTom:DSHape
+
+.. code-block:: python
+
+	[SOURce<HW>]:CEMulation:DELay:GROup<ST>:PATH<CH>:CUSTom:DSHape
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.Delay.Group.Path.Custom.Dshape.DshapeCls
+	:members:
+	:undoc-members:
+	:noindex:

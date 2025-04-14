@@ -1,0 +1,20 @@
+Path
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:CEMulation:HSTRain:PATH:STATe
+
+.. code-block:: python
+
+	[SOURce<HW>]:CEMulation:HSTRain:PATH:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.HsTrain.Path.PathCls
+	:members:
+	:undoc-members:
+	:noindex:

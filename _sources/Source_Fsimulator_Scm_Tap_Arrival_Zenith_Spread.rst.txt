@@ -1,0 +1,20 @@
+Spread
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:FSIMulator:SCM:TAP<ST>:ARRival:ZENith:SPRead
+
+.. code-block:: python
+
+	[SOURce<HW>]:FSIMulator:SCM:TAP<ST>:ARRival:ZENith:SPRead
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.Scm.Tap.Arrival.Zenith.Spread.SpreadCls
+	:members:
+	:undoc-members:
+	:noindex:

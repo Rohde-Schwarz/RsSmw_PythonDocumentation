@@ -1,0 +1,20 @@
+Sindex
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:ONEWeb:UL:UE<ST>:PRACh:SUBF<CH0>:SINDex
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:ONEWeb:UL:UE<ST>:PRACh:SUBF<CH0>:SINDex
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Uplink.Ue.Prach.Subf.Sindex.SindexCls
+	:members:
+	:undoc-members:
+	:noindex:

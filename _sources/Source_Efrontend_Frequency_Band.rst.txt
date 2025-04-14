@@ -1,0 +1,47 @@
+Band<Band>
+----------------------------------------
+
+.. rubric:: RepCap Settings
+
+.. code-block:: python
+
+	# Range: Nr1 .. Nr8
+	rc = driver.source.efrontend.frequency.band.repcap_band_get()
+	driver.source.efrontend.frequency.band.repcap_band_set(repcap.Band.Nr1)
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:EFRontend:FREQuency:BAND:COUNt
+
+.. code-block:: python
+
+	[SOURce<HW>]:EFRontend:FREQuency:BAND:COUNt
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Efrontend.Frequency.Band.BandCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.efrontend.frequency.band.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Efrontend_Frequency_Band_Config.rst
+	Source_Efrontend_Frequency_Band_Lower.rst
+	Source_Efrontend_Frequency_Band_Upper.rst

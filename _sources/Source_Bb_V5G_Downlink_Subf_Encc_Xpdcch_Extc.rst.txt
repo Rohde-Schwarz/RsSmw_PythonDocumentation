@@ -1,0 +1,47 @@
+Extc
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:V5G:DL:[SUBF<ST0>]:ENCC:XPDCch:EXTC:DELete
+	single: [SOURce<HW>]:BB:V5G:DL:[SUBF<ST0>]:ENCC:XPDCch:EXTC:RESet
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:V5G:DL:[SUBF<ST0>]:ENCC:XPDCch:EXTC:DELete
+	[SOURce<HW>]:BB:V5G:DL:[SUBF<ST0>]:ENCC:XPDCch:EXTC:RESet
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Downlink.Subf.Encc.Xpdcch.Extc.ExtcCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.v5G.downlink.subf.encc.xpdcch.extc.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_V5G_Downlink_Subf_Encc_Xpdcch_Extc_Append.rst
+	Source_Bb_V5G_Downlink_Subf_Encc_Xpdcch_Extc_Conflicts.rst
+	Source_Bb_V5G_Downlink_Subf_Encc_Xpdcch_Extc_Down.rst
+	Source_Bb_V5G_Downlink_Subf_Encc_Xpdcch_Extc_Insert.rst
+	Source_Bb_V5G_Downlink_Subf_Encc_Xpdcch_Extc_Item.rst
+	Source_Bb_V5G_Downlink_Subf_Encc_Xpdcch_Extc_Sitem.rst
+	Source_Bb_V5G_Downlink_Subf_Encc_Xpdcch_Extc_Solve.rst
+	Source_Bb_V5G_Downlink_Subf_Encc_Xpdcch_Extc_Uitems.rst
+	Source_Bb_V5G_Downlink_Subf_Encc_Xpdcch_Extc_Up.rst

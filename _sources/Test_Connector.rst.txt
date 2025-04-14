@@ -1,0 +1,22 @@
+Connector
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: TEST:CONNector:AUXio
+	single: TEST:CONNector:BNC
+
+.. code-block:: python
+
+	TEST:CONNector:AUXio
+	TEST:CONNector:BNC
+
+
+
+.. autoclass:: RsSmw.Implementations.Test.Connector.ConnectorCls
+	:members:
+	:undoc-members:
+	:noindex:

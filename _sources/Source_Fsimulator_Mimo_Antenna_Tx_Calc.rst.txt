@@ -1,0 +1,20 @@
+Calc
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:FSIMulator:MIMO:ANTenna:TX:CALC:MODE
+
+.. code-block:: python
+
+	[SOURce<HW>]:FSIMulator:MIMO:ANTenna:TX:CALC:MODE
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.Mimo.Antenna.Tx.Calc.CalcCls
+	:members:
+	:undoc-members:
+	:noindex:

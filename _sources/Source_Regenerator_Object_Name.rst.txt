@@ -1,0 +1,20 @@
+Name
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:REGenerator:OBJect<CH>:NAME
+
+.. code-block:: python
+
+	[SOURce<HW>]:REGenerator:OBJect<CH>:NAME
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Regenerator.Object.Name.NameCls
+	:members:
+	:undoc-members:
+	:noindex:

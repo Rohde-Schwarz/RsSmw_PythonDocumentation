@@ -1,0 +1,54 @@
+Wlad
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:WLAD:DPMode
+	single: [SOURce<HW>]:BB:WLAD:FTYPe
+	single: [SOURce<HW>]:BB:WLAD:ITIMe
+	single: [SOURce<HW>]:BB:WLAD:PRESet
+	single: [SOURce<HW>]:BB:WLAD:SLENgth
+	single: [SOURce<HW>]:BB:WLAD:STATe
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:WLAD:DPMode
+	[SOURce<HW>]:BB:WLAD:FTYPe
+	[SOURce<HW>]:BB:WLAD:ITIMe
+	[SOURce<HW>]:BB:WLAD:PRESet
+	[SOURce<HW>]:BB:WLAD:SLENgth
+	[SOURce<HW>]:BB:WLAD:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Wlad.WladCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.wlad.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Wlad_Clipping.rst
+	Source_Bb_Wlad_Clock.rst
+	Source_Bb_Wlad_FilterPy.rst
+	Source_Bb_Wlad_Pconfig.rst
+	Source_Bb_Wlad_Setting.rst
+	Source_Bb_Wlad_SymbolRate.rst
+	Source_Bb_Wlad_Trigger.rst
+	Source_Bb_Wlad_Waveform.rst

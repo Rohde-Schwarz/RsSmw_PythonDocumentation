@@ -1,0 +1,37 @@
+SubCluster<SubCluster>
+----------------------------------------
+
+.. rubric:: RepCap Settings
+
+.. code-block:: python
+
+	# Range: Nr1 .. Nr3
+	rc = driver.source.cemulation.scm.tap.subCluster.repcap_subCluster_get()
+	driver.source.cemulation.scm.tap.subCluster.repcap_subCluster_set(repcap.SubCluster.Nr1)
+
+
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.Scm.Tap.SubCluster.SubClusterCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.cemulation.scm.tap.subCluster.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Cemulation_Scm_Tap_SubCluster_Gain.rst
+	Source_Cemulation_Scm_Tap_SubCluster_State.rst

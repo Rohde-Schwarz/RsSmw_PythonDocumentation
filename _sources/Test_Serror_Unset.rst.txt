@@ -1,0 +1,20 @@
+Unset
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: TEST<HW>:SERRor:UNSet
+
+.. code-block:: python
+
+	TEST<HW>:SERRor:UNSet
+
+
+
+.. autoclass:: RsSmw.Implementations.Test.Serror.Unset.UnsetCls
+	:members:
+	:undoc-members:
+	:noindex:

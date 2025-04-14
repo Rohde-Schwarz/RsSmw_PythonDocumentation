@@ -1,0 +1,35 @@
+Stream
+----------------------------------------
+
+
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Esequencer.Estreaming.Stream.StreamCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.esequencer.estreaming.stream.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Esequencer_Estreaming_Stream_Errors.rst
+	Source_Bb_Esequencer_Estreaming_Stream_RxbLive.rst
+	Source_Bb_Esequencer_Estreaming_Stream_RxbMin.rst
+	Source_Bb_Esequencer_Estreaming_Stream_RxcFrames.rst
+	Source_Bb_Esequencer_Estreaming_Stream_RxdBytes.rst
+	Source_Bb_Esequencer_Estreaming_Stream_RxdFrames.rst
+	Source_Bb_Esequencer_Estreaming_Stream_RxuSegments.rst
+	Source_Bb_Esequencer_Estreaming_Stream_TxrFrames.rst

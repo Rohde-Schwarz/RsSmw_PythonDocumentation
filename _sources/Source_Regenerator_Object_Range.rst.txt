@@ -1,0 +1,29 @@
+Range
+----------------------------------------
+
+
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Regenerator.Object.Range.RangeCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.regenerator.object.range.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Regenerator_Object_Range_End.rst
+	Source_Regenerator_Object_Range_Start.rst

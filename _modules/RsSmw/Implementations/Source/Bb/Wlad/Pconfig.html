@@ -1,0 +1,455 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../../../../../">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RsSmw.Implementations.Source.Bb.Wlad.Pconfig &mdash; RsSmw 5.30.305.84 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../../../../../_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="../../../../../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../../../../../_static/copybutton.css?v=76b2166b" />
+
+  
+      <script src="../../../../../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../../../../../_static/documentation_options.js?v=17bca7dd"></script>
+      <script src="../../../../../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../../../../../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../../../../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../../../../index.html" class="icon icon-home">
+            RsSmw
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../readme.html">Revision History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../enums.html">Enums</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../repcap.html">RepCaps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../RsSmw.html">RsSmw API Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../utilities.html">RsSmw Utilities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../logger.html">RsSmw Logger</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../events.html">RsSmw Events</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../genindex.html">Index</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../../../index.html">RsSmw</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../../../index.html">Module code</a></li>
+          <li class="breadcrumb-item"><a href="../../../Source.html">RsSmw.Implementations.Source</a></li>
+          <li class="breadcrumb-item"><a href="../../Bb.html">RsSmw.Implementations.Source.Bb</a></li>
+          <li class="breadcrumb-item"><a href="../Wlad.html">RsSmw.Implementations.Source.Bb.Wlad</a></li>
+      <li class="breadcrumb-item active">RsSmw.Implementations.Source.Bb.Wlad.Pconfig</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Source code for RsSmw.Implementations.Source.Bb.Wlad.Pconfig</h1><div class="highlight"><pre>
+<span></span><span class="kn">from</span><span class="w"> </span><span class="nn">......Internal.Core</span><span class="w"> </span><span class="kn">import</span> <span class="n">Core</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">......Internal.CommandsGroup</span><span class="w"> </span><span class="kn">import</span> <span class="n">CommandsGroup</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">......Internal</span><span class="w"> </span><span class="kn">import</span> <span class="n">Conversions</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">......</span><span class="w"> </span><span class="kn">import</span> <span class="n">enums</span>
+
+
+<span class="c1"># noinspection PyPep8Naming,PyAttributeOutsideInit,SpellCheckingInspection</span>
+<div class="viewcode-block" id="PconfigCls">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Wlad_Pconfig.html#RsSmw.Implementations.Source.Bb.Wlad.Pconfig.PconfigCls">[docs]</a>
+<span class="k">class</span><span class="w"> </span><span class="nc">PconfigCls</span><span class="p">:</span>
+<span class="w">	</span><span class="sd">&quot;&quot;&quot;Pconfig commands group definition. 55 total commands, 11 Subgroups, 9 group commands&quot;&quot;&quot;</span>
+
+	<span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">core</span><span class="p">:</span> <span class="n">Core</span><span class="p">,</span> <span class="n">parent</span><span class="p">):</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span> <span class="o">=</span> <span class="n">core</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span> <span class="o">=</span> <span class="n">CommandsGroup</span><span class="p">(</span><span class="s2">&quot;pconfig&quot;</span><span class="p">,</span> <span class="n">core</span><span class="p">,</span> <span class="n">parent</span><span class="p">)</span>
+
+	<span class="nd">@property</span>
+	<span class="k">def</span><span class="w"> </span><span class="nf">btRequest</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;btRequest commands group. 0 Sub-classes, 1 commands.&quot;&quot;&quot;</span>
+		<span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;_btRequest&#39;</span><span class="p">):</span>
+			<span class="kn">from</span><span class="w"> </span><span class="nn">.BtRequest</span><span class="w"> </span><span class="kn">import</span> <span class="n">BtRequestCls</span>
+			<span class="bp">self</span><span class="o">.</span><span class="n">_btRequest</span> <span class="o">=</span> <span class="n">BtRequestCls</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span><span class="p">)</span>
+		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_btRequest</span>
+
+	<span class="nd">@property</span>
+	<span class="k">def</span><span class="w"> </span><span class="nf">coding</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;coding commands group. 0 Sub-classes, 2 commands.&quot;&quot;&quot;</span>
+		<span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;_coding&#39;</span><span class="p">):</span>
+			<span class="kn">from</span><span class="w"> </span><span class="nn">.Coding</span><span class="w"> </span><span class="kn">import</span> <span class="n">CodingCls</span>
+			<span class="bp">self</span><span class="o">.</span><span class="n">_coding</span> <span class="o">=</span> <span class="n">CodingCls</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span><span class="p">)</span>
+		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_coding</span>
+
+	<span class="nd">@property</span>
+	<span class="k">def</span><span class="w"> </span><span class="nf">data</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;data commands group. 1 Sub-classes, 5 commands.&quot;&quot;&quot;</span>
+		<span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;_data&#39;</span><span class="p">):</span>
+			<span class="kn">from</span><span class="w"> </span><span class="nn">.Data</span><span class="w"> </span><span class="kn">import</span> <span class="n">DataCls</span>
+			<span class="bp">self</span><span class="o">.</span><span class="n">_data</span> <span class="o">=</span> <span class="n">DataCls</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span><span class="p">)</span>
+		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_data</span>
+
+	<span class="nd">@property</span>
+	<span class="k">def</span><span class="w"> </span><span class="nf">dindicator</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;dindicator commands group. 0 Sub-classes, 1 commands.&quot;&quot;&quot;</span>
+		<span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;_dindicator&#39;</span><span class="p">):</span>
+			<span class="kn">from</span><span class="w"> </span><span class="nn">.Dindicator</span><span class="w"> </span><span class="kn">import</span> <span class="n">DindicatorCls</span>
+			<span class="bp">self</span><span class="o">.</span><span class="n">_dindicator</span> <span class="o">=</span> <span class="n">DindicatorCls</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span><span class="p">)</span>
+		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_dindicator</span>
+
+	<span class="nd">@property</span>
+	<span class="k">def</span><span class="w"> </span><span class="nf">gpi</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;gpi commands group. 0 Sub-classes, 1 commands.&quot;&quot;&quot;</span>
+		<span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;_gpi&#39;</span><span class="p">):</span>
+			<span class="kn">from</span><span class="w"> </span><span class="nn">.Gpi</span><span class="w"> </span><span class="kn">import</span> <span class="n">GpiCls</span>
+			<span class="bp">self</span><span class="o">.</span><span class="n">_gpi</span> <span class="o">=</span> <span class="n">GpiCls</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span><span class="p">)</span>
+		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_gpi</span>
+
+	<span class="nd">@property</span>
+	<span class="k">def</span><span class="w"> </span><span class="nf">mac</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;mac commands group. 5 Sub-classes, 2 commands.&quot;&quot;&quot;</span>
+		<span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;_mac&#39;</span><span class="p">):</span>
+			<span class="kn">from</span><span class="w"> </span><span class="nn">.Mac</span><span class="w"> </span><span class="kn">import</span> <span class="n">MacCls</span>
+			<span class="bp">self</span><span class="o">.</span><span class="n">_mac</span> <span class="o">=</span> <span class="n">MacCls</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span><span class="p">)</span>
+		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_mac</span>
+
+	<span class="nd">@property</span>
+	<span class="k">def</span><span class="w"> </span><span class="nf">mpdu</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;mpdu commands group. 1 Sub-classes, 1 commands.&quot;&quot;&quot;</span>
+		<span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;_mpdu&#39;</span><span class="p">):</span>
+			<span class="kn">from</span><span class="w"> </span><span class="nn">.Mpdu</span><span class="w"> </span><span class="kn">import</span> <span class="n">MpduCls</span>
+			<span class="bp">self</span><span class="o">.</span><span class="n">_mpdu</span> <span class="o">=</span> <span class="n">MpduCls</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span><span class="p">)</span>
+		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_mpdu</span>
+
+	<span class="nd">@property</span>
+	<span class="k">def</span><span class="w"> </span><span class="nf">preamble</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;preamble commands group. 0 Sub-classes, 1 commands.&quot;&quot;&quot;</span>
+		<span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;_preamble&#39;</span><span class="p">):</span>
+			<span class="kn">from</span><span class="w"> </span><span class="nn">.Preamble</span><span class="w"> </span><span class="kn">import</span> <span class="n">PreambleCls</span>
+			<span class="bp">self</span><span class="o">.</span><span class="n">_preamble</span> <span class="o">=</span> <span class="n">PreambleCls</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span><span class="p">)</span>
+		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_preamble</span>
+
+	<span class="nd">@property</span>
+	<span class="k">def</span><span class="w"> </span><span class="nf">scrambler</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;scrambler commands group. 1 Sub-classes, 1 commands.&quot;&quot;&quot;</span>
+		<span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;_scrambler&#39;</span><span class="p">):</span>
+			<span class="kn">from</span><span class="w"> </span><span class="nn">.Scrambler</span><span class="w"> </span><span class="kn">import</span> <span class="n">ScramblerCls</span>
+			<span class="bp">self</span><span class="o">.</span><span class="n">_scrambler</span> <span class="o">=</span> <span class="n">ScramblerCls</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span><span class="p">)</span>
+		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_scrambler</span>
+
+	<span class="nd">@property</span>
+	<span class="k">def</span><span class="w"> </span><span class="nf">taRound</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;taRound commands group. 0 Sub-classes, 1 commands.&quot;&quot;&quot;</span>
+		<span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;_taRound&#39;</span><span class="p">):</span>
+			<span class="kn">from</span><span class="w"> </span><span class="nn">.TaRound</span><span class="w"> </span><span class="kn">import</span> <span class="n">TaRoundCls</span>
+			<span class="bp">self</span><span class="o">.</span><span class="n">_taRound</span> <span class="o">=</span> <span class="n">TaRoundCls</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span><span class="p">)</span>
+		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_taRound</span>
+
+	<span class="nd">@property</span>
+	<span class="k">def</span><span class="w"> </span><span class="nf">tdWindowing</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;tdWindowing commands group. 0 Sub-classes, 1 commands.&quot;&quot;&quot;</span>
+		<span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;_tdWindowing&#39;</span><span class="p">):</span>
+			<span class="kn">from</span><span class="w"> </span><span class="nn">.TdWindowing</span><span class="w"> </span><span class="kn">import</span> <span class="n">TdWindowingCls</span>
+			<span class="bp">self</span><span class="o">.</span><span class="n">_tdWindowing</span> <span class="o">=</span> <span class="n">TdWindowingCls</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span><span class="p">)</span>
+		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_tdWindowing</span>
+
+<div class="viewcode-block" id="PconfigCls.get_em_indication">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Wlad_Pconfig.html#RsSmw.Implementations.Source.Bb.Wlad.Pconfig.PconfigCls.get_em_indication">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_em_indication</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:WLAD:PCONfig:EMINdication \n</span>
+<span class="sd">		Snippet: value: bool = driver.source.bb.wlad.pconfig.get_em_indication() \n</span>
+<span class="sd">		The value of this field indicates the length of the PSDU. \n</span>
+<span class="sd">			:return: ext_sc_mcs_ind: 1| ON| 0| OFF</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:WLAD:PCONfig:EMINdication?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_bool</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="PconfigCls.set_em_indication">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Wlad_Pconfig.html#RsSmw.Implementations.Source.Bb.Wlad.Pconfig.PconfigCls.set_em_indication">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_em_indication</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ext_sc_mcs_ind</span><span class="p">:</span> <span class="nb">bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:WLAD:PCONfig:EMINdication \n</span>
+<span class="sd">		Snippet: driver.source.bb.wlad.pconfig.set_em_indication(ext_sc_mcs_ind = False) \n</span>
+<span class="sd">		The value of this field indicates the length of the PSDU. \n</span>
+<span class="sd">			:param ext_sc_mcs_ind: 1| ON| 0| OFF</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">bool_to_str</span><span class="p">(</span><span class="n">ext_sc_mcs_ind</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:WLAD:PCONfig:EMINdication </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="PconfigCls.get_lrssi">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Wlad_Pconfig.html#RsSmw.Implementations.Source.Bb.Wlad.Pconfig.PconfigCls.get_lrssi">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_lrssi</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">enums</span><span class="o">.</span><span class="n">WlanadLastRssi</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:WLAD:PCONfig:LRSSi \n</span>
+<span class="sd">		Snippet: value: enums.WlanadLastRssi = driver.source.bb.wlad.pconfig.get_lrssi() \n</span>
+<span class="sd">		Sets the last RSSI. \n</span>
+<span class="sd">			:return: lrssi: NA| M68| M67| M65| M63| M61| M59| M57| M55| M53| M51| M49| M47| M45| M43| M42</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:WLAD:PCONfig:LRSSi?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_scalar_enum</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">WlanadLastRssi</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="PconfigCls.set_lrssi">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Wlad_Pconfig.html#RsSmw.Implementations.Source.Bb.Wlad.Pconfig.PconfigCls.set_lrssi">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_lrssi</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">lrssi</span><span class="p">:</span> <span class="n">enums</span><span class="o">.</span><span class="n">WlanadLastRssi</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:WLAD:PCONfig:LRSSi \n</span>
+<span class="sd">		Snippet: driver.source.bb.wlad.pconfig.set_lrssi(lrssi = enums.WlanadLastRssi.M42) \n</span>
+<span class="sd">		Sets the last RSSI. \n</span>
+<span class="sd">			:param lrssi: NA| M68| M67| M65| M63| M61| M59| M57| M55| M53| M51| M49| M47| M45| M43| M42</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">enum_scalar_to_str</span><span class="p">(</span><span class="n">lrssi</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">WlanadLastRssi</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:WLAD:PCONfig:LRSSi </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="PconfigCls.get_mcs">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Wlad_Pconfig.html#RsSmw.Implementations.Source.Bb.Wlad.Pconfig.PconfigCls.get_mcs">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_mcs</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">enums</span><span class="o">.</span><span class="n">WlannMcs</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:WLAD:PCONfig:MCS \n</span>
+<span class="sd">		Snippet: value: enums.WlannMcs = driver.source.bb.wlad.pconfig.get_mcs() \n</span>
+<span class="sd">		Selects the modulation and coding scheme for all spatial streams. \n</span>
+<span class="sd">			:return: mcs: MCS0| MCS1| MCS2| MCS3| MCS4| MCS5| MCS6| MCS7| MCS8| MCS9| MCS10| MCS11| MCS12| MCS13| MCS14| MCS15| MCS16| MCS17| MCS18| MCS19| MCS20| MCS21| MCS22| MCS23| MCS24| MCS25| MCS26| MCS27| MCS28| MCS29| MCS30| MCS31| MCS91| MCS121| MCS122| MCS125| MCS123| MCS124| MCS126</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:WLAD:PCONfig:MCS?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_scalar_enum</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">WlannMcs</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="PconfigCls.set_mcs">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Wlad_Pconfig.html#RsSmw.Implementations.Source.Bb.Wlad.Pconfig.PconfigCls.set_mcs">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_mcs</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">mcs</span><span class="p">:</span> <span class="n">enums</span><span class="o">.</span><span class="n">WlannMcs</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:WLAD:PCONfig:MCS \n</span>
+<span class="sd">		Snippet: driver.source.bb.wlad.pconfig.set_mcs(mcs = enums.WlannMcs.MCS0) \n</span>
+<span class="sd">		Selects the modulation and coding scheme for all spatial streams. \n</span>
+<span class="sd">			:param mcs: MCS0| MCS1| MCS2| MCS3| MCS4| MCS5| MCS6| MCS7| MCS8| MCS9| MCS10| MCS11| MCS12| MCS13| MCS14| MCS15| MCS16| MCS17| MCS18| MCS19| MCS20| MCS21| MCS22| MCS23| MCS24| MCS25| MCS26| MCS27| MCS28| MCS29| MCS30| MCS31| MCS91| MCS121| MCS122| MCS125| MCS123| MCS124| MCS126</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">enum_scalar_to_str</span><span class="p">(</span><span class="n">mcs</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">WlannMcs</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:WLAD:PCONfig:MCS </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="PconfigCls.get_mtype">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Wlad_Pconfig.html#RsSmw.Implementations.Source.Bb.Wlad.Pconfig.PconfigCls.get_mtype">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_mtype</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">enums</span><span class="o">.</span><span class="n">WlanadModType</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:WLAD:PCONfig:MTYPe \n</span>
+<span class="sd">		Snippet: value: enums.WlanadModType = driver.source.bb.wlad.pconfig.get_mtype() \n</span>
+<span class="sd">		Sets the modulation type. \n</span>
+<span class="sd">			:return: mtype: DBPSK| SQPSK| QPSK| QAM16| QAM64| P2BPSK| P2QPSK| P2QAM16| P2QAM64| P2PSK8| P2NUC64| DCMP2BPSK</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:WLAD:PCONfig:MTYPe?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_scalar_enum</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">WlanadModType</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="PconfigCls.set_mtype">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Wlad_Pconfig.html#RsSmw.Implementations.Source.Bb.Wlad.Pconfig.PconfigCls.set_mtype">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_mtype</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">mtype</span><span class="p">:</span> <span class="n">enums</span><span class="o">.</span><span class="n">WlanadModType</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:WLAD:PCONfig:MTYPe \n</span>
+<span class="sd">		Snippet: driver.source.bb.wlad.pconfig.set_mtype(mtype = enums.WlanadModType.DBPSK) \n</span>
+<span class="sd">		Sets the modulation type. \n</span>
+<span class="sd">			:param mtype: DBPSK| SQPSK| QPSK| QAM16| QAM64| P2BPSK| P2QPSK| P2QAM16| P2QAM64| P2PSK8| P2NUC64| DCMP2BPSK</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">enum_scalar_to_str</span><span class="p">(</span><span class="n">mtype</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">WlanadModType</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:WLAD:PCONfig:MTYPe </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="PconfigCls.get_ptype">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Wlad_Pconfig.html#RsSmw.Implementations.Source.Bb.Wlad.Pconfig.PconfigCls.get_ptype">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_ptype</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">enums</span><span class="o">.</span><span class="n">WlanadPackType</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:WLAD:PCONfig:PTYPe \n</span>
+<span class="sd">		Snippet: value: enums.WlanadPackType = driver.source.bb.wlad.pconfig.get_ptype() \n</span>
+<span class="sd">		Selects the packet type.</span>
+<span class="sd">			INTRO_CMD_HELP: Selectable packet types depend on the PHY format: \n</span>
+<span class="sd">			- DMG format: Packet type is a receive training packet (TRN-R) or transmit training packet (TRN-T) .</span>
+<span class="sd">			- EDMG format: Packet type is a receive training packet (TRN-R) , transmit training packet (TRN-T) or receive/transmit training packet (TRN-R/T) . \n</span>
+<span class="sd">			:return: ptype: TRNR| TRNT| TRNTR TRNR Receive training packet. The data part of a packet is followed by one or more TRN-R subfields; or a packet is requesting that a TRN-R subfield is added to a future response packet. TRNT Transmit training packet. The data part of packet is followed by one or more TRN-T subfields. TRNTR Receive/transmit training packet. The data part of packet is followed by one or more TRN-R/T subfields.</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:WLAD:PCONfig:PTYPe?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_scalar_enum</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">WlanadPackType</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="PconfigCls.set_ptype">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Wlad_Pconfig.html#RsSmw.Implementations.Source.Bb.Wlad.Pconfig.PconfigCls.set_ptype">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_ptype</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ptype</span><span class="p">:</span> <span class="n">enums</span><span class="o">.</span><span class="n">WlanadPackType</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:WLAD:PCONfig:PTYPe \n</span>
+<span class="sd">		Snippet: driver.source.bb.wlad.pconfig.set_ptype(ptype = enums.WlanadPackType.TRNR) \n</span>
+<span class="sd">		Selects the packet type.</span>
+<span class="sd">			INTRO_CMD_HELP: Selectable packet types depend on the PHY format: \n</span>
+<span class="sd">			- DMG format: Packet type is a receive training packet (TRN-R) or transmit training packet (TRN-T) .</span>
+<span class="sd">			- EDMG format: Packet type is a receive training packet (TRN-R) , transmit training packet (TRN-T) or receive/transmit training packet (TRN-R/T) . \n</span>
+<span class="sd">			:param ptype: TRNR| TRNT| TRNTR TRNR Receive training packet. The data part of a packet is followed by one or more TRN-R subfields; or a packet is requesting that a TRN-R subfield is added to a future response packet. TRNT Transmit training packet. The data part of packet is followed by one or more TRN-T subfields. TRNTR Receive/transmit training packet. The data part of packet is followed by one or more TRN-R/T subfields.</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">enum_scalar_to_str</span><span class="p">(</span><span class="n">ptype</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">WlanadPackType</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:WLAD:PCONfig:PTYPe </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="PconfigCls.get_repetition">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Wlad_Pconfig.html#RsSmw.Implementations.Source.Bb.Wlad.Pconfig.PconfigCls.get_repetition">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_repetition</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:WLAD:PCONfig:REPetition \n</span>
+<span class="sd">		Snippet: value: int = driver.source.bb.wlad.pconfig.get_repetition() \n</span>
+<span class="sd">		Sets the repetition number. \n</span>
+<span class="sd">			:return: rep: integer Range: 1 to 2</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:WLAD:PCONfig:REPetition?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_int</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="PconfigCls.set_repetition">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Wlad_Pconfig.html#RsSmw.Implementations.Source.Bb.Wlad.Pconfig.PconfigCls.set_repetition">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_repetition</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">rep</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:WLAD:PCONfig:REPetition \n</span>
+<span class="sd">		Snippet: driver.source.bb.wlad.pconfig.set_repetition(rep = 1) \n</span>
+<span class="sd">		Sets the repetition number. \n</span>
+<span class="sd">			:param rep: integer Range: 1 to 2</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">decimal_value_to_str</span><span class="p">(</span><span class="n">rep</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:WLAD:PCONfig:REPetition </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="PconfigCls.get_tlength">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Wlad_Pconfig.html#RsSmw.Implementations.Source.Bb.Wlad.Pconfig.PconfigCls.get_tlength">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_tlength</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:WLAD:PCONfig:TLENgth \n</span>
+<span class="sd">		Snippet: value: int = driver.source.bb.wlad.pconfig.get_tlength() \n</span>
+<span class="sd">		Sets the training length. \n</span>
+<span class="sd">			:return: tlen: integer Range: 0 to 16</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:WLAD:PCONfig:TLENgth?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_int</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="PconfigCls.set_tlength">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Wlad_Pconfig.html#RsSmw.Implementations.Source.Bb.Wlad.Pconfig.PconfigCls.set_tlength">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_tlength</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tlen</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:WLAD:PCONfig:TLENgth \n</span>
+<span class="sd">		Snippet: driver.source.bb.wlad.pconfig.set_tlength(tlen = 1) \n</span>
+<span class="sd">		Sets the training length. \n</span>
+<span class="sd">			:param tlen: integer Range: 0 to 16</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">decimal_value_to_str</span><span class="p">(</span><span class="n">tlen</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:WLAD:PCONfig:TLENgth </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="PconfigCls.get_tp_type">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Wlad_Pconfig.html#RsSmw.Implementations.Source.Bb.Wlad.Pconfig.PconfigCls.get_tp_type">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_tp_type</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">enums</span><span class="o">.</span><span class="n">WlanadTonePairType</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:WLAD:PCONfig:TPTYpe \n</span>
+<span class="sd">		Snippet: value: enums.WlanadTonePairType = driver.source.bb.wlad.pconfig.get_tp_type() \n</span>
+<span class="sd">		No command help available \n</span>
+<span class="sd">			:return: tp_type: No help available</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:WLAD:PCONfig:TPTYpe?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_scalar_enum</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">WlanadTonePairType</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="PconfigCls.set_tp_type">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Wlad_Pconfig.html#RsSmw.Implementations.Source.Bb.Wlad.Pconfig.PconfigCls.set_tp_type">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_tp_type</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tp_type</span><span class="p">:</span> <span class="n">enums</span><span class="o">.</span><span class="n">WlanadTonePairType</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:WLAD:PCONfig:TPTYpe \n</span>
+<span class="sd">		Snippet: driver.source.bb.wlad.pconfig.set_tp_type(tp_type = enums.WlanadTonePairType.DYNamic) \n</span>
+<span class="sd">		No command help available \n</span>
+<span class="sd">			:param tp_type: No help available</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">enum_scalar_to_str</span><span class="p">(</span><span class="n">tp_type</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">WlanadTonePairType</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:WLAD:PCONfig:TPTYpe </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="PconfigCls.get_ttime">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Wlad_Pconfig.html#RsSmw.Implementations.Source.Bb.Wlad.Pconfig.PconfigCls.get_ttime">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_ttime</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:WLAD:PCONfig:TTIMe \n</span>
+<span class="sd">		Snippet: value: float = driver.source.bb.wlad.pconfig.get_ttime() \n</span>
+<span class="sd">		No command help available \n</span>
+<span class="sd">			:return: ttime: No help available</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:WLAD:PCONfig:TTIMe?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_float</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="PconfigCls.set_ttime">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Wlad_Pconfig.html#RsSmw.Implementations.Source.Bb.Wlad.Pconfig.PconfigCls.set_ttime">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_ttime</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ttime</span><span class="p">:</span> <span class="nb">float</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;SCPI: [SOURce&lt;HW&gt;]:BB:WLAD:PCONfig:TTIMe \n</span>
+<span class="sd">		Snippet: driver.source.bb.wlad.pconfig.set_ttime(ttime = 1.0) \n</span>
+<span class="sd">		No command help available \n</span>
+<span class="sd">			:param ttime: No help available</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">decimal_value_to_str</span><span class="p">(</span><span class="n">ttime</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:WLAD:PCONfig:TTIMe </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+	<span class="k">def</span><span class="w"> </span><span class="nf">clone</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s1">&#39;PconfigCls&#39;</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;Clones the group by creating new object from it and its whole existing subgroups</span>
+<span class="sd">		Also copies all the existing default Repeated Capabilities setting,</span>
+<span class="sd">		which you can change independently without affecting the original group&quot;&quot;&quot;</span>
+		<span class="n">new_group</span> <span class="o">=</span> <span class="n">PconfigCls</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span><span class="o">.</span><span class="n">parent</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span><span class="o">.</span><span class="n">synchronize_repcaps</span><span class="p">(</span><span class="n">new_group</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">new_group</span></div>
+
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright © Rohde &amp; Schwarz 2023.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

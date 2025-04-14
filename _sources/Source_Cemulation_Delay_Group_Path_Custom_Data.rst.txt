@@ -1,0 +1,20 @@
+Data
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:CEMulation:DELay:GROup<ST>:PATH<CH>:CUSTom:DATA
+
+.. code-block:: python
+
+	[SOURce<HW>]:CEMulation:DELay:GROup<ST>:PATH<CH>:CUSTom:DATA
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.Delay.Group.Path.Custom.Data.DataCls
+	:members:
+	:undoc-members:
+	:noindex:

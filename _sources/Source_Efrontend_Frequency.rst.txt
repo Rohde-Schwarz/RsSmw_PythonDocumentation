@@ -1,0 +1,31 @@
+Frequency
+----------------------------------------
+
+
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Efrontend.Frequency.FrequencyCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.efrontend.frequency.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Efrontend_Frequency_Band.rst
+	Source_Efrontend_Frequency_Bconfig.rst
+	Source_Efrontend_Frequency_Ifrequency.rst
+	Source_Efrontend_Frequency_Reference.rst

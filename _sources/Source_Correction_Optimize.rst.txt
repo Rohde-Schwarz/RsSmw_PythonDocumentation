@@ -1,0 +1,37 @@
+Optimize
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:CORRection:OPTimize:EVM
+
+.. code-block:: python
+
+	[SOURce<HW>]:CORRection:OPTimize:EVM
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Correction.Optimize.OptimizeCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.correction.optimize.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Correction_Optimize_Rf.rst

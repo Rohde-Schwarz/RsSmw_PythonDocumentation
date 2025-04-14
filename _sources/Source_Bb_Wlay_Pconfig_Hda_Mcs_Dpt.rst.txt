@@ -1,0 +1,20 @@
+Dpt
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:WLAY:PCONfig:HDA:MCS:DPT:STATe
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:WLAY:PCONfig:HDA:MCS:DPT:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Wlay.Pconfig.Hda.Mcs.Dpt.DptCls
+	:members:
+	:undoc-members:
+	:noindex:

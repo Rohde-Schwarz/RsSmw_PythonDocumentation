@@ -1,0 +1,20 @@
+Tdelay
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:DM:TRIGger:OBASeband<CH>:TDELay
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:DM:TRIGger:OBASeband<CH>:TDELay
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dm.Trigger.Obaseband.Tdelay.TdelayCls
+	:members:
+	:undoc-members:
+	:noindex:

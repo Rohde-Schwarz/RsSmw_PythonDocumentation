@@ -1,0 +1,20 @@
+State
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:CEMulation:CDYNamic:PATH<CH>:CONVert:STATe
+
+.. code-block:: python
+
+	[SOURce<HW>]:CEMulation:CDYNamic:PATH<CH>:CONVert:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.Cdynamic.Path.Convert.State.StateCls
+	:members:
+	:undoc-members:
+	:noindex:

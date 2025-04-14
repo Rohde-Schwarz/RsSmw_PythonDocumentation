@@ -1,0 +1,20 @@
+RbOffset
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:ONEWeb:UL:[CELL<CCIDX>]:[SUBF<ST0>]:SLOT<USER0>:ALLoc<CH0>:PUSCh:SET<GR>:RBOFfset
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:ONEWeb:UL:[CELL<CCIDX>]:[SUBF<ST0>]:SLOT<USER0>:ALLoc<CH0>:PUSCh:SET<GR>:RBOFfset
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Uplink.Cell.Subf.Slot.Alloc.Pusch.Set.RbOffset.RbOffsetCls
+	:members:
+	:undoc-members:
+	:noindex:

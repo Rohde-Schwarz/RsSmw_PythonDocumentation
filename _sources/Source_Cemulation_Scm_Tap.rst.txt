@@ -1,0 +1,40 @@
+Tap<MimoTap>
+----------------------------------------
+
+.. rubric:: RepCap Settings
+
+.. code-block:: python
+
+	# Range: Nr1 .. Nr10
+	rc = driver.source.cemulation.scm.tap.repcap_mimoTap_get()
+	driver.source.cemulation.scm.tap.repcap_mimoTap_set(repcap.MimoTap.Nr1)
+
+
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.Scm.Tap.TapCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.cemulation.scm.tap.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Cemulation_Scm_Tap_Arrival.rst
+	Source_Cemulation_Scm_Tap_Departure.rst
+	Source_Cemulation_Scm_Tap_Gain.rst
+	Source_Cemulation_Scm_Tap_SubCluster.rst
+	Source_Cemulation_Scm_Tap_SubPath.rst

@@ -1,0 +1,20 @@
+Hopping
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:CEMulation:BIRThdeath:HOPPing:DWELl
+
+.. code-block:: python
+
+	[SOURce<HW>]:CEMulation:BIRThdeath:HOPPing:DWELl
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.BirthDeath.Hopping.HoppingCls
+	:members:
+	:undoc-members:
+	:noindex:

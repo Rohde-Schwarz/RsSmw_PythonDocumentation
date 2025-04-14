@@ -1,0 +1,49 @@
+SfConfig<SfCfgIxNull>
+----------------------------------------
+
+.. rubric:: RepCap Settings
+
+.. code-block:: python
+
+	# Range: Nr0 .. Nr31
+	rc = driver.source.bb.dvb.dvbr.sfConfig.repcap_sfCfgIxNull_get()
+	driver.source.bb.dvb.dvbr.sfConfig.repcap_sfCfgIxNull_set(repcap.SfCfgIxNull.Nr0)
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:DVB:DVBR:SFConfig<CH0>:DELete
+	single: [SOURce<HW>]:BB:DVB:DVBR:SFConfig<CH0>:RESet
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:DVB:DVBR:SFConfig<CH0>:DELete
+	[SOURce<HW>]:BB:DVB:DVBR:SFConfig<CH0>:RESet
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dvb.Dvbr.SfConfig.SfConfigCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.dvb.dvbr.sfConfig.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Dvb_Dvbr_SfConfig_Append.rst
+	Source_Bb_Dvb_Dvbr_SfConfig_Frames.rst
+	Source_Bb_Dvb_Dvbr_SfConfig_FrConfig.rst

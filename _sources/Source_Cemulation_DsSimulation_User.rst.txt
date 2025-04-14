@@ -1,0 +1,31 @@
+User
+----------------------------------------
+
+
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.DsSimulation.User.UserCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.cemulation.dsSimulation.user.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Cemulation_DsSimulation_User_Profile.rst
+	Source_Cemulation_DsSimulation_User_Rx.rst
+	Source_Cemulation_DsSimulation_User_Tpa.rst
+	Source_Cemulation_DsSimulation_User_Tx.rst

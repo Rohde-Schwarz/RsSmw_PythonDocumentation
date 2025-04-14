@@ -1,0 +1,36 @@
+TypePy<TypePy>
+----------------------------------------
+
+.. rubric:: RepCap Settings
+
+.. code-block:: python
+
+	# Range: Nr1 .. Nr3
+	rc = driver.source.cemulation.delPy.typePy.repcap_typePy_get()
+	driver.source.cemulation.delPy.typePy.repcap_typePy_set(repcap.TypePy.Nr1)
+
+
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.DelPy.TypePy.TypePyCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.cemulation.delPy.typePy.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Cemulation_DelPy_TypePy_Unit.rst

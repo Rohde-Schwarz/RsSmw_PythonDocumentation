@@ -1,0 +1,39 @@
+Roscillator
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce]:ROSCillator:SOURce
+
+.. code-block:: python
+
+	[SOURce]:ROSCillator:SOURce
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Roscillator.RoscillatorCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.roscillator.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Roscillator_External.rst
+	Source_Roscillator_Internal.rst
+	Source_Roscillator_Output.rst

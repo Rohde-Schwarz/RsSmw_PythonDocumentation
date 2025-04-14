@@ -1,0 +1,39 @@
+Copy
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:CEMulation:COPY:DESTination
+	single: [SOURce<HW>]:CEMulation:COPY:SOURce
+
+.. code-block:: python
+
+	[SOURce<HW>]:CEMulation:COPY:DESTination
+	[SOURce<HW>]:CEMulation:COPY:SOURce
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.Copy.CopyCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.cemulation.copy.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Cemulation_Copy_Execute.rst

@@ -1,0 +1,20 @@
+Cphase
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:CEMulation:MDELay:DEL30:GROup<ST>:PATH<CH>:CPHase
+
+.. code-block:: python
+
+	[SOURce<HW>]:CEMulation:MDELay:DEL30:GROup<ST>:PATH<CH>:CPHase
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.Mdelay.Del30.Group.Path.Cphase.CphaseCls
+	:members:
+	:undoc-members:
+	:noindex:

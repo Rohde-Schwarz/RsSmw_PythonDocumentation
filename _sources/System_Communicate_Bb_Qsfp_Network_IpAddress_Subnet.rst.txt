@@ -1,0 +1,20 @@
+Subnet
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: SYSTem:COMMunicate:BB<HW>:QSFP:NETWork:[IPADdress]:SUBNet:MASK
+
+.. code-block:: python
+
+	SYSTem:COMMunicate:BB<HW>:QSFP:NETWork:[IPADdress]:SUBNet:MASK
+
+
+
+.. autoclass:: RsSmw.Implementations.System.Communicate.Bb.Qsfp.Network.IpAddress.Subnet.SubnetCls
+	:members:
+	:undoc-members:
+	:noindex:

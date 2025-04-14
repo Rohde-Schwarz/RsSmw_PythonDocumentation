@@ -1,0 +1,37 @@
+Level<NoisePoint>
+----------------------------------------
+
+.. rubric:: RepCap Settings
+
+.. code-block:: python
+
+	# Range: Nr1 .. Nr5
+	rc = driver.source.noise.level.repcap_noisePoint_get()
+	driver.source.noise.level.repcap_noisePoint_set(repcap.NoisePoint.Nr1)
+
+
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Noise.Level.LevelCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.noise.level.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Noise_Level_Absolute.rst
+	Source_Noise_Level_Relative.rst

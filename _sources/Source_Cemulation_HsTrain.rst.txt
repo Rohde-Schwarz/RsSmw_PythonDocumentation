@@ -1,0 +1,49 @@
+HsTrain
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:CEMulation:HSTRain:FDOPpler
+	single: [SOURce<HW>]:CEMulation:HSTRain:KFACtor
+	single: [SOURce<HW>]:CEMulation:HSTRain:PROFile
+	single: [SOURce<HW>]:CEMulation:HSTRain:SOFFset
+	single: [SOURce<HW>]:CEMulation:HSTRain:SPEed
+	single: [SOURce<HW>]:CEMulation:HSTRain:STATe
+
+.. code-block:: python
+
+	[SOURce<HW>]:CEMulation:HSTRain:FDOPpler
+	[SOURce<HW>]:CEMulation:HSTRain:KFACtor
+	[SOURce<HW>]:CEMulation:HSTRain:PROFile
+	[SOURce<HW>]:CEMulation:HSTRain:SOFFset
+	[SOURce<HW>]:CEMulation:HSTRain:SPEed
+	[SOURce<HW>]:CEMulation:HSTRain:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.HsTrain.HsTrainCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.cemulation.hsTrain.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Cemulation_HsTrain_Distance.rst
+	Source_Cemulation_HsTrain_Downlink.rst
+	Source_Cemulation_HsTrain_Path.rst

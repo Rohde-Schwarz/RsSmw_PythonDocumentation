@@ -1,0 +1,41 @@
+Setup
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: SCONfiguration:RFALignment:SETup:CATalog
+	single: SCONfiguration:RFALignment:SETup:STATus
+
+.. code-block:: python
+
+	SCONfiguration:RFALignment:SETup:CATalog
+	SCONfiguration:RFALignment:SETup:STATus
+
+
+
+.. autoclass:: RsSmw.Implementations.Sconfiguration.RfAlignment.Setup.SetupCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.sconfiguration.rfAlignment.setup.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Sconfiguration_RfAlignment_Setup_File.rst
+	Sconfiguration_RfAlignment_Setup_Info.rst
+	Sconfiguration_RfAlignment_Setup_Predefined.rst

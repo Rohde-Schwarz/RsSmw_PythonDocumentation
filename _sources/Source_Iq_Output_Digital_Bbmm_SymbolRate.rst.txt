@@ -1,0 +1,41 @@
+SymbolRate
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce]:IQ:OUTPut:DIGital:BBMM<CH>:SRATe
+
+.. code-block:: python
+
+	[SOURce]:IQ:OUTPut:DIGital:BBMM<CH>:SRATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Iq.Output.Digital.Bbmm.SymbolRate.SymbolRateCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.iq.output.digital.bbmm.symbolRate.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Iq_Output_Digital_Bbmm_SymbolRate_Common.rst
+	Source_Iq_Output_Digital_Bbmm_SymbolRate_Fifo.rst
+	Source_Iq_Output_Digital_Bbmm_SymbolRate_Max.rst
+	Source_Iq_Output_Digital_Bbmm_SymbolRate_Source.rst
+	Source_Iq_Output_Digital_Bbmm_SymbolRate_Sum.rst

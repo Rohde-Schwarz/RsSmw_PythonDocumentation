@@ -1,0 +1,38 @@
+Stream
+----------------------------------------
+
+
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Esequencer.Rtci.Sequencer.Stream.StreamCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.esequencer.rtci.sequencer.stream.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Esequencer_Rtci_Sequencer_Stream_Breset.rst
+	Source_Bb_Esequencer_Rtci_Sequencer_Stream_Buffilled.rst
+	Source_Bb_Esequencer_Rtci_Sequencer_Stream_BufRemain.rst
+	Source_Bb_Esequencer_Rtci_Sequencer_Stream_Drop.rst
+	Source_Bb_Esequencer_Rtci_Sequencer_Stream_Exec.rst
+	Source_Bb_Esequencer_Rtci_Sequencer_Stream_PdwDropping.rst
+	Source_Bb_Esequencer_Rtci_Sequencer_Stream_Restart.rst
+	Source_Bb_Esequencer_Rtci_Sequencer_Stream_Stime.rst
+	Source_Bb_Esequencer_Rtci_Sequencer_Stream_StReset.rst
+	Source_Bb_Esequencer_Rtci_Sequencer_Stream_WrdRead.rst
+	Source_Bb_Esequencer_Rtci_Sequencer_Stream_WrdWrite.rst

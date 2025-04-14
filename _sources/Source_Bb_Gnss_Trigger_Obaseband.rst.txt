@@ -1,0 +1,22 @@
+Obaseband
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:GNSS:TRIGger:OBASeband:DELay
+	single: [SOURce<HW>]:BB:GNSS:TRIGger:OBASeband:INHibit
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:GNSS:TRIGger:OBASeband:DELay
+	[SOURce<HW>]:BB:GNSS:TRIGger:OBASeband:INHibit
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Gnss.Trigger.Obaseband.ObasebandCls
+	:members:
+	:undoc-members:
+	:noindex:

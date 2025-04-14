@@ -1,0 +1,44 @@
+Statistics
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:ARBitrary:ETHernet:STATistics:ALL
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:ARBitrary:ETHernet:STATistics:ALL
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Arbitrary.Ethernet.Statistics.StatisticsCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.arbitrary.ethernet.statistics.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Arbitrary_Ethernet_Statistics_Errors.rst
+	Source_Bb_Arbitrary_Ethernet_Statistics_RxbLive.rst
+	Source_Bb_Arbitrary_Ethernet_Statistics_RxbMin.rst
+	Source_Bb_Arbitrary_Ethernet_Statistics_RxcFrames.rst
+	Source_Bb_Arbitrary_Ethernet_Statistics_RxdBytes.rst
+	Source_Bb_Arbitrary_Ethernet_Statistics_RxdFrames.rst
+	Source_Bb_Arbitrary_Ethernet_Statistics_RxuSegments.rst
+	Source_Bb_Arbitrary_Ethernet_Statistics_TxrFrames.rst

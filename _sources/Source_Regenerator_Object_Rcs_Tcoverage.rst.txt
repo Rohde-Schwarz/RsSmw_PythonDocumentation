@@ -1,0 +1,20 @@
+Tcoverage
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:REGenerator:OBJect<CH>:RCS:TCOVerage
+
+.. code-block:: python
+
+	[SOURce<HW>]:REGenerator:OBJect<CH>:RCS:TCOVerage
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Regenerator.Object.Rcs.Tcoverage.TcoverageCls
+	:members:
+	:undoc-members:
+	:noindex:

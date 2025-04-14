@@ -1,0 +1,20 @@
+Afield
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:DVB:DVBX:THConfig:AFIeld:[STATe]
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:DVB:DVBX:THConfig:AFIeld:[STATe]
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dvb.Dvbx.ThConfig.Afield.AfieldCls
+	:members:
+	:undoc-members:
+	:noindex:

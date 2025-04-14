@@ -1,0 +1,22 @@
+User
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:CEMulation:DSSimulation:USER:TX:VEHicle:USER:CATalog
+	single: [SOURce<HW>]:CEMulation:DSSimulation:USER:TX:VEHicle:USER:SELect
+
+.. code-block:: python
+
+	[SOURce<HW>]:CEMulation:DSSimulation:USER:TX:VEHicle:USER:CATalog
+	[SOURce<HW>]:CEMulation:DSSimulation:USER:TX:VEHicle:USER:SELect
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.DsSimulation.User.Tx.Vehicle.User.UserCls
+	:members:
+	:undoc-members:
+	:noindex:

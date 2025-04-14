@@ -1,0 +1,20 @@
+FirmwareUpdate
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:EFRontend:FWUPdate
+
+.. code-block:: python
+
+	[SOURce<HW>]:EFRontend:FWUPdate
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Efrontend.FirmwareUpdate.FirmwareUpdateCls
+	:members:
+	:undoc-members:
+	:noindex:

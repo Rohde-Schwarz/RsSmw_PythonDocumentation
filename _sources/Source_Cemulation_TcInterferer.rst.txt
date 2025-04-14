@@ -1,0 +1,42 @@
+TcInterferer
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:CEMulation:TCINterferer:PERiod
+	single: [SOURce<HW>]:CEMulation:TCINterferer:SPEed
+	single: [SOURce<HW>]:CEMulation:TCINterferer:[STATe]
+
+.. code-block:: python
+
+	[SOURce<HW>]:CEMulation:TCINterferer:PERiod
+	[SOURce<HW>]:CEMulation:TCINterferer:SPEed
+	[SOURce<HW>]:CEMulation:TCINterferer:[STATe]
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.TcInterferer.TcInterfererCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.cemulation.tcInterferer.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Cemulation_TcInterferer_Moving.rst
+	Source_Cemulation_TcInterferer_Reference.rst

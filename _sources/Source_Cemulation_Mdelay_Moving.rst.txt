@@ -1,0 +1,41 @@
+Moving
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:CEMulation:MDELay:MOVing:LOSS
+	single: [SOURce<HW>]:CEMulation:MDELay:MOVing:STATe
+	single: [SOURce<HW>]:CEMulation:MDELay:MOVing:VPERiod
+
+.. code-block:: python
+
+	[SOURce<HW>]:CEMulation:MDELay:MOVing:LOSS
+	[SOURce<HW>]:CEMulation:MDELay:MOVing:STATe
+	[SOURce<HW>]:CEMulation:MDELay:MOVing:VPERiod
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.Mdelay.Moving.MovingCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.cemulation.mdelay.moving.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Cemulation_Mdelay_Moving_Delay.rst

@@ -1,0 +1,38 @@
+DelPy
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:FSIMulator:DEL:STATe
+
+.. code-block:: python
+
+	[SOURce<HW>]:FSIMulator:DEL:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.DelPy.DelPyCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.fsimulator.delPy.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Fsimulator_DelPy_Group.rst
+	Source_Fsimulator_DelPy_TypePy.rst

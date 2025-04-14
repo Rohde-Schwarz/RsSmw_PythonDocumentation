@@ -1,0 +1,20 @@
+Dpattern
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:TETRa:SCONfiguration:TMODe<DI>:SLOT<ST>:LDIRection<CH>:DATA:DPATtern
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:TETRa:SCONfiguration:TMODe<DI>:SLOT<ST>:LDIRection<CH>:DATA:DPATtern
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Tetra.Sconfiguration.Tmode.Slot.Ldirection.Data.Dpattern.DpatternCls
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,20 @@
+Duration
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:V5G:DL:DRS:CELL<CH0>:DURation
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:V5G:DL:DRS:CELL<CH0>:DURation
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Downlink.Drs.Cell.Duration.DurationCls
+	:members:
+	:undoc-members:
+	:noindex:

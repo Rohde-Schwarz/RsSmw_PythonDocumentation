@@ -1,0 +1,20 @@
+SkProcess
+----------------------------------------
+
+
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:V5G:DL:USER<CH>:AS:DL:SKPRocess
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:V5G:DL:USER<CH>:AS:DL:SKPRocess
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Downlink.User.AsPy.Downlink.SkProcess.SkProcessCls
+	:members:
+	:undoc-members:
+	:noindex:

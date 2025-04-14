@@ -1,0 +1,43 @@
+Mac
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:WLAD:PCONfig:MAC:DID
+	single: [SOURce<HW>]:BB:WLAD:PCONfig:MAC:STATe
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:WLAD:PCONfig:MAC:DID
+	[SOURce<HW>]:BB:WLAD:PCONfig:MAC:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Wlad.Pconfig.Mac.MacCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.source.bb.wlad.pconfig.mac.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Wlad_Pconfig_Mac_Address.rst
+	Source_Bb_Wlad_Pconfig_Mac_Fcontrol.rst
+	Source_Bb_Wlad_Pconfig_Mac_Fcs.rst
+	Source_Bb_Wlad_Pconfig_Mac_QsControl.rst
+	Source_Bb_Wlad_Pconfig_Mac_Scontrol.rst
