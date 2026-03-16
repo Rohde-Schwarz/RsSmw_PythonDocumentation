@@ -1,0 +1,18 @@
+Data
+----------------------------------------
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:[LRWPan]:HUWB:STS:DATA:DSELection
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:[LRWPan]:HUWB:STS:DATA:DSELection
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.LrWpan.Huwb.Sts.Data.DataCls
+	:members:
+	:undoc-members:
+	:noindex:

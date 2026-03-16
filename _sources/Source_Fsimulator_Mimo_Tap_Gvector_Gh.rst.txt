@@ -1,0 +1,27 @@
+Gh
+----------------------------------------
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.Mimo.Tap.Gvector.Gh.GhCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	gh_copy = driver.source.fsimulator.mimo.tap.gvector.gh.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Fsimulator_Mimo_Tap_Gvector_Gh_Gain.rst
+	Source_Fsimulator_Mimo_Tap_Gvector_Gh_Phase.rst

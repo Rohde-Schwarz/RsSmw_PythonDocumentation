@@ -1,0 +1,27 @@
+Rx
+----------------------------------------
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.DsSimulation.User.Rx.RxCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	rx_copy = driver.source.cemulation.dsSimulation.user.rx.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Cemulation_DsSimulation_User_Rx_Trajectory.rst
+	Source_Cemulation_DsSimulation_User_Rx_Vehicle.rst

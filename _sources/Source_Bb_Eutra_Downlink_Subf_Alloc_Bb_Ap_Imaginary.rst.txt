@@ -1,0 +1,18 @@
+Imaginary
+----------------------------------------
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:EUTRa:DL:[SUBF<ST0>]:ALLoc<CH0>:BB<DIR0>:AP<GR0>:IMAGinary
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:EUTRa:DL:[SUBF<ST0>]:ALLoc<CH0>:BB<DIR0>:AP<GR0>:IMAGinary
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Eutra.Downlink.Subf.Alloc.Bb.Ap.Imaginary.ImaginaryCls
+	:members:
+	:undoc-members:
+	:noindex:

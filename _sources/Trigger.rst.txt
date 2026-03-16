@@ -1,0 +1,30 @@
+Trigger<InputIx>
+----------------------------------------
+
+
+
+.. autoclass:: RsSmw.Implementations.Trigger.TriggerCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	trigger_copy = driver.trigger.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Trigger_FpSweep.rst
+	Trigger_FreqSweep.rst
+	Trigger_LffSweep.rst
+	Trigger_Psweep.rst
+	Trigger_Sweep.rst

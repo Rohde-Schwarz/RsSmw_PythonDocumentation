@@ -1,0 +1,30 @@
+Output<Output>
+----------------------------------------
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Esequencer.Trigger.Sequencer.Output.OutputCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	output_copy = driver.source.bb.esequencer.trigger.sequencer.output.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Esequencer_Trigger_Sequencer_Output_Delay.rst
+	Source_Bb_Esequencer_Trigger_Sequencer_Output_Duration.rst
+	Source_Bb_Esequencer_Trigger_Sequencer_Output_Mode.rst
+	Source_Bb_Esequencer_Trigger_Sequencer_Output_Post.rst
+	Source_Bb_Esequencer_Trigger_Sequencer_Output_Pre.rst

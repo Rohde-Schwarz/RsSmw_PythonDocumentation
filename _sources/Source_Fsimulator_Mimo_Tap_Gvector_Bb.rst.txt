@@ -1,0 +1,27 @@
+Bb
+----------------------------------------
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.Mimo.Tap.Gvector.Bb.BbCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	bb_copy = driver.source.fsimulator.mimo.tap.gvector.bb.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Fsimulator_Mimo_Tap_Gvector_Bb_Gain.rst
+	Source_Fsimulator_Mimo_Tap_Gvector_Bb_Phase.rst

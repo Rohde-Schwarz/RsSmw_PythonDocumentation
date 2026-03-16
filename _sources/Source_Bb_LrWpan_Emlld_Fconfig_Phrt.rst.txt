@@ -1,0 +1,18 @@
+Phrt
+----------------------------------------
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:LRWPan:EMLLd:FCONfig:PHRT:BITRate
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:LRWPan:EMLLd:FCONfig:PHRT:BITRate
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.LrWpan.Emlld.Fconfig.Phrt.PhrtCls
+	:members:
+	:undoc-members:
+	:noindex:

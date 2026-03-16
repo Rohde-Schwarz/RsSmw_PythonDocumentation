@@ -1,0 +1,26 @@
+Tmode<TestMode>
+----------------------------------------
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Tetra.Sconfiguration.Tmode.TmodeCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	tmode_copy = driver.source.bb.tetra.sconfiguration.tmode.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Tetra_Sconfiguration_Tmode_Slot.rst

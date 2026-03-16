@@ -1,0 +1,18 @@
+Create
+----------------------------------------
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:KUIPer:WAVeform:CREate
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:KUIPer:WAVeform:CREate
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Kuiper.Waveform.Create.CreateCls
+	:members:
+	:undoc-members:
+	:noindex:

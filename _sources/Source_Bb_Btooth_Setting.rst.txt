@@ -1,0 +1,39 @@
+Setting
+----------------------------------------
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:BTOoth:SETTing:CATalog
+	single: [SOURce<HW>]:BB:BTOoth:SETTing:DELete
+	single: [SOURce<HW>]:BB:BTOoth:SETTing:LOAD
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:BTOoth:SETTing:CATalog
+	[SOURce<HW>]:BB:BTOoth:SETTing:DELete
+	[SOURce<HW>]:BB:BTOoth:SETTing:LOAD
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Btooth.Setting.SettingCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	setting_copy = driver.source.bb.btooth.setting.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Btooth_Setting_Store.rst

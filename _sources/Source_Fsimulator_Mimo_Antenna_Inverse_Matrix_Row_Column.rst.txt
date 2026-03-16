@@ -1,0 +1,27 @@
+Column<Column>
+----------------------------------------
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.Mimo.Antenna.Inverse.Matrix.Row.Column.ColumnCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	column_copy = driver.source.fsimulator.mimo.antenna.inverse.matrix.row.column.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Fsimulator_Mimo_Antenna_Inverse_Matrix_Row_Column_Imagin.rst
+	Source_Fsimulator_Mimo_Antenna_Inverse_Matrix_Row_Column_Real.rst

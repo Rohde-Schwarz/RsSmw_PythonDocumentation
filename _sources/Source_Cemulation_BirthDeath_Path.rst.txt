@@ -1,0 +1,28 @@
+Path<Path>
+----------------------------------------
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.BirthDeath.Path.PathCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	path_copy = driver.source.cemulation.birthDeath.path.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Cemulation_BirthDeath_Path_Fdoppler.rst
+	Source_Cemulation_BirthDeath_Path_Loss.rst
+	Source_Cemulation_BirthDeath_Path_Profile.rst

@@ -1,0 +1,26 @@
+Row<RowNull>
+----------------------------------------
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Uplink.Ue.Cell.Row.RowCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	row_copy = driver.source.bb.v5G.uplink.ue.cell.row.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_V5G_Uplink_Ue_Cell_Row_Poffset.rst

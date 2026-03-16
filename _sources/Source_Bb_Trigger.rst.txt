@@ -1,0 +1,36 @@
+Trigger
+----------------------------------------
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:TRIGger:RMODe
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:TRIGger:RMODe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Trigger.TriggerCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	trigger_copy = driver.source.bb.trigger.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Trigger_Arm.rst
+	Source_Bb_Trigger_Execute.rst

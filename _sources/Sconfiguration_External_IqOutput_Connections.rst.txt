@@ -1,0 +1,26 @@
+Connections
+----------------------------------------
+
+
+
+.. autoclass:: RsSmw.Implementations.Sconfiguration.External.IqOutput.Connections.ConnectionsCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	connections_copy = driver.sconfiguration.external.iqOutput.connections.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Sconfiguration_External_IqOutput_Connections_Check.rst

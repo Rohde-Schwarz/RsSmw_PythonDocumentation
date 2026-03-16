@@ -1,0 +1,27 @@
+Ap<AntennaPortNull>
+----------------------------------------
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Eutra.Downlink.Subf.Alloc.Bb.Ap.ApCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	ap_copy = driver.source.bb.eutra.downlink.subf.alloc.bb.ap.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Eutra_Downlink_Subf_Alloc_Bb_Ap_Imaginary.rst
+	Source_Bb_Eutra_Downlink_Subf_Alloc_Bb_Ap_Real.rst

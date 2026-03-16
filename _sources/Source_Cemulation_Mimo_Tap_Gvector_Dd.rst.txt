@@ -1,0 +1,27 @@
+Dd
+----------------------------------------
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.Mimo.Tap.Gvector.Dd.DdCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	dd_copy = driver.source.cemulation.mimo.tap.gvector.dd.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Cemulation_Mimo_Tap_Gvector_Dd_Gain.rst
+	Source_Cemulation_Mimo_Tap_Gvector_Dd_Phase.rst

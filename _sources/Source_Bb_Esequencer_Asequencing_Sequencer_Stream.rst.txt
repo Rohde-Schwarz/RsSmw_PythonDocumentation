@@ -1,0 +1,31 @@
+Stream
+----------------------------------------
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Esequencer.Asequencing.Sequencer.Stream.StreamCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	stream_copy = driver.source.bb.esequencer.asequencing.sequencer.stream.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Esequencer_Asequencing_Sequencer_Stream_Buffilled.rst
+	Source_Bb_Esequencer_Asequencing_Sequencer_Stream_BufRemain.rst
+	Source_Bb_Esequencer_Asequencing_Sequencer_Stream_Drop.rst
+	Source_Bb_Esequencer_Asequencing_Sequencer_Stream_Exec.rst
+	Source_Bb_Esequencer_Asequencing_Sequencer_Stream_WrdRead.rst
+	Source_Bb_Esequencer_Asequencing_Sequencer_Stream_WrdWrite.rst

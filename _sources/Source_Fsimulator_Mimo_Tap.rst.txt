@@ -1,0 +1,39 @@
+Tap<MimoTap>
+----------------------------------------
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:FSIMulator:MIMO:TAP
+
+.. code-block:: python
+
+	[SOURce<HW>]:FSIMulator:MIMO:TAP
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.Mimo.Tap.TapCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	tap_copy = driver.source.fsimulator.mimo.tap.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Fsimulator_Mimo_Tap_Antenna.rst
+	Source_Fsimulator_Mimo_Tap_Gvector.rst
+	Source_Fsimulator_Mimo_Tap_Kronecker.rst
+	Source_Fsimulator_Mimo_Tap_Matrix.rst
+	Source_Fsimulator_Mimo_Tap_Tgn.rst

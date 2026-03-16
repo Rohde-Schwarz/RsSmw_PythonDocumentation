@@ -1,0 +1,26 @@
+Row<Row>
+----------------------------------------
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:V5G:DL:MIMO:APM:CS:CELL:ROW<ST0>
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:V5G:DL:MIMO:APM:CS:CELL:ROW<ST0>
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Downlink.Mimo.Apm.Cs.Cell.Row.RowCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	row_copy = driver.source.bb.v5G.downlink.mimo.apm.cs.cell.row.clone()

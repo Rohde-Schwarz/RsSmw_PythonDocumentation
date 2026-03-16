@@ -1,0 +1,18 @@
+Time
+----------------------------------------
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:LRWPan:TRIGger:TIME:TIME
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:LRWPan:TRIGger:TIME:TIME
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.LrWpan.Trigger.Time.Time.TimeCls
+	:members:
+	:undoc-members:
+	:noindex:

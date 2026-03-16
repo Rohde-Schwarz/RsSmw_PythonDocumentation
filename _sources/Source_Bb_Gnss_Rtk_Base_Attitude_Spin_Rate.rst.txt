@@ -1,0 +1,18 @@
+Rate
+----------------------------------------
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:GNSS:RTK:BASE<ST>:ATTitude:SPIN:RATE
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:GNSS:RTK:BASE<ST>:ATTitude:SPIN:RATE
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Gnss.Rtk.Base.Attitude.Spin.Rate.RateCls
+	:members:
+	:undoc-members:
+	:noindex:

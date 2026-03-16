@@ -1,0 +1,36 @@
+Lhdr
+----------------------------------------
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:WLAY:PCONfig:LHDR:GITYpe
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:WLAY:PCONfig:LHDR:GITYpe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Wlay.Pconfig.Lhdr.LhdrCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	lhdr_copy = driver.source.bb.wlay.pconfig.lhdr.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Wlay_Pconfig_Lhdr_Addp.rst
+	Source_Bb_Wlay_Pconfig_Lhdr_Pagr.rst

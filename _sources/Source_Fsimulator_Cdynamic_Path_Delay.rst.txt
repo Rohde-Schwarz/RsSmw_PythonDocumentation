@@ -1,0 +1,18 @@
+Delay
+----------------------------------------
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:FSIMulator:CDYNamic:PATH<CH>:DELay
+
+.. code-block:: python
+
+	[SOURce<HW>]:FSIMulator:CDYNamic:PATH<CH>:DELay
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.Cdynamic.Path.Delay.DelayCls
+	:members:
+	:undoc-members:
+	:noindex:

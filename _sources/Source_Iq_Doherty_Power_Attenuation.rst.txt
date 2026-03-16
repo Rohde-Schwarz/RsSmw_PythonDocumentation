@@ -1,0 +1,35 @@
+Attenuation
+----------------------------------------
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:IQ:DOHerty:POWer:ATTenuation
+
+.. code-block:: python
+
+	[SOURce<HW>]:IQ:DOHerty:POWer:ATTenuation
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Iq.Doherty.Power.Attenuation.AttenuationCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	attenuation_copy = driver.source.iq.doherty.power.attenuation.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Iq_Doherty_Power_Attenuation_Coupling.rst

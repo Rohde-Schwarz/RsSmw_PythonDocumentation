@@ -1,0 +1,26 @@
+Valid
+----------------------------------------
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Regenerator.Simulation.Level.Valid.ValidCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	valid_copy = driver.source.regenerator.simulation.level.valid.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Regenerator_Simulation_Level_Valid_Status.rst

@@ -1,0 +1,26 @@
+Xpucch
+----------------------------------------
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Uplink.Ue.Xpucch.XpucchCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	xpucch_copy = driver.source.bb.v5G.uplink.ue.xpucch.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_V5G_Uplink_Ue_Xpucch_NaPort.rst

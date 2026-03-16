@@ -1,0 +1,20 @@
+Store
+----------------------------------------
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:BTOoth:SETTing:STORe
+	single: [SOURce<HW>]:BB:BTOoth:SETTing:STORe:FAST
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:BTOoth:SETTing:STORe
+	[SOURce<HW>]:BB:BTOoth:SETTing:STORe:FAST
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Btooth.Setting.Store.StoreCls
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,32 @@
+Bbmm<IqConnector>
+----------------------------------------
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Impairment.Bbmm.BbmmCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	bbmm_copy = driver.source.bb.impairment.bbmm.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Impairment_Bbmm_Delay.rst
+	Source_Bb_Impairment_Bbmm_IqRatio.rst
+	Source_Bb_Impairment_Bbmm_Leakage.rst
+	Source_Bb_Impairment_Bbmm_Poffset.rst
+	Source_Bb_Impairment_Bbmm_Quadrature.rst
+	Source_Bb_Impairment_Bbmm_Skew.rst
+	Source_Bb_Impairment_Bbmm_State.rst

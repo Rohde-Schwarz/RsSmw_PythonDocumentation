@@ -1,0 +1,26 @@
+Fifo
+----------------------------------------
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Iq.Output.Digital.Bbmm.SymbolRate.Fifo.FifoCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	fifo_copy = driver.source.iq.output.digital.bbmm.symbolRate.fifo.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Iq_Output_Digital_Bbmm_SymbolRate_Fifo_Status.rst

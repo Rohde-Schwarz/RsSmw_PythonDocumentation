@@ -1,0 +1,35 @@
+Unfiltered
+----------------------------------------
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:PACKet:UNFiltered:STATe
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:PACKet:UNFiltered:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Packet.Unfiltered.UnfilteredCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	unfiltered_copy = driver.source.bb.packet.unfiltered.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Packet_Unfiltered_Nibble.rst

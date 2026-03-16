@@ -1,0 +1,36 @@
+Wlist
+----------------------------------------
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:ESEQuencer:RTCI:[SEQuencer<ST>]:WLISt:SAVE
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:ESEQuencer:RTCI:[SEQuencer<ST>]:WLISt:SAVE
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Esequencer.Rtci.Sequencer.Wlist.WlistCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	wlist_copy = driver.source.bb.esequencer.rtci.sequencer.wlist.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Esequencer_Rtci_Sequencer_Wlist_File.rst
+	Source_Bb_Esequencer_Rtci_Sequencer_Wlist_Segment.rst

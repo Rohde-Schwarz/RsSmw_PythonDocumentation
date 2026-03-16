@@ -1,0 +1,37 @@
+Shape
+----------------------------------------
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:NOISe:PHASenoise:SHAPe:SELect
+	single: [SOURce<HW>]:NOISe:PHASenoise:SHAPe:STORe
+
+.. code-block:: python
+
+	[SOURce<HW>]:NOISe:PHASenoise:SHAPe:SELect
+	[SOURce<HW>]:NOISe:PHASenoise:SHAPe:STORe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Noise.Phasenoise.Shape.ShapeCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	shape_copy = driver.source.noise.phasenoise.shape.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Noise_Phasenoise_Shape_Predefined.rst

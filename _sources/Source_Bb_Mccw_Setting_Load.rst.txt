@@ -1,0 +1,18 @@
+Load
+----------------------------------------
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:MCCW:SETTing:LOAD
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:MCCW:SETTing:LOAD
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Mccw.Setting.Load.LoadCls
+	:members:
+	:undoc-members:
+	:noindex:

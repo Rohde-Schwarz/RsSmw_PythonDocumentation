@@ -1,0 +1,27 @@
+Frequency
+----------------------------------------
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Efrontend.ExtDevice.Frequency.FrequencyCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	frequency_copy = driver.source.efrontend.extDevice.frequency.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Efrontend_ExtDevice_Frequency_Maximum.rst
+	Source_Efrontend_ExtDevice_Frequency_Minimum.rst

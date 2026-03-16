@@ -1,0 +1,26 @@
+Loscillator
+----------------------------------------
+
+
+
+.. autoclass:: RsSmw.Implementations.Calibration.Loscillator.LoscillatorCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	loscillator_copy = driver.calibration.loscillator.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Calibration_Loscillator_Coupling.rst

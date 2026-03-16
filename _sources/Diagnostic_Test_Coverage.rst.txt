@@ -1,0 +1,35 @@
+Coverage
+----------------------------------------
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: DIAGnostic<HW>:TEST:COVerage:RESet
+
+.. code-block:: python
+
+	DIAGnostic<HW>:TEST:COVerage:RESet
+
+
+
+.. autoclass:: RsSmw.Implementations.Diagnostic.Test.Coverage.CoverageCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	coverage_copy = driver.diagnostic.test.coverage.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Diagnostic_Test_Coverage_Dump.rst

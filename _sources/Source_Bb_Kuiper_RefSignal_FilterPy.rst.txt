@@ -1,0 +1,20 @@
+FilterPy
+----------------------------------------
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:KUIPer:REFSignal:FILTer:CATalog
+	single: [SOURce<HW>]:BB:KUIPer:REFSignal:FILTer:NAME
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:KUIPer:REFSignal:FILTer:CATalog
+	[SOURce<HW>]:BB:KUIPer:REFSignal:FILTer:NAME
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Kuiper.RefSignal.FilterPy.FilterPyCls
+	:members:
+	:undoc-members:
+	:noindex:

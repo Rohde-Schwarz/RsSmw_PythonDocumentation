@@ -1,0 +1,37 @@
+RefSignal
+----------------------------------------
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:KUIPer:REFSignal:CATalog
+	single: [SOURce<HW>]:BB:KUIPer:REFSignal
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:KUIPer:REFSignal:CATalog
+	[SOURce<HW>]:BB:KUIPer:REFSignal
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Kuiper.RefSignal.RefSignalCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	refSignal_copy = driver.source.bb.kuiper.refSignal.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Kuiper_RefSignal_FilterPy.rst

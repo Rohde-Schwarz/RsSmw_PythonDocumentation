@@ -1,0 +1,27 @@
+Tx
+----------------------------------------
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.DsSimulation.User.Tx.TxCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	tx_copy = driver.source.fsimulator.dsSimulation.user.tx.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Fsimulator_DsSimulation_User_Tx_Trajectory.rst
+	Source_Fsimulator_DsSimulation_User_Tx_Vehicle.rst

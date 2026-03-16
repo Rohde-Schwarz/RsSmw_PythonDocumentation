@@ -1,0 +1,26 @@
+IqRatio
+----------------------------------------
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Impairment.Bbmm.IqRatio.IqRatioCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	iqRatio_copy = driver.source.bb.impairment.bbmm.iqRatio.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Impairment_Bbmm_IqRatio_Magnitude.rst

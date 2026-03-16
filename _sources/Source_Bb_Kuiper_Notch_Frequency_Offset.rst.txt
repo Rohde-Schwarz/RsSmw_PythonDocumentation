@@ -1,0 +1,18 @@
+Offset
+----------------------------------------
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:KUIPer:NOTCh<CH>:FREQuency:OFFSet
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:KUIPer:NOTCh<CH>:FREQuency:OFFSet
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Kuiper.Notch.Frequency.Offset.OffsetCls
+	:members:
+	:undoc-members:
+	:noindex:

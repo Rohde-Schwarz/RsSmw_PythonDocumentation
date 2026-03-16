@@ -1,0 +1,22 @@
+Impairments
+----------------------------------------
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:LRWPan:IMPairments:CCERror
+	single: [SOURce<HW>]:BB:LRWPan:IMPairments:FOFFset
+	single: [SOURce<HW>]:BB:LRWPan:IMPairments:STATe
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:LRWPan:IMPairments:CCERror
+	[SOURce<HW>]:BB:LRWPan:IMPairments:FOFFset
+	[SOURce<HW>]:BB:LRWPan:IMPairments:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.LrWpan.Impairments.ImpairmentsCls
+	:members:
+	:undoc-members:
+	:noindex:

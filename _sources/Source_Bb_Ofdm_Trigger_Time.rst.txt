@@ -1,0 +1,22 @@
+Time
+----------------------------------------
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:OFDM:TRIGger:TIME:DATE
+	single: [SOURce<HW>]:BB:OFDM:TRIGger:TIME:TIME
+	single: [SOURce<HW>]:BB:OFDM:TRIGger:TIME:[STATe]
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:OFDM:TRIGger:TIME:DATE
+	[SOURce<HW>]:BB:OFDM:TRIGger:TIME:TIME
+	[SOURce<HW>]:BB:OFDM:TRIGger:TIME:[STATe]
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Ofdm.Trigger.Time.TimeCls
+	:members:
+	:undoc-members:
+	:noindex:

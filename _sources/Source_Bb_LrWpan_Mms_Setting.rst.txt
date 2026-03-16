@@ -1,0 +1,18 @@
+Setting
+----------------------------------------
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:[LRWPan]:MMS:SETTing:DELete
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:[LRWPan]:MMS:SETTing:DELete
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.LrWpan.Mms.Setting.SettingCls
+	:members:
+	:undoc-members:
+	:noindex:

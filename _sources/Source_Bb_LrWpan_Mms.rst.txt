@@ -1,0 +1,73 @@
+Mms
+----------------------------------------
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:LRWPan:MMS:MPFormat
+	single: [SOURce<HW>]:BB:LRWPan:MMS:NRIF
+	single: [SOURce<HW>]:BB:LRWPan:MMS:NRSF
+	single: [SOURce<HW>]:BB:LRWPan:MMS:RIOFfset
+	single: [SOURce<HW>]:BB:LRWPan:MMS:ROLE
+	single: [SOURce<HW>]:BB:LRWPan:MMS:RPDuration
+	single: [SOURce<HW>]:BB:LRWPan:MMS:RSDuration
+	single: [SOURce<HW>]:BB:LRWPan:MMS:RSOFfset
+	single: [SOURce<HW>]:BB:LRWPan:MMS:RSTU
+	single: [SOURce<HW>]:BB:LRWPan:MMS:SRF
+	single: [SOURce<HW>]:BB:LRWPan:MMS:SSCI
+	single: [SOURce<HW>]:BB:LRWPan:MMS:TFSYnc
+	single: [SOURce<HW>]:BB:[LRWPan]:MMS:ASL
+	single: [SOURce<HW>]:BB:[LRWPan]:MMS:ASN
+	single: [SOURce<HW>]:BB:[LRWPan]:MMS:BWIDth
+	single: [SOURce<HW>]:BB:[LRWPan]:MMS:CNUMber
+	single: [SOURce<HW>]:BB:[LRWPan]:MMS:F2MS
+	single: [SOURce<HW>]:BB:[LRWPan]:MMS:IINTerval
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:LRWPan:MMS:MPFormat
+	[SOURce<HW>]:BB:LRWPan:MMS:NRIF
+	[SOURce<HW>]:BB:LRWPan:MMS:NRSF
+	[SOURce<HW>]:BB:LRWPan:MMS:RIOFfset
+	[SOURce<HW>]:BB:LRWPan:MMS:ROLE
+	[SOURce<HW>]:BB:LRWPan:MMS:RPDuration
+	[SOURce<HW>]:BB:LRWPan:MMS:RSDuration
+	[SOURce<HW>]:BB:LRWPan:MMS:RSOFfset
+	[SOURce<HW>]:BB:LRWPan:MMS:RSTU
+	[SOURce<HW>]:BB:LRWPan:MMS:SRF
+	[SOURce<HW>]:BB:LRWPan:MMS:SSCI
+	[SOURce<HW>]:BB:LRWPan:MMS:TFSYnc
+	[SOURce<HW>]:BB:[LRWPan]:MMS:ASL
+	[SOURce<HW>]:BB:[LRWPan]:MMS:ASN
+	[SOURce<HW>]:BB:[LRWPan]:MMS:BWIDth
+	[SOURce<HW>]:BB:[LRWPan]:MMS:CNUMber
+	[SOURce<HW>]:BB:[LRWPan]:MMS:F2MS
+	[SOURce<HW>]:BB:[LRWPan]:MMS:IINTerval
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.LrWpan.Mms.MmsCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	mms_copy = driver.source.bb.lrWpan.mms.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_LrWpan_Mms_Fconfig.rst
+	Source_Bb_LrWpan_Mms_Rsf.rst
+	Source_Bb_LrWpan_Mms_Setting.rst
+	Source_Bb_LrWpan_Mms_Sfd.rst
+	Source_Bb_LrWpan_Mms_Sts.rst

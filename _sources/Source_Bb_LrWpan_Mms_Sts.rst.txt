@@ -1,0 +1,43 @@
+Sts
+----------------------------------------
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:[LRWPan]:MMS:STS:CPARt
+	single: [SOURce<HW>]:BB:[LRWPan]:MMS:STS:DLEN
+	single: [SOURce<HW>]:BB:[LRWPan]:MMS:STS:DLS
+	single: [SOURce<HW>]:BB:[LRWPan]:MMS:STS:KEY
+	single: [SOURce<HW>]:BB:[LRWPan]:MMS:STS:UPARt
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:[LRWPan]:MMS:STS:CPARt
+	[SOURce<HW>]:BB:[LRWPan]:MMS:STS:DLEN
+	[SOURce<HW>]:BB:[LRWPan]:MMS:STS:DLS
+	[SOURce<HW>]:BB:[LRWPan]:MMS:STS:KEY
+	[SOURce<HW>]:BB:[LRWPan]:MMS:STS:UPARt
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.LrWpan.Mms.Sts.StsCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	sts_copy = driver.source.bb.lrWpan.mms.sts.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_LrWpan_Mms_Sts_Data.rst

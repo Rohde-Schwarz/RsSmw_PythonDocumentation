@@ -1,0 +1,27 @@
+Range
+----------------------------------------
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Btooth.Cs.Sevent.Copy.Step.Range.RangeCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	range_copy = driver.source.bb.btooth.cs.sevent.copy.step.range.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Btooth_Cs_Sevent_Copy_Step_Range_FromPy.rst
+	Source_Bb_Btooth_Cs_Sevent_Copy_Step_Range_To.rst

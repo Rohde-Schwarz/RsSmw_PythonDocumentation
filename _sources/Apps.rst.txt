@@ -1,0 +1,26 @@
+Apps
+----------------------------------------
+
+
+
+.. autoclass:: RsSmw.Implementations.Apps.AppsCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	apps_copy = driver.apps.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Apps_Generator.rst

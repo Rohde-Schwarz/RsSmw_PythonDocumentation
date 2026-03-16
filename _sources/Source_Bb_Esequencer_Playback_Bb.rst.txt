@@ -1,0 +1,28 @@
+Bb<Baseband>
+----------------------------------------
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Esequencer.Playback.Bb.BbCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	bb_copy = driver.source.bb.esequencer.playback.bb.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Esequencer_Playback_Bb_Comment.rst
+	Source_Bb_Esequencer_Playback_Bb_Date.rst
+	Source_Bb_Esequencer_Playback_Bb_File.rst

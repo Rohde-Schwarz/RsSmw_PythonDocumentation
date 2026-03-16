@@ -1,0 +1,27 @@
+Cw<Codeword>
+----------------------------------------
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Uplink.Cell.Subf.Alloc.Cw.CwCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	cw_copy = driver.source.bb.oneweb.uplink.cell.subf.alloc.cw.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Oneweb_Uplink_Cell_Subf_Alloc_Cw_Puach.rst
+	Source_Bb_Oneweb_Uplink_Cell_Subf_Alloc_Cw_Pusch.rst

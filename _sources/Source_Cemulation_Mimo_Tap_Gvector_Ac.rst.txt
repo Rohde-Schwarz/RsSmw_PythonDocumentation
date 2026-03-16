@@ -1,0 +1,27 @@
+Ac
+----------------------------------------
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.Mimo.Tap.Gvector.Ac.AcCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	ac_copy = driver.source.cemulation.mimo.tap.gvector.ac.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Cemulation_Mimo_Tap_Gvector_Ac_Gain.rst
+	Source_Cemulation_Mimo_Tap_Gvector_Ac_Phase.rst

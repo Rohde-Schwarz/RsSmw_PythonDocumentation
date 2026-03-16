@@ -1,0 +1,35 @@
+Alignment
+----------------------------------------
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:EFRontend:ALIGnment:[STATe]
+
+.. code-block:: python
+
+	[SOURce<HW>]:EFRontend:ALIGnment:[STATe]
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Efrontend.Alignment.AlignmentCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	alignment_copy = driver.source.efrontend.alignment.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Efrontend_Alignment_File.rst

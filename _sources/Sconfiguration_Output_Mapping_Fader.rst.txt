@@ -1,0 +1,27 @@
+Fader<DigitalIq>
+----------------------------------------
+
+
+
+.. autoclass:: RsSmw.Implementations.Sconfiguration.Output.Mapping.Fader.FaderCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	fader_copy = driver.sconfiguration.output.mapping.fader.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Sconfiguration_Output_Mapping_Fader_Mode.rst
+	Sconfiguration_Output_Mapping_Fader_Stream.rst

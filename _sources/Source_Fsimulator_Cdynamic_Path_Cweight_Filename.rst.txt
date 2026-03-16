@@ -1,0 +1,18 @@
+Filename
+----------------------------------------
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:FSIMulator:CDYNamic:PATH<CH>:CWEight:FILEname
+
+.. code-block:: python
+
+	[SOURce<HW>]:FSIMulator:CDYNamic:PATH<CH>:CWEight:FILEname
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.Cdynamic.Path.Cweight.Filename.FilenameCls
+	:members:
+	:undoc-members:
+	:noindex:

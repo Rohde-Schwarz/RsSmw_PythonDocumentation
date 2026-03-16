@@ -1,0 +1,31 @@
+Path<Path>
+----------------------------------------
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.Cdynamic.Path.PathCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	path_copy = driver.source.fsimulator.cdynamic.path.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Fsimulator_Cdynamic_Path_Convert.rst
+	Source_Fsimulator_Cdynamic_Path_Cweight.rst
+	Source_Fsimulator_Cdynamic_Path_Data.rst
+	Source_Fsimulator_Cdynamic_Path_Delay.rst
+	Source_Fsimulator_Cdynamic_Path_Prof.rst
+	Source_Fsimulator_Cdynamic_Path_State.rst

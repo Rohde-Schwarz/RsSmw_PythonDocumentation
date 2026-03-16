@@ -1,0 +1,18 @@
+Fpayload
+----------------------------------------
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:[LRWPan]:HUWB:FCONfig:FPAYload:STATe
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:[LRWPan]:HUWB:FCONfig:FPAYload:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.LrWpan.Huwb.Fconfig.Fpayload.FpayloadCls
+	:members:
+	:undoc-members:
+	:noindex:

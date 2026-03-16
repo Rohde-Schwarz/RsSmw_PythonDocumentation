@@ -1,0 +1,22 @@
+Time
+----------------------------------------
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:KUIPer:TRIGger:TIME:DATE
+	single: [SOURce<HW>]:BB:KUIPer:TRIGger:TIME:TIME
+	single: [SOURce<HW>]:BB:KUIPer:TRIGger:TIME:[STATe]
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:KUIPer:TRIGger:TIME:DATE
+	[SOURce<HW>]:BB:KUIPer:TRIGger:TIME:TIME
+	[SOURce<HW>]:BB:KUIPer:TRIGger:TIME:[STATe]
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Kuiper.Trigger.Time.TimeCls
+	:members:
+	:undoc-members:
+	:noindex:

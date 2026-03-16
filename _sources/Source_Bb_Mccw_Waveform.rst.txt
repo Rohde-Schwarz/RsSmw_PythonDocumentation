@@ -1,0 +1,26 @@
+Waveform
+----------------------------------------
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Mccw.Waveform.WaveformCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	waveform_copy = driver.source.bb.mccw.waveform.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Mccw_Waveform_Create.rst

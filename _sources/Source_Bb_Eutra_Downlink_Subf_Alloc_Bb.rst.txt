@@ -1,0 +1,26 @@
+Bb<BasebandNull>
+----------------------------------------
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Eutra.Downlink.Subf.Alloc.Bb.BbCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	bb_copy = driver.source.bb.eutra.downlink.subf.alloc.bb.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Eutra_Downlink_Subf_Alloc_Bb_Ap.rst

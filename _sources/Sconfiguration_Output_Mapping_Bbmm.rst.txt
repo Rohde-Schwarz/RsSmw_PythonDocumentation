@@ -1,0 +1,28 @@
+Bbmm<IqConnector>
+----------------------------------------
+
+
+
+.. autoclass:: RsSmw.Implementations.Sconfiguration.Output.Mapping.Bbmm.BbmmCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	bbmm_copy = driver.sconfiguration.output.mapping.bbmm.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Sconfiguration_Output_Mapping_Bbmm_Channel.rst
+	Sconfiguration_Output_Mapping_Bbmm_Mode.rst
+	Sconfiguration_Output_Mapping_Bbmm_Stream.rst

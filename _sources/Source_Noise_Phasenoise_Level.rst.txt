@@ -1,0 +1,26 @@
+Level<NoisePoint>
+----------------------------------------
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:NOISe:PHASenoise:LEVel<CH>
+
+.. code-block:: python
+
+	[SOURce<HW>]:NOISe:PHASenoise:LEVel<CH>
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Noise.Phasenoise.Level.LevelCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	level_copy = driver.source.noise.phasenoise.level.clone()

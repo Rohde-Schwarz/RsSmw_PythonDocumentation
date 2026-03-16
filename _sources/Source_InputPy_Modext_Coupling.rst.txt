@@ -1,0 +1,26 @@
+Coupling<InputIx>
+----------------------------------------
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:INPut:MODext:COUPling<CH>
+
+.. code-block:: python
+
+	[SOURce<HW>]:INPut:MODext:COUPling<CH>
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.InputPy.Modext.Coupling.CouplingCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	coupling_copy = driver.source.inputPy.modext.coupling.clone()

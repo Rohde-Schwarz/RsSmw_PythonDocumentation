@@ -1,0 +1,50 @@
+Parameter
+----------------------------------------
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:LRWPan:FILTer:PARameter:APCo25
+	single: [SOURce<HW>]:BB:LRWPan:FILTer:PARameter:GAUSs
+	single: [SOURce<HW>]:BB:LRWPan:FILTer:PARameter:LPASs
+	single: [SOURce<HW>]:BB:LRWPan:FILTer:PARameter:LPASsevm
+	single: [SOURce<HW>]:BB:LRWPan:FILTer:PARameter:PGAuss
+	single: [SOURce<HW>]:BB:LRWPan:FILTer:PARameter:RCOSine
+	single: [SOURce<HW>]:BB:LRWPan:FILTer:PARameter:SPHase
+	single: [SOURce<HW>]:BB:LRWPan:FILTer:PARameter:USER
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:LRWPan:FILTer:PARameter:APCo25
+	[SOURce<HW>]:BB:LRWPan:FILTer:PARameter:GAUSs
+	[SOURce<HW>]:BB:LRWPan:FILTer:PARameter:LPASs
+	[SOURce<HW>]:BB:LRWPan:FILTer:PARameter:LPASsevm
+	[SOURce<HW>]:BB:LRWPan:FILTer:PARameter:PGAuss
+	[SOURce<HW>]:BB:LRWPan:FILTer:PARameter:RCOSine
+	[SOURce<HW>]:BB:LRWPan:FILTer:PARameter:SPHase
+	[SOURce<HW>]:BB:LRWPan:FILTer:PARameter:USER
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.LrWpan.FilterPy.Parameter.ParameterCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	parameter_copy = driver.source.bb.lrWpan.filterPy.parameter.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_LrWpan_FilterPy_Parameter_Cosine.rst
+	Source_Bb_LrWpan_FilterPy_Parameter_Lte.rst

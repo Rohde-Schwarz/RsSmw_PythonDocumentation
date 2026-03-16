@@ -1,0 +1,29 @@
+Tm<TmConnector>
+----------------------------------------
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.InputPy.Tm.TmCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	tm_copy = driver.source.inputPy.tm.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_InputPy_Tm_Clock.rst
+	Source_InputPy_Tm_Direction.rst
+	Source_InputPy_Tm_Signal.rst
+	Source_InputPy_Tm_Trigger.rst

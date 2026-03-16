@@ -1,0 +1,52 @@
+Oqpsk
+----------------------------------------
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:LRWPan:OQPSk:CINDex
+	single: [SOURce<HW>]:BB:[LRWPan]:OQPSk:BWIDth
+	single: [SOURce<HW>]:BB:[LRWPan]:OQPSk:CCCL
+	single: [SOURce<HW>]:BB:[LRWPan]:OQPSk:CNUMber
+	single: [SOURce<HW>]:BB:[LRWPan]:OQPSk:F2MS
+	single: [SOURce<HW>]:BB:[LRWPan]:OQPSk:IINTerval
+	single: [SOURce<HW>]:BB:[LRWPan]:OQPSk:OBANd
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:LRWPan:OQPSk:CINDex
+	[SOURce<HW>]:BB:[LRWPan]:OQPSk:BWIDth
+	[SOURce<HW>]:BB:[LRWPan]:OQPSk:CCCL
+	[SOURce<HW>]:BB:[LRWPan]:OQPSk:CNUMber
+	[SOURce<HW>]:BB:[LRWPan]:OQPSk:F2MS
+	[SOURce<HW>]:BB:[LRWPan]:OQPSk:IINTerval
+	[SOURce<HW>]:BB:[LRWPan]:OQPSk:OBANd
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.LrWpan.Oqpsk.OqpskCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	oqpsk_copy = driver.source.bb.lrWpan.oqpsk.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_LrWpan_Oqpsk_Dr.rst
+	Source_Bb_LrWpan_Oqpsk_Fconfig.rst
+	Source_Bb_LrWpan_Oqpsk_MacHeader.rst
+	Source_Bb_LrWpan_Oqpsk_Phr.rst
+	Source_Bb_LrWpan_Oqpsk_Setting.rst
+	Source_Bb_LrWpan_Oqpsk_Sfd.rst

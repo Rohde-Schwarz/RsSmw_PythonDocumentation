@@ -1,0 +1,26 @@
+Adfl
+----------------------------------------
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dvb.Dvbs.Mtab.Set.Adfl.AdflCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	adfl_copy = driver.source.bb.dvb.dvbs.mtab.set.adfl.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Dvb_Dvbs_Mtab_Set_Adfl_State.rst

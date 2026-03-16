@@ -1,0 +1,27 @@
+Bh
+----------------------------------------
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.Mimo.Tap.Gvector.Bh.BhCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	bh_copy = driver.source.cemulation.mimo.tap.gvector.bh.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Cemulation_Mimo_Tap_Gvector_Bh_Gain.rst
+	Source_Cemulation_Mimo_Tap_Gvector_Bh_Phase.rst

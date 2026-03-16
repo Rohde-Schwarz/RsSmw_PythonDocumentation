@@ -1,0 +1,18 @@
+Mcs
+----------------------------------------
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:[LRWPan]:HUWB:FCONfig:MCS:STATe
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:[LRWPan]:HUWB:FCONfig:MCS:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.LrWpan.Huwb.Fconfig.Mcs.McsCls
+	:members:
+	:undoc-members:
+	:noindex:

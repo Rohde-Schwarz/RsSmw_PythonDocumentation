@@ -1,0 +1,27 @@
+Fdoppler
+----------------------------------------
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.DelPy.Group.Path.Fdoppler.FdopplerCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	fdoppler_copy = driver.source.fsimulator.delPy.group.path.fdoppler.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Fsimulator_DelPy_Group_Path_Fdoppler_Actual.rst
+	Source_Fsimulator_DelPy_Group_Path_Fdoppler_Resulting.rst

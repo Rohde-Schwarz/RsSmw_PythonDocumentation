@@ -1,0 +1,45 @@
+Sts
+----------------------------------------
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:[LRWPan]:EMLLd:STS:CPARt
+	single: [SOURce<HW>]:BB:[LRWPan]:EMLLd:STS:DLEN
+	single: [SOURce<HW>]:BB:[LRWPan]:EMLLd:STS:DLS
+	single: [SOURce<HW>]:BB:[LRWPan]:EMLLd:STS:KEY
+	single: [SOURce<HW>]:BB:[LRWPan]:EMLLd:STS:PC
+	single: [SOURce<HW>]:BB:[LRWPan]:EMLLd:STS:UPARt
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:[LRWPan]:EMLLd:STS:CPARt
+	[SOURce<HW>]:BB:[LRWPan]:EMLLd:STS:DLEN
+	[SOURce<HW>]:BB:[LRWPan]:EMLLd:STS:DLS
+	[SOURce<HW>]:BB:[LRWPan]:EMLLd:STS:KEY
+	[SOURce<HW>]:BB:[LRWPan]:EMLLd:STS:PC
+	[SOURce<HW>]:BB:[LRWPan]:EMLLd:STS:UPARt
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.LrWpan.Emlld.Sts.StsCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	sts_copy = driver.source.bb.lrWpan.emlld.sts.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_LrWpan_Emlld_Sts_Data.rst

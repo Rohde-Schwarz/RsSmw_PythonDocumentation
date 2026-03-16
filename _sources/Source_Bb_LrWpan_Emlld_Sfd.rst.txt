@@ -1,0 +1,20 @@
+Sfd
+----------------------------------------
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:[LRWPan]:EMLLd:SFD:USRState
+	single: [SOURce<HW>]:BB:LRWPan:EMLLd:SFD
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:[LRWPan]:EMLLd:SFD:USRState
+	[SOURce<HW>]:BB:LRWPan:EMLLd:SFD
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.LrWpan.Emlld.Sfd.SfdCls
+	:members:
+	:undoc-members:
+	:noindex:

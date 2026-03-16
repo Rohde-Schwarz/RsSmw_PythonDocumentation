@@ -1,0 +1,29 @@
+Sequencer<Sequencer>
+----------------------------------------
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Esequencer.Rtci.Sequencer.SequencerCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	sequencer_copy = driver.source.bb.esequencer.rtci.sequencer.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Esequencer_Rtci_Sequencer_Network.rst
+	Source_Bb_Esequencer_Rtci_Sequencer_Stream.rst
+	Source_Bb_Esequencer_Rtci_Sequencer_Wave.rst
+	Source_Bb_Esequencer_Rtci_Sequencer_Wlist.rst

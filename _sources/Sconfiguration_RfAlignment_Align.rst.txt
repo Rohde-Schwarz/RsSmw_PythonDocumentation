@@ -1,0 +1,20 @@
+Align
+----------------------------------------
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: SCONfiguration:RFALignment:ALIGn
+	single: SCONfiguration:RFALignment:ALIGn:ENABled
+
+.. code-block:: python
+
+	SCONfiguration:RFALignment:ALIGn
+	SCONfiguration:RFALignment:ALIGn:ENABled
+
+
+
+.. autoclass:: RsSmw.Implementations.Sconfiguration.RfAlignment.Align.AlignCls
+	:members:
+	:undoc-members:
+	:noindex:

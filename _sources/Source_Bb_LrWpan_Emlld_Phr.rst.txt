@@ -1,0 +1,18 @@
+Phr
+----------------------------------------
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:LRWPan:EMLLd:PHR:DRM
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:LRWPan:EMLLd:PHR:DRM
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.LrWpan.Emlld.Phr.PhrCls
+	:members:
+	:undoc-members:
+	:noindex:

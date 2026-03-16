@@ -1,0 +1,22 @@
+Dithering
+----------------------------------------
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:CORRection:OPTimize:RF:DITHering:AMPLitude
+	single: [SOURce<HW>]:CORRection:OPTimize:RF:DITHering:BANDwidth
+	single: [SOURce<HW>]:CORRection:OPTimize:RF:DITHering
+
+.. code-block:: python
+
+	[SOURce<HW>]:CORRection:OPTimize:RF:DITHering:AMPLitude
+	[SOURce<HW>]:CORRection:OPTimize:RF:DITHering:BANDwidth
+	[SOURce<HW>]:CORRection:OPTimize:RF:DITHering
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Correction.Optimize.Rf.Dithering.DitheringCls
+	:members:
+	:undoc-members:
+	:noindex:

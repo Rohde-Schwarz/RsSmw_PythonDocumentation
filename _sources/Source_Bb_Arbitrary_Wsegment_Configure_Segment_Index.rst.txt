@@ -1,0 +1,36 @@
+Index<IndexNull>
+----------------------------------------
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:ARBitrary:WSEGment:CONFigure:SEGMent:INDex<CH0>:DELete
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:ARBitrary:WSEGment:CONFigure:SEGMent:INDex<CH0>:DELete
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Arbitrary.Wsegment.Configure.Segment.Index.IndexCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	index_copy = driver.source.bb.arbitrary.wsegment.configure.segment.index.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Arbitrary_Wsegment_Configure_Segment_Index_Down.rst
+	Source_Bb_Arbitrary_Wsegment_Configure_Segment_Index_Up.rst

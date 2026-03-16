@@ -1,0 +1,46 @@
+Trigger
+----------------------------------------
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:KUIPer:TRIGger:RMODe
+	single: [SOURce<HW>]:BB:KUIPer:TRIGger:SLENgth
+	single: [SOURce<HW>]:BB:KUIPer:TRIGger:SOURce
+	single: [SOURce<HW>]:BB:KUIPer:[TRIGger]:SEQuence
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:KUIPer:TRIGger:RMODe
+	[SOURce<HW>]:BB:KUIPer:TRIGger:SLENgth
+	[SOURce<HW>]:BB:KUIPer:TRIGger:SOURce
+	[SOURce<HW>]:BB:KUIPer:[TRIGger]:SEQuence
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Kuiper.Trigger.TriggerCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	trigger_copy = driver.source.bb.kuiper.trigger.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Kuiper_Trigger_Arm.rst
+	Source_Bb_Kuiper_Trigger_Execute.rst
+	Source_Bb_Kuiper_Trigger_External.rst
+	Source_Bb_Kuiper_Trigger_Obaseband.rst
+	Source_Bb_Kuiper_Trigger_Output.rst
+	Source_Bb_Kuiper_Trigger_Time.rst

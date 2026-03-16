@@ -1,0 +1,39 @@
+Clock
+----------------------------------------
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:LRWPan:CLOCk:MODE
+	single: [SOURce<HW>]:BB:LRWPan:CLOCk:MULTiplier
+	single: [SOURce<HW>]:BB:LRWPan:CLOCk:SOURce
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:LRWPan:CLOCk:MODE
+	[SOURce<HW>]:BB:LRWPan:CLOCk:MULTiplier
+	[SOURce<HW>]:BB:LRWPan:CLOCk:SOURce
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.LrWpan.Clock.ClockCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	clock_copy = driver.source.bb.lrWpan.clock.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_LrWpan_Clock_Sync.rst

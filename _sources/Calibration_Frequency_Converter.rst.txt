@@ -1,0 +1,26 @@
+Converter
+----------------------------------------
+
+
+
+.. autoclass:: RsSmw.Implementations.Calibration.Frequency.Converter.ConverterCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	converter_copy = driver.calibration.frequency.converter.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Calibration_Frequency_Converter_External.rst

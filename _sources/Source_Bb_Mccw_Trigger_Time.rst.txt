@@ -1,0 +1,22 @@
+Time
+----------------------------------------
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:MCCW:TRIGger:TIME:DATE
+	single: [SOURce<HW>]:BB:MCCW:TRIGger:TIME:TIME
+	single: [SOURce<HW>]:BB:MCCW:TRIGger:TIME:[STATe]
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:MCCW:TRIGger:TIME:DATE
+	[SOURce<HW>]:BB:MCCW:TRIGger:TIME:TIME
+	[SOURce<HW>]:BB:MCCW:TRIGger:TIME:[STATe]
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Mccw.Trigger.Time.TimeCls
+	:members:
+	:undoc-members:
+	:noindex:

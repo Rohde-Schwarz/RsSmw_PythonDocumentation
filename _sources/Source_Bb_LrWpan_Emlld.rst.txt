@@ -1,0 +1,54 @@
+Emlld
+----------------------------------------
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:LRWPan:EMLLd:CCT
+	single: [SOURce<HW>]:BB:LRWPan:EMLLd:SRF
+	single: [SOURce<HW>]:BB:[LRWPan]:EMLLd:ASL
+	single: [SOURce<HW>]:BB:[LRWPan]:EMLLd:ASN
+	single: [SOURce<HW>]:BB:[LRWPan]:EMLLd:BWIDth
+	single: [SOURce<HW>]:BB:[LRWPan]:EMLLd:CNUMber
+	single: [SOURce<HW>]:BB:[LRWPan]:EMLLd:F2MS
+	single: [SOURce<HW>]:BB:[LRWPan]:EMLLd:IINTerval
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:LRWPan:EMLLd:CCT
+	[SOURce<HW>]:BB:LRWPan:EMLLd:SRF
+	[SOURce<HW>]:BB:[LRWPan]:EMLLd:ASL
+	[SOURce<HW>]:BB:[LRWPan]:EMLLd:ASN
+	[SOURce<HW>]:BB:[LRWPan]:EMLLd:BWIDth
+	[SOURce<HW>]:BB:[LRWPan]:EMLLd:CNUMber
+	[SOURce<HW>]:BB:[LRWPan]:EMLLd:F2MS
+	[SOURce<HW>]:BB:[LRWPan]:EMLLd:IINTerval
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.LrWpan.Emlld.EmlldCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	emlld_copy = driver.source.bb.lrWpan.emlld.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_LrWpan_Emlld_Fconfig.rst
+	Source_Bb_LrWpan_Emlld_MacHeader.rst
+	Source_Bb_LrWpan_Emlld_Phr.rst
+	Source_Bb_LrWpan_Emlld_Setting.rst
+	Source_Bb_LrWpan_Emlld_Sfd.rst
+	Source_Bb_LrWpan_Emlld_Sts.rst

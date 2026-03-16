@@ -1,0 +1,18 @@
+Delete
+----------------------------------------
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:KUIPer:SETTing:DELete
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:KUIPer:SETTing:DELete
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Kuiper.Setting.Delete.DeleteCls
+	:members:
+	:undoc-members:
+	:noindex:

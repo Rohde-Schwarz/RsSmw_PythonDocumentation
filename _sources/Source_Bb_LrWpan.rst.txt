@@ -1,0 +1,53 @@
+LrWpan
+----------------------------------------
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:LRWPan:PRESet
+	single: [SOURce<HW>]:BB:LRWPan:SLENgth
+	single: [SOURce<HW>]:BB:LRWPan:STATe
+	single: [SOURce<HW>]:BB:LRWPan:STD
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:LRWPan:PRESet
+	[SOURce<HW>]:BB:LRWPan:SLENgth
+	[SOURce<HW>]:BB:LRWPan:STATe
+	[SOURce<HW>]:BB:LRWPan:STD
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.LrWpan.LrWpanCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	lrWpan_copy = driver.source.bb.lrWpan.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_LrWpan_Clipping.rst
+	Source_Bb_LrWpan_Clock.rst
+	Source_Bb_LrWpan_Emlld.rst
+	Source_Bb_LrWpan_FilterPy.rst
+	Source_Bb_LrWpan_Huwb.rst
+	Source_Bb_LrWpan_Impairments.rst
+	Source_Bb_LrWpan_Mms.rst
+	Source_Bb_LrWpan_Oqpsk.rst
+	Source_Bb_LrWpan_Sens.rst
+	Source_Bb_LrWpan_Setting.rst
+	Source_Bb_LrWpan_SymbolRate.rst
+	Source_Bb_LrWpan_Trigger.rst
+	Source_Bb_LrWpan_Waveform.rst

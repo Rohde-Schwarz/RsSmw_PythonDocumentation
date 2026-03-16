@@ -1,0 +1,35 @@
+Analyzer
+----------------------------------------
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:REGenerator:SIMulation:ANALyzer:STATus
+
+.. code-block:: python
+
+	[SOURce<HW>]:REGenerator:SIMulation:ANALyzer:STATus
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Regenerator.Simulation.Analyzer.AnalyzerCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	analyzer_copy = driver.source.regenerator.simulation.analyzer.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Regenerator_Simulation_Analyzer_Frequency.rst

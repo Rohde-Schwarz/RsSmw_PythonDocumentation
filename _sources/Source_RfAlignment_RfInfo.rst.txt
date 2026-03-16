@@ -1,0 +1,18 @@
+RfInfo
+----------------------------------------
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: SOURce<HW>:RFALignment:RFINfo
+
+.. code-block:: python
+
+	SOURce<HW>:RFALignment:RFINfo
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.RfAlignment.RfInfo.RfInfoCls
+	:members:
+	:undoc-members:
+	:noindex:

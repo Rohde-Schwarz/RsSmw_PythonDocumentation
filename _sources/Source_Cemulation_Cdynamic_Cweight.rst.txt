@@ -1,0 +1,18 @@
+Cweight
+----------------------------------------
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:CEMulation:CDYNamic:CWEight:CATalog
+
+.. code-block:: python
+
+	[SOURce<HW>]:CEMulation:CDYNamic:CWEight:CATalog
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.Cdynamic.Cweight.CweightCls
+	:members:
+	:undoc-members:
+	:noindex:

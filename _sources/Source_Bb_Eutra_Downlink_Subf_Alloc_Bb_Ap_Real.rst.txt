@@ -1,0 +1,18 @@
+Real
+----------------------------------------
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:EUTRa:DL:[SUBF<ST0>]:ALLoc<CH0>:BB<DIR0>:AP<GR0>:REAL
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:EUTRa:DL:[SUBF<ST0>]:ALLoc<CH0>:BB<DIR0>:AP<GR0>:REAL
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Eutra.Downlink.Subf.Alloc.Bb.Ap.Real.RealCls
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,29 @@
+Alloc<AllocationNull>
+----------------------------------------
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Uplink.Cell.Subf.Alloc.AllocCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	alloc_copy = driver.source.bb.v5G.uplink.cell.subf.alloc.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_V5G_Uplink_Cell_Subf_Alloc_Cw.rst
+	Source_Bb_V5G_Uplink_Cell_Subf_Alloc_Pusch.rst
+	Source_Bb_V5G_Uplink_Cell_Subf_Alloc_Xpucch.rst
+	Source_Bb_V5G_Uplink_Cell_Subf_Alloc_Xpusch.rst

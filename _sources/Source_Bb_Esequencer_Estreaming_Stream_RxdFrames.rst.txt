@@ -1,0 +1,26 @@
+RxdFrames<Index>
+----------------------------------------
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:ESEQuencer:ESTReaming:STReam:RXDFrames<CH1>
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:ESEQuencer:ESTReaming:STReam:RXDFrames<CH1>
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Esequencer.Estreaming.Stream.RxdFrames.RxdFramesCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	rxdFrames_copy = driver.source.bb.esequencer.estreaming.stream.rxdFrames.clone()

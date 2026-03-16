@@ -1,0 +1,26 @@
+Frequency<NoisePoint>
+----------------------------------------
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:NOISe:PHASenoise:FREQuency<CH>
+
+.. code-block:: python
+
+	[SOURce<HW>]:NOISe:PHASenoise:FREQuency<CH>
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Noise.Phasenoise.Frequency.FrequencyCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	frequency_copy = driver.source.noise.phasenoise.frequency.clone()

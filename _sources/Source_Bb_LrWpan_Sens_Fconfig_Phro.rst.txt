@@ -1,0 +1,18 @@
+Phro
+----------------------------------------
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:LRWPan:SENS:FCONfig:PHRO:CWORd
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:LRWPan:SENS:FCONfig:PHRO:CWORd
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.LrWpan.Sens.Fconfig.Phro.PhroCls
+	:members:
+	:undoc-members:
+	:noindex:

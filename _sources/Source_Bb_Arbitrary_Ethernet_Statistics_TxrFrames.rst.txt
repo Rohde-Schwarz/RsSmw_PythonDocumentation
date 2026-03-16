@@ -1,0 +1,26 @@
+TxrFrames<Index>
+----------------------------------------
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:ARBitrary:ETHernet:STATistics:TXRFrames<CH3>
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:ARBitrary:ETHernet:STATistics:TXRFrames<CH3>
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Arbitrary.Ethernet.Statistics.TxrFrames.TxrFramesCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	txrFrames_copy = driver.source.bb.arbitrary.ethernet.statistics.txrFrames.clone()

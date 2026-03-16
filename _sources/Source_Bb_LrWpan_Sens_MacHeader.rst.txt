@@ -1,0 +1,78 @@
+MacHeader
+----------------------------------------
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:[LRWPan]:SENS:MACHeader:AR
+	single: [SOURce<HW>]:BB:[LRWPan]:SENS:MACHeader:CTRL
+	single: [SOURce<HW>]:BB:[LRWPan]:SENS:MACHeader:DAD2
+	single: [SOURce<HW>]:BB:[LRWPan]:SENS:MACHeader:DAD3
+	single: [SOURce<HW>]:BB:[LRWPan]:SENS:MACHeader:DAD4
+	single: [SOURce<HW>]:BB:[LRWPan]:SENS:MACHeader:DADD
+	single: [SOURce<HW>]:BB:[LRWPan]:SENS:MACHeader:DADMode
+	single: [SOURce<HW>]:BB:[LRWPan]:SENS:MACHeader:DPANid
+	single: [SOURce<HW>]:BB:[LRWPan]:SENS:MACHeader:FPENding
+	single: [SOURce<HW>]:BB:[LRWPan]:SENS:MACHeader:FTYPe
+	single: [SOURce<HW>]:BB:[LRWPan]:SENS:MACHeader:FVERsion
+	single: [SOURce<HW>]:BB:[LRWPan]:SENS:MACHeader:IEPResent
+	single: [SOURce<HW>]:BB:[LRWPan]:SENS:MACHeader:LDADdress
+	single: [SOURce<HW>]:BB:[LRWPan]:SENS:MACHeader:LDEPanid
+	single: [SOURce<HW>]:BB:[LRWPan]:SENS:MACHeader:LFRControl
+	single: [SOURce<HW>]:BB:[LRWPan]:SENS:MACHeader:LSADdress
+	single: [SOURce<HW>]:BB:[LRWPan]:SENS:MACHeader:LSEQnumber
+	single: [SOURce<HW>]:BB:[LRWPan]:SENS:MACHeader:LSOPanid
+	single: [SOURce<HW>]:BB:[LRWPan]:SENS:MACHeader:PIDComp
+	single: [SOURce<HW>]:BB:[LRWPan]:SENS:MACHeader:REServed
+	single: [SOURce<HW>]:BB:[LRWPan]:SENS:MACHeader:SAD2
+	single: [SOURce<HW>]:BB:[LRWPan]:SENS:MACHeader:SAD3
+	single: [SOURce<HW>]:BB:[LRWPan]:SENS:MACHeader:SAD4
+	single: [SOURce<HW>]:BB:[LRWPan]:SENS:MACHeader:SADD
+	single: [SOURce<HW>]:BB:[LRWPan]:SENS:MACHeader:SADMode
+	single: [SOURce<HW>]:BB:[LRWPan]:SENS:MACHeader:SEENabled
+	single: [SOURce<HW>]:BB:[LRWPan]:SENS:MACHeader:SENSupp
+	single: [SOURce<HW>]:BB:[LRWPan]:SENS:MACHeader:SEQNumber
+	single: [SOURce<HW>]:BB:[LRWPan]:SENS:MACHeader:SPANid
+	single: [SOURce<HW>]:BB:[LRWPan]:SENS:MACHeader:STATe
+	single: [SOURce<HW>]:BB:[LRWPan]:SENS:MACHeader:STRing
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:[LRWPan]:SENS:MACHeader:AR
+	[SOURce<HW>]:BB:[LRWPan]:SENS:MACHeader:CTRL
+	[SOURce<HW>]:BB:[LRWPan]:SENS:MACHeader:DAD2
+	[SOURce<HW>]:BB:[LRWPan]:SENS:MACHeader:DAD3
+	[SOURce<HW>]:BB:[LRWPan]:SENS:MACHeader:DAD4
+	[SOURce<HW>]:BB:[LRWPan]:SENS:MACHeader:DADD
+	[SOURce<HW>]:BB:[LRWPan]:SENS:MACHeader:DADMode
+	[SOURce<HW>]:BB:[LRWPan]:SENS:MACHeader:DPANid
+	[SOURce<HW>]:BB:[LRWPan]:SENS:MACHeader:FPENding
+	[SOURce<HW>]:BB:[LRWPan]:SENS:MACHeader:FTYPe
+	[SOURce<HW>]:BB:[LRWPan]:SENS:MACHeader:FVERsion
+	[SOURce<HW>]:BB:[LRWPan]:SENS:MACHeader:IEPResent
+	[SOURce<HW>]:BB:[LRWPan]:SENS:MACHeader:LDADdress
+	[SOURce<HW>]:BB:[LRWPan]:SENS:MACHeader:LDEPanid
+	[SOURce<HW>]:BB:[LRWPan]:SENS:MACHeader:LFRControl
+	[SOURce<HW>]:BB:[LRWPan]:SENS:MACHeader:LSADdress
+	[SOURce<HW>]:BB:[LRWPan]:SENS:MACHeader:LSEQnumber
+	[SOURce<HW>]:BB:[LRWPan]:SENS:MACHeader:LSOPanid
+	[SOURce<HW>]:BB:[LRWPan]:SENS:MACHeader:PIDComp
+	[SOURce<HW>]:BB:[LRWPan]:SENS:MACHeader:REServed
+	[SOURce<HW>]:BB:[LRWPan]:SENS:MACHeader:SAD2
+	[SOURce<HW>]:BB:[LRWPan]:SENS:MACHeader:SAD3
+	[SOURce<HW>]:BB:[LRWPan]:SENS:MACHeader:SAD4
+	[SOURce<HW>]:BB:[LRWPan]:SENS:MACHeader:SADD
+	[SOURce<HW>]:BB:[LRWPan]:SENS:MACHeader:SADMode
+	[SOURce<HW>]:BB:[LRWPan]:SENS:MACHeader:SEENabled
+	[SOURce<HW>]:BB:[LRWPan]:SENS:MACHeader:SENSupp
+	[SOURce<HW>]:BB:[LRWPan]:SENS:MACHeader:SEQNumber
+	[SOURce<HW>]:BB:[LRWPan]:SENS:MACHeader:SPANid
+	[SOURce<HW>]:BB:[LRWPan]:SENS:MACHeader:STATe
+	[SOURce<HW>]:BB:[LRWPan]:SENS:MACHeader:STRing
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.LrWpan.Sens.MacHeader.MacHeaderCls
+	:members:
+	:undoc-members:
+	:noindex:

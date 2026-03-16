@@ -1,0 +1,26 @@
+RxuSegments<UserIx>
+----------------------------------------
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:ESEQuencer:ESTReaming:STReam:RXUSegments<CH>
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:ESEQuencer:ESTReaming:STReam:RXUSegments<CH>
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Esequencer.Estreaming.Stream.RxuSegments.RxuSegmentsCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	rxuSegments_copy = driver.source.bb.esequencer.estreaming.stream.rxuSegments.clone()

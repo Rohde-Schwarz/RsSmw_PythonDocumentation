@@ -1,0 +1,27 @@
+AoTime<AttenuationList>
+----------------------------------------
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Esequencer.User.Bb.AoTime.AoTimeCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	aoTime_copy = driver.source.bb.esequencer.user.bb.aoTime.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Esequencer_User_Bb_AoTime_File.rst
+	Source_Bb_Esequencer_User_Bb_AoTime_State.rst

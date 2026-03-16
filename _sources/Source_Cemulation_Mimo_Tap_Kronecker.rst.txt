@@ -1,0 +1,26 @@
+Kronecker
+----------------------------------------
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.Mimo.Tap.Kronecker.KroneckerCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	kronecker_copy = driver.source.cemulation.mimo.tap.kronecker.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Cemulation_Mimo_Tap_Kronecker_Correlation.rst

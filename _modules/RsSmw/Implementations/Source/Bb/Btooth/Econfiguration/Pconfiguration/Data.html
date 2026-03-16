@@ -1,0 +1,207 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../../../../../../../">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RsSmw.Implementations.Source.Bb.Btooth.Econfiguration.Pconfiguration.Data &mdash; RsSmw 5.50.42.103 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../../../../../../../_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="../../../../../../../../_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="../../../../../../../../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../../../../../../../../_static/custom.css?v=2ddbb4b2" />
+
+  
+      <script src="../../../../../../../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../../../../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../../../../../../../_static/documentation_options.js?v=4397b82f"></script>
+      <script src="../../../../../../../../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../../../../../../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+      <script src="../../../../../../../../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../../../../../../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../../../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../../../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../../../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../../../../../../index.html" class="icon icon-home">
+            RsSmw
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../../readme.html">Revision History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../../enums.html">Enums</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../../repcap.html">RepCaps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../../examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../../RsSmw.html">Instrument API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../../utilities.html">Utilities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../../logger.html">Logger</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../../events.html">Events</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../../genindex.html">Index</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../../../../../index.html">RsSmw</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../../../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../../../../../index.html">Module code</a></li>
+          <li class="breadcrumb-item"><a href="../../../../../Source.html">RsSmw.Implementations.Source</a></li>
+          <li class="breadcrumb-item"><a href="../../../../Bb.html">RsSmw.Implementations.Source.Bb</a></li>
+          <li class="breadcrumb-item"><a href="../../../Btooth.html">RsSmw.Implementations.Source.Bb.Btooth</a></li>
+          <li class="breadcrumb-item"><a href="../../Econfiguration.html">RsSmw.Implementations.Source.Bb.Btooth.Econfiguration</a></li>
+          <li class="breadcrumb-item"><a href="../Pconfiguration.html">RsSmw.Implementations.Source.Bb.Btooth.Econfiguration.Pconfiguration</a></li>
+      <li class="breadcrumb-item active">RsSmw.Implementations.Source.Bb.Btooth.Econfiguration.Pconfiguration.Data</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Source code for RsSmw.Implementations.Source.Bb.Btooth.Econfiguration.Pconfiguration.Data</h1><div class="highlight"><pre>
+<span></span><span class="kn">from</span><span class="w"> </span><span class="nn">.......Internal.Core</span><span class="w"> </span><span class="kn">import</span> <span class="n">Core</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">.......Internal.CommandsGroup</span><span class="w"> </span><span class="kn">import</span> <span class="n">CommandsGroup</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">.......Internal</span><span class="w"> </span><span class="kn">import</span> <span class="n">Conversions</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">.......Internal.Utilities</span><span class="w"> </span><span class="kn">import</span> <span class="n">trim_str_response</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">.......Internal.StructBase</span><span class="w"> </span><span class="kn">import</span> <span class="n">StructBase</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">.......Internal.ArgStruct</span><span class="w"> </span><span class="kn">import</span> <span class="n">ArgStruct</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">.......</span><span class="w"> </span><span class="kn">import</span> <span class="n">enums</span>
+
+
+<span class="c1"># noinspection PyPep8Naming,PyAttributeOutsideInit,SpellCheckingInspection</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">DataCls</span><span class="p">:</span>
+<span class="w">	</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">	| Commands in total: 3</span>
+<span class="sd">	| Subgroups: 0</span>
+<span class="sd">	| Direct child commands: 3</span>
+<span class="sd">	&quot;&quot;&quot;</span>
+
+	<span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">core</span><span class="p">:</span> <span class="n">Core</span><span class="p">,</span> <span class="n">parent</span><span class="p">):</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span> <span class="o">=</span> <span class="n">core</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span> <span class="o">=</span> <span class="n">CommandsGroup</span><span class="p">(</span><span class="s2">&quot;data&quot;</span><span class="p">,</span> <span class="n">core</span><span class="p">,</span> <span class="n">parent</span><span class="p">)</span>
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="DataCls.DpatternStruct">
+<a class="viewcode-back" href="../../../../../../../../Source_Bb_Btooth_Econfiguration_Pconfiguration_Data.html#RsSmw.Implementations.Source.Bb.Btooth.Econfiguration.Pconfiguration.Data.DataCls.DpatternStruct">[docs]</a>
+	<span class="k">class</span><span class="w"> </span><span class="nc">DpatternStruct</span><span class="p">(</span><span class="n">StructBase</span><span class="p">):</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		Structure for reading output parameters. Fields: \n</span>
+<span class="sd">			- Dpattern: str: numeric</span>
+<span class="sd">			- Bitcount: int: integer Range: 1 to 64</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">__meta_args_list</span> <span class="o">=</span> <span class="p">[</span>
+			<span class="n">ArgStruct</span><span class="o">.</span><span class="n">scalar_raw_str</span><span class="p">(</span><span class="s1">&#39;Dpattern&#39;</span><span class="p">),</span>
+			<span class="n">ArgStruct</span><span class="o">.</span><span class="n">scalar_int</span><span class="p">(</span><span class="s1">&#39;Bitcount&#39;</span><span class="p">)]</span>
+
+		<span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+			<span class="n">StructBase</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span>
+			<span class="bp">self</span><span class="o">.</span><span class="n">Dpattern</span><span class="p">:</span> <span class="nb">str</span><span class="o">=</span><span class="kc">None</span>
+			<span class="bp">self</span><span class="o">.</span><span class="n">Bitcount</span><span class="p">:</span> <span class="nb">int</span><span class="o">=</span><span class="kc">None</span></div>
+
+
+<div class="viewcode-block" id="DataCls.get_dpattern">
+<a class="viewcode-back" href="../../../../../../../../Source_Bb_Btooth_Econfiguration_Pconfiguration_Data.html#RsSmw.Implementations.Source.Bb.Btooth.Econfiguration.Pconfiguration.Data.DataCls.get_dpattern">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_dpattern</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">DpatternStruct</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:BTOoth:ECONfiguration:PCONfiguration:DATA:DPATtern`` \n</span>
+<span class="sd">		Snippet: ``value: DpatternStruct = driver.source.bb.btooth.econfiguration.pconfiguration.data.get_dpattern()`` \n</span>
+<span class="sd">		Specifies the user-defined pattern. The setting is relevant for method</span>
+<span class="sd">		``RsSmw.source.bb.btooth.econfiguration.pconfiguration.data.value()`` PATTern</span>
+
+<span class="sd">		:return: structure: for return value, see the help for DpatternStruct structure arguments.</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_struct</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:BTOoth:ECONfiguration:PCONfiguration:DATA:DPATtern?&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="n">DpatternStruct</span><span class="p">())</span></div>
+
+
+<div class="viewcode-block" id="DataCls.get_dselection">
+<a class="viewcode-back" href="../../../../../../../../Source_Bb_Btooth_Econfiguration_Pconfiguration_Data.html#RsSmw.Implementations.Source.Bb.Btooth.Econfiguration.Pconfiguration.Data.DataCls.get_dselection">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_dselection</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:BTOoth:ECONfiguration:PCONfiguration:DATA:DSELection`` \n</span>
+<span class="sd">		Snippet: ``value: str = driver.source.bb.btooth.econfiguration.pconfiguration.data.get_dselection()`` \n</span>
+<span class="sd">		Selects a data list file from the default directory or from the specific directory.</span>
+<span class="sd">		Using data list (DLISt) data requires one of the following commands: \n</span>
+<span class="sd">			- BB:BTO:ECON:PCON:DATA DLISt See method ``RsSmw.source.bb.btooth.econfiguration.pconfiguration.data.value()`` .</span>
+<span class="sd">			- BB:BTO:DTT:TPC:UPS DLISt See method ``RsSmw.source.bb.btooth.dtTest.tpConfiguration.up_source()`` .</span>
+
+<span class="sd">		Refer to &#39;Accessing Files in the Default or Specified Directory&#39; for general information on file handling in the default</span>
+<span class="sd">		and in a specific directory.</span>
+
+<span class="sd">		:return: dselection: string</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:BTOoth:ECONfiguration:PCONfiguration:DATA:DSELection?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">trim_str_response</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="DataCls.get_value">
+<a class="viewcode-back" href="../../../../../../../../Source_Bb_Btooth_Econfiguration_Pconfiguration_Data.html#RsSmw.Implementations.Source.Bb.Btooth.Econfiguration.Pconfiguration.Data.DataCls.get_value">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_value</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">enums</span><span class="o">.</span><span class="n">DataSourceB</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:BTOoth:ECONfiguration:PCONfiguration:DATA`` \n</span>
+<span class="sd">		Snippet: ``value: enums.DataSourceB = driver.source.bb.btooth.econfiguration.pconfiguration.data.get_value()`` \n</span>
+<span class="sd">		Selects the pattern source used for the payload.</span>
+
+<span class="sd">		:return: data: ALL0 | ALL1 | PATTern | PN09 | PN11 | PN15 | PN16 | PN20 | PN21 | PN23 | DLISt ALL0 / ALL1 All 0 or all 1 pattern PATTern User-defined pattern. The pattern can be specified via: method ``RsSmw.source.bb.btooth.econfiguration.pconfiguration.data.dpattern()`` PNxx Pseudo-random bit sequences (PRBS) of a length of xx bits. The length in bit can be 9, 11, 15, 16, 20, 21, or 23. DLISt Internal data list is used. The data list can be specified via: method ``RsSmw.source.bb.btooth.econfiguration.pconfiguration.data.dselection()``</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:BTOoth:ECONfiguration:PCONfiguration:DATA?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_scalar_enum</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">DataSourceB</span><span class="p">)</span></div>
+
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright © Rohde &amp; Schwarz 2026.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

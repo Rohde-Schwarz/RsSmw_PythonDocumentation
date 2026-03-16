@@ -1,0 +1,27 @@
+Set<SetItem>
+----------------------------------------
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Uplink.Cell.Subf.Alloc.Pusch.Set.SetCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	set_copy = driver.source.bb.oneweb.uplink.cell.subf.alloc.pusch.set.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Oneweb_Uplink_Cell_Subf_Alloc_Pusch_Set_RbCount.rst
+	Source_Bb_Oneweb_Uplink_Cell_Subf_Alloc_Pusch_Set_VrbOffset.rst

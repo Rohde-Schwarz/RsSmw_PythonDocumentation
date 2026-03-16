@@ -1,0 +1,26 @@
+TxrFrames<Index>
+----------------------------------------
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:ESEQuencer:ESTReaming:STReam:TXRFrames<CH3>
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:ESEQuencer:ESTReaming:STReam:TXRFrames<CH3>
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Esequencer.Estreaming.Stream.TxrFrames.TxrFramesCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	txrFrames_copy = driver.source.bb.esequencer.estreaming.stream.txrFrames.clone()

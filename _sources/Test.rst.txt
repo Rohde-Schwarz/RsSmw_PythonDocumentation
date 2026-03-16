@@ -1,0 +1,53 @@
+Test
+----------------------------------------
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: TEST:BBIN
+	single: TEST:FRC
+	single: TEST:NRPTrigger
+	single: TEST:PRESet
+
+.. code-block:: python
+
+	TEST:BBIN
+	TEST:FRC
+	TEST:NRPTrigger
+	TEST:PRESet
+
+
+
+.. autoclass:: RsSmw.Implementations.Test.TestCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	test_copy = driver.test.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Test_All.rst
+	Test_Baseband.rst
+	Test_Bb.rst
+	Test_Connector.rst
+	Test_Fader.rst
+	Test_Generator.rst
+	Test_Hs.rst
+	Test_Pixel.rst
+	Test_Plimit.rst
+	Test_Remote.rst
+	Test_Res.rst
+	Test_Serror.rst
+	Test_Sw.rst

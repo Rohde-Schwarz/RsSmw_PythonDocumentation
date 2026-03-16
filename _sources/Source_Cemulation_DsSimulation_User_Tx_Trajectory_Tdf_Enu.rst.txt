@@ -1,0 +1,26 @@
+Enu
+----------------------------------------
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.DsSimulation.User.Tx.Trajectory.Tdf.Enu.EnuCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	enu_copy = driver.source.cemulation.dsSimulation.user.tx.trajectory.tdf.enu.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Cemulation_DsSimulation_User_Tx_Trajectory_Tdf_Enu_Coordinates.rst

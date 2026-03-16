@@ -1,0 +1,36 @@
+Vehicle
+----------------------------------------
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:FSIMulator:DSSimulation:USER:TX:VEHicle:MODE
+
+.. code-block:: python
+
+	[SOURce<HW>]:FSIMulator:DSSimulation:USER:TX:VEHicle:MODE
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.DsSimulation.User.Tx.Vehicle.VehicleCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	vehicle_copy = driver.source.fsimulator.dsSimulation.user.tx.vehicle.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Fsimulator_DsSimulation_User_Tx_Vehicle_Predefined.rst
+	Source_Fsimulator_DsSimulation_User_Tx_Vehicle_User.rst

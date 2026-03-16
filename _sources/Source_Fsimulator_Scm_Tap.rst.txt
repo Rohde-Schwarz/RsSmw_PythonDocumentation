@@ -1,0 +1,30 @@
+Tap<MimoTap>
+----------------------------------------
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.Scm.Tap.TapCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	tap_copy = driver.source.fsimulator.scm.tap.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Fsimulator_Scm_Tap_Arrival.rst
+	Source_Fsimulator_Scm_Tap_Departure.rst
+	Source_Fsimulator_Scm_Tap_Gain.rst
+	Source_Fsimulator_Scm_Tap_SubCluster.rst
+	Source_Fsimulator_Scm_Tap_SubPath.rst

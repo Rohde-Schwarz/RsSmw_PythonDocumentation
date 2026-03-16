@@ -1,0 +1,27 @@
+Alloc<AllocationNull>
+----------------------------------------
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Oneweb.Downlink.Subf.Alloc.AllocCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	alloc_copy = driver.source.bb.oneweb.downlink.subf.alloc.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Oneweb_Downlink_Subf_Alloc_Codewords.rst
+	Source_Bb_Oneweb_Downlink_Subf_Alloc_Cw.rst

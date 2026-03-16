@@ -1,0 +1,26 @@
+Frequency
+----------------------------------------
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Regenerator.Simulation.Analyzer.Frequency.FrequencyCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	frequency_copy = driver.source.regenerator.simulation.analyzer.frequency.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Regenerator_Simulation_Analyzer_Frequency_Apply.rst

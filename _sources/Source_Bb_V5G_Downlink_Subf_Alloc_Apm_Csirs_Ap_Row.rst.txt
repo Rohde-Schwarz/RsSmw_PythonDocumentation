@@ -1,0 +1,26 @@
+Row<RowNull>
+----------------------------------------
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Downlink.Subf.Alloc.Apm.Csirs.Ap.Row.RowCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	row_copy = driver.source.bb.v5G.downlink.subf.alloc.apm.csirs.ap.row.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_V5G_Downlink_Subf_Alloc_Apm_Csirs_Ap_Row_State.rst

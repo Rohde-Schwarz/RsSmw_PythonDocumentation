@@ -1,0 +1,27 @@
+Wiring
+----------------------------------------
+
+
+
+.. autoclass:: RsSmw.Implementations.Sconfiguration.RfAlignment.Setup.Info.Wiring.WiringCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	wiring_copy = driver.sconfiguration.rfAlignment.setup.info.wiring.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Sconfiguration_RfAlignment_Setup_Info_Wiring_Lo.rst
+	Sconfiguration_RfAlignment_Setup_Info_Wiring_Ref.rst

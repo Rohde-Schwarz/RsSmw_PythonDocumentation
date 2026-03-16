@@ -1,0 +1,18 @@
+Delay
+----------------------------------------
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:CEMulation:CDYNamic:PATH<CH>:DELay
+
+.. code-block:: python
+
+	[SOURce<HW>]:CEMulation:CDYNamic:PATH<CH>:DELay
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.Cdynamic.Path.Delay.DelayCls
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,18 @@
+K184
+----------------------------------------
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:NR5G:K184:STATe
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:NR5G:K184:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Nr5G.K184.K184Cls
+	:members:
+	:undoc-members:
+	:noindex:

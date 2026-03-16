@@ -1,0 +1,29 @@
+Ray<Ray>
+----------------------------------------
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.Mimo.Tap.Tgn.Ray.RayCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	ray_copy = driver.source.fsimulator.mimo.tap.tgn.ray.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Fsimulator_Mimo_Tap_Tgn_Ray_Arrival.rst
+	Source_Fsimulator_Mimo_Tap_Tgn_Ray_Departure.rst
+	Source_Fsimulator_Mimo_Tap_Tgn_Ray_Gain.rst
+	Source_Fsimulator_Mimo_Tap_Tgn_Ray_State.rst

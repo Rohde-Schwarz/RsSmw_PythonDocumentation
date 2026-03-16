@@ -1,0 +1,18 @@
+Fgnr
+----------------------------------------
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: APPS:GENerator:FGNR:VERSion
+
+.. code-block:: python
+
+	APPS:GENerator:FGNR:VERSion
+
+
+
+.. autoclass:: RsSmw.Implementations.Apps.Generator.Fgnr.FgnrCls
+	:members:
+	:undoc-members:
+	:noindex:

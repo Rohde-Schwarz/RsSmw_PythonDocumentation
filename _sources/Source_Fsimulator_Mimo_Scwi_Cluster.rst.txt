@@ -1,0 +1,30 @@
+Cluster<Cluster>
+----------------------------------------
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.Mimo.Scwi.Cluster.ClusterCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	cluster_copy = driver.source.fsimulator.mimo.scwi.cluster.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Fsimulator_Mimo_Scwi_Cluster_Arrival.rst
+	Source_Fsimulator_Mimo_Scwi_Cluster_Departure.rst
+	Source_Fsimulator_Mimo_Scwi_Cluster_Distribution.rst
+	Source_Fsimulator_Mimo_Scwi_Cluster_Gain.rst
+	Source_Fsimulator_Mimo_Scwi_Cluster_Tap.rst

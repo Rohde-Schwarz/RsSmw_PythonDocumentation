@@ -1,0 +1,20 @@
+Time
+----------------------------------------
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:BTOoth:TRIGger:TIME:TIME
+	single: [SOURce<HW>]:BB:BTOoth:TRIGger:TIME:[STATe]
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:BTOoth:TRIGger:TIME:TIME
+	[SOURce<HW>]:BB:BTOoth:TRIGger:TIME:[STATe]
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Btooth.Trigger.Time.TimeCls
+	:members:
+	:undoc-members:
+	:noindex:

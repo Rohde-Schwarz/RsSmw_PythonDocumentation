@@ -1,0 +1,18 @@
+Dr
+----------------------------------------
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:LRWPan:OQPSk:DR:LDSTate
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:LRWPan:OQPSk:DR:LDSTate
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.LrWpan.Oqpsk.Dr.DrCls
+	:members:
+	:undoc-members:
+	:noindex:

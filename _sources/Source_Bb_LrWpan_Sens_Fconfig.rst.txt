@@ -1,0 +1,60 @@
+Fconfig
+----------------------------------------
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:[LRWPan]:SENS:FCONfig:CINDex
+	single: [SOURce<HW>]:BB:[LRWPan]:SENS:FCONfig:DALEngth
+	single: [SOURce<HW>]:BB:[LRWPan]:SENS:FCONfig:DLENgth
+	single: [SOURce<HW>]:BB:[LRWPan]:SENS:FCONfig:DR
+	single: [SOURce<HW>]:BB:[LRWPan]:SENS:FCONfig:FLENgth
+	single: [SOURce<HW>]:BB:[LRWPan]:SENS:FCONfig:MDL
+	single: [SOURce<HW>]:BB:[LRWPan]:SENS:FCONfig:MFL
+	single: [SOURce<HW>]:BB:[LRWPan]:SENS:FCONfig:MPRF
+	single: [SOURce<HW>]:BB:[LRWPan]:SENS:FCONfig:PHRBrate
+	single: [SOURce<HW>]:BB:[LRWPan]:SENS:FCONfig:SFDLength
+	single: [SOURce<HW>]:BB:[LRWPan]:SENS:FCONfig:SYNLength
+	single: [SOURce<HW>]:BB:[LRWPan]:SENS:FCONfig:VRATe
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:[LRWPan]:SENS:FCONfig:CINDex
+	[SOURce<HW>]:BB:[LRWPan]:SENS:FCONfig:DALEngth
+	[SOURce<HW>]:BB:[LRWPan]:SENS:FCONfig:DLENgth
+	[SOURce<HW>]:BB:[LRWPan]:SENS:FCONfig:DR
+	[SOURce<HW>]:BB:[LRWPan]:SENS:FCONfig:FLENgth
+	[SOURce<HW>]:BB:[LRWPan]:SENS:FCONfig:MDL
+	[SOURce<HW>]:BB:[LRWPan]:SENS:FCONfig:MFL
+	[SOURce<HW>]:BB:[LRWPan]:SENS:FCONfig:MPRF
+	[SOURce<HW>]:BB:[LRWPan]:SENS:FCONfig:PHRBrate
+	[SOURce<HW>]:BB:[LRWPan]:SENS:FCONfig:SFDLength
+	[SOURce<HW>]:BB:[LRWPan]:SENS:FCONfig:SYNLength
+	[SOURce<HW>]:BB:[LRWPan]:SENS:FCONfig:VRATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.LrWpan.Sens.Fconfig.FconfigCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	fconfig_copy = driver.source.bb.lrWpan.sens.fconfig.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_LrWpan_Sens_Fconfig_Data.rst
+	Source_Bb_LrWpan_Sens_Fconfig_Mcs.rst
+	Source_Bb_LrWpan_Sens_Fconfig_Phro.rst
+	Source_Bb_LrWpan_Sens_Fconfig_Phrt.rst

@@ -1,0 +1,18 @@
+Mactive
+----------------------------------------
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:DVB:DVBS:MACTive:STATe
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:DVB:DVBS:MACTive:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dvb.Dvbs.Mactive.MactiveCls
+	:members:
+	:undoc-members:
+	:noindex:

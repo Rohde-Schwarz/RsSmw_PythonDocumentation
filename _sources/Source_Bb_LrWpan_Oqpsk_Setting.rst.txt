@@ -1,0 +1,20 @@
+Setting
+----------------------------------------
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:[LRWPan]:OQPSk:SETTing:CATalog
+	single: [SOURce<HW>]:BB:[LRWPan]:OQPSk:SETTing:DELete
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:[LRWPan]:OQPSk:SETTing:CATalog
+	[SOURce<HW>]:BB:[LRWPan]:OQPSk:SETTing:DELete
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.LrWpan.Oqpsk.Setting.SettingCls
+	:members:
+	:undoc-members:
+	:noindex:

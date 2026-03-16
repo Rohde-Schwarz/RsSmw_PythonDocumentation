@@ -1,0 +1,39 @@
+Tap<MimoTap>
+----------------------------------------
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:CEMulation:MIMO:TAP
+
+.. code-block:: python
+
+	[SOURce<HW>]:CEMulation:MIMO:TAP
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.Mimo.Tap.TapCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	tap_copy = driver.source.cemulation.mimo.tap.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Cemulation_Mimo_Tap_Antenna.rst
+	Source_Cemulation_Mimo_Tap_Gvector.rst
+	Source_Cemulation_Mimo_Tap_Kronecker.rst
+	Source_Cemulation_Mimo_Tap_Matrix.rst
+	Source_Cemulation_Mimo_Tap_Tgn.rst

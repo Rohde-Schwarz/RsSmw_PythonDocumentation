@@ -1,0 +1,27 @@
+Fb
+----------------------------------------
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.Mimo.Tap.Gvector.Fb.FbCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	fb_copy = driver.source.cemulation.mimo.tap.gvector.fb.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Cemulation_Mimo_Tap_Gvector_Fb_Gain.rst
+	Source_Cemulation_Mimo_Tap_Gvector_Fb_Phase.rst

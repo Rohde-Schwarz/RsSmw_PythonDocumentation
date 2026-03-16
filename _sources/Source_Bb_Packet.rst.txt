@@ -1,0 +1,27 @@
+Packet
+----------------------------------------
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Packet.PacketCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	packet_copy = driver.source.bb.packet.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Packet_Multiplex.rst
+	Source_Bb_Packet_Unfiltered.rst

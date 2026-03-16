@@ -1,0 +1,42 @@
+Kuiper
+----------------------------------------
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:KUIPer:PRESet
+	single: [SOURce<HW>]:BB:KUIPer:STATe
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:KUIPer:PRESet
+	[SOURce<HW>]:BB:KUIPer:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Kuiper.KuiperCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	kuiper_copy = driver.source.bb.kuiper.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Kuiper_Clock.rst
+	Source_Bb_Kuiper_Notch.rst
+	Source_Bb_Kuiper_RefSignal.rst
+	Source_Bb_Kuiper_Setting.rst
+	Source_Bb_Kuiper_Trigger.rst
+	Source_Bb_Kuiper_Waveform.rst

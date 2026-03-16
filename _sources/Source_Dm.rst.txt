@@ -1,0 +1,26 @@
+Dm
+----------------------------------------
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Dm.DmCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	dm_copy = driver.source.dm.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Dm_FilterPy.rst

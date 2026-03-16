@@ -1,0 +1,20 @@
+Setting
+----------------------------------------
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:LRWPan:SETTing:LOAD
+	single: [SOURce<HW>]:BB:LRWPan:SETTing:STORe
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:LRWPan:SETTing:LOAD
+	[SOURce<HW>]:BB:LRWPan:SETTing:STORe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.LrWpan.Setting.SettingCls
+	:members:
+	:undoc-members:
+	:noindex:

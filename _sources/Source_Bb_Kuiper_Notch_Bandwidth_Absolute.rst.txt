@@ -1,0 +1,18 @@
+Absolute
+----------------------------------------
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:KUIPer:NOTCh<CH>:BWIDth:[ABSolute]
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:KUIPer:NOTCh<CH>:BWIDth:[ABSolute]
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Kuiper.Notch.Bandwidth.Absolute.AbsoluteCls
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,688 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../../../../../">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RsSmw.Implementations.Source.Bb.LrWpan.Mms &mdash; RsSmw 5.50.42.103 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../../../../../_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="../../../../../../_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="../../../../../../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../../../../../../_static/custom.css?v=2ddbb4b2" />
+
+  
+      <script src="../../../../../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../../../../../_static/documentation_options.js?v=4397b82f"></script>
+      <script src="../../../../../../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../../../../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+      <script src="../../../../../../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../../../../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../../../../index.html" class="icon icon-home">
+            RsSmw
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../readme.html">Revision History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../enums.html">Enums</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../repcap.html">RepCaps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../RsSmw.html">Instrument API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../utilities.html">Utilities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../logger.html">Logger</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../events.html">Events</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../genindex.html">Index</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../../../index.html">RsSmw</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../../../index.html">Module code</a></li>
+          <li class="breadcrumb-item"><a href="../../../Source.html">RsSmw.Implementations.Source</a></li>
+          <li class="breadcrumb-item"><a href="../../Bb.html">RsSmw.Implementations.Source.Bb</a></li>
+          <li class="breadcrumb-item"><a href="../LrWpan.html">RsSmw.Implementations.Source.Bb.LrWpan</a></li>
+      <li class="breadcrumb-item active">RsSmw.Implementations.Source.Bb.LrWpan.Mms</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Source code for RsSmw.Implementations.Source.Bb.LrWpan.Mms</h1><div class="highlight"><pre>
+<span></span><span class="kn">from</span><span class="w"> </span><span class="nn">......Internal.Core</span><span class="w"> </span><span class="kn">import</span> <span class="n">Core</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">......Internal.CommandsGroup</span><span class="w"> </span><span class="kn">import</span> <span class="n">CommandsGroup</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">......Internal</span><span class="w"> </span><span class="kn">import</span> <span class="n">Conversions</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">......</span><span class="w"> </span><span class="kn">import</span> <span class="n">enums</span>
+
+
+<span class="c1"># noinspection PyPep8Naming,PyAttributeOutsideInit,SpellCheckingInspection</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">MmsCls</span><span class="p">:</span>
+<span class="w">	</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">	| Commands in total: 33</span>
+<span class="sd">	| Subgroups: 5</span>
+<span class="sd">	| Direct child commands: 18</span>
+<span class="sd">	&quot;&quot;&quot;</span>
+
+	<span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">core</span><span class="p">:</span> <span class="n">Core</span><span class="p">,</span> <span class="n">parent</span><span class="p">):</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span> <span class="o">=</span> <span class="n">core</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span> <span class="o">=</span> <span class="n">CommandsGroup</span><span class="p">(</span><span class="s2">&quot;mms&quot;</span><span class="p">,</span> <span class="n">core</span><span class="p">,</span> <span class="n">parent</span><span class="p">)</span>
+
+	<span class="nd">@property</span>
+	<span class="k">def</span><span class="w"> </span><span class="nf">rsf</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		| Commands in total: 3</span>
+<span class="sd">		| Subgroups: 0</span>
+<span class="sd">		| Direct child commands: 3</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;_rsf&#39;</span><span class="p">):</span>
+			<span class="kn">from</span><span class="w"> </span><span class="nn">.Rsf</span><span class="w"> </span><span class="kn">import</span> <span class="n">RsfCls</span>
+			<span class="bp">self</span><span class="o">.</span><span class="n">_rsf</span> <span class="o">=</span> <span class="n">RsfCls</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span><span class="p">)</span>
+		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_rsf</span>
+
+	<span class="nd">@property</span>
+	<span class="k">def</span><span class="w"> </span><span class="nf">fconfig</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		| Commands in total: 3</span>
+<span class="sd">		| Subgroups: 0</span>
+<span class="sd">		| Direct child commands: 3</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;_fconfig&#39;</span><span class="p">):</span>
+			<span class="kn">from</span><span class="w"> </span><span class="nn">.Fconfig</span><span class="w"> </span><span class="kn">import</span> <span class="n">FconfigCls</span>
+			<span class="bp">self</span><span class="o">.</span><span class="n">_fconfig</span> <span class="o">=</span> <span class="n">FconfigCls</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span><span class="p">)</span>
+		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fconfig</span>
+
+	<span class="nd">@property</span>
+	<span class="k">def</span><span class="w"> </span><span class="nf">setting</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		| Commands in total: 1</span>
+<span class="sd">		| Subgroups: 0</span>
+<span class="sd">		| Direct child commands: 1</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;_setting&#39;</span><span class="p">):</span>
+			<span class="kn">from</span><span class="w"> </span><span class="nn">.Setting</span><span class="w"> </span><span class="kn">import</span> <span class="n">SettingCls</span>
+			<span class="bp">self</span><span class="o">.</span><span class="n">_setting</span> <span class="o">=</span> <span class="n">SettingCls</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span><span class="p">)</span>
+		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_setting</span>
+
+	<span class="nd">@property</span>
+	<span class="k">def</span><span class="w"> </span><span class="nf">sfd</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		| Commands in total: 2</span>
+<span class="sd">		| Subgroups: 0</span>
+<span class="sd">		| Direct child commands: 2</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;_sfd&#39;</span><span class="p">):</span>
+			<span class="kn">from</span><span class="w"> </span><span class="nn">.Sfd</span><span class="w"> </span><span class="kn">import</span> <span class="n">SfdCls</span>
+			<span class="bp">self</span><span class="o">.</span><span class="n">_sfd</span> <span class="o">=</span> <span class="n">SfdCls</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span><span class="p">)</span>
+		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_sfd</span>
+
+	<span class="nd">@property</span>
+	<span class="k">def</span><span class="w"> </span><span class="nf">sts</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		| Commands in total: 6</span>
+<span class="sd">		| Subgroups: 1</span>
+<span class="sd">		| Direct child commands: 5</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;_sts&#39;</span><span class="p">):</span>
+			<span class="kn">from</span><span class="w"> </span><span class="nn">.Sts</span><span class="w"> </span><span class="kn">import</span> <span class="n">StsCls</span>
+			<span class="bp">self</span><span class="o">.</span><span class="n">_sts</span> <span class="o">=</span> <span class="n">StsCls</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span><span class="p">)</span>
+		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_sts</span>
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="MmsCls.get_mp_format">
+<a class="viewcode-back" href="../../../../../../Source_Bb_LrWpan_Mms.html#RsSmw.Implementations.Source.Bb.LrWpan.Mms.MmsCls.get_mp_format">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_mp_format</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">enums</span><span class="o">.</span><span class="n">HrpUwbMmsPktTyp</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:LRWPan:MMS:MPFormat`` \n</span>
+<span class="sd">		Snippet: ``value: enums.HrpUwbMmsPktTyp = driver.source.bb.lrWpan.mms.get_mp_format()`` \n</span>
+<span class="sd">		Sets the packet format for multi-millisecond ranging.</span>
+
+<span class="sd">		:return: mms_pkt_format: RSF | RIF | BOTH RSF The MMS packet composed of ranging sequence fragments (RSF) , consisting of a repetition of a selected multi-millisecond ranging sequence (MMRS) symbol. RIF The MMS packet composed of ranging integrity fragments (RIF) , consisting of a sequence of active scrambled timestamp sequence (STS) pulses. BOTH The MMS packet composed of both ranging sequence fragments and ranging integrity fragments.</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:LRWPan:MMS:MPFormat?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_scalar_enum</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">HrpUwbMmsPktTyp</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="MmsCls.set_mp_format">
+<a class="viewcode-back" href="../../../../../../Source_Bb_LrWpan_Mms.html#RsSmw.Implementations.Source.Bb.LrWpan.Mms.MmsCls.set_mp_format">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_mp_format</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">mms_pkt_format</span><span class="p">:</span> <span class="n">enums</span><span class="o">.</span><span class="n">HrpUwbMmsPktTyp</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:LRWPan:MMS:MPFormat`` \n</span>
+<span class="sd">		Snippet: ``driver.source.bb.lrWpan.mms.set_mp_format(mms_pkt_format = enums.HrpUwbMmsPktTyp.BOTH)`` \n</span>
+<span class="sd">		Sets the packet format for multi-millisecond ranging.</span>
+
+<span class="sd">		:param mms_pkt_format: RSF | RIF | BOTH RSF The MMS packet composed of ranging sequence fragments (RSF) , consisting of a repetition of a selected multi-millisecond ranging sequence (MMRS) symbol. RIF The MMS packet composed of ranging integrity fragments (RIF) , consisting of a sequence of active scrambled timestamp sequence (STS) pulses. BOTH The MMS packet composed of both ranging sequence fragments and ranging integrity fragments.</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">enum_scalar_to_str</span><span class="p">(</span><span class="n">mms_pkt_format</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">HrpUwbMmsPktTyp</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:LRWPan:MMS:MPFormat </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="MmsCls.get_nrif">
+<a class="viewcode-back" href="../../../../../../Source_Bb_LrWpan_Mms.html#RsSmw.Implementations.Source.Bb.LrWpan.Mms.MmsCls.get_nrif">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_nrif</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">enums</span><span class="o">.</span><span class="n">HrpUwbMmsrFragNumRif</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:LRWPan:MMS:NRIF`` \n</span>
+<span class="sd">		Snippet: ``value: enums.HrpUwbMmsrFragNumRif = driver.source.bb.lrWpan.mms.get_nrif()`` \n</span>
+<span class="sd">		Sets the number of RIF fragments in the MMS ranging phase.</span>
+
+<span class="sd">		:return: rif_number: FN0 | FN1 | FN2 | FN4 | FN8</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:LRWPan:MMS:NRIF?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_scalar_enum</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">HrpUwbMmsrFragNumRif</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="MmsCls.set_nrif">
+<a class="viewcode-back" href="../../../../../../Source_Bb_LrWpan_Mms.html#RsSmw.Implementations.Source.Bb.LrWpan.Mms.MmsCls.set_nrif">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_nrif</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">rif_number</span><span class="p">:</span> <span class="n">enums</span><span class="o">.</span><span class="n">HrpUwbMmsrFragNumRif</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:LRWPan:MMS:NRIF`` \n</span>
+<span class="sd">		Snippet: ``driver.source.bb.lrWpan.mms.set_nrif(rif_number = enums.HrpUwbMmsrFragNumRif.FN0)`` \n</span>
+<span class="sd">		Sets the number of RIF fragments in the MMS ranging phase.</span>
+
+<span class="sd">		:param rif_number: FN0 | FN1 | FN2 | FN4 | FN8</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">enum_scalar_to_str</span><span class="p">(</span><span class="n">rif_number</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">HrpUwbMmsrFragNumRif</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:LRWPan:MMS:NRIF </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="MmsCls.get_nrsf">
+<a class="viewcode-back" href="../../../../../../Source_Bb_LrWpan_Mms.html#RsSmw.Implementations.Source.Bb.LrWpan.Mms.MmsCls.get_nrsf">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_nrsf</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">enums</span><span class="o">.</span><span class="n">HrpUwbMmsrFragNumRsf</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:LRWPan:MMS:NRSF`` \n</span>
+<span class="sd">		Snippet: ``value: enums.HrpUwbMmsrFragNumRsf = driver.source.bb.lrWpan.mms.get_nrsf()`` \n</span>
+<span class="sd">		Sets the number of RSF fragments in the MMS ranging phase.</span>
+
+<span class="sd">		:return: rsf_number: FN0 | FN1 | FN2 | FN4 | FN8 | FN16</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:LRWPan:MMS:NRSF?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_scalar_enum</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">HrpUwbMmsrFragNumRsf</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="MmsCls.set_nrsf">
+<a class="viewcode-back" href="../../../../../../Source_Bb_LrWpan_Mms.html#RsSmw.Implementations.Source.Bb.LrWpan.Mms.MmsCls.set_nrsf">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_nrsf</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">rsf_number</span><span class="p">:</span> <span class="n">enums</span><span class="o">.</span><span class="n">HrpUwbMmsrFragNumRsf</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:LRWPan:MMS:NRSF`` \n</span>
+<span class="sd">		Snippet: ``driver.source.bb.lrWpan.mms.set_nrsf(rsf_number = enums.HrpUwbMmsrFragNumRsf.FN0)`` \n</span>
+<span class="sd">		Sets the number of RSF fragments in the MMS ranging phase.</span>
+
+<span class="sd">		:param rsf_number: FN0 | FN1 | FN2 | FN4 | FN8 | FN16</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">enum_scalar_to_str</span><span class="p">(</span><span class="n">rsf_number</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">HrpUwbMmsrFragNumRsf</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:LRWPan:MMS:NRSF </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="MmsCls.get_ri_offset">
+<a class="viewcode-back" href="../../../../../../Source_Bb_LrWpan_Mms.html#RsSmw.Implementations.Source.Bb.LrWpan.Mms.MmsCls.get_ri_offset">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_ri_offset</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:LRWPan:MMS:RIOFfset`` \n</span>
+<span class="sd">		Snippet: ``value: int = driver.source.bb.lrWpan.mms.get_ri_offset()`` \n</span>
+<span class="sd">		Requires [:SOURce&lt;hw&gt;]:BB:LRWPan:MMS:MPFormat BOTH. Queries the number of RSTU from the start of the last RSF fragment in</span>
+<span class="sd">		the MMS ranging pahse after which the initiator starts to transmit the first RIF fragment into the MMS ranging phase.</span>
+
+<span class="sd">		:return: rif_offset: integer Range: 2400 to 2400</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:LRWPan:MMS:RIOFfset?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_int</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="MmsCls.get_role">
+<a class="viewcode-back" href="../../../../../../Source_Bb_LrWpan_Mms.html#RsSmw.Implementations.Source.Bb.LrWpan.Mms.MmsCls.get_role">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_role</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">enums</span><span class="o">.</span><span class="n">HrpUwbRangingRole</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:LRWPan:MMS:ROLE`` \n</span>
+<span class="sd">		Snippet: ``value: enums.HrpUwbRangingRole = driver.source.bb.lrWpan.mms.get_role()`` \n</span>
+<span class="sd">		Sets the role for the MMS ranging round.</span>
+
+<span class="sd">		:return: role: RESP | INIT RESP The responder is the complementary role to the initiator in the ranging process. For example, the responder receives requests and generates and sends responses. INIT The initiator controls the ranging process between the devices. For example, the initiator initiates the ranging process and executes distance calculation.</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:LRWPan:MMS:ROLE?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_scalar_enum</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">HrpUwbRangingRole</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="MmsCls.set_role">
+<a class="viewcode-back" href="../../../../../../Source_Bb_LrWpan_Mms.html#RsSmw.Implementations.Source.Bb.LrWpan.Mms.MmsCls.set_role">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_role</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">role</span><span class="p">:</span> <span class="n">enums</span><span class="o">.</span><span class="n">HrpUwbRangingRole</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:LRWPan:MMS:ROLE`` \n</span>
+<span class="sd">		Snippet: ``driver.source.bb.lrWpan.mms.set_role(role = enums.HrpUwbRangingRole.INIT)`` \n</span>
+<span class="sd">		Sets the role for the MMS ranging round.</span>
+
+<span class="sd">		:param role: RESP | INIT RESP The responder is the complementary role to the initiator in the ranging process. For example, the responder receives requests and generates and sends responses. INIT The initiator controls the ranging process between the devices. For example, the initiator initiates the ranging process and executes distance calculation.</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">enum_scalar_to_str</span><span class="p">(</span><span class="n">role</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">HrpUwbRangingRole</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:LRWPan:MMS:ROLE </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="MmsCls.get_rp_duration">
+<a class="viewcode-back" href="../../../../../../Source_Bb_LrWpan_Mms.html#RsSmw.Implementations.Source.Bb.LrWpan.Mms.MmsCls.get_rp_duration">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_rp_duration</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:LRWPan:MMS:RPDuration`` \n</span>
+<span class="sd">		Snippet: ``value: int = driver.source.bb.lrWpan.mms.get_rp_duration()`` \n</span>
+<span class="sd">		Sets the number of slots within the MMS ranging phase. The available range of the ranging phase duration depends on the</span>
+<span class="sd">		MMS packet format set with method ``RsSmw.source.bb.lrWpan.mms.mp_format()`` .</span>
+
+<span class="sd">		:return: rp_duration: integer Range: 0 to 4095</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:LRWPan:MMS:RPDuration?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_int</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="MmsCls.set_rp_duration">
+<a class="viewcode-back" href="../../../../../../Source_Bb_LrWpan_Mms.html#RsSmw.Implementations.Source.Bb.LrWpan.Mms.MmsCls.set_rp_duration">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_rp_duration</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">rp_duration</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:LRWPan:MMS:RPDuration`` \n</span>
+<span class="sd">		Snippet: ``driver.source.bb.lrWpan.mms.set_rp_duration(rp_duration = 1)`` \n</span>
+<span class="sd">		Sets the number of slots within the MMS ranging phase. The available range of the ranging phase duration depends on the</span>
+<span class="sd">		MMS packet format set with method ``RsSmw.source.bb.lrWpan.mms.mp_format()`` .</span>
+
+<span class="sd">		:param rp_duration: integer Range: 0 to 4095</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">decimal_value_to_str</span><span class="p">(</span><span class="n">rp_duration</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:LRWPan:MMS:RPDuration </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="MmsCls.get_rs_duration">
+<a class="viewcode-back" href="../../../../../../Source_Bb_LrWpan_Mms.html#RsSmw.Implementations.Source.Bb.LrWpan.Mms.MmsCls.get_rs_duration">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_rs_duration</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">enums</span><span class="o">.</span><span class="n">HrpUwbMmsrSlotDur</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:LRWPan:MMS:RSDuration`` \n</span>
+<span class="sd">		Snippet: ``value: enums.HrpUwbMmsrSlotDur = driver.source.bb.lrWpan.mms.get_rs_duration()`` \n</span>
+<span class="sd">		Selects the duration of each ranging slot in RSTU (ranging scheduling time unit) . A ranging slot refers to a specific</span>
+<span class="sd">		time interval allocated for the transmission and reception of ranging messages between devices.</span>
+
+<span class="sd">		:return: rs_duration: SD3 | SD6 | SD9 | SD12 | SD15 | SD18 | SD21 | SD24</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:LRWPan:MMS:RSDuration?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_scalar_enum</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">HrpUwbMmsrSlotDur</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="MmsCls.set_rs_duration">
+<a class="viewcode-back" href="../../../../../../Source_Bb_LrWpan_Mms.html#RsSmw.Implementations.Source.Bb.LrWpan.Mms.MmsCls.set_rs_duration">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_rs_duration</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">rs_duration</span><span class="p">:</span> <span class="n">enums</span><span class="o">.</span><span class="n">HrpUwbMmsrSlotDur</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:LRWPan:MMS:RSDuration`` \n</span>
+<span class="sd">		Snippet: ``driver.source.bb.lrWpan.mms.set_rs_duration(rs_duration = enums.HrpUwbMmsrSlotDur.SD12)`` \n</span>
+<span class="sd">		Selects the duration of each ranging slot in RSTU (ranging scheduling time unit) . A ranging slot refers to a specific</span>
+<span class="sd">		time interval allocated for the transmission and reception of ranging messages between devices.</span>
+
+<span class="sd">		:param rs_duration: SD3 | SD6 | SD9 | SD12 | SD15 | SD18 | SD21 | SD24</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">enum_scalar_to_str</span><span class="p">(</span><span class="n">rs_duration</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">HrpUwbMmsrSlotDur</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:LRWPan:MMS:RSDuration </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="MmsCls.get_rs_offset">
+<a class="viewcode-back" href="../../../../../../Source_Bb_LrWpan_Mms.html#RsSmw.Implementations.Source.Bb.LrWpan.Mms.MmsCls.get_rs_offset">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_rs_offset</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:LRWPan:MMS:RSOFfset`` \n</span>
+<span class="sd">		Snippet: ``value: int = driver.source.bb.lrWpan.mms.get_rs_offset()`` \n</span>
+<span class="sd">		Sets the number of slots after which the initiator starts to transmit the first RSF fragment into the MMS ranging phase.</span>
+
+<span class="sd">		:return: rsf_offset: integer Range: 0 to 15</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:LRWPan:MMS:RSOFfset?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_int</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="MmsCls.set_rs_offset">
+<a class="viewcode-back" href="../../../../../../Source_Bb_LrWpan_Mms.html#RsSmw.Implementations.Source.Bb.LrWpan.Mms.MmsCls.set_rs_offset">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_rs_offset</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">rsf_offset</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:LRWPan:MMS:RSOFfset`` \n</span>
+<span class="sd">		Snippet: ``driver.source.bb.lrWpan.mms.set_rs_offset(rsf_offset = 1)`` \n</span>
+<span class="sd">		Sets the number of slots after which the initiator starts to transmit the first RSF fragment into the MMS ranging phase.</span>
+
+<span class="sd">		:param rsf_offset: integer Range: 0 to 15</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">decimal_value_to_str</span><span class="p">(</span><span class="n">rsf_offset</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:LRWPan:MMS:RSOFfset </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="MmsCls.get_rstu">
+<a class="viewcode-back" href="../../../../../../Source_Bb_LrWpan_Mms.html#RsSmw.Implementations.Source.Bb.LrWpan.Mms.MmsCls.get_rstu">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_rstu</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:LRWPan:MMS:RSTU`` \n</span>
+<span class="sd">		Snippet: ``value: int = driver.source.bb.lrWpan.mms.get_rstu()`` \n</span>
+<span class="sd">		Queries the size of the ranging scheduling time unit (RSTU) .</span>
+
+<span class="sd">		:return: rstu: integer Range: 416 to 416</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:LRWPan:MMS:RSTU?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_int</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="MmsCls.get_srf">
+<a class="viewcode-back" href="../../../../../../Source_Bb_LrWpan_Mms.html#RsSmw.Implementations.Source.Bb.LrWpan.Mms.MmsCls.get_srf">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_srf</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:LRWPan:MMS:SRF`` \n</span>
+<span class="sd">		Snippet: ``value: bool = driver.source.bb.lrWpan.mms.get_srf()`` \n</span>
+<span class="sd">		Sets the RF output frequency automatically to the value of the channel center frequency according to the selected channel</span>
+<span class="sd">		number. You can still adjust the RF frequency afterwards.</span>
+
+<span class="sd">		:return: set_rf: 1 | ON | 0| OFF</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:LRWPan:MMS:SRF?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_bool</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="MmsCls.set_srf">
+<a class="viewcode-back" href="../../../../../../Source_Bb_LrWpan_Mms.html#RsSmw.Implementations.Source.Bb.LrWpan.Mms.MmsCls.set_srf">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_srf</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">set_rf</span><span class="p">:</span> <span class="nb">bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:LRWPan:MMS:SRF`` \n</span>
+<span class="sd">		Snippet: ``driver.source.bb.lrWpan.mms.set_srf(set_rf = False)`` \n</span>
+<span class="sd">		Sets the RF output frequency automatically to the value of the channel center frequency according to the selected channel</span>
+<span class="sd">		number. You can still adjust the RF frequency afterwards.</span>
+
+<span class="sd">		:param set_rf: 1 | ON | 0| OFF</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">bool_to_str</span><span class="p">(</span><span class="n">set_rf</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:LRWPan:MMS:SRF </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="MmsCls.get_ssci">
+<a class="viewcode-back" href="../../../../../../Source_Bb_LrWpan_Mms.html#RsSmw.Implementations.Source.Bb.LrWpan.Mms.MmsCls.get_ssci">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_ssci</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">enums</span><span class="o">.</span><span class="n">HrpUwbCodeIndexSsci</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:LRWPan:MMS:SSCI`` \n</span>
+<span class="sd">		Snippet: ``value: enums.HrpUwbCodeIndexSsci = driver.source.bb.lrWpan.mms.get_ssci()`` \n</span>
+<span class="sd">		Requires [:SOURce&lt;hw&gt;]:BB:LRWPan:MMS:TFSYnc 1. Queries or sets the code index used for the SYNC and SFD in the MMS packet,</span>
+<span class="sd">		depending on the MMS packet format.</span>
+
+<span class="sd">		:return: ssci: CI_25 | CI_26 | CI_27 | CI_28 | CI_29 | CI_30 | CI_31 | CI_32</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:LRWPan:MMS:SSCI?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_scalar_enum</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">HrpUwbCodeIndexSsci</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="MmsCls.set_ssci">
+<a class="viewcode-back" href="../../../../../../Source_Bb_LrWpan_Mms.html#RsSmw.Implementations.Source.Bb.LrWpan.Mms.MmsCls.set_ssci">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_ssci</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ssci</span><span class="p">:</span> <span class="n">enums</span><span class="o">.</span><span class="n">HrpUwbCodeIndexSsci</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:LRWPan:MMS:SSCI`` \n</span>
+<span class="sd">		Snippet: ``driver.source.bb.lrWpan.mms.set_ssci(ssci = enums.HrpUwbCodeIndexSsci.CI_25)`` \n</span>
+<span class="sd">		Requires [:SOURce&lt;hw&gt;]:BB:LRWPan:MMS:TFSYnc 1. Queries or sets the code index used for the SYNC and SFD in the MMS packet,</span>
+<span class="sd">		depending on the MMS packet format.</span>
+
+<span class="sd">		:param ssci: CI_25 | CI_26 | CI_27 | CI_28 | CI_29 | CI_30 | CI_31 | CI_32</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">enum_scalar_to_str</span><span class="p">(</span><span class="n">ssci</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">HrpUwbCodeIndexSsci</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:LRWPan:MMS:SSCI </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="MmsCls.get_tf_sync">
+<a class="viewcode-back" href="../../../../../../Source_Bb_LrWpan_Mms.html#RsSmw.Implementations.Source.Bb.LrWpan.Mms.MmsCls.get_tf_sync">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_tf_sync</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:LRWPan:MMS:TFSYnc`` \n</span>
+<span class="sd">		Snippet: ``value: bool = driver.source.bb.lrWpan.mms.get_tf_sync()`` \n</span>
+<span class="sd">		Enables a fragment consisting of SYNC and SFD preceding the MMS ranging phase for initial timing and frequency</span>
+<span class="sd">		synchronization.</span>
+
+<span class="sd">		:return: time_freq_sync: 1 | ON | 0| OFF</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:LRWPan:MMS:TFSYnc?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_bool</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="MmsCls.set_tf_sync">
+<a class="viewcode-back" href="../../../../../../Source_Bb_LrWpan_Mms.html#RsSmw.Implementations.Source.Bb.LrWpan.Mms.MmsCls.set_tf_sync">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_tf_sync</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">time_freq_sync</span><span class="p">:</span> <span class="nb">bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:LRWPan:MMS:TFSYnc`` \n</span>
+<span class="sd">		Snippet: ``driver.source.bb.lrWpan.mms.set_tf_sync(time_freq_sync = False)`` \n</span>
+<span class="sd">		Enables a fragment consisting of SYNC and SFD preceding the MMS ranging phase for initial timing and frequency</span>
+<span class="sd">		synchronization.</span>
+
+<span class="sd">		:param time_freq_sync: 1 | ON | 0| OFF</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">bool_to_str</span><span class="p">(</span><span class="n">time_freq_sync</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:LRWPan:MMS:TFSYnc </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="MmsCls.get_asl">
+<a class="viewcode-back" href="../../../../../../Source_Bb_LrWpan_Mms.html#RsSmw.Implementations.Source.Bb.LrWpan.Mms.MmsCls.get_asl">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_asl</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">enums</span><span class="o">.</span><span class="n">HrpUwbActSegmentLength</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:[LRWPan]:MMS:ASL`` \n</span>
+<span class="sd">		Snippet: ``value: enums.HrpUwbActSegmentLength = driver.source.bb.lrWpan.mms.get_asl()`` \n</span>
+<span class="sd">		Sets the active segment length.</span>
+
+<span class="sd">		:return: act_seg_length: ASL_16 | ASL_32 | ASL_64 | ASL_128 | ASL_256 | ASL_512 | ASL_1024 | ASL_2048</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:LRWPan:MMS:ASL?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_scalar_enum</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">HrpUwbActSegmentLength</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="MmsCls.set_asl">
+<a class="viewcode-back" href="../../../../../../Source_Bb_LrWpan_Mms.html#RsSmw.Implementations.Source.Bb.LrWpan.Mms.MmsCls.set_asl">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_asl</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">act_seg_length</span><span class="p">:</span> <span class="n">enums</span><span class="o">.</span><span class="n">HrpUwbActSegmentLength</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:[LRWPan]:MMS:ASL`` \n</span>
+<span class="sd">		Snippet: ``driver.source.bb.lrWpan.mms.set_asl(act_seg_length = enums.HrpUwbActSegmentLength.ASL_1024)`` \n</span>
+<span class="sd">		Sets the active segment length.</span>
+
+<span class="sd">		:param act_seg_length: ASL_16 | ASL_32 | ASL_64 | ASL_128 | ASL_256 | ASL_512 | ASL_1024 | ASL_2048</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">enum_scalar_to_str</span><span class="p">(</span><span class="n">act_seg_length</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">HrpUwbActSegmentLength</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:LRWPan:MMS:ASL </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="MmsCls.get_asn">
+<a class="viewcode-back" href="../../../../../../Source_Bb_LrWpan_Mms.html#RsSmw.Implementations.Source.Bb.LrWpan.Mms.MmsCls.get_asn">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_asn</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">enums</span><span class="o">.</span><span class="n">HrpUwbActSegmentNum</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:[LRWPan]:MMS:ASN`` \n</span>
+<span class="sd">		Snippet: ``value: enums.HrpUwbActSegmentNum = driver.source.bb.lrWpan.mms.get_asn()`` \n</span>
+<span class="sd">		Requires [:SOURce&lt;hw&gt;]:BB:LRWPan | HUWB:STD BPRF | HPRF | EHPRF | SENS. Sets the number of active segments.</span>
+
+<span class="sd">		:return: acg_seg_number: ASN_1 | ASN_2 | ASN_3 | ASN_4</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:LRWPan:MMS:ASN?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_scalar_enum</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">HrpUwbActSegmentNum</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="MmsCls.set_asn">
+<a class="viewcode-back" href="../../../../../../Source_Bb_LrWpan_Mms.html#RsSmw.Implementations.Source.Bb.LrWpan.Mms.MmsCls.set_asn">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_asn</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">acg_seg_number</span><span class="p">:</span> <span class="n">enums</span><span class="o">.</span><span class="n">HrpUwbActSegmentNum</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:[LRWPan]:MMS:ASN`` \n</span>
+<span class="sd">		Snippet: ``driver.source.bb.lrWpan.mms.set_asn(acg_seg_number = enums.HrpUwbActSegmentNum.ASN_1)`` \n</span>
+<span class="sd">		Requires [:SOURce&lt;hw&gt;]:BB:LRWPan | HUWB:STD BPRF | HPRF | EHPRF | SENS. Sets the number of active segments.</span>
+
+<span class="sd">		:param acg_seg_number: ASN_1 | ASN_2 | ASN_3 | ASN_4</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">enum_scalar_to_str</span><span class="p">(</span><span class="n">acg_seg_number</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">HrpUwbActSegmentNum</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:LRWPan:MMS:ASN </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="MmsCls.get_bandwidth">
+<a class="viewcode-back" href="../../../../../../Source_Bb_LrWpan_Mms.html#RsSmw.Implementations.Source.Bb.LrWpan.Mms.MmsCls.get_bandwidth">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_bandwidth</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:[LRWPan]:MMS:BWIDth`` \n</span>
+<span class="sd">		Snippet: ``value: float = driver.source.bb.lrWpan.mms.get_bandwidth()`` \n</span>
+<span class="sd">		Queries the channel bandwidth. The bandwidth depends on the channel number.</span>
+
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:LRWPan:MMS:BWIDth?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_float</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="MmsCls.get_cnumber">
+<a class="viewcode-back" href="../../../../../../Source_Bb_LrWpan_Mms.html#RsSmw.Implementations.Source.Bb.LrWpan.Mms.MmsCls.get_cnumber">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_cnumber</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:[LRWPan]:MMS:CNUMber`` \n</span>
+<span class="sd">		Snippet: ``value: int = driver.source.bb.lrWpan.mms.get_cnumber()`` \n</span>
+<span class="sd">		Sets the channel number that is a 4-bit value in decimal representation. The channel number determines the bandwidth and</span>
+<span class="sd">		the code index.</span>
+
+<span class="sd">		:return: channel_number: integer Range: 0 to 15</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:LRWPan:MMS:CNUMber?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_int</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="MmsCls.set_cnumber">
+<a class="viewcode-back" href="../../../../../../Source_Bb_LrWpan_Mms.html#RsSmw.Implementations.Source.Bb.LrWpan.Mms.MmsCls.set_cnumber">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_cnumber</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">channel_number</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:[LRWPan]:MMS:CNUMber`` \n</span>
+<span class="sd">		Snippet: ``driver.source.bb.lrWpan.mms.set_cnumber(channel_number = 1)`` \n</span>
+<span class="sd">		Sets the channel number that is a 4-bit value in decimal representation. The channel number determines the bandwidth and</span>
+<span class="sd">		the code index.</span>
+
+<span class="sd">		:param channel_number: integer Range: 0 to 15</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">decimal_value_to_str</span><span class="p">(</span><span class="n">channel_number</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:LRWPan:MMS:CNUMber </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="MmsCls.get_f_2_ms">
+<a class="viewcode-back" href="../../../../../../Source_Bb_LrWpan_Mms.html#RsSmw.Implementations.Source.Bb.LrWpan.Mms.MmsCls.get_f_2_ms">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_f_2_ms</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:[LRWPan]:MMS:F2MS`` \n</span>
+<span class="sd">		Snippet: ``value: bool = driver.source.bb.lrWpan.mms.get_f_2_ms()`` \n</span>
+<span class="sd">		Sets the frame length of a generated waveform shorter than 2 ms to a fixed value of 2 ms. If activated, the idle interval</span>
+<span class="sd">		is set to 0.0 us by default. Generated waveforms longer than 2 ms remain unaffected.</span>
+
+<span class="sd">		:return: fixed_2_ms_frame: 1 | ON | 0| OFF</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:LRWPan:MMS:F2MS?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_bool</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="MmsCls.set_f_2_ms">
+<a class="viewcode-back" href="../../../../../../Source_Bb_LrWpan_Mms.html#RsSmw.Implementations.Source.Bb.LrWpan.Mms.MmsCls.set_f_2_ms">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_f_2_ms</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">fixed_2_ms_frame</span><span class="p">:</span> <span class="nb">bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:[LRWPan]:MMS:F2MS`` \n</span>
+<span class="sd">		Snippet: ``driver.source.bb.lrWpan.mms.set_f_2_ms(fixed_2_ms_frame = False)`` \n</span>
+<span class="sd">		Sets the frame length of a generated waveform shorter than 2 ms to a fixed value of 2 ms. If activated, the idle interval</span>
+<span class="sd">		is set to 0.0 us by default. Generated waveforms longer than 2 ms remain unaffected.</span>
+
+<span class="sd">		:param fixed_2_ms_frame: 1 | ON | 0| OFF</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">bool_to_str</span><span class="p">(</span><span class="n">fixed_2_ms_frame</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:LRWPan:MMS:F2MS </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="MmsCls.get_iinterval">
+<a class="viewcode-back" href="../../../../../../Source_Bb_LrWpan_Mms.html#RsSmw.Implementations.Source.Bb.LrWpan.Mms.MmsCls.get_iinterval">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_iinterval</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:[LRWPan]:MMS:IINTerval`` \n</span>
+<span class="sd">		Snippet: ``value: float = driver.source.bb.lrWpan.mms.get_iinterval()`` \n</span>
+<span class="sd">		Sets the time of the interval separating two frames.</span>
+
+<span class="sd">		:return: iinterval: float Range: 0 to 1000000, Unit: us</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:LRWPan:MMS:IINTerval?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_float</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="MmsCls.set_iinterval">
+<a class="viewcode-back" href="../../../../../../Source_Bb_LrWpan_Mms.html#RsSmw.Implementations.Source.Bb.LrWpan.Mms.MmsCls.set_iinterval">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_iinterval</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">iinterval</span><span class="p">:</span> <span class="nb">float</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:[LRWPan]:MMS:IINTerval`` \n</span>
+<span class="sd">		Snippet: ``driver.source.bb.lrWpan.mms.set_iinterval(iinterval = 1.0)`` \n</span>
+<span class="sd">		Sets the time of the interval separating two frames.</span>
+
+<span class="sd">		:param iinterval: float Range: 0 to 1000000, Unit: us</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">decimal_value_to_str</span><span class="p">(</span><span class="n">iinterval</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:LRWPan:MMS:IINTerval </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+	<span class="k">def</span><span class="w"> </span><span class="nf">clone</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s1">&#39;MmsCls&#39;</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		Clones the group by creating new object from it and its whole existing subgroups.</span>
+<span class="sd">		Also copies all the existing default Repeated Capabilities setting,</span>
+<span class="sd">		which you can change independently without affecting the original group.</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">new_group</span> <span class="o">=</span> <span class="n">MmsCls</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span><span class="o">.</span><span class="n">parent</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span><span class="o">.</span><span class="n">synchronize_repcaps</span><span class="p">(</span><span class="n">new_group</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">new_group</span>
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright © Rohde &amp; Schwarz 2026.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

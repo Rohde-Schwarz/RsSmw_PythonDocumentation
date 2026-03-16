@@ -1,0 +1,22 @@
+Acad
+----------------------------------------
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:ACAD:APATtern
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:ACAD:ASELection
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:ACAD
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:ACAD:APATtern
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:ACAD:ASELection
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:ACAD
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Btooth.Econfiguration.Pconfiguration.Acad.AcadCls
+	:members:
+	:undoc-members:
+	:noindex:

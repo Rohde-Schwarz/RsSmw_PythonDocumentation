@@ -1,0 +1,18 @@
+Pitch
+----------------------------------------
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:GNSS:RTK:BASE<ST>:ATTitude:PITCh
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:GNSS:RTK:BASE<ST>:ATTitude:PITCh
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Gnss.Rtk.Base.Attitude.Pitch.PitchCls
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,66 @@
+Sens
+----------------------------------------
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:LRWPan:SENS:CCT
+	single: [SOURce<HW>]:BB:LRWPan:SENS:RSTU
+	single: [SOURce<HW>]:BB:LRWPan:SENS:SGAP
+	single: [SOURce<HW>]:BB:LRWPan:SENS:SPC
+	single: [SOURce<HW>]:BB:LRWPan:SENS:SPDuration
+	single: [SOURce<HW>]:BB:LRWPan:SENS:SRF
+	single: [SOURce<HW>]:BB:LRWPan:SENS:SSDuration
+	single: [SOURce<HW>]:BB:LRWPan:SENS:SSOFfset
+	single: [SOURce<HW>]:BB:[LRWPan]:SENS:ASL
+	single: [SOURce<HW>]:BB:[LRWPan]:SENS:ASN
+	single: [SOURce<HW>]:BB:[LRWPan]:SENS:BWIDth
+	single: [SOURce<HW>]:BB:[LRWPan]:SENS:CNUMber
+	single: [SOURce<HW>]:BB:[LRWPan]:SENS:F2MS
+	single: [SOURce<HW>]:BB:[LRWPan]:SENS:IINTerval
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:LRWPan:SENS:CCT
+	[SOURce<HW>]:BB:LRWPan:SENS:RSTU
+	[SOURce<HW>]:BB:LRWPan:SENS:SGAP
+	[SOURce<HW>]:BB:LRWPan:SENS:SPC
+	[SOURce<HW>]:BB:LRWPan:SENS:SPDuration
+	[SOURce<HW>]:BB:LRWPan:SENS:SRF
+	[SOURce<HW>]:BB:LRWPan:SENS:SSDuration
+	[SOURce<HW>]:BB:LRWPan:SENS:SSOFfset
+	[SOURce<HW>]:BB:[LRWPan]:SENS:ASL
+	[SOURce<HW>]:BB:[LRWPan]:SENS:ASN
+	[SOURce<HW>]:BB:[LRWPan]:SENS:BWIDth
+	[SOURce<HW>]:BB:[LRWPan]:SENS:CNUMber
+	[SOURce<HW>]:BB:[LRWPan]:SENS:F2MS
+	[SOURce<HW>]:BB:[LRWPan]:SENS:IINTerval
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.LrWpan.Sens.SensCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	sens_copy = driver.source.bb.lrWpan.sens.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_LrWpan_Sens_Fconfig.rst
+	Source_Bb_LrWpan_Sens_MacHeader.rst
+	Source_Bb_LrWpan_Sens_Phr.rst
+	Source_Bb_LrWpan_Sens_Setting.rst
+	Source_Bb_LrWpan_Sens_Sfd.rst
+	Source_Bb_LrWpan_Sens_Sts.rst

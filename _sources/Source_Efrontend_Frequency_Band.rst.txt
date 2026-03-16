@@ -1,0 +1,37 @@
+Band<Band>
+----------------------------------------
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:EFRontend:FREQuency:BAND:COUNt
+
+.. code-block:: python
+
+	[SOURce<HW>]:EFRontend:FREQuency:BAND:COUNt
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Efrontend.Frequency.Band.BandCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	band_copy = driver.source.efrontend.frequency.band.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Efrontend_Frequency_Band_Config.rst
+	Source_Efrontend_Frequency_Band_Lower.rst
+	Source_Efrontend_Frequency_Band_Upper.rst

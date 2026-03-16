@@ -1,0 +1,18 @@
+Fsb
+----------------------------------------
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:WLNN:FBLock<CH>:USER<DI>:FSB
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:WLNN:FBLock<CH>:USER<DI>:FSB
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Wlnn.Fblock.User.Fsb.FsbCls
+	:members:
+	:undoc-members:
+	:noindex:

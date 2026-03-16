@@ -1,0 +1,18 @@
+Filename
+----------------------------------------
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:CEMulation:CDYNamic:PATH<CH>:CWEight:FILEname
+
+.. code-block:: python
+
+	[SOURce<HW>]:CEMulation:CDYNamic:PATH<CH>:CWEight:FILEname
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.Cdynamic.Path.Cweight.Filename.FilenameCls
+	:members:
+	:undoc-members:
+	:noindex:

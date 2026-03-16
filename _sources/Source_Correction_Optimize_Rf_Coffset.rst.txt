@@ -1,0 +1,20 @@
+Coffset
+----------------------------------------
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:CORRection:OPTimize:RF:COFFset:VALue
+	single: [SOURce<HW>]:CORRection:OPTimize:RF:COFFset
+
+.. code-block:: python
+
+	[SOURce<HW>]:CORRection:OPTimize:RF:COFFset:VALue
+	[SOURce<HW>]:CORRection:OPTimize:RF:COFFset
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Correction.Optimize.Rf.Coffset.CoffsetCls
+	:members:
+	:undoc-members:
+	:noindex:

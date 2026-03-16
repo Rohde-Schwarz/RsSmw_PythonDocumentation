@@ -1,0 +1,18 @@
+Store
+----------------------------------------
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:MCCW:SETTing:STORe
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:MCCW:SETTing:STORe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Mccw.Setting.Store.StoreCls
+	:members:
+	:undoc-members:
+	:noindex:

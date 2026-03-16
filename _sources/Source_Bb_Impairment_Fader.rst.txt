@@ -1,0 +1,32 @@
+Fader<DigitalIq>
+----------------------------------------
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Impairment.Fader.FaderCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	fader_copy = driver.source.bb.impairment.fader.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Impairment_Fader_Delay.rst
+	Source_Bb_Impairment_Fader_IqRatio.rst
+	Source_Bb_Impairment_Fader_Leakage.rst
+	Source_Bb_Impairment_Fader_Poffset.rst
+	Source_Bb_Impairment_Fader_Quadrature.rst
+	Source_Bb_Impairment_Fader_Skew.rst
+	Source_Bb_Impairment_Fader_State.rst

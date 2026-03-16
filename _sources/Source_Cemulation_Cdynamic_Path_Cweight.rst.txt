@@ -1,0 +1,26 @@
+Cweight
+----------------------------------------
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.Cdynamic.Path.Cweight.CweightCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	cweight_copy = driver.source.cemulation.cdynamic.path.cweight.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Cemulation_Cdynamic_Path_Cweight_Filename.rst

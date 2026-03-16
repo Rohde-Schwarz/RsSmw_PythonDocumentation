@@ -1,0 +1,18 @@
+Sts
+----------------------------------------
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:[LRWPan]:SENS:STS:DLEN
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:[LRWPan]:SENS:STS:DLEN
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.LrWpan.Sens.Sts.StsCls
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,18 @@
+State
+----------------------------------------
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:NR5G:QCKSet:STATe
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:NR5G:QCKSet:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Nr5G.Qckset.State.StateCls
+	:members:
+	:undoc-members:
+	:noindex:

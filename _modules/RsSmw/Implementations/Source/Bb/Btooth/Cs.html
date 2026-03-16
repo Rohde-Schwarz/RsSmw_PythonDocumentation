@@ -1,0 +1,612 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../../../../../">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RsSmw.Implementations.Source.Bb.Btooth.Cs &mdash; RsSmw 5.50.42.103 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../../../../../_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="../../../../../../_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="../../../../../../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../../../../../../_static/custom.css?v=2ddbb4b2" />
+
+  
+      <script src="../../../../../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../../../../../_static/documentation_options.js?v=4397b82f"></script>
+      <script src="../../../../../../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../../../../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+      <script src="../../../../../../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../../../../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../../../../index.html" class="icon icon-home">
+            RsSmw
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../readme.html">Revision History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../enums.html">Enums</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../repcap.html">RepCaps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../RsSmw.html">Instrument API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../utilities.html">Utilities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../logger.html">Logger</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../events.html">Events</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../genindex.html">Index</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../../../index.html">RsSmw</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../../../index.html">Module code</a></li>
+          <li class="breadcrumb-item"><a href="../../../Source.html">RsSmw.Implementations.Source</a></li>
+          <li class="breadcrumb-item"><a href="../../Bb.html">RsSmw.Implementations.Source.Bb</a></li>
+          <li class="breadcrumb-item"><a href="../Btooth.html">RsSmw.Implementations.Source.Bb.Btooth</a></li>
+      <li class="breadcrumb-item active">RsSmw.Implementations.Source.Bb.Btooth.Cs</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Source code for RsSmw.Implementations.Source.Bb.Btooth.Cs</h1><div class="highlight"><pre>
+<span></span><span class="kn">from</span><span class="w"> </span><span class="nn">......Internal.Core</span><span class="w"> </span><span class="kn">import</span> <span class="n">Core</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">......Internal.CommandsGroup</span><span class="w"> </span><span class="kn">import</span> <span class="n">CommandsGroup</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">......Internal</span><span class="w"> </span><span class="kn">import</span> <span class="n">Conversions</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">......Internal.StructBase</span><span class="w"> </span><span class="kn">import</span> <span class="n">StructBase</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">......Internal.ArgStruct</span><span class="w"> </span><span class="kn">import</span> <span class="n">ArgStruct</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">......</span><span class="w"> </span><span class="kn">import</span> <span class="n">enums</span>
+
+
+<span class="c1"># noinspection PyPep8Naming,PyAttributeOutsideInit,SpellCheckingInspection</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">CsCls</span><span class="p">:</span>
+<span class="w">	</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">	| Commands in total: 114</span>
+<span class="sd">	| Subgroups: 3</span>
+<span class="sd">	| Direct child commands: 20</span>
+<span class="sd">	&quot;&quot;&quot;</span>
+
+	<span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">core</span><span class="p">:</span> <span class="n">Core</span><span class="p">,</span> <span class="n">parent</span><span class="p">):</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span> <span class="o">=</span> <span class="n">core</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span> <span class="o">=</span> <span class="n">CommandsGroup</span><span class="p">(</span><span class="s2">&quot;cs&quot;</span><span class="p">,</span> <span class="n">core</span><span class="p">,</span> <span class="n">parent</span><span class="p">)</span>
+
+	<span class="nd">@property</span>
+	<span class="k">def</span><span class="w"> </span><span class="nf">cdata</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		| Commands in total: 51</span>
+<span class="sd">		| Subgroups: 3</span>
+<span class="sd">		| Direct child commands: 45</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;_cdata&#39;</span><span class="p">):</span>
+			<span class="kn">from</span><span class="w"> </span><span class="nn">.Cdata</span><span class="w"> </span><span class="kn">import</span> <span class="n">CdataCls</span>
+			<span class="bp">self</span><span class="o">.</span><span class="n">_cdata</span> <span class="o">=</span> <span class="n">CdataCls</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span><span class="p">)</span>
+		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cdata</span>
+
+	<span class="nd">@property</span>
+	<span class="k">def</span><span class="w"> </span><span class="nf">correctionTable</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		| Commands in total: 4</span>
+<span class="sd">		| Subgroups: 1</span>
+<span class="sd">		| Direct child commands: 0</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;_correctionTable&#39;</span><span class="p">):</span>
+			<span class="kn">from</span><span class="w"> </span><span class="nn">.CorrectionTable</span><span class="w"> </span><span class="kn">import</span> <span class="n">CorrectionTableCls</span>
+			<span class="bp">self</span><span class="o">.</span><span class="n">_correctionTable</span> <span class="o">=</span> <span class="n">CorrectionTableCls</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span><span class="p">)</span>
+		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_correctionTable</span>
+
+	<span class="nd">@property</span>
+	<span class="k">def</span><span class="w"> </span><span class="nf">sevent</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		| Commands in total: 39</span>
+<span class="sd">		| Subgroups: 24</span>
+<span class="sd">		| Direct child commands: 0</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;_sevent&#39;</span><span class="p">):</span>
+			<span class="kn">from</span><span class="w"> </span><span class="nn">.Sevent</span><span class="w"> </span><span class="kn">import</span> <span class="n">SeventCls</span>
+			<span class="bp">self</span><span class="o">.</span><span class="n">_sevent</span> <span class="o">=</span> <span class="n">SeventCls</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span><span class="p">)</span>
+		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_sevent</span>
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="CsCls.CfChmStruct">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Btooth_Cs.html#RsSmw.Implementations.Source.Bb.Btooth.Cs.CsCls.CfChmStruct">[docs]</a>
+	<span class="k">class</span><span class="w"> </span><span class="nc">CfChmStruct</span><span class="p">(</span><span class="n">StructBase</span><span class="p">):</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		Structure for reading output parameters. Fields: \n</span>
+<span class="sd">			- Cs_Filtered_Ch_M: str: numeric CSFilteredChM value in hexadecimal representation.</span>
+<span class="sd">			- Bitcount: int: integer Fixed bit count of 80 bits. Range: 80 to 80</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">__meta_args_list</span> <span class="o">=</span> <span class="p">[</span>
+			<span class="n">ArgStruct</span><span class="o">.</span><span class="n">scalar_raw_str</span><span class="p">(</span><span class="s1">&#39;Cs_Filtered_Ch_M&#39;</span><span class="p">),</span>
+			<span class="n">ArgStruct</span><span class="o">.</span><span class="n">scalar_int</span><span class="p">(</span><span class="s1">&#39;Bitcount&#39;</span><span class="p">)]</span>
+
+		<span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+			<span class="n">StructBase</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span>
+			<span class="bp">self</span><span class="o">.</span><span class="n">Cs_Filtered_Ch_M</span><span class="p">:</span> <span class="nb">str</span><span class="o">=</span><span class="kc">None</span>
+			<span class="bp">self</span><span class="o">.</span><span class="n">Bitcount</span><span class="p">:</span> <span class="nb">int</span><span class="o">=</span><span class="kc">None</span></div>
+
+
+<div class="viewcode-block" id="CsCls.get_cf_chm">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Btooth_Cs.html#RsSmw.Implementations.Source.Bb.Btooth.Cs.CsCls.get_cf_chm">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_cf_chm</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">CfChmStruct</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:BTOoth:CS:CFCHm`` \n</span>
+<span class="sd">		Snippet: ``value: CfChmStruct = driver.source.bb.btooth.cs.get_cf_chm()`` \n</span>
+<span class="sd">		Queries the value of the field CSFilteredChM. This value determines the bit map for the Channel Sounding channel map</span>
+<span class="sd">		update procedure. The parameter is 64-bit in hexadecimal representation.</span>
+
+<span class="sd">		:return: structure: for return value, see the help for CfChmStruct structure arguments.</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_struct</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:BTOoth:CS:CFCHm?&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="n">CfChmStruct</span><span class="p">())</span></div>
+
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="CsCls.CincStruct">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Btooth_Cs.html#RsSmw.Implementations.Source.Bb.Btooth.Cs.CsCls.CincStruct">[docs]</a>
+	<span class="k">class</span><span class="w"> </span><span class="nc">CincStruct</span><span class="p">(</span><span class="n">StructBase</span><span class="p">):</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		Structure for reading output parameters. Fields: \n</span>
+<span class="sd">			- Cs_In_C: str: numeric CS_IN_C value in hexadecimal representation.</span>
+<span class="sd">			- Bitcount: int: integer Fixed bit count of 32 bits. Range: 32 to 32</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">__meta_args_list</span> <span class="o">=</span> <span class="p">[</span>
+			<span class="n">ArgStruct</span><span class="o">.</span><span class="n">scalar_raw_str</span><span class="p">(</span><span class="s1">&#39;Cs_In_C&#39;</span><span class="p">),</span>
+			<span class="n">ArgStruct</span><span class="o">.</span><span class="n">scalar_int</span><span class="p">(</span><span class="s1">&#39;Bitcount&#39;</span><span class="p">)]</span>
+
+		<span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+			<span class="n">StructBase</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span>
+			<span class="bp">self</span><span class="o">.</span><span class="n">Cs_In_C</span><span class="p">:</span> <span class="nb">str</span><span class="o">=</span><span class="kc">None</span>
+			<span class="bp">self</span><span class="o">.</span><span class="n">Bitcount</span><span class="p">:</span> <span class="nb">int</span><span class="o">=</span><span class="kc">None</span></div>
+
+
+<div class="viewcode-block" id="CsCls.get_cinc">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Btooth_Cs.html#RsSmw.Implementations.Source.Bb.Btooth.Cs.CsCls.get_cinc">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_cinc</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">CincStruct</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:BTOoth:CS:CINC`` \n</span>
+<span class="sd">		Snippet: ``value: CincStruct = driver.source.bb.btooth.cs.get_cinc()`` \n</span>
+<span class="sd">		Requires packet type CS SEQUENCE or LL_CS_SEC_REQ. Sets the CS_IN_C parameter. The parameter is 32-bit in hexadecimal</span>
+<span class="sd">		representation.</span>
+
+<span class="sd">		:return: structure: for return value, see the help for CincStruct structure arguments.</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_struct</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:BTOoth:CS:CINC?&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="n">CincStruct</span><span class="p">())</span></div>
+
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="CsCls.CinpStruct">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Btooth_Cs.html#RsSmw.Implementations.Source.Bb.Btooth.Cs.CsCls.CinpStruct">[docs]</a>
+	<span class="k">class</span><span class="w"> </span><span class="nc">CinpStruct</span><span class="p">(</span><span class="n">StructBase</span><span class="p">):</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		Structure for reading output parameters. Fields: \n</span>
+<span class="sd">			- Cs_In_P: str: numeric CS_IN_P value in hexadecimal representation.</span>
+<span class="sd">			- Bitcount: int: integer Fixed bit count of 32 bits. Range: 32 to 32</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">__meta_args_list</span> <span class="o">=</span> <span class="p">[</span>
+			<span class="n">ArgStruct</span><span class="o">.</span><span class="n">scalar_raw_str</span><span class="p">(</span><span class="s1">&#39;Cs_In_P&#39;</span><span class="p">),</span>
+			<span class="n">ArgStruct</span><span class="o">.</span><span class="n">scalar_int</span><span class="p">(</span><span class="s1">&#39;Bitcount&#39;</span><span class="p">)]</span>
+
+		<span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+			<span class="n">StructBase</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span>
+			<span class="bp">self</span><span class="o">.</span><span class="n">Cs_In_P</span><span class="p">:</span> <span class="nb">str</span><span class="o">=</span><span class="kc">None</span>
+			<span class="bp">self</span><span class="o">.</span><span class="n">Bitcount</span><span class="p">:</span> <span class="nb">int</span><span class="o">=</span><span class="kc">None</span></div>
+
+
+<div class="viewcode-block" id="CsCls.get_cinp">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Btooth_Cs.html#RsSmw.Implementations.Source.Bb.Btooth.Cs.CsCls.get_cinp">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_cinp</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">CinpStruct</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:BTOoth:CS:CINP`` \n</span>
+<span class="sd">		Snippet: ``value: CinpStruct = driver.source.bb.btooth.cs.get_cinp()`` \n</span>
+<span class="sd">		Requires packet type CS SEQUENCE or LL_CS_SEC_REQ. Sets the CS_IN_P parameter. The parameter is 32-bit in hexadecimal</span>
+<span class="sd">		representation.</span>
+
+<span class="sd">		:return: structure: for return value, see the help for CinpStruct structure arguments.</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_struct</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:BTOoth:CS:CINP?&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="n">CinpStruct</span><span class="p">())</span></div>
+
+
+<div class="viewcode-block" id="CsCls.get_cinterval">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Btooth_Cs.html#RsSmw.Implementations.Source.Bb.Btooth.Cs.CsCls.get_cinterval">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_cinterval</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:BTOoth:CS:CINTerval`` \n</span>
+<span class="sd">		Snippet: ``value: float = driver.source.bb.btooth.cs.get_cinterval()`` \n</span>
+<span class="sd">		Sets the time of the LE connection interval. The anchor points of two consecutive CS events define the length of this</span>
+<span class="sd">		interval.</span>
+
+<span class="sd">		:return: connect_interval: float Range: 7.5 to 4000</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:BTOoth:CS:CINTerval?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_float</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="CsCls.CivcStruct">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Btooth_Cs.html#RsSmw.Implementations.Source.Bb.Btooth.Cs.CsCls.CivcStruct">[docs]</a>
+	<span class="k">class</span><span class="w"> </span><span class="nc">CivcStruct</span><span class="p">(</span><span class="n">StructBase</span><span class="p">):</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		Structure for reading output parameters. Fields: \n</span>
+<span class="sd">			- Cs_Iv_C: str: numeric CS_IV_C value in hexadecimal representation.</span>
+<span class="sd">			- Bitcount: int: integer Fixed bit count of 64 bits. Range: 64 to 64</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">__meta_args_list</span> <span class="o">=</span> <span class="p">[</span>
+			<span class="n">ArgStruct</span><span class="o">.</span><span class="n">scalar_raw_str</span><span class="p">(</span><span class="s1">&#39;Cs_Iv_C&#39;</span><span class="p">),</span>
+			<span class="n">ArgStruct</span><span class="o">.</span><span class="n">scalar_int</span><span class="p">(</span><span class="s1">&#39;Bitcount&#39;</span><span class="p">)]</span>
+
+		<span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+			<span class="n">StructBase</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span>
+			<span class="bp">self</span><span class="o">.</span><span class="n">Cs_Iv_C</span><span class="p">:</span> <span class="nb">str</span><span class="o">=</span><span class="kc">None</span>
+			<span class="bp">self</span><span class="o">.</span><span class="n">Bitcount</span><span class="p">:</span> <span class="nb">int</span><span class="o">=</span><span class="kc">None</span></div>
+
+
+<div class="viewcode-block" id="CsCls.get_civc">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Btooth_Cs.html#RsSmw.Implementations.Source.Bb.Btooth.Cs.CsCls.get_civc">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_civc</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">CivcStruct</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:BTOoth:CS:CIVC`` \n</span>
+<span class="sd">		Snippet: ``value: CivcStruct = driver.source.bb.btooth.cs.get_civc()`` \n</span>
+<span class="sd">		Requires packet type CS SEQUENCE or LL_CS_SEC_REQ. Sets the CS_IV_C parameter. The parameter is 64-bit in hexadecimal</span>
+<span class="sd">		representation.</span>
+
+<span class="sd">		:return: structure: for return value, see the help for CivcStruct structure arguments.</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_struct</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:BTOoth:CS:CIVC?&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="n">CivcStruct</span><span class="p">())</span></div>
+
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="CsCls.CivpStruct">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Btooth_Cs.html#RsSmw.Implementations.Source.Bb.Btooth.Cs.CsCls.CivpStruct">[docs]</a>
+	<span class="k">class</span><span class="w"> </span><span class="nc">CivpStruct</span><span class="p">(</span><span class="n">StructBase</span><span class="p">):</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		Structure for reading output parameters. Fields: \n</span>
+<span class="sd">			- Cs_Iv_P: str: numeric CS_IV_P value in hexadecimal representation.</span>
+<span class="sd">			- Bitcount: int: integer Fixed bit count of 64 bits. Range: 64 to 64</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">__meta_args_list</span> <span class="o">=</span> <span class="p">[</span>
+			<span class="n">ArgStruct</span><span class="o">.</span><span class="n">scalar_raw_str</span><span class="p">(</span><span class="s1">&#39;Cs_Iv_P&#39;</span><span class="p">),</span>
+			<span class="n">ArgStruct</span><span class="o">.</span><span class="n">scalar_int</span><span class="p">(</span><span class="s1">&#39;Bitcount&#39;</span><span class="p">)]</span>
+
+		<span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+			<span class="n">StructBase</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span>
+			<span class="bp">self</span><span class="o">.</span><span class="n">Cs_Iv_P</span><span class="p">:</span> <span class="nb">str</span><span class="o">=</span><span class="kc">None</span>
+			<span class="bp">self</span><span class="o">.</span><span class="n">Bitcount</span><span class="p">:</span> <span class="nb">int</span><span class="o">=</span><span class="kc">None</span></div>
+
+
+<div class="viewcode-block" id="CsCls.get_civp">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Btooth_Cs.html#RsSmw.Implementations.Source.Bb.Btooth.Cs.CsCls.get_civp">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_civp</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">CivpStruct</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:BTOoth:CS:CIVP`` \n</span>
+<span class="sd">		Snippet: ``value: CivpStruct = driver.source.bb.btooth.cs.get_civp()`` \n</span>
+<span class="sd">		Requires packet type CS SEQUENCE or LL_CS_SEC_REQ. Sets the CS_IV_P parameter. The parameter is 64-bit in hexadecimal</span>
+<span class="sd">		representation.</span>
+
+<span class="sd">		:return: structure: for return value, see the help for CivpStruct structure arguments.</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_struct</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:BTOoth:CS:CIVP?&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="n">CivpStruct</span><span class="p">())</span></div>
+
+
+<div class="viewcode-block" id="CsCls.get_cm_repetition">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Btooth_Cs.html#RsSmw.Implementations.Source.Bb.Btooth.Cs.CsCls.get_cm_repetition">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_cm_repetition</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:BTOoth:CS:CMRepetition`` \n</span>
+<span class="sd">		Snippet: ``value: int = driver.source.bb.btooth.cs.get_cm_repetition()`` \n</span>
+<span class="sd">		Sets the 3-bit ChM_Repetition field. The value equals the number of cycles of the ChM field for non-Mode-0 steps within a</span>
+<span class="sd">		CS procedure.</span>
+
+<span class="sd">		:return: chm_repetition: integer Range: 1 to 3</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:BTOoth:CS:CMRepetition?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_int</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="CsCls.CpvcStruct">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Btooth_Cs.html#RsSmw.Implementations.Source.Bb.Btooth.Cs.CsCls.CpvcStruct">[docs]</a>
+	<span class="k">class</span><span class="w"> </span><span class="nc">CpvcStruct</span><span class="p">(</span><span class="n">StructBase</span><span class="p">):</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		Structure for reading output parameters. Fields: \n</span>
+<span class="sd">			- Cs_Pv_C: str: No parameter help available</span>
+<span class="sd">			- Bitcount: int: No parameter help available</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">__meta_args_list</span> <span class="o">=</span> <span class="p">[</span>
+			<span class="n">ArgStruct</span><span class="o">.</span><span class="n">scalar_raw_str</span><span class="p">(</span><span class="s1">&#39;Cs_Pv_C&#39;</span><span class="p">),</span>
+			<span class="n">ArgStruct</span><span class="o">.</span><span class="n">scalar_int</span><span class="p">(</span><span class="s1">&#39;Bitcount&#39;</span><span class="p">)]</span>
+
+		<span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+			<span class="n">StructBase</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span>
+			<span class="bp">self</span><span class="o">.</span><span class="n">Cs_Pv_C</span><span class="p">:</span> <span class="nb">str</span><span class="o">=</span><span class="kc">None</span>
+			<span class="bp">self</span><span class="o">.</span><span class="n">Bitcount</span><span class="p">:</span> <span class="nb">int</span><span class="o">=</span><span class="kc">None</span></div>
+
+
+<div class="viewcode-block" id="CsCls.get_cpvc">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Btooth_Cs.html#RsSmw.Implementations.Source.Bb.Btooth.Cs.CsCls.get_cpvc">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_cpvc</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">CpvcStruct</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:BTOoth:CS:CPVC`` \n</span>
+<span class="sd">		Snippet: ``value: CpvcStruct = driver.source.bb.btooth.cs.get_cpvc()`` \n</span>
+<span class="sd">		No help available</span>
+
+<span class="sd">		:return: structure: for return value, see the help for CpvcStruct structure arguments.</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_struct</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:BTOoth:CS:CPVC?&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="n">CpvcStruct</span><span class="p">())</span></div>
+
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="CsCls.CpvpStruct">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Btooth_Cs.html#RsSmw.Implementations.Source.Bb.Btooth.Cs.CsCls.CpvpStruct">[docs]</a>
+	<span class="k">class</span><span class="w"> </span><span class="nc">CpvpStruct</span><span class="p">(</span><span class="n">StructBase</span><span class="p">):</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		Structure for reading output parameters. Fields: \n</span>
+<span class="sd">			- Cs_Pv_P: str: numeric CS_PV_P value in hexadecimal representation.</span>
+<span class="sd">			- Bitcount: int: integer Fixed bit count of 64 bits. Range: 64 to 64</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">__meta_args_list</span> <span class="o">=</span> <span class="p">[</span>
+			<span class="n">ArgStruct</span><span class="o">.</span><span class="n">scalar_raw_str</span><span class="p">(</span><span class="s1">&#39;Cs_Pv_P&#39;</span><span class="p">),</span>
+			<span class="n">ArgStruct</span><span class="o">.</span><span class="n">scalar_int</span><span class="p">(</span><span class="s1">&#39;Bitcount&#39;</span><span class="p">)]</span>
+
+		<span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+			<span class="n">StructBase</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span>
+			<span class="bp">self</span><span class="o">.</span><span class="n">Cs_Pv_P</span><span class="p">:</span> <span class="nb">str</span><span class="o">=</span><span class="kc">None</span>
+			<span class="bp">self</span><span class="o">.</span><span class="n">Bitcount</span><span class="p">:</span> <span class="nb">int</span><span class="o">=</span><span class="kc">None</span></div>
+
+
+<div class="viewcode-block" id="CsCls.get_cpvp">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Btooth_Cs.html#RsSmw.Implementations.Source.Bb.Btooth.Cs.CsCls.get_cpvp">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_cpvp</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">CpvpStruct</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:BTOoth:CS:CPVP`` \n</span>
+<span class="sd">		Snippet: ``value: CpvpStruct = driver.source.bb.btooth.cs.get_cpvp()`` \n</span>
+<span class="sd">		Requires packet type CS SEQUENCE or LL_CS_SEC_REQ. Sets the CS_PV_P parameter. The parameter is 64-bit in hexadecimal</span>
+<span class="sd">		representation.</span>
+
+<span class="sd">		:return: structure: for return value, see the help for CpvpStruct structure arguments.</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_struct</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:BTOoth:CS:CPVP?&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="n">CpvpStruct</span><span class="p">())</span></div>
+
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="CsCls.get_csel">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Btooth_Cs.html#RsSmw.Implementations.Source.Bb.Btooth.Cs.CsCls.get_csel">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_csel</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">enums</span><span class="o">.</span><span class="n">BtoCsChSel</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:BTOoth:CS:CSEL`` \n</span>
+<span class="sd">		Snippet: ``value: enums.BtoCsChSel = driver.source.bb.btooth.cs.get_csel()`` \n</span>
+<span class="sd">		Sets the algorithm to select the channels.</span>
+
+<span class="sd">		:return: ch_sel: SEL_3B | SEL_3C SEL_3B Sets for Algorithm #3b channel selection algorithm. SEL_3C Sets for Algorithm #3c channel selection algorithm. For related parameters, see Table &#39;Algorithm #3c parameters&#39;.</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:BTOoth:CS:CSEL?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_scalar_enum</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">BtoCsChSel</span><span class="p">)</span></div>
+
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="CsCls.get_ctc_jump">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Btooth_Cs.html#RsSmw.Implementations.Source.Bb.Btooth.Cs.CsCls.get_ctc_jump">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_ctc_jump</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">enums</span><span class="o">.</span><span class="n">BtoCsCh3Cjump</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:BTOoth:CS:CTCJump`` \n</span>
+<span class="sd">		Snippet: ``value: enums.BtoCsCh3Cjump = driver.source.bb.btooth.cs.get_ctc_jump()`` \n</span>
+<span class="sd">		Determines the number of skipped channels when rendering the channel shapes. The Ch3cJump field has a length of 1 octet</span>
+<span class="sd">		and relates to the channel index values. Configure this field when using the channel selection algorithm Algorithm #3c:</span>
+<span class="sd">		SOURce1:BB:BTOoth:CS:CSEL SEL_3C</span>
+
+<span class="sd">		:return: ch_three_cjump: JUMP_2 | JUMP_3 | JUMP_4 | JUMP_5 | JUMP_6 | JUMP_7 | JUMP_8 For Ch3cJump field parameters, see Table &#39;Algorithm #3c parameters&#39;.</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:BTOoth:CS:CTCJump?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_scalar_enum</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">BtoCsCh3Cjump</span><span class="p">)</span></div>
+
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="CsCls.get_ctc_shape">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Btooth_Cs.html#RsSmw.Implementations.Source.Bb.Btooth.Cs.CsCls.get_ctc_shape">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_ctc_shape</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">enums</span><span class="o">.</span><span class="n">BtoCsCh3Cshape</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:BTOoth:CS:CTCShape`` \n</span>
+<span class="sd">		Snippet: ``value: enums.BtoCsCh3Cshape = driver.source.bb.btooth.cs.get_ctc_shape()`` \n</span>
+<span class="sd">		Sets the bits of the Ch3cShape field. The field has a length of 4 bits and sets the shaping method of the rising and</span>
+<span class="sd">		falling ramps of the channels. Configure this field when using the channel selection algorithm Algorithm #3c:</span>
+<span class="sd">		SOURce1:BB:BTOoth:CS:CSEL SEL_3C</span>
+
+<span class="sd">		:return: ch_three_cshape: HAT | X HAT Channel with a rising ramp and a falling ramp. X Channel with interleaved rising and falling ramps.</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:BTOoth:CS:CTCShape?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_scalar_enum</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">BtoCsCh3Cshape</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CsCls.get_einterval">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Btooth_Cs.html#RsSmw.Implementations.Source.Bb.Btooth.Cs.CsCls.get_einterval">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_einterval</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:BTOoth:CS:EINTerval`` \n</span>
+<span class="sd">		Snippet: ``value: int = driver.source.bb.btooth.cs.get_einterval()`` \n</span>
+<span class="sd">		Sets the number of LE connection event intervals.</span>
+
+<span class="sd">		:return: event_interval: integer Range: 1 to 65535</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:BTOoth:CS:EINTerval?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_int</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CsCls.get_eoffset">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Btooth_Cs.html#RsSmw.Implementations.Source.Bb.Btooth.Cs.CsCls.get_eoffset">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_eoffset</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:BTOoth:CS:EOFFset`` \n</span>
+<span class="sd">		Snippet: ``value: int = driver.source.bb.btooth.cs.get_eoffset()`` \n</span>
+<span class="sd">		Sets the time between the anchor point of the LE connection event and the beginning of the CS event. If you select manual</span>
+<span class="sd">		step scheduling, you can set event offsets lower than 500 microseconds. An offset of 0 microseconds means that the CS</span>
+<span class="sd">		event starts at the anchor point of the LE connection event.</span>
+
+<span class="sd">		:return: event_offset: integer Range: 500 to 4e6</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:BTOoth:CS:EOFFset?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_int</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CsCls.get_ntfcs">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Btooth_Cs.html#RsSmw.Implementations.Source.Bb.Btooth.Cs.CsCls.get_ntfcs">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_ntfcs</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:BTOoth:CS:NTFCs`` \n</span>
+<span class="sd">		Snippet: ``value: bool = driver.source.bb.btooth.cs.get_ntfcs()`` \n</span>
+<span class="sd">		Enables setting of a zero frequency change period (T_FCS) in the first CS step.</span>
+
+<span class="sd">		:return: no_tfcs: 1 | ON | 0| OFF</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:BTOoth:CS:NTFCs?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_bool</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="CsCls.get_role">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Btooth_Cs.html#RsSmw.Implementations.Source.Bb.Btooth.Cs.CsCls.get_role">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_role</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">enums</span><span class="o">.</span><span class="n">BtoCsRoles</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:BTOoth:CS:ROLE`` \n</span>
+<span class="sd">		Snippet: ``value: enums.BtoCsRoles = driver.source.bb.btooth.cs.get_role()`` \n</span>
+<span class="sd">		Sets the role of the channel sounding device that is the R&amp;S SMW200A.</span>
+
+<span class="sd">		:return: role: INITiator | REFLector INITiator The instrument initiates a CS procedure. REFLector The instrument responds to a CS procedure.</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:BTOoth:CS:ROLE?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_scalar_enum</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">BtoCsRoles</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CsCls.get_sinterval">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Btooth_Cs.html#RsSmw.Implementations.Source.Bb.Btooth.Cs.CsCls.get_sinterval">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_sinterval</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:BTOoth:CS:SINTerval`` \n</span>
+<span class="sd">		Snippet: ``value: int = driver.source.bb.btooth.cs.get_sinterval()`` \n</span>
+<span class="sd">		Sets the subevent interval. This interval is the time in multiples of 625 us between the beginning of a CS subevent and</span>
+<span class="sd">		the beginning of the next CS subevent within the same CS event. For SOURce1:BB:BTO:CS:SNUM 1, the subevent interval is</span>
+<span class="sd">		0us. For SOURce1:BB:BTO:CS:SNUM 2 or higher, settable subevent intervals depend on the number of event intervals, the</span>
+<span class="sd">		connection interval, the event offset and the subevent length. See also method ``RsSmw.source.bb.btooth.cs.snumber()`` .</span>
+
+<span class="sd">		:return: sub_interval: integer Range: 0 to 2.7e11</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:BTOoth:CS:SINTerval?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_int</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CsCls.get_slength">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Btooth_Cs.html#RsSmw.Implementations.Source.Bb.Btooth.Cs.CsCls.get_slength">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_slength</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:BTOoth:CS:SLENgth`` \n</span>
+<span class="sd">		Snippet: ``value: int = driver.source.bb.btooth.cs.get_slength()`` \n</span>
+<span class="sd">		Sets the subevent length that is the duration of a CS subevent. You can set values in multiples of 625 us.</span>
+<span class="sd">		Settable subevent lengths depend on the number of event intervals, the connection interval, the event offset and the</span>
+<span class="sd">		subevent interval.</span>
+
+<span class="sd">		:return: sub_length: integer Range: 1250 to 4e6</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:BTOoth:CS:SLENgth?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_int</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CsCls.get_snumber">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Btooth_Cs.html#RsSmw.Implementations.Source.Bb.Btooth.Cs.CsCls.get_snumber">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_snumber</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:BTOoth:CS:SNUMber`` \n</span>
+<span class="sd">		Snippet: ``value: int = driver.source.bb.btooth.cs.get_snumber()`` \n</span>
+<span class="sd">		Sets number of subevents. Settable values depend on the subevent interval.</span>
+
+<span class="sd">		:return: sub_number: integer Range: 1 to 32</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:BTOoth:CS:SNUMber?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_int</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="CsCls.get_sscheduling">
+<a class="viewcode-back" href="../../../../../../Source_Bb_Btooth_Cs.html#RsSmw.Implementations.Source.Bb.Btooth.Cs.CsCls.get_sscheduling">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_sscheduling</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">enums</span><span class="o">.</span><span class="n">AutoManualMode</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:BTOoth:CS:SSCHeduling`` \n</span>
+<span class="sd">		Snippet: ``value: enums.AutoManualMode = driver.source.bb.btooth.cs.get_sscheduling()`` \n</span>
+<span class="sd">		Sets the step scheduling mode.</span>
+
+<span class="sd">		:return: step_scheduling: AUTO | MANual AUTO Automatic CS step scheduling. The subevent length, the subevent interval and the number of subevents are configurable. The number of CS steps is 2. MANual Manual CS step scheduling. The subevent length is 1250 us, the subevent interval is 0 us and the number of subevents is 1. The number of CS steps is configurable.</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:BTOoth:CS:SSCHeduling?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_scalar_enum</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">AutoManualMode</span><span class="p">)</span></div>
+
+
+	<span class="k">def</span><span class="w"> </span><span class="nf">clone</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s1">&#39;CsCls&#39;</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		Clones the group by creating new object from it and its whole existing subgroups.</span>
+<span class="sd">		Also copies all the existing default Repeated Capabilities setting,</span>
+<span class="sd">		which you can change independently without affecting the original group.</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">new_group</span> <span class="o">=</span> <span class="n">CsCls</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span><span class="o">.</span><span class="n">parent</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span><span class="o">.</span><span class="n">synchronize_repcaps</span><span class="p">(</span><span class="n">new_group</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">new_group</span>
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright © Rohde &amp; Schwarz 2026.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+Overrange
+----------------------------------------
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:FREQuency:CONVerter:EXTernal:OVERrange:[STATe]
+
+.. code-block:: python
+
+	[SOURce<HW>]:FREQuency:CONVerter:EXTernal:OVERrange:[STATe]
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Frequency.Converter.External.Overrange.OverrangeCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	overrange_copy = driver.source.frequency.converter.external.overrange.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Frequency_Converter_External_Overrange_Allowed.rst
+	Source_Frequency_Converter_External_Overrange_Frequency.rst

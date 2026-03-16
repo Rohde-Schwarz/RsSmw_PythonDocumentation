@@ -1,0 +1,56 @@
+Huwb
+----------------------------------------
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:LRWPan:HUWB:SRF
+	single: [SOURce<HW>]:BB:[LRWPan]:HUWB:ASL
+	single: [SOURce<HW>]:BB:[LRWPan]:HUWB:ASN
+	single: [SOURce<HW>]:BB:[LRWPan]:HUWB:BWIDth
+	single: [SOURce<HW>]:BB:[LRWPan]:HUWB:CCCL
+	single: [SOURce<HW>]:BB:[LRWPan]:HUWB:CNUMber
+	single: [SOURce<HW>]:BB:[LRWPan]:HUWB:F2MS
+	single: [SOURce<HW>]:BB:[LRWPan]:HUWB:IINTerval
+	single: [SOURce<HW>]:BB:[LRWPan]:HUWB:OBANd
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:LRWPan:HUWB:SRF
+	[SOURce<HW>]:BB:[LRWPan]:HUWB:ASL
+	[SOURce<HW>]:BB:[LRWPan]:HUWB:ASN
+	[SOURce<HW>]:BB:[LRWPan]:HUWB:BWIDth
+	[SOURce<HW>]:BB:[LRWPan]:HUWB:CCCL
+	[SOURce<HW>]:BB:[LRWPan]:HUWB:CNUMber
+	[SOURce<HW>]:BB:[LRWPan]:HUWB:F2MS
+	[SOURce<HW>]:BB:[LRWPan]:HUWB:IINTerval
+	[SOURce<HW>]:BB:[LRWPan]:HUWB:OBANd
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.LrWpan.Huwb.HuwbCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	huwb_copy = driver.source.bb.lrWpan.huwb.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_LrWpan_Huwb_Fconfig.rst
+	Source_Bb_LrWpan_Huwb_MacHeader.rst
+	Source_Bb_LrWpan_Huwb_Phr.rst
+	Source_Bb_LrWpan_Huwb_Setting.rst
+	Source_Bb_LrWpan_Huwb_Sfd.rst
+	Source_Bb_LrWpan_Huwb_Sts.rst

@@ -1,0 +1,26 @@
+Waveform
+----------------------------------------
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Kuiper.Waveform.WaveformCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	waveform_copy = driver.source.bb.kuiper.waveform.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Kuiper_Waveform_Create.rst

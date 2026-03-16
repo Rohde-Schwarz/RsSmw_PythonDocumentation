@@ -1,0 +1,37 @@
+Data
+----------------------------------------
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:[LRWPan]:SENS:FCONfig:DATA:DSELection
+	single: [SOURce<HW>]:BB:[LRWPan]:SENS:FCONfig:DATA
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:[LRWPan]:SENS:FCONfig:DATA:DSELection
+	[SOURce<HW>]:BB:[LRWPan]:SENS:FCONfig:DATA
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.LrWpan.Sens.Fconfig.Data.DataCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	data_copy = driver.source.bb.lrWpan.sens.fconfig.data.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_LrWpan_Sens_Fconfig_Data_Pattern.rst

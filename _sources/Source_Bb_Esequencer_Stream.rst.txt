@@ -1,0 +1,29 @@
+Stream<TwoStreams>
+----------------------------------------
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Esequencer.Stream.StreamCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	stream_copy = driver.source.bb.esequencer.stream.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Esequencer_Stream_Eratio.rst
+	Source_Bb_Esequencer_Stream_Output.rst
+	Source_Bb_Esequencer_Stream_SeqCount.rst
+	Source_Bb_Esequencer_Stream_Sequencer.rst

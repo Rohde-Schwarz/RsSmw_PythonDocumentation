@@ -1,0 +1,18 @@
+Demo
+----------------------------------------
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:ARBitrary:ETHernet:DEMO:STATe
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:ARBitrary:ETHernet:DEMO:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Arbitrary.Ethernet.Demo.DemoCls
+	:members:
+	:undoc-members:
+	:noindex:

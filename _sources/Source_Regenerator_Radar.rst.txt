@@ -1,0 +1,38 @@
+Radar
+----------------------------------------
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:REGenerator:RADar:TSETup
+
+.. code-block:: python
+
+	[SOURce<HW>]:REGenerator:RADar:TSETup
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Regenerator.Radar.RadarCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	radar_copy = driver.source.regenerator.radar.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Regenerator_Radar_Analyzer.rst
+	Source_Regenerator_Radar_Antenna.rst
+	Source_Regenerator_Radar_Ota.rst
+	Source_Regenerator_Radar_Power.rst

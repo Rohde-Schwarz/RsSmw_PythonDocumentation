@@ -1,0 +1,36 @@
+Ulist
+----------------------------------------
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:REGenerator:OBJect:ULISt:CATalog
+
+.. code-block:: python
+
+	[SOURce<HW>]:REGenerator:OBJect:ULISt:CATalog
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Regenerator.Object.Ulist.UlistCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	ulist_copy = driver.source.regenerator.object.ulist.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Regenerator_Object_Ulist_Select.rst
+	Source_Regenerator_Object_Ulist_State.rst

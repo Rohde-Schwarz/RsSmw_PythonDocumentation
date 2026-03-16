@@ -1,0 +1,48 @@
+Huwb
+----------------------------------------
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:HUWB:PRESet
+	single: [SOURce<HW>]:BB:HUWB:SLENgth
+	single: [SOURce<HW>]:BB:HUWB:STATe
+	single: [SOURce<HW>]:BB:HUWB:STD
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:HUWB:PRESet
+	[SOURce<HW>]:BB:HUWB:SLENgth
+	[SOURce<HW>]:BB:HUWB:STATe
+	[SOURce<HW>]:BB:HUWB:STD
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Huwb.HuwbCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	huwb_copy = driver.source.bb.huwb.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Huwb_Clipping.rst
+	Source_Bb_Huwb_Clock.rst
+	Source_Bb_Huwb_FilterPy.rst
+	Source_Bb_Huwb_Impairments.rst
+	Source_Bb_Huwb_Setting.rst
+	Source_Bb_Huwb_SymbolRate.rst
+	Source_Bb_Huwb_Trigger.rst
+	Source_Bb_Huwb_Waveform.rst

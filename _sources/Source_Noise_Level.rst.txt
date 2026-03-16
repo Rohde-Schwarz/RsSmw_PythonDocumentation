@@ -1,0 +1,27 @@
+Level<NoisePoint>
+----------------------------------------
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Noise.Level.LevelCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	level_copy = driver.source.noise.level.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Noise_Level_Absolute.rst
+	Source_Noise_Level_Relative.rst

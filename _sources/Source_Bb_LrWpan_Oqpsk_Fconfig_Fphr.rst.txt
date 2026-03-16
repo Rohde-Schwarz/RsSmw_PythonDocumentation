@@ -1,0 +1,18 @@
+Fphr
+----------------------------------------
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:[LRWPan]:OQPSk:FCONfig:FPhr:STATe
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:[LRWPan]:OQPSk:FCONfig:FPhr:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.LrWpan.Oqpsk.Fconfig.Fphr.FphrCls
+	:members:
+	:undoc-members:
+	:noindex:

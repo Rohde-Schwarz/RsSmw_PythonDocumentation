@@ -1,0 +1,29 @@
+InputPy
+----------------------------------------
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.InputPy.InputPyCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	inputPy_copy = driver.source.inputPy.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_InputPy_Modext.rst
+	Source_InputPy_Tm.rst
+	Source_InputPy_Trigger.rst
+	Source_InputPy_User.rst

@@ -1,0 +1,18 @@
+Sbsl
+----------------------------------------
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:NR5G:OUTPut:SBSL:STATe
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:NR5G:OUTPut:SBSL:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Nr5G.Output.Sbsl.SbslCls
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,35 @@
+Departure
+----------------------------------------
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:FSIMulator:SCM:LOS:DEParture:[ANGLe]
+
+.. code-block:: python
+
+	[SOURce<HW>]:FSIMulator:SCM:LOS:DEParture:[ANGLe]
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.Scm.Los.Departure.DepartureCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	departure_copy = driver.source.fsimulator.scm.los.departure.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Fsimulator_Scm_Los_Departure_Zenith.rst

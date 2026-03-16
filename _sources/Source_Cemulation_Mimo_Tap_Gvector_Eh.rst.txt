@@ -1,0 +1,27 @@
+Eh
+----------------------------------------
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.Mimo.Tap.Gvector.Eh.EhCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	eh_copy = driver.source.cemulation.mimo.tap.gvector.eh.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Cemulation_Mimo_Tap_Gvector_Eh_Gain.rst
+	Source_Cemulation_Mimo_Tap_Gvector_Eh_Phase.rst

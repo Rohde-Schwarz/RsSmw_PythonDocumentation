@@ -1,0 +1,26 @@
+AnPattern<AntennaPattern>
+----------------------------------------
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:V5G:DL:[SUBF<ST0>]:ENCC:PHICh:ANPattern<GR0>
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:V5G:DL:[SUBF<ST0>]:ENCC:PHICh:ANPattern<GR0>
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.V5G.Downlink.Subf.Encc.Phich.AnPattern.AnPatternCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	anPattern_copy = driver.source.bb.v5G.downlink.subf.encc.phich.anPattern.clone()

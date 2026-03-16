@@ -1,0 +1,26 @@
+Sequencer<Sequencer>
+----------------------------------------
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Esequencer.Estreaming.Sequencer.SequencerCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	sequencer_copy = driver.source.bb.esequencer.estreaming.sequencer.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Esequencer_Estreaming_Sequencer_Stream.rst

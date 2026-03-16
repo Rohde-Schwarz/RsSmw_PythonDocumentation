@@ -1,0 +1,22 @@
+Fconfig
+----------------------------------------
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:[LRWPan]:MMS:FCONfig:DLENgth
+	single: [SOURce<HW>]:BB:[LRWPan]:MMS:FCONfig:SFDLength
+	single: [SOURce<HW>]:BB:[LRWPan]:MMS:FCONfig:SYNLength
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:[LRWPan]:MMS:FCONfig:DLENgth
+	[SOURce<HW>]:BB:[LRWPan]:MMS:FCONfig:SFDLength
+	[SOURce<HW>]:BB:[LRWPan]:MMS:FCONfig:SYNLength
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.LrWpan.Mms.Fconfig.FconfigCls
+	:members:
+	:undoc-members:
+	:noindex:

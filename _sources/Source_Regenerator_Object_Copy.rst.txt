@@ -1,0 +1,37 @@
+Copy
+----------------------------------------
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:REGenerator:OBJect:COPY:DESTination
+	single: [SOURce<HW>]:REGenerator:OBJect:COPY:SOURce
+
+.. code-block:: python
+
+	[SOURce<HW>]:REGenerator:OBJect:COPY:DESTination
+	[SOURce<HW>]:REGenerator:OBJect:COPY:SOURce
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Regenerator.Object.Copy.CopyCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	copy_copy = driver.source.regenerator.object.copy.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Regenerator_Object_Copy_Execute.rst

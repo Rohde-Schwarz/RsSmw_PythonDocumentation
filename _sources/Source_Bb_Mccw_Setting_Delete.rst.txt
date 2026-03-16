@@ -1,0 +1,18 @@
+Delete
+----------------------------------------
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:MCCW:SETTing:DELete
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:MCCW:SETTing:DELete
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Mccw.Setting.Delete.DeleteCls
+	:members:
+	:undoc-members:
+	:noindex:

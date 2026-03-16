@@ -1,0 +1,40 @@
+ExtDevice<ExternalDevice>
+----------------------------------------
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:EFRontend:EXTDevice:LIST
+
+.. code-block:: python
+
+	[SOURce<HW>]:EFRontend:EXTDevice:LIST
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Efrontend.ExtDevice.ExtDeviceCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	extDevice_copy = driver.source.efrontend.extDevice.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Efrontend_ExtDevice_Correction.rst
+	Source_Efrontend_ExtDevice_Frequency.rst
+	Source_Efrontend_ExtDevice_Gain.rst
+	Source_Efrontend_ExtDevice_Name.rst
+	Source_Efrontend_ExtDevice_Refresh.rst
+	Source_Efrontend_ExtDevice_TypePy.rst

@@ -1,0 +1,18 @@
+Pattern
+----------------------------------------
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:[LRWPan]:EMLLd:FCONfig:DATA:PATTern
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:[LRWPan]:EMLLd:FCONfig:DATA:PATTern
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.LrWpan.Emlld.Fconfig.Data.Pattern.PatternCls
+	:members:
+	:undoc-members:
+	:noindex:

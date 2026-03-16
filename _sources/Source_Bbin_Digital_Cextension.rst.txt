@@ -1,0 +1,20 @@
+Cextension
+----------------------------------------
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BBIN:DIGital:CEXTension:LATency
+	single: [SOURce<HW>]:BBIN:DIGital:CEXTension:STATe
+
+.. code-block:: python
+
+	[SOURce<HW>]:BBIN:DIGital:CEXTension:LATency
+	[SOURce<HW>]:BBIN:DIGital:CEXTension:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bbin.Digital.Cextension.CextensionCls
+	:members:
+	:undoc-members:
+	:noindex:

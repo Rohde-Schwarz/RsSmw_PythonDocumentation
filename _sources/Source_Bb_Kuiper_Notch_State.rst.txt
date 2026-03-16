@@ -1,0 +1,18 @@
+State
+----------------------------------------
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:KUIPer:NOTCh<CH>:STATe
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:KUIPer:NOTCh<CH>:STATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Kuiper.Notch.State.StateCls
+	:members:
+	:undoc-members:
+	:noindex:

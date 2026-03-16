@@ -1,0 +1,18 @@
+Uem
+----------------------------------------
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:WLNN:FBLock<CH>:USER<DI>:UEM
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:WLNN:FBLock<CH>:USER<DI>:UEM
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Wlnn.Fblock.User.Uem.UemCls
+	:members:
+	:undoc-members:
+	:noindex:

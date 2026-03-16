@@ -1,0 +1,18 @@
+UcMode
+----------------------------------------
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:DVB:DVBS:UCMode:[STATe]
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:DVB:DVBS:UCMode:[STATe]
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dvb.Dvbs.UcMode.UcModeCls
+	:members:
+	:undoc-members:
+	:noindex:

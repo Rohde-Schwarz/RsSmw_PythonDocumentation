@@ -1,0 +1,26 @@
+Sync
+----------------------------------------
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.LrWpan.Clock.Sync.SyncCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	sync_copy = driver.source.bb.lrWpan.clock.sync.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_LrWpan_Clock_Sync_Execute.rst

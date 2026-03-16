@@ -1,0 +1,33 @@
+Tsl<ChannelNull>
+----------------------------------------
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dvb.Dvbs.Ttab.Tsl.TslCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	tsl_copy = driver.source.bb.dvb.dvbs.ttab.tsl.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Dvb_Dvbs_Ttab_Tsl_Ctype.rst
+	Source_Bb_Dvb_Dvbs_Ttab_Tsl_Data.rst
+	Source_Bb_Dvb_Dvbs_Ttab_Tsl_Dlist.rst
+	Source_Bb_Dvb_Dvbs_Ttab_Tsl_Mcod.rst
+	Source_Bb_Dvb_Dvbs_Ttab_Tsl_Nsym.rst
+	Source_Bb_Dvb_Dvbs_Ttab_Tsl_Pattern.rst
+	Source_Bb_Dvb_Dvbs_Ttab_Tsl_Pilots.rst
+	Source_Bb_Dvb_Dvbs_Ttab_Tsl_Tsn.rst

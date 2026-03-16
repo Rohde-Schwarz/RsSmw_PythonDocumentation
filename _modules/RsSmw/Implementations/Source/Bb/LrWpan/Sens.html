@@ -1,0 +1,595 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../../../../../">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RsSmw.Implementations.Source.Bb.LrWpan.Sens &mdash; RsSmw 5.50.42.103 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../../../../../_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="../../../../../../_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="../../../../../../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../../../../../../_static/custom.css?v=2ddbb4b2" />
+
+  
+      <script src="../../../../../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../../../../../_static/documentation_options.js?v=4397b82f"></script>
+      <script src="../../../../../../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../../../../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+      <script src="../../../../../../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../../../../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../../../../index.html" class="icon icon-home">
+            RsSmw
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../readme.html">Revision History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../enums.html">Enums</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../repcap.html">RepCaps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../RsSmw.html">Instrument API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../utilities.html">Utilities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../logger.html">Logger</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../events.html">Events</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../genindex.html">Index</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../../../index.html">RsSmw</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../../../index.html">Module code</a></li>
+          <li class="breadcrumb-item"><a href="../../../Source.html">RsSmw.Implementations.Source</a></li>
+          <li class="breadcrumb-item"><a href="../../Bb.html">RsSmw.Implementations.Source.Bb</a></li>
+          <li class="breadcrumb-item"><a href="../LrWpan.html">RsSmw.Implementations.Source.Bb.LrWpan</a></li>
+      <li class="breadcrumb-item active">RsSmw.Implementations.Source.Bb.LrWpan.Sens</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Source code for RsSmw.Implementations.Source.Bb.LrWpan.Sens</h1><div class="highlight"><pre>
+<span></span><span class="kn">from</span><span class="w"> </span><span class="nn">......Internal.Core</span><span class="w"> </span><span class="kn">import</span> <span class="n">Core</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">......Internal.CommandsGroup</span><span class="w"> </span><span class="kn">import</span> <span class="n">CommandsGroup</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">......Internal</span><span class="w"> </span><span class="kn">import</span> <span class="n">Conversions</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">......</span><span class="w"> </span><span class="kn">import</span> <span class="n">enums</span>
+
+
+<span class="c1"># noinspection PyPep8Naming,PyAttributeOutsideInit,SpellCheckingInspection</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">SensCls</span><span class="p">:</span>
+<span class="w">	</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">	| Commands in total: 69</span>
+<span class="sd">	| Subgroups: 6</span>
+<span class="sd">	| Direct child commands: 14</span>
+<span class="sd">	&quot;&quot;&quot;</span>
+
+	<span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">core</span><span class="p">:</span> <span class="n">Core</span><span class="p">,</span> <span class="n">parent</span><span class="p">):</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span> <span class="o">=</span> <span class="n">core</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span> <span class="o">=</span> <span class="n">CommandsGroup</span><span class="p">(</span><span class="s2">&quot;sens&quot;</span><span class="p">,</span> <span class="n">core</span><span class="p">,</span> <span class="n">parent</span><span class="p">)</span>
+
+	<span class="nd">@property</span>
+	<span class="k">def</span><span class="w"> </span><span class="nf">fconfig</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		| Commands in total: 18</span>
+<span class="sd">		| Subgroups: 4</span>
+<span class="sd">		| Direct child commands: 12</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;_fconfig&#39;</span><span class="p">):</span>
+			<span class="kn">from</span><span class="w"> </span><span class="nn">.Fconfig</span><span class="w"> </span><span class="kn">import</span> <span class="n">FconfigCls</span>
+			<span class="bp">self</span><span class="o">.</span><span class="n">_fconfig</span> <span class="o">=</span> <span class="n">FconfigCls</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span><span class="p">)</span>
+		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fconfig</span>
+
+	<span class="nd">@property</span>
+	<span class="k">def</span><span class="w"> </span><span class="nf">phr</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		| Commands in total: 1</span>
+<span class="sd">		| Subgroups: 0</span>
+<span class="sd">		| Direct child commands: 1</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;_phr&#39;</span><span class="p">):</span>
+			<span class="kn">from</span><span class="w"> </span><span class="nn">.Phr</span><span class="w"> </span><span class="kn">import</span> <span class="n">PhrCls</span>
+			<span class="bp">self</span><span class="o">.</span><span class="n">_phr</span> <span class="o">=</span> <span class="n">PhrCls</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span><span class="p">)</span>
+		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_phr</span>
+
+	<span class="nd">@property</span>
+	<span class="k">def</span><span class="w"> </span><span class="nf">macHeader</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		| Commands in total: 31</span>
+<span class="sd">		| Subgroups: 0</span>
+<span class="sd">		| Direct child commands: 31</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;_macHeader&#39;</span><span class="p">):</span>
+			<span class="kn">from</span><span class="w"> </span><span class="nn">.MacHeader</span><span class="w"> </span><span class="kn">import</span> <span class="n">MacHeaderCls</span>
+			<span class="bp">self</span><span class="o">.</span><span class="n">_macHeader</span> <span class="o">=</span> <span class="n">MacHeaderCls</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span><span class="p">)</span>
+		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_macHeader</span>
+
+	<span class="nd">@property</span>
+	<span class="k">def</span><span class="w"> </span><span class="nf">setting</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		| Commands in total: 2</span>
+<span class="sd">		| Subgroups: 0</span>
+<span class="sd">		| Direct child commands: 2</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;_setting&#39;</span><span class="p">):</span>
+			<span class="kn">from</span><span class="w"> </span><span class="nn">.Setting</span><span class="w"> </span><span class="kn">import</span> <span class="n">SettingCls</span>
+			<span class="bp">self</span><span class="o">.</span><span class="n">_setting</span> <span class="o">=</span> <span class="n">SettingCls</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span><span class="p">)</span>
+		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_setting</span>
+
+	<span class="nd">@property</span>
+	<span class="k">def</span><span class="w"> </span><span class="nf">sfd</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		| Commands in total: 2</span>
+<span class="sd">		| Subgroups: 0</span>
+<span class="sd">		| Direct child commands: 2</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;_sfd&#39;</span><span class="p">):</span>
+			<span class="kn">from</span><span class="w"> </span><span class="nn">.Sfd</span><span class="w"> </span><span class="kn">import</span> <span class="n">SfdCls</span>
+			<span class="bp">self</span><span class="o">.</span><span class="n">_sfd</span> <span class="o">=</span> <span class="n">SfdCls</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span><span class="p">)</span>
+		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_sfd</span>
+
+	<span class="nd">@property</span>
+	<span class="k">def</span><span class="w"> </span><span class="nf">sts</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		| Commands in total: 1</span>
+<span class="sd">		| Subgroups: 0</span>
+<span class="sd">		| Direct child commands: 1</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;_sts&#39;</span><span class="p">):</span>
+			<span class="kn">from</span><span class="w"> </span><span class="nn">.Sts</span><span class="w"> </span><span class="kn">import</span> <span class="n">StsCls</span>
+			<span class="bp">self</span><span class="o">.</span><span class="n">_sts</span> <span class="o">=</span> <span class="n">StsCls</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span><span class="p">)</span>
+		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_sts</span>
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="SensCls.get_cct">
+<a class="viewcode-back" href="../../../../../../Source_Bb_LrWpan_Sens.html#RsSmw.Implementations.Source.Bb.LrWpan.Sens.SensCls.get_cct">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_cct</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">enums</span><span class="o">.</span><span class="n">HrpUwbConvConsLenDrm</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:LRWPan:SENS:CCT`` \n</span>
+<span class="sd">		Snippet: ``value: enums.HrpUwbConvConsLenDrm = driver.source.bb.lrWpan.sens.get_cct()`` \n</span>
+<span class="sd">		Requires [:SOURce&lt;hw&gt;]:BB:LRWPan | HUWB:STD EHPRF | SENS. Sets the channel code type. The channel code type depends on</span>
+<span class="sd">		the selected PHR data rate mode.</span>
+
+<span class="sd">		:return: cccl: CL3 | CL7 | LDPC</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:LRWPan:SENS:CCT?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_scalar_enum</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">HrpUwbConvConsLenDrm</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="SensCls.set_cct">
+<a class="viewcode-back" href="../../../../../../Source_Bb_LrWpan_Sens.html#RsSmw.Implementations.Source.Bb.LrWpan.Sens.SensCls.set_cct">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_cct</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">cccl</span><span class="p">:</span> <span class="n">enums</span><span class="o">.</span><span class="n">HrpUwbConvConsLenDrm</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:LRWPan:SENS:CCT`` \n</span>
+<span class="sd">		Snippet: ``driver.source.bb.lrWpan.sens.set_cct(cccl = enums.HrpUwbConvConsLenDrm.CL3)`` \n</span>
+<span class="sd">		Requires [:SOURce&lt;hw&gt;]:BB:LRWPan | HUWB:STD EHPRF | SENS. Sets the channel code type. The channel code type depends on</span>
+<span class="sd">		the selected PHR data rate mode.</span>
+
+<span class="sd">		:param cccl: CL3 | CL7 | LDPC</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">enum_scalar_to_str</span><span class="p">(</span><span class="n">cccl</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">HrpUwbConvConsLenDrm</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:LRWPan:SENS:CCT </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="SensCls.get_rstu">
+<a class="viewcode-back" href="../../../../../../Source_Bb_LrWpan_Sens.html#RsSmw.Implementations.Source.Bb.LrWpan.Sens.SensCls.get_rstu">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_rstu</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:LRWPan:SENS:RSTU`` \n</span>
+<span class="sd">		Snippet: ``value: int = driver.source.bb.lrWpan.sens.get_rstu()`` \n</span>
+<span class="sd">		Queries the size of the ranging scheduling time unit (RSTU) .</span>
+
+<span class="sd">		:return: rstu: integer Range: 416 to 416</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:LRWPan:SENS:RSTU?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_int</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="SensCls.get_sgap">
+<a class="viewcode-back" href="../../../../../../Source_Bb_LrWpan_Sens.html#RsSmw.Implementations.Source.Bb.LrWpan.Sens.SensCls.get_sgap">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_sgap</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">enums</span><span class="o">.</span><span class="n">HrpUwbSilentGap</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:LRWPan:SENS:SGAP`` \n</span>
+<span class="sd">		Snippet: ``value: enums.HrpUwbSilentGap = driver.source.bb.lrWpan.sens.get_sgap()`` \n</span>
+<span class="sd">		Queries or sets the value of the gap before and after the SENS part in the sensing package. Setting the value requires</span>
+<span class="sd">		[:SOURce&lt;hw&gt;]:BB:LRWPan:SENS:SPC SPCU.</span>
+
+<span class="sd">		:return: silent_gap: SG0 | SG1 | SG40</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:LRWPan:SENS:SGAP?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_scalar_enum</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">HrpUwbSilentGap</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="SensCls.set_sgap">
+<a class="viewcode-back" href="../../../../../../Source_Bb_LrWpan_Sens.html#RsSmw.Implementations.Source.Bb.LrWpan.Sens.SensCls.set_sgap">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_sgap</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">silent_gap</span><span class="p">:</span> <span class="n">enums</span><span class="o">.</span><span class="n">HrpUwbSilentGap</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:LRWPan:SENS:SGAP`` \n</span>
+<span class="sd">		Snippet: ``driver.source.bb.lrWpan.sens.set_sgap(silent_gap = enums.HrpUwbSilentGap.SG0)`` \n</span>
+<span class="sd">		Queries or sets the value of the gap before and after the SENS part in the sensing package. Setting the value requires</span>
+<span class="sd">		[:SOURce&lt;hw&gt;]:BB:LRWPan:SENS:SPC SPCU.</span>
+
+<span class="sd">		:param silent_gap: SG0 | SG1 | SG40</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">enum_scalar_to_str</span><span class="p">(</span><span class="n">silent_gap</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">HrpUwbSilentGap</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:LRWPan:SENS:SGAP </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="SensCls.get_spc">
+<a class="viewcode-back" href="../../../../../../Source_Bb_LrWpan_Sens.html#RsSmw.Implementations.Source.Bb.LrWpan.Sens.SensCls.get_spc">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_spc</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">enums</span><span class="o">.</span><span class="n">HrpUwbSenspAcketConfig</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:LRWPan:SENS:SPC`` \n</span>
+<span class="sd">		Snippet: ``value: enums.HrpUwbSenspAcketConfig = driver.source.bb.lrWpan.sens.get_spc()`` \n</span>
+<span class="sd">		Sets the sensing packet configuration.</span>
+
+<span class="sd">		:return: packet_config: SPC0 | SPC1 | SPC2 | SPCU SPC0 | SPC1 | SPC2 Provide the sensing packet format according to P802.15.4ab/D02. SPCU Provides no SYNC and no SFD field. The format provides the SENS active packet in between two silent gaps.</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:LRWPan:SENS:SPC?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_scalar_enum</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">HrpUwbSenspAcketConfig</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="SensCls.set_spc">
+<a class="viewcode-back" href="../../../../../../Source_Bb_LrWpan_Sens.html#RsSmw.Implementations.Source.Bb.LrWpan.Sens.SensCls.set_spc">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_spc</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">packet_config</span><span class="p">:</span> <span class="n">enums</span><span class="o">.</span><span class="n">HrpUwbSenspAcketConfig</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:LRWPan:SENS:SPC`` \n</span>
+<span class="sd">		Snippet: ``driver.source.bb.lrWpan.sens.set_spc(packet_config = enums.HrpUwbSenspAcketConfig.SPC0)`` \n</span>
+<span class="sd">		Sets the sensing packet configuration.</span>
+
+<span class="sd">		:param packet_config: SPC0 | SPC1 | SPC2 | SPCU SPC0 | SPC1 | SPC2 Provide the sensing packet format according to P802.15.4ab/D02. SPCU Provides no SYNC and no SFD field. The format provides the SENS active packet in between two silent gaps.</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">enum_scalar_to_str</span><span class="p">(</span><span class="n">packet_config</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">HrpUwbSenspAcketConfig</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:LRWPan:SENS:SPC </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="SensCls.get_sp_duration">
+<a class="viewcode-back" href="../../../../../../Source_Bb_LrWpan_Sens.html#RsSmw.Implementations.Source.Bb.LrWpan.Sens.SensCls.get_sp_duration">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_sp_duration</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:LRWPan:SENS:SPDuration`` \n</span>
+<span class="sd">		Snippet: ``value: int = driver.source.bb.lrWpan.sens.get_sp_duration()`` \n</span>
+<span class="sd">		Sets the sensing phase duration. You can configure how many sensing slots define a sensing phase.</span>
+
+<span class="sd">		:return: sens_phase_dur: integer Range: 1 to 4095</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:LRWPan:SENS:SPDuration?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_int</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="SensCls.set_sp_duration">
+<a class="viewcode-back" href="../../../../../../Source_Bb_LrWpan_Sens.html#RsSmw.Implementations.Source.Bb.LrWpan.Sens.SensCls.set_sp_duration">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_sp_duration</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sens_phase_dur</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:LRWPan:SENS:SPDuration`` \n</span>
+<span class="sd">		Snippet: ``driver.source.bb.lrWpan.sens.set_sp_duration(sens_phase_dur = 1)`` \n</span>
+<span class="sd">		Sets the sensing phase duration. You can configure how many sensing slots define a sensing phase.</span>
+
+<span class="sd">		:param sens_phase_dur: integer Range: 1 to 4095</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">decimal_value_to_str</span><span class="p">(</span><span class="n">sens_phase_dur</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:LRWPan:SENS:SPDuration </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="SensCls.get_srf">
+<a class="viewcode-back" href="../../../../../../Source_Bb_LrWpan_Sens.html#RsSmw.Implementations.Source.Bb.LrWpan.Sens.SensCls.get_srf">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_srf</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:LRWPan:SENS:SRF`` \n</span>
+<span class="sd">		Snippet: ``value: bool = driver.source.bb.lrWpan.sens.get_srf()`` \n</span>
+<span class="sd">		Sets the RF output frequency automatically to the value of the channel center frequency according to the selected channel</span>
+<span class="sd">		number. You can still adjust the RF frequency afterwards.</span>
+
+<span class="sd">		:return: set_rf: 1 | ON | 0| OFF</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:LRWPan:SENS:SRF?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_bool</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="SensCls.set_srf">
+<a class="viewcode-back" href="../../../../../../Source_Bb_LrWpan_Sens.html#RsSmw.Implementations.Source.Bb.LrWpan.Sens.SensCls.set_srf">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_srf</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">set_rf</span><span class="p">:</span> <span class="nb">bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:LRWPan:SENS:SRF`` \n</span>
+<span class="sd">		Snippet: ``driver.source.bb.lrWpan.sens.set_srf(set_rf = False)`` \n</span>
+<span class="sd">		Sets the RF output frequency automatically to the value of the channel center frequency according to the selected channel</span>
+<span class="sd">		number. You can still adjust the RF frequency afterwards.</span>
+
+<span class="sd">		:param set_rf: 1 | ON | 0| OFF</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">bool_to_str</span><span class="p">(</span><span class="n">set_rf</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:LRWPan:SENS:SRF </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="SensCls.get_ss_duration">
+<a class="viewcode-back" href="../../../../../../Source_Bb_LrWpan_Sens.html#RsSmw.Implementations.Source.Bb.LrWpan.Sens.SensCls.get_ss_duration">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_ss_duration</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">enums</span><span class="o">.</span><span class="n">HrpUwbMmsrSlotDur</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:LRWPan:SENS:SSDuration`` \n</span>
+<span class="sd">		Snippet: ``value: enums.HrpUwbMmsrSlotDur = driver.source.bb.lrWpan.sens.get_ss_duration()`` \n</span>
+<span class="sd">		Sets the duration of a sensing slot in RSTU (ranging scheduling time unit) .</span>
+
+<span class="sd">		:return: sens_slot_dur: SD3 | SD6 | SD9 | SD12 | SD15 | SD18 | SD21 | SD24</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:LRWPan:SENS:SSDuration?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_scalar_enum</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">HrpUwbMmsrSlotDur</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="SensCls.set_ss_duration">
+<a class="viewcode-back" href="../../../../../../Source_Bb_LrWpan_Sens.html#RsSmw.Implementations.Source.Bb.LrWpan.Sens.SensCls.set_ss_duration">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_ss_duration</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sens_slot_dur</span><span class="p">:</span> <span class="n">enums</span><span class="o">.</span><span class="n">HrpUwbMmsrSlotDur</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:LRWPan:SENS:SSDuration`` \n</span>
+<span class="sd">		Snippet: ``driver.source.bb.lrWpan.sens.set_ss_duration(sens_slot_dur = enums.HrpUwbMmsrSlotDur.SD12)`` \n</span>
+<span class="sd">		Sets the duration of a sensing slot in RSTU (ranging scheduling time unit) .</span>
+
+<span class="sd">		:param sens_slot_dur: SD3 | SD6 | SD9 | SD12 | SD15 | SD18 | SD21 | SD24</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">enum_scalar_to_str</span><span class="p">(</span><span class="n">sens_slot_dur</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">HrpUwbMmsrSlotDur</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:LRWPan:SENS:SSDuration </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="SensCls.get_ss_offset">
+<a class="viewcode-back" href="../../../../../../Source_Bb_LrWpan_Sens.html#RsSmw.Implementations.Source.Bb.LrWpan.Sens.SensCls.get_ss_offset">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_ss_offset</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:LRWPan:SENS:SSOFfset`` \n</span>
+<span class="sd">		Snippet: ``value: int = driver.source.bb.lrWpan.sens.get_ss_offset()`` \n</span>
+<span class="sd">		Sets an offset of a defined amount of slots before the sensing phase starts.</span>
+
+<span class="sd">		:return: sens_start_offset: integer Range: 0 to 15</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:LRWPan:SENS:SSOFfset?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_int</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="SensCls.set_ss_offset">
+<a class="viewcode-back" href="../../../../../../Source_Bb_LrWpan_Sens.html#RsSmw.Implementations.Source.Bb.LrWpan.Sens.SensCls.set_ss_offset">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_ss_offset</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sens_start_offset</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:LRWPan:SENS:SSOFfset`` \n</span>
+<span class="sd">		Snippet: ``driver.source.bb.lrWpan.sens.set_ss_offset(sens_start_offset = 1)`` \n</span>
+<span class="sd">		Sets an offset of a defined amount of slots before the sensing phase starts.</span>
+
+<span class="sd">		:param sens_start_offset: integer Range: 0 to 15</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">decimal_value_to_str</span><span class="p">(</span><span class="n">sens_start_offset</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:LRWPan:SENS:SSOFfset </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="SensCls.get_asl">
+<a class="viewcode-back" href="../../../../../../Source_Bb_LrWpan_Sens.html#RsSmw.Implementations.Source.Bb.LrWpan.Sens.SensCls.get_asl">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_asl</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">enums</span><span class="o">.</span><span class="n">HrpUwbActSegmentLength</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:[LRWPan]:SENS:ASL`` \n</span>
+<span class="sd">		Snippet: ``value: enums.HrpUwbActSegmentLength = driver.source.bb.lrWpan.sens.get_asl()`` \n</span>
+<span class="sd">		Sets the active segment length.</span>
+
+<span class="sd">		:return: act_seg_length: ASL_16 | ASL_32 | ASL_64 | ASL_128 | ASL_256 | ASL_512 | ASL_1024 | ASL_2048</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:LRWPan:SENS:ASL?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_scalar_enum</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">HrpUwbActSegmentLength</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="SensCls.set_asl">
+<a class="viewcode-back" href="../../../../../../Source_Bb_LrWpan_Sens.html#RsSmw.Implementations.Source.Bb.LrWpan.Sens.SensCls.set_asl">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_asl</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">act_seg_length</span><span class="p">:</span> <span class="n">enums</span><span class="o">.</span><span class="n">HrpUwbActSegmentLength</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:[LRWPan]:SENS:ASL`` \n</span>
+<span class="sd">		Snippet: ``driver.source.bb.lrWpan.sens.set_asl(act_seg_length = enums.HrpUwbActSegmentLength.ASL_1024)`` \n</span>
+<span class="sd">		Sets the active segment length.</span>
+
+<span class="sd">		:param act_seg_length: ASL_16 | ASL_32 | ASL_64 | ASL_128 | ASL_256 | ASL_512 | ASL_1024 | ASL_2048</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">enum_scalar_to_str</span><span class="p">(</span><span class="n">act_seg_length</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">HrpUwbActSegmentLength</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:LRWPan:SENS:ASL </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="SensCls.get_asn">
+<a class="viewcode-back" href="../../../../../../Source_Bb_LrWpan_Sens.html#RsSmw.Implementations.Source.Bb.LrWpan.Sens.SensCls.get_asn">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_asn</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">enums</span><span class="o">.</span><span class="n">HrpUwbActSegmentNum</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:[LRWPan]:SENS:ASN`` \n</span>
+<span class="sd">		Snippet: ``value: enums.HrpUwbActSegmentNum = driver.source.bb.lrWpan.sens.get_asn()`` \n</span>
+<span class="sd">		Requires [:SOURce&lt;hw&gt;]:BB:LRWPan | HUWB:STD BPRF | HPRF | EHPRF | SENS. Sets the number of active segments.</span>
+
+<span class="sd">		:return: acg_seg_number: ASN_1 | ASN_2 | ASN_3 | ASN_4</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:LRWPan:SENS:ASN?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_scalar_enum</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">HrpUwbActSegmentNum</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="SensCls.set_asn">
+<a class="viewcode-back" href="../../../../../../Source_Bb_LrWpan_Sens.html#RsSmw.Implementations.Source.Bb.LrWpan.Sens.SensCls.set_asn">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_asn</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">acg_seg_number</span><span class="p">:</span> <span class="n">enums</span><span class="o">.</span><span class="n">HrpUwbActSegmentNum</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:[LRWPan]:SENS:ASN`` \n</span>
+<span class="sd">		Snippet: ``driver.source.bb.lrWpan.sens.set_asn(acg_seg_number = enums.HrpUwbActSegmentNum.ASN_1)`` \n</span>
+<span class="sd">		Requires [:SOURce&lt;hw&gt;]:BB:LRWPan | HUWB:STD BPRF | HPRF | EHPRF | SENS. Sets the number of active segments.</span>
+
+<span class="sd">		:param acg_seg_number: ASN_1 | ASN_2 | ASN_3 | ASN_4</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">enum_scalar_to_str</span><span class="p">(</span><span class="n">acg_seg_number</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">HrpUwbActSegmentNum</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:LRWPan:SENS:ASN </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="SensCls.get_bandwidth">
+<a class="viewcode-back" href="../../../../../../Source_Bb_LrWpan_Sens.html#RsSmw.Implementations.Source.Bb.LrWpan.Sens.SensCls.get_bandwidth">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_bandwidth</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:[LRWPan]:SENS:BWIDth`` \n</span>
+<span class="sd">		Snippet: ``value: float = driver.source.bb.lrWpan.sens.get_bandwidth()`` \n</span>
+<span class="sd">		Queries the channel bandwidth. The bandwidth depends on the channel number.</span>
+
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:LRWPan:SENS:BWIDth?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_float</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="SensCls.get_cnumber">
+<a class="viewcode-back" href="../../../../../../Source_Bb_LrWpan_Sens.html#RsSmw.Implementations.Source.Bb.LrWpan.Sens.SensCls.get_cnumber">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_cnumber</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:[LRWPan]:SENS:CNUMber`` \n</span>
+<span class="sd">		Snippet: ``value: int = driver.source.bb.lrWpan.sens.get_cnumber()`` \n</span>
+<span class="sd">		Sets the channel number that is a 4-bit value in decimal representation. The channel number determines the bandwidth and</span>
+<span class="sd">		the code index.</span>
+
+<span class="sd">		:return: channel_number: integer Range: 0 to 15</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:LRWPan:SENS:CNUMber?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_int</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="SensCls.set_cnumber">
+<a class="viewcode-back" href="../../../../../../Source_Bb_LrWpan_Sens.html#RsSmw.Implementations.Source.Bb.LrWpan.Sens.SensCls.set_cnumber">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_cnumber</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">channel_number</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:[LRWPan]:SENS:CNUMber`` \n</span>
+<span class="sd">		Snippet: ``driver.source.bb.lrWpan.sens.set_cnumber(channel_number = 1)`` \n</span>
+<span class="sd">		Sets the channel number that is a 4-bit value in decimal representation. The channel number determines the bandwidth and</span>
+<span class="sd">		the code index.</span>
+
+<span class="sd">		:param channel_number: integer Range: 0 to 15</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">decimal_value_to_str</span><span class="p">(</span><span class="n">channel_number</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:LRWPan:SENS:CNUMber </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="SensCls.get_f_2_ms">
+<a class="viewcode-back" href="../../../../../../Source_Bb_LrWpan_Sens.html#RsSmw.Implementations.Source.Bb.LrWpan.Sens.SensCls.get_f_2_ms">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_f_2_ms</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:[LRWPan]:SENS:F2MS`` \n</span>
+<span class="sd">		Snippet: ``value: bool = driver.source.bb.lrWpan.sens.get_f_2_ms()`` \n</span>
+<span class="sd">		Sets the frame length of a generated waveform shorter than 2 ms to a fixed value of 2 ms. If activated, the idle interval</span>
+<span class="sd">		is set to 0.0 us by default. Generated waveforms longer than 2 ms remain unaffected.</span>
+
+<span class="sd">		:return: fixed_2_ms_frame: 1 | ON | 0| OFF</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:LRWPan:SENS:F2MS?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_bool</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="SensCls.set_f_2_ms">
+<a class="viewcode-back" href="../../../../../../Source_Bb_LrWpan_Sens.html#RsSmw.Implementations.Source.Bb.LrWpan.Sens.SensCls.set_f_2_ms">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_f_2_ms</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">fixed_2_ms_frame</span><span class="p">:</span> <span class="nb">bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:[LRWPan]:SENS:F2MS`` \n</span>
+<span class="sd">		Snippet: ``driver.source.bb.lrWpan.sens.set_f_2_ms(fixed_2_ms_frame = False)`` \n</span>
+<span class="sd">		Sets the frame length of a generated waveform shorter than 2 ms to a fixed value of 2 ms. If activated, the idle interval</span>
+<span class="sd">		is set to 0.0 us by default. Generated waveforms longer than 2 ms remain unaffected.</span>
+
+<span class="sd">		:param fixed_2_ms_frame: 1 | ON | 0| OFF</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">bool_to_str</span><span class="p">(</span><span class="n">fixed_2_ms_frame</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:LRWPan:SENS:F2MS </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="SensCls.get_iinterval">
+<a class="viewcode-back" href="../../../../../../Source_Bb_LrWpan_Sens.html#RsSmw.Implementations.Source.Bb.LrWpan.Sens.SensCls.get_iinterval">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_iinterval</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:[LRWPan]:SENS:IINTerval`` \n</span>
+<span class="sd">		Snippet: ``value: float = driver.source.bb.lrWpan.sens.get_iinterval()`` \n</span>
+<span class="sd">		Sets the time of the interval separating two frames.</span>
+
+<span class="sd">		:return: iinterval: float Range: 0 to 1000000, Unit: us</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:LRWPan:SENS:IINTerval?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_float</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="SensCls.set_iinterval">
+<a class="viewcode-back" href="../../../../../../Source_Bb_LrWpan_Sens.html#RsSmw.Implementations.Source.Bb.LrWpan.Sens.SensCls.set_iinterval">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">set_iinterval</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">iinterval</span><span class="p">:</span> <span class="nb">float</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:[LRWPan]:SENS:IINTerval`` \n</span>
+<span class="sd">		Snippet: ``driver.source.bb.lrWpan.sens.set_iinterval(iinterval = 1.0)`` \n</span>
+<span class="sd">		Sets the time of the interval separating two frames.</span>
+
+<span class="sd">		:param iinterval: float Range: 0 to 1000000, Unit: us</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">decimal_value_to_str</span><span class="p">(</span><span class="n">iinterval</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:LRWPan:SENS:IINTerval </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+	<span class="k">def</span><span class="w"> </span><span class="nf">clone</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s1">&#39;SensCls&#39;</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		Clones the group by creating new object from it and its whole existing subgroups.</span>
+<span class="sd">		Also copies all the existing default Repeated Capabilities setting,</span>
+<span class="sd">		which you can change independently without affecting the original group.</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">new_group</span> <span class="o">=</span> <span class="n">SensCls</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span><span class="o">.</span><span class="n">parent</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span><span class="o">.</span><span class="n">synchronize_repcaps</span><span class="p">(</span><span class="n">new_group</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">new_group</span>
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright © Rohde &amp; Schwarz 2026.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

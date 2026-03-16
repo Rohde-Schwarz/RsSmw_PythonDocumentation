@@ -1,0 +1,867 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../../../../../../">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RsSmw.Implementations.Source.Bb.Btooth.Cs.Cdata &mdash; RsSmw 5.50.42.103 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../../../../../../_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="../../../../../../../_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="../../../../../../../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../../../../../../../_static/custom.css?v=2ddbb4b2" />
+
+  
+      <script src="../../../../../../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../../../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../../../../../../_static/documentation_options.js?v=4397b82f"></script>
+      <script src="../../../../../../../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../../../../../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+      <script src="../../../../../../../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../../../../../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../../../../../index.html" class="icon icon-home">
+            RsSmw
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../readme.html">Revision History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../enums.html">Enums</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../repcap.html">RepCaps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../RsSmw.html">Instrument API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../utilities.html">Utilities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../logger.html">Logger</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../events.html">Events</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../genindex.html">Index</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../../../../index.html">RsSmw</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../../../../index.html">Module code</a></li>
+          <li class="breadcrumb-item"><a href="../../../../Source.html">RsSmw.Implementations.Source</a></li>
+          <li class="breadcrumb-item"><a href="../../../Bb.html">RsSmw.Implementations.Source.Bb</a></li>
+          <li class="breadcrumb-item"><a href="../../Btooth.html">RsSmw.Implementations.Source.Bb.Btooth</a></li>
+          <li class="breadcrumb-item"><a href="../Cs.html">RsSmw.Implementations.Source.Bb.Btooth.Cs</a></li>
+      <li class="breadcrumb-item active">RsSmw.Implementations.Source.Bb.Btooth.Cs.Cdata</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Source code for RsSmw.Implementations.Source.Bb.Btooth.Cs.Cdata</h1><div class="highlight"><pre>
+<span></span><span class="kn">from</span><span class="w"> </span><span class="nn">.......Internal.Core</span><span class="w"> </span><span class="kn">import</span> <span class="n">Core</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">.......Internal.CommandsGroup</span><span class="w"> </span><span class="kn">import</span> <span class="n">CommandsGroup</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">.......Internal</span><span class="w"> </span><span class="kn">import</span> <span class="n">Conversions</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">.......Internal.StructBase</span><span class="w"> </span><span class="kn">import</span> <span class="n">StructBase</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">.......Internal.ArgStruct</span><span class="w"> </span><span class="kn">import</span> <span class="n">ArgStruct</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">.......</span><span class="w"> </span><span class="kn">import</span> <span class="n">enums</span>
+
+
+<span class="c1"># noinspection PyPep8Naming,PyAttributeOutsideInit,SpellCheckingInspection</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">CdataCls</span><span class="p">:</span>
+<span class="w">	</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">	| Commands in total: 51</span>
+<span class="sd">	| Subgroups: 3</span>
+<span class="sd">	| Direct child commands: 45</span>
+<span class="sd">	&quot;&quot;&quot;</span>
+
+	<span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">core</span><span class="p">:</span> <span class="n">Core</span><span class="p">,</span> <span class="n">parent</span><span class="p">):</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span> <span class="o">=</span> <span class="n">core</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span> <span class="o">=</span> <span class="n">CommandsGroup</span><span class="p">(</span><span class="s2">&quot;cdata&quot;</span><span class="p">,</span> <span class="n">core</span><span class="p">,</span> <span class="n">parent</span><span class="p">)</span>
+
+	<span class="nd">@property</span>
+	<span class="k">def</span><span class="w"> </span><span class="nf">ccid</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		| Commands in total: 1</span>
+<span class="sd">		| Subgroups: 0</span>
+<span class="sd">		| Direct child commands: 1</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;_ccid&#39;</span><span class="p">):</span>
+			<span class="kn">from</span><span class="w"> </span><span class="nn">.Ccid</span><span class="w"> </span><span class="kn">import</span> <span class="n">CcidCls</span>
+			<span class="bp">self</span><span class="o">.</span><span class="n">_ccid</span> <span class="o">=</span> <span class="n">CcidCls</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span><span class="p">)</span>
+		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_ccid</span>
+
+	<span class="nd">@property</span>
+	<span class="k">def</span><span class="w"> </span><span class="nf">bposition</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		| Commands in total: 4</span>
+<span class="sd">		| Subgroups: 4</span>
+<span class="sd">		| Direct child commands: 0</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;_bposition&#39;</span><span class="p">):</span>
+			<span class="kn">from</span><span class="w"> </span><span class="nn">.Bposition</span><span class="w"> </span><span class="kn">import</span> <span class="n">BpositionCls</span>
+			<span class="bp">self</span><span class="o">.</span><span class="n">_bposition</span> <span class="o">=</span> <span class="n">BpositionCls</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span><span class="p">)</span>
+		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_bposition</span>
+
+	<span class="nd">@property</span>
+	<span class="k">def</span><span class="w"> </span><span class="nf">channel</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		| Commands in total: 1</span>
+<span class="sd">		| Subgroups: 1</span>
+<span class="sd">		| Direct child commands: 0</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;_channel&#39;</span><span class="p">):</span>
+			<span class="kn">from</span><span class="w"> </span><span class="nn">.Channel</span><span class="w"> </span><span class="kn">import</span> <span class="n">ChannelCls</span>
+			<span class="bp">self</span><span class="o">.</span><span class="n">_channel</span> <span class="o">=</span> <span class="n">ChannelCls</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span><span class="p">)</span>
+		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_channel</span>
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="CdataCls.get_aci">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Btooth_Cs_Cdata.html#RsSmw.Implementations.Source.Bb.Btooth.Cs.Cdata.CdataCls.get_aci">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_aci</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">enums</span><span class="o">.</span><span class="n">BtoCsCtrlAci</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:BTOoth:CS:CDATa:ACI`` \n</span>
+<span class="sd">		Snippet: ``value: enums.BtoCsCtrlAci = driver.source.bb.btooth.cs.cdata.get_aci()`` \n</span>
+<span class="sd">		Sets the antenna configuration index (ACI) field. The value has a length of 1 octet or 0 to 7 in decimal representation.</span>
+
+<span class="sd">		:return: aci: ACI0 | ACI1 | ACI2 | ACI3 | ACI4 | ACI5 | ACI6 | ACI7</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:BTOoth:CS:CDATa:ACI?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_scalar_enum</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">BtoCsCtrlAci</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CdataCls.get_ce_count">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Btooth_Cs_Cdata.html#RsSmw.Implementations.Source.Bb.Btooth.Cs.Cdata.CdataCls.get_ce_count">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_ce_count</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:BTOoth:CS:CDATa:CECount`` \n</span>
+<span class="sd">		Snippet: ``value: int = driver.source.bb.btooth.cs.cdata.get_ce_count()`` \n</span>
+<span class="sd">		Sets the 16-bit connEventCount field bits in hexadecimal representation.</span>
+
+<span class="sd">		:return: conn_event_count: integer Range: 0 to 65535</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:BTOoth:CS:CDATa:CECount?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_int</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CdataCls.get_cid">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Btooth_Cs_Cdata.html#RsSmw.Implementations.Source.Bb.Btooth.Cs.Cdata.CdataCls.get_cid">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_cid</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:BTOoth:CS:CDATa:CID`` \n</span>
+<span class="sd">		Snippet: ``value: int = driver.source.bb.btooth.cs.cdata.get_cid()`` \n</span>
+<span class="sd">		Sets the 6-bit Config_ID field that is the CS configuration ID. Settable ID values are 2 bits in decimal representation.</span>
+<span class="sd">		All other values are for future use.</span>
+
+<span class="sd">		:return: config_id: integer Range: 0 to 3</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:BTOoth:CS:CDATa:CID?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_int</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CdataCls.get_csa_threec">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Btooth_Cs_Cdata.html#RsSmw.Implementations.Source.Bb.Btooth.Cs.Cdata.CdataCls.get_csa_threec">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_csa_threec</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:BTOoth:CS:CDATa:CSAThreec`` \n</span>
+<span class="sd">		Snippet: ``value: bool = driver.source.bb.btooth.cs.cdata.get_csa_threec()`` \n</span>
+<span class="sd">		Enables the channel selection algorithm #3c.</span>
+
+<span class="sd">		:return: csa_threec: 1 | ON | 0| OFF</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:BTOoth:CS:CDATa:CSAThreec?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_bool</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CdataCls.get_csignal">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Btooth_Cs_Cdata.html#RsSmw.Implementations.Source.Bb.Btooth.Cs.Cdata.CdataCls.get_csignal">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_csignal</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:BTOoth:CS:CDATa:CSIGnal`` \n</span>
+<span class="sd">		Snippet: ``value: bool = driver.source.bb.btooth.cs.cdata.get_csignal()`` \n</span>
+<span class="sd">		Enables the companion signal. See also &#39;Companion Signal&#39;.</span>
+
+<span class="sd">		:return: companion_signal: 1 | ON | 0| OFF</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:BTOoth:CS:CDATa:CSIGnal?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_bool</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="CdataCls.get_csp_capability">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Btooth_Cs_Cdata.html#RsSmw.Implementations.Source.Bb.Btooth.Cs.Cdata.CdataCls.get_csp_capability">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_csp_capability</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">enums</span><span class="o">.</span><span class="n">BtoCsCtrlSyncPhy</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:BTOoth:CS:CDATa:CSPCapability`` \n</span>
+<span class="sd">		Snippet: ``value: enums.BtoCsCtrlSyncPhy = driver.source.bb.btooth.cs.cdata.get_csp_capability()`` \n</span>
+<span class="sd">		Queries the value of the CS_SYNC_PHY_Capability field that is the LE 2M PHY.</span>
+
+<span class="sd">		:return: sync_phy: LE2M</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:BTOoth:CS:CDATa:CSPCapability?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_scalar_enum</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">BtoCsCtrlSyncPhy</span><span class="p">)</span></div>
+
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="CdataCls.EcodeStruct">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Btooth_Cs_Cdata.html#RsSmw.Implementations.Source.Bb.Btooth.Cs.Cdata.CdataCls.EcodeStruct">[docs]</a>
+	<span class="k">class</span><span class="w"> </span><span class="nc">EcodeStruct</span><span class="p">(</span><span class="n">StructBase</span><span class="p">):</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		Structure for reading output parameters. Fields: \n</span>
+<span class="sd">			- Ecode: str: numeric</span>
+<span class="sd">			- Bitcount: int: integer Range: 8 to 8</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">__meta_args_list</span> <span class="o">=</span> <span class="p">[</span>
+			<span class="n">ArgStruct</span><span class="o">.</span><span class="n">scalar_raw_str</span><span class="p">(</span><span class="s1">&#39;Ecode&#39;</span><span class="p">),</span>
+			<span class="n">ArgStruct</span><span class="o">.</span><span class="n">scalar_int</span><span class="p">(</span><span class="s1">&#39;Bitcount&#39;</span><span class="p">)]</span>
+
+		<span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+			<span class="n">StructBase</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span>
+			<span class="bp">self</span><span class="o">.</span><span class="n">Ecode</span><span class="p">:</span> <span class="nb">str</span><span class="o">=</span><span class="kc">None</span>
+			<span class="bp">self</span><span class="o">.</span><span class="n">Bitcount</span><span class="p">:</span> <span class="nb">int</span><span class="o">=</span><span class="kc">None</span></div>
+
+
+<div class="viewcode-block" id="CdataCls.get_ecode">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Btooth_Cs_Cdata.html#RsSmw.Implementations.Source.Bb.Btooth.Cs.Cdata.CdataCls.get_ecode">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_ecode</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">EcodeStruct</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:BTOoth:CS:CDATa:ECODe`` \n</span>
+<span class="sd">		Snippet: ``value: EcodeStruct = driver.source.bb.btooth.cs.cdata.get_ecode()`` \n</span>
+<span class="sd">		Sets an 8-bit error code. For an LL_CS_TERMINATE_IND packet, informs the remote device about the termination of the</span>
+<span class="sd">		connection.</span>
+
+<span class="sd">		:return: structure: for return value, see the help for EcodeStruct structure arguments.</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_struct</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:BTOoth:CS:CDATa:ECODe?&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="n">EcodeStruct</span><span class="p">())</span></div>
+
+
+<div class="viewcode-block" id="CdataCls.get_eoffset">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Btooth_Cs_Cdata.html#RsSmw.Implementations.Source.Bb.Btooth.Cs.Cdata.CdataCls.get_eoffset">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_eoffset</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:BTOoth:CS:CDATa:EOFFset`` \n</span>
+<span class="sd">		Snippet: ``value: int = driver.source.bb.btooth.cs.cdata.get_eoffset()`` \n</span>
+<span class="sd">		Sets the time value of the Offset field. The value has a length of three octets or 9 bits.</span>
+
+<span class="sd">		:return: event_offset: integer Range: 500 to 4e6</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:BTOoth:CS:CDATa:EOFFset?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_int</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CdataCls.get_ma_path">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Btooth_Cs_Cdata.html#RsSmw.Implementations.Source.Bb.Btooth.Cs.Cdata.CdataCls.get_ma_path">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_ma_path</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:BTOoth:CS:CDATa:MAPath`` \n</span>
+<span class="sd">		Snippet: ``value: int = driver.source.bb.btooth.cs.cdata.get_ma_path()`` \n</span>
+<span class="sd">		Sets the maximum Num_Ant paths.</span>
+
+<span class="sd">		:return: max_ant_path: integer Range: 1 to 4</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:BTOoth:CS:CDATa:MAPath?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_int</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CdataCls.get_mma_steps">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Btooth_Cs_Cdata.html#RsSmw.Implementations.Source.Bb.Btooth.Cs.Cdata.CdataCls.get_mma_steps">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_mma_steps</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:BTOoth:CS:CDATa:MMASteps`` \n</span>
+<span class="sd">		Snippet: ``value: int = driver.source.bb.btooth.cs.cdata.get_mma_steps()`` \n</span>
+<span class="sd">		Sets the maximum number of main mode steps.</span>
+
+<span class="sd">		:return: mm_max_steps: integer Range: 2 to 255</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:BTOoth:CS:CDATa:MMASteps?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_int</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CdataCls.get_mmi_steps">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Btooth_Cs_Cdata.html#RsSmw.Implementations.Source.Bb.Btooth.Cs.Cdata.CdataCls.get_mmi_steps">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_mmi_steps</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:BTOoth:CS:CDATa:MMISteps`` \n</span>
+<span class="sd">		Snippet: ``value: int = driver.source.bb.btooth.cs.cdata.get_mmi_steps()`` \n</span>
+<span class="sd">		Sets the minimum number of main mode steps.</span>
+
+<span class="sd">		:return: mm_min_steps: integer Range: 2 to 255</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:BTOoth:CS:CDATa:MMISteps?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_int</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="CdataCls.get_mmode">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Btooth_Cs_Cdata.html#RsSmw.Implementations.Source.Bb.Btooth.Cs.Cdata.CdataCls.get_mmode">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_mmode</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">enums</span><span class="o">.</span><span class="n">BtoCsMainMode</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:BTOoth:CS:CDATa:MMODe`` \n</span>
+<span class="sd">		Snippet: ``value: enums.BtoCsMainMode = driver.source.bb.btooth.cs.cdata.get_mmode()`` \n</span>
+<span class="sd">		Sets the main mode of the CS LL Control PDU. For an overview on available submodes per main mode, see Table &#39;CS step main</span>
+<span class="sd">		modes and submodes&#39;.</span>
+
+<span class="sd">		:return: main_mode: MODE1 | MODE2 | MODE3 For a description, see method ``RsSmw.source.bb.btooth.cs.sevent.mmode.get()`` .</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:BTOoth:CS:CDATa:MMODe?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_scalar_enum</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">BtoCsMainMode</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CdataCls.get_mm_repetition">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Btooth_Cs_Cdata.html#RsSmw.Implementations.Source.Bb.Btooth.Cs.Cdata.CdataCls.get_mm_repetition">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_mm_repetition</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:BTOoth:CS:CDATa:MMRepetition`` \n</span>
+<span class="sd">		Snippet: ``value: int = driver.source.bb.btooth.cs.cdata.get_mm_repetition()`` \n</span>
+<span class="sd">		Sets the main mode repetition.</span>
+
+<span class="sd">		:return: mm_repetition: integer Range: 0 to 3</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:BTOoth:CS:CDATa:MMRepetition?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_int</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CdataCls.get_mp_length">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Btooth_Cs_Cdata.html#RsSmw.Implementations.Source.Bb.Btooth.Cs.Cdata.CdataCls.get_mp_length">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_mp_length</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:BTOoth:CS:CDATa:MPLength`` \n</span>
+<span class="sd">		Snippet: ``value: float = driver.source.bb.btooth.cs.cdata.get_mp_length()`` \n</span>
+<span class="sd">		Sets the time value of the Max_Procedure_Len field. The value has a length of two octets or 6 bits.</span>
+
+<span class="sd">		:return: mp_length: float Range: 2.5 to 40959375</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:BTOoth:CS:CDATa:MPLength?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_float</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CdataCls.get_mp_supported">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Btooth_Cs_Cdata.html#RsSmw.Implementations.Source.Bb.Btooth.Cs.Cdata.CdataCls.get_mp_supported">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_mp_supported</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:BTOoth:CS:CDATa:MPSupported`` \n</span>
+<span class="sd">		Snippet: ``value: int = driver.source.bb.btooth.cs.cdata.get_mp_supported()`` \n</span>
+<span class="sd">		Sets the bits of the Max_Procedures_Supported field.</span>
+
+<span class="sd">		:return: mp_supported: integer Range: 0 to 4</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:BTOoth:CS:CDATa:MPSupported?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_int</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="CdataCls.get_mtype">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Btooth_Cs_Cdata.html#RsSmw.Implementations.Source.Bb.Btooth.Cs.Cdata.CdataCls.get_mtype">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_mtype</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">enums</span><span class="o">.</span><span class="n">BtoCsCtrlModeType</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:BTOoth:CS:CDATa:MTYPe`` \n</span>
+<span class="sd">		Snippet: ``value: enums.BtoCsCtrlModeType = driver.source.bb.btooth.cs.cdata.get_mtype()`` \n</span>
+<span class="sd">		Queries the CS LL control packet mode type that is Mode-3.</span>
+
+<span class="sd">		:return: mode_type: MODE3</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:BTOoth:CS:CDATa:MTYPe?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_scalar_enum</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">BtoCsCtrlModeType</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CdataCls.get_mz_steps">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Btooth_Cs_Cdata.html#RsSmw.Implementations.Source.Bb.Btooth.Cs.Cdata.CdataCls.get_mz_steps">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_mz_steps</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:BTOoth:CS:CDATa:MZSTeps`` \n</span>
+<span class="sd">		Snippet: ``value: int = driver.source.bb.btooth.cs.cdata.get_mz_steps()`` \n</span>
+<span class="sd">		Sets the number of Mode-0 steps.</span>
+
+<span class="sd">		:return: mode_0_steps: integer Range: 1 to 3</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:BTOoth:CS:CDATa:MZSTeps?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_int</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CdataCls.get_nant">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Btooth_Cs_Cdata.html#RsSmw.Implementations.Source.Bb.Btooth.Cs.Cdata.CdataCls.get_nant">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_nant</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:BTOoth:CS:CDATa:NANT`` \n</span>
+<span class="sd">		Snippet: ``value: int = driver.source.bb.btooth.cs.cdata.get_nant()`` \n</span>
+<span class="sd">		Sets the bits of the Num_Ant field. This field indicates the number of antenna elements of the channel sounding device.</span>
+
+<span class="sd">		:return: num_ant: integer Range: 1 to 4</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:BTOoth:CS:CDATa:NANT?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_int</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CdataCls.get_nconfig">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Btooth_Cs_Cdata.html#RsSmw.Implementations.Source.Bb.Btooth.Cs.Cdata.CdataCls.get_nconfig">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_nconfig</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:BTOoth:CS:CDATa:NCONfig`` \n</span>
+<span class="sd">		Snippet: ``value: int = driver.source.bb.btooth.cs.cdata.get_nconfig()`` \n</span>
+<span class="sd">		Sets the Num_Configs field that relates to the number of independent CS configurations.</span>
+
+<span class="sd">		:return: num_config: integer Range: 1 to 4</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:BTOoth:CS:CDATa:NCONfig?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_int</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CdataCls.get_nfae">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Btooth_Cs_Cdata.html#RsSmw.Implementations.Source.Bb.Btooth.Cs.Cdata.CdataCls.get_nfae">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_nfae</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:BTOoth:CS:CDATa:NFAE`` \n</span>
+<span class="sd">		Snippet: ``value: bool = driver.source.bb.btooth.cs.cdata.get_nfae()`` \n</span>
+<span class="sd">		Sets the No_FAE bit. This bit indicates if the transmitting LE device supports a fractional frequency offset actuation</span>
+<span class="sd">		error (FAE) or not.</span>
+
+<span class="sd">		:return: no_fae: 1 | ON | 0| OFF 1 | ON The transmitting LE device only supports an FAE of zero. 0 | OFF The transmitting LE device supports FAE values as listed in an FAE table.</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:BTOoth:CS:CDATa:NFAE?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_bool</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="CdataCls.get_nrs_capability">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Btooth_Cs_Cdata.html#RsSmw.Implementations.Source.Bb.Btooth.Cs.Cdata.CdataCls.get_nrs_capability">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_nrs_capability</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">enums</span><span class="o">.</span><span class="n">BtoCsCtrlNadm</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:BTOoth:CS:CDATa:NRSCapability`` \n</span>
+<span class="sd">		Snippet: ``value: enums.BtoCsCtrlNadm = driver.source.bb.btooth.cs.cdata.get_nrs_capability()`` \n</span>
+<span class="sd">		Sets the NADM random sequence capability.</span>
+
+<span class="sd">		:return: nrs_capability: NONADM | NADM NONADM NADM disabled NADM NADM enabled</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:BTOoth:CS:CDATa:NRSCapability?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_scalar_enum</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">BtoCsCtrlNadm</span><span class="p">)</span></div>
+
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="CdataCls.get_ns_capability">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Btooth_Cs_Cdata.html#RsSmw.Implementations.Source.Bb.Btooth.Cs.Cdata.CdataCls.get_ns_capability">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_ns_capability</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">enums</span><span class="o">.</span><span class="n">BtoCsCtrlNadm</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:BTOoth:CS:CDATa:NSCapability`` \n</span>
+<span class="sd">		Snippet: ``value: enums.BtoCsCtrlNadm = driver.source.bb.btooth.cs.cdata.get_ns_capability()`` \n</span>
+<span class="sd">		Sets the NADM sounding sequence capability.</span>
+
+<span class="sd">		:return: ns_capability: NONADM | NADM NONADM NADM disabled NADM NADM enabled</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:BTOoth:CS:CDATa:NSCapability?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_scalar_enum</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">BtoCsCtrlNadm</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CdataCls.get_omax">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Btooth_Cs_Cdata.html#RsSmw.Implementations.Source.Bb.Btooth.Cs.Cdata.CdataCls.get_omax">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_omax</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:BTOoth:CS:CDATa:OMAX`` \n</span>
+<span class="sd">		Snippet: ``value: int = driver.source.bb.btooth.cs.cdata.get_omax()`` \n</span>
+<span class="sd">		Sets the time value of the Offset_Max field. The value has a length of 3 octets or 9 bits.</span>
+
+<span class="sd">		:return: offset_max: integer Range: 500 to 16777215</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:BTOoth:CS:CDATa:OMAX?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_int</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CdataCls.get_omin">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Btooth_Cs_Cdata.html#RsSmw.Implementations.Source.Bb.Btooth.Cs.Cdata.CdataCls.get_omin">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_omin</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:BTOoth:CS:CDATa:OMIN`` \n</span>
+<span class="sd">		Snippet: ``value: int = driver.source.bb.btooth.cs.cdata.get_omin()`` \n</span>
+<span class="sd">		Sets the time value of the Offset_Min field. The value has a length of 3 octets or 9 bits.</span>
+
+<span class="sd">		:return: offset_min: integer Range: 500 to 4e6</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:BTOoth:CS:CDATa:OMIN?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_int</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CdataCls.get_pcount">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Btooth_Cs_Cdata.html#RsSmw.Implementations.Source.Bb.Btooth.Cs.Cdata.CdataCls.get_pcount">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_pcount</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:BTOoth:CS:CDATa:PCOunt`` \n</span>
+<span class="sd">		Snippet: ``value: int = driver.source.bb.btooth.cs.cdata.get_pcount()`` \n</span>
+<span class="sd">		Sets the bits in the Procedure_Count field. The value has a length of 2 octets.</span>
+
+<span class="sd">		:return: proc_count: integer Range: 1 to 65535</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:BTOoth:CS:CDATa:PCOunt?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_int</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CdataCls.get_pdelta">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Btooth_Cs_Cdata.html#RsSmw.Implementations.Source.Bb.Btooth.Cs.Cdata.CdataCls.get_pdelta">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_pdelta</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:BTOoth:CS:CDATa:PDELta`` \n</span>
+<span class="sd">		Snippet: ``value: int = driver.source.bb.btooth.cs.cdata.get_pdelta()`` \n</span>
+<span class="sd">		Sets the bits in the Pwr_Delta field. The value has a length of 1 octets or 3 bits.</span>
+
+<span class="sd">		:return: pwr_delta: integer Range: 0 to 255</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:BTOoth:CS:CDATa:PDELta?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_int</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="CdataCls.get_phy">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Btooth_Cs_Cdata.html#RsSmw.Implementations.Source.Bb.Btooth.Cs.Cdata.CdataCls.get_phy">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_phy</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">enums</span><span class="o">.</span><span class="n">BtoPackFormat</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:BTOoth:CS:CDATa:PHY`` \n</span>
+<span class="sd">		Snippet: ``value: enums.BtoPackFormat = driver.source.bb.btooth.cs.cdata.get_phy()`` \n</span>
+<span class="sd">		Queries the PHY field value. This value indicates the TX PHY of the remote device to which the Pwr_Delta field in this</span>
+<span class="sd">		PDU applies.</span>
+
+<span class="sd">		:return: phy: L1M | L2M | LCOD | L2M2B For a description, see method ``RsSmw.source.bb.btooth.pformat()`` .</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:BTOoth:CS:CDATa:PHY?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_scalar_enum</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">BtoPackFormat</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CdataCls.get_pinterval">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Btooth_Cs_Cdata.html#RsSmw.Implementations.Source.Bb.Btooth.Cs.Cdata.CdataCls.get_pinterval">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_pinterval</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:BTOoth:CS:CDATa:PINTerval`` \n</span>
+<span class="sd">		Snippet: ``value: int = driver.source.bb.btooth.cs.cdata.get_pinterval()`` \n</span>
+<span class="sd">		Sets the procedure interval in the Procedure_Interval field. The value has a length of two octets or 6 bits.</span>
+
+<span class="sd">		:return: proc_interval: integer Range: 0 to 65535</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:BTOoth:CS:CDATa:PINTerval?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_int</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="CdataCls.get_pp_antenna">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Btooth_Cs_Cdata.html#RsSmw.Implementations.Source.Bb.Btooth.Cs.Cdata.CdataCls.get_pp_antenna">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_pp_antenna</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">enums</span><span class="o">.</span><span class="n">BtoCsCtrlAnt</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:BTOoth:CS:CDATa:PPANtenna`` \n</span>
+<span class="sd">		Snippet: ``value: enums.BtoCsCtrlAnt = driver.source.bb.btooth.cs.cdata.get_pp_antenna()`` \n</span>
+<span class="sd">		Sets the bits in the Preferred_Peer_Ant field. The value has a length of one octet or 3 bits.</span>
+<span class="sd">		The table Table &#39;Preferred_Peer_Ant field values&#39; lists all possible values and their meaning.</span>
+
+<span class="sd">		:return: pp_antenna: ANT0 | ANT1 | ANT2 | ANT3</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:BTOoth:CS:CDATa:PPANtenna?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_scalar_enum</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">BtoCsCtrlAnt</span><span class="p">)</span></div>
+
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="CdataCls.get_ra_only">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Btooth_Cs_Cdata.html#RsSmw.Implementations.Source.Bb.Btooth.Cs.Cdata.CdataCls.get_ra_only">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_ra_only</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">enums</span><span class="o">.</span><span class="n">BtoCsCtrlAccReq</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:BTOoth:CS:CDATa:RAONly`` \n</span>
+<span class="sd">		Snippet: ``value: enums.BtoCsCtrlAccReq = driver.source.bb.btooth.cs.cdata.get_ra_only()`` \n</span>
+<span class="sd">		Queries or sets the time values of the RTT_AA_Only_N field. Setting the value depends on the bits of the RTT_Capability</span>
+<span class="sd">		field via the command: SOURce1:BB:BTOoth:CS:CDATa:RCAPability See also the table Table &#39;RTT_Capability bit numbers and</span>
+<span class="sd">		RTT fields&#39; for an overview.</span>
+
+<span class="sd">		:return: rtt_aa_only: AR150 | AR10 | AR0</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:BTOoth:CS:CDATa:RAONly?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_scalar_enum</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">BtoCsCtrlAccReq</span><span class="p">)</span></div>
+
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="CdataCls.get_rcapability">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Btooth_Cs_Cdata.html#RsSmw.Implementations.Source.Bb.Btooth.Cs.Cdata.CdataCls.get_rcapability">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_rcapability</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">enums</span><span class="o">.</span><span class="n">BtoCsCtrlRttCap</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:BTOoth:CS:CDATa:RCAPability`` \n</span>
+<span class="sd">		Snippet: ``value: enums.BtoCsCtrlRttCap = driver.source.bb.btooth.cs.cdata.get_rcapability()`` \n</span>
+<span class="sd">		Sets the bits in the RTT_Capability field. These bits determine the time values for the RTT_AA_Only_N field, the</span>
+<span class="sd">		RTT_Sounding_N field and the RTT_Random_Sequence_N field.</span>
+
+<span class="sd">		:return: rtt_capability: CAP0 | CAP1 | CAP2 See the table Table &#39;RTT_Capability bit numbers and RTT fields&#39; for an overview.</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:BTOoth:CS:CDATa:RCAPability?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_scalar_enum</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">BtoCsCtrlRttCap</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CdataCls.get_rfu">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Btooth_Cs_Cdata.html#RsSmw.Implementations.Source.Bb.Btooth.Cs.Cdata.CdataCls.get_rfu">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_rfu</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:BTOoth:CS:CDATa:RFU`` \n</span>
+<span class="sd">		Snippet: ``value: int = driver.source.bb.btooth.cs.cdata.get_rfu()`` \n</span>
+<span class="sd">		Sets the bits that are reserved for future use (RFU) . The number of RFU bits can vary depending on the CS_Control_Data</span>
+<span class="sd">		PDU.</span>
+
+<span class="sd">		:return: rfu: integer Range: 0 to 3</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:BTOoth:CS:CDATa:RFU?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_int</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="CdataCls.get_rr_sequence">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Btooth_Cs_Cdata.html#RsSmw.Implementations.Source.Bb.Btooth.Cs.Cdata.CdataCls.get_rr_sequence">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_rr_sequence</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">enums</span><span class="o">.</span><span class="n">BtoCsCtrlAccReq</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:BTOoth:CS:CDATa:RRSequence`` \n</span>
+<span class="sd">		Snippet: ``value: enums.BtoCsCtrlAccReq = driver.source.bb.btooth.cs.cdata.get_rr_sequence()`` \n</span>
+<span class="sd">		Queries or sets the time values of the RTT_Random_Sequence_N field. Setting the value depends on the bits of the</span>
+<span class="sd">		RTT_Capability field via the command: SOURce1:BB:BTOoth:CS:CDATa:RCAPability See also the table Table &#39;RTT_Capability bit</span>
+<span class="sd">		numbers and RTT fields&#39; for an overview.</span>
+
+<span class="sd">		:return: rr_sequence: AR150 | AR10 | AR0</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:BTOoth:CS:CDATa:RRSequence?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_scalar_enum</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">BtoCsCtrlAccReq</span><span class="p">)</span></div>
+
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="CdataCls.get_rsounding">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Btooth_Cs_Cdata.html#RsSmw.Implementations.Source.Bb.Btooth.Cs.Cdata.CdataCls.get_rsounding">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_rsounding</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">enums</span><span class="o">.</span><span class="n">BtoCsCtrlAccReq</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:BTOoth:CS:CDATa:RSOunding`` \n</span>
+<span class="sd">		Snippet: ``value: enums.BtoCsCtrlAccReq = driver.source.bb.btooth.cs.cdata.get_rsounding()`` \n</span>
+<span class="sd">		Queries or sets the time values of the RTT_Sounding_N field. Setting the value depends on the bits of the RTT_Capability</span>
+<span class="sd">		field via the command: SOURce1:BB:BTOoth:CS:CDATa:RCAPability See also the table Table &#39;RTT_Capability bit numbers and</span>
+<span class="sd">		RTT fields&#39; for an overview.</span>
+
+<span class="sd">		:return: rsounding: AR150 | AR10 | AR0</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:BTOoth:CS:CDATa:RSOunding?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_scalar_enum</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">BtoCsCtrlAccReq</span><span class="p">)</span></div>
+
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="CdataCls.get_rtype">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Btooth_Cs_Cdata.html#RsSmw.Implementations.Source.Bb.Btooth.Cs.Cdata.CdataCls.get_rtype">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_rtype</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">enums</span><span class="o">.</span><span class="n">BtoCsCtrlRttType</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:BTOoth:CS:CDATa:RTYPe`` \n</span>
+<span class="sd">		Snippet: ``value: enums.BtoCsCtrlRttType = driver.source.bb.btooth.cs.cdata.get_rtype()`` \n</span>
+<span class="sd">		Sets the RTT type determined by the 4-bit RTT_Type field. This field indicates the round trip time (RTT) variant within</span>
+<span class="sd">		the CS procedure.</span>
+
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:BTOoth:CS:CDATa:RTYPe?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_scalar_enum</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">BtoCsCtrlRttType</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CdataCls.get_sinterval">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Btooth_Cs_Cdata.html#RsSmw.Implementations.Source.Bb.Btooth.Cs.Cdata.CdataCls.get_sinterval">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_sinterval</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:BTOoth:CS:CDATa:SINTerval`` \n</span>
+<span class="sd">		Snippet: ``value: int = driver.source.bb.btooth.cs.cdata.get_sinterval()`` \n</span>
+<span class="sd">		Sets or queries the subevent interval. Setting requires BB:BTOoth:CS:SNUMber 2 or higher.</span>
+<span class="sd">		Query is for BB:BTOoth:CS:SNUMber 1. See method ``RsSmw.source.bb.btooth.cs.cdata.snumber()`` .</span>
+
+<span class="sd">		:return: sub_interval: integer Range: 0 to 2.7e11</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:BTOoth:CS:CDATa:SINTerval?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_int</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CdataCls.get_slength">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Btooth_Cs_Cdata.html#RsSmw.Implementations.Source.Bb.Btooth.Cs.Cdata.CdataCls.get_slength">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_slength</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:BTOoth:CS:CDATa:SLENgth`` \n</span>
+<span class="sd">		Snippet: ``value: int = driver.source.bb.btooth.cs.cdata.get_slength()`` \n</span>
+<span class="sd">		Sets the subevent length in the Subevent_Len field. The value has a length of three octets or 9 bits.</span>
+
+<span class="sd">		:return: sub_length: integer Range: 1250 to 4e6</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:BTOoth:CS:CDATa:SLENgth?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_int</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="CdataCls.get_smode">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Btooth_Cs_Cdata.html#RsSmw.Implementations.Source.Bb.Btooth.Cs.Cdata.CdataCls.get_smode">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_smode</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">enums</span><span class="o">.</span><span class="n">BtoCsSubMode</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:BTOoth:CS:CDATa:SMODe`` \n</span>
+<span class="sd">		Snippet: ``value: enums.BtoCsSubMode = driver.source.bb.btooth.cs.cdata.get_smode()`` \n</span>
+<span class="sd">		Sets the submode of the main mode.</span>
+
+<span class="sd">		:return: sub_mode: MODE1 | MODE2 | MODE3 | NONE See the table Table &#39;CS step main modes and submodes&#39; for an overview on available submodes per main mode.</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:BTOoth:CS:CDATa:SMODe?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_scalar_enum</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">BtoCsSubMode</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CdataCls.get_snumber">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Btooth_Cs_Cdata.html#RsSmw.Implementations.Source.Bb.Btooth.Cs.Cdata.CdataCls.get_snumber">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_snumber</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:BTOoth:CS:CDATa:SNUMber`` \n</span>
+<span class="sd">		Snippet: ``value: int = driver.source.bb.btooth.cs.cdata.get_snumber()`` \n</span>
+<span class="sd">		Sets the number of subevents per event.</span>
+
+<span class="sd">		:return: sub_number: integer Range: 1 to 32</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:BTOoth:CS:CDATa:SNUMber?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_int</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CdataCls.get_sp_estimate">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Btooth_Cs_Cdata.html#RsSmw.Implementations.Source.Bb.Btooth.Cs.Cdata.CdataCls.get_sp_estimate">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_sp_estimate</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:BTOoth:CS:CDATa:SPEStimate`` \n</span>
+<span class="sd">		Snippet: ``value: bool = driver.source.bb.btooth.cs.cdata.get_sp_estimate()`` \n</span>
+<span class="sd">		Sets the Sounding_PCT_Estimate bit. This bit indicates if the device supports phase correction term (PCT) estimates from</span>
+<span class="sd">		a sounding sequence or not.</span>
+
+<span class="sd">		:return: sp_estimate: 1 | ON | 0| OFF 1 | ON The Sounding_PCT_Estimate bit is 1. The device supports PCT estimates from a sounding sequence. 0 | OFF The Sounding_PCT_Estimate bit is 0. The device does not support PCT estimates from a sounding sequence.</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:BTOoth:CS:CDATa:SPEStimate?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_bool</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="CdataCls.get_tfcs">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Btooth_Cs_Cdata.html#RsSmw.Implementations.Source.Bb.Btooth.Cs.Cdata.CdataCls.get_tfcs">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_tfcs</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">enums</span><span class="o">.</span><span class="n">BtoCsTfcs</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:BTOoth:CS:CDATa:TFCS`` \n</span>
+<span class="sd">		Snippet: ``value: enums.BtoCsTfcs = driver.source.bb.btooth.cs.cdata.get_tfcs()`` \n</span>
+<span class="sd">		Sets the frequency change period (T_FCS) between consecutive CS steps. The period ranges from 15 us to 150 us.</span>
+
+<span class="sd">		:return: tfcs: TFCS_15 | TFCS_20 | TFCS_30 | TFCS_40 | TFCS_50 | TFCS_60 | TFCS_80 | TFCS_100 | TFCS_120 | TFCS_150 TFCS_x, x represents values in microseconds.</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:BTOoth:CS:CDATa:TFCS?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_scalar_enum</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">BtoCsTfcs</span><span class="p">)</span></div>
+
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="CdataCls.get_ti_one">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Btooth_Cs_Cdata.html#RsSmw.Implementations.Source.Bb.Btooth.Cs.Cdata.CdataCls.get_ti_one">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_ti_one</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">enums</span><span class="o">.</span><span class="n">BtoCsTiP1</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:BTOoth:CS:CDATa:TIONe`` \n</span>
+<span class="sd">		Snippet: ``value: enums.BtoCsTiP1 = driver.source.bb.btooth.cs.cdata.get_ti_one()`` \n</span>
+<span class="sd">		Sets the time &#39;T_IP1&#39; in microseconds.</span>
+
+<span class="sd">		:return: tip_one: TIP1_10 | TIP1_20 | TIP1_30 | TIP1_40 | TIP1_50 | TIP1_60 | TIP1_80 | TIP1_145 TP1_x, x represents values in microseconds.</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:BTOoth:CS:CDATa:TIONe?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_scalar_enum</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">BtoCsTiP1</span><span class="p">)</span></div>
+
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="CdataCls.get_ti_two">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Btooth_Cs_Cdata.html#RsSmw.Implementations.Source.Bb.Btooth.Cs.Cdata.CdataCls.get_ti_two">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_ti_two</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">enums</span><span class="o">.</span><span class="n">BtoCsTiP2</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:BTOoth:CS:CDATa:TITWo`` \n</span>
+<span class="sd">		Snippet: ``value: enums.BtoCsTiP2 = driver.source.bb.btooth.cs.cdata.get_ti_two()`` \n</span>
+<span class="sd">		Sets the time &#39;T_IP2&#39; in microseconds.</span>
+
+<span class="sd">		:return: tip_two: TIP2_10 | TIP2_20 | TIP2_30 | TIP2_40 | TIP2_50 | TIP2_60 | TIP2_80 | TIP2_145 TIP2_x, x represents values in microseconds.</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:BTOoth:CS:CDATa:TITWo?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_scalar_enum</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">BtoCsTiP2</span><span class="p">)</span></div>
+
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="CdataCls.get_tpm">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Btooth_Cs_Cdata.html#RsSmw.Implementations.Source.Bb.Btooth.Cs.Cdata.CdataCls.get_tpm">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_tpm</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">enums</span><span class="o">.</span><span class="n">BtoCsTpm</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:BTOoth:CS:CDATa:TPM`` \n</span>
+<span class="sd">		Snippet: ``value: enums.BtoCsTpm = driver.source.bb.btooth.cs.cdata.get_tpm()`` \n</span>
+<span class="sd">		Sets the time &#39;T_PM&#39; in microseconds.</span>
+
+<span class="sd">		:return: tpm: TPM_10 | TPM_20 | TPM_40 | TPM_652 TPM_x, x represents values in microseconds.</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:BTOoth:CS:CDATa:TPM?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_scalar_enum</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">BtoCsTpm</span><span class="p">)</span></div>
+
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="CdataCls.get_tsw">
+<a class="viewcode-back" href="../../../../../../../Source_Bb_Btooth_Cs_Cdata.html#RsSmw.Implementations.Source.Bb.Btooth.Cs.Cdata.CdataCls.get_tsw">[docs]</a>
+	<span class="k">def</span><span class="w"> </span><span class="nf">get_tsw</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">enums</span><span class="o">.</span><span class="n">BtoCsTsw</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		``[SOURce&lt;HW&gt;]:BB:BTOoth:CS:CDATa:TSW`` \n</span>
+<span class="sd">		Snippet: ``value: enums.BtoCsTsw = driver.source.bb.btooth.cs.cdata.get_tsw()`` \n</span>
+<span class="sd">		Sets the T_SW field values that relate to the duration of the antenna switch period. The local controller uses this</span>
+<span class="sd">		period when switching antennas during active transmissions.</span>
+
+<span class="sd">		:return: tsw: TSW_0 | TSW_1 | TSW_2 | TSW_4 | TSW_10 Duration of the antenna switch period is 0, 1, 2, 4 or 10 microseconds.</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SOURce&lt;HwInstance&gt;:BB:BTOoth:CS:CDATa:TSW?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_scalar_enum</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">BtoCsTsw</span><span class="p">)</span></div>
+
+
+	<span class="k">def</span><span class="w"> </span><span class="nf">clone</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s1">&#39;CdataCls&#39;</span><span class="p">:</span>
+<span class="w">		</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		Clones the group by creating new object from it and its whole existing subgroups.</span>
+<span class="sd">		Also copies all the existing default Repeated Capabilities setting,</span>
+<span class="sd">		which you can change independently without affecting the original group.</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">new_group</span> <span class="o">=</span> <span class="n">CdataCls</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span><span class="o">.</span><span class="n">parent</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_cmd_group</span><span class="o">.</span><span class="n">synchronize_repcaps</span><span class="p">(</span><span class="n">new_group</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">new_group</span>
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright © Rohde &amp; Schwarz 2026.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

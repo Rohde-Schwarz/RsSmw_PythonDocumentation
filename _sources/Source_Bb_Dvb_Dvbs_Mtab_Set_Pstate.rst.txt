@@ -1,0 +1,26 @@
+Pstate
+----------------------------------------
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Dvb.Dvbs.Mtab.Set.Pstate.PstateCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	pstate_copy = driver.source.bb.dvb.dvbs.mtab.set.pstate.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Dvb_Dvbs_Mtab_Set_Pstate_State.rst

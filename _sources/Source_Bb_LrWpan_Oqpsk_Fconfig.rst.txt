@@ -1,0 +1,70 @@
+Fconfig
+----------------------------------------
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:[LRWPan]:OQPSk:FCONfig:ADDGap
+	single: [SOURce<HW>]:BB:[LRWPan]:OQPSk:FCONfig:CINDex
+	single: [SOURce<HW>]:BB:[LRWPan]:OQPSk:FCONfig:DALEngth
+	single: [SOURce<HW>]:BB:[LRWPan]:OQPSk:FCONfig:DLENgth
+	single: [SOURce<HW>]:BB:[LRWPan]:OQPSk:FCONfig:DR
+	single: [SOURce<HW>]:BB:[LRWPan]:OQPSk:FCONfig:FLENgth
+	single: [SOURce<HW>]:BB:[LRWPan]:OQPSk:FCONfig:MDL
+	single: [SOURce<HW>]:BB:[LRWPan]:OQPSk:FCONfig:MFL
+	single: [SOURce<HW>]:BB:[LRWPan]:OQPSk:FCONfig:MPRF
+	single: [SOURce<HW>]:BB:[LRWPan]:OQPSk:FCONfig:PHRBrate
+	single: [SOURce<HW>]:BB:[LRWPan]:OQPSk:FCONfig:PHRLength
+	single: [SOURce<HW>]:BB:[LRWPan]:OQPSk:FCONfig:SFDLength
+	single: [SOURce<HW>]:BB:[LRWPan]:OQPSk:FCONfig:SFPAYLoad
+	single: [SOURce<HW>]:BB:[LRWPan]:OQPSk:FCONfig:SFShr
+	single: [SOURce<HW>]:BB:[LRWPan]:OQPSk:FCONfig:SYMRate
+	single: [SOURce<HW>]:BB:[LRWPan]:OQPSk:FCONfig:SYNLength
+	single: [SOURce<HW>]:BB:[LRWPan]:OQPSk:FCONfig:VRATe
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:[LRWPan]:OQPSk:FCONfig:ADDGap
+	[SOURce<HW>]:BB:[LRWPan]:OQPSk:FCONfig:CINDex
+	[SOURce<HW>]:BB:[LRWPan]:OQPSk:FCONfig:DALEngth
+	[SOURce<HW>]:BB:[LRWPan]:OQPSk:FCONfig:DLENgth
+	[SOURce<HW>]:BB:[LRWPan]:OQPSk:FCONfig:DR
+	[SOURce<HW>]:BB:[LRWPan]:OQPSk:FCONfig:FLENgth
+	[SOURce<HW>]:BB:[LRWPan]:OQPSk:FCONfig:MDL
+	[SOURce<HW>]:BB:[LRWPan]:OQPSk:FCONfig:MFL
+	[SOURce<HW>]:BB:[LRWPan]:OQPSk:FCONfig:MPRF
+	[SOURce<HW>]:BB:[LRWPan]:OQPSk:FCONfig:PHRBrate
+	[SOURce<HW>]:BB:[LRWPan]:OQPSk:FCONfig:PHRLength
+	[SOURce<HW>]:BB:[LRWPan]:OQPSk:FCONfig:SFDLength
+	[SOURce<HW>]:BB:[LRWPan]:OQPSk:FCONfig:SFPAYLoad
+	[SOURce<HW>]:BB:[LRWPan]:OQPSk:FCONfig:SFShr
+	[SOURce<HW>]:BB:[LRWPan]:OQPSk:FCONfig:SYMRate
+	[SOURce<HW>]:BB:[LRWPan]:OQPSk:FCONfig:SYNLength
+	[SOURce<HW>]:BB:[LRWPan]:OQPSk:FCONfig:VRATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.LrWpan.Oqpsk.Fconfig.FconfigCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	fconfig_copy = driver.source.bb.lrWpan.oqpsk.fconfig.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_LrWpan_Oqpsk_Fconfig_Data.rst
+	Source_Bb_LrWpan_Oqpsk_Fconfig_Fpayload.rst
+	Source_Bb_LrWpan_Oqpsk_Fconfig_Fphr.rst
+	Source_Bb_LrWpan_Oqpsk_Fconfig_Mcs.rst

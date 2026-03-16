@@ -1,0 +1,30 @@
+Sequencer<Sequencer>
+----------------------------------------
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Esequencer.Sequencer.SequencerCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	sequencer_copy = driver.source.bb.esequencer.sequencer.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Esequencer_Sequencer_Attenuation.rst
+	Source_Bb_Esequencer_Sequencer_Foffset.rst
+	Source_Bb_Esequencer_Sequencer_Poffset.rst
+	Source_Bb_Esequencer_Sequencer_State.rst
+	Source_Bb_Esequencer_Sequencer_Tdelay.rst

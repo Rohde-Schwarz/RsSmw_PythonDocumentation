@@ -1,0 +1,62 @@
+Fconfig
+----------------------------------------
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:[LRWPan]:EMLLd:FCONfig:ADDGap
+	single: [SOURce<HW>]:BB:[LRWPan]:EMLLd:FCONfig:CINDex
+	single: [SOURce<HW>]:BB:[LRWPan]:EMLLd:FCONfig:DALEngth
+	single: [SOURce<HW>]:BB:[LRWPan]:EMLLd:FCONfig:DLENgth
+	single: [SOURce<HW>]:BB:[LRWPan]:EMLLd:FCONfig:DR
+	single: [SOURce<HW>]:BB:[LRWPan]:EMLLd:FCONfig:FLENgth
+	single: [SOURce<HW>]:BB:[LRWPan]:EMLLd:FCONfig:MDL
+	single: [SOURce<HW>]:BB:[LRWPan]:EMLLd:FCONfig:MFL
+	single: [SOURce<HW>]:BB:[LRWPan]:EMLLd:FCONfig:MPRF
+	single: [SOURce<HW>]:BB:[LRWPan]:EMLLd:FCONfig:PHRBrate
+	single: [SOURce<HW>]:BB:[LRWPan]:EMLLd:FCONfig:SFDLength
+	single: [SOURce<HW>]:BB:[LRWPan]:EMLLd:FCONfig:SYNLength
+	single: [SOURce<HW>]:BB:[LRWPan]:EMLLd:FCONfig:VRATe
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:[LRWPan]:EMLLd:FCONfig:ADDGap
+	[SOURce<HW>]:BB:[LRWPan]:EMLLd:FCONfig:CINDex
+	[SOURce<HW>]:BB:[LRWPan]:EMLLd:FCONfig:DALEngth
+	[SOURce<HW>]:BB:[LRWPan]:EMLLd:FCONfig:DLENgth
+	[SOURce<HW>]:BB:[LRWPan]:EMLLd:FCONfig:DR
+	[SOURce<HW>]:BB:[LRWPan]:EMLLd:FCONfig:FLENgth
+	[SOURce<HW>]:BB:[LRWPan]:EMLLd:FCONfig:MDL
+	[SOURce<HW>]:BB:[LRWPan]:EMLLd:FCONfig:MFL
+	[SOURce<HW>]:BB:[LRWPan]:EMLLd:FCONfig:MPRF
+	[SOURce<HW>]:BB:[LRWPan]:EMLLd:FCONfig:PHRBrate
+	[SOURce<HW>]:BB:[LRWPan]:EMLLd:FCONfig:SFDLength
+	[SOURce<HW>]:BB:[LRWPan]:EMLLd:FCONfig:SYNLength
+	[SOURce<HW>]:BB:[LRWPan]:EMLLd:FCONfig:VRATe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.LrWpan.Emlld.Fconfig.FconfigCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	fconfig_copy = driver.source.bb.lrWpan.emlld.fconfig.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_LrWpan_Emlld_Fconfig_Data.rst
+	Source_Bb_LrWpan_Emlld_Fconfig_Mcs.rst
+	Source_Bb_LrWpan_Emlld_Fconfig_Phro.rst
+	Source_Bb_LrWpan_Emlld_Fconfig_Phrt.rst

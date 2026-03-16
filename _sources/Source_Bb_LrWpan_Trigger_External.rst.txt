@@ -1,0 +1,41 @@
+External
+----------------------------------------
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:LRWPan:TRIGger:EXTernal:RDELay
+	single: [SOURce<HW>]:BB:LRWPan:TRIGger:EXTernal:TDELay
+	single: [SOURce<HW>]:BB:LRWPan:TRIGger:[EXTernal]:DELay
+	single: [SOURce<HW>]:BB:LRWPan:TRIGger:[EXTernal]:INHibit
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:LRWPan:TRIGger:EXTernal:RDELay
+	[SOURce<HW>]:BB:LRWPan:TRIGger:EXTernal:TDELay
+	[SOURce<HW>]:BB:LRWPan:TRIGger:[EXTernal]:DELay
+	[SOURce<HW>]:BB:LRWPan:TRIGger:[EXTernal]:INHibit
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.LrWpan.Trigger.External.ExternalCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	external_copy = driver.source.bb.lrWpan.trigger.external.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_LrWpan_Trigger_External_Sync.rst

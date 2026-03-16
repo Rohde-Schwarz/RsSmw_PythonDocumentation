@@ -1,0 +1,20 @@
+Setting
+----------------------------------------
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:[LRWPan]:HUWB:SETTing:CATalog
+	single: [SOURce<HW>]:BB:[LRWPan]:HUWB:SETTing:DELete
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:[LRWPan]:HUWB:SETTing:CATalog
+	[SOURce<HW>]:BB:[LRWPan]:HUWB:SETTing:DELete
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.LrWpan.Huwb.Setting.SettingCls
+	:members:
+	:undoc-members:
+	:noindex:

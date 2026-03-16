@@ -1,0 +1,22 @@
+Correction
+----------------------------------------
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: SOURce<HW>:RFALignment:SPARameter:CORRection:IQDelay
+	single: SOURce<HW>:RFALignment:SPARameter:CORRection:LEVel
+	single: SOURce<HW>:RFALignment:SPARameter:CORRection:PHASe
+
+.. code-block:: python
+
+	SOURce<HW>:RFALignment:SPARameter:CORRection:IQDelay
+	SOURce<HW>:RFALignment:SPARameter:CORRection:LEVel
+	SOURce<HW>:RFALignment:SPARameter:CORRection:PHASe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.RfAlignment.Sparameter.Correction.CorrectionCls
+	:members:
+	:undoc-members:
+	:noindex:

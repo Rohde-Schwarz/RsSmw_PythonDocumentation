@@ -1,0 +1,27 @@
+SubCluster<SubCluster>
+----------------------------------------
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.Mimo.Scwi.Cluster.Tap.SubCluster.SubClusterCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	subCluster_copy = driver.source.cemulation.mimo.scwi.cluster.tap.subCluster.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Cemulation_Mimo_Scwi_Cluster_Tap_SubCluster_Gain.rst
+	Source_Cemulation_Mimo_Scwi_Cluster_Tap_SubCluster_State.rst

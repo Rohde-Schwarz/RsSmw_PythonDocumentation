@@ -1,0 +1,217 @@
+Pconfiguration
+----------------------------------------
+
+.. rubric:: SCPI Commands :
+
+.. index::
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:AADDress
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:ACASsigned
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:ACID
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:ADID
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:ALAP
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:ALENgth
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:AMODe
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:ANUap
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:AOFFset
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:AOUNits
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:APHY
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:ASID
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:ATYPe
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:CACCuracy
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:CECount
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:CID
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:CINStant
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:CINTerval
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:CIValue
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:CPResent
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:CSELection
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:CTIMe
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:CTReq
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:CTYPe
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:DLENgth
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:DWHitening
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:ECODe
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:ECOunter
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:EDIVersifier
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:FSLength
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:HLENgth
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:ICASsigned
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:ICID
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:ID
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:ILAP
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:INUap
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:LCTimeout
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:LPECounter
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:MCLReq
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:MIVector
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:MNINterval
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:MROCtets
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:MRTime
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:MSKD
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:MTOCtets
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:MTTime
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:MUCHannels
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:MXINterval
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:NCINterval
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:NLCTimeout
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:NSLatency
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:NSValue
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:NWOFfset
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:NWSize
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:OADJust
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:PAINterval
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:PPERiodicity
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:RATYpe
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:RCECount
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:ROPCode
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:RVECtor
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:SCACcuracy
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:SCASsigned
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:SCECounter
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:SCID
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:SID
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:SIVector
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:SLAP
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:SLATency
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:SNUap
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:SOUNits
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:SPBit
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:SPOFfset
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:SSKD
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:SSValue
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:SVNumber
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:SYNCword
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:TATYpe
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:TLAP
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:TNUap
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:TPOWer
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:USERpatt
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:UTYPe
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:VNUMber
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:WOFFset
+	single: [SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:WSIZe
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:AADDress
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:ACASsigned
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:ACID
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:ADID
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:ALAP
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:ALENgth
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:AMODe
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:ANUap
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:AOFFset
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:AOUNits
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:APHY
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:ASID
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:ATYPe
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:CACCuracy
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:CECount
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:CID
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:CINStant
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:CINTerval
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:CIValue
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:CPResent
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:CSELection
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:CTIMe
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:CTReq
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:CTYPe
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:DLENgth
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:DWHitening
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:ECODe
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:ECOunter
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:EDIVersifier
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:FSLength
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:HLENgth
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:ICASsigned
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:ICID
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:ID
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:ILAP
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:INUap
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:LCTimeout
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:LPECounter
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:MCLReq
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:MIVector
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:MNINterval
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:MROCtets
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:MRTime
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:MSKD
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:MTOCtets
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:MTTime
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:MUCHannels
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:MXINterval
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:NCINterval
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:NLCTimeout
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:NSLatency
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:NSValue
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:NWOFfset
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:NWSize
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:OADJust
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:PAINterval
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:PPERiodicity
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:RATYpe
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:RCECount
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:ROPCode
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:RVECtor
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:SCACcuracy
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:SCASsigned
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:SCECounter
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:SCID
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:SID
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:SIVector
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:SLAP
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:SLATency
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:SNUap
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:SOUNits
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:SPBit
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:SPOFfset
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:SSKD
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:SSValue
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:SVNumber
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:SYNCword
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:TATYpe
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:TLAP
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:TNUap
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:TPOWer
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:USERpatt
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:UTYPe
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:VNUMber
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:WOFFset
+	[SOURce<HW>]:BB:BTOoth:ECONfiguration:PCONfiguration:WSIZe
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Btooth.Econfiguration.Pconfiguration.PconfigurationCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	pconfiguration_copy = driver.source.bb.btooth.econfiguration.pconfiguration.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Btooth_Econfiguration_Pconfiguration_Acad.rst
+	Source_Bb_Btooth_Econfiguration_Pconfiguration_Data.rst
+	Source_Bb_Btooth_Econfiguration_Pconfiguration_DcmTable.rst
+	Source_Bb_Btooth_Econfiguration_Pconfiguration_Eheader.rst
+	Source_Bb_Btooth_Econfiguration_Pconfiguration_EhFlags.rst
+	Source_Bb_Btooth_Econfiguration_Pconfiguration_Fsbit.rst
+	Source_Bb_Btooth_Econfiguration_Pconfiguration_Mtsphy.rst
+	Source_Bb_Btooth_Econfiguration_Pconfiguration_Offset.rst
+	Source_Bb_Btooth_Econfiguration_Pconfiguration_Phy.rst
+	Source_Bb_Btooth_Econfiguration_Pconfiguration_Phys.rst
+	Source_Bb_Btooth_Econfiguration_Pconfiguration_Rphys.rst
+	Source_Bb_Btooth_Econfiguration_Pconfiguration_StmPhy.rst
+	Source_Bb_Btooth_Econfiguration_Pconfiguration_Tphys.rst

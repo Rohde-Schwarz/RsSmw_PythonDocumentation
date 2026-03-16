@@ -1,0 +1,26 @@
+Gdelay
+----------------------------------------
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Iq.Output.Digital.Bbmm.Gdelay.GdelayCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	gdelay_copy = driver.source.iq.output.digital.bbmm.gdelay.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Iq_Output_Digital_Bbmm_Gdelay_Cstate.rst

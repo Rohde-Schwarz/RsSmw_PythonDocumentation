@@ -1,0 +1,37 @@
+Setting
+----------------------------------------
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:MCCW:SETTing:CATalog
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:MCCW:SETTing:CATalog
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Mccw.Setting.SettingCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	setting_copy = driver.source.bb.mccw.setting.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Mccw_Setting_Delete.rst
+	Source_Bb_Mccw_Setting_Load.rst
+	Source_Bb_Mccw_Setting_Store.rst

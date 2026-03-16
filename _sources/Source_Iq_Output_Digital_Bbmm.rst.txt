@@ -1,0 +1,35 @@
+Bbmm<IqConnector>
+----------------------------------------
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Iq.Output.Digital.Bbmm.BbmmCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	bbmm_copy = driver.source.iq.output.digital.bbmm.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Iq_Output_Digital_Bbmm_Cdevice.rst
+	Source_Iq_Output_Digital_Bbmm_Channel.rst
+	Source_Iq_Output_Digital_Bbmm_Gdelay.rst
+	Source_Iq_Output_Digital_Bbmm_Interface.rst
+	Source_Iq_Output_Digital_Bbmm_Oflow.rst
+	Source_Iq_Output_Digital_Bbmm_Pon.rst
+	Source_Iq_Output_Digital_Bbmm_Power.rst
+	Source_Iq_Output_Digital_Bbmm_Slow.rst
+	Source_Iq_Output_Digital_Bbmm_State.rst
+	Source_Iq_Output_Digital_Bbmm_SymbolRate.rst

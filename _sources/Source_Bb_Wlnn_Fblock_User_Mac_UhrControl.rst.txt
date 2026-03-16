@@ -1,0 +1,26 @@
+UhrControl
+----------------------------------------
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Wlnn.Fblock.User.Mac.UhrControl.UhrControlCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	uhrControl_copy = driver.source.bb.wlnn.fblock.user.mac.uhrControl.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Bb_Wlnn_Fblock_User_Mac_UhrControl_State.rst

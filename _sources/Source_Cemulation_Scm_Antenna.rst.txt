@@ -1,0 +1,27 @@
+Antenna<Index>
+----------------------------------------
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Cemulation.Scm.Antenna.AntennaCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	antenna_copy = driver.source.cemulation.scm.antenna.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Cemulation_Scm_Antenna_Rx.rst
+	Source_Cemulation_Scm_Antenna_Tx.rst

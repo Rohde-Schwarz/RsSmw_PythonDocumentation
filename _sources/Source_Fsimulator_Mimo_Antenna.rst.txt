@@ -1,0 +1,31 @@
+Antenna
+----------------------------------------
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Fsimulator.Mimo.Antenna.AntennaCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	antenna_copy = driver.source.fsimulator.mimo.antenna.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Source_Fsimulator_Mimo_Antenna_Inverse.rst
+	Source_Fsimulator_Mimo_Antenna_Modeling.rst
+	Source_Fsimulator_Mimo_Antenna_Pattern.rst
+	Source_Fsimulator_Mimo_Antenna_Polarization.rst
+	Source_Fsimulator_Mimo_Antenna_Rx.rst
+	Source_Fsimulator_Mimo_Antenna_Tx.rst

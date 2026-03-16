@@ -1,0 +1,26 @@
+Errors<Index>
+----------------------------------------
+
+.. rubric:: SCPI Command :
+
+.. index::
+	single: [SOURce<HW>]:BB:ARBitrary:ETHernet:STATistics:ERRors<CH4>
+
+.. code-block:: python
+
+	[SOURce<HW>]:BB:ARBitrary:ETHernet:STATistics:ERRors<CH4>
+
+
+
+.. autoclass:: RsSmw.Implementations.Source.Bb.Arbitrary.Ethernet.Statistics.Errors.ErrorsCls
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a copy of the original group, that exists independently
+	errors_copy = driver.source.bb.arbitrary.ethernet.statistics.errors.clone()
